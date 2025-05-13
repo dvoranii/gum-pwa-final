@@ -1,27 +1,22 @@
 import * as S from './Btc.styles';
 import { Outlet } from 'react-router-dom';
-import GumLogo from "../../assets/GUMlogo.png";
+import InnerNav from '../../components/InnerNav/InnerNav';
+
+const btcNavItems = [
+  { path: "/btc", label: "BTC\u00A0Home", end: true },
+  { path: "/btc/tech", label: "Tech" },
+  { path: "/btc/patient", label: "Patient" },
+  { path: "/btc/floss", label: "Floss" },
+  { path: "/btc/flossers", label: "Flossers" },
+  { path: "/btc/id-brushes", label: "ID\u00A0Brushes" },
+  { path: "/btc/soft-picks", label: "Soft\u00A0Picks" },
+  { path: "/recommend", label: "Recommend" },
+];
 
 export default function Btc() {
   return (
-    <S.BtcContainer> 
-
-      <S.NavTabsOuter>  
-        <S.GumLogoWrapper>
-            <img src={GumLogo} alt="" />
-        </S.GumLogoWrapper>
-        <S.NavTabs>
-            <S.TabLink to="/btc" end>BTC&nbsp;Home</S.TabLink>
-            <S.TabLink to="/btc/tech">Tech</S.TabLink>
-            <S.TabLink to="/btc/patient">Patient</S.TabLink>
-            <S.TabLink to="/btc/floss">Floss</S.TabLink>
-            <S.TabLink to="/btc/flossers">Flossers</S.TabLink>
-            <S.TabLink to="/btc/id-brushes">ID&nbsp;Brushes</S.TabLink>
-            <S.TabLink to="/btc/soft-picks">Soft&nbsp;Picks</S.TabLink>
-            <S.TabLink to="/btc/recommend">Recommend</S.TabLink>
-        </S.NavTabs>
-      </S.NavTabsOuter>   
-      
+    <S.BtcContainer>   
+        <InnerNav navItems={btcNavItems} />
       <S.Content>
         <Outlet />
       </S.Content>

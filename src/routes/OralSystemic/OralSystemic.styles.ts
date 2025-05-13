@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
 
-export const TechContainer = styled.div`
+export const OralSystemicContainer = styled.div`
     padding-left: 5%;
 `;

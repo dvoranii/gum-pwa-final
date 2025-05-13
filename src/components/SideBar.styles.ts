@@ -2,14 +2,10 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 export const SidebarContainer = styled.nav`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 120px; 
+  min-width: 120px; 
   height: 100vh;
   z-index: 100;
   background-color: #f8f8f8;
-  overflow: hidden;
 `;
 
 
@@ -27,6 +23,15 @@ export const NavItem = styled.li`
   flex: 1; 
   min-height: 0; 
   position: relative;
+`;
+
+
+export const NavIcon = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  aspect-ratio: 1;
+  display: block;
 `;
 
 export const NavButton = styled(NavLink)`
@@ -49,11 +54,4 @@ export const NavButton = styled(NavLink)`
     background-color: #e0e0e0;
   }
 
-`;
-
-export const NavIcon = styled.img`
-  height: 100%;
-  object-fit: cover; 
-  aspect-ratio: 1;
-  display: block;
 `;

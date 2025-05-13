@@ -2,45 +2,54 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const BtcContainer = styled.div`
-  padding: 20px;
-  margin-left: 120px; 
 `;
 
-export const Title = styled.h1`
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
+export const NavTabsOuter = styled.div`
+    display: flex;
+    justify-self: flex-end;
+`;
+
+export const GumLogoWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    & > img {
+        height: 36px;
+        width:auto;
+    }
 `;
 
 export const NavTabs = styled.nav`
+  height: 36px;
   display: flex;
-  gap: 1rem;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-top: 2rem;
+  background-color: #02a6a7;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #e0e0e0;
 `;
 
 export const TabLink = styled(NavLink)`
-  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   position: relative;
-  
-  &:hover {
-    color: #0077cc;
-  }
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.75rem, 0.7vw + 0.5rem, 0.85rem);
+
   
   &.active {
-    color: #0077cc;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: #0077cc;
-    }
+    background-color: #018384;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0.5rem 0.4rem;
+    font-size: 0.65rem;
   }
 `;
 

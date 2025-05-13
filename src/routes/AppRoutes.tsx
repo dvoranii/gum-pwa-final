@@ -5,6 +5,10 @@ import { Routes, Route } from 'react-router-dom';
 import Btc from '../routes/Btc/Btc';
 import BtcTech from './Btc/Tech/Tech';
 import BtcPatient from './Btc/Patient/Patient';
+import BtcFloss from './Btc/Floss/Floss';
+import BtcFlossers from './Btc/Flossers/Flossers';
+import BtcIDBrushes from './Btc/IDBrushes/IDBrushes';
+import BtcSoftPicks from './Btc/SoftPicks/SoftPicks';
 // import BtcTech from './Btc/Tech';
 // import BtcPatient from './Btc/Patient';
 // import Brsh from './Brsh';
@@ -25,6 +29,10 @@ export default function AppRoutes() {
       <Route path="/btc" element={<Btc />}>
         <Route path="tech" element={<BtcTech />} />
         <Route path="patient" element={<BtcPatient />} />
+        <Route path="floss" element={<BtcFloss />} />
+        <Route path="flossers" element={<BtcFlossers />} />
+        <Route path="id-brushes" element={<BtcIDBrushes />} />
+        <Route path="soft-picks" element={<BtcSoftPicks />} />
       </Route> 
     </Routes>
   );

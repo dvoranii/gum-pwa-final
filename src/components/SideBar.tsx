@@ -1,6 +1,5 @@
 import {useLocation} from 'react-router-dom';
 import * as S from "./SideBar.styles";
-import {useState, useEffect} from 'react';
 
 import hom1 from '../assets/nav-icons/hom1.jpg';
 import hom2 from '../assets/nav-icons/hom2.jpg';

@@ -74,7 +74,7 @@ export default function SideBar() {
     const location = useLocation();
 
     const isBtcActive = location.pathname.startsWith('/btc');
-
+    const isOralSystemicActive = location.pathname.startsWith('/oral-systemic');
 
   return (
     <S.SidebarContainer>
@@ -84,6 +84,7 @@ export default function SideBar() {
           
           // Set active state based on route
           if (item.path === '/btc') isActive = isBtcActive;
+          else if (item.path === '/oral-systemic') isActive = isOralSystemicActive;
           else isActive = location.pathname === item.path;
 
           return (

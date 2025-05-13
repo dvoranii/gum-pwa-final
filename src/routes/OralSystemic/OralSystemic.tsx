@@ -16,8 +16,13 @@ export default function OralSystemicLink(){
     return(
         <S.OralSystemicContainer>
             <InnerNav navItems={oralSystemicNavItems} />
-            {isHomeRoute && <h1>Oral Systemic Link</h1>}
+                {isHomeRoute && 
+                <S.LandingContent>
+                    <S.PageTitle>The Oral Systemic Link</S.PageTitle> 
+                </S.LandingContent>}
+            <S.Content>
              <Outlet />
+            </S.Content>
         </S.OralSystemicContainer>
     )
 }

@@ -20,10 +20,15 @@ export default function Btc() {
   return (
     <S.BtcContainer>   
         <InnerNav navItems={btcNavItems} />
-      <S.Content>
-         {isHomeRoute && <S.PageTitle>Interproximal Solutions</S.PageTitle>}
-        <Outlet />
-      </S.Content>
+         {isHomeRoute && 
+         <S.LandingContent>
+            <S.PageTitle>Interproximal Solutions</S.PageTitle>
+         </S.LandingContent>
+         }
+         
+        <S.Content>
+            <Outlet />
+        </S.Content>
     </S.BtcContainer>
   );
 }

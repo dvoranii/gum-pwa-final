@@ -1,8 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 // import Home from './Home';
 import OralSystemicLink from './OralSystemic/OralSystemic';
+import OralSystemicHome from './OralSystemic/OralSystemicHome/OralSystemicHome';
 // import Partners from './Partners';
 import Btc from '../routes/Btc/Btc';
+import BtcHome from './Btc/BtcHome/BtcHome';
 import BtcTech from './Btc/Tech/Tech';
 import BtcPatient from './Btc/Patient/Patient';
 import BtcFloss from './Btc/Floss/Floss';
@@ -25,8 +27,11 @@ export default function AppRoutes() {
       <Route path="/opr" element={<Opr />} />
       <Route path="/accs" element={<Accs />} />
     */}
-      <Route path="/oral-systemic" element={<OralSystemicLink />} />
+      <Route path="/oral-systemic" element={<OralSystemicLink />}>
+        <Route path="home" element={<OralSystemicHome/>}/>
+      </Route>
       <Route path="/btc" element={<Btc />}>
+        <Route path="home" element={<BtcHome />} />
         <Route path="tech" element={<BtcTech />} />
         <Route path="patient" element={<BtcPatient />} />
         <Route path="floss" element={<BtcFloss />} />

@@ -15,6 +15,8 @@ import opr1 from '../../assets/nav-icons/opr1.jpg';
 import opr2 from '../../assets/nav-icons/opr2.jpg';
 import acs1 from '../../assets/nav-icons/acs1.jpg';
 import acs2 from '../../assets/nav-icons/acs2.jpg';
+import ref1 from "../../assets/nav-icons/ref1.jpg";
+import ref2 from "../../assets/nav-icons/ref2.jpg";
 
 const navItems = [
     {
@@ -58,6 +60,12 @@ const navItems = [
         path: '/accs',
         inactiveIcon: acs1,
         activeIcon: acs2
+    },
+    { 
+        name: 'References', 
+        path: '/refs',
+        inactiveIcon: ref1,
+        activeIcon: ref2
     },
 
 ];

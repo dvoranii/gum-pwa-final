@@ -1,9 +1,9 @@
 import * as S from './Btc.styles';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import InnerNav from '../../components/InnerNav/InnerNav';
 
 const btcNavItems = [
-  { path: "/btc", label: "BTC\u00A0Home", end: true },
+  { path: "/btc/home", label: "BTC\u00A0Home", end: true },
   { path: "/btc/tech", label: "Tech" },
   { path: "/btc/patient", label: "Patient" },
   { path: "/btc/floss", label: "Floss" },
@@ -14,10 +14,14 @@ const btcNavItems = [
 ];
 
 export default function Btc() {
+
+  const location = useLocation();
+  const isHomeRoute = location.pathname === "/btc";
   return (
     <S.BtcContainer>   
         <InnerNav navItems={btcNavItems} />
       <S.Content>
+         {isHomeRoute && <S.PageTitle>Interproximal Solutions</S.PageTitle>}
         <Outlet />
       </S.Content>
     </S.BtcContainer>

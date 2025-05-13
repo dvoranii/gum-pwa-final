@@ -49,25 +49,11 @@ export const NavButton = styled(NavLink)`
     background-color: #e0e0e0;
   }
 
-  &:hover {
-    background-color: #e9e9e9;
-  }
 `;
 
 export const NavIcon = styled.img`
-  width: 100%; 
   height: 100%;
   object-fit: cover; 
   aspect-ratio: 1;
   display: block;
-`;
-
-export const NavText = styled.span`
-  font-size: 12px;
-  text-align: center;
-  margin-top: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
 `;

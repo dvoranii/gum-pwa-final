@@ -65,26 +65,36 @@ const navItems = [
 
 export default function SideBar() {
     const location = useLocation();
-    const [activePath, setActivePath] = useState('/');
 
-    useEffect(() => {
-        setActivePath(location.pathname);
-    }, [location]);
+    const isBtcActive = location.pathname.startsWith('/btc');
 
-    return (
+
+  return (
     <S.SidebarContainer>
       <S.NavList>
-        {navItems.map((item) => (
-          <S.NavItem key={item.path}>
-            <S.NavButton to={item.path}>
-              <S.NavIcon 
-                src={activePath === item.path ? item.activeIcon : item.inactiveIcon}
-                alt={item.name}
+        {navItems.map((item) => {
+          let isActive = false;
+          
+          // Set active state based on route
+          if (item.path === '/btc') isActive = isBtcActive;
+          else isActive = location.pathname === item.path;
+
+          return (
+            <S.NavItem key={item.path}>
+              <S.NavButton 
+                to={item.path}
+                className={isActive ? 'active' : ''}
+              >
+                <S.NavIcon 
+                  src={isActive ? item.activeIcon : item.inactiveIcon}
+                  alt={item.name}
                 />
-            </S.NavButton>
-          </S.NavItem>
-        ))}
+            
+              </S.NavButton>
+            </S.NavItem>
+          );
+        })}
       </S.NavList>
     </S.SidebarContainer>
-    )
+  );
 }

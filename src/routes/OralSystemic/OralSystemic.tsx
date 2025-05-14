@@ -2,6 +2,7 @@
 import * as S from "./OralSystemic.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
+import PageTitle from "../../components/PageTitle/PageTitle";
 
  const oralSystemicNavItems = [
   { path: "/oral-systemic/home", label: "The\u00A0Oral-Systemic\u00A0Link", end: true },
@@ -18,7 +19,7 @@ export default function OralSystemicLink(){
             <InnerNav navItems={oralSystemicNavItems} />
                 {isHomeRoute && 
                 <S.LandingContent>
-                    <S.PageTitle>The Oral Systemic Link</S.PageTitle> 
+                    <PageTitle>The Oral Systemic Link</PageTitle> 
                 </S.LandingContent>}
             <S.Content>
              <Outlet />

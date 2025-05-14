@@ -15,8 +15,3 @@ export const LandingContent = styled.div`
     justify-content: center;
 `;
 
-export const PageTitle = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  font-family: 'Gotham', sans-serif;
-`;

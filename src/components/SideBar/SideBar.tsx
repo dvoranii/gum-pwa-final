@@ -45,25 +45,25 @@ const navItems = [
     },
     { 
         name: 'Tooth Brush Solutions', 
-        path: '/brsh',
+        path: '/toothbrush',
         inactiveIcon: brs1,
         activeIcon: brs2
     },
     { 
         name: 'Operatory Solutions', 
-        path: '/opr',
+        path: '/operatory',
         inactiveIcon: opr1,
         activeIcon: opr2
     },
     { 
         name: 'Accessories', 
-        path: '/accs',
+        path: '/accessories',
         inactiveIcon: acs1,
         activeIcon: acs2
     },
     { 
         name: 'References', 
-        path: '/refs',
+        path: '/references',
         inactiveIcon: ref1,
         activeIcon: ref2
     },
@@ -75,6 +75,10 @@ export default function SideBar() {
 
     const isBtcActive = location.pathname.startsWith('/btc');
     const isOralSystemicActive = location.pathname.startsWith('/oral-systemic');
+    const isPartnersActive = location.pathname.startsWith('/partners');
+    const isToothbrushActive = location.pathname.startsWith('/toothbrush');
+    const isOperatoryActive = location.pathname.startsWith('/operatory');
+    const isAccessoriesActive = location.pathname.startsWith('/accessories');
 
   return (
     <S.SidebarContainer>
@@ -82,9 +86,12 @@ export default function SideBar() {
         {navItems.map((item) => {
           let isActive = false;
           
-          // Set active state based on route
           if (item.path === '/btc') isActive = isBtcActive;
           else if (item.path === '/oral-systemic') isActive = isOralSystemicActive;
+          else if (item.path === '/partners') isActive = isPartnersActive;
+          else if (item.path === '/toothbrush') isActive = isToothbrushActive;
+          else if (item.path === '/operatory') isActive = isOperatoryActive;
+          else if (item.path === '/accessories') isActive = isAccessoriesActive;
           else isActive = location.pathname === item.path;
 
           return (

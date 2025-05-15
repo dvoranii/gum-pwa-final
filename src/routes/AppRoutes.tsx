@@ -35,12 +35,6 @@ export default function AppRoutes() {
   return (
     <Routes>
       {/* <Route path="/" element={<Home />} /> */}
-      {/* 
-      <Route path="/partners" element={<Partners />} />
-      <Route path="/brsh" element={<Brsh />} />
-      <Route path="/opr" element={<Opr />} />
-      <Route path="/accs" element={<Accs />} />
-    */}
         <Route path="/oral-systemic" element={<OralSystemicLink />}>
             <Route path="home" element={<OralSystemicHome/>}/>
         </Route>

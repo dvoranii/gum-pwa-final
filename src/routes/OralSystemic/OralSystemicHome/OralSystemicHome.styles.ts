@@ -67,9 +67,6 @@ export const HeartBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
-  &:active {
-    transform: scale(0.98);
-  }
 `;
 
 export const HeartActiveOverlay = styled.img`
@@ -81,7 +78,7 @@ export const HeartActiveOverlay = styled.img`
   pointer-events: none;
 `;
 
-/* Brain Branch Styles */
+
 export const BrainBranch = styled.img`
   position: absolute;
   top: 8.3vw;
@@ -91,9 +88,6 @@ export const BrainBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
-  &:active {
-    transform: scale(0.98);
-  }
 `;
 
 export const BrainActiveOverlay = styled.img`
@@ -105,7 +99,6 @@ export const BrainActiveOverlay = styled.img`
   pointer-events: none;
 `;
 
-/* Blood Branch Styles */
 export const BloodBranch = styled.img`
   position: absolute;
   top: 14.6vw;
@@ -115,9 +108,6 @@ export const BloodBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
-  &:active {
-    transform: scale(0.98);
-  }
 `;
 
 export const BloodActiveOverlay = styled.img`
@@ -131,8 +121,7 @@ export const BloodActiveOverlay = styled.img`
 
 export const ResultImgWrapper = styled.div`
   flex: 1;
-  background: #e6f2ff;
-  border-radius: 16px;
+  background-image: linear-gradient(to bottom, #1a969d, #5fccc4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,27 +135,22 @@ export const ResultContent = styled.div`
   max-width: 80%;
 `;
 
-export const ResultTitle = styled.h3`
-  font-family: 'Gothic', sans-serif;
-  color: #003366;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-`;
 
 export const ResultPercentage = styled.div`
-  font-family: 'Gothic', sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: 700;
-  color: #019257;
-  font-size: 2.5rem;
-  margin: 1.5rem 0;
+  color: #ffffff;
+  font-size: 5.5rem;
+  margin: 1.5rem 0 0.5rem 0;
 `;
 
 export const ResultDescription = styled.p`
-  font-family: 'Gothic', sans-serif;
-  color: #003366;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 `;
 
 export const BottomText = styled.div`

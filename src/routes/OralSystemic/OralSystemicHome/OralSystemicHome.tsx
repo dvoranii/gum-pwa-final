@@ -51,15 +51,15 @@ export default function OralSystemicHome() {
 
   const branchResults = {
     heart: {
-      percentage: "20%",
+      percentage: "67%",
       description: "Patients with periodontal disease have significantly increased risk of cardiovascular problems."
     },
     brain: {
-      percentage: "90%",
+      percentage: "29%",
       description: "Oral bacteria found in majority of Alzheimer's brain tissue samples studied."
     },
     blood: {
-      percentage: "30%",
+      percentage: "1 in 3",
       description: "Severe gum disease can elevate blood sugar levels in diabetic patients."
     }
   };

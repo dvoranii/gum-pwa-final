@@ -33,6 +33,8 @@ export const OralSystemicImgWrapperOuter = styled.div`
   position: relative;
   display: flex;
   margin-bottom: 2rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   width: 100%;
   background: white;
 `;
@@ -41,6 +43,7 @@ export const ImagesWrapperInner = styled.div`
   position: relative;
   flex: 0 0 50vw;
   height: fit-content;
+  padding: 8px;
 `;
 
 export const BaseImg = styled.img`

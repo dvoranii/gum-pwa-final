@@ -7,5 +7,5 @@ export const PageContainerOuter = styled.div`
   background-image: url(${HomeBG});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:0px 40%;
 `;

@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-// import Home from './Home';
+import Home from './Home/Home';
 import OralSystemicLink from './OralSystemic/OralSystemic';
 import OralSystemicHome from './OralSystemic/OralSystemicHome/OralSystemicHome';
 
@@ -34,7 +34,7 @@ import AccessoriesHome from './Accessories/AccessoriesHome/AccessoriesHome';
 export default function AppRoutes() {
   return (
     <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
+      <Route path="/" element={<Home />} />
         <Route path="/oral-systemic" element={<OralSystemicLink />}>
             <Route path="home" element={<OralSystemicHome/>}/>
         </Route>

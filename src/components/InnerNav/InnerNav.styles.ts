@@ -4,6 +4,8 @@ import { styled } from "styled-components";
 export const NavTabsOuter = styled.div`
     display: flex;
     justify-self: flex-end;
+
+    height: 32px;
 `;
 
 export const GumLogoWrapper = styled.div`
@@ -28,9 +30,7 @@ export const NavTabs = styled.nav`
   justify-content: space-between;
   width: 100%;
   text-transform: uppercase;
-  margin-top: 2rem;
   background-color: #02a6a7;
-  margin-bottom: 2rem;
 `;
 
 export const TabLink = styled(NavLink)`

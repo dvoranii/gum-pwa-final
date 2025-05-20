@@ -25,6 +25,20 @@ export const NavItem = styled.li`
   flex: 1; 
   min-height: 0; 
   position: relative;
+
+  &::after {
+  z-index: 99;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background: #00834e;
+  transform-origin: right;
+}
+
+
 `;
 
 

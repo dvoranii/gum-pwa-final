@@ -1,7 +1,11 @@
 import { styled } from "styled-components";
 
 export const Content = styled.div`
-    padding-top: 1rem;
+    padding-top: 2rem;
+
+    @media screen and (min-width: 2300px) {
+      padding-top: 3rem;
+    }
 
     & > h1 {
     font-family: 'Gotham', sans-serif;
@@ -26,6 +30,7 @@ export const Content = styled.div`
 
     @media screen and (min-width: 2300px) {
       font-size: 3rem;
+      margin-inline-start: 2.4rem;
     }
 
     & > li {
@@ -61,6 +66,10 @@ export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   z-index: 99;
   width: ${props => props.showResults ? '55%' : '40%'};
 
+  @media screen and (max-width: 1368px) {
+    width: ${props => props.showResults ? '55%' : '40%'};
+  }
+
   @media screen and (min-width: 2300px) {
    width: ${props => props.showResults ? '65%' : '46%'};
   }
@@ -74,6 +83,10 @@ export const CarouselWrapper = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media screen and (max-width: 1368px) {
+    width: 60%;
+  }
 
   @media screen and (min-width: 2300px) {
     width: 54%;
@@ -95,6 +108,11 @@ export const CarouselWrapper = styled.div`
       width: auto;
       text-align: right;
       z-index: 10;
+
+      @media screen and (min-width: 2300px) {
+        right:108px;
+        top: 108px;
+      }
       
       .dot {
         width: 20px;
@@ -104,6 +122,12 @@ export const CarouselWrapper = styled.div`
         
         &.is-selected {
           background: #4fcccd;
+        }
+
+        @media screen and (min-width: 2300px) {
+            width: 40px;
+            height: 40px;
+            margin: 0 16px;
         }
       }
     }
@@ -124,8 +148,8 @@ export const CarouselSlide = styled.div`
 `;
 
 export const SlideImage = styled.img`
-  max-width: 100%;
-  max-height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 `;
 
@@ -135,9 +159,12 @@ export const BaseImg = styled.img`
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 
+  @media screen and (max-width: 1368px) {
+    height: 45vh;
+  }
+
   @media screen and (min-width: 2300px) {
     height: 60vh;
-
   }
 `;
 
@@ -148,6 +175,12 @@ export const ToothActiveOverlay = styled.img`
   height: 35.2%;
   z-index: 1;
   cursor: pointer;
+
+  @media screen and (max-width: 1368px) {
+    top: 15.3vh;
+    left: 23.2vh;
+    height: 35.7%;
+  }
 
   @media screen and (min-width: 2300px) {
     height: 35.8%;
@@ -166,6 +199,10 @@ export const HeartBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
+  @media screen and (max-width: 1368px) {
+    top: 2.3vh;
+    left: 36.8vh;
+  }
   @media screen and (min-width: 2300px) {
     top: 2.6vh;
     left: 48.4vh;
@@ -181,6 +218,10 @@ export const HeartActiveOverlay = styled.img`
   z-index: 3;
   pointer-events: none;
 
+  @media screen and (max-width: 1368px) {
+    top: 3vh;
+    left: 41.25vh;
+  }
   @media screen and (min-width: 2300px) {
     top: 3.6vh;
     left: 54.3vh;
@@ -197,6 +238,12 @@ export const BrainBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
+  @media screen and (max-width: 1368px) {
+    top: 15.8vh;
+    left: 39.1vh;
+    height: 31%;
+  }
+
   @media screen and (min-width: 2300px) {
       top: 21.3vh;
       left: 52.2vh;
@@ -211,6 +258,11 @@ export const BrainActiveOverlay = styled.img`
   height: 28.9%;
   z-index: 3;
   pointer-events: none;
+
+  @media screen and (max-width: 1368px) {
+    top: 16.45vh;
+    left: 46.4vh;
+  }
 
   @media screen and (min-width: 2300px) {
     top: 22.15vh;
@@ -227,6 +279,10 @@ export const BloodBranch = styled.img`
   cursor: pointer;
   transition: transform 0.2s ease;
 
+  @media screen and (max-width: 1368px) {
+    top: 27.9vh;
+    left: 37.7vh;
+  }
   @media screen and (min-width: 2300px) {
     top: 37.8vh;
     left: 49.8vh;
@@ -242,6 +298,10 @@ export const BloodActiveOverlay = styled.img`
   z-index: 3;
   pointer-events: none;
 
+  @media screen and (max-width: 1368px) {
+    top: 30.4vh;
+    left: 42vh;
+  }
   @media screen and (min-width: 2300px) {
     top: 41.1vh;
     left: 55.5vh;
@@ -257,6 +317,10 @@ export const ResultImgWrapper = styled.div`
   align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease;
+
+  @media screen and (max-width: 1368px) {
+    width: 45%;
+  }
 
   @media screen and (min-width: 2300px) {
     width: 35%;

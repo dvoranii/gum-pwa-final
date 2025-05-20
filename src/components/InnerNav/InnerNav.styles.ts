@@ -4,10 +4,11 @@ import { styled } from "styled-components";
 export const NavTabsOuter = styled.div`
     display: flex;
     justify-self: flex-end;
-    height: 32px;
+    height: 36px;
 
     @media screen and (min-width: 2300px) {
-          height: 56px;
+        height: 56px;
+
     }
 `;
 
@@ -39,7 +40,7 @@ export const NavTabs = styled.nav`
 export const TabLink = styled(NavLink)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   white-space: nowrap;
   padding: 0.5rem 1rem;
@@ -50,7 +51,7 @@ export const TabLink = styled(NavLink)`
   font-family: 'Gotham', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(0.75rem, 0.7vw + 0.5rem, 0.85rem);
+  font-size: clamp(0.75rem, 0.7vw + 0.5rem, 1.85rem);
   letter-spacing: 0.6px;
 
   
@@ -59,8 +60,8 @@ export const TabLink = styled(NavLink)`
   }
 
   @media screen and (min-width: 2300px) {
-    font-size: 1.5rem;
-    padding: 1.5rem 2rem;
+    font-size: 1.75rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
   }
 
 `;

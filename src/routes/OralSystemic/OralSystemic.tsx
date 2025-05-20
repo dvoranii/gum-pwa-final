@@ -13,6 +13,8 @@ import BrainBranch from "../../assets/oral-systemic/brainbranch.png";
 import BrainActive from "../../assets/oral-systemic/brain-active.png";
 import BloodBranch from "../../assets/oral-systemic/bloodbranch.png";
 import BloodActive from "../../assets/oral-systemic/blood-active.png";
+
+
 import Slide1 from "../../assets/carousel/flickity-slide-1.png";
 import Slide2 from "../../assets/carousel/flickity-slide-2.png";
 import Slide3 from "../../assets/carousel/flickity-slide-3.png";

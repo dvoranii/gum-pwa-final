@@ -68,8 +68,7 @@ export default function OralSystemicHome() {
     <S.OralSystemicHomeContainer>
       <h1>The Oral-Systemic Link</h1>
       <ul>
-        <li><span>Greater health starts in the mouth.</span></li>
-        <li><span>The difference you make goes much deeper than oral health.</span></li>
+        <li><span>Overall health starts in your mouth.</span></li>
       </ul>
 
       <S.OralSystemicImgWrapperOuter>
@@ -164,10 +163,11 @@ export default function OralSystemicHome() {
     </S.OralSystemicImgWrapperOuter>
 
       <S.BottomText>
-        Heart Disease is on the rise. Alzheimer's is on the rise. Diabetes is on the rise.
-        <S.BottomSubText>
+        Sharing this information with patients, in a way that is intended to inform and encourage
+good oral care can help solidify ritualistic habits and better overall health.
+        {/* <S.BottomSubText>
           What do you see in your practice to support this connection?
-        </S.BottomSubText>
+        </S.BottomSubText> */}
       </S.BottomText>
     </S.OralSystemicHomeContainer>
   );

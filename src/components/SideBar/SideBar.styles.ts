@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const SidebarContainer = styled.nav`
   width: calc(100vh / 8); 
-  min-width: 128px;
+  aspect-ratio: 1;
   height: 100vh;
   z-index: 100;
   background-color: #f8f8f8;

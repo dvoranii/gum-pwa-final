@@ -2,28 +2,28 @@ import { styled } from "styled-components";
 
 export const OralSystemicHomeContainer = styled.div`
   & > h1 {
-    font-family: 'Gothic', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-weight: 700;
     color: #019257;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    letter-spacing: -2px;
   }
 
   & > ul {
-    font-family: 'Gothic', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-weight: 700;
     color: #019257;
-    margin-inline-start: 20px;
-    font-size: 1.25rem;
+    font-size: 1.54rem;
     margin-bottom: 2rem;
-    padding-left: 1rem;
+    margin-inline-start: 1.5rem;
 
     & > li {
       margin-bottom: 0.5rem;
       
       & > span {
         color: black;
-        font-weight: normal;
+        font-weight: 600;
+        margin-left: -4px;
       }
     }
   }
@@ -37,18 +37,21 @@ export const OralSystemicImgWrapperOuter = styled.div`
   border-bottom-left-radius: 20px;
   width: 100%;
   background: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.23);
 `;
 
 export const ImagesWrapperInner = styled.div`
   position: relative;
-  flex: 0 0 50vw;
+  width: 60%;
   height: fit-content;
-  padding: 8px;
+
 `;
 
 export const BaseImg = styled.img`
-  width: 100%;
+  width: 55vh;
   display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 `;
 
 export const ToothActiveOverlay = styled.img`
@@ -157,10 +160,10 @@ export const ResultDescription = styled.p`
 `;
 
 export const BottomText = styled.div`
-  font-family: 'Gothic', sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: 700;
-  color: #019257;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #00a16b;
+  font-size: clamp(1rem, 2.25vw, 1.5rem);
   margin-top: 2rem;
 `;
 

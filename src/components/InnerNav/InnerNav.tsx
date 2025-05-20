@@ -18,15 +18,23 @@ export default function InnerNav({ navItems }: InnerNavProps) {
         <img src={GumLogo} alt="GUM Logo" />
       </S.GumLogoWrapper>
       <S.NavTabs>
-        {navItems.map((item) => (
-          <S.TabLink 
-            key={item.path} 
-            to={item.path} 
-            end={item.end}
-          >
-            {item.label}
-          </S.TabLink>
-        ))}
+        {navItems.map((item) => {
+         
+          const isActive = item.end 
+            ? location.pathname === item.path
+            : location.pathname.startsWith(item.path);
+          
+          return (
+            <S.TabLink 
+              key={item.path} 
+              to={item.path} 
+              end={item.end}
+              className={isActive ? 'active' : ''}
+            >
+              {item.label}
+            </S.TabLink>
+          );
+        })}
       </S.NavTabs>
     </S.NavTabsOuter>
   );

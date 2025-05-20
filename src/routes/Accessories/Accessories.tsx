@@ -2,10 +2,10 @@
 import * as S from "./Accessories.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import PageTitle from "../../components/PageTitle/PageTitle";
+import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 const accessoriesNavItems = [
-  { path: "/accessories/home", label: "Accessories", end: true },
+  { path: "/accessories", label: "Accessories", end: true },
   { path: "/recommend", label: "Recommend" }
 ];
 
@@ -14,18 +14,16 @@ export default function Accessories() {
   const isHomeRoute = location.pathname === "/accessories";
 
   return (
-    <S.AccessoriesContainer>
+    <ModuleContainer>
       <InnerNav navItems={accessoriesNavItems} />
       
-      {isHomeRoute && (
-        <S.LandingContent>
-          <PageTitle>Accessories</PageTitle>
-        </S.LandingContent>
-      )}
-      
       <S.Content>
-        <Outlet />
+      {isHomeRoute ? (
+          <h1>Welcome to the Accessories module</h1>
+          ) : (
+            <Outlet />
+          )}
       </S.Content>
-    </S.AccessoriesContainer>
+    </ModuleContainer>
   );
 }

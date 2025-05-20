@@ -1,10 +1,10 @@
 import * as S from "./Toothbrush.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import PageTitle from "../../components/PageTitle/PageTitle";
+import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 const toothbrushNavItems = [
-  { path: "/toothbrush/home", label: "Brush\u00A0Home", end: true },
+  { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
   { path: "/toothbrush/tech", label: "Tech" },
   { path: "/toothbrush/patient", label: "Patient" },
   { path: "/toothbrush/adult", label: "Adult" },
@@ -18,18 +18,16 @@ export default function Toothbrush() {
   const isHomeRoute = location.pathname === "/toothbrush";
 
   return (
-    <S.ToothbrushContainer>
+    <ModuleContainer>
       <InnerNav navItems={toothbrushNavItems} />
-      
-      {isHomeRoute && (
-        <S.LandingContent>
-          <PageTitle>Toothbrush Solutions</PageTitle>
-        </S.LandingContent>
-      )}
-      
       <S.Content>
-        <Outlet />
+      {isHomeRoute ? (
+          <h1>Welcome to the Toothbrush module</h1>
+          ) : (
+            <Outlet />
+          )}
       </S.Content>
-    </S.ToothbrushContainer>
+      
+    </ModuleContainer>
   );
 }

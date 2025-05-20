@@ -1,13 +1,11 @@
 
 import { styled } from "styled-components";
 
-export const OperatoryContainer = styled.div`
-  padding-left: 5%;
-  height: 100%;
-`;
-
 export const Content = styled.div`
-  /* Add any content-specific styles */
+  & > h1 {
+    font-family: 'Gotham', sans-serif;
+    padding-top: 1rem;
+  }
 `;
 
 export const LandingContent = styled.div`

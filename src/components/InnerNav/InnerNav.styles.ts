@@ -4,8 +4,11 @@ import { styled } from "styled-components";
 export const NavTabsOuter = styled.div`
     display: flex;
     justify-self: flex-end;
-
     height: 32px;
+
+    @media screen and (min-width: 2300px) {
+          height: 56px;
+    }
 `;
 
 export const GumLogoWrapper = styled.div`
@@ -18,9 +21,9 @@ export const GumLogoWrapper = styled.div`
         width:auto;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-width: 2300px) {
       & > img {    
-            height: 30px;
+            height: 56px;
         }
     }
 `;
@@ -48,14 +51,16 @@ export const TabLink = styled(NavLink)`
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.75rem, 0.7vw + 0.5rem, 0.85rem);
+  letter-spacing: 0.6px;
 
   
   &.active {
     background-color: #018384;
   }
 
-  @media (max-width: 1024px) {
-    padding: 0.5rem 0.4rem;
-    font-size: 0.65rem;
+  @media screen and (min-width: 2300px) {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
   }
+
 `;

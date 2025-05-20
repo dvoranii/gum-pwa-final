@@ -1,11 +1,10 @@
-// src/routes/Operatory/Operatory.tsx
 import * as S from "./Operatory.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import PageTitle from "../../components/PageTitle/PageTitle";
+import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 const operatoryNavItems = [
-  { path: "/operatory/home", label: "Operatory\u00A0Solutions", end: true },
+  { path: "/operatory", label: "Operatory\u00A0Solutions", end: true },
   { path: "/recommend", label: "Recommend" }
 ];
 
@@ -14,18 +13,20 @@ export default function Operatory() {
   const isHomeRoute = location.pathname === "/operatory";
 
   return (
-    <S.OperatoryContainer>
+    <ModuleContainer>
       <InnerNav navItems={operatoryNavItems} />
       
-      {isHomeRoute && (
-        <S.LandingContent>
-          <PageTitle>Operatory Solutions</PageTitle>
-        </S.LandingContent>
-      )}
+      <S.Content>
+      {isHomeRoute ? (
+          <h1>Welcome to the Operatory module</h1>
+          ) : (
+            <Outlet />
+          )}
+      </S.Content>
       
       <S.Content>
         <Outlet />
       </S.Content>
-    </S.OperatoryContainer>
+    </ModuleContainer>
   );
 }

@@ -1,7 +1,7 @@
 import * as S from "./OralSystemic.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
@@ -36,6 +36,8 @@ export default function OralSystemicLink() {
   const [activeBrain, setActiveBrain] = useState(false);
   const [activeBlood, setActiveBlood] = useState(false);
 
+//   const flickityRef = useRef<Flickity | null>(null);
+
   const flickityOptions = {
     initialIndex: 0,
     wrapAround: true,
@@ -54,6 +56,12 @@ export default function OralSystemicLink() {
     setActiveHeart(false);
     setActiveBrain(false);
     setActiveBlood(false);
+
+//     setTimeout(() => {
+//     if (wasActive && flickityRef.current) {
+//       flickityRef.current.resize(); 
+//     }
+//   }, 50);
   };
 
   const toggleHeart = (e: React.TouchEvent | React.MouseEvent) => {
@@ -165,9 +173,8 @@ export default function OralSystemicLink() {
                     className={'carousel'} 
                     elementType={'div'}
                     options={flickityOptions}
-                    disableImagesLoaded={false}
-                    reloadOnUpdate
-                    static
+                    disableImagesLoaded={true}          
+                    static={false}
                   >
                     <S.CarouselSlide>
                       <S.SlideImage src={Slide1} alt="Slide 1" />

@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 export const SidebarContainer = styled.nav`
-  width: calc(100vh / 8); 
-  aspect-ratio: 1;
+  width: calc((100vh / 8) - 14px); 
+  aspect-ratio: 0.94;
   height: 100vh;
   z-index: 100;
   background-color: #f8f8f8;
@@ -44,10 +44,9 @@ export const NavItem = styled.li`
 
 export const NavIcon = styled.img`
   height: 100%;
-  width: 100%;
   object-fit: cover; 
-  aspect-ratio: 1;
   display: block;
+  aspect-ratio: 0.94;
 `;
 
 export const NavButton = styled(NavLink)`

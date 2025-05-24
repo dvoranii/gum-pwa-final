@@ -18,6 +18,7 @@ export const BtcBG = styled.div`
   width: 100%;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
+  height: 80vh;
 
   @media screen and (max-width: 1366px) {
     margin-top: 0;

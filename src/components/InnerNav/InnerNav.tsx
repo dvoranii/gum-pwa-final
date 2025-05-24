@@ -1,5 +1,5 @@
 import * as S from './InnerNav.styles';
-import GumLogo from "../../assets/GUMlogo.png";
+import GumLogo from "../../assets/gum-logo.svg";
 
 interface NavItem {
   path: string;

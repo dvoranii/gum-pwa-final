@@ -3,6 +3,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 import InnerNav from '../../components/InnerNav/InnerNav';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
+import Col1Row2 from "../../assets/btc/col1-row2.svg";
+
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
   { path: "/btc/tech", label: "Tech" },
@@ -24,9 +26,23 @@ export default function Btc() {
         <InnerNav navItems={btcNavItems} />
         <S.Content>
         {isHomePage ? (
-            <>
-              <h1>Interproximal Home Page</h1>
-            </>
+          <S.BtcBG>
+            <S.ContentLeft>
+              <S.IntroTitleWrapper>
+                <S.IntroTitle>Gum <br/>Interproximal<br/> Solutions</S.IntroTitle>
+              </S.IntroTitleWrapper>
+              <S.RecommendedWrapper>
+                <S.Recommended src={Col1Row2}/>
+              </S.RecommendedWrapper>
+
+              <S.LinksWrapper>
+
+              </S.LinksWrapper>
+            </S.ContentLeft>
+            <S.ContentRight>
+
+            </S.ContentRight>
+          </S.BtcBG>
           ) : (
             <Outlet />
           )}

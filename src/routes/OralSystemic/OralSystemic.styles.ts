@@ -1,48 +1,15 @@
 import { styled } from "styled-components";
 
+interface ResultTextImgProps {
+  $variant?: 'brain' | 'heart' | 'blood'; 
+}
+
 export const Content = styled.div`
     padding-top: 2rem;
 
     @media screen and (min-width: 2300px) {
       padding-top: 3rem;
     }
-
-    & > h1 {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 700;
-    color: #00a16b;
-    font-size: 3.2rem;
-    letter-spacing: -1px;
-    
-    @media screen and (min-width: 2300px) {
-      font-size: 6rem;
-    }
-  }
-
-  & > ul {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 700;
-    color: #019257;
-    font-size: 1.54rem;
-    margin-bottom: 2rem;
-    margin-inline-start: 1.5rem;
-    letter-spacing: -1px;
-
-    @media screen and (min-width: 2300px) {
-      font-size: 3rem;
-      margin-inline-start: 2.4rem;
-    }
-
-    & > li {
-      margin-bottom: 0.5rem;
-      
-      & > span {
-        color: black;
-        font-weight: 600;
-        margin-left: -4px;
-      }
-    }
-  }
 `;
 
 
@@ -50,14 +17,19 @@ export const OralSystemicImgWrapperOuter = styled.div`
   position: relative;
   display: flex;
   margin-bottom: 2rem;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
   width: 100%;
   background: white;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
+  margin-top: 1.8rem;
 
   & > * {
     flex: 0 0 auto;
+  }
+
+  @media screen and (min-width: 2300px) {
+    margin-top: 3rem;
   }
 `;
 
@@ -71,7 +43,7 @@ export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   }
 
   @media screen and (min-width: 2300px) {
-   width: ${props => props.showResults ? '65%' : '46%'};
+   width: ${props => props.showResults ? '62%' : '46%'};
   }
 
 `;
@@ -153,48 +125,99 @@ export const SlideImage = styled.img`
   object-fit: contain;
 `;
 
+export const BaseImgWrapper = styled.div`
+width: 100%;
+
+`;
 export const BaseImg = styled.img`
   height: 60vh;
   display: block;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  padding: 1rem 0;
+  margin-left: 0px;
+  margin-top: 1px;
 
   @media screen and (max-width: 1368px) {
     height: 45vh;
   }
 
   @media screen and (min-width: 2300px) {
-    height: 60vh;
+    height: 57vh;
   }
 `;
 
+export const Branches = styled.img`
+    position: absolute;
+    width: 15vh;
+    top: 16.7vh;
+    left: 47.8vh;
+    z-index: -1;
+
+    @media screen and (max-width: 1368px) {
+        width: 10vh;
+        top: 13.6vh;
+        left: 35vh;
+    }
+
+    @media screen and (min-width: 2300px) {
+        width: 14.5vh;
+        top: 15.5vh;
+        left: 46.7vh;
+    }
+`;
+
+
+
+export const ToothImg = styled.img`
+    position: absolute;
+    top: 19.1vh;
+    left: 30.2vh;
+    width: 21.6vh;
+    height: auto;
+
+
+    @media screen and (max-width: 1368px) {
+        top: 14.7vh;
+        left: 22.6vh;
+        width: 15.7vh;
+    }
+
+    @media screen and (min-width: 2300px) {
+         top: 18.1vh;
+         left:29.6vh;
+         width: 21.6vh;
+    }
+
+`;
+
+
 export const ToothActiveOverlay = styled.img`
   position: absolute;
-  top: 20.6vh;
-  left: 31vh;
-  height: 35.2%;
+  top: 19.1vh;
+  left: 30.2vh;
+  height: 21.6vh;
   z-index: 1;
   cursor: pointer;
 
+
   @media screen and (max-width: 1368px) {
-    top: 15.3vh;
-    left: 23.2vh;
-    height: 35.7%;
+    top: 11.8vh;
+    left: 22.5vh;
+    width: 15.9vh;
   }
 
+
   @media screen and (min-width: 2300px) {
-    height: 35.8%;
-    left: 30.8vh;
-    top: 20.4vh;
+    top: 18.1vh;
+    left: 29.6vh;
   }
 `;
 
 /* Heart Branch Styles */
 export const HeartBranch = styled.img`
   position: absolute;
-  top: 3vh;
-  left: 49.1vh;
-  height: 36%;
+  top: 3.5vh;
+  left: 51.5vh;
+  height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -203,108 +226,109 @@ export const HeartBranch = styled.img`
     top: 2.3vh;
     left: 36.8vh;
   }
+
   @media screen and (min-width: 2300px) {
-    top: 2.6vh;
-    left: 48.4vh;
+        top: 3.3vh;
+        left: 50.6vh;
   }
 
 `;
 
 export const HeartActiveOverlay = styled.img`
   position: absolute;
-  top: 3.9vh;
-  left: 54.95vh;
-  height: 29.8%;
+  top: 3.5vh;
+  left: 51.5vh;
+  height: 30%;
   z-index: 3;
   pointer-events: none;
 
   @media screen and (max-width: 1368px) {
-    top: 3vh;
-    left: 41.25vh;
+    top: 2.3vh;
+    left: 36.8vh;
   }
+
   @media screen and (min-width: 2300px) {
-    top: 3.6vh;
-    left: 54.3vh;
+    top: 3.3vh;
+    left: 50.6vh
   }
 `;
 
 
 export const BrainBranch = styled.img`
   position: absolute;
-  top: 21.3vh;
-  left: 52.1vh;
-  height: 31%;
+  top: 21.4vh;
+  left: 58.7vh;
+  height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
 
   @media screen and (max-width: 1368px) {
-    top: 15.8vh;
-    left: 39.1vh;
-    height: 31%;
+    top: 15.3vh;
+    left: 44.1vh;
   }
 
   @media screen and (min-width: 2300px) {
-      top: 21.3vh;
-      left: 52.2vh;
+    top: 20.2vh;
+    left: 59.2vh;
   }
 
 `;
 
 export const BrainActiveOverlay = styled.img`
   position: absolute;
-  top: 21.95vh;
-  left: 61.9vh;
-  height: 28.9%;
+  top: 21.45vh;
+  left: 58.7vh;
+  height: 30%;
   z-index: 3;
   pointer-events: none;
 
   @media screen and (max-width: 1368px) {
-    top: 16.45vh;
-    left: 46.4vh;
+    top: 15.31vh;
+    left: 44.1vh;
   }
 
   @media screen and (min-width: 2300px) {
-    top: 22.15vh;
-    left: 62vh;
+    top: 20.2vh;
+    left: 59.2vh;
   }
 `;
 
 export const BloodBranch = styled.img`
   position: absolute;
-  top: 38.7vh;
-  left: 49vh;
-  height: 34%;
+  top: 39.6vh;
+  left: 51.9vh; 
+  height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
 
   @media screen and (max-width: 1368px) {
-    top: 27.9vh;
+    top: 29vh;
     left: 37.7vh;
   }
   @media screen and (min-width: 2300px) {
-    top: 37.8vh;
-    left: 49.8vh;
+    top: 37.1vh;
+    left: 50.4vh;
   }
 
 `;
 
 export const BloodActiveOverlay = styled.img`
   position: absolute;
-  top: 42vh;
-  left: 54.7vh;
-  height: 28.4%;
+  top: 39.6vh;
+  left: 51.9vh;
+  height: 30%;
   z-index: 3;
   pointer-events: none;
 
   @media screen and (max-width: 1368px) {
-    top: 30.4vh;
-    left: 42vh;
+    top: 29vh;
+    left: 37.7vh;
   }
   @media screen and (min-width: 2300px) {
-    top: 41.1vh;
-    left: 55.5vh;
+    top: 37.1vh;
+    left: 50.4vh;
   }
 `;
 
@@ -323,31 +347,54 @@ export const ResultImgWrapper = styled.div`
   }
 
   @media screen and (min-width: 2300px) {
-    width: 35%;
+    width: 38%;
 }
 `;
 
 export const ResultContent = styled.div`
-  text-align: center;
-  max-width: 80%;
+    // display: flex;
+`;
+
+export const ResultTextImg = styled.img<ResultTextImgProps>`
+    max-width: 80%;
+    padding-left: ${props => props.$variant === 'brain' ? '4rem' : '3rem'};
+    padding-top: ${props => props.$variant === 'brain' ? '1rem' : '2rem'};
+
+    @media screen and (min-width: 2300px) {
+        max-width: 100%;
+        max-height: 57vh;
+        padding: ${props => props.$variant === 'brain' ? '4rem 5.6rem 0 4rem' : '4rem'};
+    }
 `;
 
 
-export const ResultPercentage = styled.div`
+export const ResultHeadline = styled.div`
   font-family: 'Gotham', sans-serif;
   font-weight: 700;
   color: #ffffff;
-  font-size: 5.5rem;
-  margin: 1.5rem 0 0.5rem 0;
+  line-height: 1;
+  font-size: 3.6rem;
+
+  @media screen and (min-width: 2300px) {
+    font-size: 5.6rem;
+  }
 `;
 
 export const ResultDescription = styled.p`
   font-family: 'Gotham', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.4rem;
   color: #ffffff;
-  line-height: 1.6;
-  font-size: 1.2rem;
+  line-height: 1;
   margin-bottom: 1rem;
+  padding-top: 1rem;
+
+  @media screen and (min-width: 2300px) {
+    padding-right: 6rem;
+    padding-top: 2rem;
+    letter-spacing: -1px;
+    font-size: 2.9rem;
+  }
 `;
 
 export const BottomText = styled.div`
@@ -355,13 +402,15 @@ export const BottomText = styled.div`
     font-family: 'Gotham', sans-serif;
     font-weight: 700;
     color: #00a16b;
-    font-size: clamp(1rem, 2.25vw, 1.5rem);
+    font-size: clamp(1rem, 2.25vw, 1.7rem);
     margin-top: 2rem;
+    padding: 0px 12px;
+    letter-spacing: -1.4px;
   }
 
   @media screen and (min-width: 2300px) {
       & > p {
-        font-size: 2.8rem;
+        font-size: 2.9rem;
       }
   }
 `;

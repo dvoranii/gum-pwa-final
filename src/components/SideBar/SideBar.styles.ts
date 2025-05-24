@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 export const SidebarContainer = styled.nav`
-  width: calc((100vh / 8) - 14px); 
-  aspect-ratio: 0.94;
+  min-width: calc((100vh / 8) * 0.94); 
   height: 100vh;
   z-index: 100;
   background-color: #f8f8f8;
@@ -20,7 +19,7 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  aspect-ratio: 1;
+  aspect-ratio: 0.94;
   width: 100%;
   flex: 1; 
   min-height: 0; 
@@ -37,7 +36,6 @@ export const NavItem = styled.li`
   background: #00834e;
   transform-origin: right;
 }
-
 
 `;
 

@@ -1,25 +1,35 @@
 import * as S from "./OralSystemic.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
-import OralSystemicImgFull from "../../assets/oral-systemic/oral-systemic-full-img.png";
-import ToothActive from "../../assets/oral-systemic/tooh-active.png";
-import HeartBranch from "../../assets/oral-systemic/heartbranch.png";
-import HeartActive from "../../assets/oral-systemic/heart-active.png";
-import BrainBranch from "../../assets/oral-systemic/brainbranch.png";
-import BrainActive from "../../assets/oral-systemic/brain-active.png";
-import BloodBranch from "../../assets/oral-systemic/bloodbranch.png";
-import BloodActive from "../../assets/oral-systemic/blood-active.png";
+import ModuleTitle from "../../components/ModuleTitle/ModuleTitle";
+
+import OralSystemicImgFull from "../../assets/oral-systemic/OS-base-diagram.svg";
+import BaseImg2 from  "../../assets/oral-systemic/BaseImg-2.svg";
+import Branches from "../../assets/oral-systemic/branches.svg";
+
+import HeartBranch from "../../assets/oral-systemic/heartbranch.svg";
+import HeartBranchResult from "../../assets/oral-systemic/HeartBranchResult.svg";
+import HeartActive from "../../assets/oral-systemic/heart-active.svg";
+
+import BrainBranch from "../../assets/oral-systemic/brainbranch.svg";
+import BrainActive from "../../assets/oral-systemic/brain-active.svg";
+import BrainBranchResult from "../../assets/oral-systemic/BrainBranchResult.svg";
+
+import BloodBranch from "../../assets/oral-systemic/bloodbranch.svg";
+import BloodActive from "../../assets/oral-systemic/blood-active.svg";
+import BloodBranchResult from "../../assets/oral-systemic/BloodBranchResult.svg";
 
 
-import Slide1 from "../../assets/carousel/flickity-slide-1.png";
-import Slide2 from "../../assets/carousel/flickity-slide-2.png";
-import Slide3 from "../../assets/carousel/flickity-slide-3.png";
+import Slide1 from "../../assets/carousel/flickity-slide-1.svg";
+import Slide2 from "../../assets/carousel/flickity-slide-2.svg";
+import Slide3 from "../../assets/carousel/flickity-slide-3.svg";
 
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
+import BulletList from "../../components/BulletList/BulletList";
 
 const oralSystemicNavItems = [
   { path: "/oral-systemic", label: "The\u00A0Oral-Systemic\u00A0Link", end: true },
@@ -30,13 +40,14 @@ export default function OralSystemicLink() {
   const location = useLocation();
   const isHomePage = location.pathname === '/oral-systemic';
 
-  const [showCarousel, setShowCarousel] = useState(true);
-  const [showTooth, setShowTooth] = useState(false);
-  const [activeHeart, setActiveHeart] = useState(false);
-  const [activeBrain, setActiveBrain] = useState(false);
-  const [activeBlood, setActiveBlood] = useState(false);
+  const [showBaseImg2, setShowBaseImg2] = useState(false);
+  const [activeBranch, setActiveBranch] = useState<string | null>(null);
 
-//   const flickityRef = useRef<Flickity | null>(null);
+  const showCarousel = !showBaseImg2;
+  const activeHeart = activeBranch === 'heart';
+  const activeBrain = activeBranch === 'brain';
+  const activeBlood = activeBranch === 'blood';
+
 
   const flickityOptions = {
     initialIndex: 0,
@@ -48,63 +59,30 @@ export default function OralSystemicLink() {
     cellAlign: 'center'
   };
 
-  const toggleTooth = (e: React.TouchEvent | React.MouseEvent) => {
+  const toggleBaseImg = (e: React.TouchEvent | React.MouseEvent) => {
     e.stopPropagation();
-    const wasActive = showTooth;
-    setShowTooth(prev => !prev);
-    setShowCarousel(wasActive);
-    setActiveHeart(false);
-    setActiveBrain(false);
-    setActiveBlood(false);
-
-//     setTimeout(() => {
-//     if (wasActive && flickityRef.current) {
-//       flickityRef.current.resize(); 
-//     }
-//   }, 50);
+    setShowBaseImg2(prev => !prev);
+    setActiveBranch(null); 
   };
 
   const toggleHeart = (e: React.TouchEvent | React.MouseEvent) => {
     e.stopPropagation();
-    setActiveHeart(prev => !prev);
-    setActiveBrain(false);
-    setActiveBlood(false);
-    setShowTooth(true);
-    setShowCarousel(false);
+    setActiveBranch(prev => prev === "heart" ? null : 'heart');
+    setShowBaseImg2(true); 
   };
 
   const toggleBrain = (e: React.TouchEvent | React.MouseEvent) => {
     e.stopPropagation();
-    setActiveBrain(prev => !prev);
-    setActiveHeart(false);
-    setActiveBlood(false);
-    setShowTooth(true);
-    setShowCarousel(false);
+    setActiveBranch(prev => prev === 'brain' ? null : 'brain');
+    setShowBaseImg2(true);
   };
 
   const toggleBlood = (e: React.TouchEvent | React.MouseEvent) => {
     e.stopPropagation();
-    setActiveBlood(prev => !prev);
-    setActiveHeart(false);
-    setActiveBrain(false);
-    setShowTooth(true);
-    setShowCarousel(false);
+    setActiveBranch(prev => prev === 'blood' ? null : 'blood');
+    setShowBaseImg2(true);
   };
 
-  const branchResults = {
-    heart: {
-      percentage: "67%",
-      description: "Patients with periodontal disease have significantly increased risk of cardiovascular problems."
-    },
-    brain: {
-      percentage: "29%",
-      description: "Oral bacteria found in majority of Alzheimer's brain tissue samples studied."
-    },
-    blood: {
-      percentage: "1 in 3",
-      description: "Severe gum disease can elevate blood sugar levels in diabetic patients."
-    }
-  };
 
   return (
     <ModuleContainer>
@@ -112,24 +90,20 @@ export default function OralSystemicLink() {
       <S.Content>
         {isHomePage ? (
           <>
-            <h1>The Oral-Systemic Link</h1>
-            <ul>
-              <li><span>Overall health starts in your mouth.</span></li>
-            </ul>
+            <ModuleTitle title={"The Oral-Systemic Link"} />
+            <BulletList items={["Overall health starts in your mouth."]} />
 
             <S.OralSystemicImgWrapperOuter>
               <S.ImagesWrapperInner showResults={!showCarousel && (activeHeart || activeBrain || activeBlood)}>
+                
                 <S.BaseImg       
-                  src={OralSystemicImgFull}
-                  onTouchStart={toggleTooth}
+                  src={showBaseImg2 ? BaseImg2 : OralSystemicImgFull}
+                  onTouchStart={toggleBaseImg}
                 />
 
-                {showTooth && (
+                {showBaseImg2 && (
                   <>
-                    <S.ToothActiveOverlay 
-                      src={ToothActive}
-                      onTouchStart={toggleTooth}
-                    />
+                    <S.Branches src={Branches}/>
                     
                     <S.HeartBranch 
                       src={HeartBranch} 
@@ -192,8 +166,7 @@ export default function OralSystemicLink() {
                   {activeHeart && (
                     <S.ResultImgWrapper>
                       <S.ResultContent>
-                        <S.ResultPercentage>{branchResults.heart.percentage}</S.ResultPercentage>
-                        <S.ResultDescription>{branchResults.heart.description}</S.ResultDescription>
+                        <S.ResultTextImg src={HeartBranchResult}/>
                       </S.ResultContent>
                     </S.ResultImgWrapper>
                   )}
@@ -201,8 +174,7 @@ export default function OralSystemicLink() {
                   {activeBrain && (
                     <S.ResultImgWrapper>
                       <S.ResultContent>
-                        <S.ResultPercentage>{branchResults.brain.percentage}</S.ResultPercentage>
-                        <S.ResultDescription>{branchResults.brain.description}</S.ResultDescription>
+                        <S.ResultTextImg $variant="brain" src={BrainBranchResult} />
                       </S.ResultContent>
                     </S.ResultImgWrapper>
                   )}
@@ -210,8 +182,7 @@ export default function OralSystemicLink() {
                   {activeBlood && (
                     <S.ResultImgWrapper>
                       <S.ResultContent>
-                        <S.ResultPercentage>{branchResults.blood.percentage}</S.ResultPercentage>
-                        <S.ResultDescription>{branchResults.blood.description}</S.ResultDescription>
+                        <S.ResultTextImg $variant="blood" src={BloodBranchResult}/>
                       </S.ResultContent>
                     </S.ResultImgWrapper>
                   )}

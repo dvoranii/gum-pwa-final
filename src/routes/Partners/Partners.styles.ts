@@ -1,6 +1,10 @@
 
 import { styled } from "styled-components";
 
+interface PartnersBGProps {
+    $isFullWidthImage?: boolean;
+}
+
 export const Content = styled.div`
     padding-top: 2rem;
 
@@ -9,7 +13,7 @@ export const Content = styled.div`
     }
 `;
 
-export const PartnersBG = styled.div`
+export const PartnersBG = styled.div<PartnersBGProps>`
   display: flex;
   gap: 2.4rem;
   border-top-left-radius: 24px;
@@ -17,13 +21,34 @@ export const PartnersBG = styled.div`
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;
-  max-width: 100%;
+  min-height: 55vh;
   box-sizing: border-box;
   margin-top: 2.4rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
+  justify-content: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
+  align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
   @media screen and (min-width: 2300px) {
-    padding: 9.6rem 0;
+    min-height: 60vh;
+    padding: ${props => props.$isFullWidthImage ? '0' : '9.6rem 0'};
+  }
+`;
+
+export const FullWidthImage = styled.img`
+  max-width: 76.8%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 24px 0 0 24px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1386px) {
+      max-width: 85%;
+  }
+
+  @media screen and (min-width: 2300px) {
+    max-width: 100%;
+    height: 58vh;
+    width: auto;
   }
 `;
 
@@ -96,7 +121,7 @@ export const ImgTextWrapper = styled.div`
     font-weight: 600;
     letter-spacing: -1px;
     line-height: 1;
-    font-size: clamp(2rem, 2.4vw, 3.6rem);
+    font-size: clamp(1.8rem, 2.4vw, 3.6rem);
     padding-top: 1rem;
   }
 

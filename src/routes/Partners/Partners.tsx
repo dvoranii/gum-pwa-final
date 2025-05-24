@@ -1,5 +1,6 @@
 
 import * as S from "./Partners.styles";
+import { useState } from "react";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
@@ -9,6 +10,7 @@ import GumLogo from "../../assets/gum-logo.svg";
 import PatientImg from "../../assets/partners/Patient.svg";
 import ProfessionalImg from "../../assets/partners/Professional.svg";
 import PatAndProf from "../../assets/partners/Pat&Prof.svg";
+import Partners2 from "../../assets/partners/Partner2.svg";
 
 import BottomText from "../../components/BottomText/BottomText";
 
@@ -20,6 +22,11 @@ const partnersNavItems = [
 export default function Partners() {
   const location = useLocation();
   const isHomeRoute = location.pathname === "/partners";
+  const [showPartners2, setShowPartners2] = useState(false);
+
+  const togglePartnersView = () => {
+    setShowPartners2(!showPartners2);
+  }
 
   return (
     <ModuleContainer>
@@ -33,9 +40,16 @@ export default function Partners() {
               "Supporting your goals as a dental professional."
             ]}/>
 
-            <S.PartnersBG>
+            <S.PartnersBG $isFullWidthImage={showPartners2}>
+              {showPartners2 ? (
+                <S.FullWidthImage 
+                src={Partners2} 
+                onTouchStart={togglePartnersView}
+                alt="Partners alternative view" />
+              ) : (
+             <>
               <S.GumLogoCol>
-                <S.GumLogo src={GumLogo} />
+                <S.GumLogo src={GumLogo} onTouchStart={togglePartnersView} />
 
                 <S.GumTextWrapper>
                   <h2>Transforming</h2>
@@ -66,6 +80,8 @@ export default function Partners() {
                     </S.ColTextWrapper>
                   </S.ImgTextWrapper>
               </S.GraphicsCol>    
+                </>
+              )}
 
             </S.PartnersBG>
 

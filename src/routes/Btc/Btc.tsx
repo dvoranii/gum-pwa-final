@@ -1,9 +1,12 @@
 import * as S from './Btc.styles';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import InnerNav from '../../components/InnerNav/InnerNav';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
+import PatientNeeds from "../../assets/btc/PatientNeeds.svg";
+import Technology from "../../assets/btc/Technology.svg";
+import Portfolio from "../../assets/btc/Portfolio.svg";
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
@@ -36,7 +39,15 @@ export default function Btc() {
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>
-
+                <Link to="/btc/tech">
+                  <S.LinkImg src={Technology} />
+                </Link>
+                <Link to="/btc/patient">
+                  <S.LinkImg src={PatientNeeds} />
+                </Link>
+                <Link to="#">
+                  <S.LinkImg src={Portfolio} />
+                </Link>
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>

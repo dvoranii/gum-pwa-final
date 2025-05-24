@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Content = styled.div`
-  padding-top: 4rem;
+  padding-top: 2rem;
+
+  @media screen and (min-width: 2300px) {
+    padding-top: 4rem;
+  }
 `;
 
 export const BtcBG = styled.div`
@@ -14,6 +18,10 @@ export const BtcBG = styled.div`
   width: 100%;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
+
+  @media screen and (min-width: 2300px) {
+    padding-bottom: 6.4rem;
+  }
 `;
 
 
@@ -29,7 +37,7 @@ export const ContentRight = styled.div`
 `;
 
 export const IntroTitleWrapper = styled.div`
-  padding-left: 40px;
+  padding-left: 20px;
 
   @media screen and (min-width: 2300px) {
     padding-left: 4.8rem;
@@ -42,7 +50,7 @@ export const IntroTitle = styled.h1`
   font-weight: 700;
   color: #00a16b;
   font-size: 4.2rem;
-  line-height: 1;
+  line-height: 0.9;
   letter-spacing: -3px;
 
   @media screen and (min-width: 2300px) {
@@ -64,5 +72,25 @@ export const Recommended = styled.img`
 `;
 
 export const LinksWrapper = styled.div`
-  height: 150px;
+  display: flex;
+  padding-top: 1.2rem;
+
+  & > a {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 2300px) {
+     padding-left: 2rem;
+     padding-top: 2rem;
+ }
+`;
+
+export const LinkImg = styled.img`
+  width: 75%;
+  height: auto;
+
+  @media screen and (min-width: 2300px) {
+    width: 80%
+ }
 `;

@@ -5,7 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import ModuleTitle from "../../components/ModuleTitle/ModuleTitle";
 import BulletList from "../../components/BulletList/BulletList";
-import GumLogo from "../../assets/GUMlogo.png";
+import GumLogo from "../../assets/gum-logo.svg";
 import PatientImg from "../../assets/partners/Patient.svg";
 import ProfessionalImg from "../../assets/partners/Professional.svg";
 import PatAndProf from "../../assets/partners/Pat&Prof.svg";
@@ -37,10 +37,10 @@ export default function Partners() {
               <S.GumLogoCol>
                 <S.GumLogo src={GumLogo} />
 
-                <S.TextWrapper>
+                <S.GumTextWrapper>
                   <h2>Transforming</h2>
-                  <h3>Experiences&nbsp;&&nbsp;Relationships</h3>
-                </S.TextWrapper>
+                  <h3>Experiences & Relationships</h3>
+                </S.GumTextWrapper>
               </S.GumLogoCol> 
 
               <S.GraphicsCol>

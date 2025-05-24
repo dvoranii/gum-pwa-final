@@ -15,44 +15,57 @@ export const PartnersBG = styled.div`
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
   background-color: #ffffff;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   margin-top: 2.4rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
 
   @media screen and (min-width: 2300px) {
-    padding: 6.4rem 0;
+    padding: 9.6rem 0;
   }
 `;
 
 export const GumLogoCol = styled.div`
   width: 30%;
-  padding-left: 4rem;
+  min-width: 0;
+  flex-shrink: 0;
+
+  @media screen and (min-width: 2300px) {
+    padding-left: 4rem;
+  }
 
 `;
 export const GumLogo = styled.img`
   width: 100%;
-
-  @media screen and (min-width: 2300px) {
-    padding-top: 9rem;
-  }
+  padding-top: 2.4vh;
 `;
 
-export const TextWrapper = styled.div`
-
+export const GumTextWrapper = styled.div`
   padding-top: 2rem;
   text-align: right;
   width: 100%;
   color: #00a16b;
   font-family: 'Gotham', sans-serif;
+
+  h2 {
+    font-size: clamp(1.8rem, 2.8vw, 4.4rem);
+    letter-spacing: -1px;
+  }
+
+  h3 {
+    font-size:clamp(1.2rem, 1.8vw, 2rem);
+    letter-spacing: -1px;
+  }
  
   @media screen and (min-width: 2300px) {
+    padding-top: 5.6rem;
     & > h3 {
         font-weight: 600;
         font-size: 2.4rem;
       }
       & > h2 {
-
         font-weight: 700;
         font-size: 4.2rem;
       }
@@ -61,31 +74,38 @@ export const TextWrapper = styled.div`
 
 export const GraphicsCol = styled.div`
   width: 70%;
+  min-width: 0;
   display: flex;
+
+  @media screen and (min-width: 2300px) {
+    width: 64%;
+  }
 `;
 
 export const ImgTextWrapper = styled.div`
   color: #00a16b;
   font-family: 'Gotham', sans-serif;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  min-width: 0;
+  max-width: 33.33%;
 
   h4 {
     font-weight: 600;
     letter-spacing: -1px;
     line-height: 1;
+    font-size: clamp(2rem, 2.4vw, 3.6rem);
+    padding-top: 1rem;
   }
 
-  p {
-    line-height: 1.2;
-    letter-spacing: -1px;
-    padding-top: 0.5rem;
-  }
 
   & > img {
-      width: 100%;
+      width: 90%;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
   }
 
   @media screen and (min-width: 2300px) {
@@ -94,18 +114,26 @@ export const ImgTextWrapper = styled.div`
       padding-top: 1rem;
     }
 
-    p {
-      font-size: 2.08rem;
-      font-weight: 500;
-    }
-
     & > img {
-      max-width: 375px;
+      width: 80%;
     }
-  
   }
 `;
 
 export const ColTextWrapper = styled.div`
-    padding-left: 2.4rem;
+    width: 100%;
+    padding-left: 1.8rem;
+
+    & > p {
+      letter-spacing: -1.8px;
+      line-height: 1.15;
+      letter-spacing: -1.4px;
+      padding-top: 0.25rem;
+      font-size: clamp(1rem, 2.08rem ,1.5vw);
+      font-weight: 500;
+    }
+
+    @media screen and (min-width: 2300px) {
+      padding-left: 4rem;
+    }
 `;

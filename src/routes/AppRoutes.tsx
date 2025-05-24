@@ -3,7 +3,6 @@ import Home from './Home/Home';
 import OralSystemicLink from './OralSystemic/OralSystemic';
 
 import Partners from './Partners/Partners';
-import PatientSuccess from './Partners/PatientSuccess/PatientSuccess';
 
 import Btc from '../routes/Btc/Btc';
 import BtcTech from './Btc/Tech/Tech';
@@ -35,7 +34,6 @@ export default function AppRoutes() {
 
         <Route path="/partners" element={<Partners />}>
             <Route index element={null} />
-            <Route path="patient-success" element={<PatientSuccess />} />
         </Route>
 
         <Route path="/btc" element={<Btc />}>

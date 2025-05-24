@@ -19,8 +19,12 @@ export const BtcBG = styled.div`
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
 
+  @media screen and (max-width: 1366px) {
+    margin-top: 0;
+  }
+    
   @media screen and (min-width: 2300px) {
-    padding-bottom: 6.4rem;
+    padding-bottom: 3.4rem;
   }
 `;
 
@@ -32,8 +36,29 @@ export const ContentLeft = styled.div`
   padding: 20px;
   gap: 1rem;
 `;
+
+
 export const ContentRight = styled.div`
   width: 50%;
+  height: 100%;
+`;
+
+export const FlossersImg = styled.img`
+  width: 93%;
+  height: auto;
+  margin-left: -88px;
+
+  @media screen and (max-width: 1386px) {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 4rem;
+  }
+
+  @media screen and (min-width: 2300px) {
+    width: 100%;
+    padding-top: 146px;
+    margin-left: -18px;
+    }
 `;
 
 export const IntroTitleWrapper = styled.div`
@@ -61,9 +86,14 @@ export const IntroTitle = styled.h1`
 export const RecommendedWrapper = styled.div`
   width: 100%;
 `;
+
 export const Recommended = styled.img`
   width: 80%;
   height: auto;
+
+  @media screen and (max-width: 1386px) {
+    width: 100%;
+  }
 
  @media screen and (min-width: 2300px) {
     width: 100%
@@ -73,6 +103,7 @@ export const Recommended = styled.img`
 
 export const LinksWrapper = styled.div`
   display: flex;
+  width: 90%;
   padding-top: 1.2rem;
 
   & > a {
@@ -80,15 +111,24 @@ export const LinksWrapper = styled.div`
     justify-content: center;
   }
 
+  @media screen and (max-width: 1386px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 2300px) {
      padding-left: 2rem;
      padding-top: 2rem;
+     width: 100%;
  }
 `;
 
 export const LinkImg = styled.img`
   width: 75%;
   height: auto;
+
+  @media screen and (max-width: 1386px) {
+    width: 90%;
+  }
 
   @media screen and (min-width: 2300px) {
     width: 80%

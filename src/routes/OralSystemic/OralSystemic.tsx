@@ -31,6 +31,8 @@ import Slide3 from "../../assets/carousel/flickity-slide-3.svg";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import BulletList from "../../components/BulletList/BulletList";
 
+import BottomText from "../../components/BottomText/BottomText";
+
 const oralSystemicNavItems = [
   { path: "/oral-systemic", label: "The\u00A0Oral-Systemic\u00A0Link", end: true },
   { path: "/recommend", label: "Recommend" },
@@ -190,10 +192,8 @@ export default function OralSystemicLink() {
               )}
             </S.OralSystemicImgWrapperOuter>
 
-            <S.BottomText>
-              <p>Sharing this information with patients, in a way that is intended to inform and encourage
-                 good oral care can help solidify ritualistic habits and better overall health.</p>
-            </S.BottomText>
+            <BottomText text={`Sharing this information with patients, in a way that is intended to inform and encourage
+                 good oral care can help solidify ritualistic habits and better overall health.`} />
           </>
         ) : (
           <Outlet />

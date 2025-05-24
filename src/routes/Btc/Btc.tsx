@@ -7,6 +7,7 @@ import Col1Row2 from "../../assets/btc/col1-row2.svg";
 import PatientNeeds from "../../assets/btc/PatientNeeds.svg";
 import Technology from "../../assets/btc/Technology.svg";
 import Portfolio from "../../assets/btc/Portfolio.svg";
+import Flossers from "../../assets/btc/column2-flossers.svg";
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
@@ -51,7 +52,7 @@ export default function Btc() {
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>
-
+              <S.FlossersImg src={Flossers} />
             </S.ContentRight>
           </S.BtcBG>
           ) : (

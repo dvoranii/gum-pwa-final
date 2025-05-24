@@ -7,6 +7,7 @@ export const List = styled.ul`
   font-size: 1.54rem;
   margin-inline-start: 2.4rem;
   letter-spacing: -1.4px;
+  line-height: 1;
 
   @media screen and (min-width: 2300px) {
     font-size: 3rem;

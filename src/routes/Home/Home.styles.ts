@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
-import HomeBG from "../../assets/HOME-bg.svg";
+import HomeBG from "../../assets/HOME-bg.webp";
 
 export const PageContainerOuter = styled.div`
-  height: 100%;
+  background: #ffffff;  
+  height: 100vh;
   width: 100%;
   background-image: url(${HomeBG});
   background-size: cover;

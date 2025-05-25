@@ -127,10 +127,11 @@ export const ImgTextWrapper = styled.div`
 
 
   & > img {
-      width: 90%;
+      width: 80%;
       height: auto;
       max-width: 100%;
       object-fit: contain;
+      aspect-ratio:761/770;
   }
 
   @media screen and (min-width: 2300px) {

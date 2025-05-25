@@ -5,10 +5,10 @@ import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 // Images
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
-import PatientNeeds from "../../assets/toothbrush/PN.svg";
-import Technology from "../../assets/toothbrush/Tech.svg";
-import Portfolio from "../../assets/toothbrush/Port.svg";
-import Brushes from "../../assets/toothbrush/toothbrush.svg";
+import PatientNeeds2 from "../../assets/toothbrush/PN.png";
+import Technology2 from "../../assets/toothbrush/Tech.png";
+import Portfolio2 from "../../assets/toothbrush/Port.png";
+import Brushes from "../../assets/toothbrush/toothbrush.webp";
 
 const toothbrushNavItems = [
   { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
@@ -40,13 +40,13 @@ export default function Toothbrush() {
 
               <S.LinksWrapper>
                 <Link to="/toothbrush/tech">
-                  <S.LinkImg src={Technology} />
+                  <S.LinkImg src={Technology2} />
                 </Link>
                 <Link to="/toothbrush/patient">
-                  <S.LinkImg src={PatientNeeds} />
+                  <S.LinkImg src={PatientNeeds2} />
                 </Link>
                 <Link to="#">
-                  <S.LinkImg src={Portfolio} />
+                  <S.LinkImg src={Portfolio2} />
                 </Link>
               </S.LinksWrapper>
             </S.ContentLeft>

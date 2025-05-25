@@ -7,10 +7,10 @@ import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import ModuleTitle from "../../components/ModuleTitle/ModuleTitle";
 import BulletList from "../../components/BulletList/BulletList";
 import GumLogo from "../../assets/gum-logo.svg";
-import PatientImg from "../../assets/partners/Patient.svg";
-import ProfessionalImg from "../../assets/partners/Professional.svg";
-import PatAndProf from "../../assets/partners/Pat&Prof.svg";
-import Partners2 from "../../assets/partners/Partner2.svg";
+import PatientImg from "../../assets/partners/Patient.webp";
+import ProfessionalImg from "../../assets/partners/Professional.webp";
+import PatAndProf from "../../assets/partners/Pat&Prof.webp";
+import Partners2 from "../../assets/partners/Partner2.webp";
 
 import BottomText from "../../components/BottomText/BottomText";
 

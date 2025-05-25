@@ -18,10 +18,11 @@ export const BrushBG = styled.div`
   min-height: 400px;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
-  height: 80vh;
+  height: 82vh;
 
-  @media screen and (min-width: 2300px) {
-      // height: 72vh;
+
+  @media screen and (max-width: 1386px) {
+      margin-top: 0;
   }
     
 `;
@@ -48,6 +49,7 @@ export const BrushesImg = styled.img`
   object-fit: cover;
   align-self: stretch;
   display: block;
+  aspect-ratio: 2802/2634;
 
   @media screen and (max-width: 1386px) {
   }
@@ -115,18 +117,21 @@ export const LinksWrapper = styled.div`
      padding-left: 2rem;
      padding-top: 2rem;
      width: 100%;
+       gap: 3rem;
+
  }
 `;
 
 export const LinkImg = styled.img`
   width: 75%;
   height: auto;
+  aspect-ratio: 244/291;
 
   @media screen and (max-width: 1386px) {
     width: 90%;
   }
 
   @media screen and (min-width: 2300px) {
-    width: 80%
+    width: 100%
  }
 `;

@@ -4,10 +4,10 @@ import InnerNav from '../../components/InnerNav/InnerNav';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
-import PatientNeeds from "../../assets/btc/PatientNeeds.svg";
-import Technology from "../../assets/btc/Technology.svg";
-import Portfolio from "../../assets/btc/Portfolio.svg";
-import Flossers from "../../assets/btc/column2-flossers.svg";
+import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
+import Technology2 from "../../assets/btc/Technology.png";
+import Portfolio2 from "../../assets/btc/Portfolio.png";
+import Flossers from "../../assets/btc/column2-flossers.webp";
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
@@ -41,13 +41,13 @@ export default function Btc() {
 
               <S.LinksWrapper>
                 <Link to="/btc/tech">
-                  <S.LinkImg src={Technology} />
+                  <S.LinkImg src={Technology2} />
                 </Link>
                 <Link to="/btc/patient">
-                  <S.LinkImg src={PatientNeeds} />
+                  <S.LinkImg src={PatientNeeds2} />
                 </Link>
                 <Link to="#">
-                  <S.LinkImg src={Portfolio} />
+                  <S.LinkImg src={Portfolio2} />
                 </Link>
               </S.LinksWrapper>
             </S.ContentLeft>

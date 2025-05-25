@@ -18,8 +18,12 @@ export const BtcBG = styled.div`
   width: 100%;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
-  height: 80vh;
+  height: 82vh;
 
+  @media screen and (max-width: 1024px) {
+      height: 80vh;
+  }
+  
   @media screen and (max-width: 1366px) {
     margin-top: 0;
   }
@@ -45,7 +49,7 @@ export const ContentRight = styled.div`
 `;
 
 export const FlossersImg = styled.img`
-  width: 93%;
+  width: 100%;
   height: auto;
   margin-left: -88px;
 
@@ -120,18 +124,20 @@ export const LinksWrapper = styled.div`
      padding-left: 2rem;
      padding-top: 2rem;
      width: 100%;
+     gap: 3rem;
  }
 `;
 
 export const LinkImg = styled.img`
   width: 75%;
   height: auto;
+  aspect-ratio: 244/291;
 
   @media screen and (max-width: 1386px) {
     width: 90%;
   }
 
   @media screen and (min-width: 2300px) {
-    width: 80%
+    width: 100%
  }
 `;

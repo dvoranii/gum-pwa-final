@@ -115,14 +115,21 @@ export const CarouselSlide = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 2rem 4rem;
+
+  @media screen and (min-width: 2300px) {
+      padding: 4rem;
+  }
 `;
 
 export const SlideImage = styled.img`
-  width: 100%;
   height: 100%;
-  object-fit: contain;
+  width: auto;
+
+  @media screen and (max-width: 2300px) {
+    
+  }
 `;
 
 export const BaseImgWrapper = styled.div`

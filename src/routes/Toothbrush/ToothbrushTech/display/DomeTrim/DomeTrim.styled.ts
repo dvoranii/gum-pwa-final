@@ -82,20 +82,20 @@ export const ColumnRight = styled.div`
 
 export const BristlesDiagramWrapper= styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100%;
 
     img {
-        width: 70%;
+        width: 80%;
         height: auto;
         padding: 2.4rem 0;
     }
 
     @media screen and (min-width: 2300px) {
         img {
-            width: 90%;
+            width: 100%;
             height: auto;
             padding-top: 6.2rem;
         }

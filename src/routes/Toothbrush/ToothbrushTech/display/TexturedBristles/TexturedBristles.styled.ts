@@ -2,19 +2,48 @@ import { styled } from "styled-components";
 
 export const ContentWrapper = styled.div`
     display: flex;
+    flex-direction: column;
+    height: 100%;
 
 
-    @media screen and (min-width: 2300px) {
-        gap: 1.2rem;
-    }
 `
 
-export const ColumnLeft = styled.div`
-    max-width: 60%;
-    padding: 40px 0 40px 80px;
+export const TopRow = styled.div`
+    display: flex;
+    gap: 1.2rem;
 
     @media screen and (min-width: 2300px) {
-        padding: 120px 0 40px 100px;    
+        gap: 1.8rem;
+    }`;
+
+export const BottomRow = styled.div`
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img {
+        width: 100%;
+        margin-right: -100px;
+        margin-top: -20px;
+
+    }
+
+    @media screen and (min-width: 2300px) {
+        img {
+            margin-right: -200px;
+            width: 100%;
+        }
+    }
+`;
+
+export const ColumnLeft = styled.div`
+    max-width: 50%;
+    padding:80px 0 40px 80px;
+
+    @media screen and (min-width: 2300px) {
+        padding: 180px 0 0 140px;    
     }
 `;
 
@@ -28,6 +57,7 @@ export const MainTitle = styled.h1`
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
+      font-size: 3.8vw;
   }
 `;
 
@@ -49,7 +79,7 @@ export const Description = styled.ul`
 
   @media screen and (min-width: 2300px) {
     font-size:clamp(16px, 1.9vw, 3.4rem);
-    padding-right: 93px;
+    padding-right: 0px;
   }
 `;
 
@@ -62,6 +92,7 @@ export const ColLeftImgWrapper = styled.div`
 export const ColLeftList = styled.ul`
     font-family: 'Gotham', sans-serif;
     margin-top: 1.2rem;
+    padding-inline-start: 20px;
 
     li {
         font-size: clamp(16px, 1.4vw, 2.4rem);
@@ -71,16 +102,20 @@ export const ColLeftList = styled.ul`
 
     @media screen and (min-width: 2300px) {
         margin-top: 2.4rem;
+
+        li {
+            font-size: 1.6vw;
+        }
     }
 `;
 
 export const ColumnRight = styled.div`
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 `;
 
-export const BristlesDiagramWrapper= styled.div`
+export const TexturedBristlesDiagramWrapper= styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,16 +123,18 @@ export const BristlesDiagramWrapper= styled.div`
     height: 100%;
 
     img {
-        width: 70%;
+        width: 90%;
+        margin-right: -4vw;
         height: auto;
         padding: 2.4rem 0;
     }
 
     @media screen and (min-width: 2300px) {
         img {
-            width: 90%;
+            width: 100%;
             height: auto;
-            padding-top: 6.2rem;
+            // padding-top: 6.2rem;
+            margin-bottom: -220px;
         }
     }
 `

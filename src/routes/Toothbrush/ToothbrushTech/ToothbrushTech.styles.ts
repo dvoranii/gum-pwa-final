@@ -6,14 +6,12 @@ export const ContainerOuter = styled.div`
   width: 100%;
   height: 82vh;
   gap: 40px;
-
 `;
 
 export const HeaderLeft = styled.div`
   margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
-//   gap: 2vh;
   width: 20vh;
   padding-right: 20px;
 

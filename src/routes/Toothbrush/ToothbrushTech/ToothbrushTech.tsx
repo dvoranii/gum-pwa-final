@@ -12,6 +12,8 @@ import Circle4Active from "../../../assets/toothbrush/tech/circle-4-active.webp"
 
 import QuadGripDisplay from './display/QuadGrip/QuadGrip';
 import TaperedBristles from './display/TaperedBristles/TaperedBristles';
+import DomeTrim from "./display/DomeTrim/DomeTrim";
+import TexturedBristles from "./display/TexturedBristles/TexturedBristles";
 
 
 export default function ToothbrushTech() {
@@ -29,7 +31,11 @@ export default function ToothbrushTech() {
       case 1: 
         return <QuadGripDisplay/>
       case 2: 
+        return <DomeTrim/>
+      case 3: 
         return <TaperedBristles/>
+      case 4: 
+        return <TexturedBristles/>
     }
   }
 
@@ -75,7 +81,6 @@ export default function ToothbrushTech() {
       
       <S.TechContainer>
         <S.MainContent>
-          {/* <QuadGripDisplay/> */}
           {renderActiveDisplay()}
         </S.MainContent>
       </S.TechContainer>

@@ -24,9 +24,9 @@ import BloodActive from "../../assets/oral-systemic/blood-active.svg";
 import BloodBranchResult from "../../assets/oral-systemic/BloodBranchResult.svg";
 
 
-import Slide1 from "../../assets/carousel/flickity-slide-1.svg";
-import Slide2 from "../../assets/carousel/flickity-slide-2.svg";
-import Slide3 from "../../assets/carousel/flickity-slide-3.svg";
+import Slide1 from "../../assets/oral-systemic/carousel/OS-slide1.webp";
+import Slide2 from "../../assets/oral-systemic/carousel/OS-slide2.webp";
+import Slide3 from "../../assets/oral-systemic/carousel/OS-slide3.webp";
 
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import BulletList from "../../components/BulletList/BulletList";

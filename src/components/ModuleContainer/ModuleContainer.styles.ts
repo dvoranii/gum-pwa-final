@@ -5,8 +5,6 @@ interface ModuleContainerProps {
 }
 
 export const ModuleContainerStyles = styled.div<ModuleContainerProps>`
-    // padding-left: 5%;
-    // padding-top: 2rem;
     padding: ${(props) => props.$padding};
     height: 100%;
 

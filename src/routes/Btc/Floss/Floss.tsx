@@ -10,6 +10,7 @@ import Slide1Floss2 from "../../../assets/btc/floss/Slide1Floss2.webp";
 import Slide3 from "../../../assets/toothbrush/Adult/AdultSlide3.webp";
 
 
+
 export default function BtcFloss() {
 
   const flickityOptions = {
@@ -23,7 +24,7 @@ export default function BtcFloss() {
   };
 
 
-  return (
+  return (  
     <S.FlossWrapperOuter>
       <S.CarouselWrapper>
         <Flickity
@@ -40,6 +41,38 @@ export default function BtcFloss() {
                         <img src={Slide1Floss1}/>
                     </S.ImgWrapper>
                     <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle> 
+                    <small>(formerly known as EEZ-THRU)®</small> 
+                    <S.ListContainer>
+                        <ul>
+                            <li>Non-stick floss glides effortlessly between even the tightest contacts and below the gumline</li>
+                            <li>Monofilament constructions is exceptionally strong</li>
+                            <li>Satin-like finish is soft and gentle on gums</li>
+                        </ul>  
+                        {/* <hr/> */}
+                    </S.ListContainer>  
+                </S.Slide1Column1>
+                <S.Slide1Column2>
+                    <S.ImgWrapper><img src={Slide1Floss2}/></S.ImgWrapper>
+                    <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
+                    
+                        <S.ListContainer $paddingBottom={"3rem"}>
+                            <ul>
+                                <li>Textured, twisted floss with fresh minty flavour</li>
+                                <li>Removes <b>2x more plaque</b></li>
+                                <li>Satin-like finish is soft and gentle on gums</li>
+                            </ul>  
+                        </S.ListContainer> 
+                         
+                </S.Slide1Column2>     
+            </S.SlideWrapper>
+          </S.CarouselSlide>
+          <S.CarouselSlide>
+            <S.SlideWrapper>
+                <S.Slide1Column1>
+                    <S.ImgWrapper>
+                        <img src={Slide1Floss1}/>
+                    </S.ImgWrapper>
+                    <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle> 
                     <small>(formerly known as EEZ-THRU)®</small>     
                 </S.Slide1Column1>
                 <S.Slide1Column2>
@@ -62,9 +95,6 @@ export default function BtcFloss() {
                     <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
                 </S.Slide1Column2>     
             </S.SlideWrapper>
-          </S.CarouselSlide>
-          <S.CarouselSlide>
-            <img src={Slide3}/>
           </S.CarouselSlide>
 
         </Flickity>

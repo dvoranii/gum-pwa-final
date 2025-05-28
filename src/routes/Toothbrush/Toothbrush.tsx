@@ -22,13 +22,13 @@ const toothbrushNavItems = [
 
 export default function Toothbrush() {
   const location = useLocation();
-  const isHomeRoute = location.pathname === "/toothbrush";
+  const isHomePage = location.pathname === "/toothbrush";
 
   return (
-    <ModuleContainer>
+    <ModuleContainer $isHomePage={isHomePage}>
       <InnerNav navItems={toothbrushNavItems} />
       <S.Content>
-      {isHomeRoute ? (
+      {isHomePage ? (
            <S.BrushBG>
             <S.ContentLeft>
               <S.IntroTitleWrapper>

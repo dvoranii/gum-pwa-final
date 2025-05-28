@@ -87,7 +87,7 @@ export default function OralSystemicLink() {
 
 
   return (
-    <ModuleContainer>
+    <ModuleContainer $isHomePage={isHomePage}>
       <InnerNav navItems={oralSystemicNavItems} />
       <S.Content>
         {isHomePage ? (

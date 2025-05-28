@@ -26,7 +26,7 @@ export default function Btc() {
   const isHomePage = location.pathname === '/btc';
 
   return (
-    <ModuleContainer>   
+    <ModuleContainer $isHomePage={isHomePage}>   
         <InnerNav navItems={btcNavItems} />
         <S.Content>
         {isHomePage ? (

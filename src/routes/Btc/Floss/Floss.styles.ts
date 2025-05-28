@@ -13,12 +13,13 @@ export const ShopifyIcon = styled.img`
 
 export const SlideWrapper = styled.div`
     display: flex;
-    gap: 5.4rem;
+    gap: 2.4rem;
+    width: 90%
 `;
 
 export const ImgWrapper = styled.div`
     img {
-        width: 55vh;
+        width: 85%;
     }
 `;
 
@@ -33,7 +34,7 @@ export const ColumnTitle = styled.h4`
 `;
 
 export const Slide1Column1 = styled.div`
-
+    min-width: 50%;
     small {
         font-family: 'Gotham', sans-serif;
         font-weight: 400;
@@ -42,7 +43,31 @@ export const Slide1Column1 = styled.div`
         color: #00a16b;
     }
 `;
-export const Slide1Column2 = styled.div``;
+
+interface ListContainerProps {
+    $paddingBottom?: string
+}
+
+export const ListContainer = styled.div<ListContainerProps>`
+    border-bottom: 1px solid grey;
+    padding-right: 1.8rem;
+    width: 90%;
+
+        
+    ul {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(18px, 2vw, 1.25rem);
+        color: #666666;
+        margin-inline-start: 1.4vw;
+        padding: 1.2rem 0;
+        padding-bottom: ${(props) => props.$paddingBottom};
+        
+    
+    }
+`;
+export const Slide1Column2 = styled.div`
+    min-width: 50%; 
+`;
 
 export const CarouselWrapper = styled.div`
     display: flex;
@@ -67,6 +92,10 @@ export const CarouselWrapper = styled.div`
             width: auto;
             text-align: right;
             z-index: 10; 
+
+            @media screen and (min-width: 2300px) {
+                bottom: -112px;
+            }
             
             .dot {
                 width: 20px;
@@ -92,5 +121,4 @@ export const CarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 `;

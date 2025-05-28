@@ -6,6 +6,7 @@ export const ContainerOuter = styled.div`
   width: 100%;
   height: 82vh;
   gap: 40px;
+  padding-left: 5%;
 `;
 
 export const HeaderLeft = styled.div`

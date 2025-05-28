@@ -21,7 +21,7 @@ const partnersNavItems = [
 
 export default function Partners() {
   const location = useLocation();
-  const isHomeRoute = location.pathname === "/partners";
+  const isHomePage = location.pathname === "/partners";
   const [showPartners2, setShowPartners2] = useState(false);
 
   const togglePartnersView = () => {
@@ -29,11 +29,11 @@ export default function Partners() {
   }
 
   return (
-    <ModuleContainer>
+    <ModuleContainer $isHomePage={isHomePage}>
       <InnerNav navItems={partnersNavItems} />
        
       <S.Content>
-      {isHomeRoute ? (
+      {isHomePage ? (
           <>
             <ModuleTitle title={"Partners in Oral Care"}/>
             <BulletList items={['Engineering superior products for specific patient needs',

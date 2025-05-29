@@ -7,9 +7,9 @@ import ShopifyIcon from "../../../assets/btc/shopify-icon.webp";
 
 import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1.webp";
 import Slide1Floss2 from "../../../assets/btc/floss/Slide1Floss2.webp";
-import Slide3 from "../../../assets/toothbrush/Adult/AdultSlide3.webp";
 
-
+import Slide2Floss1 from "../../../assets/btc/floss/Slide2Floss1.webp";
+import Slide2Floss2 from "../../../assets/btc/floss/Slide2Floss2.png";
 
 export default function BtcFloss() {
 
@@ -40,7 +40,7 @@ export default function BtcFloss() {
           <S.CarouselSlide>
             <S.SlideWrapper>
                 <S.Slide1Column1>
-                    <S.ImgWrapper>
+                    <S.ImgWrapper $width={"85%"}>
                         <img src={Slide1Floss1}/>
                     </S.ImgWrapper>
                     <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle> 
@@ -72,7 +72,7 @@ export default function BtcFloss() {
                     </S.ListContainer>  
                 </S.Slide1Column1>
                 <S.Slide1Column2>
-                    <S.ImgWrapper><img src={Slide1Floss2}/></S.ImgWrapper>
+                    <S.ImgWrapper $width={"85%"}><img src={Slide1Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
                         <S.ListContainer>
                             <ul>
@@ -105,8 +105,8 @@ export default function BtcFloss() {
           <S.CarouselSlide>
             <S.SlideWrapper>
                 <S.Slide1Column1>
-                    <S.ImgWrapper>
-                        <img src={Slide1Floss1}/>
+                    <S.ImgWrapper $width={"85%"}>
+                        <img src={Slide2Floss1}/>
                     </S.ImgWrapper>
                     <S.ColumnTitle>Deep Clean Expanding Dental Floss</S.ColumnTitle> 
                     <S.ListContainer>
@@ -134,7 +134,7 @@ export default function BtcFloss() {
                     </S.ListContainer>  
                 </S.Slide1Column1>
                 <S.Slide1Column2>
-                    <S.ImgWrapper><img src={Slide1Floss2}/></S.ImgWrapper>
+                    <S.ImgWrapper $width={"100%"}><img src={Slide2Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle>Pro-Wave® Dental Floss</S.ColumnTitle>
                         <small>(formerly known as EEZ-THRU)®</small> 
                         <S.ListContainer>

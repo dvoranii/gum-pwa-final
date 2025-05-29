@@ -30,9 +30,14 @@ export const SlideWrapper = styled.div`
     }
 `;
 
-export const ImgWrapper = styled.div`
+interface ImgWrapperProps {
+    $width: string
+
+}
+
+export const ImgWrapper = styled.div<ImgWrapperProps>`
     img {
-        width: 85%;
+        width: ${(props) => props.$width};
     }
 `;
 
@@ -149,8 +154,8 @@ export const CarouselWrapper = styled.div`
             z-index: 10; 
 
             @media screen and (min-width: 2300px) {
-                bottom: -56px;
-                right: 168px;
+                bottom: -24px;
+                right: 170px;
             }
             
             .dot {

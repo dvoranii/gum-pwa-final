@@ -58,7 +58,7 @@ export const CarouselSlide = styled.div`
 
   @media screen and (min-width: 2300px) {
     img {
-        width: 100%;
+        width:
     }
   }
 `;

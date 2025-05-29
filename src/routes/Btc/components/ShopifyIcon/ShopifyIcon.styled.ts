@@ -1,0 +1,12 @@
+import { styled } from "styled-components";
+
+export const IconWrapper = styled.img`
+    position: absolute;
+    bottom: -80px;
+    right: 32px;
+    width: clamp(60px, 3vw, 80px);
+
+    @media screen and (min-width: 2300px) {
+        width: 120px;
+    }
+`;

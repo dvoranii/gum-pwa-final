@@ -1,20 +1,8 @@
 import { styled } from "styled-components";
 
 export const FlossWrapperOuter = styled.div`
+    position: relative;
 `;
-
-export const ShopifyIcon = styled.img`
-    position: absolute;
-    bottom: 2vw;
-    right: 2vw;
-    width: clamp(60px, 3vw, 80px);
-
-    @media screen and (min-width: 2300px) {
-        width: 120px;
-    }
-            
-`;
-
 
 export const SlideWrapper = styled.div`
     display: flex;
@@ -51,14 +39,13 @@ export const ColumnTitle = styled.h4`
     padding-top: 1.2rem;
 `;
 
-export const Slide1Column1 = styled.div`
+export const SlideColumn1 = styled.div`
     min-width: 50%;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 `;
 
-export const Slide1Column2 = styled.div`
+export const SlideColumn2 = styled.div`
     min-width: 50%; 
     display: flex;
     flex-direction: column;
@@ -135,6 +122,7 @@ export const CarouselWrapper = styled.div`
     align-items: center;
     width: 100%;
     height: auto;
+    position: relative;
 
     .carousel {
         width: 100%;
@@ -154,7 +142,7 @@ export const CarouselWrapper = styled.div`
             z-index: 10; 
 
             @media screen and (min-width: 2300px) {
-                bottom: -24px;
+                bottom: -48px;
                 right: 170px;
             }
             

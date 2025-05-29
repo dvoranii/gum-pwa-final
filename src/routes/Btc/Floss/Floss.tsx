@@ -3,13 +3,16 @@ import * as S from "./Floss.styles";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
-import ShopifyIcon from "../../../assets/btc/shopify-icon.webp";
+// import ShopifyIcon from "../../../assets/btc/shopify-icon.webp";
+import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1.webp";
 import Slide1Floss2 from "../../../assets/btc/floss/Slide1Floss2.webp";
 
 import Slide2Floss1 from "../../../assets/btc/floss/Slide2Floss1.webp";
 import Slide2Floss2 from "../../../assets/btc/floss/Slide2Floss2.png";
+
+import Slide3Floss from "../../../assets/btc/floss/Slide3Floss.webp";
 
 export default function BtcFloss() {
 
@@ -39,7 +42,7 @@ export default function BtcFloss() {
 
           <S.CarouselSlide>
             <S.SlideWrapper>
-                <S.Slide1Column1>
+                <S.SlideColumn1>
                     <S.ImgWrapper $width={"85%"}>
                         <img src={Slide1Floss1}/>
                     </S.ImgWrapper>
@@ -70,8 +73,8 @@ export default function BtcFloss() {
                             </S.Row>
                         </S.InfoGrid>
                     </S.ListContainer>  
-                </S.Slide1Column1>
-                <S.Slide1Column2>
+                </S.SlideColumn1>
+                <S.SlideColumn2>
                     <S.ImgWrapper $width={"85%"}><img src={Slide1Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
                         <S.ListContainer>
@@ -96,7 +99,7 @@ export default function BtcFloss() {
                         </S.InfoGrid>
 
                         </S.ListContainer>  
-                </S.Slide1Column2>     
+                </S.SlideColumn2>     
             </S.SlideWrapper>
           </S.CarouselSlide>
 
@@ -104,7 +107,7 @@ export default function BtcFloss() {
 
           <S.CarouselSlide>
             <S.SlideWrapper>
-                <S.Slide1Column1>
+                <S.SlideColumn1>
                     <S.ImgWrapper $width={"85%"}>
                         <img src={Slide2Floss1}/>
                     </S.ImgWrapper>
@@ -132,8 +135,8 @@ export default function BtcFloss() {
                             <br/>
                         </S.InfoGrid>
                     </S.ListContainer>  
-                </S.Slide1Column1>
-                <S.Slide1Column2>
+                </S.SlideColumn1>
+                <S.SlideColumn2>
                     <S.ImgWrapper $width={"100%"}><img src={Slide2Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle>Pro-Wave® Dental Floss</S.ColumnTitle>
                         <small>(formerly known as EEZ-THRU)®</small> 
@@ -174,34 +177,40 @@ export default function BtcFloss() {
                         </S.InfoGrid>
 
                         </S.ListContainer>  
-                </S.Slide1Column2>     
+                </S.SlideColumn2>     
             </S.SlideWrapper>
           </S.CarouselSlide>
 
         {/* Slide 3 */}
           <S.CarouselSlide>
             <S.SlideWrapper>
-                <S.Slide1Column1>
-                    <S.ImgWrapper>
-                        <img src={Slide1Floss1}/>
+                <S.SlideColumn1>
+                    <S.ImgWrapper $width={"100%"}>
+                        <img src={Slide3Floss}/>
                     </S.ImgWrapper>
-                    <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle> 
-                    <small>(formerly known as EEZ-THRU)®</small>     
-                </S.Slide1Column1>
-                <S.Slide1Column2>
-                    <S.ImgWrapper><img src={Slide1Floss2}/></S.ImgWrapper>
-                    <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
-                </S.Slide1Column2>     
+                    <S.ColumnTitle>Fine Dental Floss</S.ColumnTitle> 
+                        <S.ListContainer>
+                            <ul>
+                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline</li>                  
+                            </ul>  
+
+                        <S.InfoGrid>
+                            <S.Row>                            
+                                <S.Column>1940 Fine Waxed Mint</S.Column>
+                                <S.Column>165m</S.Column>
+                                <S.Column>12/bag</S.Column>
+                            </S.Row>
+                        </S.InfoGrid>
+
+                        </S.ListContainer>  
+                </S.SlideColumn1>
             </S.SlideWrapper>
           </S.CarouselSlide>
 
         </Flickity>
-
-        <a href="https://www.shopify.com/ca" target="_blank">
-            <S.ShopifyIcon src={ShopifyIcon} alt="" />
-        </a>
         
       </S.CarouselWrapper>
+      <ShopifyIcon />
     </S.FlossWrapperOuter>
   );
 }

@@ -11,6 +11,7 @@ function App() {
     switch (location.pathname) {
       case '/toothbrush/adult':
       case '/btc/floss':
+      case '/btc/flossers':
         return true;
       default:
         return false;

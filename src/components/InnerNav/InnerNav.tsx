@@ -22,7 +22,9 @@ export default function InnerNav({ navItems }: InnerNavProps) {
          
           const isActive = item.end 
             ? location.pathname === item.path
-            : location.pathname.startsWith(item.path);
+            : location.pathname.startsWith(item.path) &&
+            (location.pathname === item.path 
+            || location.pathname.startsWith(`${item.path}/`));
           
           return (
             <S.TabLink 

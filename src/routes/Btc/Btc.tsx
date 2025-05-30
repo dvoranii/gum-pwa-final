@@ -9,6 +9,8 @@ import Technology2 from "../../assets/btc/Technology.png";
 import Portfolio2 from "../../assets/btc/Portfolio.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
+import PatientBG from "../../assets/btc/PatientBG.webp";
+
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
   { path: "/btc/tech", label: "Tech" },
@@ -24,9 +26,12 @@ export default function Btc() {
 
   const location = useLocation();
   const isHomePage = location.pathname === '/btc';
+  const isPatientRoute = location.pathname === '/btc/patient';
+
+  const backgroundImage = isPatientRoute ? `${PatientBG}` : undefined;
 
   return (
-    <ModuleContainer $isHomePage={isHomePage}>   
+    <ModuleContainer $isHomePage={isHomePage} $backgroundImage={backgroundImage}>   
         <InnerNav navItems={btcNavItems} />
         <S.Content>
         {isHomePage ? (

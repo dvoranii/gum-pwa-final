@@ -4,6 +4,5 @@ export default function Home(){
     return (
         <S.PageContainerOuter>
         </S.PageContainerOuter>
-        
     )
 }

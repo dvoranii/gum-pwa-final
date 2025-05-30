@@ -105,7 +105,7 @@ export const SlideColumn1 = styled.div`
 
       span:nth-of-type(2) {
          text-transform: uppercase;
-         font-weight: 300;
+         font-weight: 400;
       }
 
       span:nth-of-type(3) {  

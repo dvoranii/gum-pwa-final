@@ -3,7 +3,7 @@ import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
 import Slide1Graphic from "../../../assets/btc/flosser/Slide1Graphic.webp";
-// import ShopifyIcon from "../../../assets/btc/shopify-icon.webp";
+import Slide2Graphic from "../../../assets/btc/flosser/Slide2Graphic.webp";
 import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 export default function BtcFlossers(){
@@ -109,10 +109,37 @@ export default function BtcFlossers(){
              <S.CarouselSlide>
                 <S.SlideWrapper>
                     <S.SlideColumn1>
-                        <h4>Hello</h4>
+                      <h4><span>Professional</span> <span>Clean Plus</span><br/> <span>Flosser Picks</span> <span>Mint</span></h4>
+                        <S.ListContainer>
+                            <ul>
+                                <li>Specialy designed rubber pick massages gums while gently removing debris</li>
+                                <li>Strong floss designed to slide easily between teeth and resist shredding or breaking</li>
+                                
+                            </ul>  
+                        </S.ListContainer>
+                        <h4><span>Dual</span> <span>Technique®</span><br/> <span>Flossers</span> <span>Mint</span></h4>
+                        <S.ListContainer>
+                            <ul>
+                                <li>Dual ends specifically designed to reach front and back teeth</li>
+                                <li>Twisted mint floss on the angled side removes 2x more plaque<sup>2</sup> and covers 30% more surface area<sup>3</sup></li>
+                                
+                            </ul>  
+                        </S.ListContainer>
                     </S.SlideColumn1>
                     <S.SlideColumn2>
-                        <h4>Hello</h4>
+                        <S.ImgWrapper>
+                            <img src={Slide2Graphic}/>
+                        </S.ImgWrapper>
+                         <S.InfoGrid>
+                                <S.Row>                            
+                                    <S.Column>885 Professional Clean PLUS Flosser Mint</S.Column>
+                                    <S.Column>48 packs of 2</S.Column>
+                                </S.Row>
+                                <S.Row>
+                                    <S.Column>821 Dual Technique® Flossers Mint</S.Column>
+                                    <S.Column>48 packs of 3</S.Column>
+                                </S.Row>
+                        </S.InfoGrid>
                     </S.SlideColumn2>
 
                     </S.SlideWrapper>

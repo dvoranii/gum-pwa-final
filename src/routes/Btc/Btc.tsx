@@ -9,7 +9,7 @@ import Technology2 from "../../assets/btc/Technology.png";
 import Portfolio2 from "../../assets/btc/Portfolio.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
-import PatientBG from "../../assets/btc/PatientBG.webp";
+import PatientBG from "../../assets/btc/patient/PatientBG.webp";
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },

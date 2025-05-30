@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FlossersContainer = styled.div`
-   padding-left: 5%;
+   // padding-left: 5%;
    position: relative;
 `;
 
@@ -62,9 +62,9 @@ export const CarouselWrapper = styled.div`
 
 export const SlideWrapper = styled.div`
     display: flex;
-   //  gap: 2.4rem;
-    width: 100%;
-    height: 100%;
+    gap: 2.4rem;
+    width: 90%;
+   //  height: 100%;
     `;
 
 export const CarouselSlide = styled.div`
@@ -74,14 +74,11 @@ export const CarouselSlide = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 2300px) {
-      padding-top: 4.8rem;
-  }
 
 `;
 
 export const SlideColumn1 = styled.div`
-    min-width: 45%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -121,7 +118,7 @@ export const SlideColumn1 = styled.div`
 `;
 
 export const SlideColumn2 = styled.div`
-    min-width: 60%; 
+    width: 55%; 
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -133,7 +130,7 @@ export const ImgWrapper = styled.div`
    border-bottom: 1px solid grey;
    img {
       padding: 1rem;
-      width: 80%;
+      width: 90%;
     }
 
    @media screen and (max-width: 1368px) {
@@ -144,7 +141,7 @@ export const ImgWrapper = styled.div`
 
    @media screen and (min-width: 2300px) {
       img {
-         width: 94%;
+         width: 100%;
       }
     }
 
@@ -177,9 +174,9 @@ export const ListContainer = styled.div`
 
 export const InfoGrid =  styled.div`
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns:2fr 1fr;
     gap: 0.25rem;
-    width: 75%;
+    width: 90%;
     column-gap: 1rem;
 
     font-family: "Gotham", sans-serif;

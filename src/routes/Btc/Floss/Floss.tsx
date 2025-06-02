@@ -3,7 +3,6 @@ import * as S from "./Floss.styles";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
-// import ShopifyIcon from "../../../assets/btc/shopify-icon.webp";
 import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1.webp";
@@ -56,21 +55,21 @@ export default function BtcFloss() {
                         </ul>  
 
                         <S.InfoGrid>
-                            <S.Row>                            
+                            <S.InfoGridRow>                            
                                 <S.Column>2010 Comfort Slide</S.Column>
                                 <S.Column>3.6m</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
-                            <S.Row>
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>
                                 <S.Column>2014 Comfort Slide Mint</S.Column>
                                 <S.Column>3.6m</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
-                            <S.Row>
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>
                                 <S.Column>2006 Comfort Slide Mint</S.Column>
                                 <S.Column>2x40m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
+                            </S.InfoGridRow>
                         </S.InfoGrid>
                     </S.ListContainer>  
                 </S.SlideColumn1>
@@ -85,16 +84,16 @@ export default function BtcFloss() {
                             </ul>  
 
                         <S.InfoGrid>
-                            <S.Row>                            
+                            <S.InfoGridRow>                            
                                 <S.Column>2008 Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>3.6mm</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
-                            <S.Row>                            
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>                            
                                 <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
+                            </S.InfoGridRow>
                             <br/>
                         </S.InfoGrid>
 
@@ -120,16 +119,16 @@ export default function BtcFloss() {
                         </ul>  
 
                         <S.InfoGrid>
-                            <S.Row>                            
+                            <S.InfoGridRow>                            
                                 <S.Column>2010 Comfort Slide</S.Column>
                                 <S.Column>3.6m</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
-                            <S.Row>
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>
                                 <S.Column>2014 Comfort Slide Mint</S.Column>
                                 <S.Column>3.6m</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
+                            </S.InfoGridRow>
                             <br/>
                             <br/>
                             <br/>
@@ -148,31 +147,31 @@ export default function BtcFloss() {
                             </ul>  
 
                         <S.InfoGrid>
-                            <S.Row>                            
+                            <S.InfoGridRow>                            
                                 <S.Column>2008 Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>3.6mm</S.Column>
                                 <S.Column>144/box</S.Column>
-                            </S.Row>
-                            <S.Row>                            
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>                            
                                 <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
-                            <S.Row>                            
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>                            
                                 <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
-                            <S.Row>                            
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>                            
                                 <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
-                            <S.Row>                            
+                            </S.InfoGridRow>
+                            <S.InfoGridRow>                            
                                 <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
+                            </S.InfoGridRow>
                             
                         </S.InfoGrid>
 
@@ -195,11 +194,11 @@ export default function BtcFloss() {
                             </ul>  
 
                         <S.InfoGrid>
-                            <S.Row>                            
+                            <S.InfoGridRow>                            
                                 <S.Column>1940 Fine Waxed Mint</S.Column>
                                 <S.Column>165m</S.Column>
                                 <S.Column>12/bag</S.Column>
-                            </S.Row>
+                            </S.InfoGridRow>
                         </S.InfoGrid>
 
                         </S.ListContainer>  

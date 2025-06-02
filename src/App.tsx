@@ -12,6 +12,7 @@ function App() {
       case '/toothbrush/adult':
       case '/btc/floss':
       case '/btc/flossers':
+      case '/btc/id-brushes':
         return true;
       default:
         return false;

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { colors } from "../../../constants/colors";
 
 export const FlossWrapperOuter = styled.div`
     position: relative;
@@ -14,7 +15,7 @@ export const SlideWrapper = styled.div`
         font-weight: 400;
         font-size:clamp(1.2rem, 1.2vw, 1.8rem);
         font-style: italic;
-        color: #00a16b;
+        color: ${colors.primary};
     }
 `;
 
@@ -35,7 +36,7 @@ export const ColumnTitle = styled.h4`
     font-size: clamp(16px, 1.8vw, 2.6rem);
     text-transform: uppercase;
     letter-spacing: -1px;
-    color: #00a16b;
+    color: ${colors.primary};
     padding-top: 1.2rem;
 `;
 
@@ -63,7 +64,7 @@ export const ListContainer = styled.div`
     ul {
         font-family: 'Gotham', sans-serif;
         font-size:clamp(1.2rem, 1.2vw, 1.8rem);
-        color: #666666;
+        color: ${colors.black};
         padding: 1.2rem 0;
         list-style: none;
         line-height: 1.3;
@@ -78,7 +79,7 @@ export const ListContainer = styled.div`
             position: absolute;
             left: 0;
             font-size: 18px; 
-            color: #666666;
+            color: ${colors.black};
             vertical-align: middle;
             line-height: 1.3; 
         }
@@ -109,7 +110,7 @@ export const InfoGrid =  styled.div`
     color: #666666;
 `;
 
-export const Row = styled.div`
+export const InfoGridRow = styled.div`
     display: contents;
 `;
 
@@ -150,11 +151,11 @@ export const CarouselWrapper = styled.div`
                 width: 16px;
                 height: 16px;
                 opacity: 1 !important;
-                background: #01763f;
+                background: ${colors.dotBG};
                 margin: 0 6px;
                 
                 &.is-selected {
-                    background: #4fcccd;
+                    background: ${colors.dotBGActive};
                 }
 
                 @media screen and (min-width: 2300px) {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../../constants/colors";
 
 export const FlossersContainer = styled.div`
    // padding-left: 5%;
@@ -38,11 +39,11 @@ export const CarouselWrapper = styled.div`
                 width: 16px;
                 height: 16px;
                 opacity: 1 !important;
-                background: #01763f;
+                background: ${colors.dotBG};
                 margin: 0 6px;
                 
                 &.is-selected {
-                    background: #4fcccd;
+                    background: ${colors.dotBGActive};
                 }
 
                 @media screen and (min-width: 2300px) {
@@ -93,7 +94,7 @@ export const SlideColumn1 = styled.div`
       font-weight: 300;
       font-family: "Gotham", sans-serif;
       font-size: clamp(18px, 1.8vw, 2.4rem);
-      color: #00a16b;
+      color: ${colors.primary};
 
       span:nth-of-type(1) {
          font-weight: 600;
@@ -153,7 +154,7 @@ export const ListContainer = styled.div`
    ul {
         font-family: 'Gotham', sans-serif;
         font-size:clamp(1rem, 1.2vw, 1.8rem);
-        color: #666666;
+        color: ${colors.black};
         padding: 0.4rem 0;
         line-height: 1.3;
         margin-inline-start: 30px;
@@ -182,7 +183,7 @@ export const InfoGrid =  styled.div`
     font-family: "Gotham", sans-serif;
     padding-top: 1.2rem;
     font-size: clamp(14px, 1vw, 1.4rem);
-    color: #666666;
+    color: ${colors.black};
 
     @media screen and (max-width: 1368px) {
       width: 85%;

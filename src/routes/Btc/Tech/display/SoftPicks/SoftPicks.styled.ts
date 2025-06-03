@@ -36,17 +36,21 @@ export const Trademark = styled.sup`
 
 export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(20.2px,2.2vw,3rem);
+  font-size: clamp(18px,1.8vw,2.4rem);
   color: #666666;
   line-height: 1.25;
   margin-bottom: 30px;
   padding-inline-start: 20px;
   letter-spacing: -1px;
-  padding-right: 80px;
+  padding-right: 185px;
 
   @media screen and (max-width: 1368px) {
     font-size: 2vw;
     padding-right: 0;
+  }
+
+  @media screen and (min-width: 2300px) {
+    font-size: 2vw;
   }
 `;
 

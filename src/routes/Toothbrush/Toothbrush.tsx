@@ -3,7 +3,6 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-// Images
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
 import PatientNeeds2 from "../../assets/toothbrush/PN.png";
 import Technology2 from "../../assets/toothbrush/Tech.png";

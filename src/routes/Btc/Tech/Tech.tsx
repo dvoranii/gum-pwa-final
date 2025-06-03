@@ -12,6 +12,9 @@ import { useState } from "react";
 
 import ProxaTriangular from "./display/ProxaTriangular/ProxaTriangular";
 import SoftPicks from "./display/SoftPicks/SoftPicks";
+import DualDefence from "./display/DualDefence/DualDefence";
+import DualTechnique from "./display/DualTechnique/DualTechnique";
+
 
 export default function BtcTech() {
 
@@ -30,10 +33,10 @@ export default function BtcTech() {
         return <ProxaTriangular/>
       case 2: 
         return <SoftPicks/>
-      // case 3: 
-      //   return <TaperedBristles/>
-      // case 4: 
-      //   return <TexturedBristles/>
+      case 3: 
+        return <DualDefence/>
+      case 4: 
+        return <DualTechnique/>
     }
   }
   

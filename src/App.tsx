@@ -13,6 +13,7 @@ function App() {
       case '/btc/floss':
       case '/btc/flossers':
       case '/btc/id-brushes':
+      case '/btc/soft-picks':
         return true;
       default:
         return false;

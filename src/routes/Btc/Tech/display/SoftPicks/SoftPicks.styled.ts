@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  padding: 40px 20px 40px 80px;
+  padding: 60px 20px 40px 80px;
 
  @media screen and (min-width: 2300px) {
      padding: 120px 30px 40px 141px;
@@ -18,9 +18,10 @@ export const MainTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: clamp(18px, 3.4vw, 6.4rem);
+  font-size: clamp(18px, 4.2vw, 6.4rem);
   line-height: 1;
   margin-bottom: 20px;
+  letter-spacing: -2px;
 `;
 
 export const Trademark = styled.sup`
@@ -35,16 +36,16 @@ export const Trademark = styled.sup`
 
 export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(16px, 1.8vw, 2.4rem);
+  font-size: clamp(20.2px,2.2vw,3rem);
   color: #666666;
   line-height: 1.25;
   margin-bottom: 30px;
   padding-inline-start: 20px;
   letter-spacing: -1px;
-  padding-right: 120px;
+  padding-right: 80px;
 
   @media screen and (max-width: 1368px) {
-    font-size: 1.8vw;
+    font-size: 2vw;
     padding-right: 0;
   }
 `;
@@ -106,7 +107,7 @@ export const CrossSectionDiagram = styled.div`
   margin-bottom: 10px;
 
   img {
-    width: 65%;
+    width: 70%;
     height: auto;
   }
 
@@ -121,8 +122,9 @@ export const CrossSectionDiagram = styled.div`
   }
 
   @media screen and (min-width: 2300px) {
+    padding-top: 2.4rem;
     img {
-        width: 100%;
+        width: 95%;
     }
   }
 
@@ -143,31 +145,6 @@ export const CrossSectionIcon = styled.div`
 
 `;
 
-export const BenefitsList = styled.ul`
-    line-height: 1.35;
-    padding-inline-start: 20px;
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 1.2rem;
-    }
-`;
-
-export const BenefitItem = styled.li`
-  font-family: "Gotham", sans-serif;
-  font-size: clamp(20px, 1.4vw, 2.4rem);
-  color: #00a16b;
-  font-weight: 600;
-  margin: 0;
-
-  @media screen and (max-width: 1368px) {
-    font-size: 16px;
-  } 
-
-  @media screen and (min-width: 2300px) {
-    font-size: 1.6vw;
-  }
-`;
-
 export const HandImage = styled.div`
   display: flex;
   align-items: center;
@@ -176,15 +153,6 @@ export const HandImage = styled.div`
   img {
     width: auto;
     height: 100%;
-    margin-top: 64px;
-    margin-right: 0px;
-  }
-
-  @media screen and (min-width: 2300px) {
-      img {
-        height: 95%;
-        margin-right: -20px;
-    }
   }
 
 `;

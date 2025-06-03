@@ -11,6 +11,7 @@ import Circle4Active from "../../../assets/btc/tech/circle-4-active.webp";
 import { useState } from "react";
 
 import ProxaTriangular from "./display/ProxaTriangular/ProxaTriangular";
+import SoftPicks from "./display/SoftPicks/SoftPicks";
 
 export default function BtcTech() {
 
@@ -27,8 +28,8 @@ export default function BtcTech() {
     switch(activeIcon) {
       case 1: 
         return <ProxaTriangular/>
-      // case 2: 
-      //   return <DomeTrim/>
+      case 2: 
+        return <SoftPicks/>
       // case 3: 
       //   return <TaperedBristles/>
       // case 4: 

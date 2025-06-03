@@ -1,10 +1,86 @@
 import * as S from "./Tech.styles"
 
+import Circle1 from "../../../assets/btc/tech/circle-1.webp";
+import Circle1Active from "../../../assets/btc/tech/circle-1-active.webp";
+import Circle2 from "../../../assets/btc/tech/circle-2.webp";
+import Circle2Active from "../../../assets/btc/tech/circle-2-active.webp";
+import Circle3 from "../../../assets/btc/tech/circle-3.webp";
+import Circle3Active from "../../../assets/btc/tech/circle-3-active.webp";
+import Circle4 from "../../../assets/btc/tech/circle-4.webp";
+import Circle4Active from "../../../assets/btc/tech/circle-4-active.webp";
+import { useState } from "react";
+
+import ProxaTriangular from "./display/ProxaTriangular/ProxaTriangular";
+
 export default function BtcTech() {
+
+  const [activeIcon,setActiveIcon] = useState<number | null>(1);
+
+  const handleIconTouch = (iconNumber: number) => {
+      if (activeIcon !== iconNumber) {
+        setActiveIcon(iconNumber);
+    }
+  };
+
+  
+  const renderActiveDisplay = () => {
+    switch(activeIcon) {
+      case 1: 
+        return <ProxaTriangular/>
+      // case 2: 
+      //   return <DomeTrim/>
+      // case 3: 
+      //   return <TaperedBristles/>
+      // case 4: 
+      //   return <TexturedBristles/>
+    }
+  }
+  
+  
   return (
-    <S.TechContainer>
-      <h2>Technical Specifications</h2>
-      <p>Technical details about SOFT-PICKS® products</p>
-    </S.TechContainer>
+    <S.ContainerOuter>
+      <S.HeaderLeft>
+        <S.SideIcon 
+          onTouchStart={() => handleIconTouch(1)}  
+        >
+          <img 
+            src={activeIcon === 1 ? Circle1Active : Circle1} 
+            alt="45 degree angle" 
+          />
+        </S.SideIcon>
+        <S.SideIcon 
+          onTouchStart={() => handleIconTouch(2)} 
+          
+        >
+          <img 
+            src={activeIcon === 2 ? Circle2Active : Circle2} 
+            alt="Feature" 
+          />
+        </S.SideIcon>
+        <S.SideIcon 
+          onTouchStart={() => handleIconTouch(3)} 
+        >
+          <img 
+            src={activeIcon === 3 ? Circle3Active : Circle3} 
+            alt="Technology" 
+          />
+        </S.SideIcon>
+        <S.SideIcon 
+          onTouchStart={() => handleIconTouch(4)} 
+         
+        >
+          <img 
+            src={activeIcon === 4 ? Circle4Active : Circle4} 
+            alt="Technology" 
+          />
+        </S.SideIcon>
+      </S.HeaderLeft>
+      
+      <S.TechContainer>
+        <S.MainContent>
+          {renderActiveDisplay()}
+        </S.MainContent>
+      </S.TechContainer>
+    </S.ContainerOuter>
   );
 }

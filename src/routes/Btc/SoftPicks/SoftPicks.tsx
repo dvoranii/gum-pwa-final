@@ -18,11 +18,6 @@ export default function BtcSoftPicks() {
                 <h2>Soft<span>-Picks®</span> Comfort Flex <span>Mint</span></h2>
                 <p>Refreshing mint, flexible rubber bristles slide between teeth for gentle, safe and effective food and biofilm removal.</p>
             </S.TextContainer>
-            <S.TextContainer>
-                <h2>Soft<span>-Picks®</span> Original</h2>
-                <p>Convenient, comfortable, interdental cleaning. Soft flexible bristles have a tapered design to fit better in interproximal spaces to remove food and biofilm.</p>
-            </S.TextContainer>
-
             <S.ImgWrapper1>
                 <img src={ThreeTeethGraphic}/>
             </S.ImgWrapper1>

@@ -81,10 +81,7 @@ export default function BtcPatient() {
     if (!selectedEmbrasure || !selectedMotivation) return null;
 
     const key = getCombinationKey(selectedEmbrasure, selectedMotivation, selectedCondition);
-
-    console.log("Generated key:", key);
-    console.log("Recommendations for key:", recommendations[key]);
-
+    
     return recommendations[key] || null;
   }, [selectedEmbrasure, selectedMotivation, selectedCondition]);
 

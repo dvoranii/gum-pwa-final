@@ -2,13 +2,20 @@ import styled from "styled-components";
 import { colors } from "../../../../constants/colors";
 
 export const Slide = styled.div`
-  width: 90%;
+  width: 92%;
   padding: 12px 32px;
   text-align: center;
   height: 85vh;
 
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1386px) {
+    height: 68vh;
+  }
+
   @media screen and (min-width: 2300px) {
-    height: 80vh;
+    height: 73vh;
     padding: 60px;
     width: 100%;
   }
@@ -60,7 +67,7 @@ export const CarouselWrapper = styled.div`
         
         @media screen and (min-width: 2300px) {
             .flickity-page-dots {
-                bottom: 72px;
+                bottom: -12px;
                 right: 32px;
 
                 .dot {

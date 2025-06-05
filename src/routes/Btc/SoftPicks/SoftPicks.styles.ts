@@ -61,6 +61,9 @@ export const TextContainer = styled.div`
 
 export const Column1 = styled.div`
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 export const Column2 = styled.div`
     width: 50%;
@@ -90,7 +93,7 @@ export const Column3TextWrapper = styled.div`
 
 export const ImgWrapper = styled.div`
     img {
-        width: 90%;
+        width: 100%;
     }
 
 `;
@@ -98,10 +101,6 @@ export const ImgWrapper1 = styled.div`
     padding-top: 2.4rem;
     display: flex;
     justify-content: center;
-
-    img {
-        width: 90%;
-    }
 
     @media screen and (min-width: 2300px) {
         padding-top: 4.2rem;
@@ -125,10 +124,12 @@ export const TextWrapper = styled.div`
         font-family: "Gotham", sans-serif;
         color: ${colors.primary};
         font-size: clamp(1rem, 1vw, 1.4rem);
+        padding-right: 1.2rem;
     }
 
     p:nth-child(2) {
         padding-bottom:0.5rem;
+        font-weight: 200;
     }
 
     small {
@@ -139,13 +140,13 @@ export const TextWrapper = styled.div`
         
     }
 
-    @media screen and (min-width: 2300px) {
-        padding-right: 2.4rem;
+    // @media screen and (min-width: 2300px) {
+    //     padding-right: 2.4rem;
 
-        p {
-            font-size: clamp(1rem, 1.2vw, 1.8rem);
-        }
-    }
+    //     p {
+    //         font-size: clamp(1rem, 1.2vw, 1.8rem);
+    //     }
+    // }
 `;
 
 export const ImgWrapper2 = styled.div`

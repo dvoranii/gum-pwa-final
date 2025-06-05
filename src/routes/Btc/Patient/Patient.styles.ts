@@ -11,9 +11,9 @@ export const PatientContainer = styled.div`
   padding-top: 1.2rem;
   height: 85vh;
 
-  // @media screen and (max-width: 1386px) {
-  //   height: 79vh;
-  // }
+  @media screen and (max-width: 1386px) {
+    height: 72vh;
+  }
 
   @media screen and (min-width: 2300px) {
      padding-top: 2.4rem;
@@ -34,6 +34,11 @@ export const ChoicesContainerOuter = styled.div`
     font-weight: 600;
     font-size: clamp(18px, 2vw, 3.6rem);
     color: #00a16b;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1386px) {
+    width: 45%;
   }
 
   @media screen and (min-width: 2300px) {
@@ -62,6 +67,10 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
   transition: all 0.25s ease-out;
   pointer-events: ${({ $show }) => ($show ? 'all' : 'none')};
   visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
+
+  @media screen and (max-width: 1386px) {
+    width: 52%;
+  }
 `;
 
 export const Row = styled.div`
@@ -116,6 +125,8 @@ export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps
   margin-top: 2.4rem;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
+  transition: all 150ms ease;
+  opacity: ${(props) => props.$show ? "1" : "0"};
   visibility: ${(props) => props.$show ? "visible" : "hidden"};
 
   p {

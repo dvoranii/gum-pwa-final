@@ -24,7 +24,8 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
     priority3: { product: 'Sulcus Brush', code: '642' }
   },
   'E1:Mot:Impt': {
-    priority1: { product: 'String Floss', code: '2014' },
+    // actual priority1 code is 2014 - same as 2010 but mint flavour
+    priority1: { product: 'String Floss', code: '2010' },
     priority2: { product: 'Soft-Picks®', code: '650' },
     priority3: { product: 'Proxabrush®', code: '1314' }
   },
@@ -67,7 +68,7 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
     priority3: { product: 'Flossers', code: '831' }
   },
   'E2:Mot:Impt': {
-    priority1: { product: 'String Floss', code: '2014' },
+    priority1: { product: 'String Floss', code: '2010' },
     priority2: { product: 'Soft-Picks®', code: '650' },
     priority3: { product: 'Proxabrush®', code: '1414' }
   },

@@ -6,7 +6,6 @@ import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
 import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
 import Technology2 from "../../assets/btc/Technology.png";
-import Portfolio2 from "../../assets/btc/Portfolio.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
 import PatientBG from "../../assets/btc/patient/PatientBG.webp";
@@ -50,9 +49,6 @@ export default function Btc() {
                 </Link>
                 <Link to="/btc/patient">
                   <S.LinkImg src={PatientNeeds2} />
-                </Link>
-                <Link to="#">
-                  <S.LinkImg src={Portfolio2} />
                 </Link>
               </S.LinksWrapper>
             </S.ContentLeft>

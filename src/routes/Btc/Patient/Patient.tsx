@@ -81,7 +81,7 @@ export default function BtcPatient() {
     if (!selectedEmbrasure || !selectedMotivation) return null;
 
     const key = getCombinationKey(selectedEmbrasure, selectedMotivation, selectedCondition);
-    
+
     return recommendations[key] || null;
   }, [selectedEmbrasure, selectedMotivation, selectedCondition]);
 
@@ -132,6 +132,7 @@ export default function BtcPatient() {
   }
 
   return (
+    <S.PatientContainerOuter>
     <S.PatientContainer>
       <S.ChoicesContainerOuter>
         <S.ChoicesContainerInner>
@@ -193,5 +194,6 @@ export default function BtcPatient() {
           )}
         </S.ResultsContainer>
     </S.PatientContainer>
+    </S.PatientContainerOuter> 
   );
 }

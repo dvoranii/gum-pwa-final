@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Content = styled.div`
   padding-top: 2rem;
 
-  @media screen and (max-width: 1386px) {
-    height: 81vh;
-    display: flex;
-    align-items: center;
-  }
+  // @media screen and (max-width: 1386px) {
+  //   height: 81vh;
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   @media screen and (min-width: 2300px) {
     padding-top: 4rem;

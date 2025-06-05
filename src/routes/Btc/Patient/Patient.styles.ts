@@ -4,12 +4,19 @@ interface GumInterproximalSolutionProps {
   $show: boolean;
 }
 
+export const PatientContainerOuter = styled.div`
+  height: 80vh;
+  display: flex;
+  align-items: center;
+`;
+
 export const PatientContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2.4rem;
   padding-top: 1.2rem;
   height: 85vh;
+  width: 100%;
 
   @media screen and (max-width: 1386px) {
     height: 72vh;
@@ -19,7 +26,6 @@ export const PatientContainer = styled.div`
      padding-top: 2.4rem;
      height: 80vh;
   }
-
 `;
 
 export const ChoicesContainerOuter = styled.div`

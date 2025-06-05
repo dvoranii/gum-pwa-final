@@ -81,19 +81,25 @@ export const Column3 = styled.div`
 
 export const Column3TextWrapper = styled.div`
     display: flex;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
 
     p {
         font-family: "Gotham", sans-serif;
         color: ${colors.black};
-        font-size: clamp(1rem, 1vw, 1.4rem);
+        font-size: clamp(0.74rem, 1vw, 1.4rem);
     }
 `;
 
 export const ImgWrapper = styled.div`
     img {
-        width: 100%;
+        width: 90%;
+    }
+
+    @media screen and (min-width: 2300px) {
+        img {
+            width: 100%;
+        }
     }
 
 `;
@@ -101,6 +107,10 @@ export const ImgWrapper1 = styled.div`
     padding-top: 2.4rem;
     display: flex;
     justify-content: center;
+    
+    img {
+        width: 100%;
+    }
 
     @media screen and (min-width: 2300px) {
         padding-top: 4.2rem;
@@ -123,12 +133,11 @@ export const TextWrapper = styled.div`
     p {
         font-family: "Gotham", sans-serif;
         color: ${colors.primary};
-        font-size: clamp(1rem, 1vw, 1.4rem);
+        font-size: clamp(0.6rem, 1vw, 1.4rem);
         padding-right: 1.2rem;
     }
 
     p:nth-child(2) {
-        padding-bottom:0.5rem;
         font-weight: 200;
     }
 
@@ -136,17 +145,14 @@ export const TextWrapper = styled.div`
         font-family: "Gotham", sans-serif;
         color: ${colors.primary};
         font-weight: 200;
-        font-size: clamp(0.8rem, 1vw, 1rem);
-        
+        font-size: clamp(0.4rem, 0.8vw, 1rem);
     }
 
-    // @media screen and (min-width: 2300px) {
-    //     padding-right: 2.4rem;
-
-    //     p {
-    //         font-size: clamp(1rem, 1.2vw, 1.8rem);
-    //     }
-    // }
+    @media screen and (min-width: 2300px) {
+        p:nth-child(2) {
+            padding-bottom:0.5rem;
+        }
+    }
 `;
 
 export const ImgWrapper2 = styled.div`

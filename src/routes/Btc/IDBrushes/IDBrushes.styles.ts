@@ -306,7 +306,7 @@ export const ListContainer = styled.div`
             font-size: 18px; 
             color: ${colors.black};
             vertical-align: middle;
-            line-height: 1.5; 
+            line-height: 1.2; 
         }
 
         span {

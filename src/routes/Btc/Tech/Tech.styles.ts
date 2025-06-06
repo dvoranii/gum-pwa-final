@@ -23,6 +23,7 @@ export const SideIcon = styled.div`
   height: 0;
   padding-bottom: 100%;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   
   img {
     position: absolute;

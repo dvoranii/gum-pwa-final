@@ -103,6 +103,7 @@ export const LinksWrapper = styled.div`
   display: flex;
   width: 90%;
   padding-top: 1.2rem;
+  -webkit-tap-highlight-color: transparent;
 
   & > a {
     display: flex;

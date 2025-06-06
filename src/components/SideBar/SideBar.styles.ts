@@ -58,6 +58,7 @@ export const NavButton = styled(NavLink)`
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 
   &.active {
     background-color: #e0e0e0;

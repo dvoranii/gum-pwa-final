@@ -45,18 +45,18 @@ export default function BtcTech() {
     <S.ContainerOuter>
       <S.HeaderLeft>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(1)}  
         >
           <img 
+            onTouchStart={() => handleIconTouch(1)}  
             src={activeIcon === 1 ? Circle1Active : Circle1} 
             alt="45 degree angle" 
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(2)} 
           
         >
           <img 
+            onTouchStart={() => handleIconTouch(2)} 
             src={activeIcon === 2 ? Circle2Active : Circle2} 
             alt="Feature" 
           />

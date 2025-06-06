@@ -53,6 +53,7 @@ export const TabLink = styled(NavLink)`
   font-style: normal;
   font-size: clamp(0.75rem, 0.7vw + 0.5rem, 1.85rem);
   letter-spacing: 0.6px;
+  -webkit-tap-highlight-color: transparent;
 
   
   &.active {

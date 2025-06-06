@@ -228,7 +228,6 @@ export const HeartBranch = styled.img`
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
-  -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 1368px) {
     top: 2.3vh;
@@ -270,7 +269,6 @@ export const BrainBranch = styled.img`
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
-  -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 1368px) {
     top: 15.3vh;
@@ -311,7 +309,6 @@ export const BloodBranch = styled.img`
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
-  -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 1368px) {
     top: 29vh;

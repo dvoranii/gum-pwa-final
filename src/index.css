@@ -124,3 +124,6 @@
   font-display: swap;
 }
 
+a, img, button {
+   -webkit-tap-highlight-color: transparent;
+}

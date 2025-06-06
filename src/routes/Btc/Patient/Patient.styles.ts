@@ -49,6 +49,10 @@ export const ChoicesContainerOuter = styled.div`
 
   @media screen and (min-width: 2300px) {
     width: 44%;
+
+    h2 {
+      font-size: 2.4vw;
+    }
   }
 `;
 

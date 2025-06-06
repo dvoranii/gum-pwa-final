@@ -214,8 +214,9 @@ export const ImgWrapper = styled.div`
 
 export const ImgWrapper1 = styled.div`
     width: 70%;
+
     img {
-        width: 90%;
+        width: 75%;
     }
 
     @media screen and (min-width: 2300px) {         

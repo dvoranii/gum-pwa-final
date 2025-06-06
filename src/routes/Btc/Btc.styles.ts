@@ -3,12 +3,6 @@ import styled from 'styled-components';
 export const Content = styled.div`
   padding-top: 2rem;
 
-  // @media screen and (max-width: 1386px) {
-  //   height: 81vh;
-  //   display: flex;
-  //   align-items: center;
-  // }
-
   @media screen and (min-width: 2300px) {
     padding-top: 4rem;
   }
@@ -58,6 +52,7 @@ export const FlossersImg = styled.img`
   width: 100%;
   height: auto;
   margin-left: -88px;
+  
 
   @media screen and (max-width: 1386px) {
     width: 100%;
@@ -116,6 +111,7 @@ export const LinksWrapper = styled.div`
   display: flex;
   width: 90%;
   padding-top: 1.2rem;
+  -webkit-tap-highlight-color: transparent;
 
   & > a {
     display: flex;

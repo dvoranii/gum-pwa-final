@@ -9,7 +9,7 @@ import SensitivityActive from "../../../assets/toothbrush/patient/selections/sen
 import Reach from "../../../assets/toothbrush/patient/selections/reach.webp";
 import ReachActive from "../../../assets/toothbrush/patient/selections/reach-active.webp";
 import { useState } from "react";
-// import { RecommendationSlider } from "./RecommendationSlider/RecommendationSlider";
+import { RecommendationSlider } from "./RecommendationSlider/RecommendationSlider";
 
 type ImageKey = | "subgingival" | "sensitivity" | "reach";
 
@@ -40,15 +40,15 @@ export default function ToothbrushPatient() {
         Unique Brushing Needs
         </S.MainTitle>
 
-        <S.ChoicesImgWrapper onClick={() => toggleImage('subgingival')}>
+        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('subgingival')}>
           <img src={activeImage === "subgingival" ? SubgingivalActive: Subgingival}/>
         </S.ChoicesImgWrapper>
 
-        <S.ChoicesImgWrapper onClick={() => toggleImage('sensitivity')}>
+        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('sensitivity')}>
           <img src={activeImage === "sensitivity" ? SensitivityActive : Sensitivity}/>
         </S.ChoicesImgWrapper>
 
-        <S.ChoicesImgWrapper onClick={() => toggleImage('reach')}>
+        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('reach')}>
           <img src={activeImage === "reach" ? ReachActive : Reach}/>
         </S.ChoicesImgWrapper>
 
@@ -56,11 +56,9 @@ export default function ToothbrushPatient() {
     </S.ChoicesContainerOuter>
 
     <S.ResultsContainer $show={showResults}>
-      {/* {showResults && currentRecommendations && (
-        <>
-        <RecommendationSlider recommendations={currentRecommendations}/>
-        </>
-      )} */}
+      {showResults && activeImage && (
+        <RecommendationSlider selection={activeImage}/>
+      )}
     </S.ResultsContainer>
     
     </S.PatientContainer>

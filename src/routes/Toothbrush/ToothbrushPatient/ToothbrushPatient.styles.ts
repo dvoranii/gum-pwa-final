@@ -7,7 +7,7 @@ interface ResultsContainerProps {
 export const MainTitle = styled.h1`
     font-family: "Gotham", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2vw, 3.6rem);
+    font-size: clamp(18px, 2.4vw, 3.6rem);
     color: #00a16b;
 
     @media screen and (min-width: 2300px) {
@@ -66,6 +66,10 @@ export const ChoicesImgWrapper = styled.div`
     }
     &:nth-of-type(n+2) {
         margin-top: -72px;
+    }
+
+    img {
+        width: 100%;
     }
 `;
 

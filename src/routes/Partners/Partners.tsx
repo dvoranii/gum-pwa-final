@@ -85,7 +85,7 @@ export default function Partners() {
 
             </S.PartnersBG>
 
-            <BottomText text={"Earning our #1 recommended Status Every Day - this is our driving purpose."} />
+            <BottomText lines={["Earning our #1 recommended Status Every Day - this is our driving purpose."]} />
           </>
           ) : (
             <Outlet />

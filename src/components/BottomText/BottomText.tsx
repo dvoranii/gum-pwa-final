@@ -1,16 +1,17 @@
 import * as S from "./BottomText.styled";
 
 interface BottomTextProps {
-    text: string;
+    lines: string[];
 }
 
-export default function BottomText({text}: BottomTextProps){
-
+export default function BottomText({lines}: BottomTextProps){
     return(
         <S.BottomTextWrapper>
-            <S.BottomTextP>
-                {text}
-            </S.BottomTextP>
+            {lines.map((line, index) => (
+                <S.BottomTextP key={index} $isFirst={index === 0}>
+                    {line}
+                </S.BottomTextP>
+            ))}
         </S.BottomTextWrapper>
     )
 }

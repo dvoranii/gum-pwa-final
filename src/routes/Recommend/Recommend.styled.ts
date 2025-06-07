@@ -1,5 +1,6 @@
 
 import { styled } from "styled-components";
+import BG1 from "../../assets/recommend/bg-1.webp";
 
 interface PartnersBGProps {
     $isFullWidthImage?: boolean;
@@ -18,10 +19,11 @@ export const PartnersBG = styled.div<PartnersBGProps>`
   gap: 2.4rem;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
-  background-color: #ffffff;
-  padding: 2rem;
+  background-image: url(${BG1});
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 55vh;
+  height: 55vh;
   box-sizing: border-box;
   margin-top: 2.4rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
@@ -30,7 +32,6 @@ export const PartnersBG = styled.div<PartnersBGProps>`
 
   @media screen and (min-width: 2300px) {
     min-height: 60vh;
-    padding: ${props => props.$isFullWidthImage ? '0' : '9.6rem 0'};
   }
 `;
 
@@ -161,5 +162,17 @@ export const ColTextWrapper = styled.div`
 
     @media screen and (min-width: 2300px) {
       padding-left: 4rem;
+    }
+`;
+
+export const Circle1Wrapper = styled.div`
+    height: 100%;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 50%;
     }
 `;

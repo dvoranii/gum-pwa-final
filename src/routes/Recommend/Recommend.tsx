@@ -1,17 +1,17 @@
 
 import * as S from "./Recommend.styled";
-import { useState } from "react";
+
+import Flickity from 'react-flickity-component';
+import 'flickity/dist/flickity.min.css';
+
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import ModuleTitle from "../../components/ModuleTitle/ModuleTitle";
 import BulletList from "../../components/BulletList/BulletList";
-import GumLogo from "../../assets/gum-logo.svg";
-import PatientImg from "../../assets/partners/Patient.webp";
-import ProfessionalImg from "../../assets/partners/Professional.webp";
-import PatAndProf from "../../assets/partners/Pat&Prof.webp";
-
 import BottomText from "../../components/BottomText/BottomText";
+
+import BGCircle1 from "../../assets/recommend/bg-1-circle-1.webp";
 
 type NavItem = {
     path: string;
@@ -103,46 +103,22 @@ export default function Recommend() {
       <S.Content>
       {isHomePage ? (
           <>
-            <ModuleTitle title={"Partners in Oral Care"}/>
-            <BulletList items={['Engineering superior products for specific patient needs',
-              "Supporting your goals as a dental professional."
+            <ModuleTitle title={`A GUM Recommendation`}/>
+            <BulletList items={[`The right product for your patient's unique needs.`,
+              `Alleviating confusion at shelf.`
             ]}/>
 
             <S.PartnersBG>
-              <S.GumLogoCol>
-                <S.GumLogo src={GumLogo} />
-                <S.GumTextWrapper>
-                  <h2>Transforming</h2>
-                  <h3>Experiences & Relationships</h3>
-                </S.GumTextWrapper>
-              </S.GumLogoCol> 
-
-              <S.GraphicsCol>
-                  <S.ImgTextWrapper>
-                    <img src={PatientImg} alt="" />
-                    <S.ColTextWrapper>
-                      <h4>Patient</h4>
-                      <p>Creating great first experiences that can transform patients' relationship with oral hygiene.</p>
-                    </S.ColTextWrapper>
-                  </S.ImgTextWrapper>
-                  <S.ImgTextWrapper>
-                    <img src={ProfessionalImg} alt="" />
-                    <S.ColTextWrapper>
-                      <h4>Professional</h4>
-                      <p>Engineering superior products specifically designed for your unique patient needs.</p>
-                    </S.ColTextWrapper>
-                  </S.ImgTextWrapper>
-                  <S.ImgTextWrapper>
-                    <img src={PatAndProf} alt="" />
-                    <S.ColTextWrapper>
-                      <h4>Patient & Professional</h4>
-                      <p>Building trust through recommendations that both professional and patient can count on.</p>
-                    </S.ColTextWrapper>
-                  </S.ImgTextWrapper>
-              </S.GraphicsCol>    
+                <S.Circle1Wrapper>
+                    <img src={BGCircle1}/>
+                </S.Circle1Wrapper>
+ 
             </S.PartnersBG>
 
-            <BottomText text={"Earning our #1 recommended Status Every Day - this is our driving purpose."} />
+           <BottomText lines={[
+            "Your professional guidance matters.",
+            "Never underestimate the power of your recommendation."
+            ]} />
           </>
           ) : (
             <Outlet />

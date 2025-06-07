@@ -192,8 +192,8 @@ export default function OralSystemicLink() {
               )}
             </S.OralSystemicImgWrapperOuter>
 
-            <BottomText text={`Sharing this information with patients, in a way that is intended to inform and encourage
-                 good oral care can help solidify ritualistic habits and better overall health.`} />
+            <BottomText lines={[`Sharing this information with patients, in a way that is intended to inform and encourage
+                 good oral care can help solidify ritualistic habits and better overall health.`]} />
           </>
         ) : (
           <Outlet />

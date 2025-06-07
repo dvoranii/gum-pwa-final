@@ -1,10 +1,12 @@
 import * as S from './InnerNav.styles';
 import GumLogo from "../../assets/gum-logo.svg";
+import { useLocation } from 'react-router-dom';
 
 interface NavItem {
   path: string;
   label: string;
   end?: boolean;
+  state?: Record<string, unknown>
 }
 
 interface InnerNavProps {
@@ -12,6 +14,8 @@ interface InnerNavProps {
 }
 
 export default function InnerNav({ navItems }: InnerNavProps) {
+  const location = useLocation();
+  
   return (
     <S.NavTabsOuter>
       <S.GumLogoWrapper>
@@ -22,14 +26,20 @@ export default function InnerNav({ navItems }: InnerNavProps) {
          
           const isActive = item.end 
             ? location.pathname === item.path
-            : location.pathname.startsWith(item.path) &&
-            (location.pathname === item.path 
-            || location.pathname.startsWith(`${item.path}/`));
+            : location.pathname.startsWith(item.path);
+    
+          const to = item.path === "/recommend"
+            ? { 
+                pathname: item.path, 
+                state: { from: location.pathname } 
+              }
+            : item.path;
           
           return (
             <S.TabLink 
               key={item.path} 
-              to={item.path} 
+              to={to} 
+              state={item.path === "/recommend" ? { from: location.pathname, navItems: navItems } : undefined}
               end={item.end}
               className={isActive ? 'active' : ''}
             >

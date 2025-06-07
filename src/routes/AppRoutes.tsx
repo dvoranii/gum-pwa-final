@@ -23,6 +23,8 @@ import Operatory from './Operatory/Operatory';
 
 import Accessories from './Accessories/Accessories';
 
+import Recommend from "./Recommend/Recommend";
+
 
 export default function AppRoutes() {
   return (
@@ -59,7 +61,12 @@ export default function AppRoutes() {
         <Route path="/operatory" element={<Operatory />}>
             <Route index element={null} />
         </Route>
+        
         <Route path="/accessories" element={<Accessories />}>
+            <Route index element={null} />
+        </Route>
+
+        <Route path="/recommend" element={<Recommend />}>
             <Route index element={null} />
         </Route>
     </Routes>

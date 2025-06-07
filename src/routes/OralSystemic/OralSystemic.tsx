@@ -35,7 +35,7 @@ import BottomText from "../../components/BottomText/BottomText";
 
 const oralSystemicNavItems = [
   { path: "/oral-systemic", label: "The\u00A0Oral-Systemic\u00A0Link", end: true },
-  { path: "/recommend", label: "Recommend" },
+  { path: "/recommend", label: "Recommend"},
 ];
 
 export default function OralSystemicLink() {

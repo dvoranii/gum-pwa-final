@@ -52,8 +52,7 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
   'E1:UnMot:Ortho': {
     priority1: { product: 'Soft-Picks®', code: '670' },
     priority2: { product: 'Proxabrush®', code: '1614' },
-    priority3: { product: '', code: '' } 
-    // priority3: { product: 'Easy Thread', code: '3210' }
+    priority3: { product: 'Easy Thread', code: '3210' }
   },
 
   // ===== EMBRASURE CLASS 2 =====
@@ -95,8 +94,7 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
   'E2:UnMot:Ortho': {
     priority1: { product: 'Soft-Picks®', code: '670' },
     priority2: { product: 'Proxabrush®', code: '1614' },
-    priority3: { product: '', code: '' } 
-    // priority3: { product: 'Easy Thread', code: '3210' }
+    priority3: { product: 'Easy Thread', code: '3210' }
   },
 
   // ===== EMBRASURE CLASS 3 =====
@@ -138,7 +136,6 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
   'E3:UnMot:Ortho': {
     priority1: { product: 'Soft-Picks®', code: '670' },
     priority2: { product: 'Proxabrush®', code: '1614' },
-    priority3: { product: '', code: '' } 
-    // priority3: { product: 'Easy Thread', code: '3210' }
+    priority3: { product: 'Easy Thread', code: '3210' }
   }
 };

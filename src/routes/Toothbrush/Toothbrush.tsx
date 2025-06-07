@@ -49,9 +49,6 @@ export default function Toothbrush() {
                 <Link to="/toothbrush/patient">
                   <S.LinkImg src={PatientNeeds2} />
                 </Link>
-                <Link to="#">
-                  <S.LinkImg src={Portfolio2} />
-                </Link>
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>

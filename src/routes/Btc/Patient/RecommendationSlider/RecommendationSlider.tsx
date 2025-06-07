@@ -9,6 +9,7 @@ import _1940_StringFloss_Fine from "../../../../assets/btc/patient/recommendatio
 import _2008_StringFloss_DualDefense from "../../../../assets/btc/patient/recommendations/2008-StringFloss-DualDefense.webp";
 import _2010_StringFloss_ComfortSlide from "../../../../assets/btc/patient/recommendations/2010-StringFloss-ComfortSlide.webp";
 import _2030_StringFloss_Expanding from "../../../../assets/btc/patient/recommendations/2030-StringFloss-Expanding.webp";
+import _3210_Easy_Thread from "../../../../assets/btc/patient/recommendations/3210-EasyThread.webp";
 
 import _891_Flosser_ProClean from "../../../../assets/btc/patient/recommendations/891-Flosser-ProClean.webp";
 import _828_Flosser_Twisted from "../../../../assets/btc/patient/recommendations/828-Flosser-Twisted.webp";
@@ -49,6 +50,7 @@ const productImages: Record<string, string> = {
     '2008': _2008_StringFloss_DualDefense,
     '2010': _2010_StringFloss_ComfortSlide,
     '2030': _2030_StringFloss_Expanding,
+    '3210': _3210_Easy_Thread,
 
     '891': _891_Flosser_ProClean,
     '828': _828_Flosser_Twisted,

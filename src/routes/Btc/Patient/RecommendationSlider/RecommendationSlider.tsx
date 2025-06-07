@@ -112,28 +112,6 @@ export const RecommendationSlider = ({ recommendations }: { recommendations: Rec
         disableImagesLoaded={false}
         static={false}
     >
-        {/* <S.Slide>
-            <S.ProductImage 
-            src={priority1Image} 
-            alt={`Priority 1: ${recommendations.priority1.product}`} 
-            />
-        </S.Slide>
-
-        <S.Slide>
-            <S.ProductImage 
-            src={priority2Image} 
-            alt={`Priority 2: ${recommendations.priority2.product}`} 
-            />
-        </S.Slide>
-
-        {priority3Image && (
-            <S.Slide>
-            <S.ProductImage 
-                src={priority3Image} 
-                alt={`Priority 3: ${recommendations.priority3.product}`} 
-            />
-            </S.Slide>
-        )} */}
         <RecommendationSlide
             priorityText="Priority 1"
             productName={recommendations.priority1.product}

@@ -35,7 +35,7 @@ export const ChoicesContainerOuter = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  h2 {
+  h1 {
     font-family: "Gotham", sans-serif;
     font-weight: 600;
     font-size: clamp(18px, 2vw, 3.6rem);
@@ -50,7 +50,7 @@ export const ChoicesContainerOuter = styled.div`
   @media screen and (min-width: 2300px) {
     width: 44%;
 
-    h2 {
+    h1 {
       font-size: 2.4vw;
     }
   }

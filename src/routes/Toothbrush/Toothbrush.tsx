@@ -9,6 +9,8 @@ import Technology2 from "../../assets/toothbrush/Tech.png";
 import Portfolio2 from "../../assets/toothbrush/Port.png";
 import Brushes from "../../assets/toothbrush/toothbrush.webp";
 
+import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
+
 const toothbrushNavItems = [
   { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
   { path: "/toothbrush/tech", label: "Tech" },
@@ -22,9 +24,12 @@ const toothbrushNavItems = [
 export default function Toothbrush() {
   const location = useLocation();
   const isHomePage = location.pathname === "/toothbrush";
+  const isPatientRoute = location.pathname === '/toothbrush/patient';
+
+  const backgroundImage = isPatientRoute ? `${PatientBG}` : undefined;
 
   return (
-    <ModuleContainer $isHomePage={isHomePage}>
+    <ModuleContainer $isHomePage={isHomePage} $backgroundImage={backgroundImage}>
       <InnerNav navItems={toothbrushNavItems} />
       <S.Content>
       {isHomePage ? (

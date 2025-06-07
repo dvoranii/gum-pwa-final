@@ -136,7 +136,7 @@ export default function BtcPatient() {
     <S.PatientContainer>
       <S.ChoicesContainerOuter>
         <S.ChoicesContainerInner>
-          <h2>Your Patients' Unique Needs</h2>
+          <h1>Your Patients' Unique Needs</h1>
           
           {/* Row 1 */}
           <S.Row>

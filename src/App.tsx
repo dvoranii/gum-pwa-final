@@ -9,11 +9,14 @@ function App() {
 
     const shouldUseWhiteBg = () => {
     switch (location.pathname) {
-      case '/toothbrush/adult':
       case '/btc/floss':
       case '/btc/flossers':
       case '/btc/id-brushes':
       case '/btc/soft-picks':
+      case '/toothbrush/patient':
+      case '/toothbrush/adult':
+      case '/toothbrush/kids':
+      case '/toothbrush/specialty':
         return true;
       default:
         return false;

@@ -40,11 +40,13 @@ export default function ToothbrushPatient() {
         Unique Brushing Needs
         </S.MainTitle>
 
-        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('subgingival')}>
+        <S.ChoicesImgWrapper >
+          <S.InteractiveOverlay onTouchStart={() => toggleImage('subgingival')} $positionLeft={true}/>
           <img src={activeImage === "subgingival" ? SubgingivalActive: Subgingival}/>
         </S.ChoicesImgWrapper>
 
-        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('sensitivity')}>
+        <S.ChoicesImgWrapper >
+          <S.InteractiveOverlay onTouchStart={() => toggleImage('sensitivity')} $positionLeft={false}/>
           <img src={activeImage === "sensitivity" ? SensitivityActive : Sensitivity}/>
         </S.ChoicesImgWrapper>
 

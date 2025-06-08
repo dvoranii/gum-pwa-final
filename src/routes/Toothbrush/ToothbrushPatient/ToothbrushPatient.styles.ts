@@ -60,6 +60,7 @@ export const ChoicesContainerInner = styled.div`
 `;
 
 export const ChoicesImgWrapper = styled.div`
+    position: relative;
 
     &:nth-of-type(1) {
         margin-top: 2.4rem;
@@ -71,6 +72,20 @@ export const ChoicesImgWrapper = styled.div`
     img {
         width: 100%;
     }
+`;
+
+interface InteractiveOverlayProps {
+    $positionLeft: boolean;
+}
+
+export const InteractiveOverlay = styled.div<InteractiveOverlayProps>`
+    position: absolute;
+    width: 44%;
+    height: 100%;
+    top:0;
+    ${props => props.$positionLeft ? 'left: 0;' : 'right: 45px;'}
+    border-radius: 50%;
+    z-index: 99;
 `;
 
 export const ResultsContainer = styled.div<ResultsContainerProps>`

@@ -35,6 +35,7 @@ export const NavTabs = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: fit-content;
   text-transform: uppercase;
   background-color: ${colors.dotBGActive2};
 `;

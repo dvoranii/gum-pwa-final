@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  padding: 40px 20px 40px 80px;
+  padding: 40px 20px 40px 64px;
   flex: 2;
   min-width: 0;
 

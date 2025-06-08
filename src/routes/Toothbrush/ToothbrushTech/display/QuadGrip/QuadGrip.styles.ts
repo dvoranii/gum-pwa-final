@@ -154,7 +154,6 @@ export const CrossSectionIcon = styled.div`
 export const BenefitsList = styled.ul`
     line-height: 1.35;
     padding-inline-start: 20px;
-    padding-top: 1.2rem;
 
     @media screen and (max-width: 1024px) {
         padding-top: 0;

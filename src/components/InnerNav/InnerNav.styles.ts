@@ -4,7 +4,8 @@ import { colors } from "../../constants/colors";
 
 export const NavTabsOuter = styled.div`
     display: flex;
-    justify-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
     height: 36px;
 
     @media screen and (min-width: 2300px) {
@@ -71,5 +72,4 @@ export const TabLink = styled(NavLink)`
     font-size: 1.75rem;
     padding: 0.5rem 3rem 0.5rem 1rem;
   }
-
 `;

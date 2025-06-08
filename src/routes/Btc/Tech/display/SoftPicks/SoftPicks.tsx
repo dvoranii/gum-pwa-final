@@ -25,9 +25,9 @@ export default function ProxaTriangular() {
         </S.DiagramSection>
     </S.HeaderRight>
     
-    <S.HandImage>
+    <S.SoftPickImage>
         <img src={BrushHand} alt="Hand holding toothbrush" />
-    </S.HandImage>
+    </S.SoftPickImage>
     </S.ContentWrapper>
   );
 }

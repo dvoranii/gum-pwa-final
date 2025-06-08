@@ -8,6 +8,8 @@ export const ContentWrapper = styled.div`
 
 export const HeaderRight = styled.div`
   padding: 60px 20px 40px 80px;
+  flex: 2;
+  min-width: 0;
 
  @media screen and (min-width: 2300px) {
      padding: 120px 30px 40px 141px;
@@ -149,10 +151,12 @@ export const CrossSectionIcon = styled.div`
 
 `;
 
-export const HandImage = styled.div`
+export const SoftPickImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
 
   img {
     width: auto;

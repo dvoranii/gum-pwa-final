@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const NavTabsOuter = styled.div`
     display: flex;
@@ -34,7 +35,8 @@ export const NavTabs = styled.nav`
   justify-content: space-between;
   width: 100%;
   text-transform: uppercase;
-  background-color: #02a6a7;
+  background-color: ${colors.dotBGActive2};
+  max-width: fit-content;
 `;
 
 export const TabLink = styled(NavLink)`
@@ -43,6 +45,8 @@ export const TabLink = styled(NavLink)`
   justify-content: flex-start;
   width: 100%;
   white-space: nowrap;
+  min-width: fit-content;
+  flex: 0 1 auto;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: #ffffff;
@@ -51,11 +55,14 @@ export const TabLink = styled(NavLink)`
   font-family: 'Gotham', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(0.75rem, 0.7vw + 0.5rem, 1.85rem);
+  font-size: clamp(0.85rem, 0.7vw, 1.85rem);
   letter-spacing: 0.6px;
   -webkit-tap-highlight-color: transparent;
 
-  
+  @media screen and (max-width: 1100px) {
+    padding: 0 0.75rem;
+  }
+
   &.active {
     background-color: #018384;
   }

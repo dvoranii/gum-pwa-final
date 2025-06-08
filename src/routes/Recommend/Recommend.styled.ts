@@ -27,10 +27,12 @@ export const PartnersBG = styled.div<PartnersBGProps>`
   width: 100%;
   height: 55vh;
   box-sizing: border-box;
-  margin-top: 2.4rem;
-  box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
+  margin-top: 1.2rem;
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
+  @media screen and (max-width: 1100px) {
+    margin-top: 0.5rem;
+  }
   @media screen and (min-width: 2300px) {
     min-height: 60vh;
   }
@@ -80,6 +82,12 @@ export const ThreeCirclesWrapper = styled.div`
 
 export const CarouselWrapper = styled.div`
     .carousel {
+
+    .flickity-viewport {
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        filter: drop-shadow(0px 0px 12px rgba(54, 54, 54, 0.05));
+    }
     
     .flickity-page-dots {
         bottom: -40px;
@@ -116,5 +124,9 @@ export const CarouselWrapper = styled.div`
         .flickity-button {
         display: none;
         }
+    }
+
+    @media screen and (min-width: 2300px) {
+        padding-top: 1.2rem;
     }
 `;

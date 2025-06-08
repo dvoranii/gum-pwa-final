@@ -70,6 +70,7 @@ export const FlossersImg = styled.img`
 
 export const IntroTitleWrapper = styled.div`
   padding-left: 20px;
+  z-index: 99;
 
   @media screen and (min-width: 2300px) {
     padding-left: 4.8rem;

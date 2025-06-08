@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Content = styled.div`
@@ -107,16 +108,15 @@ export const Recommended = styled.img`
 
 `;
 
+interface StyledLinkProps {
+  $flexPosition?: string;
+}
+
 export const LinksWrapper = styled.div`
   display: flex;
-  width: 90%;
-  padding-top: 1.2rem;
+  gap: 1.8rem;
+  margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
-
-  & > a {
-    display: flex;
-    justify-content: center;
-  }
 
   @media screen and (max-width: 1386px) {
     width: 100%;
@@ -127,19 +127,21 @@ export const LinksWrapper = styled.div`
      padding-top: 2rem;
      width: 100%;
      gap: 3rem;
+     margin-left: 0;
  }
 `;
 
+export const StyledLink = styled(Link)<StyledLinkProps>`
+  display: flex;
+  justify-content: ${(props) => props.$flexPosition || 'center'};
+`;
+
 export const LinkImg = styled.img`
-  width: 75%;
+  width: 70%;
   height: auto;
   aspect-ratio: 244/291;
 
-  @media screen and (max-width: 1386px) {
-    width: 90%;
-  }
-
   @media screen and (min-width: 2300px) {
-    width: 100%
+    width: 12vw;
  }
 `;

@@ -1,12 +1,11 @@
 import * as S from "./Toothbrush.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import Col1Row2 from "../../assets/btc/col1-row2.svg";
 import PatientNeeds2 from "../../assets/toothbrush/PN.png";
 import Technology2 from "../../assets/toothbrush/Tech.png";
-import Portfolio2 from "../../assets/toothbrush/Port.png";
 import Brushes from "../../assets/toothbrush/toothbrush.webp";
 
 import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
@@ -43,12 +42,12 @@ export default function Toothbrush() {
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>
-                <Link to="/toothbrush/tech">
+                <S.StyledLink to="/toothbrush/tech" $flexPosition="flex-end">
                   <S.LinkImg src={Technology2} />
-                </Link>
-                <Link to="/toothbrush/patient">
+                </S.StyledLink> 
+                <S.StyledLink to="/toothbrush/patient" $flexPosition="flex-start">
                   <S.LinkImg src={PatientNeeds2} />
-                </Link>
+                </S.StyledLink>
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>

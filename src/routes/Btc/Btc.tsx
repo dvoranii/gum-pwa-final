@@ -1,5 +1,5 @@
 import * as S from './Btc.styles';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import InnerNav from '../../components/InnerNav/InnerNav';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
@@ -42,14 +42,13 @@ export default function Btc() {
               <S.RecommendedWrapper>
                 <S.Recommended src={Col1Row2}/>
               </S.RecommendedWrapper>
-
               <S.LinksWrapper>
-                <Link to="/btc/tech">
+                <S.StyledLink to="/btc/tech" $flexPosition='flex-end'>
                   <S.LinkImg src={Technology2} />
-                </Link>
-                <Link to="/btc/patient">
+                </S.StyledLink>
+                <S.StyledLink to="/btc/patient" $flexPosition='flex-start'>
                   <S.LinkImg src={PatientNeeds2} />
-                </Link>
+                </S.StyledLink>
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>

@@ -3,8 +3,8 @@ import * as S from "./SideBar.styles";
 
 import hom1 from '../../assets/nav-icons/hom1.jpg';
 import hom2 from '../../assets/nav-icons/hom2.jpg';
-import sys1 from '../../assets/nav-icons/sys1.jpg';
-import sys2 from '../../assets/nav-icons/sys2.jpg';
+import osl1 from '../../assets/nav-icons/osl1.jpg';
+import osl2 from '../../assets/nav-icons/osl2.jpg';
 import ptn1 from '../../assets/nav-icons/ptn1.jpg';
 import ptn2 from '../../assets/nav-icons/ptn2.jpg';
 import btc1 from '../../assets/nav-icons/btc1.jpg';
@@ -28,8 +28,8 @@ const navItems = [
     { 
         name: 'Oral-Systemic Link', 
         path: '/oral-systemic',
-        inactiveIcon: sys1,
-        activeIcon: sys2
+        inactiveIcon: osl1,
+        activeIcon: osl2
     },
     { 
         name: 'Partners in Care', 

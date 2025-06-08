@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const ContainerOuter = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
   height: 82vh;
   gap: 40px;

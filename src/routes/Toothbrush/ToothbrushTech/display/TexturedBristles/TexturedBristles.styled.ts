@@ -95,7 +95,7 @@ export const ColLeftList = styled.ul`
     padding-inline-start: 20px;
 
     li {
-        font-size: clamp(16px, 1.4vw, 2.4rem);
+        font-size: clamp(16px, 1.6vw, 2.4rem);
         color: #00a16b;
         font-weight: 600;
     }

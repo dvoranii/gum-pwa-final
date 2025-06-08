@@ -166,7 +166,7 @@ export const BenefitItem = styled.li`
   } 
 
   @media screen and (min-width: 2300px) {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 `;
 

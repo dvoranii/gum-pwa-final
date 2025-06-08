@@ -42,7 +42,7 @@ export const Description = styled.ul`
   padding-top: 1.2rem;
   padding-right: 80px;
 
-  @media screen and (max-width: 1368px) {
+  @media screen and (max-width: 1386px) {
     font-size: 2vw;
     padding-right: 0;
   }
@@ -64,7 +64,7 @@ export const ColLeftList = styled.ul`
     margin-top: 1.2rem;
 
     li {
-        font-size: clamp(16px, 1.4vw, 2.4rem);
+        font-size: clamp(16px, 1.5vw, 2.4rem);
         color: #00a16b;
         font-weight: 600;
     }

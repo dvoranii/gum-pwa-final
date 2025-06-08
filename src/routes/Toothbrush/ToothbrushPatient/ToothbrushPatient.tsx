@@ -41,6 +41,7 @@ export default function ToothbrushPatient() {
         </S.MainTitle>
 
         <S.ChoicesImgWrapper >
+          {/* invisible touch target for overlapping images */}
           <S.InteractiveOverlay onTouchStart={() => toggleImage('subgingival')} $positionLeft={true}/>
           <img src={activeImage === "subgingival" ? SubgingivalActive: Subgingival}/>
         </S.ChoicesImgWrapper>

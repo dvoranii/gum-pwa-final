@@ -163,7 +163,7 @@ export const BenefitsList = styled.ul`
 
 export const BenefitItem = styled.li`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(16px, 1.4vw, 2.4rem);
+  font-size: clamp(16px, 1.6vw, 2.4rem);
   color: #00a16b;
   font-weight: 600;
   margin: 0;
@@ -185,12 +185,14 @@ export const HandImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex: 1;
+  flex: 1.3;
   min-width: 0;
 
   img {
     width: auto;
     height: 100%;
+    max-width: 100%;
+    aspect-ratio: 211 / 475;
   }
 
 `;

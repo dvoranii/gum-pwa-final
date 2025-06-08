@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 export const ContentWrapper = styled.div`
     display: flex;
+    height: 100%;
+    align-items: center;
 
 
     @media screen and (min-width: 2300px) {
@@ -64,7 +66,7 @@ export const ColLeftList = styled.ul`
     margin-top: 1.2rem;
 
     li {
-        font-size: clamp(16px, 1.4vw, 2.4rem);
+        font-size: clamp(16px, 1.6vw, 2.4rem);
         color: #00a16b;
         font-weight: 600;
     }

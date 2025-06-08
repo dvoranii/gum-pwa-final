@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { colors } from "../../../constants/colors";
 
 export const FlossersContainer = styled.div`
-   // padding-left: 5%;
    position: relative;
 `;
 
@@ -65,8 +64,7 @@ export const SlideWrapper = styled.div`
     display: flex;
     gap: 2.4rem;
     width: 90%;
-   //  height: 100%;
-    `;
+`;
 
 export const CarouselSlide = styled.div`
   width: 100%;
@@ -84,11 +82,6 @@ export const SlideColumn1 = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 1.2rem;
-    
-    @media screen and (min-width: 2300px) {
-      padding-top: 2.4rem;
-      min-width: 40%;
-    }
 
     h4 {
       font-weight: 300;
@@ -115,6 +108,18 @@ export const SlideColumn1 = styled.div`
          text-transform: uppercase; 
          font-weight: 900;
       }
+    }
+
+    @media screen and (max-width: 1180px) {  
+        padding-top: 0;  
+        h4 {
+            font-size: clamp(18px, 1.6vw, 2.4rem);
+        }
+    }
+    
+    @media screen and (min-width: 2300px) {
+        padding-top: 2.4rem;
+        min-width: 40%;
     }
 `;
 
@@ -151,7 +156,7 @@ export const ImgWrapper = styled.div`
 export const ListContainer = styled.div`
     width: 92%;
 
-   ul {
+    ul {
         font-family: 'Gotham', sans-serif;
         font-size:clamp(1rem, 1.2vw, 1.8rem);
         color: ${colors.black};
@@ -163,14 +168,23 @@ export const ListContainer = styled.div`
             font-weight: 500;
         }
 
-         @media screen and (min-width: 2300px) {
-            padding: 1.2rem 0;
-         }
     
          sup {
             font-size: 12px;
          }
    }
+
+    @media screen and (max-width: 1180px) {    
+       ul {
+            line-height: 1;
+       } 
+    }
+
+    @media screen and (min-width: 2300px) {    
+       ul {
+            padding: 1.2rem 0;
+       } 
+    }
 `;
 
 export const InfoGrid =  styled.div`

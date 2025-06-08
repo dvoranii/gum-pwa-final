@@ -7,6 +7,7 @@ export const ContainerOuter = styled.div`
   height: 82vh;
   gap: 40px;
   padding-left: 5%;
+  align-items: center;
 `;
 
 export const HeaderLeft = styled.div`
@@ -36,6 +37,7 @@ export const SideIcon = styled.div`
 export const TechContainer = styled.div`
   display: flex;
   width: 87%;
+  height: 100%;
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);

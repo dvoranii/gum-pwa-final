@@ -9,28 +9,33 @@ export const Content = styled.div`
     padding-top: 1rem;
   }
 `;
-
 export const OperatoryWrapper = styled.div`
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+ 
+`;
+export const OperatoryWrapperInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
-    small {
-        font-family: 'Gotham', sans-serif;
-        font-weight: 500;
-        font-size:clamp(1.2rem, 1.2vw, 1.8rem);
-        color: ${colors.black};
-    }
+  width: 100%;
+  
+  small {
+      font-family: 'Gotham', sans-serif;
+      font-weight: 500;
+      font-size:clamp(1.2rem, 1.2vw, 1.8rem);
+      color: ${colors.black};
+  }
 `;
 
 export const ImgWrapper1 = styled.div`
   padding-bottom: 0.5rem;  
-img {
-    width: 50%;
-  }
+  img {
+      width: 50%;
+    }
 `;
 export const ImgWrapper2 = styled.div`
   img {
@@ -39,7 +44,7 @@ export const ImgWrapper2 = styled.div`
 `;
 export const ImgWrapper3 = styled.div`
   img {
-      width: 100%;
+      width: 88%;
   }
 `;
 
@@ -79,7 +84,7 @@ export const ListContainer = styled.div`
         color: ${colors.black};
         padding: 0 0 1.2rem 0;
         list-style: none;
-        line-height: 1.2;
+        line-height: 1.4;
         font-weight: 200;
 
         li {

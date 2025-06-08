@@ -24,6 +24,7 @@ export default function Operatory() {
       {isHomeRoute ? (
 
         <S.OperatoryWrapper>
+          <S.OperatoryWrapperInner>
           <S.ColLeft>
           <S.Row1>
             <S.ImgWrapper1>
@@ -62,6 +63,7 @@ export default function Operatory() {
             <img src={MonsterzImg}/>
           </S.ImgWrapper3>
         </S.ColRight>
+        </S.OperatoryWrapperInner>
         </S.OperatoryWrapper>
        
           ) : (

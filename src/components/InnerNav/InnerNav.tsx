@@ -1,6 +1,6 @@
 import * as S from './InnerNav.styles';
 import GumLogo from "../../assets/gum-logo.svg";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface NavItem {
   path: string;
@@ -15,6 +15,15 @@ interface InnerNavProps {
 
 export default function InnerNav({ navItems }: InnerNavProps) {
   const location = useLocation();
+
+    const handleTabClick = (e: React.MouseEvent, path: string) => {
+    // If we're already on this path, force a reload
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.location.reload();
+    }
+    // Otherwise, let React Router handle the navigation normally
+  };
   
   return (
     <S.NavTabsOuter>
@@ -42,6 +51,7 @@ export default function InnerNav({ navItems }: InnerNavProps) {
               state={item.path === "/recommend" ? { from: location.pathname, navItems: navItems } : undefined}
               end={item.end}
               className={isActive ? 'active' : ''}
+              onClick={(e) => handleTabClick(e, item.path)}
             >
               {item.label}
             </S.TabLink>

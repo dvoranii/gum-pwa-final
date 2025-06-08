@@ -83,7 +83,7 @@ export const InteractiveOverlay = styled.div<InteractiveOverlayProps>`
     width: 44%;
     height: 100%;
     top:0;
-    ${props => props.$positionLeft ? 'left: 0;' : 'right: 45px;'}
+    ${props => props.$positionLeft ? 'left: 0;' : 'right: 10%;'}
     border-radius: 50%;
     z-index: 99;
 `;

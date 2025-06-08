@@ -40,7 +40,7 @@ export const ContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  gap: 1rem;
+  height: 100%;
 `;
 
 
@@ -71,6 +71,9 @@ export const FlossersImg = styled.img`
 export const IntroTitleWrapper = styled.div`
   padding-left: 20px;
   z-index: 99;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
 
   @media screen and (min-width: 2300px) {
     padding-left: 4.8rem;
@@ -93,6 +96,9 @@ export const IntroTitle = styled.h1`
 
 export const RecommendedWrapper = styled.div`
   width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
 `;
 
 export const Recommended = styled.img`
@@ -118,6 +124,8 @@ export const LinksWrapper = styled.div`
   gap: 1.8rem;
   margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
+  flex: 1;
+  align-items: center;
 
   @media screen and (max-width: 1386px) {
     width: 100%;

@@ -1,9 +1,10 @@
 
 import { styled } from "styled-components";
-import BG1 from "../../assets/recommend/bg-1.webp";
+import { colors } from "../../constants/colors";
 
 interface PartnersBGProps {
     $isFullWidthImage?: boolean;
+    $bgImage: string;
 }
 
 export const Content = styled.div`
@@ -16,10 +17,11 @@ export const Content = styled.div`
 
 export const PartnersBG = styled.div<PartnersBGProps>`
   display: flex;
+  justify-content: space-between;
   gap: 2.4rem;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
-  background-image: url(${BG1});
+  background-image: url(${props => props.$bgImage});
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -27,7 +29,6 @@ export const PartnersBG = styled.div<PartnersBGProps>`
   box-sizing: border-box;
   margin-top: 2.4rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
-  justify-content: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
   @media screen and (min-width: 2300px) {
@@ -53,119 +54,8 @@ export const FullWidthImage = styled.img`
   }
 `;
 
-export const GumLogoCol = styled.div`
-  width: 30%;
-  min-width: 0;
-  flex-shrink: 0;
 
-  @media screen and (min-width: 2300px) {
-    padding-left: 4rem;
-  }
-
-`;
-export const GumLogo = styled.img`
-  width: 100%;
-  padding-top: 2.4vh;
-`;
-
-export const GumTextWrapper = styled.div`
-  padding-top: 2rem;
-  text-align: right;
-  width: 100%;
-  color: #00a16b;
-  font-family: 'Gotham', sans-serif;
-
-  h2 {
-    font-size: clamp(1.8rem, 2.8vw, 4.4rem);
-    letter-spacing: -1px;
-  }
-
-  h3 {
-    font-size:clamp(1.2rem, 1.8vw, 2rem);
-    letter-spacing: -1px;
-  }
- 
-  @media screen and (min-width: 2300px) {
-    padding-top: 5.6rem;
-    & > h3 {
-        font-weight: 600;
-        font-size: 2.4rem;
-      }
-      & > h2 {
-        font-weight: 700;
-        font-size: 4.2rem;
-      }
-  }
-`;
-
-export const GraphicsCol = styled.div`
-  width: 70%;
-  min-width: 0;
-  display: flex;
-
-  @media screen and (min-width: 2300px) {
-    width: 64%;
-  }
-`;
-
-export const ImgTextWrapper = styled.div`
-  color: #00a16b;
-  font-family: 'Gotham', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  min-width: 0;
-  max-width: 33.33%;
-
-  h4 {
-    font-weight: 600;
-    letter-spacing: -1px;
-    line-height: 1;
-    font-size: clamp(1.8rem, 2.4vw, 3.6rem);
-    padding-top: 1rem;
-  }
-
-
-  & > img {
-      width: 80%;
-      height: auto;
-      max-width: 100%;
-      object-fit: contain;
-      aspect-ratio:761/770;
-  }
-
-  @media screen and (min-width: 2300px) {
-    h4 {
-      font-size: 3.6rem;
-      padding-top: 1rem;
-    }
-
-    & > img {
-      width: 80%;
-    }
-  }
-`;
-
-export const ColTextWrapper = styled.div`
-    width: 100%;
-    padding-left: 1.8rem;
-
-    & > p {
-      letter-spacing: -1.8px;
-      line-height: 1.15;
-      letter-spacing: -1.4px;
-      padding-top: 0.25rem;
-      font-size: clamp(1rem, 2.08rem ,1.5vw);
-      font-weight: 500;
-    }
-
-    @media screen and (min-width: 2300px) {
-      padding-left: 4rem;
-    }
-`;
-
-export const Circle1Wrapper = styled.div`
+export const CircleWrapper = styled.div`
     height: 100%;
     width: 42%;
     display: flex;
@@ -174,5 +64,57 @@ export const Circle1Wrapper = styled.div`
 
     img {
         width: 50%;
+    }
+`;
+
+export const ThreeCirclesWrapper = styled.div`
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+
+    img {
+        height: 90%;
+    }
+`;
+
+export const CarouselWrapper = styled.div`
+    .carousel {
+    
+    .flickity-page-dots {
+        bottom: unset;
+        right: 35px;
+        left: unset;
+        width: auto;
+        text-align: right;
+        z-index: 10;
+
+        @media screen and (min-width: 2300px) {
+            right: 120px;
+            bottom: -80px;
+        }
+        
+        .dot {
+            width: 20px;
+            height: 20px;
+            opacity: 1 !important;
+            background: ${colors.dotBG2};
+
+            
+            &.is-selected {
+                background: ${colors.dotBGActive2};
+            }
+
+            @media screen and (min-width: 2300px) {
+                width: 34px;
+                height: 34px;
+                margin: 0 16px;
+            }
+        }
+        }
+        
+        .flickity-button {
+        display: none;
+        }
     }
 `;

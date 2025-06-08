@@ -1,6 +1,6 @@
 
 import * as S from "./Recommend.styled";
-
+import {useState} from "react";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
@@ -11,7 +11,13 @@ import ModuleTitle from "../../components/ModuleTitle/ModuleTitle";
 import BulletList from "../../components/BulletList/BulletList";
 import BottomText from "../../components/BottomText/BottomText";
 
+import BG1 from "../../assets/recommend/bg-1.webp";
+import BG2 from "../../assets/recommend/bg-2.webp";
+import BG3 from "../../assets/recommend/bg-3.webp";
+
 import BGCircle1 from "../../assets/recommend/bg-1-circle-1.webp";
+import BG2Circle1 from "../../assets/recommend/bg-2-circle-1.webp";
+import BG2_3Circles from "../../assets/recommend/bg-2-3-circles.webp";
 
 type NavItem = {
     path: string;
@@ -73,6 +79,11 @@ const parentRouteNavItems: Record<ParentRoute | "default", NavItem[]> = {
 export default function Recommend() {
   const location = useLocation();
   const isHomePage = location.pathname === "/recommend";
+  const [activeView, setActiveView] = useState<'default' | "alternate">('default');
+
+  const toggleView = () => {
+    setActiveView(prev => prev === 'default' ? 'alternate' : 'default');
+  }
 
   const getNavItems = (): NavItem[] => {
     const navItemsFromState = location.state?.navItems;
@@ -95,6 +106,16 @@ export default function Recommend() {
 
   const navItems = getNavItems();
 
+   const flickityOptions = {
+        initialIndex: 0,
+        wrapAround: true,
+        autoPlay: false,
+        prevNextButtons: true,
+        pageDots: true,
+        contain: true,
+        cellAlign: 'center'
+    };
+
 
   return (
     <ModuleContainer $isHomePage={isHomePage}>
@@ -108,12 +129,33 @@ export default function Recommend() {
               `Alleviating confusion at shelf.`
             ]}/>
 
-            <S.PartnersBG>
-                <S.Circle1Wrapper>
-                    <img src={BGCircle1}/>
-                </S.Circle1Wrapper>
- 
-            </S.PartnersBG>
+            <S.CarouselWrapper>
+            <Flickity
+                className={'carousel'} 
+                elementType={'div'}
+                options={flickityOptions}
+                disableImagesLoaded={true}          
+                static={false}
+            >
+                {activeView === 'default' ? (
+                <S.PartnersBG $bgImage={BG1}>
+                    <S.CircleWrapper onClick={toggleView}>
+                    <img src={BGCircle1} alt="Default view" />
+                    </S.CircleWrapper>
+                </S.PartnersBG>
+                ) : (
+                <S.PartnersBG $bgImage={BG2}>
+                    <S.CircleWrapper onClick={toggleView}>
+                    <img src={BG2Circle1} alt="Alternate view" />
+                    </S.CircleWrapper>
+                    <S.ThreeCirclesWrapper>
+                    <img src={BG2_3Circles} alt="Additional circles" />
+                    </S.ThreeCirclesWrapper>
+                </S.PartnersBG>
+                )}
+                <S.PartnersBG $bgImage={BG3}/>
+            </Flickity>
+        </S.CarouselWrapper>
 
            <BottomText lines={[
             "Your professional guidance matters.",

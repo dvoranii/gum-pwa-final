@@ -26,7 +26,7 @@ export default function InnerNav({ navItems }: InnerNavProps) {
          
           const isActive = item.end 
             ? location.pathname === item.path
-            : location.pathname.startsWith(item.path);
+            : location.pathname.startsWith(`${item.path}/`);
     
           const to = item.path === "/recommend"
             ? { 

@@ -82,7 +82,7 @@ export const CarouselWrapper = styled.div`
     .carousel {
     
     .flickity-page-dots {
-        bottom: unset;
+        bottom: -40px;
         right: 35px;
         left: unset;
         width: auto;

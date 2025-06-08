@@ -37,7 +37,6 @@ export const NavTabs = styled.nav`
   width: 100%;
   text-transform: uppercase;
   background-color: ${colors.dotBGActive2};
-  max-width: fit-content;
 `;
 
 export const TabLink = styled(NavLink)`

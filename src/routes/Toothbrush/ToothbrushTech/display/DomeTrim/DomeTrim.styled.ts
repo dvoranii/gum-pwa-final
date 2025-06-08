@@ -16,7 +16,7 @@ export const ColumnLeft = styled.div`
     padding: 40px 0 40px 80px;
 
     @media screen and (min-width: 2300px) {
-        padding: 120px 0 40px 100px;    
+        padding: 0px 0 40px 100px;    
     }
 `;
 
@@ -37,7 +37,7 @@ export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
   font-size: clamp(16px, 1.5vw, 2.4rem);
   color: #666666;
-  line-height: 1.25;
+  line-height: 1.1;
   margin-bottom: 30px;
   padding-inline-start: 20px;
   letter-spacing: -1px;
@@ -90,7 +90,7 @@ export const BristlesDiagramWrapper= styled.div`
     height: 100%;
 
     img {
-        width: 80%;
+        width: 90%;
         height: auto;
         padding: 2.4rem 0;
     }

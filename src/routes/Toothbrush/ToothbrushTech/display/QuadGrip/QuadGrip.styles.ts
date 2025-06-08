@@ -39,7 +39,7 @@ export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
   font-size: clamp(16px, 1.5vw, 2.4rem);
   color: #666666;
-  line-height: 1.25;
+  line-height: 1.1;
   margin-bottom: 30px;
   padding-inline-start: 20px;
   letter-spacing: -1px;

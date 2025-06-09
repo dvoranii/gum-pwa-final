@@ -61,25 +61,25 @@ export default function OralSystemicLink() {
     cellAlign: 'center'
   };
 
-  const toggleBaseImg = (e: React.TouchEvent | React.MouseEvent) => {
+  const toggleBaseImg = (e: React.PointerEvent) => {
     e.stopPropagation();
     setShowBaseImg2(prev => !prev);
     setActiveBranch(null); 
   };
 
-  const toggleHeart = (e: React.TouchEvent | React.MouseEvent) => {
+  const toggleHeart = (e: React.PointerEvent) => {
     e.stopPropagation();
     setActiveBranch(prev => prev === "heart" ? null : 'heart');
     setShowBaseImg2(true); 
   };
 
-  const toggleBrain = (e: React.TouchEvent | React.MouseEvent) => {
+  const toggleBrain = (e: React.PointerEvent) => {
     e.stopPropagation();
     setActiveBranch(prev => prev === 'brain' ? null : 'brain');
     setShowBaseImg2(true);
   };
 
-  const toggleBlood = (e: React.TouchEvent | React.MouseEvent) => {
+  const toggleBlood = (e: React.PointerEvent) => {
     e.stopPropagation();
     setActiveBranch(prev => prev === 'blood' ? null : 'blood');
     setShowBaseImg2(true);
@@ -100,8 +100,7 @@ export default function OralSystemicLink() {
                 
                 <S.BaseImg       
                   src={showBaseImg2 ? BaseImg2 : OralSystemicImgFull}
-                   onPointerDown={toggleBaseImg}
-                  onClick={toggleBaseImg}
+                  onPointerDown={toggleBaseImg}
                 />
 
                 {showBaseImg2 && (
@@ -111,38 +110,34 @@ export default function OralSystemicLink() {
                     <S.HeartBranch 
                       src={HeartBranch} 
                        onPointerDown={toggleHeart}
-                      onClick={toggleHeart}
                     />
                     {activeHeart && (
                       <S.HeartActiveOverlay 
                         src={HeartActive}
-                         onPointerDown={(e) => e.stopPropagation()}
-                        onClick={(e) => e.stopPropagation()}
+                        onPointerDown={(e) => e.stopPropagation()}                      
                       />
                     )}
 
                     <S.BrainBranch 
                       src={BrainBranch} 
-                       onPointerDown={toggleBrain}
+                      onPointerDown={toggleBrain}
                     />
                     {activeBrain && (
                       <S.BrainActiveOverlay 
                         src={BrainActive}
-                         onPointerDown={(e) => e.stopPropagation()}
-                        onClick={(e) => e.stopPropagation()}
+                        onPointerDown={(e) => e.stopPropagation()}
                       />
                     )}
 
                     <S.BloodBranch 
                       src={BloodBranch} 
-                       onPointerDown={toggleBlood}
-                      onClick={toggleBlood}
+                      onPointerDown={toggleBlood}
                     />
                     {activeBlood && (
                       <S.BloodActiveOverlay 
                         src={BloodActive}
-                         onPointerDown={(e) => e.stopPropagation()}
-                        onClick={(e) => e.stopPropagation()}
+                        onPointerDown={(e) => e.stopPropagation()}
+
 
                       />
                     )}

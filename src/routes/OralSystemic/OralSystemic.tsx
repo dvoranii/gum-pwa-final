@@ -101,6 +101,7 @@ export default function OralSystemicLink() {
                 <S.BaseImg       
                   src={showBaseImg2 ? BaseImg2 : OralSystemicImgFull}
                   onTouchStart={toggleBaseImg}
+                  onClick={toggleBaseImg}
                 />
 
                 {showBaseImg2 && (
@@ -110,11 +111,13 @@ export default function OralSystemicLink() {
                     <S.HeartBranch 
                       src={HeartBranch} 
                       onTouchStart={toggleHeart}
+                      onClick={toggleHeart}
                     />
                     {activeHeart && (
                       <S.HeartActiveOverlay 
                         src={HeartActive}
                         onTouchStart={(e) => e.stopPropagation()}
+                        onClick={(e) => e.stopPropagation()}
                       />
                     )}
 
@@ -126,17 +129,21 @@ export default function OralSystemicLink() {
                       <S.BrainActiveOverlay 
                         src={BrainActive}
                         onTouchStart={(e) => e.stopPropagation()}
+                        onClick={(e) => e.stopPropagation()}
                       />
                     )}
 
                     <S.BloodBranch 
                       src={BloodBranch} 
                       onTouchStart={toggleBlood}
+                      onClick={toggleBlood}
                     />
                     {activeBlood && (
                       <S.BloodActiveOverlay 
                         src={BloodActive}
                         onTouchStart={(e) => e.stopPropagation()}
+                        onClick={(e) => e.stopPropagation()}
+
                       />
                     )}
                   </>

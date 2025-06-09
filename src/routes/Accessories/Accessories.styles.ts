@@ -114,7 +114,7 @@ export const MetaDataWrapper = styled.div<MetaDataWrapperProps>`
   p {
     font-family: "Gotham", sans-serif;
     font-weight: 200;
-    font-size:clamp(18px, 1.6vw, 2.2rem);
+    font-size:clamp(18px, 1.2vw, 1.8rem);
     color: ${colors.black};
     margin-top: 1.2rem;
   }

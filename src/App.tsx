@@ -18,6 +18,7 @@ function App() {
       case '/toothbrush/kids':
       case '/toothbrush/specialty':
       case '/operatory':
+      case '/accessories':
         return true;
       default:
         return false;

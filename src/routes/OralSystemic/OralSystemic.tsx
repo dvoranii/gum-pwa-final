@@ -100,7 +100,7 @@ export default function OralSystemicLink() {
                 
                 <S.BaseImg       
                   src={showBaseImg2 ? BaseImg2 : OralSystemicImgFull}
-                  onTouchStart={toggleBaseImg}
+                   onPointerDown={toggleBaseImg}
                   onClick={toggleBaseImg}
                 />
 
@@ -110,39 +110,38 @@ export default function OralSystemicLink() {
                     
                     <S.HeartBranch 
                       src={HeartBranch} 
-                      onTouchStart={toggleHeart}
+                       onPointerDown={toggleHeart}
                       onClick={toggleHeart}
                     />
                     {activeHeart && (
                       <S.HeartActiveOverlay 
                         src={HeartActive}
-                        onTouchStart={(e) => e.stopPropagation()}
+                         onPointerDown={(e) => e.stopPropagation()}
                         onClick={(e) => e.stopPropagation()}
                       />
                     )}
 
                     <S.BrainBranch 
                       src={BrainBranch} 
-                      onTouchStart={toggleBrain}
-                      onClick={toggleBrain}
+                       onPointerDown={toggleBrain}
                     />
                     {activeBrain && (
                       <S.BrainActiveOverlay 
                         src={BrainActive}
-                        onTouchStart={(e) => e.stopPropagation()}
+                         onPointerDown={(e) => e.stopPropagation()}
                         onClick={(e) => e.stopPropagation()}
                       />
                     )}
 
                     <S.BloodBranch 
                       src={BloodBranch} 
-                      onTouchStart={toggleBlood}
+                       onPointerDown={toggleBlood}
                       onClick={toggleBlood}
                     />
                     {activeBlood && (
                       <S.BloodActiveOverlay 
                         src={BloodActive}
-                        onTouchStart={(e) => e.stopPropagation()}
+                         onPointerDown={(e) => e.stopPropagation()}
                         onClick={(e) => e.stopPropagation()}
 
                       />

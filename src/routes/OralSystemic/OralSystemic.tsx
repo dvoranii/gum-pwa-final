@@ -124,6 +124,7 @@ export default function OralSystemicLink() {
                     <S.BrainBranch 
                       src={BrainBranch} 
                       onTouchStart={toggleBrain}
+                      onClick={toggleBrain}
                     />
                     {activeBrain && (
                       <S.BrainActiveOverlay 

@@ -158,7 +158,7 @@ export const ListContainer = styled.div`
 
     ul {
         font-family: 'Gotham', sans-serif;
-        font-size:clamp(1rem, 1.2vw, 1.8rem);
+        font-size:clamp(0.9rem, 1.2vw, 1.8rem);
         color: ${colors.black};
         padding: 0.4rem 0;
         line-height: 1.3;
@@ -183,6 +183,7 @@ export const ListContainer = styled.div`
     @media screen and (min-width: 2300px) {    
        ul {
             padding: 1.2rem 0;
+            font-size: clamp(1.2rem, 1.4vw, 2rem);
        } 
     }
 `;

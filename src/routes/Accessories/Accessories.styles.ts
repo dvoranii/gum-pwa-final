@@ -7,8 +7,16 @@ export const Content = styled.div`
   height: 96%;
   display: flex;
 
+  @media screen and (min-width: 1489px) {
+    height: 86%;
+  }
+
   @media screen and (max-width: 1386px) {
     height: 90%;
+  }
+
+  @media screen and (min-width: 2300px) {
+    height: 96%;
   }
 `;
 
@@ -94,11 +102,16 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const RowWrapperInner = styled.div`
+interface RowWrapperInnerProps {
+  $gap?: string;
+}
+
+export const RowWrapperInner = styled.div<RowWrapperInnerProps>`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ${colors.black};
   padding-bottom: 2.4rem;
+  gap: ${(props) => props.$gap};
 `;
 
 interface MetaDataWrapperProps {
@@ -113,20 +126,26 @@ export const MetaDataWrapper = styled.div<MetaDataWrapperProps>`
 
   p {
     font-family: "Gotham", sans-serif;
-    font-weight: 200;
-    font-size:clamp(18px, 1.2vw, 1.8rem);
+    font-weight: 300;
+    font-size:clamp(16px, 1.2vw, 1.4rem);
     color: ${colors.black};
     margin-top: 1.2rem;
   }
 `;
 
-export const ImgWrapper = styled.div`
+interface ImgWrapperProps {
+  $width?: string;
+  $flex?: string;
+}
+
+export const ImgWrapper = styled.div<ImgWrapperProps>`
   display: flex;
-  flex: 1;
+  flex: ${(props) => props.$flex ? props.$flex: "1"};
   align-items: flex-end;
 
   img {
-    width:90%;
+    // width:90%;
+    width: ${(props) => props.$width ? props.$width : "90%"};
   }
 `;
 
@@ -138,6 +157,7 @@ export const Slide = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 2.4rem;
 
   @media screen and (max-width: 1386px) {
     height: 68vh;
@@ -154,7 +174,7 @@ export const ListContainer = styled.div`
 
     ul {
         font-family: 'Gotham', sans-serif;
-        font-size:clamp(18px, 1.6vw, 2.2rem);
+        font-size:clamp(16px, 1.4vw, 2.2rem);
         color: ${colors.black};
         padding: 0.4rem 0;
         line-height: 1.3;
@@ -171,6 +191,7 @@ export const ListContainer = styled.div`
     @media screen and (min-width: 2300px) {    
        ul {
             padding: 1.2rem 0;
+            font-size:clamp(18px, 1.6vw, 2.2rem);
        } 
     }
 `;

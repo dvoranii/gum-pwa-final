@@ -16,7 +16,7 @@ interface InnerNavProps {
 export default function InnerNav({ navItems }: InnerNavProps) {
   const location = useLocation();
 
-    const handleTabClick = (e: React.TouchEvent, path: string) => {
+    const handleTabPointerDown = (e: React.PointerEvent, path: string) => {
     if (location.pathname === path) {
       e.preventDefault();
       window.location.reload();
@@ -49,7 +49,7 @@ export default function InnerNav({ navItems }: InnerNavProps) {
               state={item.path === "/recommend" ? { from: location.pathname, navItems: navItems } : undefined}
               end={item.end}
               className={isActive ? 'active' : ''}
-              onTouchStart={(e) => handleTabClick(e, item.path)}
+              onPointerDown={(e) => handleTabPointerDown(e, item.path)}
             >
               {item.label}
             </S.TabLink>

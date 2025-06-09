@@ -8,6 +8,10 @@ export const ContainerOuter = styled.div`
   gap: 40px;
   padding-left: 5%;
   align-items: center;
+  
+  @media screen and (max-width: 1386px) {
+    gap:20px;
+  }
 `;
 
 export const HeaderLeft = styled.div`
@@ -16,6 +20,11 @@ export const HeaderLeft = styled.div`
   flex-direction: column;
   width: 20vh;
   padding-right: 20px;
+
+  @media screen and (max-width: 1386px) {
+    width: 23vh;
+    margin-top: 0;
+  }
 
 `;
 

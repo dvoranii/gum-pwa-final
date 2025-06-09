@@ -153,12 +153,12 @@ export default function BtcPatient() {
           {/* Row 2 */}
           <S.Row2>
             <S.ImgWrapper2
-              onTouchStart={() => toggleImage("motivated", 1)}
+              onPointerDown={() => toggleImage("motivated", 1)}
             >
               <img src={activeImages.motivated ? imageSources.motivated.active : imageSources.motivated.normal}/>
             </S.ImgWrapper2>
             <S.ImgWrapper3
-              onTouchStart={() => toggleImage("unmotivated", 1)}
+              onPointerDown={() => toggleImage("unmotivated", 1)}
             >
               <img src={activeImages.unmotivated ? imageSources.unmotivated.active : imageSources.unmotivated.normal}/>
             </S.ImgWrapper3>

@@ -19,7 +19,6 @@ export default function ToothbrushPatient() {
   const [showResults, setShowResults] = useState(false);
 
   const toggleImage = (imageKey: ImageKey) => {
-    // setActiveImage(prev => prev === imageKey ? null : imageKey);
     setActiveImage(prev => {
       if (prev === imageKey) {
         setShowResults(false);
@@ -42,16 +41,16 @@ export default function ToothbrushPatient() {
 
         <S.ChoicesImgWrapper >
           {/* invisible touch target for overlapping images */}
-          <S.InteractiveOverlay onTouchStart={() => toggleImage('subgingival')} $positionLeft={true}/>
+          <S.InteractiveOverlay onPointerDown={() => toggleImage('subgingival')} $positionLeft={true}/>
           <img src={activeImage === "subgingival" ? SubgingivalActive: Subgingival}/>
         </S.ChoicesImgWrapper>
 
         <S.ChoicesImgWrapper >
-          <S.InteractiveOverlay onTouchStart={() => toggleImage('sensitivity')} $positionLeft={false}/>
+          <S.InteractiveOverlay onPointerDown={() => toggleImage('sensitivity')} $positionLeft={false}/>
           <img src={activeImage === "sensitivity" ? SensitivityActive : Sensitivity}/>
         </S.ChoicesImgWrapper>
 
-        <S.ChoicesImgWrapper onTouchStart={() => toggleImage('reach')}>
+        <S.ChoicesImgWrapper onPointerDown={() => toggleImage('reach')}>
           <img src={activeImage === "reach" ? ReachActive : Reach}/>
         </S.ChoicesImgWrapper>
 

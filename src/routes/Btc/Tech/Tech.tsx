@@ -47,7 +47,7 @@ export default function BtcTech() {
         <S.SideIcon 
         >
           <img 
-            onTouchStart={() => handleIconTouch(1)}  
+            onPointerDown={() => handleIconTouch(1)}  
             src={activeIcon === 1 ? Circle1Active : Circle1} 
             alt="45 degree angle" 
           />
@@ -56,13 +56,13 @@ export default function BtcTech() {
           
         >
           <img 
-            onTouchStart={() => handleIconTouch(2)} 
+            onPointerDown={() => handleIconTouch(2)} 
             src={activeIcon === 2 ? Circle2Active : Circle2} 
             alt="Feature" 
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(3)} 
+          onPointerDown={() => handleIconTouch(3)} 
         >
           <img 
             src={activeIcon === 3 ? Circle3Active : Circle3} 
@@ -70,7 +70,7 @@ export default function BtcTech() {
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(4)} 
+          onPointerDown={() => handleIconTouch(4)} 
          
         >
           <img 

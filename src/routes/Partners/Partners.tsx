@@ -44,12 +44,12 @@ export default function Partners() {
               {showPartners2 ? (
                 <S.FullWidthImage 
                 src={Partners2} 
-                onTouchStart={togglePartnersView}
+                onPointerDown={togglePartnersView}
                 alt="Partners alternative view" />
               ) : (
              <>
               <S.GumLogoCol>
-                <S.GumLogo src={GumLogo} onTouchStart={togglePartnersView} />
+                <S.GumLogo src={GumLogo} onPointerDown={togglePartnersView} />
 
                 <S.GumTextWrapper>
                   <h2>Transforming</h2>

@@ -139,13 +139,13 @@ export default function Recommend() {
             >
                 {activeView === 'default' ? (
                 <S.PartnersBG $bgImage={BG1}>
-                    <S.CircleWrapper onClick={toggleView}>
+                    <S.CircleWrapper onPointerDown={toggleView}>
                     <img src={BGCircle1} alt="Default view" />
                     </S.CircleWrapper>
                 </S.PartnersBG>
                 ) : (
                 <S.PartnersBG $bgImage={BG2}>
-                    <S.CircleWrapper onClick={toggleView}>
+                    <S.CircleWrapper onPointerDown={toggleView}>
                     <img src={BG2Circle1} alt="Alternate view" />
                     </S.CircleWrapper>
                     <S.ThreeCirclesWrapper>

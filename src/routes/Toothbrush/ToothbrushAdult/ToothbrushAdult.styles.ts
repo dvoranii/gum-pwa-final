@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const AdultWrapperOuter = styled.div`
+  position: relative;
 `;
 
 export const CarouselWrapper = styled.div`
@@ -12,7 +13,6 @@ export const CarouselWrapper = styled.div`
 
     .carousel {
         width: 100%;
-        width: 100%;
 
         .flickity-viewport {
             height: 80vh !important;
@@ -20,7 +20,7 @@ export const CarouselWrapper = styled.div`
         
         .flickity-page-dots {
             top: unset;
-            right: 35px;
+            right: 95px;
             left: unset;
             width: auto;
             text-align: right;
@@ -42,6 +42,13 @@ export const CarouselWrapper = styled.div`
       display: none;
     }
 
+    }
+
+    @media screen and (min-width: 2300px) {
+      .carousel  .flickity-page-dots {
+          right: 160px;
+          bottom: -30px;
+          }
     }
 `;
 export const CarouselSlide = styled.div`

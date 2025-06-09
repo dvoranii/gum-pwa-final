@@ -8,6 +8,7 @@ import Slide2 from "../../../assets/toothbrush/Adult/AdultSlide2.webp";
 import Slide3 from "../../../assets/toothbrush/Adult/AdultSlide3.webp";
 import Slide4 from "../../../assets/toothbrush/Adult/AdultSlide4.webp";
 
+import ShopifyIcon from "../../Btc/components/ShopifyIcon/ShopifyIcon";
 
 export default function ToothbrushAdult() {
 
@@ -44,10 +45,9 @@ export default function ToothbrushAdult() {
           <S.CarouselSlide>
             <img src={Slide4}/>
           </S.CarouselSlide>
-
         </Flickity>
-
       </S.CarouselWrapper>
+      <ShopifyIcon/>
     </S.AdultWrapperOuter>
   );
 }

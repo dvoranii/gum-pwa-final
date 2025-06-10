@@ -2,21 +2,8 @@ import * as S from "./App.styles";
 import SideBar from "./components/SideBar/SideBar";
 import AppRoutes from "./routes/AppRoutes";
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
-import { audioPool } from './utils/audioPool';
-
 
 function App() {
-
-  useEffect(() => {
-    const handleFirstInteraction = () => {
-      audioPool.initialize();
-      window.removeEventListener('click', handleFirstInteraction);
-    };
-    
-    window.addEventListener('click', handleFirstInteraction);
-    return () => window.removeEventListener('click', handleFirstInteraction);
-  }, []);
 
   const location = useLocation();
 

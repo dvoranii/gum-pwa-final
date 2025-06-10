@@ -13,7 +13,7 @@ export default function ProxaTriangular() {
         Triangular Bristles
         </S.MainTitle>
         <S.Description>
-        <li>Triangular-shaped bristles remove up to 25% more plaque than conventional round bristles.</li>
+        <li>Triangular bristles remove up to 25% more plaque than conventional round bristles<sup>1</sup>.</li>
         </S.Description>
         
         <S.DiagramSection>

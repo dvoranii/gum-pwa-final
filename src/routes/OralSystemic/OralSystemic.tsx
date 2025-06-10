@@ -12,16 +12,16 @@ import BaseImg2 from  "../../assets/oral-systemic/BaseImg-2.svg";
 import Branches from "../../assets/oral-systemic/branches.svg";
 
 import HeartBranch from "../../assets/oral-systemic/heartbranch.svg";
-import HeartBranchResult from "../../assets/oral-systemic/HeartBranchResult.svg";
+import HeartBranchResult from "../../assets/oral-systemic/HeartBranchResult.webp";
 import HeartActive from "../../assets/oral-systemic/heart-active.svg";
 
 import BrainBranch from "../../assets/oral-systemic/brainbranch.svg";
 import BrainActive from "../../assets/oral-systemic/brain-active.svg";
-import BrainBranchResult from "../../assets/oral-systemic/BrainBranchResult.svg";
+import BrainBranchResult from "../../assets/oral-systemic/BrainBranchResult.webp";
 
 import BloodBranch from "../../assets/oral-systemic/bloodbranch.svg";
 import BloodActive from "../../assets/oral-systemic/blood-active.svg";
-import BloodBranchResult from "../../assets/oral-systemic/BloodBranchResult.svg";
+import BloodBranchResult from "../../assets/oral-systemic/BloodBranchResult.webp";
 
 
 import Slide1 from "../../assets/oral-systemic/carousel/OS-slide1.webp";

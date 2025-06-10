@@ -23,13 +23,19 @@ export const OralSystemicImgWrapperOuter = styled.div`
   background: white;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
+  height: 60vh;
 
   & > * {
     flex: 0 0 auto;
   }
 
+  @media screen and (max-width: 1368px) {
+    height: 46vh;
+  }
+
   @media screen and (min-width: 2300px) {
     margin-top: 3rem;
+    height: 56vh;
   }
 `;
 
@@ -367,13 +373,13 @@ export const ResultContent = styled.div`
 
 export const ResultTextImg = styled.img<ResultTextImgProps>`
     max-width: 80%;
-    padding-left: ${props => props.$variant === 'brain' ? '4rem' : '3rem'};
-    padding-top: ${props => props.$variant === 'brain' ? '1rem' : '2rem'};
+    // padding-left: ${props => props.$variant === 'brain' ? '4rem' : '3rem'};
+    // padding-top: ${props => props.$variant === 'brain' ? '1rem' : '2rem'};
 
     @media screen and (min-width: 2300px) {
         max-width: 100%;
-        max-height: 57vh;
-        padding: ${props => props.$variant === 'brain' ? '4rem 5.6rem 0 4rem' : '4rem'};
+        // max-height: 57vh;
+        // padding: ${props => props.$variant === 'brain' ? '4rem 5.6rem 0 4rem' : '4rem'};
     }
 `;
 

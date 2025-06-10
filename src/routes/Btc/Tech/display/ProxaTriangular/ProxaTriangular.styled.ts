@@ -45,6 +45,10 @@ export const Description = styled.ul`
   letter-spacing: -1px;
   padding-right: 120px;
 
+  sup {
+    font-size: 18px;
+  }
+
   @media screen and (max-width: 1368px) {
     font-size: 1.8vw;
     padding-right: 0;

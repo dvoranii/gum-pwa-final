@@ -13,7 +13,7 @@ export default function ProxaTriangular() {
         Advanced
         </S.MainTitle>
         <S.Description>
-        <li>With a more comfortable rubber grib and longer curved handle for improved maneuverability</li>
+        <li>With a longer curved handle for improved maneuverability.</li>
         </S.Description>
         
         <S.DiagramSection>

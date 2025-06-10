@@ -34,6 +34,11 @@ export const ColumnLeft = styled.div`
     max-width: 60%;
     padding:80px 0 40px 80px;
 
+    sup {
+        font-size: 18px;
+    }
+
+
     @media screen and (max-width: 1024px) {
         padding: 60px 0 40px 60px;
     }
@@ -50,6 +55,7 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.2vw, 6.4rem);
   line-height: 1;
   padding-right: 20px;
+  z-index: 99;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
@@ -102,7 +108,7 @@ export const ColRightDiagramWrapper= styled.div`
         img {
             width: 95%;
             height: auto;
-            margin-left: -36px;
+            margin-left: -22px;
         }
     }
 `;

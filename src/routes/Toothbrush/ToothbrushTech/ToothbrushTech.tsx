@@ -44,7 +44,7 @@ export default function ToothbrushTech() {
     <S.ContainerOuter>
       <S.HeaderLeft>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(1)}  
+          onPointerDown={() => handleIconTouch(1)}  
         >
           <img 
             src={activeIcon === 1 ? Circle1Active : Circle1} 
@@ -52,7 +52,7 @@ export default function ToothbrushTech() {
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(2)} 
+          onPointerDown={() => handleIconTouch(2)} 
           
         >
           <img 
@@ -61,7 +61,7 @@ export default function ToothbrushTech() {
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(3)} 
+          onPointerDown={() => handleIconTouch(3)} 
         >
           <img 
             src={activeIcon === 3 ? Circle3Active : Circle3} 
@@ -69,7 +69,7 @@ export default function ToothbrushTech() {
           />
         </S.SideIcon>
         <S.SideIcon 
-          onTouchStart={() => handleIconTouch(4)} 
+          onPointerDown={() => handleIconTouch(4)} 
          
         >
           <img 

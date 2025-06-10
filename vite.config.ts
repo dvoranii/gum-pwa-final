@@ -11,7 +11,6 @@ export default defineConfig({
             'babel-plugin-styled-components',
             {
               displayName: true,
-              fileName: true
             }
           ]
         ]
@@ -30,23 +29,24 @@ export default defineConfig({
         "theme_color": "#000000",
         "icons": [
           {
-            "src": "/icon/192x192-icon.png",
-            "sizes": "192x192",
+            "src": "/icon-512.png",
+            "sizes": "512x512",
             "type": "image/png"
           },
           {
-            "src": "/icon/512x512-icon.png",
-            "sizes": "512x512",
+            "src": "/icon-196.png",
+            "sizes": "196x196",
             "type": "image/png"
           }
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,otf}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,otf}'],
       },
       devOptions: {
-        enabled: true
-      }
+        enabled: false,
+        type: 'module'
+      },
     })
   ]
 });

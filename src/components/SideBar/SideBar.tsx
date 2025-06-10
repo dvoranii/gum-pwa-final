@@ -19,7 +19,7 @@ import ref1 from "../../assets/nav-icons/ref1.jpg";
 import ref2 from "../../assets/nav-icons/ref2.jpg";
 
 import NavTapSound from "../../assets/sounds/tapside.mp3";
-import playSound from "../../utils/playSound";
+import {audioPool} from "../../utils/audioPool";
 
 const navItems = [
     {
@@ -102,7 +102,7 @@ export default function SideBar() {
               <S.NavButton 
                 to={item.path}
                 className={isActive ? 'active' : ''}
-                onPointerDown={() => playSound(NavTapSound)}
+                onPointerDown={() => audioPool.play('navTap')}
               >
                 <S.NavIcon 
                   src={isActive ? item.activeIcon : item.inactiveIcon}

@@ -178,7 +178,7 @@ export default function OralSystemicLink() {
                   {activeBrain && (
                     <S.ResultImgWrapper>
                       <S.ResultContent>
-                        <S.ResultTextImg />
+                        <S.ResultTextImg src={BrainBranchResult} />
                       </S.ResultContent>
                     </S.ResultImgWrapper>
                   )}
@@ -186,7 +186,7 @@ export default function OralSystemicLink() {
                   {activeBlood && (
                     <S.ResultImgWrapper>
                       <S.ResultContent>
-                        <S.ResultTextImg/>
+                        <S.ResultTextImg src={BloodBranchResult}/>
                       </S.ResultContent>
                     </S.ResultImgWrapper>
                   )}

@@ -4,6 +4,7 @@ import 'flickity/dist/flickity.min.css';
 
 import Slide1Graphic from "../../../assets/btc/flosser/Slide1Graphic.webp";
 import Slide2Graphic from "../../../assets/btc/flosser/Slide2Graphic.webp";
+import Slide2GraphicSmall from "../../../assets/btc/flosser/Asset2.png"
 import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 export default function BtcFlossers(){
@@ -125,6 +126,9 @@ export default function BtcFlossers(){
                                 
                             </ul>  
                         </S.ListContainer>
+                        <S.ImgWrapper2>
+                            <img src={Slide2GraphicSmall}/>
+                        </S.ImgWrapper2>
                     </S.SlideColumn1>
                     <S.SlideColumn2>
                         <S.ImgWrapper>
@@ -141,7 +145,6 @@ export default function BtcFlossers(){
                                 </S.Row>
                         </S.InfoGrid>
                     </S.SlideColumn2>
-
                     </S.SlideWrapper>
                </S.CarouselSlide>
             </Flickity>

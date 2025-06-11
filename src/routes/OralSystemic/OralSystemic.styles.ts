@@ -1,9 +1,5 @@
 import { styled } from "styled-components";
 
-interface ResultTextImgProps {
-  $variant?: 'brain' | 'heart' | 'blood'; 
-}
-
 export const Content = styled.div`
     padding-top: 2rem;
 
@@ -371,15 +367,11 @@ export const ResultContent = styled.div`
     // display: flex;
 `;
 
-export const ResultTextImg = styled.img<ResultTextImgProps>`
+export const ResultTextImg = styled.img`
     max-width: 80%;
-    // padding-left: ${props => props.$variant === 'brain' ? '4rem' : '3rem'};
-    // padding-top: ${props => props.$variant === 'brain' ? '1rem' : '2rem'};
 
     @media screen and (min-width: 2300px) {
         max-width: 100%;
-        // max-height: 57vh;
-        // padding: ${props => props.$variant === 'brain' ? '4rem 5.6rem 0 4rem' : '4rem'};
     }
 `;
 

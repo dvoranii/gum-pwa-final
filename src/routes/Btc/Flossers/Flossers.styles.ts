@@ -153,6 +153,13 @@ export const ImgWrapper = styled.div`
 
 `;
 
+export const ImgWrapper2 = styled.div`
+    padding-top: 2.4rem;
+    img {
+        width: 50%;
+    }
+`;
+
 export const ListContainer = styled.div`
     width: 92%;
 

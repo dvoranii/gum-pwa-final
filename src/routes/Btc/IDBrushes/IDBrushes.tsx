@@ -204,7 +204,10 @@ export default function BtcIDBrushes() {
                                 <S.Column>1 Handle (2 Refills)</S.Column>
                                 <S.Column>12/box</S.Column>
                             </S.InfoGridRow>
-                    </S.InfoGrid2> 
+                    </S.InfoGrid2>
+                    <S.CaptionWrapper>
+                        <small>1. Data on File (DOF-0001)&nbsp;&nbsp;&nbsp;2. DOF-0046</small>
+                    </S.CaptionWrapper> 
                     </S.Slide3WrapperOuter>
                 </S.CarouselSlide>
 

@@ -64,10 +64,6 @@ export default function BtcSoftPicks() {
                         <p>670 Soft-Picks® Comfort Flex Mint</p>
                         <p>72 Packs of 4</p>
                     </S.Column3TextWrapper>
-                    <S.Column3TextWrapper>
-                        <p>632 Soft-Picks® Original</p>
-                        <p>72 Packs of 5</p>
-                    </S.Column3TextWrapper>
                 </S.Column3>
             </S.Row2>
         </S.SoftPicksContainer>

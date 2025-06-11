@@ -167,9 +167,6 @@ export const TextWrapper2 = styled.div`
     }
 `;
 
-// export const TextWrapper3 = styled.div`
-//     border-bottom: 1px solid grey;
-// `;
 
 export const TextWrapperOuter = styled.div`
     border-bottom: 2px solid ${colors.primary};
@@ -408,4 +405,13 @@ export const InfoGrid2 = styled.div`
     padding-top: 1.2rem;
     font-size: clamp(14px, 1vw, 1.4rem);
     color: ${colors.black};
+`;
+
+export const CaptionWrapper = styled.div`
+    padding-top: 3.2rem;
+    small {
+        color: ${colors.black};
+        font-family: "Gotham", sans-serif;
+        font-size: 16px;
+    }
 `;

@@ -31,7 +31,7 @@ export const OralSystemicImgWrapperOuter = styled.div`
 
   @media screen and (min-width: 2300px) {
     margin-top: 3rem;
-    height: 56vh;
+    height: 60vh;
   }
 `;
 
@@ -45,7 +45,7 @@ export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   }
 
   @media screen and (min-width: 2300px) {
-   width: ${props => props.showResults ? '62%' : '46%'};
+   width: ${props => props.showResults ? '62%' : '47.5%'};
   }
 
 `;
@@ -85,7 +85,7 @@ export const CarouselWrapper = styled.div`
 
       @media screen and (min-width: 2300px) {
         right:108px;
-        top: 108px;
+        top: 90px;
       }
       
       .dot {
@@ -99,8 +99,8 @@ export const CarouselWrapper = styled.div`
         }
 
         @media screen and (min-width: 2300px) {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             margin: 0 16px;
         }
       }

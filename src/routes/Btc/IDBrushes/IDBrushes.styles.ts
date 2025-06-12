@@ -35,7 +35,7 @@ export const CarouselWrapper = styled.div`
         width: 100%;
 
         .flickity-viewport {
-            height: 83vh !important;
+            height: 80vh !important;
         }
         
         .flickity-page-dots {
@@ -87,9 +87,14 @@ export const SlideRow2 = styled.div`
     padding-top: 1.2rem;
 `;
 
-export const Column = styled.div`
+interface ColumnProps {
+    $centered?: boolean;
+}
+
+export const Column = styled.div<ColumnProps>`
     display: flex;
     align-items: center;
+    justify-content: ${(props) => props.$centered ? 'center' : ""};
     span {
         text-transform: uppercase;
     }
@@ -102,6 +107,13 @@ export const InfoGridRow = styled.div`
     @media screen and (min-width: 2300px) {
         line-height: 0.8;
     }
+`;
+
+export const InfoGridRow2 = styled.div`
+    display: contents;
+    line-height: 1.5;
+    font-family: "Gotham", sans-serif;
+    color: ${colors.black};
 `;
 
 export const Row1WrapperInner = styled.div`
@@ -211,27 +223,28 @@ export const ImgWrapper = styled.div`
 
 export const ImgWrapper1 = styled.div`
     width: 70%;
+    display: flex;
+    justify-content: center;
 
     img {
-        width: 75%;
+        width: 100%;
     }
 
     @media screen and (min-width: 2300px) {         
         width: 100%;
         img {
-            width: 100%;
+            width: 87%;
         }
     }
 `;
 
 export const ImgWrapper2 = styled.div`
-    width: 85%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
     padding-top: 1.2rem;
 
     img {
-        width: 70%;
+        width: 83%;
     }
 
     @media screen and (min-width: 2300px) {
@@ -405,6 +418,22 @@ export const InfoGrid2 = styled.div`
     padding-top: 1.2rem;
     font-size: clamp(14px, 1vw, 1.4rem);
     color: ${colors.black};
+`;
+
+export const InfoGrid3 = styled.div`
+    display: grid;
+    // grid-template-columns: 1.65fr 1fr 1fr 1fr 1fr 1.2fr 1fr;
+    grid-template-columns: 0.9fr 0.85fr 1.1fr 1fr 1fr 1.2fr 1fr;
+    width: 83%;
+    margin-left: 30px;
+    margin-top: 1.2rem;
+`;
+
+export const ColouredCircle = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
 `;
 
 export const CaptionWrapper = styled.div`

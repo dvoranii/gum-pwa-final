@@ -64,7 +64,7 @@ export const GumLogoCol = styled.div`
 `;
 export const GumLogo = styled.img`
   width: 100%;
-  padding-top: 2.4vh;
+  padding-top: 4.6vh;
 `;
 
 export const GumTextWrapper = styled.div`
@@ -85,14 +85,16 @@ export const GumTextWrapper = styled.div`
   }
  
   @media screen and (min-width: 2300px) {
-    padding-top: 5.6rem;
+
+    padding-top: 2.4rem;
+
     & > h3 {
         font-weight: 600;
-        font-size: 2.4rem;
+        font-size: 2.8rem;
       }
       & > h2 {
         font-weight: 700;
-        font-size: 4.2rem;
+        font-size: 4.8rem;
       }
   }
 `;

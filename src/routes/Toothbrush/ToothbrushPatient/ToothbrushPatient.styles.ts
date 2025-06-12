@@ -9,9 +9,12 @@ export const MainTitle = styled.h1`
     font-weight: 600;
     font-size: clamp(18px, 2.4vw, 3.6rem);
     color: #00a16b;
+    letter-spacing: -1.5px;
+    padding-left: 5px;
+    padding-bottom: 12px;
 
     @media screen and (min-width: 2300px) {
-        font-size: 2.4vw;
+        font-size: 2.7vw;
     }
 `;
 
@@ -56,7 +59,8 @@ export const ChoicesContainerOuter = styled.div`
 `;
 
 export const ChoicesContainerInner = styled.div`
-  margin-left: 8%;
+  margin-left: 10%;
+  margin-top: -45px;
 `;
 
 export const ChoicesImgWrapper = styled.div`
@@ -70,7 +74,7 @@ export const ChoicesImgWrapper = styled.div`
     }
 
     img {
-        width: 100%;
+        width: 94%;
     }
 `;
 

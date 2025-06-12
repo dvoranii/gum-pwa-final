@@ -27,6 +27,7 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.2vw, 6.4rem);
   line-height: 1;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
@@ -64,6 +65,7 @@ export const ColLeftImgWrapper = styled.div`
 export const ColLeftList = styled.ul`
     font-family: 'Gotham', sans-serif;
     margin-top: 1.2rem;
+    padding-inline-start: 20px;
 
     li {
         font-size: clamp(16px, 1.6vw, 2.4rem);

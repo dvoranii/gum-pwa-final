@@ -49,9 +49,11 @@ export const ChoicesContainerOuter = styled.div`
 
   @media screen and (min-width: 2300px) {
     width: 44%;
+    padding-top: 0;
 
     h1 {
-      font-size: 2.4vw;
+      font-size: 2.6vw;
+      letter-spacing: -1.5px;
     }
   }
 `;
@@ -85,21 +87,21 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
 
 export const Row = styled.div`
   display: flex;
-  gap: 1.2rem;
+  gap: 0.5rem;
   padding-top: 1.2rem;
 
   @media screen and (min-width: 2300px) {
-    padding-top: 2.4rem;
+    padding-top: 1.4rem;
   }
 `;
 
 export const Row2 = styled.div`
   display: flex;
-  gap: 1.2rem;
+  gap: 0.5rem;
   padding-top:1.2rem;
 
   @media screen and (min-width: 2300px) {
-  padding-top: 2.4rem;
+  padding-top: 1.4rem;
   }
  
 `;
@@ -143,15 +145,16 @@ export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps
     font-family: "Gotham", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: clamp(18px, 1.4vw, 2.4rem);
-    font-weight: 200;
+    font-size: clamp(18px, 1.4vw, 2.2rem);
+    font-weight: 400;
     color: #ffffff;
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
   }
 
   @media screen and (min-width: 2300px) {
       p {
-        font-size: clamp(18px, 1.8vw, 2.4rem);
+        font-size: clamp(18px, 1.8vw, 2.2rem);
+        margin-left: 46px;
       }
   }
 `;

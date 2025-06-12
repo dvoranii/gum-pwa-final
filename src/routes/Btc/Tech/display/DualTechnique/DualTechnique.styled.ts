@@ -35,6 +35,7 @@ export const MainTitle = styled.h1`
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
       font-size: 3.4vw;
+      padding-left: 8px;
   }
 `;
 
@@ -48,6 +49,10 @@ export const Description = styled.ul`
   letter-spacing: -1px;
   padding-top: 1.2rem;
   padding-right: 80px;
+
+  sup {
+    font-size: 16px;
+  }
 
   @media screen and (max-width: 1368px) {
     font-size: 2vw;
@@ -85,9 +90,10 @@ export const ColRightDiagramWrapper= styled.div`
 
     @media screen and (min-width: 2300px) {
         img {
-            width: 95%;
+            width: 100%;
+            padding-top: 13.2rem;
             height: auto;
-            margin-left: -36px;
+            margin-left: -100px;
         }
     }
 `;
@@ -95,6 +101,7 @@ export const ColRightDiagramWrapper= styled.div`
 
 export const ImgWrapper = styled.div`
     width: 35%;
+    padding-top: 32px;
 
     img {
         width: 100%;

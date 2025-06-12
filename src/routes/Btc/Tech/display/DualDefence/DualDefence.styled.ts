@@ -56,6 +56,7 @@ export const MainTitle = styled.h1`
   line-height: 1;
   padding-right: 20px;
   z-index: 99;
+  padding-left: 12px;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;

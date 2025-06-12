@@ -9,8 +9,7 @@ export default function ProxaTriangular() {
     <S.ContentWrapper>
     <S.HeaderRight>
         <S.MainTitle>
-        GUM Proxabrush<S.Trademark>®</S.Trademark><br/>
-        Triangular Bristles
+        GUM Proxabrush<S.Trademark>®</S.Trademark>
         </S.MainTitle>
         <S.Description>
         <li>Triangular bristles remove up to 25% more plaque than conventional round bristles<sup>1</sup>.</li>

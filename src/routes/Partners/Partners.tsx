@@ -53,7 +53,7 @@ export default function Partners() {
 
                 <S.GumTextWrapper>
                   <h2>Transforming</h2>
-                  <h3>Experiences & Relationships</h3>
+                  <h3>Patient Experiences<br/> & Relationships</h3>
                 </S.GumTextWrapper>
               </S.GumLogoCol> 
 
@@ -62,14 +62,14 @@ export default function Partners() {
                     <img src={PatientImg} alt="" />
                     <S.ColTextWrapper>
                       <h4>Patient</h4>
-                      <p>Creating great first experiences that can transform patients' relationship with oral hygiene.</p>
+                      <p>Creating experiences that can transform patients' relationship with hygiene.</p>
                     </S.ColTextWrapper>
                   </S.ImgTextWrapper>
                   <S.ImgTextWrapper>
                     <img src={ProfessionalImg} alt="" />
                     <S.ColTextWrapper>
                       <h4>Professional</h4>
-                      <p>Engineering superior products specifically designed for your unique patient needs.</p>
+                      <p>Engineering superior products designed for unique patient needs.</p>
                     </S.ColTextWrapper>
                   </S.ImgTextWrapper>
                   <S.ImgTextWrapper>

@@ -23,6 +23,7 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.4vw, 6.4rem);
   line-height: 1;
   margin-bottom: 20px;
+  padding-left: 16px;
 `;
 
 export const Trademark = styled.sup`

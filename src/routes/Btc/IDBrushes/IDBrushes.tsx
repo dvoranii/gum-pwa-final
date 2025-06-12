@@ -7,7 +7,8 @@ import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 import Slide1Row1Graphic1 from "../../../assets/btc/id-brushes/Slide1Row1Graphic1.webp";
 import Slide1Row1Graphic2 from "../../../assets/btc/id-brushes/Slide1Row1Graphic2.webp";
-import Slide1Graphic3 from "../../../assets/btc/id-brushes/Slide1Graphic3.webp";
+// import Slide1Graphic3 from "../../../assets/btc/id-brushes/Slide1Graphic3.webp";
+import Slide1Graphic3 from "../../../assets/btc/id-brushes/Asset8.png";
 
 import Slide1Row1Graphic from "../../../assets/btc/id-brushes/Slide2Row1Graphic.webp";
 import Slide2Row2Graphic1 from "../../../assets/btc/id-brushes/Slide2Row2Graphic1.webp";

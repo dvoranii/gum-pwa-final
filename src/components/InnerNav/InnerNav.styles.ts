@@ -70,6 +70,6 @@ export const TabLink = styled(NavLink)`
 
   @media screen and (min-width: 2300px) {
     font-size: 1.75rem;
-    padding: 0.5rem 3rem 0.5rem 1rem;
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
   }
 `;

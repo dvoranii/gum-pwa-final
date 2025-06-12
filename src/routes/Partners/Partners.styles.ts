@@ -1,5 +1,6 @@
 
 import { styled } from "styled-components";
+import { colors } from "../../constants/colors";
 
 interface PartnersBGProps {
     $isFullWidthImage?: boolean;
@@ -11,6 +12,11 @@ export const Content = styled.div`
     @media screen and (min-width: 2300px) {
       padding-top: 3rem;
     }
+`;
+
+export const Slide1 = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
 export const PartnersBG = styled.div<PartnersBGProps>`
@@ -32,6 +38,57 @@ export const PartnersBG = styled.div<PartnersBGProps>`
     min-height: 60vh;
     padding: ${props => props.$isFullWidthImage ? '0' : '9.6rem 0'};
   }
+`;
+
+export const CarouselWrapper = styled.div`
+    .carousel {
+
+    .flickity-viewport {
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        filter: drop-shadow(0px 0px 12px rgba(54, 54, 54, 0.05));
+    }
+    
+    .flickity-page-dots {
+        bottom: -40px;
+        right: 35px;
+        left: unset;
+        width: auto;
+        text-align: right;
+        z-index: 10;
+
+        @media screen and (min-width: 2300px) {
+            right: 120px;
+            bottom: -80px;
+        }
+        
+        .dot {
+            width: 20px;
+            height: 20px;
+            opacity: 1 !important;
+            background: ${colors.dotBG2};
+
+            
+            &.is-selected {
+                background: ${colors.dotBGActive2};
+            }
+
+            @media screen and (min-width: 2300px) {
+                width: 34px;
+                height: 34px;
+                margin: 0 16px;
+            }
+        }
+        }
+        
+        .flickity-button {
+        display: none;
+        }
+    }
+
+    @media screen and (min-width: 2300px) {
+        padding-top: 1.2rem;
+    }
 `;
 
 export const FullWidthImage = styled.img`

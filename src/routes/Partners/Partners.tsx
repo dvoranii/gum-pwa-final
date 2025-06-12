@@ -1,5 +1,9 @@
 
 import * as S from "./Partners.styles";
+
+import Flickity from 'react-flickity-component';
+import 'flickity/dist/flickity.min.css';
+
 import { useState } from "react";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
@@ -22,11 +26,16 @@ const partnersNavItems = [
 export default function Partners() {
   const location = useLocation();
   const isHomePage = location.pathname === "/partners";
-  const [showPartners2, setShowPartners2] = useState(false);
 
-  const togglePartnersView = () => {
-    setShowPartners2(!showPartners2);
-  }
+  const flickityOptions = {
+      initialIndex: 0,
+      wrapAround: true,
+      autoPlay: false,
+      prevNextButtons: true,
+      pageDots: true,
+      contain: true,
+      cellAlign: 'center'
+    };
 
   return (
     <ModuleContainer $isHomePage={isHomePage}>
@@ -40,16 +49,18 @@ export default function Partners() {
               "Supporting your goals as a dental professional."
             ]}/>
 
-            <S.PartnersBG $isFullWidthImage={showPartners2}>
-              {showPartners2 ? (
-                <S.FullWidthImage 
-                src={Partners2} 
-                onPointerDown={togglePartnersView}
-                alt="Partners alternative view" />
-              ) : (
-             <>
+            <S.CarouselWrapper>
+              <Flickity
+                className={'carousel'} 
+                elementType={'div'}
+                options={flickityOptions}
+                disableImagesLoaded={true}          
+                static={false}
+              >
+
+            <S.PartnersBG>
               <S.GumLogoCol>
-                <S.GumLogo src={GumLogo} onPointerDown={togglePartnersView} />
+                <S.GumLogo src={GumLogo} />
 
                 <S.GumTextWrapper>
                   <h2>Transforming</h2>
@@ -80,10 +91,15 @@ export default function Partners() {
                     </S.ColTextWrapper>
                   </S.ImgTextWrapper>
               </S.GraphicsCol>    
-                </>
-              )}
-
             </S.PartnersBG>
+            <S.PartnersBG $isFullWidthImage>
+              <S.FullWidthImage 
+                src={Partners2} 
+                alt="Partners alternative view" 
+              />
+            </S.PartnersBG>
+            </Flickity>
+            </S.CarouselWrapper>
 
             <BottomText lines={["Earning our #1 recommended Status Every Day - this is our driving purpose."]} />
           </>

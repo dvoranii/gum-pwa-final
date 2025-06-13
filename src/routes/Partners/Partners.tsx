@@ -101,7 +101,7 @@ export default function Partners() {
             </Flickity>
             </S.CarouselWrapper>
 
-            <BottomText lines={["Earning our #1 recommended Status Every Day - this is our driving purpose."]} />
+            <BottomText lines={["Earning our #1 recommended Status Every Day", "- this is our driving purpose."]} />
           </>
           ) : (
             <Outlet />

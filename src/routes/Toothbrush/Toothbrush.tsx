@@ -3,10 +3,10 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/btc/crest.jpg";
+import Col1Row2 from "../../assets/toothbrush/crest.webp";
 import PatientNeeds2 from "../../assets/toothbrush/PN.png";
 import Technology2 from "../../assets/toothbrush/Tech.png";
-import Brushes from "../../assets/toothbrush/toothbrush.webp";
+import Brushes from "../../assets/toothbrush/toothbrush-new.webp";
 
 import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
 
@@ -43,10 +43,10 @@ export default function Toothbrush() {
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>
-                <S.StyledLink to="/toothbrush/tech" $flexPosition="flex-end">
+                <S.StyledLink to="/toothbrush/tech">
                   <S.LinkImg src={Technology2} />
                 </S.StyledLink> 
-                <S.StyledLink to="/toothbrush/patient" $flexPosition="flex-start">
+                <S.StyledLink to="/toothbrush/patient">
                   <S.LinkImg src={PatientNeeds2} />
                 </S.StyledLink>
               </S.LinksWrapper>

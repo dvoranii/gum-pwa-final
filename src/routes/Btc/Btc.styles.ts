@@ -16,69 +16,58 @@ export const BtcBG = styled.div`
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
   background-color: #ffffff;
-  padding: 20px;
   width: 100%;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   height: 82vh;
 
-  @media screen and (max-width: 1024px) {
-      height: 80vh;
-  }
-  
-  @media screen and (max-width: 1366px) {
-    margin-top: 0;
+
+  @media screen and (max-width: 1386px) {
+      margin-top: 0;
   }
     
-  @media screen and (min-width: 2300px) {
-    padding-bottom: 3.4rem;
-  }
 `;
 
 
 export const ContentLeft = styled.div`
-  width: 50%;
+  width: 72%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 0 40px 6.4rem;
   height: 100%;
+  z-index: 99;
+
+  @media screen and (max-width: 1386px) {
+    padding-left: 3.2rem;
+  }
 `;
 
 
 export const ContentRight = styled.div`
-  width: 50%;
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 `;
 
+
 export const FlossersImg = styled.img`
-  width: 100%;
-  height: auto;
-  margin-left: -88px;
-  
-
-  @media screen and (max-width: 1386px) {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 4rem;
-  }
-
-  @media screen and (min-width: 2300px) {
-    width: 100%;
-    padding-top: 146px;
-    margin-left: -18px;
-    }
+  width: 100%; 
+  height: auto; 
+  object-fit: contain;
+  max-height: 100%; 
 `;
 
 export const IntroTitleWrapper = styled.div`
   padding-left: 20px;
-  z-index: 99;
   flex: 1;
   display: flex;
   align-items: flex-end;
 
   @media screen and (min-width: 2300px) {
-    padding-left: 4.8rem;
-    padding-top: 2rem;
+    padding-left: 2.4rem;
   }
 `;
 
@@ -112,30 +101,16 @@ export const RecommendedWrapper = styled.div`
 `;
 
 export const Recommended = styled.img`
-  width: 40%;
+  width: 50%;
+  max-width: 392.5px;
   height: auto;
-
-  @media screen and (max-width: 1386px) {
-    width: 100%;
-  }
-
-//  @media screen and (min-width: 2300px) {
-//     width: 100%
-//  }
-
 `;
-
-interface StyledLinkProps {
-  $flexPosition?: string;
-}
 
 export const LinksWrapper = styled.div`
   display: flex;
-  gap: 1.8rem;
-  margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
-  flex: 1;
   align-items: center;
+  flex: 1;
 
   @media screen and (max-width: 1386px) {
     width: 100%;
@@ -143,22 +118,25 @@ export const LinksWrapper = styled.div`
 
   @media screen and (min-width: 2300px) {
      padding-left: 2rem;
-     padding-top: 2rem;
      width: 100%;
      gap: 3rem;
      margin-left: 0;
  }
 `;
 
-export const StyledLink = styled(Link)<StyledLinkProps>`
+export const StyledLink = styled(Link)`
   display: flex;
-  justify-content: ${(props) => props.$flexPosition || 'center'};
+  justify-content: flex-start;
 `;
 
 export const LinkImg = styled.img`
   width: 70%;
   height: auto;
   aspect-ratio: 244/291;
+
+  @media screen and (max-width: 1386px) {
+    width: 80%;
+  }
 
   @media screen and (min-width: 2300px) {
     width: 12vw;

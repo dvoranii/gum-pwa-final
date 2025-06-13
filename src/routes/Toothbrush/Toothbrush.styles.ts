@@ -17,7 +17,6 @@ export const BrushBG = styled.div`
   border-bottom-left-radius: 24px;
   background-color: #ffffff;
   width: 100%;
-  min-height: 400px;
   margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   height: 82vh;
@@ -31,34 +30,34 @@ export const BrushBG = styled.div`
 
 
 export const ContentLeft = styled.div`
-  min-width: 50%;
+  width: 72%;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 0 0 40px 6.4rem;
   height: 100%;
   z-index: 99;
+
+  @media screen and (max-width: 1386px) {
+    padding-left: 3.2rem;
+  }
 `;
 
 
 export const ContentRight = styled.div`
   height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 `;
 
+
 export const BrushesImg = styled.img`
-  margin-left: -120px;
-  object-fit: cover;
-  align-self: stretch;
-  display: block;
-  aspect-ratio: 2802/2634;
-
-  @media screen and (max-width: 1386px) {
-  }
-
-  @media screen and (min-width: 2300px) {
-    margin-left: -366px;
-    }
+  width: 70%; 
+  height: auto; 
+  object-fit: contain;
+  max-height: 100%; 
 `;
 
 export const IntroTitleWrapper = styled.div`
@@ -68,8 +67,7 @@ export const IntroTitleWrapper = styled.div`
   align-items: flex-end;
 
   @media screen and (min-width: 2300px) {
-    padding-left: 4.8rem;
-    padding-top: 2rem;
+    padding-left: 2.4rem;
   }
 `;
 
@@ -103,19 +101,14 @@ export const RecommendedWrapper = styled.div`
 `;
 
 export const Recommended = styled.img`
-  width: 40%;
+  width: 50%;
   height: auto;
-
-  @media screen and (max-width: 1386px) {
-    width: 100%;
-  }
-
 `;
 
 export const LinksWrapper = styled.div`
   display: flex;
-  gap: 1.8rem;
-  margin-left: -3.2rem;
+  // gap: 1.8rem;
+  // margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
@@ -126,26 +119,26 @@ export const LinksWrapper = styled.div`
 
   @media screen and (min-width: 2300px) {
      padding-left: 2rem;
-     padding-top: 2rem;
      width: 100%;
      gap: 3rem;
      margin-left: 0;
  }
 `;
 
-interface StyledLinkProps {
-  $flexPosition?: string;
-}
 
-export const StyledLink = styled(Link)<StyledLinkProps>`
+export const StyledLink = styled(Link)`
   display: flex;
-  justify-content: ${(props) => props.$flexPosition || 'center'};
+  justify-content:  flex-start;
 `;
 
 export const LinkImg = styled.img`
   width: 70%;
   height: auto;
   aspect-ratio: 244/291;
+
+  @media screen and (max-width: 1386px) {
+    width: 80%;
+  }
 
   @media screen and (min-width: 2300px) {
     width: 12vw;

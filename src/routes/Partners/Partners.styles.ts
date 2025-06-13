@@ -97,6 +97,7 @@ export const FullWidthImage = styled.img`
   object-fit: contain;
   border-radius: 24px 0 0 24px;
   margin: 0 auto;
+  margin-left: -28px;
 
   @media screen and (max-width: 1386px) {
       max-width: 85%;

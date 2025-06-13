@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { colors } from '../../constants/colors';
 
 export const Content = styled.div`
   padding-top: 2rem;
@@ -87,23 +88,27 @@ export const IntroTitle = styled.h1`
 
 export const RecommendedWrapper = styled.div`
   width: 100%;
-  height: 100%;
   flex: 1;
   display: flex;
   align-items: center;
+
+  h3 {
+    font-family: "Gotham", sans-serif;
+    color: ${colors.primary};
+    font-weight: 400;
+    font-size: clamp(24px, 1.6vw, 3.2rem);
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+  }
 `;
 
 export const Recommended = styled.img`
-  width: 80%;
+  width: 40%;
   height: auto;
 
   @media screen and (max-width: 1386px) {
     width: 100%;
   }
-
- @media screen and (min-width: 2300px) {
-    width: 102%
- }
 
 `;
 

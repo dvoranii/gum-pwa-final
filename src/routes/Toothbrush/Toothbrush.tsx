@@ -3,7 +3,7 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/btc/col1-row2.svg";
+import Col1Row2 from "../../assets/btc/crest.jpg";
 import PatientNeeds2 from "../../assets/toothbrush/PN.png";
 import Technology2 from "../../assets/toothbrush/Tech.png";
 import Brushes from "../../assets/toothbrush/toothbrush.webp";
@@ -39,6 +39,7 @@ export default function Toothbrush() {
               </S.IntroTitleWrapper>
               <S.RecommendedWrapper>
                 <S.Recommended src={Col1Row2}/>
+                <h3>Recommended<br/> By Canadian<br/> Dental Hygeinists</h3>
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>

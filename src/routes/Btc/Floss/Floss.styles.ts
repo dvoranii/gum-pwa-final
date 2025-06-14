@@ -38,34 +38,65 @@ export const ColumnTitle = styled.h4`
     letter-spacing: -1px;
     color: ${colors.primary};
     padding-top: 1.2rem;
+
+    span {
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 1386px) {
+        padding-top: 0.4rem;
+    }
 `;
 
 export const SlideColumn1 = styled.div`
     min-width: 50%;
     display: flex;
     flex-direction: column; 
+    justify-content: center;
+    position: relative;
 `;
 
 export const SlideColumn2 = styled.div`
     min-width: 50%; 
     display: flex;
     flex-direction: column;
+
+    p {
+        font-family: "Gotham", sans-serif;
+        font-size:clamp(1.2rem, 1.2vw, 1.8rem);
+        padding-top: 1.2rem;
+        color: ${colors.black};
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 1386px) {
+        p {
+            font-size: clamp(14px, 0.8vw,1.2rem);
+            padding-bottom: 0.4rem;
+            padding-top: 0.4rem;
+        }
+    }
 `;
 
-export const ListContainer = styled.div`
+interface ListContainerProps {
+    $padding?: string;
+    $flexGrow?: string;
+}
+
+export const ListContainer = styled.div<ListContainerProps>`
 
     padding-right: 1.8rem;
     width: 90%;
-    flex-grow: 1; 
+    flex-grow: ${(props) => props.$flexGrow ? props.$flexGrow : "1"}; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
         
     ul {
         font-family: 'Gotham', sans-serif;
-        font-size:clamp(1.2rem, 1.2vw, 1.8rem);
+        font-size:clamp(1.2rem, 1.4vw, 1.8rem);
         color: ${colors.black};
-        padding: 1.2rem 0;
+        padding: ${(props) => props.$padding ? props.$padding : "1.2rem 0" };
         list-style: none;
         line-height: 1.3;
 
@@ -92,22 +123,43 @@ export const ListContainer = styled.div`
     sup {
         font-size: 12px;
     }
+
+    @media screen and (max-width: 1386px) {
+        ul {
+            line-height: 1;
+            font-size: clamp(14px, 0.8vw,1.2rem);
+            padding-bottom: 0.4rem;
+
+            li::before {
+                line-height: 1;
+            }
+        }
+    }
 `;
 
+interface InfoGridProps {
+    $marginTop?: string;
+    $gridCols?: string;
+    $paddingTop?:string;
+}
 
-export const InfoGrid =  styled.div`
+export const InfoGrid =  styled.div<InfoGridProps>`
     border-top: 1px solid grey;
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: ${(props) => props.$gridCols ? props.$gridCols : "8fr 1fr 1fr" };
     gap: 0.25rem;
     width: 100%;
-    margin-top: auto;
+    margin-top: ${(props) => props.$marginTop ? props.$marginTop : 'auto'};
     column-gap: 1rem;
 
     font-family: "Gotham", sans-serif;
     padding-top: 1.2rem;
     font-size: clamp(14px, 1vw, 1.4rem);
     color: #666666;
+
+    @media screen and (max-width: 1386px) {
+         padding-top:${(props) => props.$paddingTop ? props.$paddingTop : '1.2rem'};
+    }
 `;
 
 export const InfoGridRow = styled.div`
@@ -115,6 +167,11 @@ export const InfoGridRow = styled.div`
 `;
 
 export const Column = styled.div``;
+export const Column2 = styled.div`
+    @media screen and (max-width: 1386px) {
+        font-size: clamp(10px, 0.8vw, 1.2rem);
+    }
+`;
 
 
 export const CarouselWrapper = styled.div`
@@ -180,4 +237,14 @@ export const CarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ShopifyIconImg = styled.img`
+  width: 60px; 
+  margin: 10px 0;
+  display: block; 
+
+  @media (max-width: 1386px) {
+    width: 30px;
+  }
 `;

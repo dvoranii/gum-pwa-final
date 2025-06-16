@@ -96,8 +96,8 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
   width: 55%;
   min-height: 300px;
   background: white;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.21);
 
   opacity: ${({ $show }) => ($show ? 1 : 0)};

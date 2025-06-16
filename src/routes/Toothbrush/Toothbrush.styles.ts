@@ -13,8 +13,8 @@ export const Content = styled.div`
 export const BrushBG = styled.div`
   display: flex;
   align-items: flex-start;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
   background-color: #ffffff;
   width: 100%;
   margin-top: 1.8rem;

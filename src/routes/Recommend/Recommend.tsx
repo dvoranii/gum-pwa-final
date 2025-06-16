@@ -138,22 +138,22 @@ export default function Recommend() {
                 static={false}
             >
                 {activeView === 'default' ? (
-                <S.PartnersBG $bgImage={BG1}>
+                <S.RecommendBG $bgImage={BG1}>
                     <S.CircleWrapper onPointerDown={toggleView}>
                     <img src={BGCircle1} alt="Default view" />
                     </S.CircleWrapper>
-                </S.PartnersBG>
+                </S.RecommendBG>
                 ) : (
-                <S.PartnersBG $bgImage={BG2}>
+                <S.RecommendBG $bgImage={BG2}>
                     <S.CircleWrapper onPointerDown={toggleView}>
                     <img src={BG2Circle1} alt="Alternate view" />
                     </S.CircleWrapper>
                     <S.ThreeCirclesWrapper>
                     <img src={BG2_3Circles} alt="Additional circles" />
                     </S.ThreeCirclesWrapper>
-                </S.PartnersBG>
+                </S.RecommendBG>
                 )}
-                <S.PartnersBG $bgImage={BG3}/>
+                <S.RecommendBG $bgImage={BG3}/>
             </Flickity>
         </S.CarouselWrapper>
 

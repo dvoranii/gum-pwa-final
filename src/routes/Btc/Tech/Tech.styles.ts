@@ -38,7 +38,8 @@ export const TechContainer = styled.div`
   width: 87%;
   height: 90%;
   background-color: #ffffff;
-  border-radius: 24px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
   overflow: hidden;

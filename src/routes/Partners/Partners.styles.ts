@@ -22,8 +22,8 @@ export const Slide1 = styled.div`
 export const PartnersBG = styled.div<PartnersBGProps>`
   display: flex;
   gap: 2.4rem;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;

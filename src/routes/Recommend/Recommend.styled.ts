@@ -2,7 +2,7 @@
 import { styled } from "styled-components";
 import { colors } from "../../constants/colors";
 
-interface PartnersBGProps {
+interface RecommendBGProps {
     $isFullWidthImage?: boolean;
     $bgImage: string;
 }
@@ -15,7 +15,7 @@ export const Content = styled.div`
     }
 `;
 
-export const PartnersBG = styled.div<PartnersBGProps>`
+export const RecommendBG = styled.div<RecommendBGProps>`
   display: flex;
   justify-content: space-between;
   gap: 2.4rem;

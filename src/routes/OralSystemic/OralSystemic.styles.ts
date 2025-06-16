@@ -13,8 +13,8 @@ export const OralSystemicImgWrapperOuter = styled.div`
   position: relative;
   display: flex;
   margin-bottom: 2rem;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
   width: 100%;
   background: white;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
@@ -144,6 +144,8 @@ export const BaseImg = styled.img`
   padding: 1rem 0;
   margin-left: 0px;
   margin-top: 1px;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
 
   @media screen and (max-width: 1368px) {
     height: 45vh;

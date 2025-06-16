@@ -128,6 +128,7 @@ export const Row1WrapperOuter = styled.div`
 
 export const Row1WrapperInner2 = styled.div`
     padding-bottom: 1.2rem;
+    gap: 1.2rem;
     display: flex;
     width: 95%;
     border-bottom: 1px solid ${colors.black};

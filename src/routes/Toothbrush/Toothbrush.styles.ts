@@ -145,6 +145,6 @@ export const LinkImg = styled.img`
   }
 
   @media screen and (min-width: 2300px) {
-    width: 12vw;
+    width: 13vw;
  }
 `;

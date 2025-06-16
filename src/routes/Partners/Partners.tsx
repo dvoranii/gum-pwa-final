@@ -4,7 +4,6 @@ import * as S from "./Partners.styles";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
-import { useState } from "react";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
@@ -34,7 +33,14 @@ export default function Partners() {
       prevNextButtons: true,
       pageDots: true,
       contain: true,
-      cellAlign: 'center'
+      cellAlign: 'center',
+      on: {
+        ready: function(this: any) {
+          setTimeout(() => {
+            this.resize();
+          }, 100);
+        }
+       }
     };
 
   return (

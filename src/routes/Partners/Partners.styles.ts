@@ -30,7 +30,6 @@ export const PartnersBG = styled.div<PartnersBGProps>`
   min-height: 55vh;
   box-sizing: border-box;
   margin-top: 2.4rem;
-  box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   justify-content: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
@@ -41,6 +40,7 @@ export const PartnersBG = styled.div<PartnersBGProps>`
 `;
 
 export const CarouselWrapper = styled.div`
+  box-shadow: 0px 0px 12px rgba(54, 54, 54, 0);
     .carousel {
 
     .flickity-viewport {

@@ -42,7 +42,7 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
   'E1:UnMot:Perio': {
     priority1: { product: 'Proxabrush®', code: '1314' },
     priority2: { product: 'Sulcus Brush', code: '642' },
-    priority3: { product: '', code: '' } // No third recommendation
+    priority3: { product: '', code: '' } 
   },
   'E1:UnMot:Impt': {
     priority1: { product: 'Soft-Picks®', code: '670' },

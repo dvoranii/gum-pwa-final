@@ -18,6 +18,7 @@ import _831_Flosser_EcoClean from "../../../../assets/btc/patient/recommendation
 import _885_Flosser_ProClean from "../../../../assets/btc/patient/recommendations/885-Flosser-ProCleanPlus.webp";
 import _887_Flosser_ComfortSlide from "../../../../assets/btc/patient/recommendations/887-Flosser-ComfortSlide.webp";
 import _888_Flosser_Advanced from "../../../../assets/btc/patient/recommendations/888-Flosser-AdvancedCare.webp";
+import _1815_840_FlossAndThreader from "../../../../assets/btc/patient/recommendations/1815+840-ProWeave&EEZThru.webp";
 
 import _670_SoftPicks_ComfortFlex from "../../../../assets/btc/patient/recommendations/670-SoftPicks-ComfortFlex.webp";
 import _632_SoftPicks_Original from "../../../../assets/btc/patient/recommendations/632-SoftPicks-Original.webp";
@@ -59,6 +60,7 @@ const productImages: Record<string, string> = {
     '885': _885_Flosser_ProClean,
     '887': _887_Flosser_ComfortSlide,
     '888': _888_Flosser_Advanced,
+    '1815 + 840': _1815_840_FlossAndThreader,
 
     '670': _670_SoftPicks_ComfortFlex,
     '632': _632_SoftPicks_Original,
@@ -91,14 +93,21 @@ const RecommendationSlide = ({ priorityText, productName, productCode, slideImag
     </S.Slide>
 );
 
+const getProductImage = (code: string) => {
+    if (code.includes('+')) {
+        return productImages[code];
+    }
+    return productImages[code.split(" ")[0]];
+};
+
 
 export const RecommendationSlider = ({ recommendations }: { recommendations: RecommendationSet }) => {
 
-    const priority1Image = productImages[recommendations.priority1.code.split(" ")[0]];
-    const priority2Image = productImages[recommendations.priority2.code.split(" ")[0]];
+    const priority1Image = getProductImage(recommendations.priority1.code);
+    const priority2Image = getProductImage(recommendations.priority2.code);
     const priority3Image = recommendations.priority3.product 
-    ? productImages[recommendations.priority3.code.split(' ')[0]] 
-    : null;
+        ? getProductImage(recommendations.priority3.code) 
+        : null;
 
     if (!priority1Image || !priority2Image || (recommendations.priority3.product && !priority3Image)) {
         console.warn("Missing image for one of the recommended products. Check productImages map and recommendation codes.");

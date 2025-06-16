@@ -20,10 +20,9 @@ import ToothbrushKids from './Toothbrush/ToothbrushKids/ToothbrushKids';
 import ToothbrushSpecialty from './Toothbrush/ToothbrushSpecialty/ToothbrushSpecialty';
 
 import Operatory from './Operatory/Operatory';
-
 import Accessories from './Accessories/Accessories';
-
 import Recommend from "./Recommend/Recommend";
+import References from './References/References';
 
 
 export default function AppRoutes() {
@@ -67,6 +66,9 @@ export default function AppRoutes() {
         </Route>
 
         <Route path="/recommend" element={<Recommend />}>
+            <Route index element={null} />
+        </Route>
+        <Route path="/references" element={<References/>}>
             <Route index element={null} />
         </Route>
     </Routes>

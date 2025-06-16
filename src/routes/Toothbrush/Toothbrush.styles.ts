@@ -54,10 +54,14 @@ export const ContentRight = styled.div`
 
 
 export const BrushesImg = styled.img`
-  width: 70%; 
+  width: 60%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
+
+  @media screen and (min-width: 2300px) {
+    width: 70%;
+  }
 `;
 
 export const IntroTitleWrapper = styled.div`

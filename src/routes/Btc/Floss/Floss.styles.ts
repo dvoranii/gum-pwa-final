@@ -27,6 +27,10 @@ interface ImgWrapperProps {
 export const ImgWrapper = styled.div<ImgWrapperProps>`
     img {
         width: ${(props) => props.$width};
+
+        @media (max-width: 1600px) {
+            width: calc(${props => props.$width} * 0.85);
+        }
     }
 `;
 
@@ -43,8 +47,9 @@ export const ColumnTitle = styled.h4`
         font-weight: 300;
     }
 
-    @media screen and (max-width: 1386px) {
+    @media screen and (max-width: 1600px) {
         padding-top: 0.4rem;
+        font-size: clamp(16px, 1.6vw, 2.6rem);
     }
 `;
 
@@ -69,7 +74,7 @@ export const SlideColumn2 = styled.div`
         font-weight: 500;
     }
 
-    @media screen and (max-width: 1386px) {
+    @media screen and (max-width: 1600px) {
         p {
             font-size: clamp(14px, 0.8vw,1.2rem);
             padding-bottom: 0.4rem;
@@ -124,7 +129,8 @@ export const ListContainer = styled.div<ListContainerProps>`
         font-size: 12px;
     }
 
-    @media screen and (max-width: 1386px) {
+
+    @media screen and (max-width: 1600px) {
         ul {
             line-height: 1;
             font-size: clamp(14px, 0.8vw,1.2rem);
@@ -244,7 +250,7 @@ export const ShopifyIconImg = styled.img`
   margin: 10px 0;
   display: block; 
 
-  @media (max-width: 1386px) {
+  @media (max-width: 1600px) {
     width: 30px;
   }
 `;

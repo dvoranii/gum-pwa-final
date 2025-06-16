@@ -227,7 +227,7 @@ export const ImgWrapper1 = styled.div`
     justify-content: center;
 
     img {
-        width: 100%;
+        width: 74%;
     }
 
     @media screen and (min-width: 2300px) {         
@@ -241,14 +241,18 @@ export const ImgWrapper1 = styled.div`
 export const ImgWrapper2 = styled.div`
     width: 100%;
     display: flex;
-    padding-top: 1.2rem;
+    padding-top: 0.4rem;
 
     img {
-        width: 83%;
+        width: 76%;
     }
 
     @media screen and (min-width: 2300px) {
         padding-top: 2.4rem;
+
+        img {
+            width: 84%;
+        }
     }
 `;
 

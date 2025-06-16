@@ -19,6 +19,7 @@ function App() {
       case '/toothbrush/specialty':
       case '/operatory':
       case '/accessories':
+      case '/references':
         return true;
       default:
         return false;

@@ -10,6 +10,7 @@ import _517_TechSensitiveCare from "../../../../assets/toothbrush/patient/recomm
 import _394_ToothAndTongue from "../../../../assets/toothbrush/patient/recommendations/394-T&T.webp";
 import _595_CompleteCare from "../../../../assets/toothbrush/patient/recommendations/595-CompleteCare.webp";
 import _591_CompleteCare from "../../../../assets/toothbrush/patient/recommendations/591-CompleteCare.webp";
+import _4594_BrightCare  from "../../../../assets/toothbrush/patient/recommendations/4594-BrightCare.webp";
 import { JSX } from "react";
 
 const flickityOptions = {
@@ -45,7 +46,8 @@ const SLIDE_CONFIGS: Record<string, SlideConfig[]> = {
   ],
   reach: [
     { src: _591_CompleteCare, alt: "Complete Care", key: "complete-care" },
-    { src: _394_ToothAndTongue, alt: "Tooth and Tongue Cleaner", key: "tooth-tongue" }
+    { src: _394_ToothAndTongue, alt: "Tooth and Tongue Cleaner", key: "tooth-tongue" },
+    { src: _4594_BrightCare, alt: "Bright Care", key: "bright-care" }
   ]
 };
 

@@ -18,7 +18,6 @@ export const OralSystemicImgWrapperOuter = styled.div`
   width: 100%;
   background: white;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
-  margin-top: 1.8rem;
   height: 60vh;
 
   & > * {

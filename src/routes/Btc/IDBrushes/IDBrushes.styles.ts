@@ -35,7 +35,7 @@ export const CarouselWrapper = styled.div`
         width: 100%;
 
         .flickity-viewport {
-            height: 80vh !important;
+            height: 81vh !important;
         }
         
         .flickity-page-dots {

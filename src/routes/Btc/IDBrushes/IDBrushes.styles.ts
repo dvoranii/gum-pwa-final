@@ -126,8 +126,12 @@ export const Row1WrapperOuter = styled.div`
     border-bottom: 1px solid ${colors.black};
 `;
 
-export const Row1WrapperInner2 = styled.div`
-    padding-bottom: 1.2rem;
+interface Row1WrapperInner2Props {
+    $paddingBottom?: string;
+}
+
+export const Row1WrapperInner2 = styled.div<Row1WrapperInner2Props>`
+    padding-bottom: ${(props) => props.$paddingBottom ? props.$paddingBottom : "0.8rem"};
     gap: 1.2rem;
     display: flex;
     width: 95%;
@@ -140,12 +144,6 @@ export const Row1WrapperInner2 = styled.div`
 
     }
 
-    @media screen and (min-width: 2300px) {
-        padding-bottom: 2.4rem;
-        p {
-            font-size: clamp(1.2rem, 2vw, 1.8rem);
-        }
-    }
 `;
 
 export const TextWrapper = styled.div`
@@ -296,7 +294,11 @@ export const ImgWrapper5 = styled.div`
     }
 `;
 
-export const ListContainer = styled.div`
+interface ListContainerProps {
+    $paddingBottom?: string;
+}
+
+export const ListContainer = styled.div<ListContainerProps>`
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
@@ -306,7 +308,7 @@ export const ListContainer = styled.div`
         font-family: 'Gotham', sans-serif;
         font-size:clamp(0.8rem, 0.9vw, 1.4rem);
         color: ${colors.black};
-        padding: 0 0 1.2rem 0;
+        padding-bottom: 1.2rem;
         list-style: none;
         line-height: 1.2;
 
@@ -330,11 +332,11 @@ export const ListContainer = styled.div`
         }
     }
 
-        @media screen and (min-width: 2300px) {
-            ul {
-                font-size: clamp(1.2rem, 2vw, 1.8rem);
-            }
+    @media screen and (max-width: 1080px) {
+        ul {
+            padding-bottom: ${(props) => props.$paddingBottom}
         }
+    }
     
     sup {
         font-size: 12px;

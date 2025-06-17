@@ -78,10 +78,10 @@ export default function BtcIDBrushes() {
                 <S.CarouselSlide>
                     <S.SlideWrapperInner>
                         <S.SlideRow1>
-                            <S.Row1WrapperInner2>
+                            <S.Row1WrapperInner2 $paddingBottom="0.4rem">
                                 <S.TextWrapper>
                                     <h2>Proxabrush® Angle Cleaners</h2>
-                                    <S.ListContainer>
+                                    <S.ListContainer $paddingBottom="0.4rem">
                                         <ul>
                                             <li>Trianglular-shaped bristles remove 25% more plaque than conventional round bristles<sup>1</sup></li>
                                             <li>Angled neck helps patients reach hard-to-clean interdental surfaces</li>

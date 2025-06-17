@@ -4,17 +4,12 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-
-
-`
+`;
 
 export const TopRow = styled.div`
     display: flex;
     gap: 1.2rem;
-
-    @media screen and (min-width: 2300px) {
-        gap: 1.8rem;
-    }`;
+`;
 
 export const BottomRow = styled.div`
     display: flex;
@@ -30,17 +25,11 @@ export const BottomRow = styled.div`
 
     }
 
-    @media screen and (min-width: 2300px) {
-        img {
-            margin-right: -200px;
-            width: 100%;
-        }
-    }
 `;
 
 export const ColumnLeft = styled.div`
     max-width: 50%;
-    padding:80px 0 40px 80px;
+    padding:80px 0 40px 60px;
 
     @media screen and (min-width: 2300px) {
         padding: 180px 0 0 140px;    

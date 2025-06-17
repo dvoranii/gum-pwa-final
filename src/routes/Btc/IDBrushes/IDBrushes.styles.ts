@@ -243,15 +243,7 @@ export const ImgWrapper2 = styled.div`
     padding-top: 0.4rem;
 
     img {
-        width: 76%;
-    }
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 2.4rem;
-
-        img {
-            width: 84%;
-        }
+        width: 88%;
     }
 `;
 
@@ -444,7 +436,7 @@ export const ColouredCircle = styled.div`
 `;
 
 export const CaptionWrapper = styled.div`
-    padding-top: 3.2rem;
+    padding-top: 2.4rem;
     small {
         color: ${colors.black};
         font-family: "Gotham", sans-serif;

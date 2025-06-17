@@ -27,10 +27,11 @@ export const CarouselWrapper = styled.div`
             z-index: 10; 
             
             .dot {
-                width: 20px;
-                height: 20px;
+                width: 16px;
+                height: 16px;
                 opacity: 1 !important;
                 background: #01763f;
+                margin: 0 6px !important;
                 
                 &.is-selected {
                 background: #4fcccd;

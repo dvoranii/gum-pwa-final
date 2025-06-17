@@ -40,7 +40,7 @@ export const CarouselWrapper = styled.div`
         
         .flickity-page-dots {
             top: unset;
-            bottom: 40px;
+            bottom: 24px;
             right: 24px;
             left: unset;
             width: auto;
@@ -65,17 +65,5 @@ export const CarouselWrapper = styled.div`
             display: none;
         }
         
-        @media screen and (min-width: 2300px) {
-            .flickity-page-dots {
-                bottom: -12px;
-                right: 32px;
-
-                .dot {
-                    width: 25px;
-                    height: 25px;
-                    margin: 0 10px;
-                }
-            }
-        }
     }
 `;

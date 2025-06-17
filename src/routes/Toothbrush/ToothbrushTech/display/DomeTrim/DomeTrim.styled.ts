@@ -4,16 +4,12 @@ export const ContentWrapper = styled.div`
     display: flex;
     height: 100%;
     align-items: center;
-
-
-    @media screen and (min-width: 2300px) {
-        gap: 1.2rem;
-    }
+    gap: 1.2rem;
 `
 
 export const ColumnLeft = styled.div`
     max-width: 60%;
-    padding: 40px 0 40px 80px;
+    padding: 30px 0 30px 60px;
 
     @media screen and (min-width: 2300px) {
         padding: 0px 0 40px 100px;    
@@ -26,8 +22,6 @@ export const MainTitle = styled.h1`
   color: #00a16b;
   font-size: clamp(18px, 3.2vw, 6.4rem);
   line-height: 1;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
@@ -92,7 +86,7 @@ export const BristlesDiagramWrapper= styled.div`
     height: 100%;
 
     img {
-        width: 90%;
+        width: 100%;
         height: auto;
         padding: 2.4rem 0;
     }

@@ -27,15 +27,8 @@ export const RecommendBG = styled.div<RecommendBGProps>`
   width: 100%;
   height: 55vh;
   box-sizing: border-box;
-  margin-top: 1.2rem;
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
-  @media screen and (max-width: 1100px) {
-    margin-top: 0.5rem;
-  }
-  @media screen and (min-width: 2300px) {
-    min-height: 60vh;
-  }
 `;
 
 export const FullWidthImage = styled.img`

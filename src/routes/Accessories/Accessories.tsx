@@ -116,7 +116,7 @@ export default function Accessories() {
                         <p>600 Handle</p>
                         <p>12/bag</p>
                       </S.MetaDataWrapper>
-                      <S.MetaDataWrapper $width={"550px"}>
+                      <S.MetaDataWrapper $width={"546px"}>
                         <p>601 Refills</p>
                         <p>12 Packs with 3 Refills each</p>
                       </S.MetaDataWrapper>

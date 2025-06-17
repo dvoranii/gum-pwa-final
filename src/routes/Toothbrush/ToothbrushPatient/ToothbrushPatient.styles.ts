@@ -7,15 +7,12 @@ interface ResultsContainerProps {
 export const MainTitle = styled.h1`
     font-family: "Gotham", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2.4vw, 3.6rem);
+    font-size: clamp(18px, 2.7vw, 3.6rem);
     color: #00a16b;
     letter-spacing: -1.5px;
     padding-left: 5px;
     padding-bottom: 12px;
 
-    @media screen and (min-width: 2300px) {
-        font-size: 2.7vw;
-    }
 `;
 
 export const PatientContainerOuter = styled.div`
@@ -67,7 +64,7 @@ export const ChoicesImgWrapper = styled.div`
     position: relative;
 
     &:nth-of-type(1) {
-        margin-top: 2.4rem;
+        margin-top: 1.2rem;
     }
     &:nth-of-type(n+2) {
         margin-top: -72px;
@@ -96,8 +93,8 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
   width: 55%;
   min-height: 300px;
   background: white;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.21);
 
   opacity: ${({ $show }) => ($show ? 1 : 0)};

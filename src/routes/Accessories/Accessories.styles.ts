@@ -123,13 +123,14 @@ export const MetaDataWrapper = styled.div<MetaDataWrapperProps>`
   width: ${(props) => props.$width};
   display: flex;
   justify-content: space-between;
+  // height: 28px;
 
   p {
     font-family: "Gotham", sans-serif;
     font-weight: 300;
     font-size:clamp(16px, 1.2vw, 1.4rem);
     color: ${colors.black};
-    margin-top: 1.2rem;
+    margin-top: 0.4rem;
   }
 `;
 
@@ -144,7 +145,6 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
   align-items: flex-end;
 
   img {
-    // width:90%;
     width: ${(props) => props.$width ? props.$width : "90%"};
   }
 `;

@@ -33,7 +33,7 @@ export default function Toothbrush() {
       <InnerNav navItems={btcNavItems} />
       <S.Content>
       {isHomePage ? (
-           <S.BrushBG>
+           <S.FlossBG>
             <S.ContentLeft>
               <S.IntroTitleWrapper>
                 <S.IntroTitle>Gum <br/>Interproximal<br/> Solutions</S.IntroTitle>
@@ -55,7 +55,7 @@ export default function Toothbrush() {
             <S.ContentRight>
               <S.FlossImg src={Flossers} />
             </S.ContentRight>
-          </S.BrushBG>
+          </S.FlossBG>
           ) : (
             <Outlet />
           )}

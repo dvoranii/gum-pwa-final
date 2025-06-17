@@ -12,7 +12,7 @@ export const Content = styled.div`
 export const OralSystemicImgWrapperOuter = styled.div`
   position: relative;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-top-left-radius: 48px;
   border-bottom-left-radius: 48px;
   width: 100%;
@@ -38,8 +38,8 @@ export const OralSystemicImgWrapperOuter = styled.div`
 export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   position: relative;
   z-index: 99;
-  width: 44%;
-  // width: ${props => props.showResults ? '55%' : '40%'};
+  // width: 44%;
+  width: ${props => props.showResults ? '61%' : '44%'};
 
   // @media screen and (max-width: 1368px) {
   //   width: ${props => props.showResults ? '55%' : '40%'};
@@ -159,22 +159,22 @@ export const BaseImg = styled.img`
 
 export const Branches = styled.img`
     position: absolute;
-    width: 15vh;
-    top: 16.7vh;
-    left: 47.8vh;
+    width: 14.1vh;
+    top: 16.3vh;
+    left: 44.9vh;
     z-index: -1;
 
-    @media screen and (max-width: 1368px) {
-        width: 10vh;
-        top: 13.6vh;
-        left: 35vh;
-    }
+    // @media screen and (max-width: 1368px) {
+    //     width: 10vh;
+    //     top: 13.6vh;
+    //     left: 35vh;
+    // }
 
-    @media screen and (min-width: 2300px) {
-        width: 14.5vh;
-        top: 15.5vh;
-        left: 46.7vh;
-    }
+    // @media screen and (min-width: 2300px) {
+    //     width: 14.5vh;
+    //     top: 15.5vh;
+    //     left: 46.7vh;
+    // }
 `;
 
 
@@ -187,11 +187,11 @@ export const ToothImg = styled.img`
     height: auto;
 
 
-    @media screen and (max-width: 1368px) {
-        top: 14.7vh;
-        left: 22.6vh;
-        width: 15.7vh;
-    }
+    // @media screen and (max-width: 1368px) {
+    //     top: 14.7vh;
+    //     left: 22.6vh;
+    //     width: 15.7vh;
+    // }
 
     @media screen and (min-width: 2300px) {
          top: 18.1vh;
@@ -211,11 +211,11 @@ export const ToothActiveOverlay = styled.img`
   cursor: pointer;
 
 
-  @media screen and (max-width: 1368px) {
-    top: 11.8vh;
-    left: 22.5vh;
-    width: 15.9vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 11.8vh;
+  //   left: 22.5vh;
+  //   width: 15.9vh;
+  // }
 
 
   @media screen and (min-width: 2300px) {
@@ -227,38 +227,38 @@ export const ToothActiveOverlay = styled.img`
 /* Heart Branch Styles */
 export const HeartBranch = styled.img`
   position: absolute;
-  top: 3.5vh;
-  left: 51.5vh;
+  top: 2.5vh;
+  left: 49.5vh;
   height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  @media screen and (max-width: 1368px) {
-    top: 2.3vh;
-    left: 36.8vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 2.3vh;
+  //   left: 36.8vh;
+  // }
 
-  @media screen and (min-width: 2300px) {
-        top: 3.3vh;
-        left: 50.6vh;
-  }
+  // @media screen and (min-width: 2300px) {
+  //       top: 3.3vh;
+  //       left: 50.6vh;
+  // }
 
 `;
 
 export const HeartActiveOverlay = styled.img`
   position: absolute;
-  top: 3.5vh;
-  left: 51.5vh;
+  top: 2.5vh;
+  left: 49.5vh;
   height: 30%;
   z-index: 3;
   pointer-events: none;
 
-  @media screen and (max-width: 1368px) {
-    top: 2.3vh;
-    left: 36.8vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 2.3vh;
+  //   left: 36.8vh;
+  // }
 
   @media screen and (min-width: 2300px) {
     top: 3.3vh;
@@ -269,38 +269,38 @@ export const HeartActiveOverlay = styled.img`
 
 export const BrainBranch = styled.img`
   position: absolute;
-  top: 21.4vh;
-  left: 58.7vh;
+  top: 20.1vh;
+  left: 57.7vh;
   height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  @media screen and (max-width: 1368px) {
-    top: 15.3vh;
-    left: 44.1vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 15.3vh;
+  //   left: 44.1vh;
+  // }
 
-  @media screen and (min-width: 2300px) {
-    top: 20.2vh;
-    left: 59.2vh;
-  }
+  // @media screen and (min-width: 2300px) {
+  //   top: 20.2vh;
+  //   left: 59.2vh;
+  // }
 
 `;
 
 export const BrainActiveOverlay = styled.img`
   position: absolute;
-  top: 21.45vh;
-  left: 58.7vh;
+  top: 20.1vh;
+  left: 57.7vh;
   height: 30%;
   z-index: 3;
   pointer-events: none;
 
-  @media screen and (max-width: 1368px) {
-    top: 15.31vh;
-    left: 44.1vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 15.31vh;
+  //   left: 44.1vh;
+  // }
 
   @media screen and (min-width: 2300px) {
     top: 20.2vh;
@@ -310,18 +310,18 @@ export const BrainActiveOverlay = styled.img`
 
 export const BloodBranch = styled.img`
   position: absolute;
-  top: 39.6vh;
-  left: 51.9vh; 
+  top: 36.9vh;
+  left: 48vh;
   height: 30%;
   z-index: 2;
   cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  @media screen and (max-width: 1368px) {
-    top: 29vh;
-    left: 37.7vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 29vh;
+  //   left: 37.7vh;
+  // }
   @media screen and (min-width: 2300px) {
     top: 37.1vh;
     left: 50.4vh;
@@ -331,16 +331,16 @@ export const BloodBranch = styled.img`
 
 export const BloodActiveOverlay = styled.img`
   position: absolute;
-  top: 39.6vh;
-  left: 51.9vh;
+  top: 36.9vh;
+  left: 48vh;
   height: 30%;
   z-index: 3;
   pointer-events: none;
 
-  @media screen and (max-width: 1368px) {
-    top: 29vh;
-    left: 37.7vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   top: 29vh;
+  //   left: 37.7vh;
+  // }
   @media screen and (min-width: 2300px) {
     top: 37.1vh;
     left: 50.4vh;
@@ -356,14 +356,6 @@ export const ResultImgWrapper = styled.div`
   align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease;
-
-  @media screen and (max-width: 1368px) {
-    width: 45%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    width: 38%;
-}
 `;
 
 export const ResultContent = styled.div`
@@ -371,11 +363,11 @@ export const ResultContent = styled.div`
 `;
 
 export const ResultTextImg = styled.img`
-    max-width: 80%;
+    max-width: 88%;
 
-    @media screen and (min-width: 2300px) {
-        max-width: 100%;
-    }
+    // @media screen and (min-width: 2300px) {
+    //     max-width: 100%;
+    // }
 `;
 
 

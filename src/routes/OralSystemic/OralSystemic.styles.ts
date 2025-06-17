@@ -13,8 +13,8 @@ export const OralSystemicImgWrapperOuter = styled.div`
   position: relative;
   display: flex;
   margin-bottom: 1rem;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
   width: 100%;
   background: white;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
@@ -25,10 +25,6 @@ export const OralSystemicImgWrapperOuter = styled.div`
     flex: 0 0 auto;
   }
 
-  // @media screen and (max-width: 1368px) {
-  //   height: 46vh;
-  // }
-
   @media screen and (min-width: 2300px) {
     margin-top: 3rem;
     height: 60vh;
@@ -38,16 +34,11 @@ export const OralSystemicImgWrapperOuter = styled.div`
 export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   position: relative;
   z-index: 99;
-  // width: 44%;
   width: ${props => props.showResults ? '61%' : '44%'};
 
-  // @media screen and (max-width: 1368px) {
-  //   width: ${props => props.showResults ? '55%' : '40%'};
-  // }
-
-  // @media screen and (min-width: 2300px) {
-  //  width: ${props => props.showResults ? '62%' : '47.5%'};
-  // }
+  @media screen and (max-width: 1080px) {
+    width: ${props => props.showResults ? '62%' : '50%'};
+  }
 
 `;
 
@@ -59,13 +50,10 @@ export const CarouselWrapper = styled.div`
   justify-content: center;
   overflow: hidden;
 
-  // @media screen and (max-width: 1368px) {
-  //   width: 60%;
-  // }
+  @media screen and (max-width: 1080px) {
+    width: 50%;
+  }
 
-  // @media screen and (min-width: 2300px) {
-  //   width: 54%;
-  // }
 
   .carousel {
     width: 100%;
@@ -121,8 +109,8 @@ export const CarouselSlide = styled.div`
   justify-content: flex-start;
   padding: 2rem 4rem;
 
-  @media screen and (min-width: 2300px) {
-      padding: 4rem;
+  @media screen and (max-width: 1080px) {
+    padding: 2rem;
   }
 `;
 
@@ -130,9 +118,11 @@ export const SlideImage = styled.img`
   height: 100%;
   width: auto;
 
-  @media screen and (max-width: 2300px) {
-    
+  @media screen and (max-width: 1080px) {
+      height: 90%;
   }
+
+
 `;
 
 export const BaseImgWrapper = styled.div`
@@ -140,21 +130,13 @@ width: 100%;
 
 `;
 export const BaseImg = styled.img`
-  height: 60vh;
+  height: 57vh;
   display: block;
   padding: 1rem 0;
   margin-left: 0px;
   margin-top: 1px;
-  border-top-left-radius: 48px;
-  border-top-left-radius: 48px;
+  border-top-left-radius: 24px;
 
-  // @media screen and (max-width: 1368px) {
-  //   height: 45vh;
-  // }
-
-  @media screen and (min-width: 1180px) {
-    height: 57vh;
-  }
 `;
 
 export const Branches = styled.img`
@@ -164,17 +146,11 @@ export const Branches = styled.img`
     left: 44.9vh;
     z-index: -1;
 
-    // @media screen and (max-width: 1368px) {
-    //     width: 10vh;
-    //     top: 13.6vh;
-    //     left: 35vh;
-    // }
-
-    // @media screen and (min-width: 2300px) {
-    //     width: 14.5vh;
-    //     top: 15.5vh;
-    //     left: 46.7vh;
-    // }
+    @media screen and (max-width: 1080px) {
+      width: 14.1vh;
+      top: 16vh;
+      left: 45.1vh;
+    }
 `;
 
 
@@ -185,13 +161,6 @@ export const ToothImg = styled.img`
     left: 30.2vh;
     width: 21.6vh;
     height: auto;
-
-
-    // @media screen and (max-width: 1368px) {
-    //     top: 14.7vh;
-    //     left: 22.6vh;
-    //     width: 15.7vh;
-    // }
 
     @media screen and (min-width: 2300px) {
          top: 18.1vh;
@@ -210,14 +179,6 @@ export const ToothActiveOverlay = styled.img`
   z-index: 1;
   cursor: pointer;
 
-
-  // @media screen and (max-width: 1368px) {
-  //   top: 11.8vh;
-  //   left: 22.5vh;
-  //   width: 15.9vh;
-  // }
-
-
   @media screen and (min-width: 2300px) {
     top: 18.1vh;
     left: 29.6vh;
@@ -235,15 +196,11 @@ export const HeartBranch = styled.img`
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 2.3vh;
-  //   left: 36.8vh;
-  // }
-
-  // @media screen and (min-width: 2300px) {
-  //       top: 3.3vh;
-  //       left: 50.6vh;
-  // }
+  @media screen and (max-width: 1080px) {
+    height: 28%;
+    top: 3.2vh;
+    left: 48.5vh;
+  }
 
 `;
 
@@ -255,15 +212,12 @@ export const HeartActiveOverlay = styled.img`
   z-index: 3;
   pointer-events: none;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 2.3vh;
-  //   left: 36.8vh;
-  // }
-
-  @media screen and (min-width: 2300px) {
-    top: 3.3vh;
-    left: 50.6vh
+  @media screen and (max-width: 1080px) {
+    height: 28%;
+    top: 3.2vh;
+    left: 48.5vh;
   }
+
 `;
 
 
@@ -277,15 +231,11 @@ export const BrainBranch = styled.img`
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 15.3vh;
-  //   left: 44.1vh;
-  // }
-
-  // @media screen and (min-width: 2300px) {
-  //   top: 20.2vh;
-  //   left: 59.2vh;
-  // }
+  @media screen and (max-width: 1080px) {
+    height: 28%;
+    top: 20.1vh;
+    left: 53.7vh;
+  }
 
 `;
 
@@ -297,14 +247,10 @@ export const BrainActiveOverlay = styled.img`
   z-index: 3;
   pointer-events: none;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 15.31vh;
-  //   left: 44.1vh;
-  // }
-
-  @media screen and (min-width: 2300px) {
-    top: 20.2vh;
-    left: 59.2vh;
+  @media screen and (max-width: 1080px) {
+    height: 28%;
+    top: 20.1vh;
+    left: 53.7vh;
   }
 `;
 
@@ -318,13 +264,10 @@ export const BloodBranch = styled.img`
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 29vh;
-  //   left: 37.7vh;
-  // }
-  @media screen and (min-width: 2300px) {
-    top: 37.1vh;
-    left: 50.4vh;
+  @media screen and (max-width: 1080px) {
+    top: 36.9vh;
+    left: 48vh;
+    height: 28%;
   }
 
 `;
@@ -337,13 +280,10 @@ export const BloodActiveOverlay = styled.img`
   z-index: 3;
   pointer-events: none;
 
-  // @media screen and (max-width: 1368px) {
-  //   top: 29vh;
-  //   left: 37.7vh;
-  // }
-  @media screen and (min-width: 2300px) {
-    top: 37.1vh;
-    left: 50.4vh;
+  @media screen and (max-width: 1080px) {
+    top: 36.9vh;
+    left: 48vh;
+    height: 28%;
   }
 `;
 

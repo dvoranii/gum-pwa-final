@@ -148,7 +148,7 @@ export const Branches = styled.img`
     @media screen and (max-width: 1080px) {
       width: 14.1vh;
       top: 16vh;
-      left: 45.1vh;
+      left: 44.9vh;
     }
 `;
 

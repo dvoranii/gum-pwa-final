@@ -54,7 +54,7 @@ export const ContentRight = styled.div`
 
 
 export const BrushesImg = styled.img`
-  width: 60%; 
+  width: 68%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
@@ -79,7 +79,7 @@ export const IntroTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   line-height: 0.9;
   letter-spacing: -3px;
 

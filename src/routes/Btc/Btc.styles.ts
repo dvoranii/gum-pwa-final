@@ -21,7 +21,6 @@ export const BrushBG = styled.div`
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   height: 82vh;
 
-
   @media screen and (max-width: 1386px) {
       margin-top: 0;
   }
@@ -79,7 +78,7 @@ export const IntroTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   line-height: 0.9;
   letter-spacing: -3px;
 

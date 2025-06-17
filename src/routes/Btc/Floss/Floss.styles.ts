@@ -47,9 +47,8 @@ export const ColumnTitle = styled.h4`
         font-weight: 300;
     }
 
-    @media screen and (max-width: 1600px) {
-        padding-top: 0.4rem;
-        font-size: clamp(16px, 1.6vw, 2.6rem);
+    @media screen and (max-width: 1080px) {
+        padding-top: 0;
     }
 `;
 
@@ -162,8 +161,9 @@ export const InfoGridRow = styled.div`
 
 export const Column = styled.div``;
 export const Column2 = styled.div`
-    @media screen and (max-width: 1386px) {
-        font-size: clamp(12px, 0.8vw, 1.2rem);
+
+    @media screen and (max-width: 1080px) {
+        font-size: clamp(10px, 0.8vw, 1.2rem);
     }
 `;
 

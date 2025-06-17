@@ -25,9 +25,9 @@ export const OralSystemicImgWrapperOuter = styled.div`
     flex: 0 0 auto;
   }
 
-  @media screen and (max-width: 1368px) {
-    height: 46vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   height: 46vh;
+  // }
 
   @media screen and (min-width: 2300px) {
     margin-top: 3rem;
@@ -38,33 +38,34 @@ export const OralSystemicImgWrapperOuter = styled.div`
 export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
   position: relative;
   z-index: 99;
-  width: ${props => props.showResults ? '55%' : '40%'};
+  width: 44%;
+  // width: ${props => props.showResults ? '55%' : '40%'};
 
-  @media screen and (max-width: 1368px) {
-    width: ${props => props.showResults ? '55%' : '40%'};
-  }
+  // @media screen and (max-width: 1368px) {
+  //   width: ${props => props.showResults ? '55%' : '40%'};
+  // }
 
-  @media screen and (min-width: 2300px) {
-   width: ${props => props.showResults ? '62%' : '47.5%'};
-  }
+  // @media screen and (min-width: 2300px) {
+  //  width: ${props => props.showResults ? '62%' : '47.5%'};
+  // }
 
 `;
 
 export const CarouselWrapper = styled.div`
   background-color: #00a16b;
-  width: 60%;
+  width: 56%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 
-  @media screen and (max-width: 1368px) {
-    width: 60%;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   width: 60%;
+  // }
 
-  @media screen and (min-width: 2300px) {
-    width: 54%;
-  }
+  // @media screen and (min-width: 2300px) {
+  //   width: 54%;
+  // }
 
   .carousel {
     width: 100%;
@@ -145,13 +146,13 @@ export const BaseImg = styled.img`
   margin-left: 0px;
   margin-top: 1px;
   border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 48px;
 
-  @media screen and (max-width: 1368px) {
-    height: 45vh;
-  }
+  // @media screen and (max-width: 1368px) {
+  //   height: 45vh;
+  // }
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 1180px) {
     height: 57vh;
   }
 `;

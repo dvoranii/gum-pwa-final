@@ -8,7 +8,7 @@ export const Content = styled.div`
   display: flex;
 
   @media screen and (min-width: 1489px) {
-    height: 86%;
+    height: 85%;
   }
 
   @media screen and (max-width: 1386px) {

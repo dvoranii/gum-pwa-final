@@ -28,11 +28,6 @@ export const CarouselWrapper = styled.div`
             width: auto;
             text-align: right;
             z-index: 10; 
-
-            @media screen and (min-width: 2300px) {
-                bottom: -48px;
-                right: 170px;
-            }
             
             .dot {
                 width: 16px;
@@ -83,12 +78,12 @@ export const SlideColumn1 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1.2rem;
+    padding-top: 0rem;
 
     h4 {
       font-weight: 300;
       font-family: "Gotham", sans-serif;
-      font-size: clamp(18px, 1.8vw, 2.4rem);
+      font-size: clamp(18px, 1.6vw, 2.4rem);
       color: ${colors.primary};
 
       span:nth-of-type(1) {
@@ -111,18 +106,7 @@ export const SlideColumn1 = styled.div`
          font-weight: 900;
       }
     }
-
-    @media screen and (max-width: 1180px) {  
-        padding-top: 0;  
-        h4 {
-            font-size: clamp(18px, 1.6vw, 2.4rem);
-        }
-    }
     
-    @media screen and (min-width: 2300px) {
-        padding-top: 2.4rem;
-        min-width: 40%;
-    }
 `;
 
 export const SlideColumn2 = styled.div`
@@ -138,19 +122,7 @@ export const ImgWrapper = styled.div`
    border-bottom: 1px solid grey;
    img {
       padding: 1rem;
-      width: 90%;
-    }
-
-   @media screen and (max-width: 1368px) {
-      img {
-         width: 100%;
-      }
-   }
-
-   @media screen and (min-width: 2300px) {
-      img {
-         width: 100%;
-      }
+      width: 100%;
     }
 
 `;
@@ -195,8 +167,8 @@ export const InfoGrid =  styled.div<InfoGridProps>`
     column-gap: 1rem;
 
     font-family: "Gotham", sans-serif;
-    padding-top: 1.2rem;
-    font-size: clamp(14px, 1vw, 1.4rem);
+    padding-top: 0.8rem;
+    font-size: clamp(12px, 1vw, 1.4rem);
     color: ${colors.black};
 `;
 

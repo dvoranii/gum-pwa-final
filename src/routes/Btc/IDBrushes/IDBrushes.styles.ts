@@ -228,7 +228,7 @@ export const ImgWrapper1 = styled.div`
     justify-content: center;
 
     img {
-        width: 74%;
+        width: 100%;
     }
 
     @media screen and (min-width: 2300px) {         
@@ -405,12 +405,12 @@ export const InfoGrid =  styled.div`
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     gap: 0.25rem;
-    width: 80%;
+    width: 85%;
     margin-top: auto;
     column-gap: 1rem;
 
     font-family: "Gotham", sans-serif;
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
     font-size: clamp(14px, 1vw, 1.4rem);
     color: #666666;
 `;

@@ -29,7 +29,7 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
         width: ${(props) => props.$width};
 
         @media (min-width: 1600px) {
-            width: calc(${props => props.$width} * 0.85);
+            width: calc(${props => props.$width} * 0.75);
         }
     }
 `;
@@ -41,13 +41,18 @@ export const ColumnTitle = styled.h4`
     text-transform: uppercase;
     letter-spacing: -1px;
     color: ${colors.primary};
-    padding-top: 1.2rem;
+    padding-top: 0.4rem;
 
     span {
         font-weight: 300;
     }
 
+    @media (min-width: 1600px) {
+        padding-top: 0;
+    }
+
     @media screen and (max-width: 1080px) {
+        font-size: clamp(16px, 1.6vw, 2.4rem);
         padding-top: 0;
     }
 `;
@@ -147,11 +152,11 @@ export const InfoGrid =  styled.div<InfoGridProps>`
 
     font-family: "Gotham", sans-serif;
     padding-top: 1.2rem;
-    font-size: clamp(14px, 1vw, 1.4rem);
+    font-size: clamp(12px, 1vw, 1.4rem);
     color: #666666;
 
-    @media screen and (max-width: 1386px) {
-         padding-top:${(props) => props.$paddingTop ? props.$paddingTop : '1.2rem'};
+    @media screen and (max-width: 1600px) {
+         padding-top:${(props) => props.$paddingTop ? props.$paddingTop : '0.4rem'};
     }
 `;
 

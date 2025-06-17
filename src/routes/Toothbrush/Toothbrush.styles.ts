@@ -4,7 +4,7 @@ import { colors } from '../../constants/colors';
 
 export const Content = styled.div`
   padding-top: 2rem;
-  height: 90%;
+  height: 92%;
   display: flex;
   flex-direction: column;
   justify-content: center;

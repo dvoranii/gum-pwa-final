@@ -18,8 +18,8 @@ export const ColoredCircle = styled.span<ColoredCircleProps>`
 `;
 
 export const IDBrushesContainer = styled.div`
-    // padding-left: 5%; 
     position: relative;
+    height: 92%;
 `;
 
 export const CarouselWrapper = styled.div`
@@ -337,6 +337,7 @@ export const ListContainer = styled.div<ListContainerProps>`
 
 export const SlideWrapperInner = styled.div`
     max-width: 80vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -421,7 +422,6 @@ export const InfoGrid2 = styled.div`
 
 export const InfoGrid3 = styled.div`
     display: grid;
-    // grid-template-columns: 1.65fr 1fr 1fr 1fr 1fr 1.2fr 1fr;
     grid-template-columns: 0.9fr 0.85fr 1.1fr 1fr 1fr 1.2fr 1fr;
     width: 83%;
     margin-left: 30px;

@@ -24,7 +24,7 @@ export const MainTitle = styled.h1`
   line-height: 1;
   margin-bottom: 20px;
   letter-spacing: -2px;
-  padding-left: 16px;
+
 `;
 
 export const Trademark = styled.sup`
@@ -158,6 +158,7 @@ export const SoftPickImage = styled.div`
   justify-content: flex-end;
   flex: 1;
   min-width: 0;
+  margin-right: -28px;
 
   img {
     width: auto;

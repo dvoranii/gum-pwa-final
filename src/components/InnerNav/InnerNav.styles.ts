@@ -6,7 +6,7 @@ export const NavTabsOuter = styled.div`
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 36px;
+    height: 32px;
 
     @media screen and (min-width: 2300px) {
         height: 56px;
@@ -51,13 +51,12 @@ export const TabLink = styled(NavLink)`
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   font-family: 'Gotham', sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: clamp(0.85rem, 0.7vw, 1.85rem);
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
   -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 1100px) {

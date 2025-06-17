@@ -212,7 +212,7 @@ export default function BtcFloss() {
                     <S.ColumnTitle><span>Easy</span>Thread® Floss</S.ColumnTitle>
                         <small>(formerly known as EEZ-THRU)®</small> 
                         <p>GUM® EasyThread® Floss is designed to make flossing around braces, bridges, and implants easy.</p>
-                        <S.ListContainer $padding="0">
+                        <S.ListContainer>
                             <ul>
                                 <li>Stiff threader sections provide easy access to hard-to-clean spaces without irritating the gums</li>
                                 <li>Double-ended threader sections to maximize cleaning with each strand</li>

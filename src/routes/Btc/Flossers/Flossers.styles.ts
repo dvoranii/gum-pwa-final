@@ -64,6 +64,7 @@ export const SlideWrapper = styled.div`
     display: flex;
     gap: 2.4rem;
     width: 90%;
+    height: 100%;
 `;
 
 export const CarouselSlide = styled.div`
@@ -81,6 +82,7 @@ export const SlideColumn1 = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-top: 1.2rem;
 
     h4 {
@@ -127,8 +129,8 @@ export const SlideColumn2 = styled.div`
     width: 55%; 
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding-right: 5rem;
 `;
 
 export const ImgWrapper = styled.div`
@@ -154,7 +156,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ImgWrapper2 = styled.div`
-    padding-top: 2.4rem;
+    padding-top: 1.8rem;
     img {
         width: 50%;
     }
@@ -167,49 +169,35 @@ export const ListContainer = styled.div`
         font-family: 'Gotham', sans-serif;
         font-size:clamp(0.9rem, 1.2vw, 1.8rem);
         color: ${colors.black};
-        padding: 0.4rem 0;
-        line-height: 1.3;
-        margin-inline-start: 30px;
+        line-height: 1.2;
+        margin-inline-start: 16px;
 
         span {
             font-weight: 500;
         }
 
-    
          sup {
             font-size: 12px;
          }
    }
 
-    @media screen and (max-width: 1180px) {    
-       ul {
-            line-height: 1;
-       } 
-    }
-
-    @media screen and (min-width: 2300px) {    
-       ul {
-            padding: 1.2rem 0;
-            font-size: clamp(1.2rem, 1.4vw, 2rem);
-       } 
-    }
 `;
 
-export const InfoGrid =  styled.div`
+interface InfoGridProps {
+    $width?: string;
+}
+
+export const InfoGrid =  styled.div<InfoGridProps>`
     display: grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:3fr 1fr;
     gap: 0.25rem;
-    width: 90%;
+    width: ${(props) => props.$width ? props.$width : "100%"};
     column-gap: 1rem;
 
     font-family: "Gotham", sans-serif;
     padding-top: 1.2rem;
     font-size: clamp(14px, 1vw, 1.4rem);
     color: ${colors.black};
-
-    @media screen and (max-width: 1368px) {
-      width: 85%;
-   }
 `;
 
 export const Row = styled.div`
@@ -217,4 +205,12 @@ export const Row = styled.div`
 `;
 
 export const Column = styled.div``;
+
+interface TitleListWrapperProps {
+    $paddingTop?: string;
+}
+
+export const TitleListWrapper = styled.div<TitleListWrapperProps>`
+    padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "1.2rem"};
+`;
 

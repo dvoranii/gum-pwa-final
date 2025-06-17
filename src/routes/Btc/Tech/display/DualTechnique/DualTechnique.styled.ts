@@ -28,7 +28,7 @@ export const MainTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: ${colors.primary};
-  font-size: clamp(18px, 3.2vw, 6.4rem);
+  font-size: clamp(18px, 3.4vw, 6.4rem);
   line-height: 1;
   padding-right: 20px;
 
@@ -41,31 +41,29 @@ export const MainTitle = styled.h1`
 
 export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(16px, 1.5vw, 2.4rem);
+  font-size: clamp(16px, 2vw, 2.4rem);
   color: ${colors.black};
   line-height: 1.25;
   margin-bottom: 30px;
-  padding-inline-start: 20px;
+  padding-inline-start: 28px;
   letter-spacing: -1px;
   padding-top: 1.2rem;
-  padding-right: 80px;
+  padding-right: 56px;
 
   sup {
     font-size: 16px;
   }
 
-  @media screen and (max-width: 1368px) {
-    font-size: 2vw;
-    padding-right: 0;
-  }
+    li:nth-child(2) {
+        padding-top: 1.4rem;
+    }
+
 
   @media screen and (min-width: 2300px) {
     font-size:clamp(16px, 1.9vw, 3.4rem);
     padding-right: 0px;
 
-    li:nth-child(2) {
-        padding-top: 1.4rem;
-    }
+
   }
 `;
 
@@ -83,9 +81,11 @@ export const ColRightDiagramWrapper= styled.div`
     height: 100%;
 
     img {
-        width: 75%;
+        width: 100%;
         height: auto;
-        padding: 2.4rem 0;
+        margin-left: -64px;
+        margin-top: 48px;
+
     }
 
     @media screen and (min-width: 2300px) {
@@ -101,8 +101,6 @@ export const ColRightDiagramWrapper= styled.div`
 
 export const ImgWrapper = styled.div`
     width: 35%;
-    padding-top: 32px;
-
     img {
         width: 100%;
     }

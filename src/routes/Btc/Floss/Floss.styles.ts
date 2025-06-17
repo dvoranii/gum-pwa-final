@@ -28,7 +28,7 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
     img {
         width: ${(props) => props.$width};
 
-        @media (max-width: 1600px) {
+        @media (min-width: 1600px) {
             width: calc(${props => props.$width} * 0.85);
         }
     }
@@ -89,9 +89,7 @@ interface ListContainerProps {
 }
 
 export const ListContainer = styled.div<ListContainerProps>`
-
     padding-right: 1.8rem;
-    width: 90%;
     flex-grow: ${(props) => props.$flexGrow ? props.$flexGrow : "1"}; 
     display: flex;
     flex-direction: column;
@@ -99,11 +97,13 @@ export const ListContainer = styled.div<ListContainerProps>`
         
     ul {
         font-family: 'Gotham', sans-serif;
-        font-size:clamp(1.2rem, 1.4vw, 1.8rem);
+        font-size: clamp(14px, 0.8vw,1.2rem);
         color: ${colors.black};
-        padding: ${(props) => props.$padding ? props.$padding : "1.2rem 0" };
+        // padding: ${(props) => props.$padding ? props.$padding : "1.2rem 0" };
+        padding-bottom: 0.4rem;
         list-style: none;
-        line-height: 1.3;
+        line-height: 1.2;
+
 
         li {
             position: relative;
@@ -117,7 +117,7 @@ export const ListContainer = styled.div<ListContainerProps>`
             font-size: 18px; 
             color: ${colors.black};
             vertical-align: middle;
-            line-height: 1.3; 
+            line-height: 1.2; 
         }
 
         span {
@@ -129,18 +129,6 @@ export const ListContainer = styled.div<ListContainerProps>`
         font-size: 12px;
     }
 
-
-    @media screen and (max-width: 1600px) {
-        ul {
-            line-height: 1;
-            font-size: clamp(14px, 0.8vw,1.2rem);
-            padding-bottom: 0.4rem;
-
-            li::before {
-                line-height: 1;
-            }
-        }
-    }
 `;
 
 interface InfoGridProps {
@@ -175,7 +163,7 @@ export const InfoGridRow = styled.div`
 export const Column = styled.div``;
 export const Column2 = styled.div`
     @media screen and (max-width: 1386px) {
-        font-size: clamp(10px, 0.8vw, 1.2rem);
+        font-size: clamp(12px, 0.8vw, 1.2rem);
     }
 `;
 

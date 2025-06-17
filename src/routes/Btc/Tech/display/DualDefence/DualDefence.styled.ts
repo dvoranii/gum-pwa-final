@@ -35,7 +35,7 @@ export const ColumnLeft = styled.div`
     padding:80px 0 40px 80px;
 
     sup {
-        font-size: 18px;
+        font-size: 12px;
     }
 
 
@@ -56,7 +56,6 @@ export const MainTitle = styled.h1`
   line-height: 1;
   padding-right: 20px;
   z-index: 99;
-  padding-left: 12px;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
@@ -70,10 +69,14 @@ export const Description = styled.ul`
   color: ${colors.black};
   line-height: 1.25;
   margin-bottom: 30px;
-  padding-inline-start: 20px;
+  padding-inline-start: 28px;
   letter-spacing: -1px;
   padding-top: 1.2rem;
   padding-right: 80px;
+
+  sup {
+    font-size: 14px;
+  }
 
   @media screen and (max-width: 1368px) {
     font-size: 2vw;

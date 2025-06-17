@@ -35,14 +35,17 @@ export default function BtcFlossers(){
              <S.CarouselSlide>
                 <S.SlideWrapper>
                     <S.SlideColumn1>
-                        <h4><span>Eco</span> <span>Clean®</span> <span>Flossers</span> <span>Mint</span></h4>
-                        <S.ListContainer>
-                            <ul>
-                                <li>Textured floss effectively removes 2x more plaque<sup>2</sup> and is designed to resist shredding or breaking<sup>5</sup></li>
-                                <li>Lightweight handle is crafted from 70% plant-based materials</li>
-                                
-                            </ul>  
-                        </S.ListContainer>
+                        <S.TitleListWrapper>
+                            <h4><span>Eco</span> <span>Clean®</span> <span>Flossers</span> <span>Mint</span></h4>
+                            <S.ListContainer>
+                                <ul>
+                                    <li>Textured floss effectively removes 2x more plaque<sup>2</sup> and is designed to resist shredding or breaking<sup>5</sup></li>
+                                    <li>Lightweight handle is crafted from 70% plant-based materials</li>
+                                    
+                                </ul>  
+                            </S.ListContainer>
+                        </S.TitleListWrapper>
+                        <S.TitleListWrapper>
                         <h4><span>Twisted</span> <span>Mint™</span> <span>Flossers</span></h4>
                          <S.ListContainer>
                             <ul>
@@ -51,6 +54,8 @@ export default function BtcFlossers(){
                                 
                             </ul>  
                         </S.ListContainer>
+                        </S.TitleListWrapper>
+                        <S.TitleListWrapper>
                         <h4><span>Comfort</span> <span>Slide</span> <span>Flossers</span> <span>Mint</span></h4>
                         <S.ListContainer>
                             <ul>
@@ -58,6 +63,8 @@ export default function BtcFlossers(){
                                 <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>
                             </ul>  
                         </S.ListContainer>
+                        </S.TitleListWrapper>
+                        <S.TitleListWrapper>
                         <h4><span>Comfort</span> <span>Care</span> <span>Flossers</span> <span>Mint</span> with Vitamin E & Fluoride</h4>
                         <S.ListContainer>
                             <ul>
@@ -65,6 +72,8 @@ export default function BtcFlossers(){
                                 <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>                  
                             </ul>  
                         </S.ListContainer>
+                        </S.TitleListWrapper>
+                         <S.TitleListWrapper>
                         <h4><span>Professional</span> <span>Clean®</span> <span>Flossers</span> <span>Mint</span></h4>
                         <S.ListContainer>
                             <ul>
@@ -72,6 +81,7 @@ export default function BtcFlossers(){
                                 <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>                  
                             </ul>  
                         </S.ListContainer>
+                        </S.TitleListWrapper>
                     </S.SlideColumn1>
                     <S.SlideColumn2>
                         <S.ImgWrapper>
@@ -110,22 +120,28 @@ export default function BtcFlossers(){
              <S.CarouselSlide>
                 <S.SlideWrapper>
                     <S.SlideColumn1>
-                      <h4><span>Professional</span> <span>Clean Plus</span><br/> <span>Flosser Picks</span> <span>Mint</span></h4>
-                        <S.ListContainer>
-                            <ul>
-                                <li>Specialy designed rubber pick massages gums while gently removing debris</li>
-                                <li>Strong floss designed to slide easily between teeth and resist shredding or breaking</li>
-                                
-                            </ul>  
-                        </S.ListContainer>
-                        <h4><span>Dual</span> <span>Technique®</span><br/> <span>Flossers</span> <span>Mint</span></h4>
-                        <S.ListContainer>
-                            <ul>
-                                <li>Dual ends specifically designed to reach front and back teeth</li>
-                                <li>Twisted mint floss on the angled side removes 2x more plaque<sup>2</sup> and covers 30% more surface area<sup>3</sup></li>
-                                
-                            </ul>  
-                        </S.ListContainer>
+                        <S.TitleListWrapper $paddingTop="0">
+                            <h4><span>Professional</span> <span>Clean Plus</span><br/> <span>Flosser Picks</span> <span>Mint</span></h4>
+                            <S.ListContainer>
+                                <ul>
+                                    <li>Specialy designed rubber pick massages gums while gently removing debris</li>
+                                    <li>Strong floss designed to slide easily between teeth and resist shredding or breaking</li>
+                                    
+                                </ul>  
+                            </S.ListContainer>
+                        </S.TitleListWrapper>
+                     
+                        <S.TitleListWrapper $paddingTop="1.2rem">
+                            <h4><span>Dual</span> <span>Technique®</span><br/> <span>Flossers</span> <span>Mint</span></h4>
+                            <S.ListContainer>
+                                <ul>
+                                    <li>Dual ends specifically designed to reach front and back teeth</li>
+                                    <li>Twisted mint floss on the angled side removes 2x more plaque<sup>2</sup> and covers 30% more surface area<sup>3</sup></li>
+                                    
+                                </ul>  
+                            </S.ListContainer>
+                        </S.TitleListWrapper>
+
                         <S.ImgWrapper2>
                             <img src={Slide2GraphicSmall}/>
                         </S.ImgWrapper2>
@@ -134,7 +150,7 @@ export default function BtcFlossers(){
                         <S.ImgWrapper>
                             <img src={Slide2Graphic}/>
                         </S.ImgWrapper>
-                         <S.InfoGrid>
+                         <S.InfoGrid $width="90%">
                                 <S.Row>                            
                                     <S.Column>885 Professional Clean PLUS Flosser Mint</S.Column>
                                     <S.Column>48 packs of 2</S.Column>

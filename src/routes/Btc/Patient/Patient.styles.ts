@@ -15,22 +15,17 @@ export const PatientContainer = styled.div`
   justify-content: space-between;
   gap: 2.4rem;
   padding-top: 1.2rem;
-  height: 85vh;
+  height: 78vh;
   width: 100%;
 
-  @media screen and (max-width: 1386px) {
-    height: 72vh;
-  }
-
-  @media screen and (min-width: 2300px) {
-     padding-top: 2.4rem;
-     height: 80vh;
+  @media screen and (min-width: 1500px) {
+    height: 85vh;
   }
 `;
 
 export const ChoicesContainerOuter = styled.div`
   display: flex;
-  width: 37%;
+  width: 45%;
   padding-top: 1.2rem;
   flex-direction: column;
   justify-content: center;
@@ -38,22 +33,16 @@ export const ChoicesContainerOuter = styled.div`
   h1 {
     font-family: "Gotham", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2vw, 3.6rem);
+    font-size: clamp(18px, 2.6vw, 3.6rem);
     color: #00a16b;
     text-align: center;
+    padding-bottom: 0.4rem;
   }
 
-  @media screen and (max-width: 1386px) {
-    width: 45%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    width: 44%;
-    padding-top: 0;
+  @media screen and (max-width: 1080px) {
 
     h1 {
-      font-size: 2.6vw;
-      letter-spacing: -1.5px;
+      font-size: 2.4vw;
     }
   }
 `;
@@ -68,11 +57,11 @@ interface ResultsContainerProps {
 
 export const ResultsContainer = styled.div<ResultsContainerProps>`
   width: 55%;
-  min-height: 300px;
   background: white;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.21);
+  margin-bottom: -24px;
 
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   transform: translateX(${({ $show }) => ($show ? '0' : '20px')});
@@ -88,7 +77,7 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
 export const Row = styled.div`
   display: flex;
   gap: 0.5rem;
-  padding-top: 1.2rem;
+  padding-top: 0.4rem;
 
   @media screen and (min-width: 2300px) {
     padding-top: 1.4rem;
@@ -98,7 +87,7 @@ export const Row = styled.div`
 export const Row2 = styled.div`
   display: flex;
   gap: 0.5rem;
-  padding-top:1.2rem;
+  padding-top: 0.4rem;
 
   @media screen and (min-width: 2300px) {
   padding-top: 1.4rem;
@@ -133,8 +122,8 @@ export const ImgWrapper3 = styled.div`
 export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps>`
   width: 100%;
   background: #02a6a7;
-  padding: 1rem;
-  margin-top: 2.4rem;
+  padding: 0.8rem;
+  margin-top: 1.2rem;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   transition: all 150ms ease;

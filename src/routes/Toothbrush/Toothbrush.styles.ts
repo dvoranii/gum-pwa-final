@@ -79,7 +79,7 @@ export const IntroTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: 4.2rem;
+  font-size: 3.6rem;
   line-height: 0.9;
   letter-spacing: -3px;
 

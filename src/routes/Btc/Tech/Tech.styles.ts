@@ -14,8 +14,6 @@ export const HeaderLeft = styled.div`
   display: flex;
   flex-direction: column;
   width: 20vh;
-  padding-right: 20px;
-
 `;
 
 export const SideIcon = styled.div`
@@ -38,8 +36,8 @@ export const TechContainer = styled.div`
   width: 87%;
   height: 90%;
   background-color: #ffffff;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
   overflow: hidden;

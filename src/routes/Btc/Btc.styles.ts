@@ -10,7 +10,7 @@ export const Content = styled.div`
   }
 `;
 
-export const BtcBG = styled.div`
+export const BrushBG = styled.div`
   display: flex;
   align-items: flex-start;
   border-top-left-radius: 48px;
@@ -53,11 +53,15 @@ export const ContentRight = styled.div`
 `;
 
 
-export const FlossersImg = styled.img`
+export const FlossImg = styled.img`
   width: 100%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
+
+  @media screen and (min-width: 2100px) {
+    width: 70%;
+  }
 `;
 
 export const IntroTitleWrapper = styled.div`
@@ -75,7 +79,7 @@ export const IntroTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: 4.2rem;
+  font-size: 3.6rem;
   line-height: 0.9;
   letter-spacing: -3px;
 
@@ -102,12 +106,13 @@ export const RecommendedWrapper = styled.div`
 
 export const Recommended = styled.img`
   width: 50%;
-  max-width: 392.5px;
   height: auto;
 `;
 
 export const LinksWrapper = styled.div`
   display: flex;
+  // gap: 1.8rem;
+  // margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
@@ -124,9 +129,10 @@ export const LinksWrapper = styled.div`
  }
 `;
 
+
 export const StyledLink = styled(Link)`
   display: flex;
-  justify-content: flex-start;
+  justify-content:  flex-start;
 `;
 
 export const LinkImg = styled.img`

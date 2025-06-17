@@ -23,16 +23,11 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.4vw, 6.4rem);
   line-height: 1;
   margin-bottom: 20px;
-  padding-left: 16px;
 `;
 
 export const Trademark = styled.sup`
   position: absolute;
   font-weight: 700;
-
-  @media screen and (min-width: 2300px) {
-    font-size: 5.4rem;
-  }
 
 `;
 
@@ -47,7 +42,7 @@ export const Description = styled.ul`
   padding-right: 120px;
 
   sup {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   @media screen and (max-width: 1368px) {

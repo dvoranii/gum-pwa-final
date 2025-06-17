@@ -10,7 +10,4 @@ export const PageContainerOuter = styled.div`
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: 1600px) {
-    background-position: bottom -60px right 0px;
-  }
 `;

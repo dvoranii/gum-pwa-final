@@ -22,14 +22,13 @@ export const Slide1 = styled.div`
 export const PartnersBG = styled.div<PartnersBGProps>`
   display: flex;
   gap: 2.4rem;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;
-  min-height: 55vh;
+  min-height: 60vh;
   box-sizing: border-box;
-  margin-top: 2.4rem;
   justify-content: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
@@ -92,22 +91,12 @@ export const CarouselWrapper = styled.div`
 `;
 
 export const FullWidthImage = styled.img`
-  max-width: 76.8%;
+  width: 100%;
   max-height: 80vh;
   object-fit: contain;
   border-radius: 24px 0 0 24px;
   margin: 0 auto;
 
-  @media screen and (max-width: 1386px) {
-      max-width: 85%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    max-width: 100%;
-    height: 58vh;
-    width: auto;
-    margin-left: -28px;
-  }
 `;
 
 export const GumLogoCol = styled.div`
@@ -122,18 +111,18 @@ export const GumLogoCol = styled.div`
 `;
 export const GumLogo = styled.img`
   width: 100%;
-  padding-top: 4.6vh;
+  padding-top: 11.6vh;
 `;
 
 export const GumTextWrapper = styled.div`
-  padding-top: 2rem;
+  padding-top: 0.8rem;
   text-align: right;
   width: 100%;
   color: #00a16b;
   font-family: 'Gotham', sans-serif;
 
   h2 {
-    font-size: clamp(1.8rem, 2.8vw, 4.4rem);
+    font-size: clamp(1.8rem, 3vw, 4.4rem);
     letter-spacing: -1px;
   }
 
@@ -161,6 +150,8 @@ export const GraphicsCol = styled.div`
   width: 70%;
   min-width: 0;
   display: flex;
+  align-items: center;
+  gap: 1.2rem;
 
   @media screen and (min-width: 2300px) {
     width: 64%;
@@ -176,6 +167,7 @@ export const ImgTextWrapper = styled.div`
   flex: 1;
   min-width: 0;
   max-width: 33.33%;
+  min-height: 361px;
 
   h4 {
     font-weight: 600;
@@ -187,7 +179,7 @@ export const ImgTextWrapper = styled.div`
 
 
   & > img {
-      width: 80%;
+      width: 100%;
       height: auto;
       max-width: 100%;
       object-fit: contain;
@@ -208,14 +200,14 @@ export const ImgTextWrapper = styled.div`
 
 export const ColTextWrapper = styled.div`
     width: 100%;
-    padding-left: 1.8rem;
+    padding-left: 1.2rem;
 
     & > p {
       letter-spacing: -1.8px;
       line-height: 1.15;
       letter-spacing: -1.4px;
       padding-top: 0.25rem;
-      font-size: clamp(1rem, 2.08rem ,1.5vw);
+      font-size: clamp(1rem, 1.5vw, 2.2rem);
       font-weight: 500;
     }
 

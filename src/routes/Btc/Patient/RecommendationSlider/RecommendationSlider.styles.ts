@@ -2,23 +2,11 @@ import styled from "styled-components";
 import { colors } from "../../../../constants/colors";
 
 export const Slide = styled.div`
-  width: 92%;
-  padding: 12px 32px;
   text-align: center;
-  height: 85vh;
-
+  height: 78vh;
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1386px) {
-    height: 68vh;
-  }
-
-  @media screen and (min-width: 2300px) {
-    height: 73vh;
-    padding: 60px;
-    width: 100%;
-  }
 `;
 
 export const ProductImage = styled.img`
@@ -40,7 +28,7 @@ export const CarouselWrapper = styled.div`
         
         .flickity-page-dots {
             top: unset;
-            bottom: 40px;
+            bottom: 24px;
             right: 24px;
             left: unset;
             width: auto;

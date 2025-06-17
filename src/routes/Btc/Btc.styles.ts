@@ -5,7 +5,7 @@ import { colors } from '../../constants/colors';
 export const Content = styled.div`
   padding-top: 2rem;
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 2100px) {
     padding-top: 4rem;
   }
 `;
@@ -66,7 +66,7 @@ export const IntroTitleWrapper = styled.div`
   display: flex;
   align-items: flex-end;
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 2100px) {
     padding-left: 2.4rem;
   }
 `;
@@ -79,7 +79,7 @@ export const IntroTitle = styled.h1`
   line-height: 0.9;
   letter-spacing: -3px;
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 2100px) {
     font-size: 7.4rem;
   }
 `;
@@ -116,7 +116,7 @@ export const LinksWrapper = styled.div`
     width: 100%;
   }
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 2100px) {
      padding-left: 2rem;
      width: 100%;
      gap: 3rem;
@@ -138,7 +138,7 @@ export const LinkImg = styled.img`
     width: 80%;
   }
 
-  @media screen and (min-width: 2300px) {
+  @media screen and (min-width: 2100px) {
     width: 13vw;
  }
 `;

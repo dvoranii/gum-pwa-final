@@ -208,7 +208,7 @@ export default function BtcFloss() {
                         </a>
                 </S.SlideColumn1>
                 <S.SlideColumn2>
-                    <S.ImgWrapper $width={"85%"}><img src={Slide3Floss2}/></S.ImgWrapper>
+                    <S.ImgWrapper $width={"80%"}><img src={Slide3Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle><span>Easy</span>Thread® Floss</S.ColumnTitle>
                         <small>(formerly known as EEZ-THRU)®</small> 
                         <p>GUM® EasyThread® Floss is designed to make flossing around braces, bridges, and implants easy.</p>

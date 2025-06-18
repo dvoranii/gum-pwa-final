@@ -238,7 +238,7 @@ export const CarouselSlide = styled.div`
 
 export const ShopifyIconImg = styled.img`
   width: 60px; 
-  margin: 10px 0;
+  margin-top: 4px;
   display: block; 
 
   @media (max-width: 1600px) {

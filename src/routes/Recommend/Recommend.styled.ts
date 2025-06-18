@@ -90,11 +90,6 @@ export const CarouselWrapper = styled.div`
         text-align: right;
         z-index: 10;
 
-        @media screen and (min-width: 2300px) {
-            right: 120px;
-            bottom: -80px;
-        }
-        
         .dot {
             width: 20px;
             height: 20px;

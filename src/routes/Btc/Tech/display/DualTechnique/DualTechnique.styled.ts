@@ -23,12 +23,6 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.4vw, 6.4rem);
   line-height: 1;
   padding-right: 20px;
-
-  @media screen and (min-width: 2300px){
-      margin-bottom: 20px;
-      font-size: 3.4vw;
-      padding-left: 8px;
-  }
 `;
 
 export const Description = styled.ul`
@@ -36,7 +30,7 @@ export const Description = styled.ul`
   font-size: clamp(16px, 2vw, 2.4rem);
   color: ${colors.black};
   line-height: 1.25;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-inline-start: 8px;
   letter-spacing: -1px;
   padding-top: 1.2rem;
@@ -47,16 +41,8 @@ export const Description = styled.ul`
   }
 
     li:nth-child(2) {
-        padding-top: 1.4rem;
+        padding-top: 0.8rem;
     }
-
-
-  @media screen and (min-width: 2300px) {
-    font-size:clamp(16px, 1.9vw, 3.4rem);
-    padding-right: 0px;
-
-
-  }
 `;
 
 export const ColumnRight = styled.div`
@@ -79,20 +65,12 @@ export const ColRightDiagramWrapper= styled.div`
         margin-top: 48px;
 
     }
-
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-            padding-top: 13.2rem;
-            height: auto;
-            margin-left: -100px;
-        }
-    }
 `;
 
 
 export const ImgWrapper = styled.div`
     width: 35%;
+    
     img {
         width: 100%;
     }

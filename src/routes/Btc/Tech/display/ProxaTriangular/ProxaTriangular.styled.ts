@@ -7,13 +7,9 @@ export const ContentWrapper = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  padding: 40px 20px 40px 64px;
+  padding: 40px 20px 40px 60px;
   flex: 2;
   min-width: 0;
-
- @media screen and (min-width: 2300px) {
-     padding: 120px 30px 40px 141px;
-  }
 `;
 
 export const MainTitle = styled.h1`
@@ -39,16 +35,12 @@ export const Description = styled.ul`
   margin-bottom: 30px;
   padding-inline-start: 4px;
   letter-spacing: -1px;
-  padding-right: 120px;
+  padding-right: 12px;
 
   sup {
     font-size: 14px;
   }
 
-  @media screen and (max-width: 1368px) {
-    font-size: 1.8vw;
-    padding-right: 0;
-  }
 `;
 
 export const DiagramSection = styled.div`
@@ -108,24 +100,8 @@ export const CrossSectionDiagram = styled.div`
   margin-bottom: 10px;
 
   img {
-    width: 65%;
+    width: 100%;
     height: auto;
-  }
-
-   @media screen and (max-width: 1024px) {
-        margin-bottom: 0;
-   }
-
-  @media screen and (max-width: 1368px) {
-    img {
-        width: 100%;
-    }
-  }
-
-  @media screen and (min-width: 2300px) {
-    img {
-        width: 100%;
-    }
   }
 
 `;
@@ -148,10 +124,6 @@ export const CrossSectionIcon = styled.div`
 export const BenefitsList = styled.ul`
     line-height: 1.35;
     padding-inline-start: 20px;
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 1.2rem;
-    }
 `;
 
 export const BenefitItem = styled.li`
@@ -160,6 +132,10 @@ export const BenefitItem = styled.li`
   color: #00a16b;
   font-weight: 600;
   margin: 0;
+
+  @media screen and (max-width: 1080px) {
+      font-size: clamp(14px, 1.4vw, 1.8rem);
+  }
 
 `;
 
@@ -177,12 +153,4 @@ export const HandImage = styled.div`
     margin-top: 64px;
     margin-right: -24px;
   }
-
-  @media screen and (min-width: 2300px) {
-      img {
-        height: 95%;
-        margin-right: -20px;
-    }
-  }
-
 `;

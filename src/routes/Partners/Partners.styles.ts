@@ -7,11 +7,10 @@ interface PartnersBGProps {
 }
 
 export const Content = styled.div`
-    padding-top: 2rem;
-
-    @media screen and (min-width: 2300px) {
-      padding-top: 3rem;
-    }
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 export const Slide1 = styled.div`

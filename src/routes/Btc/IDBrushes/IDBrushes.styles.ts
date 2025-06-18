@@ -19,7 +19,7 @@ export const ColoredCircle = styled.span<ColoredCircleProps>`
 
 export const IDBrushesContainer = styled.div`
     position: relative;
-    height: 92%;
+    // height: 92%;
 `;
 
 export const CarouselWrapper = styled.div`

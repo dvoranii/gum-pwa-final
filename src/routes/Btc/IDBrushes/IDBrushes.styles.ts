@@ -217,7 +217,7 @@ export const ImgWrapper1 = styled.div`
     justify-content: center;
 
     img {
-        width: 100%;
+        width: 97%;
     }
 `;
 

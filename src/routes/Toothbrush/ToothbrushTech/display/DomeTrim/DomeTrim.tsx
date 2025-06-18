@@ -17,7 +17,7 @@ export default function TaperedBristles(){
                     <img src={TaperedBristlesDiagram}/>
                 </S.ColLeftImgWrapper>
                 <S.ColLeftList>
-                    <li>Available on: Complete Care Technique® Sensitive Care Technique®, Technique® Classic, Super Tip®, Dome Trim®, G-U-M Bright Care™, Enamel Clean Technique®</li>
+                    <li>Available on: Complete Care Technique® Sensitive Care Technique®, Technique® Classic, Super Tip®, Dome Trim®, G•U•M Bright Care™, Enamel Clean Technique®</li>
                 </S.ColLeftList>
             </S.ColumnLeft>
             <S.ColumnRight>

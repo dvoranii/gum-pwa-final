@@ -40,10 +40,10 @@ export const SideIcon = styled.div`
 export const TechContainer = styled.div`
   display: flex;
   width: 87%;
-  height: 100%;
+  height: 92%;
   background-color: #ffffff;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
   overflow: hidden;

@@ -11,7 +11,7 @@ export const ContentWrapper = styled.div`
 
 export const ColumnLeft = styled.div`
     max-width: 62%;
-    padding: 40px 0 40px 60px;
+    padding: 40px 0 40px 50px;
 
     @media screen and (min-width: 2300px) {
         padding: 120px 0 40px 100px;    
@@ -22,9 +22,10 @@ export const MainTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: clamp(18px, 3.2vw, 6.4rem);
+  font-size: clamp(18px, 3.1vw, 6.4rem);
   line-height: 1;
   padding-right: 25px;
+  padding-top: 1.4rem;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;
@@ -35,27 +36,17 @@ export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
   font-size: clamp(16px, 1.5vw, 2.4rem);
   color: #666666;
-  line-height: 1.1;
-  margin-bottom: 30px;
-  padding-inline-start: 20px;
-  letter-spacing: -1px;
-  padding-top: 1.2rem;
-  padding-right: 80px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  padding-inline-start: 6px;
+  padding-top: 0.8rem;
+  padding-right: 60px;
 
-  @media screen and (max-width: 1386px) {
-    font-size: 2vw;
-    padding-right: 0;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size:clamp(16px, 1.9vw, 3.4rem);
-    padding-right: 93px;
-  }
 `;
 
 export const ColLeftImgWrapper = styled.div`
     img {
-        width: 85%;
+        width: 90%;
     }
 `;
 
@@ -65,7 +56,7 @@ export const ColLeftList = styled.ul`
     padding-inline-start: 20px;
 
     li {
-        font-size: clamp(16px, 1.5vw, 2.4rem);
+        font-size: clamp(16px, 1.4vw, 2.4rem);
         color: #00a16b;
         font-weight: 600;
     }
@@ -89,9 +80,9 @@ export const BristlesDiagramWrapper= styled.div`
     height: 100%;
 
     img {
-        width: 75%;
+        width: 90%;
         height: auto;
-        padding: 2.4rem 0;
+        padding-top: 1.2rem;
     }
 
     @media screen and (min-width: 2300px) {

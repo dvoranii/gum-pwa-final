@@ -57,7 +57,7 @@ export const Description = styled.ul`
   color: #666666;
   line-height: 1.1;
   margin-bottom: 30px;
-  padding-inline-start: 20px;
+  padding-inline-start: 2px;
   letter-spacing: -1px;
   padding-top: 1.2rem;
   padding-right: 80px;
@@ -82,7 +82,7 @@ export const ColLeftImgWrapper = styled.div`
 export const ColLeftList = styled.ul`
     font-family: 'Gotham', sans-serif;
     margin-top: 1.2rem;
-    padding-inline-start: 20px;
+    padding-inline-start: 2px;
 
     li {
         font-size: clamp(16px, 1.6vw, 2.4rem);

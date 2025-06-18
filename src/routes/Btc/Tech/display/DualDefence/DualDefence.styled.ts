@@ -42,7 +42,6 @@ export const ColumnLeft = styled.div`
     @media screen and (max-width: 1024px) {
         padding: 60px 0 40px 60px;
     }
-
 `;
 
 export const MainTitle = styled.h1`
@@ -51,8 +50,9 @@ export const MainTitle = styled.h1`
   color: ${colors.primary};
   font-size: clamp(18px, 3.2vw, 6.4rem);
   line-height: 1;
-  padding-right: 20px;
+//   padding-right: 20px;
   z-index: 99;
+  padding-left: 22px;
 
   @media screen and (min-width: 2300px){
       margin-bottom: 20px;

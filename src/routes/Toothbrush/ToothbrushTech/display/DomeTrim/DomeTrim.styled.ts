@@ -35,16 +35,17 @@ export const Description = styled.ul`
   font-size: clamp(16px, 1.9vw, 2.4rem);
   color: #666666;
   line-height: 1.1;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   letter-spacing: -1px;
   padding-top: 0.8rem;
-  padding-right: 44px;
+  padding-right: 43.3px;
 
 `;
 
 export const ColLeftImgWrapper = styled.div`
     img {
-        width: 85%;
+        width: 90%;
+        margin-left: -19px;
     }
 `;
 

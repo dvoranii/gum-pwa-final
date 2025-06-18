@@ -11,13 +11,13 @@ export default function TaperedBristles(){
                     GUM Extremely Tapered Bristles® (ETB)
                 </S.MainTitle>
                 <S.Description>
-                    <li>Precision tapering enables the Extremely Tapered Bristles (EtB) to penetrate mre deeply to clean up to 2.7 mm into the sulcus and clean up to 1.4 cm along the gingival margin and between the teeth.</li>
+                    <li>Precision tapering enables the Extremely Tapered Bristles (EtB) to penetrate more deeply to clean up to 2.7 mm into the sulcus and clean up to 1.4 cm along the gingival margin and between the teeth.</li>
                 </S.Description>
                 <S.ColLeftImgWrapper>
                     <img src={TaperedBristlesDiagram}/>
                 </S.ColLeftImgWrapper>
                 <S.ColLeftList>
-                    <li>Available on: Complete Care Technique®, Sensitive Care Technique®, Technique® Classic, Super Tip®, Dome Trim®, G•U•M Bright Care™, Enamel Clean Technique</li>
+                    <li>Available on: Deep Clean Technique®<br/>and Sensitive Clean Technique®</li>
                 </S.ColLeftList>
             </S.ColumnLeft>
             <S.ColumnRight>

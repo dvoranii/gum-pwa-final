@@ -45,10 +45,10 @@ export const Description = styled.ul`
   color: ${colors.black};
   line-height: 1.25;
   margin-bottom: 30px;
-  padding-inline-start: 28px;
+  padding-inline-start: 8px;
   letter-spacing: -1px;
   padding-top: 1.2rem;
-  padding-right: 56px;
+  padding-right: 70px;
 
   sup {
     font-size: 16px;

@@ -22,7 +22,7 @@ export const MainTitle = styled.h1`
   color: #00a16b;
   font-size: clamp(18px, 3.4vw, 6.4rem);
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 `;
 
 export const Trademark = styled.sup`
@@ -37,7 +37,7 @@ export const Description = styled.ul`
   color: #666666;
   line-height: 1.25;
   margin-bottom: 30px;
-  padding-inline-start: 20px;
+  padding-inline-start: 4px;
   letter-spacing: -1px;
   padding-right: 120px;
 
@@ -156,18 +156,11 @@ export const BenefitsList = styled.ul`
 
 export const BenefitItem = styled.li`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(20px, 1.4vw, 2.4rem);
+  font-size: clamp(18px, 1.4vw, 1.8rem);
   color: #00a16b;
   font-weight: 600;
   margin: 0;
 
-  @media screen and (max-width: 1368px) {
-    font-size: 16px;
-  } 
-
-  @media screen and (min-width: 2300px) {
-    font-size: 1.5vw;
-  }
 `;
 
 export const HandImage = styled.div`
@@ -177,11 +170,12 @@ export const HandImage = styled.div`
   flex: 1;
   min-width: 0;
 
+
   img {
     width: auto;
     height: 100%;
     margin-top: 64px;
-    margin-right: 0px;
+    margin-right: -24px;
   }
 
   @media screen and (min-width: 2300px) {

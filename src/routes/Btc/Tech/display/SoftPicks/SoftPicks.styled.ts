@@ -43,7 +43,6 @@ export const Description = styled.ul`
   color: #666666;
   line-height: 1.25;
   margin-bottom: 30px;
-  padding-inline-start: 20px;
   letter-spacing: -1px;
   padding-right: 185px;
 

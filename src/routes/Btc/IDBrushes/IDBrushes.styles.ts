@@ -244,7 +244,7 @@ export const ImgWrapper4 = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+
      img {
          width: 40%;
      }
@@ -305,7 +305,7 @@ export const ListContainer = styled.div<ListContainerProps>`
     }
     
     sup {
-        font-size: 12px;
+        font-size: 10px;
     }
 `;
 
@@ -314,6 +314,7 @@ export const SlideWrapperInner = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     h2 {
         font-family: "Gotham", sans-serif;

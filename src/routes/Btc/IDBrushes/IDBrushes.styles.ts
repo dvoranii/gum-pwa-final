@@ -181,10 +181,6 @@ export const TextWrapper2 = styled.div`
 
 export const TextWrapperOuter = styled.div`
     border-bottom: 2px solid ${colors.primary};
-    
-    @media screen and (min-width: 2300px) {
-        padding-bottom: 2.4rem;
-    }
 `;
 
 export const TextAndImgWrapper = styled.div`
@@ -213,11 +209,6 @@ export const ImgWrapper = styled.div`
         width: 90%;
     }
 
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-        }
-    }
 `;
 
 export const ImgWrapper1 = styled.div`
@@ -227,13 +218,6 @@ export const ImgWrapper1 = styled.div`
 
     img {
         width: 100%;
-    }
-
-    @media screen and (min-width: 2300px) {         
-        width: 100%;
-        img {
-            width: 87%;
-        }
     }
 `;
 
@@ -253,11 +237,6 @@ export const ImgWrapper3 = styled.div`
         width: 85%;
     }
 
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-        }
-    }
 `;
 
 export const ImgWrapper4 = styled.div`
@@ -265,14 +244,9 @@ export const ImgWrapper4 = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    
      img {
          width: 40%;
-     }
-
-     @media screen and (min-width: 2300px) {
-        img {
-            width: 50%;
-        }
      }
 `;
 

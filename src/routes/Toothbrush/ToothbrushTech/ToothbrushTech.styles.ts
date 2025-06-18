@@ -9,13 +9,13 @@ export const ContainerOuter = styled.div`
   padding-left: 5%;
   align-items: center;
   
-  @media screen and (max-width: 1386px) {
-    gap:20px;
-  }
+  // @media screen and (max-width: 1386px) {
+  //   gap:20px;
+  // }
 `;
 
 export const HeaderLeft = styled.div`
-  margin-top: 2.4rem;
+  // margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
   width: 20vh;

@@ -7,11 +7,6 @@ export const NavTabsOuter = styled.div`
     justify-content: flex-end;
     width: 100%;
     height: 32px;
-
-    @media screen and (min-width: 2300px) {
-        height: 56px;
-
-    }
 `;
 
 export const GumLogoWrapper = styled.div`
@@ -24,11 +19,6 @@ export const GumLogoWrapper = styled.div`
         width:auto;
     }
 
-    @media screen and (min-width: 2300px) {
-      & > img {    
-            height: 56px;
-        }
-    }
 `;
 
 export const NavTabs = styled.nav`
@@ -48,7 +38,7 @@ export const TabLink = styled(NavLink)`
   white-space: nowrap;
   min-width: fit-content;
   flex: 0 1 auto;
-  padding: 0.5rem 1rem;
+  padding: 0 0.75rem;
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
@@ -59,16 +49,8 @@ export const TabLink = styled(NavLink)`
   letter-spacing: 1px;
   -webkit-tap-highlight-color: transparent;
 
-  @media screen and (max-width: 1100px) {
-    padding: 0 0.75rem;
-  }
-
   &.active {
     background-color: #018384;
   }
 
-  @media screen and (min-width: 2300px) {
-    font-size: 1.75rem;
-    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-  }
 `;

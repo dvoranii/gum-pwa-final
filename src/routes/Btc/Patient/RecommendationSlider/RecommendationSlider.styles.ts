@@ -53,18 +53,6 @@ export const CarouselWrapper = styled.div`
             display: none;
         }
         
-        @media screen and (min-width: 2300px) {
-            .flickity-page-dots {
-                bottom: -12px;
-                right: 32px;
-
-                .dot {
-                    width: 25px;
-                    height: 25px;
-                    margin: 0 10px;
-                }
-            }
-        }
     }
 `;
 

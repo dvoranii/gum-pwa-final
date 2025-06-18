@@ -8,8 +8,4 @@ export const Title = styled.h1`
     letter-spacing: -3px;
     margin-left: 12px;
     
-    @media screen and (min-width: 2300px) {
-      font-size: 6.4rem;
-      letter-spacing: -5px;
-    }
 `;

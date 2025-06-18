@@ -7,10 +7,6 @@ export const SoftPicksContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-
-    @media screen and (min-width:2300px) {
-        gap: 2.4rem;
-    }
 `;
 
 export const Row1 =  styled.div`
@@ -19,9 +15,6 @@ export const Row1 =  styled.div`
     padding-bottom: 1.2rem;
     gap: 12.2rem;
 
-    @media screen and (min-width: 2300px) {
-        padding-bottom: 2.4rem;
-    }
 `;
 
 export const Row2 =  styled.div`
@@ -51,12 +44,6 @@ export const TextContainer = styled.div`
         font-size: clamp(1.2rem, 1.2vw, 1.8rem);
     }
 
-    @media screen and (min-width: 2300px) {
-        padding-top: 2.4rem;
-        p {
-            font-size: clamp(16px, 1.4vw, 2.4rem);
-        }
-    }
 `;
 
 export const Column1 = styled.div`
@@ -95,13 +82,6 @@ export const ImgWrapper = styled.div`
     img {
         width: 90%;
     }
-
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-        }
-    }
-
 `;
 export const ImgWrapper1 = styled.div`
     padding-top: 2.4rem;
@@ -110,10 +90,6 @@ export const ImgWrapper1 = styled.div`
     
     img {
         width: 100%;
-    }
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 4.2rem;
     }
 `;
 
@@ -148,11 +124,6 @@ export const TextWrapper = styled.div`
         font-size: clamp(0.4rem, 0.8vw, 1rem);
     }
 
-    @media screen and (min-width: 2300px) {
-        p:nth-child(2) {
-            padding-bottom:0.5rem;
-        }
-    }
 `;
 
 export const ImgWrapper2 = styled.div`
@@ -162,16 +133,5 @@ export const ImgWrapper2 = styled.div`
 
     img {
         width: 100%;
-    }
-
-    @media screen and (min-width: 2300px) {
-        width: 100%;
-        min-width: 150px;
-        max-width: 150px;
-
-        img {
-            width: 100%;
-        }
-
     }
 `;

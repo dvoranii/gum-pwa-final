@@ -69,9 +69,6 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
   pointer-events: ${({ $show }) => ($show ? 'all' : 'none')};
   visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
 
-  @media screen and (max-width: 1386px) {
-    width: 52%;
-  }
 `;
 
 export const Row = styled.div`
@@ -88,10 +85,6 @@ export const Row2 = styled.div`
   display: flex;
   gap: 0.5rem;
   padding-top: 0.4rem;
-
-  @media screen and (min-width: 2300px) {
-  padding-top: 1.4rem;
-  }
  
 `;
 
@@ -140,10 +133,4 @@ export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps
     letter-spacing: 2.5px;
   }
 
-  @media screen and (min-width: 2300px) {
-      p {
-        font-size: clamp(18px, 1.8vw, 2.2rem);
-        margin-left: 46px;
-      }
-  }
 `;

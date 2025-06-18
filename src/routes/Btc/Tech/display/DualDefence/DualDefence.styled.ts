@@ -43,9 +43,6 @@ export const ColumnLeft = styled.div`
         padding: 60px 0 40px 60px;
     }
 
-    @media screen and (min-width: 2300px) {
-        padding: 120px 0 0 120px;    
-    }
 `;
 
 export const MainTitle = styled.h1`

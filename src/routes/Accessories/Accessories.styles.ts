@@ -123,7 +123,6 @@ export const MetaDataWrapper = styled.div<MetaDataWrapperProps>`
   width: ${(props) => props.$width};
   display: flex;
   justify-content: space-between;
-  // height: 28px;
 
   p {
     font-family: "Gotham", sans-serif;
@@ -152,46 +151,23 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
 export const Slide = styled.div`
   width: 100%;
   padding: 12px 32px;
-  height: 85vh;
+  height: 68vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   gap: 2.4rem;
 
-  @media screen and (max-width: 1386px) {
-    height: 68vh;
-  }
-
-  @media screen and (min-width: 2300px) {
-    height: 78vh;
-    padding: 60px;
-    width: 100%;
-  }
 `;
 
 export const ListContainer = styled.div`
-
     ul {
         font-family: 'Gotham', sans-serif;
         font-size:clamp(16px, 1.4vw, 2.2rem);
         color: ${colors.black};
         padding: 0.4rem 0;
-        line-height: 1.3;
+        line-height: 1;
         margin-inline-start: 24px;
 
    }
-
-    @media screen and (max-width: 1180px) {    
-       ul {
-            line-height: 1;
-       } 
-    }
-
-    @media screen and (min-width: 2300px) {    
-       ul {
-            padding: 1.2rem 0;
-            font-size:clamp(18px, 1.6vw, 2.2rem);
-       } 
-    }
 `;

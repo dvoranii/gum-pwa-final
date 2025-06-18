@@ -15,8 +15,4 @@ export const ModuleContainerStyles = styled.div<ModuleContainerProps>`
     background-position: center;
     background-repeat: no-repeat;
   `}
-
-  @media screen and (min-width: 2300px) {
-    padding-top: 4rem;
-  }
 `;

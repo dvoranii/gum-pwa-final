@@ -103,7 +103,6 @@ export const ListContainer = styled.div<ListContainerProps>`
         font-family: 'Gotham', sans-serif;
         font-size: clamp(14px, 0.8vw,1.2rem);
         color: ${colors.black};
-        // padding: ${(props) => props.$padding ? props.$padding : "1.2rem 0" };
         padding-bottom: 0.4rem;
         list-style: none;
         line-height: 1.2;
@@ -171,7 +170,6 @@ export const Column2 = styled.div`
         font-size: clamp(10px, 0.8vw, 1.2rem);
     }
 `;
-
 
 export const CarouselWrapper = styled.div`
     display: flex;

@@ -42,9 +42,6 @@ export const TechContainer = styled.div`
   margin-top: 1.8rem;
   overflow: hidden;
 
-  @media screen and (max-width: 1366px) {
-    margin-top: 0;
-  }
 `;
 
 export const MainContent = styled.div`

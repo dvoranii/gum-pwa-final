@@ -13,15 +13,7 @@ export const TopRow = styled.div`
 
 export const ColumnLeft = styled.div`
     max-width: 60%;
-    padding:80px 0 40px 80px;
-
-    @media screen and (max-width: 1024px) {
-        padding: 60px 0 40px 60px;
-    }
-
-    @media screen and (min-width: 2300px) {
-        padding: 120px 0 0 120px;    
-    }
+    padding:80px 0 40px 60px;
 `;
 
 export const MainTitle = styled.h1`

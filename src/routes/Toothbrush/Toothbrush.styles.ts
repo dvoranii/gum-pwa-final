@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../constants/colors';
 
 export const Content = styled.div`
-  // padding-top: 2rem;
-  height: 92%;
+  height: 93%;
   display: flex;
   flex-direction: column;
   justify-content: center;

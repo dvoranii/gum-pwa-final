@@ -7,13 +7,13 @@ export const ContentWrapper = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  padding: 60px 20px 40px 80px;
+  padding: 0px 20px 0px 80px;
   flex: 2;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
- @media screen and (min-width: 2300px) {
-     padding: 120px 30px 40px 141px;
-  }
 `;
 
 export const MainTitle = styled.h1`
@@ -30,30 +30,17 @@ export const MainTitle = styled.h1`
 export const Trademark = styled.sup`
   position: absolute;
   font-weight: 700;
-
-  @media screen and (min-width: 2300px) {
-    font-size: 5.4rem;
-  }
-
 `;
 
 export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
-  font-size: clamp(18px,1.8vw,2.4rem);
+  font-size: clamp(18px, 2vw,2.4rem);
   color: #666666;
   line-height: 1.25;
   margin-bottom: 30px;
   letter-spacing: -1px;
-  padding-right: 185px;
+  padding-right: 64px;
 
-  @media screen and (max-width: 1368px) {
-    font-size: 2vw;
-    padding-right: 0;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size: 2vw;
-  }
 `;
 
 export const DiagramSection = styled.div`

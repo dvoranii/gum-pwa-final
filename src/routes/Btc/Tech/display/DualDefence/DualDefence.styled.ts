@@ -4,6 +4,7 @@ import { colors } from "../../../../../constants/colors";
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
 `;
 
@@ -12,21 +13,14 @@ export const TopRow = styled.div`
 `;
 
 export const BottomRow = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
     img {
         width: 100%;
-        margin-top: -100px;
-
     }
 `;
 
 export const ColumnLeft = styled.div`
     max-width: 60%;
-    padding: 80px 0 40px 60px;
+    padding: 20px 0 0px 60px;
 
     sup {
         font-size: 12px;

@@ -4,6 +4,7 @@ import { colors } from "../../../../../constants/colors";
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
 `;
 
@@ -13,7 +14,7 @@ export const TopRow = styled.div`
 
 export const ColumnLeft = styled.div`
     max-width: 60%;
-    padding:80px 0 40px 60px;
+    padding: 20px 0 0px 60px;
 `;
 
 export const MainTitle = styled.h1`

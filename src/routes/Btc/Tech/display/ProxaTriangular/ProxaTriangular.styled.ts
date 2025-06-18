@@ -7,9 +7,12 @@ export const ContentWrapper = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  padding: 40px 20px 40px 60px;
+  padding: 0px 20px 0px 60px;
   flex: 2;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const MainTitle = styled.h1`

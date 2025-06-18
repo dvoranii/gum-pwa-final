@@ -122,7 +122,7 @@ export const Row1WrapperInner = styled.div`
 export const Row1WrapperOuter = styled.div`
     display: flex;
     gap: 4.2rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
     border-bottom: 1px solid ${colors.black};
 `;
 
@@ -227,7 +227,7 @@ export const ImgWrapper2 = styled.div`
     padding-top: 0.4rem;
 
     img {
-        width: 88%;
+        width: 86%;
     }
 `;
 

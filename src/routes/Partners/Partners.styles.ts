@@ -92,8 +92,8 @@ export const FullWidthImage = styled.img`
   border-radius: 24px 0 0 24px;
   margin: 0 auto;
 
-  @media screen and (max-width: 1504px) {
-   width: 90%;
+  @media screen and (min-width: 1504px) {
+    width: 90%;
   }
 
 

@@ -182,7 +182,7 @@ export const ImgTextWrapper = styled.div`
       aspect-ratio:761/770;
   }
 
-  @media screen and (max-width: 1504px) {
+  @media screen and (min-width: 1504px) {
     min-height: 465px;
   }
 

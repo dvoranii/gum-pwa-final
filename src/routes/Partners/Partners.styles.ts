@@ -26,15 +26,11 @@ export const PartnersBG = styled.div<PartnersBGProps>`
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;
-  min-height: 60vh;
+  height: 60vh;
   box-sizing: border-box;
   justify-content: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 
-  @media screen and (min-width: 2300px) {
-    min-height: 60vh;
-    padding: ${props => props.$isFullWidthImage ? '0' : '9.6rem 0'};
-  }
 `;
 
 export const CarouselWrapper = styled.div`
@@ -96,18 +92,19 @@ export const FullWidthImage = styled.img`
   border-radius: 24px 0 0 24px;
   margin: 0 auto;
 
+  @media screen and (max-width: 1504px) {
+   width: 90%;
+  }
+
+
 `;
 
 export const GumLogoCol = styled.div`
   width: 30%;
   min-width: 0;
   flex-shrink: 0;
-
-  @media screen and (min-width: 2300px) {
-    padding-left: 4rem;
-  }
-
 `;
+
 export const GumLogo = styled.img`
   width: 100%;
   padding-top: 11.6vh;
@@ -185,16 +182,10 @@ export const ImgTextWrapper = styled.div`
       aspect-ratio:761/770;
   }
 
-  @media screen and (min-width: 2300px) {
-    h4 {
-      font-size: 3.6rem;
-      padding-top: 1rem;
-    }
-
-    & > img {
-      width: 80%;
-    }
+  @media screen and (max-width: 1504px) {
+    min-height: 465px;
   }
+
 `;
 
 export const ColTextWrapper = styled.div`

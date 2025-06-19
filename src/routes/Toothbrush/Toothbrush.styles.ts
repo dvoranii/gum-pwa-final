@@ -32,13 +32,10 @@ export const ContentLeft = styled.div`
   width: 72%;
   display: flex;
   flex-direction: column;
-  padding: 0 0 40px 6.4rem;
+  padding: 0 0 40px 3.4rem;
   height: 100%;
   z-index: 99;
 
-  @media screen and (max-width: 1386px) {
-    padding-left: 3.2rem;
-  }
 `;
 
 

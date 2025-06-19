@@ -64,11 +64,6 @@ export const AngleDemo = styled.div`
     height: 100%;
   }
 
-
-  @media screen and (min-width: 2300px) {
-    width: 150px;
-    height: 150px;
-  }
 `;
 
 export const CrossSectionWrapper = styled.div`
@@ -85,14 +80,6 @@ export const DiagramLabel = styled.span`
   color: #666666;
   text-align: center;
   margin-bottom: 5px;
-
-  @media screen and (max-width: 1366px) {
-    font-size: 10px;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size: 14px;
-  }
 `;
 
 export const CrossSectionDiagram = styled.div`
@@ -100,25 +87,8 @@ export const CrossSectionDiagram = styled.div`
   margin-bottom: 10px;
 
   img {
-    width: 70%;
+    width: 90%;
     height: auto;
-  }
-
-   @media screen and (max-width: 1024px) {
-        margin-bottom: 0;
-   }
-
-  @media screen and (max-width: 1368px) {
-    img {
-        width: 100%;
-    }
-  }
-
-  @media screen and (min-width: 2300px) {
-    padding-top: 2.4rem;
-    img {
-        width: 95%;
-    }
   }
 
 `;

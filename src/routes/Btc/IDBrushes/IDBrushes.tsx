@@ -1,7 +1,7 @@
 import * as S from "./IDBrushes.styles";
 
-import Flickity from 'react-flickity-component';
-import 'flickity/dist/flickity.min.css';
+import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
+import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
@@ -18,29 +18,20 @@ import Slide3Graphic2 from "../../../assets/btc/id-brushes/Slide3Graphic2.webp";
 
 export default function BtcIDBrushes() {
 
-    const flickityOptions = {
-        initialIndex: 0,
-        wrapAround: true,
-        autoPlay: false,
-        prevNextButtons: true,
-        pageDots: true,
-        contain: true,
-        cellAlign: 'center'
-  };
-
     return(
         <S.IDBrushesContainer>
-            <S.CarouselWrapper>
-                <Flickity
-                    className={'carousel'} 
-                    elementType={'div'}
-                    options={flickityOptions}
-                    disableImagesLoaded={true}          
-                    static={false}
-                >
+            <FlickityCarousel 
+            $customStyles={{
+                viewportHeight: '80vh',
+                dotPosition: {
+                bottom: '-28px',
+                right: '94px'
+                }
+            }}
+            >
 
                 {/* SLIDE 1 */}
-                <S.CarouselSlide>
+                <BaseCarouselSlide>
                     <S.SlideWrapperInner>
                         <S.Row1WrapperOuter>
                         <S.Row1WrapperInner>
@@ -71,11 +62,11 @@ export default function BtcIDBrushes() {
                             <img src={Slide1Graphic3}/>
                         </S.ImgWrapper2>
                     </S.SlideWrapperInner>
-                </S.CarouselSlide>
+                </BaseCarouselSlide>
 
                 {/* SLIDE 2 */}
 
-                <S.CarouselSlide>
+                <BaseCarouselSlide>
                     <S.SlideWrapperInner>
                         <S.SlideRow1>
                             <S.Row1WrapperInner2 $paddingBottom="0.4rem">
@@ -172,11 +163,11 @@ export default function BtcIDBrushes() {
                         </S.InfoGrid>
                         </S.SlideRow2>
                     </S.SlideWrapperInner>
-                </S.CarouselSlide>
+                </BaseCarouselSlide>
 
                 {/* SLIDE 3 */}
 
-                <S.CarouselSlide>
+                <BaseCarouselSlide>
                     <S.Slide3WrapperOuter>
                     <S.Slide3WrapperInner>   
                         <S.Slide3ImgAndTextWrapper>
@@ -209,10 +200,8 @@ export default function BtcIDBrushes() {
                         <small>1. Data on File (DOF-0001)&nbsp;&nbsp;&nbsp;2. DOF-0046</small>
                     </S.CaptionWrapper> 
                     </S.Slide3WrapperOuter>
-                </S.CarouselSlide>
-
-                </Flickity>
-            </S.CarouselWrapper>    
+                </BaseCarouselSlide>
+                </FlickityCarousel>   
             <ShopifyIcon />                                                    
         </S.IDBrushesContainer>
     )

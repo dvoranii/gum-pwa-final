@@ -1,7 +1,6 @@
 import * as S from "./ToothbrushKids.styles";
 
-import Flickity from 'react-flickity-component';
-import 'flickity/dist/flickity.min.css';
+import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
 
 import Slide1 from "../../../assets/toothbrush/Kids/KidsBrush-1.webp";
 import Slide2 from "../../../assets/toothbrush/Kids/KidsBrush-2.webp";
@@ -17,27 +16,16 @@ import ShopifyIcon from "../../Btc/components/ShopifyIcon/ShopifyIcon";
 
 export default function ToothbrushKids() {
 
-  const flickityOptions = {
-    initialIndex: 0,
-    wrapAround: true,
-    autoPlay: false,
-    prevNextButtons: true,
-    pageDots: true,
-    contain: true,
-    cellAlign: 'center'
-  };
-
-
   return (
     <S.KidsWrapperOuter>
-      <S.CarouselWrapper>
-        <Flickity
-            className={'carousel'} 
-            elementType={'div'}
-            options={flickityOptions}
-            disableImagesLoaded={true}          
-            static={false}
-        >
+      <FlickityCarousel 
+        $customStyles={{
+          dotPosition: {
+            bottom: '-30px',
+            right: '95px'
+          }
+        }}
+      >
           <S.CarouselSlide>
             <img src={Slide1}/>
           </S.CarouselSlide>
@@ -62,9 +50,7 @@ export default function ToothbrushKids() {
           <S.CarouselSlide>
             <img src={Slide8}/>
           </S.CarouselSlide>
-
-        </Flickity>
-      </S.CarouselWrapper>
+        </FlickityCarousel>
       <ShopifyIcon/>
     </S.KidsWrapperOuter>
   );

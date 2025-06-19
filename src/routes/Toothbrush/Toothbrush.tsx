@@ -10,6 +10,7 @@ import Brushes from "../../assets/toothbrush/toothbrush-new.webp";
 
 import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
 
+
 const toothbrushNavItems = [
   { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
   { path: "/toothbrush/tech", label: "Tech" },

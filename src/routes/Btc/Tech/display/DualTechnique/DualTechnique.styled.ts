@@ -34,7 +34,7 @@ export const Description = styled.ul`
   margin-bottom: 20px;
   padding-inline-start: 8px;
   letter-spacing: -1px;
-  padding-top: 1.2rem;
+  padding-top: 0.8rem;
   padding-right: 70px;
 
   sup {

@@ -21,61 +21,6 @@ export const IDBrushesContainer = styled.div`
     position: relative;
 `;
 
-export const CarouselWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    position: relative;
-
-    .carousel {
-        width: 100%;
-        width: 100%;
-
-        .flickity-viewport {
-            height: 81vh !important;
-        }
-        
-        .flickity-page-dots {
-            top: unset;
-            bottom: -28px;
-            right: 94px;
-            left: unset;
-            width: auto;
-            text-align: right;
-            z-index: 10; 
-
-            @media screen and (min-width: 2300px) {
-                bottom: -48px;
-                right: 170px;
-            }
-            
-            .dot {
-                width: 16px;
-                height: 16px;
-                opacity: 1 !important;
-                background: ${colors.dotBG};
-                margin: 0 6px;
-                
-                &.is-selected {
-                    background: ${colors.dotBGActive};
-                }
-
-                @media screen and (min-width: 2300px) {
-                    width: 25px;
-                    height: 25px;
-                    margin: 0 10px;
-                }
-            }
-        }
-
-        .flickity-button {
-            display: none;
-        }
-
-    }
-`;
 
 export const SlideRow1 = styled.div`
     display: flex;
@@ -345,16 +290,8 @@ export const Slide3WrapperOuter = styled.div`
     flex-direction: column;
     height: 100%;
     width: 80%;
-    padding-top: 2.4rem;
-`
+    padding-top: 2.4rem;`
 ;
-export const CarouselSlide = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const SlideWrapper = styled.div`
     display: flex;

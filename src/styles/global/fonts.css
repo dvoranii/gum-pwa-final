@@ -1,9 +1,3 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: 'Gotham';
   src: url('/fonts/Gotham-BlackIta.otf') format('opentype');
@@ -123,7 +117,3 @@
   font-style: italic;
   font-display: swap;
 }
-
-/* a, img, button {
-   -webkit-tap-highlight-color: transparent;
-} */

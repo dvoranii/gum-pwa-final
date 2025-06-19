@@ -89,13 +89,6 @@ export const DiagramLabel = styled.span`
   text-align: center;
   margin-bottom: 5px;
 
-  @media screen and (max-width: 1366px) {
-    font-size: 10px;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size: 14px;
-  }
 `;
 
 export const CrossSectionDiagram = styled.div`

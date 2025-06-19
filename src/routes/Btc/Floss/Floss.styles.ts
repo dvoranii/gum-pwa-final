@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { colors } from "../../../constants/colors";
+import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 export const FlossWrapperOuter = styled.div`
     position: relative;
@@ -169,71 +170,6 @@ export const Column2 = styled.div`
     @media screen and (max-width: 1080px) {
         font-size: clamp(10px, 0.8vw, 1.2rem);
     }
-`;
-
-export const CarouselWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    position: relative;
-
-    .carousel {
-        width: 100%;
-        width: 100%;
-
-        .flickity-viewport {
-            height: 80vh !important;
-        }
-        
-        .flickity-page-dots {
-            top: unset;
-            bottom: -28px;
-            right: 94px;
-            left: unset;
-            width: auto;
-            text-align: right;
-            z-index: 10; 
-
-            @media screen and (min-width: 2300px) {
-                bottom: -48px;
-                right: 170px;
-            }
-            
-            .dot {
-                width: 16px;
-                height: 16px;
-                opacity: 1 !important;
-                background: ${colors.dotBG};
-                margin: 0 6px;
-                
-                &.is-selected {
-                    background: ${colors.dotBGActive};
-                }
-
-                @media screen and (min-width: 2300px) {
-                    width: 25px;
-                    height: 25px;
-                    margin: 0 10px;
-                }
-            }
-        }
-
-        .flickity-button {
-            display: none;
-        }
-
-    }
-`;
-
-
-export const CarouselSlide = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const ShopifyIconImg = styled.img`

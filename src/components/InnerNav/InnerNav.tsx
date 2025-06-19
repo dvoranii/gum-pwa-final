@@ -1,6 +1,6 @@
 import * as S from './InnerNav.styles';
 import GumLogo from "../../assets/gum-logo.svg";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import playSound from '../../utils/playSound';
 import tapTop from "../../assets/sounds/taptop.mp3";
 

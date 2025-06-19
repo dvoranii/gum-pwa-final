@@ -15,12 +15,15 @@ import TaperedBristles from './display/TaperedBristles/TaperedBristles';
 import DomeTrim from "./display/DomeTrim/DomeTrim";
 import TexturedBristles from "./display/TexturedBristles/TexturedBristles";
 
+import playSound from "../../../utils/playSound";
+import tapTop from "../../../assets/sounds/taptop.mp3";
 
 export default function ToothbrushTech() {
 
   const [activeIcon,setActiveIcon] = useState<number | null>(1);
 
   const handleIconTouch = (iconNumber: number) => {
+      playSound(tapTop);
       if (activeIcon !== iconNumber) {
         setActiveIcon(iconNumber);
     }

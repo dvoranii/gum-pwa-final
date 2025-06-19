@@ -15,12 +15,16 @@ import SoftPicks from "./display/SoftPicks/SoftPicks";
 import DualDefence from "./display/DualDefence/DualDefence";
 import DualTechnique from "./display/DualTechnique/DualTechnique";
 
+import playSound from "../../../utils/playSound";
+import tapTop from "../../../assets/sounds/taptop.mp3";
+
 
 export default function BtcTech() {
 
   const [activeIcon,setActiveIcon] = useState<number | null>(1);
 
   const handleIconTouch = (iconNumber: number) => {
+      playSound(tapTop);
       if (activeIcon !== iconNumber) {
         setActiveIcon(iconNumber);
     }

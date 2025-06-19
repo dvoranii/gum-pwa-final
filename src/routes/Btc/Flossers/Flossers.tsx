@@ -1,7 +1,6 @@
 import * as S from "./Flossers.styles";
-import Flickity from 'react-flickity-component';
-import 'flickity/dist/flickity.min.css';
-
+import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
+import { BaseCarouselSlide } from "../../../styles/shared-styles";
 import Slide1Graphic from "../../../assets/btc/flosser/Slide1Graphic.webp";
 import Slide2Graphic from "../../../assets/btc/flosser/Slide2Graphic.webp";
 import Slide2GraphicSmall from "../../../assets/btc/flosser/Asset2.png"
@@ -9,30 +8,21 @@ import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
 
 export default function BtcFlossers(){
 
-    const flickityOptions = {
-        initialIndex: 0,
-        wrapAround: true,
-        autoPlay: false,
-        prevNextButtons: true,
-        pageDots: true,
-        contain: true,
-        cellAlign: 'center'
-    };
-
     return(
         <S.FlossersContainer>
-            <S.CarouselWrapper>
-            <Flickity
-                className={'carousel'} 
-                elementType={'div'}
-                options={flickityOptions}
-                disableImagesLoaded={true}          
-                static={false}
+            <FlickityCarousel 
+                $customStyles={{
+                    viewportHeight: '80vh',
+                    dotPosition: {
+                    bottom: '-28px',
+                    right: '94px'
+                    }
+                }}
             >
 
             {/* Slide 1 */}
 
-             <S.CarouselSlide>
+             <BaseCarouselSlide>
                 <S.SlideWrapper>
                     <S.SlideColumn1>
                         <S.TitleListWrapper>
@@ -113,11 +103,11 @@ export default function BtcFlossers(){
                     </S.SlideColumn2>
 
                     </S.SlideWrapper>
-               </S.CarouselSlide>
+             </BaseCarouselSlide>
 
             {/* Slide 2 */}
 
-             <S.CarouselSlide>
+             <BaseCarouselSlide>
                 <S.SlideWrapper>
                     <S.SlideColumn1>
                         <S.TitleListWrapper $paddingTop="0">
@@ -162,9 +152,8 @@ export default function BtcFlossers(){
                         </S.InfoGrid>
                     </S.SlideColumn2>
                     </S.SlideWrapper>
-               </S.CarouselSlide>
-            </Flickity>
-            </S.CarouselWrapper>
+             </BaseCarouselSlide>
+            </FlickityCarousel>
             <ShopifyIcon/>
         </S.FlossersContainer>
     )

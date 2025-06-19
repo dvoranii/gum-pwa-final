@@ -8,14 +8,9 @@ export const ContainerOuter = styled.div`
   gap: 40px;
   padding-left: 5%;
   align-items: center;
-  
-  // @media screen and (max-width: 1386px) {
-  //   gap:20px;
-  // }
 `;
 
 export const HeaderLeft = styled.div`
-  // margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
   width: 20vh;
@@ -29,6 +24,7 @@ export const SideIcon = styled.div`
   padding-bottom: 100%;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   
   img {
     position: absolute;
@@ -47,10 +43,6 @@ export const TechContainer = styled.div`
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
   overflow: hidden;
-
-  @media screen and (max-width: 1366px) {
-    margin-top: 0;
-  }
 `;
 
 export const MainContent = styled.div`

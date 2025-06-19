@@ -10,10 +10,6 @@ export const HeaderRight = styled.div`
   padding: 60px 40px 40px 60px;
   flex: 2;
   min-width: 0;
-
- @media screen and (min-width: 2300px) {
-     padding: 120px 30px 40px 141px;
-  }
 `;
 
 export const MainTitle = styled.h1`
@@ -27,11 +23,6 @@ export const MainTitle = styled.h1`
 export const Trademark = styled.sup`
   position: absolute;
   font-weight: 700;
-
-  @media screen and (min-width: 2300px) {
-    font-size: 5.4rem;
-  }
-
 `;
 
 export const Description = styled.ul`
@@ -67,12 +58,6 @@ export const AngleDemo = styled.div`
     width: 100%;
     height: 100%;
   }
-
-
-  @media screen and (min-width: 2300px) {
-    width: 150px;
-    height: 150px;
-  }
 `;
 
 export const CrossSectionWrapper = styled.div`
@@ -90,13 +75,6 @@ export const DiagramLabel = styled.span`
   text-align: center;
   margin-bottom: 5px;
 
-  @media screen and (max-width: 1366px) {
-    font-size: 10px;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size: 14px;
-  }
 `;
 
 export const CrossSectionDiagram = styled.div`
@@ -104,26 +82,9 @@ export const CrossSectionDiagram = styled.div`
   margin-bottom: 10px;
 
   img {
-    width: 70%;
+    width: 100%;
     height: auto;
   }
-
-   @media screen and (max-width: 1024px) {
-        margin-bottom: 0;
-   }
-
-  @media screen and (max-width: 1368px) {
-    img {
-        width: 100%;
-    }
-  }
-
-  @media screen and (min-width: 2300px) {
-    img {
-        width: 95%;
-    }
-  }
-
 `;
 
 export const CrossSectionIcon = styled.div`
@@ -144,11 +105,6 @@ export const CrossSectionIcon = styled.div`
 export const BenefitsList = styled.ul`
     line-height: 1.35;
     padding-inline-start: 20px;
-
-    @media screen and (max-width: 1024px) {
-        padding-top: 0;
-    }
-  
 `;
 
 export const BenefitItem = styled.li`
@@ -157,18 +113,6 @@ export const BenefitItem = styled.li`
   color: #00a16b;
   font-weight: 600;
   margin: 0;
-
-  @media screen and (max-width: 1024px) {
-    font-size: 1.3vw;
-  }
-
-  @media screen and (min-width: 1368px) {
-    font-size: 1.5vw;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size: 1.8vw;
-  }
 `;
 
 export const HandImage = styled.div`

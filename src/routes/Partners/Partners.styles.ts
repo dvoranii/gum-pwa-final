@@ -79,10 +79,6 @@ export const CarouselWrapper = styled.div`
         display: none;
         }
     }
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 1.2rem;
-    }
 `;
 
 export const FullWidthImage = styled.img`
@@ -95,8 +91,6 @@ export const FullWidthImage = styled.img`
   @media screen and (min-width: 1504px) {
     width: 90%;
   }
-
-
 `;
 
 export const GumLogoCol = styled.div`
@@ -127,19 +121,6 @@ export const GumTextWrapper = styled.div`
     letter-spacing: -1px;
   }
  
-  @media screen and (min-width: 2300px) {
-
-    padding-top: 2.4rem;
-
-    & > h3 {
-        font-weight: 600;
-        font-size: 2.8rem;
-      }
-      & > h2 {
-        font-weight: 700;
-        font-size: 4.8rem;
-      }
-  }
 `;
 
 export const GraphicsCol = styled.div`
@@ -199,9 +180,5 @@ export const ColTextWrapper = styled.div`
       padding-top: 0.25rem;
       font-size: clamp(1rem, 1.5vw, 2.2rem);
       font-weight: 500;
-    }
-
-    @media screen and (min-width: 2300px) {
-      padding-left: 4rem;
     }
 `;

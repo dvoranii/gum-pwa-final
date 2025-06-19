@@ -79,7 +79,6 @@ export const Row2Inner = styled.div`
     color: ${colors.black};
     font-size: clamp(14px, 1.2vw, 1.4rem);
     white-space: nowrap; 
-    // margin-right: 1.2rem; 
   }
 `;
 

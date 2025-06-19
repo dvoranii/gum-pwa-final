@@ -31,6 +31,7 @@ export const SideIcon = styled.div`
   }
 `;
 
+
 export const TechContainer = styled.div`
   display: flex;
   width: 87%;

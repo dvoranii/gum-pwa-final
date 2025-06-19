@@ -30,10 +30,6 @@ export const BottomRow = styled.div`
 export const ColumnLeft = styled.div`
     max-width: 50%;
     padding:80px 0 40px 60px;
-
-    @media screen and (min-width: 2300px) {
-        padding: 180px 0 0 140px;    
-    }
 `;
 
 export const MainTitle = styled.h1`
@@ -43,12 +39,6 @@ export const MainTitle = styled.h1`
   font-size: clamp(18px, 3.2vw, 6.4rem);
   line-height: 1;
   padding-right: 20px;
-
-  @media screen and (min-width: 2300px){
-      margin-bottom: 20px;
-      font-size: 3.8vw;
-      padding-left: 16px;
-  }
 `;
 
 export const Description = styled.ul`
@@ -65,11 +55,6 @@ export const Description = styled.ul`
   @media screen and (max-width: 1368px) {
     font-size: 2vw;
     padding-right: 0;
-  }
-
-  @media screen and (min-width: 2300px) {
-    font-size:clamp(16px, 1.9vw, 3.4rem);
-    padding-right: 0px;
   }
 `;
 
@@ -90,13 +75,6 @@ export const ColLeftList = styled.ul`
         font-weight: 600;
     }
 
-    @media screen and (min-width: 2300px) {
-        margin-top: 2.4rem;
-
-        li {
-            font-size: 1.6vw;
-        }
-    }
 `;
 
 export const ColumnRight = styled.div`
@@ -119,12 +97,4 @@ export const TexturedBristlesDiagramWrapper= styled.div`
         padding: 2.4rem 0;
     }
 
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-            height: auto;
-            // padding-top: 6.2rem;
-            margin-bottom: -220px;
-        }
-    }
-`
+`;

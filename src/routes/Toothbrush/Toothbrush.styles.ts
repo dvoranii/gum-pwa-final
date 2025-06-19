@@ -16,14 +16,8 @@ export const BrushBG = styled.div`
   border-bottom-left-radius: 32px;
   background-color: #ffffff;
   width: 100%;
-  margin-top: 1.8rem;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   height: 82vh;
-
-
-  @media screen and (max-width: 1386px) {
-      margin-top: 0;
-  }
     
 `;
 
@@ -54,10 +48,6 @@ export const BrushesImg = styled.img`
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
-
-  @media screen and (min-width: 2100px) {
-    width: 70%;
-  }
 `;
 
 export const IntroTitleWrapper = styled.div`
@@ -65,10 +55,6 @@ export const IntroTitleWrapper = styled.div`
   flex: 1;
   display: flex;
   align-items: flex-end;
-
-  @media screen and (min-width: 2100px) {
-    padding-left: 2.4rem;
-  }
 `;
 
 export const IntroTitle = styled.h1`
@@ -78,10 +64,6 @@ export const IntroTitle = styled.h1`
   font-size: 3.4rem;
   line-height: 0.9;
   letter-spacing: -3px;
-
-  @media screen and (min-width: 2100px) {
-    font-size: 7.4rem;
-  }
 `;
 
 export const RecommendedWrapper = styled.div`
@@ -107,22 +89,9 @@ export const Recommended = styled.img`
 
 export const LinksWrapper = styled.div`
   display: flex;
-  // gap: 1.8rem;
-  // margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
-
-  @media screen and (max-width: 1386px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 2100px) {
-     padding-left: 2rem;
-     width: 100%;
-     gap: 3rem;
-     margin-left: 0;
- }
 `;
 
 
@@ -132,15 +101,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const LinkImg = styled.img`
-  width: 70%;
+  width: 80%;
   height: auto;
   aspect-ratio: 244/291;
-
-  @media screen and (max-width: 1386px) {
-    width: 80%;
-  }
-
-  @media screen and (min-width: 2100px) {
-    width: 13vw;
- }
 `;

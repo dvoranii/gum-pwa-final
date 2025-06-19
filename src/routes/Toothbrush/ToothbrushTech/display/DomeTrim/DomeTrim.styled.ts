@@ -10,10 +10,6 @@ export const ContentWrapper = styled.div`
 export const ColumnLeft = styled.div`
     max-width: 60%;
     padding: 0px 0 30px 80px;
-
-    @media screen and (min-width: 2300px) {
-        padding: 0px 0 40px 100px;    
-    }
 `;
 
 export const MainTitle = styled.h1`
@@ -24,10 +20,6 @@ export const MainTitle = styled.h1`
   line-height: 1;
   letter-spacing: -2px;
   padding-top: 2.4rem;
-
-  @media screen and (min-width: 2300px){
-      margin-bottom: 20px;
-  }
 `;
 
 export const Description = styled.ul`
@@ -60,10 +52,6 @@ export const ColLeftList = styled.ul`
         font-weight: 600;
         padding-right: 4px;
     }
-
-    @media screen and (min-width: 2300px) {
-        margin-top: 2.4rem;
-    }
 `;
 
 export const ColumnRight = styled.div`
@@ -84,12 +72,4 @@ export const BristlesDiagramWrapper= styled.div`
         height: auto;
         padding: 2.4rem 0;
     }
-
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-            height: auto;
-            padding-top: 6.2rem;
-        }
-    }
-`
+`;

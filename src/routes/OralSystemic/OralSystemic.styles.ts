@@ -2,10 +2,6 @@ import { styled } from "styled-components";
 
 export const Content = styled.div`
     padding-top: 2rem;
-
-    @media screen and (min-width: 2300px) {
-      padding-top: 3rem;
-    }
 `;
 
 
@@ -22,11 +18,6 @@ export const OralSystemicImgWrapperOuter = styled.div`
 
   & > * {
     flex: 0 0 auto;
-  }
-
-  @media screen and (min-width: 2300px) {
-    margin-top: 3rem;
-    height: 60vh;
   }
 `;
 
@@ -161,12 +152,6 @@ export const ToothImg = styled.img`
     width: 21.6vh;
     height: auto;
 
-    @media screen and (min-width: 2300px) {
-         top: 18.1vh;
-         left:29.6vh;
-         width: 21.6vh;
-    }
-
 `;
 
 
@@ -178,10 +163,6 @@ export const ToothActiveOverlay = styled.img`
   z-index: 1;
   cursor: pointer;
 
-  @media screen and (min-width: 2300px) {
-    top: 18.1vh;
-    left: 29.6vh;
-  }
 `;
 
 /* Heart Branch Styles */
@@ -303,10 +284,6 @@ export const ResultContent = styled.div`
 
 export const ResultTextImg = styled.img`
     max-width: 88%;
-
-    // @media screen and (min-width: 2300px) {
-    //     max-width: 100%;
-    // }
 `;
 
 
@@ -316,10 +293,6 @@ export const ResultHeadline = styled.div`
   color: #ffffff;
   line-height: 1;
   font-size: 3.6rem;
-
-  @media screen and (min-width: 2300px) {
-    font-size: 5.6rem;
-  }
 `;
 
 export const ResultDescription = styled.p`
@@ -330,13 +303,6 @@ export const ResultDescription = styled.p`
   line-height: 1;
   margin-bottom: 1rem;
   padding-top: 1rem;
-
-  @media screen and (min-width: 2300px) {
-    padding-right: 6rem;
-    padding-top: 2rem;
-    letter-spacing: -1px;
-    font-size: 2.9rem;
-  }
 `;
 
 export const BottomText = styled.div`
@@ -348,12 +314,6 @@ export const BottomText = styled.div`
     margin-top: 2rem;
     padding: 0px 12px;
     letter-spacing: -1.4px;
-  }
-
-  @media screen and (min-width: 2300px) {
-      & > p {
-        font-size: 2.9rem;
-      }
   }
 `;
 

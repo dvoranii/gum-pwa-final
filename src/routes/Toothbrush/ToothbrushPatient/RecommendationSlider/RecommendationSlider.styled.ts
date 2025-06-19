@@ -5,20 +5,9 @@ export const Slide = styled.div`
   width: 92%;
   padding: 12px 32px;
   text-align: center;
-  height: 85vh;
-
+  height: 68vh;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 1386px) {
-    height: 68vh;
-  }
-
-  @media screen and (min-width: 2300px) {
-    height: 73vh;
-    padding: 60px;
-    width: 100%;
-  }
 `;
 
 export const ProductImage = styled.img`

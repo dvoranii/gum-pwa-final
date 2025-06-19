@@ -9,10 +9,6 @@ interface RecommendBGProps {
 
 export const Content = styled.div`
     padding-top: 2rem;
-
-    @media screen and (min-width: 2300px) {
-      padding-top: 3rem;
-    }
 `;
 
 export const RecommendBG = styled.div<RecommendBGProps>`
@@ -37,16 +33,6 @@ export const FullWidthImage = styled.img`
   object-fit: contain;
   border-radius: 24px 0 0 24px;
   margin: 0 auto;
-
-  @media screen and (max-width: 1386px) {
-      max-width: 85%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    max-width: 100%;
-    height: 58vh;
-    width: auto;
-  }
 `;
 
 
@@ -112,9 +98,5 @@ export const CarouselWrapper = styled.div`
         .flickity-button {
         display: none;
         }
-    }
-
-    @media screen and (min-width: 2300px) {
-        padding-top: 1.2rem;
     }
 `;

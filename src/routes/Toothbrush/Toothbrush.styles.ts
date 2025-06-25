@@ -41,16 +41,16 @@ export const ContentRight = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  // margin-left: -34px;
   flex:1;
 `;
 
 
 export const BrushesImg = styled.img`
-  width: 78%; 
+  width: 80%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
+  margin-left: -54px;
 `;
 
 export const IntroTitleWrapper = styled.div`

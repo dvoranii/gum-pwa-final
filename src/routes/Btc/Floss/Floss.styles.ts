@@ -1,15 +1,18 @@
 import { styled } from "styled-components";
 import { colors } from "../../../constants/colors";
-import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 export const FlossWrapperOuter = styled.div`
     position: relative;
 `;
 
-export const SlideWrapper = styled.div`
+interface SlideWrapperProps {
+    $width?: string;
+}
+
+export const SlideWrapper = styled.div<SlideWrapperProps>`
     display: flex;
     gap: 2.4rem;
-    width: 90%;
+    width: ${(props) => props.$width ? props.$width : "90%"}; 
 
     small {
         font-family: 'Gotham', sans-serif;
@@ -21,13 +24,15 @@ export const SlideWrapper = styled.div`
 `;
 
 interface ImgWrapperProps {
-    $width: string
+    $width: string;
+    $marginLeft?: string;
 
 }
 
 export const ImgWrapper = styled.div<ImgWrapperProps>`
     img {
         width: ${(props) => props.$width};
+        margin-left: ${(props) => props.$marginLeft ? props.$marginLeft : "0"};
 
         @media (min-width: 1600px) {
             width: calc(${props => props.$width} * 0.75);
@@ -40,7 +45,7 @@ export const ColumnTitle = styled.h4`
     font-weight: 700;
     font-size: clamp(16px, 1.8vw, 2.6rem);
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     color: ${colors.primary};
     padding-top: 0.4rem;
 
@@ -89,22 +94,27 @@ export const SlideColumn2 = styled.div`
 `;
 
 interface ListContainerProps {
-    $padding?: string;
+    $width?: string;
     $flexGrow?: string;
+    $paddingTop?: string;
+    $listFontSize?: string;
+    $listPaddingBottom?:string;
 }
 
 export const ListContainer = styled.div<ListContainerProps>`
     padding-right: 1.8rem;
     flex-grow: ${(props) => props.$flexGrow ? props.$flexGrow : "1"}; 
+    width: ${(props) => props.$width ? props.$width : "100%"}; 
+    padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0"}; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
         
     ul {
         font-family: 'Gotham', sans-serif;
-        font-size: clamp(14px, 0.8vw,1.2rem);
+        font-size: ${(props) => props.$listFontSize ? props.$listFontSize : " clamp(14px, 0.8vw,1.2rem);" };
         color: ${colors.black};
-        padding-bottom: 0.4rem;
+        padding-bottom: ${(props) => props.$listPaddingBottom ? props.$listPaddingBottom : "0.4rem;"}; 
         list-style: none;
         line-height: 1.2;
 
@@ -133,12 +143,19 @@ export const ListContainer = styled.div<ListContainerProps>`
         font-size: 12px;
     }
 
+    // @media screen and (max-width: 1080px) {
+    //     ul {
+    //         font-size: 14px;
+    //     }
+    // }
+
 `;
 
 interface InfoGridProps {
     $marginTop?: string;
     $gridCols?: string;
     $paddingTop?:string;
+    $width?: string;
 }
 
 export const InfoGrid =  styled.div<InfoGridProps>`
@@ -146,7 +163,7 @@ export const InfoGrid =  styled.div<InfoGridProps>`
     display: grid;
     grid-template-columns: ${(props) => props.$gridCols ? props.$gridCols : "8fr 1fr 1fr" };
     gap: 0.25rem;
-    width: 100%;
+    width:${(props) => props.$width ?  props.$width : "100%"};
     margin-top: ${(props) => props.$marginTop ? props.$marginTop : 'auto'};
     column-gap: 1rem;
 

@@ -15,6 +15,8 @@ import Slide2Floss2 from "../../../assets/btc/floss/Slide2Floss2.png";
 import Slide3Floss1 from "../../../assets/btc/floss/Slide3Floss.webp";
 import Slide3Floss2 from "../../../assets/btc/floss/Slide3Floss2.webp";
 
+import Slide4Floss from "../../../assets/btc/floss/Slide4Floss.webp";
+
 export default function BtcFloss() {
 
   return (  
@@ -128,7 +130,7 @@ export default function BtcFloss() {
                 </S.SlideColumn1>
                 <S.SlideColumn2>
                     <S.ImgWrapper $width={"100%"}><img src={Slide2Floss2}/></S.ImgWrapper>
-                    <S.ColumnTitle>Pro-Wave® Dental Floss</S.ColumnTitle>
+                    <S.ColumnTitle>Pro-Weave® Dental Floss</S.ColumnTitle>
                         <small>(formerly known as EEZ-THRU)®</small> 
                         <S.ListContainer>
                             <ul>
@@ -228,6 +230,33 @@ export default function BtcFloss() {
                 </S.SlideColumn2>
             </S.SlideWrapper>
           </BaseCarouselSlide>
+
+          {/* Slide 4 */}
+          
+            <BaseCarouselSlide>
+                    <S.SlideWrapper $width="80%">
+                    <S.SlideColumn1>
+                    <S.ImgWrapper $width={"50%"} $marginLeft="-36px;">
+                        <img src={Slide4Floss}/>
+                    </S.ImgWrapper>
+                    <S.ColumnTitle><span>EEZ-</span>Thru® Floss Threaders</S.ColumnTitle> 
+                        <S.ListContainer $flexGrow="0" $width="50%" $paddingTop="1.2rem;" $listFontSize="16px" $listPaddingBottom="0.8rem">
+                            <ul>
+                                <li>Versatile nylon loop helps patients thread floss through spaces where most other products cannot reach: under bridges, between connected crowns, around orthodontic appliances, lingual wires and implants</li>                  
+                            </ul>  
+                        </S.ListContainer> 
+                        <S.InfoGrid $marginTop="0" $paddingTop="0.4rem" $gridCols="2fr 1fr" $width="60%">
+                            <S.InfoGridRow>                            
+                                <S.Column2>840 Eez-Thru® Floss Threaders</S.Column2>
+                                <S.Column2>1 box/ 100 env. of 5</S.Column2>
+                            </S.InfoGridRow>
+                        </S.InfoGrid>
+                        <a href="https://www.shopify.com/ca" target="_blank">
+                            <S.ShopifyIconImg src={ShopifyIconLocal}/>
+                        </a>
+                    </S.SlideColumn1>
+                    </S.SlideWrapper>
+                </BaseCarouselSlide>
         </FlickityCarousel >       
       <ShopifyIcon />
     </S.FlossWrapperOuter>

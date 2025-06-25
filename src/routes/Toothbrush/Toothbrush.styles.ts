@@ -40,6 +40,7 @@ export const ContentRight = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-left: -34px;
 `;
 
 
@@ -92,7 +93,7 @@ export const LinksWrapper = styled.div`
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
-  width: 70%;
+  width: 65%;
 `;
 
 
@@ -102,7 +103,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const LinkImg = styled.img`
-  width: 85%;
+  width: 95%;
   height: auto;
   aspect-ratio: 244/291;
 `;

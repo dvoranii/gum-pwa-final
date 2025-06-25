@@ -1,14 +1,17 @@
+
+
 import * as S from "./Btc.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/btc/crest.jpg";
+import Col1Row2 from "../../assets/toothbrush/crest.webp";
 import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
 import Technology2 from "../../assets/btc/Technology.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
-import PatientBG from "../../assets/btc/patient/PatientBG.webp";
+import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
+
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
@@ -43,17 +46,17 @@ export default function Toothbrush() {
                 <h3>Recommended<br/> By Canadian<br/> Dental Hygeinists</h3>
               </S.RecommendedWrapper>
 
-               <S.LinksWrapper>
-                <S.StyledLink to="/btc/tech" >
+              <S.LinksWrapper>
+                <S.StyledLink to="/toothbrush/tech">
                   <S.LinkImg src={Technology2} />
-                </S.StyledLink>
-                <S.StyledLink to="/btc/patient">
+                </S.StyledLink> 
+                <S.StyledLink to="/toothbrush/patient">
                   <S.LinkImg src={PatientNeeds2} />
                 </S.StyledLink>
               </S.LinksWrapper>
             </S.ContentLeft>
             <S.ContentRight>
-              <S.FlossImg src={Flossers} />
+              <S.FlossersImg src={Flossers} />
             </S.ContentRight>
           </S.FlossBG>
           ) : (

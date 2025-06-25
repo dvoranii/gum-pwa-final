@@ -26,7 +26,7 @@ export const ContentLeft = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 0 40px 3.2rem;
+  padding: 0 0 40px 3.4rem;
   height: 100%;
   z-index: 99;
 
@@ -43,8 +43,9 @@ export const ContentRight = styled.div`
 `;
 
 
-export const FlossImg = styled.img`
-  width: 100%; 
+export const FlossersImg = styled.img`
+  width: 105%; 
+  margin-left: -28px;
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
@@ -83,7 +84,7 @@ export const RecommendedWrapper = styled.div`
 `;
 
 export const Recommended = styled.img`
-  width: 42%;
+  width: 41.8%;
   height: auto;
 `;
 
@@ -92,7 +93,7 @@ export const LinksWrapper = styled.div`
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
-  width: 70%;
+  width: 65%;
 `;
 
 
@@ -102,7 +103,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const LinkImg = styled.img`
-  width: 85%;
+  width: 95%;
   height: auto;
   aspect-ratio: 244/291;
 `;

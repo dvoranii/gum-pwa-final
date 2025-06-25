@@ -29,6 +29,7 @@ export const ContentLeft = styled.div`
   padding: 0 0 40px 3.4rem;
   height: 100%;
   z-index: 99;
+  flex:1;
 
 `;
 
@@ -40,6 +41,7 @@ export const ContentRight = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
+  flex: 1;
 `;
 
 

@@ -10,7 +10,7 @@ import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
 import Technology2 from "../../assets/btc/Technology.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
-import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
+import PatientBG from "../../assets/btc/patient/PatientBG.webp";
 
 
 const btcNavItems = [

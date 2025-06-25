@@ -48,9 +48,6 @@ export const InfoGridRow = styled.div`
     display: contents;
     line-height: 0.6;
 
-    @media screen and (min-width: 2300px) {
-        line-height: 0.8;
-    }
 `;
 
 export const InfoGridRow2 = styled.div`
@@ -317,7 +314,7 @@ export const InfoGrid =  styled.div`
 
     font-family: "Gotham", sans-serif;
     padding-top: 0.8rem;
-    font-size: clamp(14px, 1vw, 1.4rem);
+    font-size: clamp(12px, 1vw, 1.4rem);
     color: #666666;
 `;
 

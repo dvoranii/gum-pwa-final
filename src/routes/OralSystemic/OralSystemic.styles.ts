@@ -97,7 +97,7 @@ export const CarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem 4rem;
+  padding: 2rem;
 
   @media screen and (max-width: 1080px) {
     padding: 2rem;

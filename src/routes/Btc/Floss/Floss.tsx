@@ -131,7 +131,7 @@ export default function BtcFloss() {
                 <S.SlideColumn2>
                     <S.ImgWrapper $width={"100%"}><img src={Slide2Floss2}/></S.ImgWrapper>
                     <S.ColumnTitle>Pro-Weave® Dental Floss</S.ColumnTitle>
-                        <small>(formerly known as EEZ-THRU)®</small> 
+                        <small>(formerly known as BUTTLERWEAVE)®</small> 
                         <S.ListContainer>
                             <ul>
                                 <li>Removes <span>2x more plaque</span><sup>1</sup></li>

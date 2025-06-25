@@ -23,16 +23,13 @@ export const FlossBG = styled.div`
 
 
 export const ContentLeft = styled.div`
-  width: 72%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 0 40px 3.4rem;
+  padding: 0 0 40px 3.2rem;
   height: 100%;
   z-index: 99;
 
-  @media screen and (max-width: 1386px) {
-    padding-left: 3.2rem;
-  }
 `;
 
 
@@ -51,10 +48,6 @@ export const FlossImg = styled.img`
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
-
-  @media screen and (min-width: 2100px) {
-    width: 70%;
-  }
 `;
 
 export const IntroTitleWrapper = styled.div`
@@ -62,10 +55,6 @@ export const IntroTitleWrapper = styled.div`
   flex: 1;
   display: flex;
   align-items: flex-end;
-
-  @media screen and (min-width: 2100px) {
-    padding-left: 2.4rem;
-  }
 `;
 
 export const IntroTitle = styled.h1`
@@ -75,10 +64,6 @@ export const IntroTitle = styled.h1`
   font-size: 3.4rem;
   line-height: 0.9;
   letter-spacing: -3px;
-
-  @media screen and (min-width: 2100px) {
-    font-size: 7.4rem;
-  }
 `;
 
 export const RecommendedWrapper = styled.div`
@@ -90,36 +75,24 @@ export const RecommendedWrapper = styled.div`
   h3 {
     font-family: "Gotham", sans-serif;
     color: ${colors.primary};
-    font-weight: 400;
-    font-size: clamp(24px, 1.6vw, 3.2rem);
+    font-weight: 300;
+    font-size: clamp(28px, 1.6vw, 3.2rem);
     margin-top: 1.2rem;
     margin-left: 1.2rem;
   }
 `;
 
 export const Recommended = styled.img`
-  width: 50%;
+  width: 42%;
   height: auto;
 `;
 
 export const LinksWrapper = styled.div`
   display: flex;
-  // gap: 1.8rem;
-  // margin-left: -3.2rem;
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
-
-  @media screen and (max-width: 1386px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 2100px) {
-     padding-left: 2rem;
-     width: 100%;
-     gap: 3rem;
-     margin-left: 0;
- }
+  width: 70%;
 `;
 
 
@@ -129,15 +102,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const LinkImg = styled.img`
-  width: 70%;
+  width: 85%;
   height: auto;
   aspect-ratio: 244/291;
-
-  @media screen and (max-width: 1386px) {
-    width: 80%;
-  }
-
-  @media screen and (min-width: 2100px) {
-    width: 13vw;
- }
 `;

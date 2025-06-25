@@ -23,7 +23,7 @@ export const BrushBG = styled.div`
 
 
 export const ContentLeft = styled.div`
-  width: 72%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 0 40px 3.4rem;
@@ -44,7 +44,7 @@ export const ContentRight = styled.div`
 
 
 export const BrushesImg = styled.img`
-  width: 68%; 
+  width: 78%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
@@ -75,15 +75,15 @@ export const RecommendedWrapper = styled.div`
   h3 {
     font-family: "Gotham", sans-serif;
     color: ${colors.primary};
-    font-weight: 400;
-    font-size: clamp(24px, 1.6vw, 3.2rem);
+    font-weight: 300;
+    font-size: clamp(28px, 1.6vw, 3.2rem);
     margin-top: 1.2rem;
     margin-left: 1.2rem;
   }
 `;
 
 export const Recommended = styled.img`
-  width: 50%;
+  width: 42%;
   height: auto;
 `;
 
@@ -92,6 +92,7 @@ export const LinksWrapper = styled.div`
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   flex: 1;
+  width: 70%;
 `;
 
 
@@ -101,7 +102,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const LinkImg = styled.img`
-  width: 80%;
+  width: 85%;
   height: auto;
   aspect-ratio: 244/291;
 `;

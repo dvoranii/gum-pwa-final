@@ -7,13 +7,10 @@ import Circle2 from "../../../assets/toothbrush/tech/circle-2.webp";
 import Circle2Active from "../../../assets/toothbrush/tech/circle-2-active.webp";
 import Circle3 from "../../../assets/toothbrush/tech/circle-3.webp";
 import Circle3Active from "../../../assets/toothbrush/tech/circle-3-active.webp";
-import Circle4 from "../../../assets/toothbrush/tech/circle-4.webp";
-import Circle4Active from "../../../assets/toothbrush/tech/circle-4-active.webp";
 
 import QuadGripDisplay from './display/QuadGrip/QuadGrip';
 import TaperedBristles from './display/TaperedBristles/TaperedBristles';
 import DomeTrim from "./display/DomeTrim/DomeTrim";
-import TexturedBristles from "./display/TexturedBristles/TexturedBristles";
 
 import playSound from "../../../utils/playSound";
 import tapTop from "../../../assets/sounds/taptop.mp3";

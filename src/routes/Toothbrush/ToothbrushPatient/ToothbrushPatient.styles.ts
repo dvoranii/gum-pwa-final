@@ -7,11 +7,12 @@ interface ResultsContainerProps {
 export const MainTitle = styled.h1`
     font-family: "Gotham", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2.7vw, 3.6rem);
+    font-size: clamp(18px, 2.8vw, 3.6rem);
     color: #00a16b;
     letter-spacing: -1.5px;
     padding-left: 5px;
     padding-bottom: 12px;
+    line-height: 1;
 
 `;
 
@@ -25,34 +26,16 @@ export const PatientContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2.4rem;
-  padding-top: 1.2rem;
-  height: 85vh;
+  height: 70vh;
   width: 100%;
-
-  @media screen and (max-width: 1386px) {
-    height: 72vh;
-  }
-
-  @media screen and (min-width: 2300px) {
-     padding-top: 2.4rem;
-     height: 80vh;
-  }
 `;
 
 export const ChoicesContainerOuter = styled.div`
   display: flex;
-  width: 37%;
-  padding-top: 1.2rem;
+  width: 45%;
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 1386px) {
-    width: 45%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    width: 44%;
-  }
 `;
 
 export const ChoicesContainerInner = styled.div`
@@ -62,16 +45,17 @@ export const ChoicesContainerInner = styled.div`
 
 export const ChoicesImgWrapper = styled.div`
     position: relative;
+    width: 80%;
 
     &:nth-of-type(1) {
         margin-top: 1.2rem;
     }
     &:nth-of-type(n+2) {
-        margin-top: -72px;
+        margin-top: -36px;
     }
 
     img {
-        width: 94%;
+        width: 100%;
     }
 `;
 

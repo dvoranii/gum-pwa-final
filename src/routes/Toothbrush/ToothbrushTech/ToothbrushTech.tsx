@@ -34,11 +34,9 @@ export default function ToothbrushTech() {
       case 1: 
         return <QuadGripDisplay/>
       case 2: 
-        return <DomeTrim/>
-      case 3: 
         return <TaperedBristles/>
-      case 4: 
-        return <TexturedBristles/>
+      case 3: 
+        return <DomeTrim/>
     }
   }
 
@@ -68,15 +66,6 @@ export default function ToothbrushTech() {
         >
           <img 
             src={activeIcon === 3 ? Circle3Active : Circle3} 
-            alt="Technology" 
-          />
-        </S.SideIcon>
-        <S.SideIcon 
-          onPointerDown={() => handleIconTouch(4)} 
-         
-        >
-          <img 
-            src={activeIcon === 4 ? Circle4Active : Circle4} 
             alt="Technology" 
           />
         </S.SideIcon>

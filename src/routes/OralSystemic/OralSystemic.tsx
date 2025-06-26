@@ -155,17 +155,17 @@ export default function OralSystemicLink() {
                     static={false}
                   >
                     {/* Slide 1 */}
-                    <S.CarouselSlide>
-                        <S.SlideContent>
-                        <S.SlideNumber>6<S.SlideOrdinal>th</S.SlideOrdinal></S.SlideNumber>
-                        <S.SlideTextContent>
-                          <S.SlideTitle>
-                            Periodontitis is the<br/> sixth-most common<br/> global health<br/> condition.
-                          </S.SlideTitle>
-                          <S.SlideCitation>*Journal of Clinical Periodontology</S.SlideCitation>
-                        </S.SlideTextContent>
-                      </S.SlideContent>
-                    </S.CarouselSlide>
+                  <S.CarouselSlide>
+                    <S.SlideContent>
+                      <S.SlideNumber>6<S.SlideOrdinal>th</S.SlideOrdinal></S.SlideNumber>
+                      <S.SlideTextContent>
+                        <S.SlideTitle $fontSize="clamp(2.4rem, 3.8vw, 2.8rem)" $paddingRight="0.7rem">
+                          Periodontitis is the sixth-most common global health condition.
+                        </S.SlideTitle>
+                        <S.SlideCitation>*Journal of Clinical Periodontology</S.SlideCitation>
+                      </S.SlideTextContent>
+                    </S.SlideContent>
+                  </S.CarouselSlide>
 
                     {/* Slide 2 */}
 
@@ -173,8 +173,8 @@ export default function OralSystemicLink() {
                        <S.SlideContent>
                         <S.SlideNumber $letterSpacing="-12px">57<S.SlideOrdinal $marginLeft="-0.8rem" $fontSize="8.8rem" $vertAlignBottom $topOffset="6px">+</S.SlideOrdinal></S.SlideNumber>
                         <S.SlideTextContent>
-                          <S.SlideTitle $fontSize="2.6rem" $paddingLeft="0.8rem">
-                            Research shows no fewer than 57 conditions linked to periodontal disease.
+                          <S.SlideTitle $fontSize="clamp(2.2rem, 3.4vw, 2.6rem)" $paddingLeft="0.8rem">
+                            Research shows no fewer&nbsp;than&nbsp;57&nbsp;conditions linked to periodontal disease.
                           </S.SlideTitle>
                           <S.SlideCitation $paddingTop="1.2rem" $paddingLeft="0.8rem">*Journal of Clinical Periodontology</S.SlideCitation>
                         </S.SlideTextContent>
@@ -195,11 +195,9 @@ export default function OralSystemicLink() {
                         </S.SlideNumberWrapper>
                       </S.SlideNumber>
                       <S.SlideTextContent $paddingTop="0.4rem">
-                        <S.SlideTitle $fontSize="2.4rem" $paddingLeft="0.4rem">
-                          The link between PD's<br/>
-                          inflammatory response<br/>
-                          and systemic health issues<br/>
-                          has been studied in depth<br/>
+                        <S.SlideTitle $fontSize="clamp(28px, 3.1vw, 2.4rem)" $paddingLeft="0.4rem" $paddingRight="2.2rem">
+                          The link between PD's
+                          inflammatory response and&nbsp;systemic&nbsp;health&nbsp;issues has been studied in depth
                           for over a half a century.
                         </S.SlideTitle>
                         <S.SlideCitation $paddingLeft="0.4rem" $paddingTop="1.2rem">*Journal of Clinical Periodontology</S.SlideCitation>

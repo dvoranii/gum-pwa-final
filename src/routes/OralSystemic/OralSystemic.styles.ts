@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 export const Content = styled.div`
     padding-top: 2rem;
@@ -96,7 +96,7 @@ export const CarouselSlide = styled.div`
   padding: 1.2rem 2rem;
 
   @media screen and (max-width: 1080px) {
-    padding: 2rem;
+    padding: 1rem;
   }
 `;
 
@@ -184,7 +184,9 @@ export const SlideTextContent = styled.div<SlideTextContentProps>`
 interface SlideTitleProps {
   $fontSize?: string;
   $paddingLeft?: string;
+  $paddingRight?: string;
 }
+
 export const SlideTitle = styled.h2<SlideTitleProps>`
   color: #ffffff;
   font-family: "Gotham", sans-serif;
@@ -194,6 +196,7 @@ export const SlideTitle = styled.h2<SlideTitleProps>`
   letter-spacing: -1.25px;
   line-height: 1;
   padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "1.2rem"};
+  padding-right: ${(props) => props.$paddingRight ? props.$paddingRight : "1.2rem"};
   margin-top: -8px;
 `;
 
@@ -201,6 +204,11 @@ interface CitationProps {
   $paddingTop?: string;
   $paddingLeft?: string;
 }
+
+// const responseive = css`
+//   @media screen and (max-width: 1080px) {
+//   }
+// `;
 
 export const SlideCitation = styled.cite<CitationProps>`
   color: #ffffff;
@@ -393,7 +401,6 @@ export const ResultContent = styled.div`
 export const ResultTextImg = styled.img`
     max-width: 82%;
 `;
-
 
 export const ResultHeadline = styled.div`
   font-family: 'Gotham', sans-serif;

@@ -387,11 +387,11 @@ export const ResultImgWrapper = styled.div`
 `;
 
 export const ResultContent = styled.div`
-    // display: flex;
+    padding: 2rem;
 `;
 
 export const ResultTextImg = styled.img`
-    max-width: 88%;
+    max-width: 82%;
 `;
 
 

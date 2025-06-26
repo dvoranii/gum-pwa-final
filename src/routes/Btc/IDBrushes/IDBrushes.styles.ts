@@ -304,14 +304,17 @@ export const SlideWrapper = styled.div`
     }
 `;
 
-export const InfoGrid =  styled.div`
+interface InfoGridProps {
+    $gridColumns?: string; 
+}
+
+export const InfoGrid =  styled.div<InfoGridProps>`
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: ${(props) => props.$gridColumns ? props.$gridColumns : "4fr 1fr 1fr"};
     gap: 0.25rem;
     width: 85%;
     margin-top: auto;
     column-gap: 1rem;
-
     font-family: "Gotham", sans-serif;
     padding-top: 0.8rem;
     font-size: clamp(12px, 1vw, 1.4rem);

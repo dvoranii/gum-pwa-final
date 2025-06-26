@@ -5,7 +5,7 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/toothbrush/crest.webp";
+import Col1Row2 from "../../assets/btc/crest.webp";
 import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
 import Technology2 from "../../assets/btc/Technology.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";

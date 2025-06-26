@@ -62,14 +62,10 @@ export const CarouselWrapper = styled.div`
       text-align: right;
       z-index: 10;
 
-      @media screen and (min-width: 2300px) {
-        right:108px;
-        top: 90px;
-      }
       
       .dot {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         opacity: 1 !important;
         background: #ffffff;
         
@@ -97,11 +93,123 @@ export const CarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem;
+  padding: 1.2rem 2rem;
 
   @media screen and (max-width: 1080px) {
     padding: 2rem;
   }
+`;
+
+export const SlideContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`;
+
+interface SlideNumberProps {
+  $letterSpacing?: string;
+  $fontSize?: string;
+}
+
+export const SlideNumber = styled.div<SlideNumberProps>`
+  color: #ffffff;
+  font-family: "Gotham", sans-serif;
+  font-weight: 600;
+  font-size: 12.2rem;
+  vertical-align: bottom;
+  line-height: 1;
+  letter-spacing: ${(props) => props.$letterSpacing ? props.$letterSpacing : ""};
+`;
+
+interface SlideOrdinalProps {
+  $fontSize?: string;
+  $marginLeft?: string;
+  $vertAlignBottom?: boolean;
+  $topOffset?: string;
+
+}
+
+export const SlideOrdinal = styled.span<SlideOrdinalProps>`
+  font-size: ${(props) => props.$fontSize ? props.$fontSize : "6.8rem"};
+  letter-spacing: -5px;
+  vertical-align: ${(props) => props.$vertAlignBottom ? "bottom" : "baseline"};
+  margin-left: ${(props) => props.$marginLeft || '0'};
+  position: relative;
+  top: ${(props) => props.$topOffset || '0'};
+`;
+
+export const SlideNumberWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+`;
+
+export const SlideNumberText = styled.span`
+  font-size: 10.6rem;
+`;
+
+export const SlideOrdinalStacked = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+`;
+
+export const SlideOrdinalPlus = styled.span`
+  font-size: 7rem; 
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -2px;
+`;
+
+export const SlideOrdinalText = styled.span`
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-top: -1.4rem;
+  margin-left: 0.8rem;
+`;
+
+interface SlideTextContentProps {
+  $paddingTop?: string;
+}
+
+export const SlideTextContent = styled.div<SlideTextContentProps>`
+  display: flex;
+  flex-direction: column;
+  padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0"};
+`;
+
+interface SlideTitleProps {
+  $fontSize?: string;
+  $paddingLeft?: string;
+}
+export const SlideTitle = styled.h2<SlideTitleProps>`
+  color: #ffffff;
+  font-family: "Gotham", sans-serif;
+  font-weight: 600;
+  font-size: ${(props) => props.$fontSize ? props.$fontSize : "2.8rem"};
+  margin-bottom: 1rem; 
+  letter-spacing: -1.25px;
+  line-height: 1;
+  padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "1.2rem"};
+  margin-top: -8px;
+`;
+
+interface CitationProps {
+  $paddingTop?: string;
+  $paddingLeft?: string;
+}
+
+export const SlideCitation = styled.cite<CitationProps>`
+  color: #ffffff;
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-style:normal;
+  padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0.8rem"};
+  padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "1.2rem"};
 `;
 
 export const SlideImage = styled.img`

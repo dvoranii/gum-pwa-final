@@ -127,13 +127,12 @@ export default function BtcIDBrushes() {
                                     <img src={Slide2Row2Graphic2}/>
                                 </S.ImgWrapper4>
                             </S.Row1WrapperInner2>
-                            <S.InfoGrid>
+                            <S.InfoGrid $gridColumns="2fr 1fr">
                             <S.InfoGridRow>                            
                                 <S.Column>
                                     <S.ColoredCircle hidden={true}>●</S.ColoredCircle>
                                     <span>3012 ProxaBrush® Angle Cleaners</span>
                                     </S.Column>
-                                <S.Column>Tight Cylindrical</S.Column>
                                 <S.Column>36/box</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
@@ -141,7 +140,6 @@ export default function BtcIDBrushes() {
                                     <S.ColoredCircle color="#ffde00">●</S.ColoredCircle>
                                     <span>3012 ProxaBrush® Angle Cleaners</span>
                                     </S.Column>
-                                <S.Column>Tight Cylindrical</S.Column>
                                 <S.Column>36/box</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
@@ -149,7 +147,6 @@ export default function BtcIDBrushes() {
                                     <S.ColoredCircle color="#a91d55">●</S.ColoredCircle>
                                     <span>3014 ProxaBrush® Angle Cleaners</span>
                                 </S.Column>
-                                <S.Column>Tight Tapered</S.Column>
                                 <S.Column>36/box</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
@@ -157,7 +154,6 @@ export default function BtcIDBrushes() {
                                     <S.ColoredCircle color="#00abd2">●</S.ColoredCircle>
                                     <span>3014 ProxaBrush® Angle Cleaners</span>
                                 </S.Column>
-                                <S.Column>Tight Tapered</S.Column>
                                 <S.Column>36/box</S.Column>
                             </S.InfoGridRow>
                         </S.InfoGrid>

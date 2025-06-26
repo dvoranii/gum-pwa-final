@@ -9,6 +9,6 @@ export const CarouselSlide = styled(BaseCarouselSlide)`
   padding: 1rem;
 
   img {
-    width: 90%;
+    width: 100%;
   }
 `;

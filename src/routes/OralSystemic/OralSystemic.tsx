@@ -154,15 +154,58 @@ export default function OralSystemicLink() {
                     disableImagesLoaded={true}          
                     static={false}
                   >
+                    {/* Slide 1 */}
                     <S.CarouselSlide>
-                      <S.SlideImage src={Slide1} alt="Slide 1" />
+                        <S.SlideContent>
+                        <S.SlideNumber>6<S.SlideOrdinal>th</S.SlideOrdinal></S.SlideNumber>
+                        <S.SlideTextContent>
+                          <S.SlideTitle>
+                            Periodontitis is the<br/> sixth-most common<br/> global health<br/> condition.
+                          </S.SlideTitle>
+                          <S.SlideCitation>*Journal of Clinical Periodontology</S.SlideCitation>
+                        </S.SlideTextContent>
+                      </S.SlideContent>
                     </S.CarouselSlide>
+
+                    {/* Slide 2 */}
+
                     <S.CarouselSlide>
-                      <S.SlideImage src={Slide2} alt="Slide 2" />
+                       <S.SlideContent>
+                        <S.SlideNumber $letterSpacing="-12px">57<S.SlideOrdinal $marginLeft="-0.8rem" $fontSize="8.8rem" $vertAlignBottom $topOffset="6px">+</S.SlideOrdinal></S.SlideNumber>
+                        <S.SlideTextContent>
+                          <S.SlideTitle $fontSize="2.6rem" $paddingLeft="0.8rem">
+                            Research shows no fewer than 57 conditions linked to periodontal disease.
+                          </S.SlideTitle>
+                          <S.SlideCitation $paddingTop="1.2rem" $paddingLeft="0.8rem">*Journal of Clinical Periodontology</S.SlideCitation>
+                        </S.SlideTextContent>
+                      </S.SlideContent>
                     </S.CarouselSlide>
+
+                    {/* Slide 3 */}
+
                     <S.CarouselSlide>
-                      <S.SlideImage src={Slide3} alt="Slide 3" />
-                    </S.CarouselSlide>
+                    <S.SlideContent>
+                      <S.SlideNumber $letterSpacing="-8px">
+                        <S.SlideNumberWrapper>
+                          <S.SlideNumberText>50</S.SlideNumberText>
+                          <S.SlideOrdinalStacked>
+                            <S.SlideOrdinalPlus>+</S.SlideOrdinalPlus>
+                            <S.SlideOrdinalText>years</S.SlideOrdinalText>
+                          </S.SlideOrdinalStacked>
+                        </S.SlideNumberWrapper>
+                      </S.SlideNumber>
+                      <S.SlideTextContent $paddingTop="0.4rem">
+                        <S.SlideTitle $fontSize="2.4rem" $paddingLeft="0.4rem">
+                          The link between PD's<br/>
+                          inflammatory response<br/>
+                          and systemic health issues<br/>
+                          has been studied in depth<br/>
+                          for over a half a century.
+                        </S.SlideTitle>
+                        <S.SlideCitation $paddingLeft="0.4rem" $paddingTop="1.2rem">*Journal of Clinical Periodontology</S.SlideCitation>
+                      </S.SlideTextContent>
+                    </S.SlideContent>
+                  </S.CarouselSlide>
                   </Flickity>
                 </S.CarouselWrapper>
               ) : (

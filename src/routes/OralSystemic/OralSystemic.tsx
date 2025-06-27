@@ -1,7 +1,7 @@
 import * as S from "./OralSystemic.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from 'react-router-dom';
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import Flickity from 'react-flickity-component';
 import 'flickity/dist/flickity.min.css';
 
@@ -12,21 +12,13 @@ import BaseImg2 from  "../../assets/oral-systemic/BaseImg-2.svg";
 import Branches from "../../assets/oral-systemic/branches.svg";
 
 import HeartBranch from "../../assets/oral-systemic/heartbranch.svg";
-import HeartBranchResult from "../../assets/oral-systemic/HeartBranchResult.webp";
 import HeartActive from "../../assets/oral-systemic/heart-active.svg";
 
 import BrainBranch from "../../assets/oral-systemic/brainbranch.svg";
 import BrainActive from "../../assets/oral-systemic/brain-active.svg";
-import BrainBranchResult from "../../assets/oral-systemic/BrainBranchResult.webp";
 
 import BloodBranch from "../../assets/oral-systemic/bloodbranch.svg";
 import BloodActive from "../../assets/oral-systemic/blood-active.svg";
-import BloodBranchResult from "../../assets/oral-systemic/BloodBranchResult.webp";
-
-
-import Slide1 from "../../assets/oral-systemic/carousel/OS-slide1.webp";
-import Slide2 from "../../assets/oral-systemic/carousel/OS-slide2.webp";
-import Slide3 from "../../assets/oral-systemic/carousel/OS-slide3.webp";
 
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 import BulletList from "../../components/BulletList/BulletList";
@@ -85,6 +77,15 @@ export default function OralSystemicLink() {
     setShowBaseImg2(true);
   };
 
+  const ResultWrapper = ({ children }: {children: ReactNode}) => (
+    <S.ResultImgWrapper>
+      <S.ResultContent>
+        <S.ResultDescriptionOuter>
+          {children}
+        </S.ResultDescriptionOuter>
+      </S.ResultContent>
+    </S.ResultImgWrapper>
+  );
 
   return (
     <ModuleContainer $isHomePage={isHomePage}>
@@ -137,8 +138,6 @@ export default function OralSystemicLink() {
                       <S.BloodActiveOverlay 
                         src={BloodActive}
                         onPointerDown={(e) => e.stopPropagation()}
-
-
                       />
                     )}
                   </>
@@ -162,7 +161,7 @@ export default function OralSystemicLink() {
                         <S.SlideTitle $fontSize="clamp(2.4rem, 3.8vw, 2.8rem)" $paddingRight="0.7rem">
                           Periodontitis is the sixth-most common global health condition.
                         </S.SlideTitle>
-                        <S.SlideCitation>*Journal of Clinical Periodontology</S.SlideCitation>
+                        <S.SlideCitation $paddingLeft="1.2rem">*Journal of Clinical Periodontology</S.SlideCitation>
                       </S.SlideTextContent>
                     </S.SlideContent>
                   </S.CarouselSlide>
@@ -209,28 +208,70 @@ export default function OralSystemicLink() {
               ) : (
                 <>
                   {activeHeart && (
-                    <S.ResultImgWrapper>
-                      <S.ResultContent>
-                        <S.ResultTextImg src={HeartBranchResult}/>
-                      </S.ResultContent>
-                    </S.ResultImgWrapper>
+                    <ResultWrapper>
+                        <S.ResultDescriptionInner>
+                          <S.ResultTitle $paddingTop="2.4rem">
+                              Periodontitis Linked to CVD
+                          </S.ResultTitle>
+                          <S.ResultParagraph $paddingTop="0.25rem" $paddingRight="6.4rem">
+                            Recent publications show convincing evidence of significant association between periodontitis and CVD.
+                          </S.ResultParagraph>
+                          <S.ResultParagraph $paddingRight="5.6rem">
+                            CVD is the leading cause of mortality worldwide.
+                          </S.ResultParagraph>
+                          </S.ResultDescriptionInner>
+                          <S.SlideCitation $paddingLeft="0">*World Heart Federation</S.SlideCitation>
+                    </ResultWrapper>
                   )}
 
                   {activeBrain && (
-                    <S.ResultImgWrapper>
-                      <S.ResultContent>
-                        <S.ResultTextImg src={BrainBranchResult} />
-                      </S.ResultContent>
-                    </S.ResultImgWrapper>
+                    <ResultWrapper>
+                        <S.ResultDescriptionInner>
+                          <S.ResultTitle 
+                            $fontSize="clamp(6rem, 10vw, 8rem)"
+                            $lineHeight="0.8"
+                            $letterSpacing="-4px"
+                            $marginBottom="0"
+                            $paddingTop="2rem"
+                          >
+                            22<S.SlideOrdinal>%</S.SlideOrdinal>
+                          </S.ResultTitle>
+                          <S.ResultTitle 
+                            $fontSize="clamp(3.5rem, 5.8vw, 4.4rem)"
+                            $letterSpacing="-3px"
+                            $lineHeight="0.85"
+                          >
+                            Higher
+                          </S.ResultTitle>
+                          <S.ResultParagraph $paddingRight="7rem" $paddingTop="0.4rem">
+                            The relative risk for dementia is 22% higher in patients with severe&nbsp;periodontal inflammation.
+                          </S.ResultParagraph>
+                        </S.ResultDescriptionInner>
+                        <S.SlideCitation $paddingLeft="0">*Journal of Alzheimer's Disease</S.SlideCitation>
+                      </ResultWrapper>
                   )}
 
-                  {activeBlood && (
-                    <S.ResultImgWrapper>
-                      <S.ResultContent>
-                        <S.ResultTextImg src={BloodBranchResult}/>
-                      </S.ResultContent>
-                    </S.ResultImgWrapper>
-                  )}
+                {activeBlood && (
+                  <ResultWrapper>
+                        <S.ResultDescriptionInner>
+                          <S.ResultTitle 
+                            $fontSize="clamp(24px, 4.2vw, 3rem)"
+                            $lineHeight="0.95"
+                            $marginBottom="1.2rem"
+                            $paddingTop="4.2rem"
+                          >
+                            Diabetic<br />Complications
+                          </S.ResultTitle>    
+                          <S.ResultParagraph $paddingTop="0">
+                            Diabetes affects one<br/> in 10 adults. Periodontitis increases the risk for diabetic complications.
+                          </S.ResultParagraph>
+                        </S.ResultDescriptionInner>
+                        
+                        <S.SlideCitation $paddingLeft="0">
+                          *National Center for<br />&nbsp;Biotechnology Information
+                        </S.SlideCitation>
+                  </ResultWrapper>
+                )}
                 </>
               )}
             </S.OralSystemicImgWrapperOuter>

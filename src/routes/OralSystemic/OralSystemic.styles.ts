@@ -205,19 +205,15 @@ interface CitationProps {
   $paddingLeft?: string;
 }
 
-// const responseive = css`
-//   @media screen and (max-width: 1080px) {
-//   }
-// `;
 
 export const SlideCitation = styled.cite<CitationProps>`
   color: #ffffff;
   font-family: "Gotham", sans-serif;
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style:normal;
   padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0.8rem"};
-  padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "1.2rem"};
+  padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "0"};
 `;
 
 export const SlideImage = styled.img`
@@ -227,8 +223,6 @@ export const SlideImage = styled.img`
   @media screen and (max-width: 1080px) {
       height: 90%;
   }
-
-
 `;
 
 export const BaseImgWrapper = styled.div`
@@ -385,7 +379,7 @@ export const BloodActiveOverlay = styled.img`
 
 export const ResultImgWrapper = styled.div`
   width: 45%;
-  background-image: linear-gradient(to bottom, #1a969d, #5fccc4);
+  background-image: linear-gradient(to bottom, #1a969d 50%, #5fccc4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -395,29 +389,62 @@ export const ResultImgWrapper = styled.div`
 `;
 
 export const ResultContent = styled.div`
-    padding: 2rem;
+    padding: 0 0 0.8rem 1.8rem;
+    height: 90%;
+
+    @media screen and (max-width: 1080px) {
+          padding: 0 0 0.8rem 1.2rem;
+    }
 `;
 
-export const ResultTextImg = styled.img`
-    max-width: 82%;
-`;
 
-export const ResultHeadline = styled.div`
-  font-family: 'Gotham', sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1;
-  font-size: 3.6rem;
-`;
+interface ResultTitleProps {
+  $fontSize?: string;
+  $lineHeight?: string;
+  $letterSpacing?: string;
+  $marginBottom?: string;
+  $paddingTop?: string;
+}
 
-export const ResultDescription = styled.p`
+export const ResultTitle = styled.div<ResultTitleProps>`
   font-family: 'Gotham', sans-serif;
   font-weight: 600;
-  font-size: 1.4rem;
+  color: #ffffff;
+  line-height: ${props => props.$lineHeight || '0.9'};
+  font-size: ${props => props.$fontSize || 'clamp(18px, 4.2vw, 3.2rem)'};
+  letter-spacing: ${props => props.$letterSpacing || '-1px'};
+  margin-bottom: ${props => props.$marginBottom || '1rem'};
+  padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0"};
+`;
+
+export const ResultDescriptionInner = styled.div``;
+export const ResultDescriptionOuter = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+interface ResultParagraphProps {
+  $paddingRight?:string;
+  $paddingTop?:string;
+}
+export const ResultParagraph = styled.p<ResultParagraphProps>`
+  font-family: 'Gotham', sans-serif;
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 2.4rem);
   color: #ffffff;
   line-height: 1;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "1rem"};
+  letter-spacing: -0.6px;
+  padding-right: ${(props) => props.$paddingRight ? props.$paddingRight : "5.4rem"};
+
+  & + & {
+    padding-top: 0.4rem;
+  }
+
+  
 `;
 
 export const BottomText = styled.div`

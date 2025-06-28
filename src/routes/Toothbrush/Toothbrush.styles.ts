@@ -46,11 +46,16 @@ export const ContentRight = styled.div`
 
 
 export const BrushesImg = styled.img`
-  width: 80%; 
+  width: 85%; 
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
   margin-left: -54px;
+  margin-top: 1.2rem;
+
+  @media screen and (max-width: 1080px) {
+    width: 95%;
+  }
 `;
 
 export const IntroTitleWrapper = styled.div`

@@ -2,8 +2,8 @@ import { styled } from "styled-components";
 import { colors } from "../../../../constants/colors";
 
 export const Slide = styled.div`
-  width: 92%;
-  padding: 12px 32px;
+  width: 100%;
+  padding: 0px 10px;
   text-align: center;
   height: 68vh;
   display: flex;
@@ -11,48 +11,56 @@ export const Slide = styled.div`
 `;
 
 export const ProductImage = styled.img`
-  width: 100%;
+  width: auto;
   height: auto;
-  border-radius: 8px;
+  max-width: 90%;
+  max-height: 80vh; 
+  object-fit: contain;
+  margin: 0 auto;
+  
+  @media (max-width: 1080px) {
+    max-width: 95%;
+    max-height: 70vh;
+  }
 `;
 
 export const CarouselWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative; 
+
+  .carousel {
     width: 100%;
-    height: auto;
+    height: 100%;
 
-    .carousel {
-        width: 100%;
-        width: 100%;
+    .flickity-page-dots {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      left: auto; 
+      width: auto;
+      text-align: right;
+      z-index: 10;
+      transform: none !important; 
+      margin: 0;
+      padding: 0;
+
+      .dot {
+        width: 16px;
+        height: 16px;
+        margin: 0 6px;
+        background: ${colors.dotBG2} !important;
+        opacity: 1 !important;
+        border-radius: 50%;
         
-        .flickity-page-dots {
-            top: unset;
-            bottom: 24px;
-            right: 24px;
-            left: unset;
-            width: auto;
-            text-align: right;
-            z-index: 10; 
-            
-            .dot {
-                width: 16px;
-                height: 16px;
-                opacity: 1 !important;
-                background: ${colors.dotBG2};
-                margin: 0 6px;
-                
-                &.is-selected {
-                    background: ${colors.dotBGActive2};
-                }
-
-            }
+        &.is-selected {
+          background: ${colors.dotBGActive2} !important; 
         }
-
-        .flickity-button {
-            display: none;
-        }
-        
+      }
     }
+
+    .flickity-button {
+      display: none;
+    }
+  }
 `;

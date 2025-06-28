@@ -131,30 +131,30 @@ export default function BtcIDBrushes() {
                             <S.InfoGridRow>                            
                                 <S.Column>
                                     <S.ColoredCircle hidden={true}>●</S.ColoredCircle>
-                                    <span>3012 ProxaBrush® Angle Cleaners</span>
+                                    <span>611 Original Handle</span>
                                     </S.Column>
-                                <S.Column>36/box</S.Column>
+                                <S.Column>12/box</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
                                 <S.Column>
-                                    <S.ColoredCircle color="#ffde00">●</S.ColoredCircle>
-                                    <span>3012 ProxaBrush® Angle Cleaners</span>
+                                    <S.ColoredCircle color="#6dcd47">●</S.ColoredCircle>
+                                    <span>414 Tight Refills</span>
                                     </S.Column>
-                                <S.Column>36/box</S.Column>
+                                <S.Column>18 packs of 2</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
                                 <S.Column>
-                                    <S.ColoredCircle color="#a91d55">●</S.ColoredCircle>
-                                    <span>3014 ProxaBrush® Angle Cleaners</span>
+                                    <S.ColoredCircle color="#a00e58">●</S.ColoredCircle>
+                                    <span>612 Moderate Reflls</span>
                                 </S.Column>
-                                <S.Column>36/box</S.Column>
+                                <S.Column>18 packs of 2</S.Column>
                             </S.InfoGridRow>
                             <S.InfoGridRow>                            
                                 <S.Column>
-                                    <S.ColoredCircle color="#00abd2">●</S.ColoredCircle>
-                                    <span>3014 ProxaBrush® Angle Cleaners</span>
+                                    <S.ColoredCircle color="#12b7cc">●</S.ColoredCircle>
+                                    <span>614 Wide Refills</span>
                                 </S.Column>
-                                <S.Column>36/box</S.Column>
+                                <S.Column>18 packs of 2</S.Column>
                             </S.InfoGridRow>
                         </S.InfoGrid>
                         </S.SlideRow2>

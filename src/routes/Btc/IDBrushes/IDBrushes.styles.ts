@@ -9,7 +9,7 @@ interface ColoredCircleProps {
 
 export const ColoredCircle = styled.span<ColoredCircleProps>`
     color: ${(props) => props.color || '#000000'};
-    font-size: 2.4rem;
+    font-size: 2rem;
     vertical-align: middle;
     margin-right: 5px;
     display: inline-block; 
@@ -311,7 +311,7 @@ interface InfoGridProps {
 export const InfoGrid =  styled.div<InfoGridProps>`
     display: grid;
     grid-template-columns: ${(props) => props.$gridColumns ? props.$gridColumns : "4fr 1fr 1fr"};
-    gap: 0.25rem;
+    gap: 0.55rem;
     width: 85%;
     margin-top: auto;
     column-gap: 1rem;
@@ -319,6 +319,10 @@ export const InfoGrid =  styled.div<InfoGridProps>`
     padding-top: 0.8rem;
     font-size: clamp(12px, 1vw, 1.4rem);
     color: #666666;
+
+    @media screen and (max-width: 1080px) {
+        gap: 0.25rem;
+    }
 `;
 
 export const InfoGrid2 = styled.div`

@@ -58,12 +58,12 @@ interface SubtitleProps {
 export const Subtitle = styled.h3<SubtitleProps>`
   font-family: 'Gotham', sans-serif;
   font-weight: 400;
-font-size: ${props => 
+  font-size: ${props => 
     typeof props.$fontSize === 'string' 
       ? props.$fontSize 
       : props.$fontSize?.default || "clamp(18px, 4.3vw, 3.2rem)"};
   color: ${colors.primary};
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   text-transform: uppercase;
   letter-spacing: -2px;
   text-align: left;

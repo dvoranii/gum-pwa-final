@@ -41,7 +41,7 @@ export const Subtitle = styled.h3<SubtitleProps>`
   font-weight: 400;
   font-size: ${(props) => props.$fontSize ? props.$fontSize : "clamp(18px, 4.3vw, 3.2rem)" };
   color: ${colors.primary};
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   text-transform: uppercase;
   letter-spacing: -2px;
   text-align: left;
@@ -63,7 +63,7 @@ export const BulletList = styled.ul<BulletListProps>`
     font-size: clamp(16px, 2vw, 1.8rem);
     color: ${colors.primary};
     font-weight: 500;
-    line-height:1;
+    line-height:1.2;
     letter-spacing: -0.5px;
 
     span {

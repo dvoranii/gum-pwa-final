@@ -55,11 +55,6 @@ export const CarouselWrapper = styled.div`
         
     }
 
-    @media screen and (max-width: 1080px) {
-      .carousel .flickity-page-dots {
-        bottom: 32px;
-      }
-    }
 `;
 
 export const FallbackText = styled.div`

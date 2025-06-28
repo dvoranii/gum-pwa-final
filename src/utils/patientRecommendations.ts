@@ -16,7 +16,7 @@ export const recommendations: Record<CombinationKey, RecommendationSet> = {
   'E1:Mot': {
     priority1: { product: 'String Floss', code: '1815' },
     priority2: { product: 'Flossers: Pro Clean®', code: '891' },
-    priority3: { product: 'Soft-Picks®', code: '650' }
+    priority3: { product: '', code: '' }
   },
   'E1:Mot:Perio': {
     priority1: { product: 'String Floss', code: '2030' },

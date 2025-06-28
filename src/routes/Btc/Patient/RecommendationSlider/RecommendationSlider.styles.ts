@@ -54,5 +54,18 @@ export const CarouselWrapper = styled.div`
         }
         
     }
+
+    @media screen and (max-width: 1080px) {
+      .carousel .flickity-page-dots {
+        bottom: 32px;
+      }
+    }
 `;
 
+export const FallbackText = styled.div`
+  padding: 2rem;
+  font-family: 'Gotham', sans-serif;
+  font-size: 1.6rem;
+  color: ${colors.primary};
+  text-align: center;
+`;

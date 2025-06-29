@@ -1,21 +1,22 @@
 import { styled } from "styled-components";
-import { colors } from "../../../../../constants/colors";
+import { colors } from "../../../../constants/colors";
+
+type ColumnProps = {
+  $isSingleColumn?: boolean;
+};
 
 export const Container = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
 `;
-export const Column1 = styled.div`
+
+
+export const Column = styled.div<ColumnProps>`
     flex:1;
+    // width: ${props => props.$isSingleColumn ? '100%' : '50%'};
     width: 50%;
-    display: flex;
-    gap: 1.2rem;
-    height: 100%;
-`;
-export const Column2 = styled.div`
-    flex:1;
-    width: 50%;
+    max-width: ${props => props.$isSingleColumn ? '50%' : '100%'};
     display: flex;
     gap: 1.2rem;
     height: 100%;
@@ -23,20 +24,25 @@ export const Column2 = styled.div`
 
 export const BrushImgWrapper = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     img {
         height: 90%;
         width: auto;
     }
 `;
 
-export const TextAndImgWrapper = styled.div`
+type TextAndImgWrapperProps = {
+  $hasMultipleSpecRows?: boolean;
+};
+
+export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0 2rem 0 1rem;
-    height: 100%;
+    height: 95%;
     position: relative;
+    padding-bottom: ${props => props.$hasMultipleSpecRows ? '5.2rem' : '4.2rem'};
 `;
 
 export const DiagramsWrapper = styled.div`
@@ -46,16 +52,15 @@ export const DiagramsWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-
+    max-height: 180px;
+    flex-grow: 0.5;
     h2 {
         font-family: "Gotham", sans-serif;
         color: ${colors.primary};
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        
-        span {
-            font-weight: 200;
-        }
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+        padding-top: 0.4rem;
+        text-transform: uppercase;
     }
     
     p {
@@ -76,10 +81,18 @@ export const TextWrapper = styled.div`
             vertical-align: super; 
         }
     }
+
+    @media screen and (max-width: 1080px) {
+        max-height: 220px;
+    }
 `;
 
 export const ImprintSection = styled.div`
-    margin-top: 1rem;
+`;
+
+export const ImprintTextPlaceholder = styled.div`
+    height: 27.33px; 
+    visibility: hidden;
 `;
 
 export const ImprintTextWrapper = styled.div`
@@ -89,7 +102,7 @@ export const ImprintTextWrapper = styled.div`
 
 export const ImprintText = styled.div`
     font-family: "Gotham", sans-serif;
-    color: #B8860B;
+    color: #c1a22d;
     font-weight: 500;
     font-size: 0.9rem;
     font-style: italic;
@@ -98,8 +111,8 @@ export const ImprintText = styled.div`
 
 export const ImprintLine = styled.div`
     height: 2px;
-    background: #B8860B;
-    width: 76%;
+    background: #c1a22d;
+    width: 83%;
     position: relative;
     margin-left: -20px;
     
@@ -110,7 +123,7 @@ export const ImprintLine = styled.div`
         transform: translateY(-50%);
         width: 8px;
         height: 8px;
-        background: #B8860B;
+        background: #c1a22d;
         border-radius: 50%;
     }
 `;
@@ -130,14 +143,29 @@ export const ImprintLeftColumn = styled.div`
 export const ColorCircles = styled.div`
     display: flex;
     gap: 0.5rem;
+    margin-left: -14px;
 `;
 
-export const ColorCircle = styled.div`
-    width: 20px;
-    height: 20px;
+export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }>`
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: ${props => props.color};
     border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    ${props => props.secondaryColor && `
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: ${props.secondaryColor}
+        }
+    `}
 `;
 
 export const AntibacterialBadge = styled.div`
@@ -156,6 +184,10 @@ export const AntibacterialBadge = styled.div`
     text-align: center;
     line-height: 1.1;
     margin-right: 10px;
+
+    span {
+        letter-spacing: 0.4px;
+    }
     
     span:first-child {
         font-weight: 200;
@@ -163,11 +195,11 @@ export const AntibacterialBadge = styled.div`
     }
     
     span:nth-child(2) {
-        font-weight: 600;
+        font-weight: 500;
     }
     
     span:last-child {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     span:last-child sup { 
@@ -177,14 +209,23 @@ export const AntibacterialBadge = styled.div`
     }
 `;
 
+export const BadgePlaceholder = styled.div`
+    width: 100px;
+    height: 100px; 
+    margin-right: 10px;
+    visibility: hidden;
+`;
+
 export const BrushSpecsWrapper = styled.div`
     position: absolute;
     bottom: 0;
-    left: 0;rus
+    left: 0;
     right: 0;
     border-top: 1px solid ${colors.black};
     padding: 0.8rem 0;
     width: 90%;
+    box-sizing: border-box;
+    gap: 0.3rem;
 `;
 
 export const BrushSpecsGrid = styled.div`
@@ -199,6 +240,7 @@ export const SpecItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 `;
 
 export const SpecLabel = styled.span`
@@ -212,4 +254,14 @@ export const SpecValue = styled.span`
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
     font-size: 0.7rem;
+`;
+
+
+// External styles
+export const DescriptionBold = styled.span`
+    font-weight: 600;
+`;
+
+export const TitleLight = styled.span`
+    font-weight: 200;
 `;

@@ -7,8 +7,8 @@ interface ShopifyIconProps {
 
 export default function ShopifyIcon({ href = "https://www.shopify.com/ca" }: ShopifyIconProps) {
     return (
-        <a href={href} target="_blank" rel="noopener noreferrer">
+        <S.LinkWrapper href={href} target="_blank" rel="noopener noreferrer">
             <S.IconWrapper src={ShopifyIconImage} alt="Shopify" />
-        </a>
+        </S.LinkWrapper>
     );
 }

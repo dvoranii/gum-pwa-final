@@ -9,6 +9,7 @@ export const AdultWrapperOuter = styled.div`
 
 export const CarouselSlide = styled(BaseCarouselSlide)`
   padding: 1rem;
+  justify-content: flex-start;
 
   img {
     width: 90%;

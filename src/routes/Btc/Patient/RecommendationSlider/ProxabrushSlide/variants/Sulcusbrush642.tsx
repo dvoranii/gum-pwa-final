@@ -30,7 +30,7 @@ export default function SulcusBrush() {
         { lines: ["Suitable for crowns, bridges,", "braces, lingual wires and implants."] },
         { 
           text: (
-            <span style={{display: 'inline'}}>
+            <span>
               Two angles to access both lingual <GreenMarker>(A)</GreenMarker> and buccal <GreenMarker>(B)</GreenMarker> gumlines.
             </span>
           )

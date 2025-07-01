@@ -4,6 +4,7 @@ import { colors } from "../../../../constants/colors";
 type ColumnProps = {
   $isSingleColumn?: boolean;
   $colGap?: string;
+  $colMarginLeft?: string;
 };
 
 export const Container = styled.div`
@@ -13,12 +14,15 @@ export const Container = styled.div`
 `;
 
 export const Column = styled.div<ColumnProps>`
-    flex:1;
+    flex: 1 1 50%;
+    min-width: 0;
     width: 50%;
     max-width: ${props => props.$isSingleColumn ? '50%' : '100%'};
     display: flex;
     gap: ${(props) => props.$colGap ? props.$colGap : "1.8rem"};
     height: 100%;
+    ${props => props.$colMarginLeft && `margin-left: ${props.$colMarginLeft};`}
+
 `;
 
 
@@ -30,10 +34,13 @@ interface BrushImgProps {
 export const BrushImgWrapper = styled.div<BrushImgProps>`
     display: flex;
     align-items: center;
+    width: 50%;
+    max-width: 300px;
 
     img {
         height: ${(props) => props.$brushImgWidth ? props.$brushImgWidth : "85%"};
         width: auto;
+        max-width: 100%;
     }
 `;
 
@@ -58,6 +65,7 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
      padding: ${props => props.$padding || defaultTextAndImgPadding};
     height: 70%;
     position: relative;
+    flex: 1;
     ${props => props.$paddingRight && `padding-right: ${props.$paddingRight};`}
 
     @media screen and (max-width: 1080px) {

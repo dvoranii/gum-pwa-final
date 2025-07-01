@@ -24,13 +24,14 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   diagramMarginBottom,
   brushImgWidth,
   colGap,
-  listPaddingLeft
+  listPaddingLeft,
+  colMargLeft
 }) => {    
 
  const hasMultipleSpecRows = specs.length > 1;
 
   return (
-    <S.Column $isSingleColumn={isSingleColumn} $colGap={colGap}>
+    <S.Column $isSingleColumn={isSingleColumn} $colGap={colGap} $colMarginLeft={colMargLeft}>
       <S.BrushImgWrapper $brushImgWidth={brushImgWidth}>
         <img src={brushImage} alt={typeof title === "string" ? title : 'Product'} />
       </S.BrushImgWrapper>
@@ -40,12 +41,12 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
           <img src={diagramImage} alt={typeof title === 'string' ? `${title} diagram` : 'Product diagram'} />
         </S.DiagramsWrapper>
         <S.TextWrapper 
-        $marginTop={textWrapperMarginTop} 
-        $marginBottom={textWrapperH2MarginBottom} 
-        $textWrapperPaddingRight={textWrapperPaddingRight} 
-        $maxHeight={maxHeight}
-        $minHeight={minHeight}
-        $listPaddingLeft={listPaddingLeft}
+          $marginTop={textWrapperMarginTop} 
+          $marginBottom={textWrapperH2MarginBottom} 
+          $textWrapperPaddingRight={textWrapperPaddingRight} 
+          $maxHeight={maxHeight}
+          $minHeight={minHeight}
+          $listPaddingLeft={listPaddingLeft}
         >
           <h2>{title}</h2>
             {useBulletPoints ? (

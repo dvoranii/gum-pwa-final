@@ -10,3 +10,4 @@ export { default as KidsSlide2 } from '../../ToothbrushKids/Slides/Slide2/Slide2
 export { default as KidsSlide3 } from '../../ToothbrushKids/Slides/Slide3/Slide3';
 export { default as KidsSlide4 } from '../../ToothbrushKids/Slides/Slide4/Slide4';
 export { default as KidsSlide5 } from '../../ToothbrushKids/Slides/Slide5/Slide5';
+export { default as KidsSlide6 } from '../../ToothbrushKids/Slides/Slide6/Slide6';

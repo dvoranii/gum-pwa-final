@@ -29,4 +29,5 @@ export type ProductSlideProps = {
   brushImgWidth?: string;
   colGap?: string;
   listPaddingLeft?: string;
+  colMargLeft?:string;
 };

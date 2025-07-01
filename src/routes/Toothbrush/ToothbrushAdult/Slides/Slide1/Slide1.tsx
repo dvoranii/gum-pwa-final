@@ -2,8 +2,8 @@ import Brush1_DeepClean from "../../../../../assets/toothbrush/Adult/Slide1/Brus
 import Brush1_SensitiveClean from "../../../../../assets/toothbrush/Adult/Slide1/Brush-SensitiveClean.webp";
 import Diagrams_DeepClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-deepclean.webp";
 import Diagrams_SensitiveClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-sensitiveclean.webp";
-import { ProductSlide } from "../ProductSlide";
-import { DescriptionBold, TitleLight } from "../ProductSlide.styles";
+import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
+import { DescriptionBold, TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide1 = () => (
   <>
@@ -14,7 +14,7 @@ const Slide1 = () => (
         <>DEEP CLEAN <TitleLight>TECNHIQUE®</TitleLight></>
       }
       description={[
-        "Extremely Tapered Bristles clean 2.7mm below the sulcus and up to 1.4cm along the gingival margin and between the teeth.¹",
+        "Extremely Tapered Bristles clean 2.7 mm below the sulcus and up to 1.4 cm along the gingival margin and between the teeth.¹",
         <>
           <DescriptionBold>10x better plaque removal</DescriptionBold> below the gumline for healthier gums.<sup>2</sup>
         </>
@@ -35,7 +35,7 @@ const Slide1 = () => (
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
       title={
-        <>SENSITIVE CLEAN <TitleLight>TECNHIQUE®</TitleLight></>
+        <>SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECNHIQUE®</TitleLight></>
       }
       description={[<>
         For <DescriptionBold>6x better clean</DescriptionBold><sup>6</sup> with ultra-soft bristles specially designed for sensitivity.
@@ -45,7 +45,7 @@ const Slide1 = () => (
       imprintColors={[["#d692a9"], ["#54b6b3"], ["#5a9ac4"], ["#b3b3e0"]]}
       specs={
         [
-           [{ label: "Item #", value: "528" },
+           [{ label: "Item", value: "528" },
             { label: "Texture", value: "Ultra Soft" },
             { label: "Size", value: "Compact" },
             { label: "Tufts", value: "30" }]]}

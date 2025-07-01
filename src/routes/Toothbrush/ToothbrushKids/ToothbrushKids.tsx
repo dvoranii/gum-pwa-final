@@ -2,10 +2,7 @@ import * as S from "./ToothbrushKids.styles";
 
 import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
 
-import Slide1 from "../../../assets/toothbrush/Kids/KidsBrush-1.webp";
-import Slide2 from "../../../assets/toothbrush/Kids/KidsBrush-2.webp";
-import Slide3 from "../../../assets/toothbrush/Kids/KidsBrush-3.webp";
-import Slide4 from "../../../assets/toothbrush/Kids/KidsBrush-4.webp";
+import { KidsSlide1, KidsSlide2, KidsSlide3, KidsSlide4, KidsSlide5 } from "../components/ProductSlide";
 import Slide5 from "../../../assets/toothbrush/Kids/KidsBrush-5.webp";
 import Slide6 from "../../../assets/toothbrush/Kids/KidsBrush-6.webp";
 import Slide7 from "../../../assets/toothbrush/Kids/KidsBrush-7.webp";
@@ -27,19 +24,19 @@ export default function ToothbrushKids() {
         }}
       >
           <S.CarouselSlide>
-            <img src={Slide1}/>
+            <KidsSlide1/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide2}/>
+            <KidsSlide2/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide3}/>
+            <KidsSlide3/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide4}/>
+            <KidsSlide4/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide5}/>
+            <KidsSlide5/>
           </S.CarouselSlide>
           <S.CarouselSlide>
             <img src={Slide6}/>

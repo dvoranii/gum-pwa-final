@@ -1,7 +1,7 @@
 import Brush1_ToothAndTongue from "../../../../../assets/toothbrush/Adult/Slide4/Brush-toothAndTongue.webp";
-import Diagrams_ToothAndTongue from "../../../../../assets/toothbrush/Adult/Slide4/bottom-img-tooth&tongue.webp";
-import { ProductSlide } from "../ProductSlide";
-import { DescriptionBold, TitleLight } from "../ProductSlide.styles";
+import Diagrams_ToothAndTongue from "../../../../../assets/toothbrush/Adult/Slide4/circle-diagram-tooth&tongue.webp";
+import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
+import { DescriptionBold, TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide4 = () => (
   <>
@@ -10,7 +10,7 @@ const Slide4 = () => (
       diagramImage={Diagrams_ToothAndTongue}
       title={
         <>
-        Tooth & Tongue <TitleLight>Toothbrush</TitleLight>
+        TOOTH&nbsp;&&nbsp;TONGUE&nbsp;<TitleLight>Toothbrush</TitleLight>
         </>
       }
       description={[

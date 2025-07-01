@@ -2,17 +2,18 @@ import Brush1_EnamelClean from "../../../../../assets/toothbrush/Adult/Slide2/Br
 import Brush1_SensitiveCare from "../../../../../assets/toothbrush/Adult/Slide2/Brush-SensitiveCare.webp";
 import Diagrams_EnamelClean from "../../../../../assets/toothbrush/Adult/Slide2/circle-diagrams-enamelClean.webp";
 import Diagrams_SensitiveCare from "../../../../../assets/toothbrush/Adult/Slide2/circle-diagrams-sensitiveCare.webp";
-import { ProductSlide } from "../ProductSlide";
-import { DescriptionBold, TitleLight } from "../ProductSlide.styles";
+import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
+import { DescriptionBold, TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide2 = () => (
   <>
     <ProductSlide
       brushImage={Brush1_EnamelClean}
       diagramImage={Diagrams_EnamelClean}
+      textWrapperPaddingRight="0.5rem"
       title={
         <>
-        Enamel Clean <TitleLight>Technique®</TitleLight>
+        ENAMEL CLEAN <TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[
@@ -34,9 +35,10 @@ const Slide2 = () => (
     <ProductSlide
       brushImage={Brush1_SensitiveCare}
       diagramImage={Diagrams_SensitiveCare}
+      textWrapperPaddingRight="0.8rem"
       title={
         <>
-        Sensitive Clean <TitleLight>Technique®</TitleLight>
+        SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[
@@ -44,7 +46,7 @@ const Slide2 = () => (
       imprintColors={[["#86ca94"], ["#2ac2f0"], ["#f8acbd"], ["#cda9ce"]]}
         specs={[
         [
-            { label: "Item #", value: "517" },
+            { label: "Item", value: "517" },
             { label: "Texture", value: "Sensitive" },
             { label: "Size", value: "Compact" },
             { label: "Tufts", value: "46" }

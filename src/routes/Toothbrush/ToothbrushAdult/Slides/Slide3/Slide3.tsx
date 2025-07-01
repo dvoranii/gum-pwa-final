@@ -2,17 +2,18 @@ import Brush1_CompleteCare from "../../../../../assets/toothbrush/Adult/Slide3/B
 import Brush1_DomeTrim from "../../../../../assets/toothbrush/Adult/Slide3/Brush-DomeTrim.webp";
 import Diagrams_CompleteCare from "../../../../../assets/toothbrush/Adult/Slide3/circle-diagram-completeCare.webp";
 import Diagrams_DomeTrim from "../../../../../assets/toothbrush/Adult/Slide3/circle-diagram-domeTrim.webp";
-import { ProductSlide } from "../ProductSlide";
-import { DescriptionBold, TitleLight } from "../ProductSlide.styles";
+import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
+import { TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide3 = () => (
   <>
     <ProductSlide
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
+      textWrapperPaddingRight="1rem"
       title={
         <>
-        Complete Care <TitleLight>Technique®</TitleLight>
+        COMPLETE&nbsp;CARE&nbsp;<TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[
@@ -42,7 +43,7 @@ const Slide3 = () => (
       diagramImage={Diagrams_DomeTrim}
       title={
         <>
-        <TitleLight>Dome</TitleLight> Trim®
+        <TitleLight>DOME</TitleLight> TRIM®
         </>
       }
       description={[
@@ -53,7 +54,7 @@ const Slide3 = () => (
       showImprintText={false}
       specs={[
         [
-        { label: "Item #", value: "457" },
+        { label: "Item", value: "457" },
         { label: "Texture", value: "Soft" },
         { label: "Size", value: "Compact" },
         { label: "Tufts", value: "30" }],

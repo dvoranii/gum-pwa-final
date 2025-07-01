@@ -8,7 +8,7 @@ type ColorPair = [string, string?];
 export type ProductSlideProps = {
   brushImage: string;
   diagramImage: string;
-  title: string | React.ReactNode;
+  title?: string | React.ReactNode;
   description: (string | React.ReactNode)[];
   highlightText?: string;
   showAntibacterialBadge?: boolean;
@@ -16,4 +16,17 @@ export type ProductSlideProps = {
   specs: SpecItem[][];
   isSingleColumn?: boolean;
   showImprintText?: boolean;
+  textWrapperMarginTop?: string;
+  textWrapperH2MarginBottom?: string;
+  useBulletPoints?: boolean;
+  padding?: string;
+  paddingRight?: string;
+  textWrapperPaddingRight?:string;
+  diagramWidth?: string;
+  maxHeight?: string;
+  minHeight?: string;
+  diagramMarginBottom?: string;
+  brushImgWidth?: string;
+  colGap?: string;
+  listPaddingLeft?: string;
 };

@@ -11,28 +11,59 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   imprintColors = [],
   specs = [],
   isSingleColumn = false,
-  showImprintText = true
+  showImprintText = true,
+  textWrapperMarginTop,
+  textWrapperH2MarginBottom,
+  textWrapperPaddingRight,
+  useBulletPoints,
+  padding,
+  paddingRight,
+  diagramWidth,
+  maxHeight,
+  minHeight,
+  diagramMarginBottom,
+  brushImgWidth,
+  colGap,
+  listPaddingLeft
 }) => {    
 
  const hasMultipleSpecRows = specs.length > 1;
 
   return (
-    <S.Column $isSingleColumn={isSingleColumn}>
-      <S.BrushImgWrapper>
+    <S.Column $isSingleColumn={isSingleColumn} $colGap={colGap}>
+      <S.BrushImgWrapper $brushImgWidth={brushImgWidth}>
         <img src={brushImage} alt={typeof title === "string" ? title : 'Product'} />
       </S.BrushImgWrapper>
-      <S.TextAndImgWrapper $hasMultipleSpecRows={hasMultipleSpecRows}>
-        <S.DiagramsWrapper>
+      <S.TextAndImgWrapperOuter>
+      <S.TextAndImgWrapper $hasMultipleSpecRows={hasMultipleSpecRows} $padding={padding} $paddingRight={paddingRight}>
+        <S.DiagramsWrapper $diagramWidth={diagramWidth} $diagramMarginBottom={diagramMarginBottom}>
           <img src={diagramImage} alt={typeof title === 'string' ? `${title} diagram` : 'Product diagram'} />
         </S.DiagramsWrapper>
-        <S.TextWrapper>
+        <S.TextWrapper 
+        $marginTop={textWrapperMarginTop} 
+        $marginBottom={textWrapperH2MarginBottom} 
+        $textWrapperPaddingRight={textWrapperPaddingRight} 
+        $maxHeight={maxHeight}
+        $minHeight={minHeight}
+        $listPaddingLeft={listPaddingLeft}
+        >
           <h2>{title}</h2>
-          {description.map((content, index) => ( 
-            <p key={index}>
-              {content} 
-            </p>
-          ))}
-          {highlightText && <p><span>{highlightText}</span></p>}
+            {useBulletPoints ? (
+              <ul>
+                {description.map((content, index) => ( 
+                  <li key={index}>
+                    {content} 
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              description.map((content, index) => ( 
+                <p key={index}>
+                  {content} 
+                </p>
+              ))
+            )}
+            {highlightText && <p><span>{highlightText}</span></p>}
         </S.TextWrapper>
         
         <S.ImprintSection>
@@ -84,6 +115,7 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
         ))}
         </S.BrushSpecsWrapper>
       </S.TextAndImgWrapper>
+      </S.TextAndImgWrapperOuter>
     </S.Column>
   );
 };

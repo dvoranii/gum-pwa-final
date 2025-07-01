@@ -3,6 +3,7 @@ import { colors } from "../../../../constants/colors";
 
 type ColumnProps = {
   $isSingleColumn?: boolean;
+  $colGap?: string;
 };
 
 export const Container = styled.div`
@@ -11,56 +12,89 @@ export const Container = styled.div`
     display: flex;
 `;
 
-
 export const Column = styled.div<ColumnProps>`
     flex:1;
-    // width: ${props => props.$isSingleColumn ? '100%' : '50%'};
     width: 50%;
     max-width: ${props => props.$isSingleColumn ? '50%' : '100%'};
     display: flex;
-    gap: 1.2rem;
+    gap: ${(props) => props.$colGap ? props.$colGap : "1.8rem"};
     height: 100%;
 `;
 
-export const BrushImgWrapper = styled.div`
+
+interface BrushImgProps {
+    $brushImgWidth?: string;
+
+}
+
+export const BrushImgWrapper = styled.div<BrushImgProps>`
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+
     img {
-        height: 90%;
+        height: ${(props) => props.$brushImgWidth ? props.$brushImgWidth : "85%"};
         width: auto;
     }
 `;
 
+export const TextAndImgWrapperOuter = styled.div`
+    height: 100%;
+    display: flex;
+    align-items: center;
+`;
+
 type TextAndImgWrapperProps = {
   $hasMultipleSpecRows?: boolean;
+  $padding?: string;
+  $paddingRight?: string;
 };
+
+const defaultTextAndImgPadding = '0 2rem 0 0';
 
 export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 2rem 0 1rem;
-    height: 95%;
+    justify-content: center;
+     padding: ${props => props.$padding || defaultTextAndImgPadding};
+    height: 70%;
     position: relative;
-    padding-bottom: ${props => props.$hasMultipleSpecRows ? '5.2rem' : '4.2rem'};
-`;
+    ${props => props.$paddingRight && `padding-right: ${props.$paddingRight};`}
 
-export const DiagramsWrapper = styled.div`
-    img {
-        width: 100%;
+    @media screen and (max-width: 1080px) {
+        min-height: 490px;
     }
 `;
 
-export const TextWrapper = styled.div`
-    max-height: 180px;
+
+interface DiagramsWrapperProps {
+    $diagramWidth?: string;
+    $diagramMarginBottom?: string;
+}
+export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
+    img {
+    margin-bottom: ${(props) => props.$diagramMarginBottom ? props.$diagramMarginBottom : "1.2rem"};
+    width: ${(props) => props.$diagramWidth ? props.$diagramWidth : "100%"};
+    }
+`;
+
+interface TextWrapperProps {
+    $marginTop?: string;
+    $marginBottom?: string;
+    $textWrapperPaddingRight?: string;
+    $maxHeight?: string;
+    $minHeight?: string;
+    $listPaddingLeft?:string;
+}
+export const TextWrapper = styled.div<TextWrapperProps>`
     flex-grow: 0.5;
+    max-height: ${(props) => props.$maxHeight ? props.$maxHeight : '168px'};
+    min-height: ${(props) => props.$minHeight ? props.$minHeight : '168px'};
+    ${props => props.$marginTop && `margin-top: ${props.$marginTop};`}
     h2 {
         font-family: "Gotham", sans-serif;
         color: ${colors.primary};
-        margin-bottom: 0.4rem;
-        font-size: 1.2rem;
-        padding-top: 0.4rem;
-        text-transform: uppercase;
+        margin-bottom: ${(props) => props.$marginBottom ? props.$marginBottom : "0.4rem"};
+        font-size: 1.25rem;
     }
     
     p {
@@ -69,25 +103,48 @@ export const TextWrapper = styled.div`
         font-weight: 400;
         margin-bottom: 0.5rem;
         font-size: 1rem;
-        line-height: 1.4;
+        line-height: 1.25;
+        ${props => props.$textWrapperPaddingRight && `padding-right: ${props.$textWrapperPaddingRight};`}
+
+        & + p {
+            margin-bottom: 0;
+        }
         
         span {
             font-weight: 600;
         }
 
-        sup { 
-            font-weight: 300;
-            font-size: 0.5em; 
-            vertical-align: super; 
-        }
+    }
+
+    ul {
+        padding-left: ${(props) => props.$listPaddingLeft ? props.$listPaddingLeft : "1.2rem"}; 
+        font-family: "Gotham", sans-serif;
+        color: ${colors.black};
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.25;
+         ${props => props.$textWrapperPaddingRight && `padding-right: ${props.$textWrapperPaddingRight};`}
+
+         li {
+            margin-bottom: 0.2rem;
+         }
+    }
+
+    sup { 
+        font-weight: 300;
+        font-size: 0.5em; 
+        vertical-align: super; 
     }
 
     @media screen and (max-width: 1080px) {
         max-height: 220px;
+        min-height: 220px;
     }
 `;
 
 export const ImprintSection = styled.div`
+    margin-bottom: 0.6rem;
 `;
 
 export const ImprintTextPlaceholder = styled.div`
@@ -102,17 +159,18 @@ export const ImprintTextWrapper = styled.div`
 
 export const ImprintText = styled.div`
     font-family: "Gotham", sans-serif;
-    color: #c1a22d;
-    font-weight: 500;
+    color: #c4a032;
+    font-weight: 600;
     font-size: 0.9rem;
     font-style: italic;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
 `;
 
 export const ImprintLine = styled.div`
-    height: 2px;
-    background: #c1a22d;
-    width: 83%;
+    height: 1.5px;
+    background: #c4a032;
+    width: 77%;
     position: relative;
     margin-left: -20px;
     
@@ -123,7 +181,7 @@ export const ImprintLine = styled.div`
         transform: translateY(-50%);
         width: 8px;
         height: 8px;
-        background: #c1a22d;
+        background: #c4a032;
         border-radius: 50%;
     }
 `;
@@ -143,7 +201,6 @@ export const ImprintLeftColumn = styled.div`
 export const ColorCircles = styled.div`
     display: flex;
     gap: 0.5rem;
-    margin-left: -14px;
 `;
 
 export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }>`
@@ -184,14 +241,14 @@ export const AntibacterialBadge = styled.div`
     text-align: center;
     line-height: 1.1;
     margin-right: 10px;
+    gap: 2px;
 
     span {
         letter-spacing: 0.4px;
     }
     
     span:first-child {
-        font-weight: 200;
-        margin-bottom: 2px;
+        font-weight: 300;
     }
     
     span:nth-child(2) {
@@ -217,23 +274,32 @@ export const BadgePlaceholder = styled.div`
 `;
 
 export const BrushSpecsWrapper = styled.div`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     border-top: 1px solid ${colors.black};
-    padding: 0.8rem 0;
-    width: 90%;
+    padding: 0.6rem 0;
+    width: 95%;
     box-sizing: border-box;
-    gap: 0.3rem;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+
+    @media screen and (max-width: 1080px) {
+        width: 100%;
+    }
 `;
 
 export const BrushSpecsGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1.3fr 1.3fr 1.3fr;
     gap: 0.5rem;
     place-items: start;
-    width: 90%;
+    width: 80%;
+
+    &:nth-child(2) {
+        margin-top: 0.3rem;
+    }
+
+    @media screen and (max-width: 1080px) {
+        width: 85%;
+    }
 `;
 
 export const SpecItem = styled.div`
@@ -241,19 +307,22 @@ export const SpecItem = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    &:first-child {
+        align-items: flex-start;
+        padding-left: 0.4rem;
+    }
 `;
 
 export const SpecLabel = styled.span`
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
-    font-size: 0.7rem;
     margin-bottom: 0.3rem;
 `;
 
 export const SpecValue = styled.span`
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
-    font-size: 0.7rem;
 `;
 
 
@@ -263,5 +332,5 @@ export const DescriptionBold = styled.span`
 `;
 
 export const TitleLight = styled.span`
-    font-weight: 200;
+    font-weight: 400;
 `;

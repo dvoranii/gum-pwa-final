@@ -2,7 +2,7 @@ import * as S from "./ToothbrushKids.styles";
 
 import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
 
-import { KidsSlide1, KidsSlide2, KidsSlide3, KidsSlide4, KidsSlide5, KidsSlide6 } from "../components/ProductSlide";
+import { KidsSlide1, KidsSlide2, KidsSlide3, KidsSlide4, KidsSlide5, KidsSlide6, KidsSlide7, KidsSlide8 } from "../components/ProductSlide";
 import Slide5 from "../../../assets/toothbrush/Kids/KidsBrush-5.webp";
 import Slide6 from "../../../assets/toothbrush/Kids/KidsBrush-6.webp";
 import Slide7 from "../../../assets/toothbrush/Kids/KidsBrush-7.webp";
@@ -42,10 +42,10 @@ export default function ToothbrushKids() {
             <KidsSlide6/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide7}/>
+            <KidsSlide7/>
           </S.CarouselSlide>
           <S.CarouselSlide>
-            <img src={Slide8}/>
+            <KidsSlide8/>
           </S.CarouselSlide>
         </FlickityCarousel>
       <ShopifyIcon/>

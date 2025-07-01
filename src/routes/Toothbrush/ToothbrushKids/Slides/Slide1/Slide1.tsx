@@ -11,7 +11,7 @@ const Slide1 = () => (
       diagramImage={Slide1Col1TopImg}
       diagramWidth="80%"
       textWrapperMarginTop="-24px"
-      textWrapperPaddingRight="5rem"
+      textWrapperPaddingRight="3.8rem"
       minHeight="190px"
       colGap="0.8rem"
       useBulletPoints={true}

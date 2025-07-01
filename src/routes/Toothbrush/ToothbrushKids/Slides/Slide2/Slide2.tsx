@@ -40,7 +40,7 @@ const Slide2 = () => (
       brushImage={Brush1_MonsterzJunior}
       diagramImage={Slide1Col2TopImg}
       textWrapperMarginTop="-24px"
-      textWrapperPaddingRight="2.7rem"
+      textWrapperPaddingRight="2.9rem"
       minHeight="190px"
       brushImgWidth="90%"
       colGap="0.8rem"

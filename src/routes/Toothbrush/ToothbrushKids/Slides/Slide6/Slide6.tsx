@@ -13,11 +13,11 @@ const Slide6 = () => (
       diagramImage={SpongeBobDiagram}
       useBulletPoints={true}
       showImprintText={false}
-      minHeight="220px"
+      minHeight="250px"
       diagramWidth="90%"
       diagramMarginBottom="0.8rem"
       paddingRight="0"
-      textWrapperPaddingRight="2.4rem"
+      textWrapperPaddingRight="4.5rem"
       brushImgWidth="90%"
       colGap="0.8rem"
       colMargLeft="39px"

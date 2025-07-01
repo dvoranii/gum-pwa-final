@@ -11,3 +11,5 @@ export { default as KidsSlide3 } from '../../ToothbrushKids/Slides/Slide3/Slide3
 export { default as KidsSlide4 } from '../../ToothbrushKids/Slides/Slide4/Slide4';
 export { default as KidsSlide5 } from '../../ToothbrushKids/Slides/Slide5/Slide5';
 export { default as KidsSlide6 } from '../../ToothbrushKids/Slides/Slide6/Slide6';
+export { default as KidsSlide7 } from '../../ToothbrushKids/Slides/Slide7/Slide7';
+export { default as KidsSlide8 } from '../../ToothbrushKids/Slides/Slide8/Slide8';

@@ -216,7 +216,6 @@ export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }
     height: 25px;
     border-radius: 50%;
     background: ${props => props.color};
-    border: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 
@@ -228,7 +227,7 @@ export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }
             left: 0;
             width: 100%;
             height: 50%;
-            background: ${props.secondaryColor}
+            background: ${props.secondaryColor};
         }
     `}
 `;

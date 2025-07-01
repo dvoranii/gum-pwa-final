@@ -24,7 +24,13 @@ export const ImageWrapper = styled.div`
     height: auto;
     max-width: 100%;
     object-fit: contain;
-    margin-left: -170px;
+    margin-left: -240px;
     margin-bottom: -2rem;
+  }
+
+  @media screen and (max-width:1080px) {
+    img {
+        margin-left: -170px;
+    }
   }
 `;

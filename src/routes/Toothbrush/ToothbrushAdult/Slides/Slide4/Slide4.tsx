@@ -8,6 +8,7 @@ const Slide4 = () => (
     <ProductSlide
       brushImage={Brush1_ToothAndTongue}
       diagramImage={Diagrams_ToothAndTongue}
+      imgMinWidth="57px"
       title={
         <>
         TOOTH&nbsp;&&nbsp;TONGUE&nbsp;<TitleLight>Toothbrush</TitleLight>

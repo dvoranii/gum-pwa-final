@@ -11,6 +11,7 @@ const Slide2 = () => (
       brushImage={Brush1_EnamelClean}
       diagramImage={Diagrams_EnamelClean}
       textWrapperPaddingRight="0.5rem"
+      imgMinWidth="54px"
       title={
         <>
         ENAMEL CLEAN <TitleLight>TECHNIQUE®</TitleLight>
@@ -36,6 +37,7 @@ const Slide2 = () => (
       brushImage={Brush1_SensitiveCare}
       diagramImage={Diagrams_SensitiveCare}
       textWrapperPaddingRight="0.8rem"
+      imgMinWidth="54px"
       title={
         <>
         SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECHNIQUE®</TitleLight>

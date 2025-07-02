@@ -3,7 +3,7 @@ import * as S from "./IDBrushes.styles";
 import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
 import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
-import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
+import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
 import Slide1Row1Graphic1 from "../../../assets/btc/id-brushes/Slide1Row1Graphic1.webp";
 import Slide1Row1Graphic2 from "../../../assets/btc/id-brushes/Slide1Row1Graphic2.webp";

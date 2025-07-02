@@ -12,7 +12,7 @@ import Slide1Row2Img from "../../assets/accessories/Slide1Row2Img.webp";
 import Slide2Row1Img from "../../assets/accessories/Slide2Row1Img.webp";
 import Slide2Row2Img from "../../assets/accessories/Slide2Row2Img.webp";
 
-import ShopifyIcon from "../Btc/components/ShopifyIcon/ShopifyIcon";
+import ShopifyIcon from "../../components/ShopifyIcon/ShopifyIcon";
 
 
 const accessoriesNavItems = [

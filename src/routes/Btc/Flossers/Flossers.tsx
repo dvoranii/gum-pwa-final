@@ -4,7 +4,7 @@ import { BaseCarouselSlide } from "../../../styles/shared-styles";
 import Slide1Graphic from "../../../assets/btc/flosser/Slide1Graphic.webp";
 import Slide2Graphic from "../../../assets/btc/flosser/Slide2Graphic.webp";
 import Slide2GraphicSmall from "../../../assets/btc/flosser/Asset2.png"
-import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
+import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
 export default function BtcFlossers(){
 

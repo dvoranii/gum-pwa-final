@@ -11,6 +11,7 @@ const Slide3 = () => (
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
       textWrapperPaddingRight="1rem"
+      imgMinWidth="54px"
       title={
         <>
         COMPLETE&nbsp;CARE&nbsp;<TitleLight>TECHNIQUE®</TitleLight>
@@ -41,6 +42,7 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
+      imgMinWidth="54px"
       title={
         <>
         <TitleLight>DOME</TitleLight> TRIM®

@@ -5,7 +5,7 @@ import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarou
 import { AdultSlide1, AdultSlide2, AdultSlide3, AdultSlide4 } from "../components/ProductSlide";
 
 
-import ShopifyIcon from "../../Btc/components/ShopifyIcon/ShopifyIcon";
+import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
 export default function ToothbrushAdult() {
 
@@ -15,7 +15,7 @@ export default function ToothbrushAdult() {
         $customStyles={{
           dotPosition: {
             bottom: '-30px',
-            right: '95px'
+            right: '45px'
           }
         }}
       >
@@ -32,7 +32,7 @@ export default function ToothbrushAdult() {
             <AdultSlide4/>
           </S.CarouselSlide>
       </FlickityCarousel>
-      <ShopifyIcon/>
+      <ShopifyIcon right="-20px"/>
     </S.AdultWrapperOuter>
   );
 }

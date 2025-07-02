@@ -10,6 +10,7 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_DeepClean}
       diagramImage={Diagrams_DeepClean}
+      imgMinWidth="54px"
       title={
         <>DEEP CLEAN <TitleLight>TECNHIQUE®</TitleLight></>
       }
@@ -34,6 +35,7 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
+      imgMinWidth="54px"
       title={
         <>SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECNHIQUE®</TitleLight></>
       }

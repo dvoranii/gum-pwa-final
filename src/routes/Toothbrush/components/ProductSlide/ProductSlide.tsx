@@ -25,14 +25,15 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   brushImgWidth,
   colGap,
   listPaddingLeft,
-  colMargLeft
+  colMargLeft,
+  imgMinWidth
 }) => {    
 
  const hasMultipleSpecRows = specs.length > 1;
 
   return (
     <S.Column $isSingleColumn={isSingleColumn} $colGap={colGap} $colMarginLeft={colMargLeft}>
-      <S.BrushImgWrapper $brushImgWidth={brushImgWidth}>
+      <S.BrushImgWrapper $brushImgWidth={brushImgWidth} $imgMinWidth={imgMinWidth}>
         <img src={brushImage} alt={typeof title === "string" ? title : 'Product'} />
       </S.BrushImgWrapper>
       <S.TextAndImgWrapperOuter>
@@ -83,7 +84,7 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
                     <S.ColorCircle 
                     key={index} 
                     color={primaryColor} 
-                    secondaryColor={secondaryColor || undefined} 
+                    $secondaryColor={secondaryColor || undefined} 
                     />
                 ))}
             </S.ColorCircles>

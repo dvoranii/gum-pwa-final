@@ -30,4 +30,5 @@ export type ProductSlideProps = {
   colGap?: string;
   listPaddingLeft?: string;
   colMargLeft?:string;
+  imgMinWidth?:string;
 };

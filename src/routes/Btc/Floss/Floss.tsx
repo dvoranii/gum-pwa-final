@@ -3,8 +3,8 @@ import * as S from "./Floss.styles";
 import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarousel";
 import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
-import ShopifyIcon from "../components/ShopifyIcon/ShopifyIcon";
-import ShopifyIconLocal from "../../../assets/btc/shopify-icon.webp";
+import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
+import ShopifyIconLocal from "../../../assets/shopify-icon.webp";
 
 import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1.webp";
 import Slide1Floss2 from "../../../assets/btc/floss/Slide1Floss2.webp";

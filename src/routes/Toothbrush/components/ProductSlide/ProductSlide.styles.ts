@@ -27,20 +27,24 @@ export const Column = styled.div<ColumnProps>`
 
 
 interface BrushImgProps {
+    $containerWidth?:string;
     $brushImgWidth?: string;
-
+    $brushImgHeight?: string;
+    $imgMinWidth?: string;
 }
 
 export const BrushImgWrapper = styled.div<BrushImgProps>`
     display: flex;
     align-items: center;
-    width: 50%;
-    max-width: 300px;
+    justify-content: center;
+    width: ${(props) => props.$containerWidth || "50%"};
 
     img {
-        height: ${(props) => props.$brushImgWidth ? props.$brushImgWidth : "85%"};
+        height: ${(props) => props.$brushImgHeight || "85%"};
         width: auto;
         max-width: 100%;
+        ${props => props.$imgMinWidth && `min-width: ${props.$imgMinWidth};`}
+
     }
 `;
 
@@ -62,7 +66,7 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-     padding: ${props => props.$padding || defaultTextAndImgPadding};
+    padding: ${props => props.$padding || defaultTextAndImgPadding};
     height: 70%;
     position: relative;
     flex: 1;
@@ -211,7 +215,7 @@ export const ColorCircles = styled.div`
     gap: 0.5rem;
 `;
 
-export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }>`
+export const ColorCircle = styled.div<{ color: string; $secondaryColor?: string }>`
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -219,7 +223,7 @@ export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }
     position: relative;
     overflow: hidden;
 
-    ${props => props.secondaryColor && `
+    ${props => props.$secondaryColor && `
         &::after {
             content: "";
             position: absolute;
@@ -227,7 +231,7 @@ export const ColorCircle = styled.div<{ color: string; secondaryColor?: string }
             left: 0;
             width: 100%;
             height: 50%;
-            background: ${props.secondaryColor};
+            background: ${props.$secondaryColor};
         }
     `}
 `;
@@ -280,10 +284,15 @@ export const BadgePlaceholder = styled.div`
     visibility: hidden;
 `;
 
-export const BrushSpecsWrapper = styled.div`
+interface BrushSpecsWrapperProps {
+    $width?: string;
+}
+
+
+export const BrushSpecsWrapper = styled.div<BrushSpecsWrapperProps>`
     border-top: 1px solid ${colors.black};
     padding: 0.6rem 0;
-    width: 95%;
+    width: ${(props) => props.$width || "95%"};
     box-sizing: border-box;
     gap: 0.6rem;
     font-size: 0.8rem;

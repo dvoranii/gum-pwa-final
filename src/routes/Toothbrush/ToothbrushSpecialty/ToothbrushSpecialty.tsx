@@ -154,22 +154,18 @@ export default function ToothbrushAdult() {
           </S.SlideContainer>
         </S.CarouselSlide>
 
-        {/* Slide 2 - Keep your existing second slide or create another one */}
-{/* Slide 2 - Travel & Denture Brushes */}
       <S.CarouselSlide>
-        <S.SlideContainer $columns={2} $width="80%" $colGap="0"> {/* New prop for column count */}
-          
-          {/* Left Column - Travel Brush */}
+        <S.SlideContainer $columns={2} $width="80%" $colGap="0">
           <S.Column>
-            <BrushImgWrapper $containerWidth="50%" $brushImgHeight="80%">
+            <BrushImgWrapper $containerWidth="50%" $brushImgHeight="83%">
               <img src={TravelBrushImage} alt="Travel toothbrush" />
             </BrushImgWrapper>
-            <S.TextAndImgWrapperOuter $height="88%">
-              <S.TextAndImgWrapper $height="85%">
-                <S.DiagramsWrapper $marginBottom="0.4rem" $width="90%">
+            <S.TextAndImgWrapperOuter $height="90%">
+              <S.TextAndImgWrapper $height="85%" $padding="0">
+                <S.DiagramsWrapper $marginBottom="0.4rem" $width="75%">
                   <img src={TravelBrushDiagram} alt="Travel brush diagram" />
                 </S.DiagramsWrapper>
-                <S.TextWrapper $paddingRight="4.4rem">
+                <S.TextWrapper $paddingRight="4.7rem" $listFontSize="1.1rem">
                   <h2>TRAVEL <TitleLight>Toothbrush</TitleLight></h2>
                   <ul>
                     <li>Dual-function handle is also a ventilated snap-lock cap when not in use</li>
@@ -177,7 +173,7 @@ export default function ToothbrushAdult() {
                     <li>Also available in an orthodontic "V" trim</li>
                   </ul>
                 </S.TextWrapper>
-                <BrushSpecsWrapper $width="75%">
+                <BrushSpecsWrapper $width="65%">
                   <S.BrushSpecsGrid $gap="0"> {/* New specialized grid */}
                     <SpecItem><SpecLabel>Item</SpecLabel><SpecValue>153</SpecValue></SpecItem>
                     <SpecItem><SpecLabel>Texture</SpecLabel><SpecValue>Soft</SpecValue></SpecItem>
@@ -197,22 +193,22 @@ export default function ToothbrushAdult() {
 
           {/* Right Column - Denture Brush */}
           <S.Column>
-            <BrushImgWrapper $containerWidth="50%" $brushImgHeight="80%" $imgMinWidth="101px">
+            <BrushImgWrapper $containerWidth="50%" $brushImgHeight="83%" $imgMinWidth="101px">
               <img src={DentureBrushImage} alt="Denture brush" />
             </BrushImgWrapper>
-            <S.TextAndImgWrapperOuter $height="85%">
-              <S.TextAndImgWrapper $height="80%">
+            <S.TextAndImgWrapperOuter $height="86.5%">
+              <S.TextAndImgWrapper $height="80%" $padding="0">
                 <S.DiagramsWrapper $marginBottom="0.4rem" $width="43%">
                   <img src={DentureBrushDiagram} alt="Denture brush diagram" />
                 </S.DiagramsWrapper>
-                <S.TextWrapper $paddingRight="5.4rem">
+                <S.TextWrapper $paddingRight="6.2rem" $listFontSize="1.1rem">
                   <h2>DENTURE <TitleLight>Brush</TitleLight></h2>
                   <ul>
                     <li>Flat trim, firm nylon design effectively cleans denture surfaces. Tapered brush cleans smaller hard-to-reach areas</li>
                     <li>Lever grip reduces effort for patients with limited dexterity</li>
                   </ul>
                 </S.TextWrapper>
-                <BrushSpecsWrapper $width="75%">
+                <BrushSpecsWrapper $width="65%">
                   <S.BrushSpecsGrid $gap="0">
                     <SpecItem><SpecLabel>Item</SpecLabel><SpecValue>201</SpecValue></SpecItem>
                     <SpecItem><SpecLabel>Texture</SpecLabel><SpecValue>Firm</SpecValue></SpecItem>

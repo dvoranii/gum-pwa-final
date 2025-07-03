@@ -3,11 +3,8 @@ import { colors } from "../../../../constants/colors";
 
 export const Slide = styled.div`
   width: 100%;
-  padding: 0px 10px;
-  text-align: center;
   height: 68vh;
   display: flex;
-  align-items: center;
 `;
 
 export const ProductImage = styled.img`
@@ -28,6 +25,7 @@ export const CarouselWrapper = styled.div`
   width: 100%;
   height: auto;
   position: relative; 
+  height: 570px;
 
   .carousel {
     width: 100%;
@@ -35,7 +33,7 @@ export const CarouselWrapper = styled.div`
 
     .flickity-page-dots {
       position: absolute;
-      bottom: 24px;
+      bottom: 32px;
       right: 24px;
       left: auto; 
       width: auto;
@@ -64,3 +62,5 @@ export const CarouselWrapper = styled.div`
     }
   }
 `;
+
+export const FallbackText = styled.p``;

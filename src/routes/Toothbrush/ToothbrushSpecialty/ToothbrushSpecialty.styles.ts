@@ -48,16 +48,21 @@ export const TextAndImgWrapperOuter = styled.div<TextAndImgWrapperOuterProps>`
 
 interface TextAndImgWrapperProps {
   $height?: string;
+  $padding?: string;
 }
 
 export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem 0 0;
+  padding: ${props => props.$padding || "0 2rem 0 0"};
   height: ${(props) => props.$height || "77%"};
   position: relative;
   flex: 1;
+
+  @media screen and (max-width: 1080px) {
+    padding:0;
+  }
 `;
 
 interface DiagramsWrapperProps {
@@ -75,6 +80,7 @@ export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
 interface TextWrapperProps {
   $paddingRight?: string;
   $listWidth?:string;
+  $listFontSize?: string;
 }
 
 export const TextWrapper = styled.div<TextWrapperProps>`
@@ -83,7 +89,7 @@ export const TextWrapper = styled.div<TextWrapperProps>`
   h2 {
     font-family: "Gotham", sans-serif;
     color: ${colors.primary};
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
     font-size: 1.25rem;
   }
 
@@ -93,9 +99,8 @@ export const TextWrapper = styled.div<TextWrapperProps>`
     color: ${colors.black};
     font-weight: 400;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    // padding-right: ${props => props.$paddingRight ? '1.2rem' : '0'};
+    font-size: ${props => props.$listFontSize || "1rem"};
+    line-height: 1.15;
     padding-right: ${(props) => props.$paddingRight ? props.$paddingRight : "0"};
     ${props => props.$listWidth && `width: ${props.$listWidth};`}
 

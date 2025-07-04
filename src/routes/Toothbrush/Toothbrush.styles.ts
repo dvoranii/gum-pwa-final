@@ -53,9 +53,6 @@ export const BrushesImg = styled.img`
   margin-left: -54px;
   margin-top: 1.2rem;
 
-  @media screen and (max-width: 1080px) {
-    width: 95%;
-  }
 `;
 
 export const IntroTitleWrapper = styled.div`

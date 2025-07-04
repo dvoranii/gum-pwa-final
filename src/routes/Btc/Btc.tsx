@@ -43,7 +43,7 @@ export default function Toothbrush() {
               </S.IntroTitleWrapper>
               <S.RecommendedWrapper>
                 <S.Recommended src={Col1Row2}/>
-                <h3>Recommended<br/> By Canadian<br/> Dental Hygienists</h3>
+                <h3>Recommended<br/> By Canadian<br/> Dental&nbsp;Hygienists</h3>
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>

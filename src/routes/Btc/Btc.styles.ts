@@ -51,6 +51,11 @@ export const FlossersImg = styled.img`
   height: auto; 
   object-fit: contain;
   max-height: 100%; 
+
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+    margin-left: 0px;
+  }
 `;
 
 export const IntroTitleWrapper = styled.div`

@@ -152,6 +152,9 @@ export const TextWrapper = styled.div<TextWrapperProps>`
     @media screen and (max-width: 1080px) {
         max-height: 220px;
         min-height: 220px;
+        ul {
+            font-size: 0.9rem;
+        }
     }
 `;
 

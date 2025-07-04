@@ -55,7 +55,7 @@ const Slide8 = () => (
       textWrapperPaddingRight="3rem"
       title={
         <>
-        G•U•M BRIGHT CARE<sup>™</sup> Toothbrush
+        G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
         </>
       }
       description={[

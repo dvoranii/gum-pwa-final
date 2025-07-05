@@ -112,5 +112,4 @@ export const StyledLink = styled(Link)`
 export const LinkImg = styled.img`
   width: 95%;
   height: auto;
-  aspect-ratio: 244/291;
 `;

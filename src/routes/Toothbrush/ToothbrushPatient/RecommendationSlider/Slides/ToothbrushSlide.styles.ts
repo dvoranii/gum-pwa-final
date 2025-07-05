@@ -44,12 +44,14 @@ export const ToothbrushImageWrapper = styled.div`
   align-items: center;
 `;
 
-export const ToothbrushImage = styled.img`
+interface ToothbrushImageProps {
+  $height?: string;
+}
+export const ToothbrushImage = styled.img<ToothbrushImageProps>`
   width: auto;
-  height: 58vh;
+  height: ${props => props.$height || "58vh"};
   max-height: 500px;
   object-fit: contain;
-  
 `;
 
 interface ContentImageWrapperProps {

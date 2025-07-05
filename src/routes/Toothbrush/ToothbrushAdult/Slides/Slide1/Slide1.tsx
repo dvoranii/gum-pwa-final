@@ -10,6 +10,11 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_DeepClean}
       diagramImage={Diagrams_DeepClean}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       imgMinWidth="54px"
       title={
         <>DEEP CLEAN <TitleLight>TECNHIQUE®</TitleLight></>
@@ -31,10 +36,16 @@ const Slide1 = () => (
             { label: "Tufts", value: "30" }
         ]
         ]}
+
     />
     <ProductSlide
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       imgMinWidth="54px"
       title={
         <>SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECNHIQUE®</TitleLight></>

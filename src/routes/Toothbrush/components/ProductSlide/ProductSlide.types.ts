@@ -1,3 +1,5 @@
+import { ShopifyIconProps } from "../../../../components/ShopifyIcon/ShopifyIcon.styled";
+
 export type SpecItem = {
     label?: string;
     value: string | number;
@@ -31,4 +33,5 @@ export type ProductSlideProps = {
   listPaddingLeft?: string;
   colMargLeft?:string;
   imgMinWidth?:string;
+  shopifyIconProps?: ShopifyIconProps
 };

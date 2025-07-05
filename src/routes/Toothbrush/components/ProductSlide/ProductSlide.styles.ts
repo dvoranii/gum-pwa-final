@@ -185,7 +185,7 @@ export const ImprintText = styled.div`
 export const ImprintLine = styled.div`
     height: 1.5px;
     background: #c4a032;
-    width: 77%;
+    width: 23vh;
     position: relative;
     margin-left: -20px;
     
@@ -342,6 +342,10 @@ export const SpecLabel = styled.span`
 export const SpecValue = styled.span`
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
+`;
+
+export const ShopifyIconWrapper = styled.div`
+//   margin-top: 8px;
 `;
 
 

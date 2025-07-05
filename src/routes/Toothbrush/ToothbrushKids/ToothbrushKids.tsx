@@ -23,7 +23,7 @@ export default function ToothbrushKids() {
         $customStyles={{
           dotPosition: {
             bottom: '-30px',
-            right: '75px'
+            right: '12px'
           }
         }}
       >
@@ -52,7 +52,7 @@ export default function ToothbrushKids() {
             <KidsSlide8/>
           </S.CarouselSlide>
         </FlickityCarousel>
-      <ShopifyIcon right="10px"/>
+      {/* <ShopifyIcon right="10px"/> */}
     </S.KidsWrapperOuter>
   );
 }

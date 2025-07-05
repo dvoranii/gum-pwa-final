@@ -10,6 +10,11 @@ const Slide1 = () => (
       brushImage={Brush1_Monsterz}
       diagramImage={Slide1Col1TopImg}
       diagramWidth="80%"
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       textWrapperMarginTop="-24px"
       textWrapperPaddingRight="3.8rem"
       minHeight="190px"
@@ -36,6 +41,11 @@ const Slide1 = () => (
       brushImage={Brush1_MonsterzKids}
       diagramImage={Slide1Col2TopImg}
       diagramWidth="80%"
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       textWrapperMarginTop="-24px"
       useBulletPoints={true}
       minHeight="190px"

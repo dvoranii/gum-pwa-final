@@ -1,3 +1,4 @@
+import ShopifyIcon from "../../../../components/ShopifyIcon/ShopifyIcon";
 import * as S from "./ProductSlide.styles";
 import { ProductSlideProps, SpecItem} from "./ProductSlide.types";
 
@@ -26,7 +27,8 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   colGap,
   listPaddingLeft,
   colMargLeft,
-  imgMinWidth
+  imgMinWidth,
+  shopifyIconProps
 }) => {    
 
  const hasMultipleSpecRows = specs.length > 1;
@@ -116,6 +118,12 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
         </S.BrushSpecsGrid>
         ))}
         </S.BrushSpecsWrapper>
+
+        {shopifyIconProps && (
+          <S.ShopifyIconWrapper>
+            <ShopifyIcon {...shopifyIconProps}/>
+          </S.ShopifyIconWrapper>
+        )}
       </S.TextAndImgWrapper>
       </S.TextAndImgWrapperOuter>
     </S.Column>

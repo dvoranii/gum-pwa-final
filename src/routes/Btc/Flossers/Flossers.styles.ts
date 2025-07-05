@@ -59,8 +59,9 @@ export const SlideColumn2 = styled.div`
 
 export const ImgWrapper = styled.div`
    width: 100%;
+   position: relative;
    border-bottom: 1px solid grey;
-   img {
+   > img {
       padding: 1rem;
       width: 100%;
     }
@@ -69,6 +70,7 @@ export const ImgWrapper = styled.div`
 
 export const ImgWrapper2 = styled.div`
     padding-top: 1.8rem;
+    position: relative;
     img {
         width: 50%;
     }
@@ -76,6 +78,7 @@ export const ImgWrapper2 = styled.div`
 
 export const ListContainer = styled.div`
     width: 92%;
+    margin-top: 12px;
 
     ul {
         font-family: 'Gotham', sans-serif;

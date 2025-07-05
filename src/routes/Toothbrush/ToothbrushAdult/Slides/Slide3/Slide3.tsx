@@ -10,6 +10,11 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       textWrapperPaddingRight="1rem"
       imgMinWidth="54px"
       title={
@@ -42,6 +47,11 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       imgMinWidth="54px"
       title={
         <>

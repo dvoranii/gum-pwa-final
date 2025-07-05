@@ -11,7 +11,7 @@ interface SlideWrapperProps {
 
 export const SlideWrapper = styled.div<SlideWrapperProps>`
     display: flex;
-    gap: 2.4rem;
+    gap: 1.4rem;
     width: ${(props) => props.$width ? props.$width : "90%"}; 
 
     small {
@@ -69,6 +69,7 @@ export const SlideColumn1 = styled.div`
     flex-direction: column; 
     justify-content: center;
     position: relative;
+    margin-left: 12px;
 `;
 
 export const SlideColumn2 = styled.div`
@@ -109,6 +110,7 @@ export const ListContainer = styled.div<ListContainerProps>`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 12px;
         
     ul {
         font-family: 'Gotham', sans-serif;
@@ -187,14 +189,4 @@ export const Column2 = styled.div`
     @media screen and (max-width: 1080px) {
         font-size: clamp(10px, 0.8vw, 1.2rem);
     }
-`;
-
-export const ShopifyIconImg = styled.img`
-  width: 60px; 
-  margin-top: 4px;
-  display: block; 
-
-  @media (max-width: 1600px) {
-    width: 30px;
-  }
 `;

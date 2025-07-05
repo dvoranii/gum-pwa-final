@@ -10,6 +10,11 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CrayolaPipSqueaks}
       diagramImage={Slide3Col1TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       diagramWidth="86%"
       minHeight="246px"
       colGap="0.8rem"
@@ -40,6 +45,11 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CrayolaMarker}
       diagramImage={Slide3Col2TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       diagramWidth="86%"
       brushImgWidth="90%"
       colGap="0.8rem"

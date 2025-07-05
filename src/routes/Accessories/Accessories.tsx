@@ -13,6 +13,7 @@ import Slide2Row1Img from "../../assets/accessories/Slide2Row1Img.webp";
 import Slide2Row2Img from "../../assets/accessories/Slide2Row2Img.webp";
 
 import ShopifyIcon from "../../components/ShopifyIcon/ShopifyIcon";
+import FlickityCarousel from "../../components/FlickityCarousel/FlickityCarousel";
 
 
 const accessoriesNavItems = [
@@ -42,13 +43,14 @@ export default function Accessories() {
       <S.Content>
       {isHomeRoute ? (
         <S.AccessoriesWrapperOuter>
-          <S.CarouselWrapper>
-                <Flickity
-                    className={'carousel'}
-                    elementType={'div'}
-                    options={flickityOptions}
-                    disableImagesLoaded={false}
-                    static={false}
+                <FlickityCarousel
+                  $customStyles={{
+                  viewportHeight: '68vh',   
+                  dotPosition: {
+                    bottom: '-6vw', 
+                    right: '24px',
+                  }
+                }}
                 >
 
                   <S.Slide>
@@ -71,7 +73,7 @@ export default function Accessories() {
                         <p>723 Orthodontic Wax w/Vitamin E</p>
                         <p>24/box</p>
                       </S.MetaDataWrapper>
-
+                      <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="6px"/>
                     </S.Row>
                     <S.Row>
                       <S.RowWrapperInner $gap={"1.2rem"}>
@@ -93,6 +95,7 @@ export default function Accessories() {
                         <p>152 Travel Caps</p>
                         <p>12/box</p>
                       </S.MetaDataWrapper>
+                      <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="6px"/>
                     </S.Row>
                   </S.Slide>
                   <S.Slide>
@@ -120,7 +123,7 @@ export default function Accessories() {
                         <p>601 Refills</p>
                         <p>12 Packs with 3 Refills each</p>
                       </S.MetaDataWrapper>
-
+                      <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="6px"/>
                     </S.Row>
                     <S.Row>
                       <S.RowWrapperInner $gap="1.2rem">
@@ -142,12 +145,10 @@ export default function Accessories() {
                         <p>760 2-in-1 Tongue Cleaner</p>
                         <p>12/box</p>
                       </S.MetaDataWrapper>
+                      <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="6px"/>
                     </S.Row>
                   </S.Slide>
-
-                </Flickity>
-          </S.CarouselWrapper>
-          <ShopifyIcon/>
+                </FlickityCarousel>
           </S.AccessoriesWrapperOuter>
           ) : (
             <Outlet />

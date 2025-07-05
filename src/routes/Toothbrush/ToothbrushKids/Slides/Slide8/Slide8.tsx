@@ -9,6 +9,11 @@ const Slide8 = () => (
     <ProductSlide
       brushImage={SuperTipBrush}
       diagramImage={SuperTipDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       useBulletPoints={true}
       showImprintText={true}
       minHeight="168px"
@@ -43,6 +48,11 @@ const Slide8 = () => (
     <ProductSlide
       brushImage={BrightCareBrush}
       diagramImage={BrightCareDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       useBulletPoints={true}
       showImprintText={true}
       minHeight="168px"

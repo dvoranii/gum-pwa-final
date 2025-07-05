@@ -11,9 +11,10 @@ export default function ComfortSlideFloss() {
       topImageWidth="90%"
       topImageMarginBottom={true}
       contentPadding="0 0 0 5.4rem"
+      containerMarginTop='-20px'
       contentMarginTop='-12px'
       bulletItemsFontSize="clamp(16px, 2vw, 1.8rem)"
-      bulletMargin='4px'
+      bulletMargin='2px'
       listMarginBottom='0.4rem'
       bullets={[
         { text: "Non-stick floss glides effortlessly." },

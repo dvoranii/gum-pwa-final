@@ -47,10 +47,10 @@ export default function Toothbrush() {
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>
-                <S.StyledLink to="/toothbrush/tech">
+                <S.StyledLink to="/btc/tech">
                   <S.LinkImg src={Technology2} />
                 </S.StyledLink> 
-                <S.StyledLink to="/toothbrush/patient">
+                <S.StyledLink to="/btc/patient">
                   <S.LinkImg src={PatientNeeds2} />
                 </S.StyledLink>
               </S.LinksWrapper>

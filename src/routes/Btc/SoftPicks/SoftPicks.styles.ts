@@ -31,7 +31,7 @@ export const TextContainer = styled.div`
         text-transform: uppercase;
 
         span:nth-child(1) {
-            font-weight: 200;
+            font-weight: 400;
         }
         span:nth-child(2) {
             font-weight: 900;

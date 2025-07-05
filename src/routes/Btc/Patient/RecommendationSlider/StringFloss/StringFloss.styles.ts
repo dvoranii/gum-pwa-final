@@ -2,13 +2,19 @@
 import { styled } from "styled-components";
 import { colors } from "../../../../../constants/colors";
 
-export const Container = styled.div`
+
+interface ContainerProps {
+
+  $marginTop?:string;
+}
+export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
+  margin-top: ${props=> props.$marginTop || "0"};
 `;
 
 interface TopImageWrapperProps {
@@ -78,6 +84,7 @@ export const BulletList = styled.ul<BulletListProps>`
   margin: 0 auto;
   margin-inline-start: ${(props) => props.$marginInlineStart || "0"};
   padding-top: 0.4rem;
+  line-height: 1.3;
 
   li {
     margin-bottom:${(props) => props.$listItemMarginBottom ? props.$listItemMarginBottom : "1rem" };
@@ -85,7 +92,6 @@ export const BulletList = styled.ul<BulletListProps>`
     font-size: ${(props) => props.$fontSize ? props.$fontSize : "clamp(16px, 1.9vw, 1.8rem)"};
     color: ${colors.primary};
     font-weight: 500;
-    line-height: 1;
 
     span {
       display: block;

@@ -10,6 +10,7 @@ export default function CompleteCare591Slide() {
           <S.ToothbrushImage 
             src={ToothbrushImage}
             alt="Complete Care Technique Toothbrush"
+            $height="61vh"
           />
         </S.ToothbrushImageWrapper>
         <S.TextAndImgWrapper>

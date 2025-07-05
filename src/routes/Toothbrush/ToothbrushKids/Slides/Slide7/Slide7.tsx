@@ -3,13 +3,17 @@ import TechniqueClassicBrush from "../../../../../assets/toothbrush/Kids/Slide7/
 import TechniqueKidsDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueKids.webp";
 import TechniqueClassicDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueClassic.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
-// import { TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide7 = () => (
   <>
     <ProductSlide
       brushImage={TechniqueKidsBrush}
       diagramImage={TechniqueKidsDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }} 
       useBulletPoints={true}
       showImprintText={false}
       minHeight="168px"
@@ -44,6 +48,11 @@ const Slide7 = () => (
     <ProductSlide
       brushImage={TechniqueClassicBrush}
       diagramImage={TechniqueClassicDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       useBulletPoints={true}
       showImprintText={true}
       minHeight="168px"

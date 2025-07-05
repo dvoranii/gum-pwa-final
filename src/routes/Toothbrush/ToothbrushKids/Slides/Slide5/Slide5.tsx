@@ -5,12 +5,18 @@ import Slide5Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide
 import Slide5Col2BottomImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide5Col2Fruits.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
 import { TitleLight, Container} from "../../../components/ProductSlide/ProductSlide.styles";
+import ShopifyIcon from "../../../../../components/ShopifyIcon/ShopifyIcon";
 
 const Slide5 = () => (
   <Container>
     <ProductSlide
       brushImage={Brush1_CrayolaPower}
       diagramImage={Slide5Col1TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       useBulletPoints={true}
       showImprintText={false}
       minHeight="226px"
@@ -67,6 +73,7 @@ const Slide5 = () => (
         <S.SpecItem>48 packs of 3</S.SpecItem>
         </S.SpecsGrid>
     </S.SpecsSection>
+    <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
 </S.SecondColumnWrapper>
 
   </Container>

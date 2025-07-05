@@ -26,7 +26,7 @@ export default function BtcFloss() {
             viewportHeight: '80vh',
             dotPosition: {
             bottom: '-28px',
-            right: '94px'
+            right: '44px'
             }
         }}
         >
@@ -63,6 +63,7 @@ export default function BtcFloss() {
                                 <S.Column>2x40m</S.Column>
                                 <S.Column>12/bag</S.Column>
                             </S.InfoGridRow>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
                     </S.ListContainer>  
                 </S.SlideColumn1>
@@ -87,9 +88,9 @@ export default function BtcFloss() {
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
                             </S.InfoGridRow>
-                            <br/>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
-
+                        <br/>
                         </S.ListContainer>  
                 </S.SlideColumn2>     
             </S.SlideWrapper>
@@ -122,11 +123,14 @@ export default function BtcFloss() {
                                 <S.Column>3.6m</S.Column>
                                 <S.Column>144/box</S.Column>
                             </S.InfoGridRow>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
-                    </S.ListContainer>  
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                    </S.ListContainer> 
                 </S.SlideColumn1>
                 <S.SlideColumn2>
                     <S.ImgWrapper $width={"100%"}><img src={Slide2Floss2}/></S.ImgWrapper>
@@ -165,7 +169,7 @@ export default function BtcFloss() {
                                 <S.Column>2x35m</S.Column>
                                 <S.Column>12/bag</S.Column>
                             </S.InfoGridRow>
-                            
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
 
                         </S.ListContainer>  
@@ -192,11 +196,9 @@ export default function BtcFloss() {
                                 <S.Column2>165m</S.Column2>
                                 <S.Column2>12/bag</S.Column2>
                             </S.InfoGridRow>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
                         </S.ListContainer> 
-                        <a href="https://www.shopify.com/ca" target="_blank">
-                            <S.ShopifyIconImg src={ShopifyIconLocal}/>
-                        </a>
                 </S.SlideColumn1>
                 <S.SlideColumn2>
                     <S.ImgWrapper $width={"80%"}><img src={Slide3Floss2}/></S.ImgWrapper>
@@ -224,9 +226,7 @@ export default function BtcFloss() {
                             
                         </S.InfoGrid>
                         </S.ListContainer> 
-                        <a href="https://www.shopify.com/ca" target="_blank">
-                            <S.ShopifyIconImg src={ShopifyIconLocal}/>
-                        </a>
+                       <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                 </S.SlideColumn2>
             </S.SlideWrapper>
           </BaseCarouselSlide>
@@ -240,7 +240,7 @@ export default function BtcFloss() {
                         <img src={Slide4Floss}/>
                     </S.ImgWrapper>
                     <S.ColumnTitle><span>EEZ-</span>Thru® Floss Threaders</S.ColumnTitle> 
-                        <S.ListContainer $flexGrow="0" $width="50%" $paddingTop="1.2rem;" $listFontSize="16px" $listPaddingBottom="0.8rem">
+                        <S.ListContainer $flexGrow="0" $width="50%"  $listFontSize="16px" $listPaddingBottom="0.8rem">
                             <ul>
                                 <li>Versatile nylon loop helps patients thread floss through spaces where most other products cannot reach: under bridges, between connected crowns, around orthodontic appliances, lingual wires and implants</li>                  
                             </ul>  
@@ -251,14 +251,12 @@ export default function BtcFloss() {
                                 <S.Column2>1 box/ 100 env. of 5</S.Column2>
                             </S.InfoGridRow>
                         </S.InfoGrid>
-                        <a href="https://www.shopify.com/ca" target="_blank">
-                            <S.ShopifyIconImg src={ShopifyIconLocal}/>
-                        </a>
+                        <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                     </S.SlideColumn1>
                     </S.SlideWrapper>
                 </BaseCarouselSlide>
         </FlickityCarousel >       
-      <ShopifyIcon />
+      {/* <ShopifyIcon /> */}
     </S.FlossWrapperOuter>
   );
 }

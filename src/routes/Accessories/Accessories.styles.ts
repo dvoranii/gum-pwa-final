@@ -3,21 +3,10 @@ import { styled } from "styled-components";
 import { colors } from "../../constants/colors";
 
 export const Content = styled.div`
-  width: 100%;
-  height: 96%;
+  width: 86%;
+  margin: 0 auto;
+  height: 95%;
   display: flex;
-
-  @media screen and (min-width: 1489px) {
-    height: 85%;
-  }
-
-  @media screen and (max-width: 1386px) {
-    height: 90%;
-  }
-
-  @media screen and (min-width: 2300px) {
-    height: 96%;
-  }
 `;
 
 export const AccessoriesWrapperOuter = styled.div`
@@ -25,62 +14,6 @@ export const AccessoriesWrapperOuter = styled.div`
   width: 100%;
   height: 95%;
   display: flex;
-
-  @media screen and (max-width: 1386px) {
-    height: 90%;
-  }
-`;
-
-export const CarouselWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    .carousel {
-        width: 85%;
-        
-        .flickity-page-dots {
-            top: unset;
-            bottom: -6vw;
-            right: 24px;
-            left: unset;
-            width: auto;
-            text-align: right;
-            z-index: 10; 
-            
-            .dot {
-                width: 16px;
-                height: 16px;
-                opacity: 1 !important;
-                background: ${colors.dotBG2};
-                margin: 0 6px;
-                
-                &.is-selected {
-                    background: ${colors.dotBGActive2};
-                }
-
-            }
-        }
-
-        .flickity-button {
-            display: none;
-        }
-        
-        @media screen and (min-width: 2300px) {
-            .flickity-page-dots {
-              bottom: -5vw;
-              right: 12px;
-
-                .dot {
-                    width: 25px;
-                    height: 25px;
-                    margin: 0 10px;
-                }
-            }
-        }
-    }
 `;
 
 export const Row = styled.div`
@@ -156,7 +89,7 @@ export const Slide = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 2.4rem;
+  gap: 1.4rem;
 
 `;
 

@@ -8,7 +8,7 @@ interface RecommendBGProps {
 }
 
 export const Content = styled.div`
-    padding-top: 2rem;
+    padding-top: 0.7rem;
 `;
 
 export const RecommendBG = styled.div<RecommendBGProps>`

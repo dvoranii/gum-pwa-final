@@ -15,7 +15,7 @@ export default function ToothbrushAdult() {
         $customStyles={{
           dotPosition: {
             bottom: '-30px',
-            right: '45px'
+            right: '-16px'
           }
         }}
       >
@@ -32,7 +32,6 @@ export default function ToothbrushAdult() {
             <AdultSlide4/>
           </S.CarouselSlide>
       </FlickityCarousel>
-      <ShopifyIcon right="-20px"/>
     </S.AdultWrapperOuter>
   );
 }

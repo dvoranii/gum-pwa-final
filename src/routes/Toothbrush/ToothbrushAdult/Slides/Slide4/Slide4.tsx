@@ -8,6 +8,11 @@ const Slide4 = () => (
     <ProductSlide
       brushImage={Brush1_ToothAndTongue}
       diagramImage={Diagrams_ToothAndTongue}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       imgMinWidth="57px"
       title={
         <>

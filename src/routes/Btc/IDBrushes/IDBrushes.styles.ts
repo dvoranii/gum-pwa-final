@@ -28,7 +28,8 @@ export const SlideRow1 = styled.div`
 `;
 
 export const SlideRow2 = styled.div`
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
+    position: relative;
 `;
 
 interface ColumnProps {
@@ -62,7 +63,7 @@ export const Row1WrapperInner = styled.div`
 
 export const Row1WrapperOuter = styled.div`
     display: flex;
-    gap: 4.2rem;
+    gap: 1.4rem;
     padding-bottom: 0.6rem;
     border-bottom: 1px solid ${colors.black};
 `;
@@ -166,8 +167,9 @@ export const ImgWrapper2 = styled.div`
     width: 100%;
     display: flex;
     padding-top: 0.4rem;
+    position: relative;
 
-    img {
+     > img {
         width: 86%;
     }
 `;
@@ -256,6 +258,7 @@ export const SlideWrapperInner = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: -25px;
 
     h2 {
         font-family: "Gotham", sans-serif;
@@ -351,7 +354,7 @@ export const ColouredCircle = styled.div`
 `;
 
 export const CaptionWrapper = styled.div`
-    padding-top: 2.4rem;
+    padding-top: 1.2rem;
     small {
         color: ${colors.black};
         font-family: "Gotham", sans-serif;

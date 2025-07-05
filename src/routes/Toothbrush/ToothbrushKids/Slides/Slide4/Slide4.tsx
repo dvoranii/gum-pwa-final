@@ -10,6 +10,11 @@ const Slide4 = () => (
     <ProductSlide
       brushImage={Brush1_CrayolaTimerLight}
       diagramImage={Slide4Col1TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       diagramMarginBottom="0.2rem"
       diagramWidth="85%"
       brushImgWidth="90%"
@@ -44,6 +49,11 @@ const Slide4 = () => (
     <ProductSlide
       brushImage={Brush1_CrayolaDeepClean}
       diagramImage={Slide4Col2TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       diagramWidth="85%"
       brushImgWidth="88%"
       diagramMarginBottom="0.2rem"

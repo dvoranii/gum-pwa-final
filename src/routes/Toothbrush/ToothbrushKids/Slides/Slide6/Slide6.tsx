@@ -11,6 +11,11 @@ const Slide6 = () => (
     <ProductSlide
       brushImage={SpongeBobBrush}
       diagramImage={SpongeBobDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       useBulletPoints={true}
       showImprintText={false}
       minHeight="250px"

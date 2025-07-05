@@ -8,7 +8,7 @@ interface PartnersBGProps {
 
 export const Content = styled.div`
     display: flex;
-    height: 95%;
+    height: 93%;
     flex-direction: column;
     justify-content: center;
 `;
@@ -171,12 +171,11 @@ export const ImgTextWrapper = styled.div`
 
 export const ColTextWrapper = styled.div`
     width: 100%;
-    padding-left: 1.2rem;
+    padding-left: 1.1rem;
 
     & > p {
-      letter-spacing: -1.8px;
       line-height: 1.15;
-      letter-spacing: -1.4px;
+      letter-spacing: -1px;
       padding-top: 0.25rem;
       font-size: clamp(1rem, 1.5vw, 2.2rem);
       font-weight: 500;

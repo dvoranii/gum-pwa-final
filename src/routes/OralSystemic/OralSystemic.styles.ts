@@ -1,7 +1,7 @@
 import { css, styled } from "styled-components";
 
 export const Content = styled.div`
-    padding-top: 2rem;
+    padding-top: 0.7rem;
 `;
 
 

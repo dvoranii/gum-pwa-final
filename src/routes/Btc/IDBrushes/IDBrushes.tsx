@@ -25,7 +25,7 @@ export default function BtcIDBrushes() {
                 viewportHeight: '80vh',
                 dotPosition: {
                 bottom: '-28px',
-                right: '94px'
+                right: '44px'
                 }
             }}
             >
@@ -60,6 +60,7 @@ export default function BtcIDBrushes() {
                         </S.Row1WrapperOuter>
                         <S.ImgWrapper2>
                             <img src={Slide1Graphic3}/>
+                            <ShopifyIcon href="https://www.shopify.com/ca" absolute width="30px" bottom="75%"/>
                         </S.ImgWrapper2>
                     </S.SlideWrapperInner>
                 </BaseCarouselSlide>
@@ -102,9 +103,9 @@ export default function BtcIDBrushes() {
                                 <S.Column>Tight Tapered</S.Column>
                                 <S.Column>36/box</S.Column>
                             </S.InfoGridRow>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0px"/>
                         </S.InfoGrid>
                         </S.SlideRow1>
-                        <br/>
                         <S.SlideRow2>                          
                             <S.Row1WrapperInner2>
                                 <S.TextAndImgWrapper>
@@ -156,6 +157,7 @@ export default function BtcIDBrushes() {
                                 </S.Column>
                                 <S.Column>18 packs of 2</S.Column>
                             </S.InfoGridRow>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0px"/>
                         </S.InfoGrid>
                         </S.SlideRow2>
                     </S.SlideWrapperInner>
@@ -191,6 +193,7 @@ export default function BtcIDBrushes() {
                                 <S.Column>1 Handle (2 Refills)</S.Column>
                                 <S.Column>12/box</S.Column>
                             </S.InfoGridRow>
+                            <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="8px"/>
                     </S.InfoGrid2>
                     <S.CaptionWrapper>
                         <small>1. Data on File (DOF-0001)&nbsp;&nbsp;&nbsp;2. DOF-0046</small>
@@ -198,7 +201,7 @@ export default function BtcIDBrushes() {
                     </S.Slide3WrapperOuter>
                 </BaseCarouselSlide>
                 </FlickityCarousel>   
-            <ShopifyIcon />                                                    
+            {/* <ShopifyIcon />                                                     */}
         </S.IDBrushesContainer>
     )
 }

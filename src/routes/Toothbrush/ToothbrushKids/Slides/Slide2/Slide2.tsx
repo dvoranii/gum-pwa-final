@@ -9,6 +9,11 @@ const Slide2 = () => (
     <ProductSlide
       brushImage={Brush1_TimerLight}
       diagramImage={Slide1Col1TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       textWrapperMarginTop="-24px"
       textWrapperPaddingRight="2.2rem"
       minHeight="190px"
@@ -39,6 +44,11 @@ const Slide2 = () => (
     <ProductSlide
       brushImage={Brush1_MonsterzJunior}
       diagramImage={Slide1Col2TopImg}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0"
+      }}
       textWrapperMarginTop="-24px"
       textWrapperPaddingRight="2.9rem"
       minHeight="190px"

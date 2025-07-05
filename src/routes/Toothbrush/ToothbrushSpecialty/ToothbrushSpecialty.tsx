@@ -13,7 +13,6 @@ import TravelBrushImage from "../../../assets/toothbrush/Specialty/Slide2/Slide2
 import DentureBrushImage from "../../../assets/toothbrush/Specialty/Slide2/Slide2Brush2.webp";
 import TravelBrushDiagram from "../../../assets/toothbrush/Specialty/Slide2/Slide2Col1TopImg.webp";
 import DentureBrushDiagram from "../../../assets/toothbrush/Specialty/Slide2/Slide2Col2TopImg.webp";
-
 import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 import { TitleLight } from "../components/ProductSlide/ProductSlide.styles";
 
@@ -26,7 +25,7 @@ export default function ToothbrushAdult() {
         $customStyles={{
           dotPosition: {
             bottom: '-30px',
-            right: '95px'
+            right: '34px'
           }
         }}
       >
@@ -67,6 +66,7 @@ export default function ToothbrushAdult() {
                       </SpecItem>
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
+                  <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
                 </S.TextAndImgWrapper>
               </S.TextAndImgWrapperOuter>
             </S.Column>
@@ -107,6 +107,7 @@ export default function ToothbrushAdult() {
                       </SpecItem>
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
+                  <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
                 </S.TextAndImgWrapper>
               </S.TextAndImgWrapperOuter>
             </S.Column>
@@ -148,6 +149,7 @@ export default function ToothbrushAdult() {
                       </SpecItem>
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
+                  <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
                 </S.TextAndImgWrapper>
               </S.TextAndImgWrapperOuter>
             </S.Column>
@@ -187,6 +189,7 @@ export default function ToothbrushAdult() {
                     <SpecItem><SpecValue>32</SpecValue></SpecItem>
                   </S.BrushSpecsGrid>
                 </BrushSpecsWrapper>
+                  <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
               </S.TextAndImgWrapper>
             </S.TextAndImgWrapperOuter>
           </S.Column>
@@ -216,13 +219,13 @@ export default function ToothbrushAdult() {
                     <SpecItem><SpecLabel>Tufts</SpecLabel><SpecValue>33</SpecValue></SpecItem>
                   </S.BrushSpecsGrid>
                 </BrushSpecsWrapper>
+                  <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="0"/>
               </S.TextAndImgWrapper>
             </S.TextAndImgWrapperOuter>
           </S.Column>
         </S.SlideContainer>
       </S.CarouselSlide>
       </FlickityCarousel>
-      <ShopifyIcon/>
     </S.AdultWrapperOuter>
   );
 }

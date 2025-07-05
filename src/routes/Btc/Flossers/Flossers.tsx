@@ -15,12 +15,10 @@ export default function BtcFlossers(){
                     viewportHeight: '80vh',
                     dotPosition: {
                     bottom: '-28px',
-                    right: '94px'
+                    right: '44px'
                     }
                 }}
             >
-
-            {/* Slide 1 */}
 
              <BaseCarouselSlide>
                 <S.SlideWrapper>
@@ -75,7 +73,8 @@ export default function BtcFlossers(){
                     </S.SlideColumn1>
                     <S.SlideColumn2>
                         <S.ImgWrapper>
-                            <img src={Slide1Graphic}/>    
+                            <img src={Slide1Graphic}/> 
+                            <ShopifyIcon href="https://www.shopify.com/ca" absolute width="30px" bottom="35px" right="38px"/>   
                         </S.ImgWrapper>
                         
                             <S.InfoGrid>
@@ -134,7 +133,9 @@ export default function BtcFlossers(){
 
                         <S.ImgWrapper2>
                             <img src={Slide2GraphicSmall}/>
+                            
                         </S.ImgWrapper2>
+
                     </S.SlideColumn1>
                     <S.SlideColumn2>
                         <S.ImgWrapper>
@@ -149,12 +150,13 @@ export default function BtcFlossers(){
                                     <S.Column>821 Dual Technique® Flossers Mint</S.Column>
                                     <S.Column>48 packs of 3</S.Column>
                                 </S.Row>
+                                <ShopifyIcon href="https://www.shopify.com/ca" width="30px" marginTop="4px"/>
                         </S.InfoGrid>
                     </S.SlideColumn2>
                     </S.SlideWrapper>
              </BaseCarouselSlide>
             </FlickityCarousel>
-            <ShopifyIcon/>
+            {/* <ShopifyIcon/> */}
         </S.FlossersContainer>
     )
 }

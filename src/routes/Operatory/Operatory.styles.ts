@@ -51,8 +51,12 @@ export const ImgWrapper3 = styled.div`
   }
 `;
 
-export const ColLeft = styled.div``;
-export const ColRight = styled.div``;
+export const ColLeft = styled.div`
+  flex: 1.4;
+`;
+export const ColRight = styled.div`
+  flex:1;
+`;
 
 export const Row1 = styled.div`
   border-bottom: 1px solid black;
@@ -101,7 +105,7 @@ export const ListContainer = styled.div`
         padding: 0 0 1.2rem 0;
         list-style: none;
         line-height: 1.4;
-        font-weight: 200;
+        font-weight: 400;
 
         li {
             position: relative;

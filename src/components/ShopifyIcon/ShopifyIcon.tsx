@@ -5,7 +5,10 @@ import { ShopifyIconProps } from "./ShopifyIconProps.types";
 export default function ShopifyIcon({ 
     href = "https://www.shopify.com/ca", 
     right, 
-    bottom 
+    bottom,
+    absolute = false,
+    width = "60px",
+    marginTop = "4px"
 }: ShopifyIconProps) {
     return (
         <S.LinkWrapper 
@@ -14,6 +17,9 @@ export default function ShopifyIcon({
             rel="noopener noreferrer"
             $right={right}
             $bottom={bottom}
+            $absolute={absolute}
+            $width={width}
+            $marginTop={marginTop}
         >
             <S.IconWrapper src={ShopifyIconImage} alt="Shopify" />
         </S.LinkWrapper>

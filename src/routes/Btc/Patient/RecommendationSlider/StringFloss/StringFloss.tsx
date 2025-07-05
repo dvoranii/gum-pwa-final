@@ -25,6 +25,7 @@ type StringFlossSlideProps = {
   combinationSubtitleSize?: string;
   contentPadding?: string;
   contentMarginTop?: string;
+  containerMarginTop?:string;
 };
 
 export default function StringFlossSlide({
@@ -45,10 +46,11 @@ export default function StringFlossSlide({
   combinationSubtitleSize = "clamp(16px, 3.5vw, 1.8rem)",
   contentPadding,
   contentMarginTop,
-  bulletItemsFontSize
+  bulletItemsFontSize,
+  containerMarginTop
 }: StringFlossSlideProps) {
   return (
-    <S.Container>
+    <S.Container $marginTop={containerMarginTop}>
       <S.TopImageWrapper $marginBottom={topImageMarginBottom}>
         <S.MainImage 
           src={topImage}

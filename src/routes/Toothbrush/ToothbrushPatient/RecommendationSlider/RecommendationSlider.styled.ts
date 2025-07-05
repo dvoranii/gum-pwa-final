@@ -61,6 +61,12 @@ export const CarouselWrapper = styled.div`
       display: none;
     }
   }
+
+  @media screen and (max-width: 1080px) {
+    .carousel .flickity-page-dots {
+      bottom: 48px;
+    }
+  }
 `;
 
 export const FallbackText = styled.p``;

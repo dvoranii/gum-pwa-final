@@ -33,10 +33,11 @@ export const ChoicesContainerOuter = styled.div`
   h1 {
     font-family: "Gotham", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2.5vw, 3.6rem);
+    font-size: clamp(18px, 2.6vw, 3.6rem);
     color: #00a16b;
     text-align: center;
     padding-bottom: 0.4rem;
+    letter-spacing: -1px;
   }
 
   @media screen and (max-width: 1080px) {

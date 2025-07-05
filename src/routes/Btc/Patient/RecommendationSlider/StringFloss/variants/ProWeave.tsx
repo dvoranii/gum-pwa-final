@@ -9,10 +9,11 @@ export default function ProWeaveFloss() {
       topImage={ProductImage}
       topImageWidth="90%"
       topImageMarginBottom={true}
+      containerMarginTop='-28px'
       contentPadding="0 0 0 3rem"
       contentMarginTop='-12px'
       bulletItemsFontSize="clamp(16px, 1.8vw, 1.8rem)"
-      bulletMargin='8px'
+      bulletMargin='2px'
       listMarginBottom='0.4rem'
       bullets={[
         { lines: [

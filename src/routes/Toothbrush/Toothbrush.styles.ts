@@ -104,10 +104,24 @@ export const LinksWrapper = styled.div`
 export const StyledLink = styled(Link)`
   display: flex;
   justify-content:  flex-start;
+  text-decoration: none;
+`;
+
+export const LinkContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 `;
 
 export const LinkImg = styled.img`
   width: 95%;
   height: auto;
+`;
 
+export const LinkText = styled.span`
+  font-family: "Gotham", sans-serif;
+  color: ${colors.secondaryGreen};
+  font-size: clamp(16px, 1.5vw, 1.8rem);
+  font-weight: 400;
 `;

@@ -1,8 +1,8 @@
 import * as S from './InnerNav.styles';
 import GumLogo from "../../assets/gum-logo.svg";
 import { useLocation } from 'react-router-dom';
-import playSound from '../../utils/playSound';
-import tapTop from "../../assets/sounds/taptop.mp3";
+// import playSound from '../../utils/playSound';
+// import tapTop from "../../assets/sounds/taptop.mp3";
 
 interface NavItem {
   path: string;
@@ -19,7 +19,7 @@ export default function InnerNav({ navItems }: InnerNavProps) {
   const location = useLocation();
 
     const handleTabPointerDown = (e: React.PointerEvent, path: string) => {
-    playSound(tapTop);
+    // playSound(tapTop);
     if (location.pathname === path) {
       e.preventDefault();
       window.location.reload();

@@ -21,7 +21,7 @@ export const RecommendBG = styled.div<RecommendBGProps>`
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   box-sizing: border-box;
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
 

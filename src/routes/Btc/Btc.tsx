@@ -45,13 +45,18 @@ export default function Toothbrush() {
                 <S.Recommended src={Col1Row2}/>
                 <h3>Recommended<br/> By Canadian<br/> Dental&nbsp;Hygienists</h3>
               </S.RecommendedWrapper>
-
               <S.LinksWrapper>
                 <S.StyledLink to="/btc/tech">
-                  <S.LinkImg src={Technology2} />
+                  <S.LinkContent>
+                    <S.LinkImg src={Technology2} />
+                    <S.LinkText>Technology</S.LinkText>
+                  </S.LinkContent>
                 </S.StyledLink> 
                 <S.StyledLink to="/btc/patient">
-                  <S.LinkImg src={PatientNeeds2} />
+                  <S.LinkContent>
+                    <S.LinkImg src={PatientNeeds2} />
+                    <S.LinkText>Patient Needs</S.LinkText>
+                  </S.LinkContent>
                 </S.StyledLink>
               </S.LinksWrapper>
             </S.ContentLeft>

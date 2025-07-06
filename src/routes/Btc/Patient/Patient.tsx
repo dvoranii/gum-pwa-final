@@ -22,11 +22,11 @@ import { getCombinationKey } from '../../../utils/patientResult';
 import { recommendations } from "../../../utils/patientRecommendations";
 import { RecommendationSlider } from "./RecommendationSlider/RecommendationSlider";
 
-import playSound from "../../../utils/playSound";
-import EmbrasureSound from "../../../assets/sounds/embrasure.mp3";
-import MotivatedSound from "../../../assets/sounds/motivated.mp3";
-import ApplianceSound from "../../../assets/sounds/appliance.mp3";
-import GoToProductSound from "../../../assets/sounds/gotoproduct.mp3";
+// import playSound from "../../../utils/playSound";
+// import EmbrasureSound from "../../../assets/sounds/embrasure.mp3";
+// import MotivatedSound from "../../../assets/sounds/motivated.mp3";
+// import ApplianceSound from "../../../assets/sounds/appliance.mp3";
+// import GoToProductSound from "../../../assets/sounds/gotoproduct.mp3";
 
 
 type ImageKey = 
@@ -102,19 +102,19 @@ export default function BtcPatient() {
       if (!hasPreviousRowSelection) return;
     }
 
-      switch(rowIndex) {
-        case 0: 
-          playSound(EmbrasureSound);
-          break;
-        case 1: 
-          playSound(MotivatedSound);
-          break;
-        case 2: 
-          playSound(ApplianceSound);
-          break;
-        default:
-          break;
-      }
+      // switch(rowIndex) {
+      //   case 0: 
+      //     playSound(EmbrasureSound);
+      //     break;
+      //   case 1: 
+      //     playSound(MotivatedSound);
+      //     break;
+      //   case 2: 
+      //     playSound(ApplianceSound);
+      //     break;
+      //   default:
+      //     break;
+      // }
 
     setActiveImages(prev => {
       const newState = { ...prev };
@@ -148,7 +148,7 @@ export default function BtcPatient() {
   const showResultButton = hasRowSelection(0) && hasRowSelection(1);
 
   const handleShowResults = () => {
-    playSound(GoToProductSound);
+    // playSound(GoToProductSound);
     setShowResults(true);
   }
 

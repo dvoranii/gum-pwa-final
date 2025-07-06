@@ -4,30 +4,6 @@ import * as S from './RecommendationSlider.styles';
 
 import { RecommendationSet } from '../../../../utils/patientRecommendations';
 
-import _1815_StringFloss_ProWeave from "../../../../assets/btc/patient/recommendations/1815-StringFloss-ProWeave.webp";
-import _1940_StringFloss_Fine from "../../../../assets/btc/patient/recommendations/1940-StringFloss-Fine.webp";
-import _2008_StringFloss_DualDefense from "../../../../assets/btc/patient/recommendations/2008-StringFloss-DualDefense.webp";
-import _2010_StringFloss_ComfortSlide from "../../../../assets/btc/patient/recommendations/2010-StringFloss-ComfortSlide.webp";
-import _2030_StringFloss_Expanding from "../../../../assets/btc/patient/recommendations/2030-StringFloss-Expanding.webp";
-import _3210_Easy_Thread from "../../../../assets/btc/patient/recommendations/3210-EasyThread.webp";
-
-import _891_Flosser_ProClean from "../../../../assets/btc/patient/recommendations/891-Flosser-ProClean.webp";
-import _828_Flosser_Twisted from "../../../../assets/btc/patient/recommendations/828-Flosser-Twisted.webp";
-import _831_Flosser_EcoClean from "../../../../assets/btc/patient/recommendations/831-Flosser-EcoClean.webp";
-import _887_Flosser_ComfortSlide from "../../../../assets/btc/patient/recommendations/887-Flosser-ComfortSlide.webp";
-import _1815_840_FlossAndThreader from "../../../../assets/btc/patient/recommendations/1815+840-ProWeave&EEZThru.webp";
-
-import _670_SoftPicks_ComfortFlex from "../../../../assets/btc/patient/recommendations/670-SoftPicks-ComfortFlex.webp";
-import _632_SoftPicks_Original from "../../../../assets/btc/patient/recommendations/632-SoftPicks-Original.webp";
-import _650_SoftPicks_Advanced from "../../../../assets/btc/patient/recommendations/650-SoftPicks-Advanced.webp";
-import _642_Sulcus from "../../../../assets/btc/patient/recommendations/642-Sulcus.webp";
-
-import _611_Proxabrush_Original from "../../../../assets/btc/patient/recommendations/611-Proxabrush-Original.webp";
-
-import _1312_Proxabrush_Microtight from "../../../../assets/btc/patient/recommendations/1312-Proxabrush-MicroTight.webp";
-import _1314_Proxabrush_Ultratight from "../../../../assets/btc/patient/recommendations/1314-Proxabrush-Ultratight.webp";
-
-
 import { 
   Proxabrush1314,
   Proxabrush1414,
@@ -40,7 +16,6 @@ import { AdvancedSoftPicks, ComfortFlexSoftPicks } from './SoftPicks';
 
 import { EcoCleanFlosser, ComfortSlideFlosser, TwistedMintFlosser, ProfessionalCleanFlosser } from './FlosserSlide';
 import { ProWeaveAndEEZThru, EasyThreadFloss, ComfortSlideFloss, DualDefenceFloss, ProWeaveFloss, DeepCleanFloss } from './StringFloss';
-// 
 
 import _1414_Proxabrush_Tight from "../../../../assets/btc/patient/recommendations/1414-Proxabrush-Tight.webp";
 import _1514_Proxabrush_Moderate from "../../../../assets/btc/patient/recommendations/1514-Proxabrush-Moderate.webp";

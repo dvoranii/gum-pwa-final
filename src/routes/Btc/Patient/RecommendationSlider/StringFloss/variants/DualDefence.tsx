@@ -8,12 +8,12 @@ export default function DualDefenceFloss() {
       subtitle="TWISTED STRING FLOSS"
       topImage={ProductImage}
       topImageWidth="90%"
-      topImageMarginBottom={true}
+      topImageMarginBottom="1.4rem"
       contentPadding="0 0 0 4rem"
       contentMarginTop='-12px'
+      containerMarginTop='-12px'
       bulletItemsFontSize="clamp(16px, 1.8vw, 1.8rem)"
       bulletMargin='8px'
-      listMarginBottom='0.4rem'
       bullets={[
         { text: "Textured, twisted floss with fresh minty flavor." },
         { text: "Removes 2x more plaque¹." },

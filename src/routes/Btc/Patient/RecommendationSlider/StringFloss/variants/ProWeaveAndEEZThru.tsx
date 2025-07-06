@@ -10,7 +10,7 @@ export default function ProWeaveAndEEZThru() {
       secondTitle="EEZ-Thru®"
       secondSubtitle="THREADERS"
       topImage={ProductImage}
-      topImageMarginBottom={true}
+      topImageMarginBottom="1.2rem"
       isCombination={true}
       combinationTitleSize="2.5rem"
       combinationSubtitleSize="1.6rem"

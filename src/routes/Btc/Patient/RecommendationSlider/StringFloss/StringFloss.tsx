@@ -13,7 +13,7 @@ type StringFlossSlideProps = {
   subtitleSize?: string;
   topImage: string;
   topImageWidth?: string;
-  topImageMarginBottom: boolean;
+  topImageMarginBottom: string;
   bullets: BulletPoint[];
   bulletMargin?: string;
   listMarginBottom?: string;

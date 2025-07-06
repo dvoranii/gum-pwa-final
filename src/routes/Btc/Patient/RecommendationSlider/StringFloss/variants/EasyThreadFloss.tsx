@@ -7,11 +7,10 @@ export default function EasyThreadFloss() {
       title="EasyThread®"
       subtitle="FLOSS"
       topImage={ProductImage}
-      topImageMarginBottom={false}
+      topImageMarginBottom="0"
       contentPadding='0 0 0 4.2rem'
       bulletItemsFontSize='clamp(16px, 1.9vw, 1.8rem)'
       contentMarginTop='-20px'
-      listMarginBottom='0.4rem'
       bullets={[
         { lines: ["Stiff threader sections provide easy",
                   "access to hard-to-clean spaces",

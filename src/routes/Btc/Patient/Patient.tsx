@@ -19,7 +19,7 @@ import ApplianceActive from "../../../assets/btc/patient/selections/appliance-ac
 import OrthodonticActive from "../../../assets/btc/patient/selections/orthodontic-active.webp";
 
 import { getCombinationKey } from '../../../utils/patientResult';
-import { recommendations } from "../../../utils/patientRecommendations";
+import { recommendations, RecommendationSet } from "../../../utils/patientRecommendations";
 import { RecommendationSlider } from "./RecommendationSlider/RecommendationSlider";
 
 // import playSound from "../../../utils/playSound";

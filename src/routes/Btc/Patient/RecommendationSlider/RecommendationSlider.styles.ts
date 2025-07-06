@@ -20,11 +20,11 @@ export const CarouselWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100%;
 
     .carousel {
         width: 100%;
-        width: 100%;
+        height: 100%;
         
         .flickity-page-dots {
             top: unset;

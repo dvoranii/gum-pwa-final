@@ -58,7 +58,6 @@ export const BulletList = styled.ul<BulletListProps>`
   text-align: left;
 
   li {
-    margin-bottom: 0.5rem;
     font-family: 'Gotham', sans-serif;
     font-size: clamp(16px, 2vw, 1.8rem);
     color: ${colors.primary};

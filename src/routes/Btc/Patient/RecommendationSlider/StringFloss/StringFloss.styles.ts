@@ -1,4 +1,3 @@
-// StringFlossSlide/StringFlossSlide.styles.ts
 import { styled } from "styled-components";
 import { colors } from "../../../../../constants/colors";
 
@@ -18,14 +17,14 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 interface TopImageWrapperProps {
-    $marginBottom?: boolean;
+    $marginBottom?: string;
 }
 
 export const TopImageWrapper = styled.div<TopImageWrapperProps>`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: ${(props) => props.$marginBottom ? "2rem" : "0"};
+  margin-bottom: ${props => props.$marginBottom || "2rem"};
 `;
 
 interface ContentWrapperProps {
@@ -87,7 +86,7 @@ export const BulletList = styled.ul<BulletListProps>`
   line-height: 1.3;
 
   li {
-    margin-bottom:${(props) => props.$listItemMarginBottom ? props.$listItemMarginBottom : "1rem" };
+    margin-bottom:${(props) => props.$listItemMarginBottom ? props.$listItemMarginBottom : "0" };
     font-family: 'Gotham', sans-serif;
     font-size: ${(props) => props.$fontSize ? props.$fontSize : "clamp(16px, 1.9vw, 1.8rem)"};
     color: ${colors.primary};
@@ -123,6 +122,5 @@ export const PlusSign = styled.span`
   font-weight: 600;
   font-size: clamp(24px, 6vw, 3.2rem);
   color: ${colors.primary};
-//   margin: 0 0.5rem;
   align-self: center;
 `;

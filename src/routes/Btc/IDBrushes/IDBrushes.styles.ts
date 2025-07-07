@@ -154,12 +154,16 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ImgWrapper1 = styled.div`
-    width: 70%;
+    width: 64%;
     display: flex;
     justify-content: center;
 
     img {
-        width: 97%;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1080px) {
+        width: 86%;
     }
 `;
 
@@ -201,6 +205,130 @@ export const ImgWrapper5 = styled.div`
     img {
         width: 50%;
     }
+`;
+
+export const DiagramSection = styled.div`
+    width: 100%;
+    max-width: 420px;
+    padding-top: 2.4rem;
+`;
+
+export const BristlesWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 4px;
+`;
+
+export const BristlesTextWrapper = styled.div`
+    flex: 1;
+    padding-top: 1.2rem;
+    
+    p {
+        font-family: "Gotham", sans-serif;
+        font-weight: 500;
+        color: #666;
+        font-style: italic;
+        font-size: 14px;
+
+        sup {
+            font-size: 8px;
+            font-weight: 300;
+            font-style: normal;
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        p {
+            font-size: 12px;
+        }
+    }
+`;
+
+export const BristlesImagesContainer = styled.div`
+    display: flex;
+    gap: 14px;
+    flex: 1;
+`;
+
+export const BristlesImgWrapper = styled.div`
+    flex: 1;
+    min-width: 128px;
+    
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media screen and (max-width: 1080px) {
+        min-width: 112px;
+    }
+`;
+
+export const BristleLabel = styled.div`
+    text-align: center;
+    margin-top: 8px;
+    font-family: "Gotham", sans-serif;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+`;
+
+export const FeatureCallouts = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+`;
+
+export const NylonCallout = styled.div`
+    border: 1px solid ${colors.primary};
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+    
+    p {
+        font-family: "Gotham", sans-serif;
+        font-size: 16px;
+        color: ${colors.primary};
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+    }
+`;
+
+export const AntibacterialCallout = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const AntibacterialBadge = styled.div`
+    background: ${colors.primary};
+    color: white;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gotham", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+    
+    span {
+        font-size: 13px;
+        display: block;
+
+        sup {
+            font-weight: 300;
+            font-size: 6px;
+        }
+    }
+    
 `;
 
 interface ListContainerProps {
@@ -248,7 +376,7 @@ export const ListContainer = styled.div<ListContainerProps>`
     }
     
     sup {
-        font-size: 10px;
+        font-size: 8px;
     }
 `;
 

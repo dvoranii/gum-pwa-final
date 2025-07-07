@@ -6,6 +6,9 @@ import { BaseCarouselSlide } from "../../../styles/shared-styles";
 import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
 import Slide1Row1Graphic1 from "../../../assets/btc/id-brushes/Slide1Row1Graphic1.webp";
+import TriangularBristlesImg from "../../../assets/btc/id-brushes/triangular-bristles-circle-img.webp";
+import ConventionalBristlesImg from "../../../assets/btc/id-brushes/conventional-bristles-circle-img.webp";
+
 import Slide1Row1Graphic2 from "../../../assets/btc/id-brushes/Slide1Row1Graphic2.webp";
 import Slide1Graphic3 from "../../../assets/btc/id-brushes/Asset8.png";
 
@@ -50,9 +53,37 @@ export default function BtcIDBrushes() {
                                 </S.ListContainer>
                             </S.TextWrapper>
                             </S.TextWrapperOuter>
-                            <S.ImgWrapper>
-                                <img src={Slide1Row1Graphic1}/>
-                            </S.ImgWrapper>
+
+                            <S.DiagramSection>
+                                <S.BristlesWrapper>
+                                    <S.BristlesTextWrapper>
+                                        <p>Triangular-shaped bristles remove up to 25% more plaque than conventional round bristles<sup>1</sup></p>
+                                    </S.BristlesTextWrapper>
+                                    <S.BristlesImagesContainer>
+                                        <S.BristlesImgWrapper>
+                                            <img src={TriangularBristlesImg} alt="Triangular Bristles" />
+                                            <S.BristleLabel>Triangular<br/> Bristles</S.BristleLabel>
+                                        </S.BristlesImgWrapper>
+                                        <S.BristlesImgWrapper>
+                                            <img src={ConventionalBristlesImg} alt="Conventional Round Bristles" />
+                                            <S.BristleLabel>Conventional<br/> Round Bristles</S.BristleLabel>
+                                        </S.BristlesImgWrapper>
+                                    </S.BristlesImagesContainer>
+                                </S.BristlesWrapper>
+                                
+                                <S.FeatureCallouts>
+                                    <S.NylonCallout>
+                                        <p>Nylon coated wire helps<br/> prevent galvanic shock</p>
+                                    </S.NylonCallout>
+                                    <S.AntibacterialCallout>
+                                        <S.AntibacterialBadge>
+                                            <span>Antibacterial</span>
+                                            <span>Bristles<sup>2</sup></span>
+                                        </S.AntibacterialBadge>
+                                    </S.AntibacterialCallout>
+                                </S.FeatureCallouts>
+                            </S.DiagramSection>
+
                         </S.Row1WrapperInner>
                             <S.ImgWrapper1>
                                 <img src={Slide1Row1Graphic2}/>

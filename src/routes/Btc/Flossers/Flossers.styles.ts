@@ -103,6 +103,10 @@ export const ListContainer = styled.div`
          }
    }
 
+   @media screen and (max-width: 1080px) {
+    margin-top: 4px;
+   }
+
 `;
 
 interface InfoGridProps {

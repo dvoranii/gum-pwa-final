@@ -107,7 +107,7 @@ export default function BtcFlossers(){
             {/* Slide 2 */}
 
              <BaseCarouselSlide>
-                <S.SlideWrapper>
+                <S.SlideWrapper $marginLeft="24px">
                     <S.SlideColumn1>
                         <S.TitleListWrapper $paddingTop="0">
                             <h4><span>Professional</span> <span>Clean Plus</span><br/> <span>Flosser Picks</span> <span>Mint</span></h4>

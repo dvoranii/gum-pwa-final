@@ -12,7 +12,7 @@ export const SecondColumnWrapper = styled.div`
 
 export const TopImageWrapper = styled.div`
   img {
-    width: 78%;
+    width: 75%;
     height: auto;
     margin-top:2rem;
   }
@@ -48,7 +48,7 @@ export const TextContent = styled.div`
 export const BottomImageWrapper = styled.div`
   margin-bottom: 0.2rem;
   img {
-    width: 30%;
+    width: 27%;
     height: auto;
   }
 `;

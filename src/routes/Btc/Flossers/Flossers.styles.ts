@@ -5,11 +5,18 @@ export const FlossersContainer = styled.div`
    position: relative;
 `;
 
-export const SlideWrapper = styled.div`
+
+interface SlideWrapperProps {
+    $gap?: string;
+    $marginLeft?: string;
+}
+
+export const SlideWrapper = styled.div<SlideWrapperProps>`
     display: flex;
-    gap: 2.4rem;
+    gap: ${props => props.$gap || "2.4rem"};
     width: 90%;
     height: 100%;
+    ${props => props.$marginLeft && `margin-left: ${props.$marginLeft}`};
 `;
 
 export const SlideColumn1 = styled.div`

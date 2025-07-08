@@ -12,9 +12,6 @@ import {
   KidsSlide7, 
   KidsSlide8 } from "../components/ProductSlide";
 
-import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
-
-
 export default function ToothbrushKids() {
 
   return (
@@ -52,7 +49,6 @@ export default function ToothbrushKids() {
             <KidsSlide8/>
           </S.CarouselSlide>
         </FlickityCarousel>
-      {/* <ShopifyIcon right="10px"/> */}
     </S.KidsWrapperOuter>
   );
 }

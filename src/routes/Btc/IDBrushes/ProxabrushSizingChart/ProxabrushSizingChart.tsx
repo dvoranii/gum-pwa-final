@@ -12,28 +12,28 @@ import ExtraWideDiagram from "../../../../assets/btc/id-brushes/extra-wide-diagr
 const ProxabrushSizingChart = () => {
   const brushSizes = [
     {
-      color: '#8B9FD4',
+      color: '#878ec7',
       title: 'Micro Tight',
       boxCode: '—',
       bagCode: '1312B',
       diagramImage: MicroTightDiagram
     },
     {
-      color: '#E53E3E',
+      color: '#ed1c24',
       title: 'Ultra Tight',
       boxCode: '1314P',
       bagCode: '1314B',
       diagramImage: UltraTightDiagram
     },
     {
-      color: '#38A169',
+      color: '#68bd45',
       title: 'Tight',
       boxCode: '1414P',
       bagCode: '1414B',
       diagramImage: TightDiagram
     },
     {
-      color: '#F6E05E',
+      color: '#ffd204',
       title: 'Moderate',
       boxCode: '1514P',
       bagCode: '1514B',
@@ -41,14 +41,14 @@ const ProxabrushSizingChart = () => {
       diagramImage: ModerateDiagram
     },
     {
-      color: '#4299E1',
+      color: '#00abd2',
       title: 'Wide',
       boxCode: '1614P',
       bagCode: '1614B',
       diagramImage: WideDiagram
     },
     {
-      color: '#A0AEC0',
+      color: '#9a9795',
       title: 'Extra Wide',
       boxCode: '—',
       bagCode: '1618B',
@@ -69,7 +69,6 @@ const ProxabrushSizingChart = () => {
         </S.SizingImageRow>
 
         <S.SizingTableHeader>
-          {/* Empty first column header */}
           <S.SizingHeaderCellEmpty />
           {brushSizes.map((size, index) => (
             <S.SizingHeaderCell key={index}>

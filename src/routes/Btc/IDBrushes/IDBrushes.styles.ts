@@ -136,7 +136,7 @@ export const TextAndImgWrapper = styled.div`
 export const ImgInnerWrapper = styled.div`
     img{
         width: 90%;
-        margin-top: 0.8rem;
+        margin-top: 0.4rem;
     }
 `;
 

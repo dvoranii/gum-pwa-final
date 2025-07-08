@@ -340,6 +340,7 @@ export const NylonCallout = styled.div<NylonCalloutProps>`
 
     @media screen and (max-width: 1080px) {
         width: 97%;
+        margin-right: 0;
     }
 `;
 

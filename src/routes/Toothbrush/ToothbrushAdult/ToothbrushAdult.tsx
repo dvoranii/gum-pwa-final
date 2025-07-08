@@ -4,9 +4,6 @@ import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarou
 
 import { AdultSlide1, AdultSlide2, AdultSlide3, AdultSlide4 } from "../components/ProductSlide";
 
-
-import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
-
 export default function ToothbrushAdult() {
 
   return (

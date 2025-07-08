@@ -38,7 +38,7 @@ export const Description = styled.ul`
   padding-right: 70px;
 
   sup {
-    font-size: 16px;
+    font-size: 10px;
   }
 
     li:nth-child(2) {

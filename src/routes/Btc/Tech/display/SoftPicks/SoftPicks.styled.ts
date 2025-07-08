@@ -41,6 +41,10 @@ export const Description = styled.ul`
   letter-spacing: -1px;
   padding-right: 64px;
 
+  sup {
+    font-size: 10px;
+  }
+
 `;
 
 export const DiagramSection = styled.div`

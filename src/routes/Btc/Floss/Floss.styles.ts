@@ -130,7 +130,7 @@ export const ListContainer = styled.div<ListContainerProps>`
             content: "•";
             position: absolute;
             left: 0;
-            font-size: 18px; 
+            font-size: 14px; 
             color: ${colors.black};
             vertical-align: middle;
             line-height: 1.2; 
@@ -142,14 +142,8 @@ export const ListContainer = styled.div<ListContainerProps>`
     }
     
     sup {
-        font-size: 12px;
+        font-size: 8px;
     }
-
-    // @media screen and (max-width: 1080px) {
-    //     ul {
-    //         font-size: 14px;
-    //     }
-    // }
 
 `;
 

@@ -93,13 +93,29 @@ export const ListContainer = styled.div`
         color: ${colors.black};
         line-height: 1.2;
         margin-inline-start: 16px;
+        list-style: none;
+
+        li {
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 14px; 
+            color: ${colors.black};
+            vertical-align: middle;
+            line-height: 1.2; 
+        }
 
         span {
             font-weight: 500;
         }
 
          sup {
-            font-size: 12px;
+            font-size: 8px;
          }
    }
 

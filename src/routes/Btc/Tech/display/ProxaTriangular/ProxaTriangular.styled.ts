@@ -41,7 +41,7 @@ export const Description = styled.ul`
   padding-right: 12px;
 
   sup {
-    font-size: 14px;
+    font-size: 10px;
   }
 
 `;

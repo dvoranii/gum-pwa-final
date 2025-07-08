@@ -145,7 +145,7 @@ export const TextWrapper = styled.div<TextWrapperProps>`
 
     sup { 
         font-weight: 300;
-        font-size: 0.5em; 
+        font-size: 8px; 
         vertical-align: super; 
     }
 
@@ -345,7 +345,6 @@ export const SpecValue = styled.span`
 `;
 
 export const ShopifyIconWrapper = styled.div`
-//   margin-top: 8px;
 `;
 
 

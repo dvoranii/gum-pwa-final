@@ -97,12 +97,6 @@ export const TextWrapper = styled.div`
         font-weight: 500;
         color: ${colors.black};
     }
-
-    @media screen and (min-width: 2300px) {
-        p {
-           font-size: clamp(1.2rem, 2vw, 1.8rem);
-        }
-    }
 `;
 
 export const TextWrapper2 = styled.div`
@@ -114,11 +108,6 @@ export const TextWrapper2 = styled.div`
 
     }
 
-    @media screen and (min-width: 2300px) {
-        p {
-           font-size: clamp(1.2rem, 2vw, 1.8rem);
-        }
-    }
 `;
 
 
@@ -129,9 +118,6 @@ export const TextWrapperOuter = styled.div`
 export const TextAndImgWrapper = styled.div`
     flex: 2.5;
 
-    @media screen and (min-width: 2300px) {
-        flex: 3;
-    }
 `;
 export const ImgInnerWrapper = styled.div`
     img{
@@ -173,14 +159,24 @@ export const ImgWrapper1 = styled.div`
 `;
 
 export const ImgWrapper2 = styled.div`
-    width: 100%;
-    display: flex;
-    padding-top: 0.4rem;
-    position: relative;
+  width: 66%;
+  max-width: 800px;
+  display: flex;
+  padding-top: 0.4rem;
+  position: relative;
+  margin-left: 74px;
 
-     > img {
-        width: 86%;
-    }
+  > img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const SizingDiagramContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 

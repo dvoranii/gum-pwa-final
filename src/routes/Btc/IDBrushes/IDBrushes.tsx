@@ -4,17 +4,17 @@ import FlickityCarousel from "../../../components/FlickityCarousel/FlickityCarou
 import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
+import ProxabrushSizingChart from "./ProxabrushSizingChart/ProxabrushSizingChart";
 
 import TriangularBristlesImg from "../../../assets/btc/id-brushes/triangular-bristles-circle-img.webp";
 import ConventionalBristlesImg from "../../../assets/btc/id-brushes/conventional-bristles-circle-img.webp";
 
 import Slide1Row1Graphic2 from "../../../assets/btc/id-brushes/Slide1Row1Graphic2.webp";
-import Slide1Graphic3 from "../../../assets/btc/id-brushes/Asset8.png";
+// import Slide1Graphic3 from "../../../assets/btc/id-brushes/Asset8.png";
+import Slide1Graphic3 from "../../../assets/btc/id-brushes/ProxabrushSizingDiagram.webp";
 
-import Slide1Row1Graphic from "../../../assets/btc/id-brushes/Slide2Row1Graphic.webp";
 import Slide2Row2Graphic1 from "../../../assets/btc/id-brushes/Slide2Row2Graphic1.webp";
 import AngleCleaners from "../../../assets/btc/id-brushes/angle-cleaners.webp";
-import Slide2Row2Graphic2 from "../../../assets/btc/id-brushes/Slide1Row2Graphic2.webp";
 
 import Slide3Graphic1 from "../../../assets/btc/id-brushes/Slide3Graphic1.webp";
 import Slide3Graphic2 from "../../../assets/btc/id-brushes/Slide3Graphic2.webp";
@@ -89,10 +89,9 @@ export default function BtcIDBrushes() {
                                 <img src={Slide1Row1Graphic2}/>
                             </S.ImgWrapper1>
                         </S.Row1WrapperOuter>
-                        <S.ImgWrapper2>
-                            <img src={Slide1Graphic3}/>
-                            <ShopifyIcon href="https://www.shopify.com/ca" absolute width="30px" bottom="75%"/>
-                        </S.ImgWrapper2>
+                          <S.SizingDiagramContainer>
+                            <ProxabrushSizingChart />
+                        </S.SizingDiagramContainer>
                     </S.SlideWrapperInner>
                 </BaseCarouselSlide>
 

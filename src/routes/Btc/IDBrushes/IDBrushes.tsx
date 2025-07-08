@@ -5,7 +5,6 @@ import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
-import Slide1Row1Graphic1 from "../../../assets/btc/id-brushes/Slide1Row1Graphic1.webp";
 import TriangularBristlesImg from "../../../assets/btc/id-brushes/triangular-bristles-circle-img.webp";
 import ConventionalBristlesImg from "../../../assets/btc/id-brushes/conventional-bristles-circle-img.webp";
 
@@ -14,6 +13,7 @@ import Slide1Graphic3 from "../../../assets/btc/id-brushes/Asset8.png";
 
 import Slide1Row1Graphic from "../../../assets/btc/id-brushes/Slide2Row1Graphic.webp";
 import Slide2Row2Graphic1 from "../../../assets/btc/id-brushes/Slide2Row2Graphic1.webp";
+import AngleCleaners from "../../../assets/btc/id-brushes/angle-cleaners.webp";
 import Slide2Row2Graphic2 from "../../../assets/btc/id-brushes/Slide1Row2Graphic2.webp";
 
 import Slide3Graphic1 from "../../../assets/btc/id-brushes/Slide3Graphic1.webp";
@@ -72,7 +72,7 @@ export default function BtcIDBrushes() {
                                 </S.BristlesWrapper>
                                 
                                 <S.FeatureCallouts>
-                                    <S.NylonCallout>
+                                    <S.NylonCallout $marginTop="12px">
                                         <p>Nylon coated wire helps<br/> prevent galvanic shock</p>
                                     </S.NylonCallout>
                                     <S.AntibacterialCallout>
@@ -104,18 +104,30 @@ export default function BtcIDBrushes() {
                             <S.Row1WrapperInner2 $paddingBottom="0.4rem">
                                 <S.TextWrapper>
                                     <h2>Proxabrush® Angle Cleaners</h2>
-                                    <S.ListContainer $paddingBottom="0.4rem">
+                                    <S.ListContainer $paddingBottom="0">
                                         <ul>
                                             <li>Trianglular-shaped bristles remove 25% more plaque than conventional round bristles<sup>1</sup></li>
                                             <li>Angled neck helps patients reach hard-to-clean interdental surfaces</li>
                                             <li>Small cylindrical shape (3012) fits in spaces as small as 0.9mm, tapered shape (3014) fits in spaces as small as 1.2mm</li>
                                             <li>Comes with carrying case</li>
                                         </ul>      
-                                </S.ListContainer>
+                                    </S.ListContainer>
                                 </S.TextWrapper>
-                                <S.ImgWrapper3>
-                                    <img src={Slide1Row1Graphic}/>
-                                </S.ImgWrapper3>
+                                <S.BristlesAndNylonWrapper $flex="0.9">
+                                    <S.NylonCallout $padding="12px 18px" $fontSize="13px" $marginRight="36px" $width="87%">
+                                        <p>Nylon coated wire helps prevent galvanic shock</p>
+                                    </S.NylonCallout>
+                                    <S.BristlesAndAntiBacterialWrapper>
+                                            <img src={AngleCleaners}/>
+                                    <S.AntibacterialCallout>
+                                        <S.AntibacterialBadge>
+                                            <span>Antibacterial</span>
+                                            <span>Bristles<sup>2</sup></span>
+                                        </S.AntibacterialBadge>
+                                    </S.AntibacterialCallout>
+                                    </S.BristlesAndAntiBacterialWrapper>
+                                    
+                                </S.BristlesAndNylonWrapper>
                             </S.Row1WrapperInner2>
                             <S.InfoGrid>
                             <S.InfoGridRow>                            
@@ -152,12 +164,23 @@ export default function BtcIDBrushes() {
                                 </S.ListContainer>
                                 </S.TextWrapper2>
                                 <S.ImgInnerWrapper>
+                                    <S.NylonCallout $padding="12px 18px" $fontSize="14px" $width="60%">
+                                        <p>Nylon coated wire helps prevent galvanic shock</p>
+                                    </S.NylonCallout>
                                     <img src={Slide2Row2Graphic1}/>
                                 </S.ImgInnerWrapper>
                                 </S.TextAndImgWrapper>
-                                <S.ImgWrapper4>
-                                    <img src={Slide2Row2Graphic2}/>
-                                </S.ImgWrapper4>
+                                <S.BristleAndAntibacterialWrapper>
+                                    <S.BristlesImgWrapper2>
+                                            <img src={TriangularBristlesImg} alt="Triangular Bristles" />
+                                        </S.BristlesImgWrapper2>
+                                     <S.AntibacterialCallout>
+                                        <S.AntibacterialBadge>
+                                            <span>Antibacterial</span>
+                                            <span>Bristles<sup>2</sup></span>
+                                        </S.AntibacterialBadge>
+                                    </S.AntibacterialCallout>
+                                </S.BristleAndAntibacterialWrapper>
                             </S.Row1WrapperInner2>
                             <S.InfoGrid $gridColumns="2fr 1fr">
                             <S.InfoGridRow>                            
@@ -215,6 +238,12 @@ export default function BtcIDBrushes() {
                         </S.Slide3ImgAndTextWrapper>
                         <S.ImgWrapper5>
                             <img src={Slide3Graphic2}/>
+                             <S.AntibacterialCallout>
+                                <S.AntibacterialBadge $width="110px" $fontSize="14px">
+                                    <span>Antibacterial</span>
+                                    <span>Bristles<sup>2</sup></span>
+                                </S.AntibacterialBadge>
+                            </S.AntibacterialCallout>
                         </S.ImgWrapper5>
 
                     </S.Slide3WrapperInner>

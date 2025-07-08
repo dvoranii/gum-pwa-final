@@ -25,6 +25,7 @@ export const IDBrushesContainer = styled.div`
 export const SlideRow1 = styled.div`
     display: flex;
     flex-direction: column;
+    padding-top: 0.5rem;
 `;
 
 export const SlideRow2 = styled.div`
@@ -135,13 +136,16 @@ export const TextAndImgWrapper = styled.div`
 export const ImgInnerWrapper = styled.div`
     img{
         width: 90%;
+        margin-top: 0.8rem;
     }
+`;
 
-    @media screen and (min-width: 2300px) {
-        img {
-            width: 100%;
-        }
-    }
+export const BristleAndAntibacterialWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 4px;
 `;
 
 export const ImgWrapper = styled.div`
@@ -160,10 +164,11 @@ export const ImgWrapper1 = styled.div`
 
     img {
         width: 100%;
+        object-fit: contain;
     }
 
     @media screen and (max-width: 1080px) {
-        width: 86%;
+        width: 70%;
     }
 `;
 
@@ -178,23 +183,38 @@ export const ImgWrapper2 = styled.div`
     }
 `;
 
-export const ImgWrapper3 = styled.div`
-    flex: 1;
-    img {
-        width: 85%;
-    }
 
+export const BristlesAndAntiBacterialWrapper = styled.div`
+    display: flex;
+
+    img {
+        width: 68%;
+        padding: 4px;
+        object-fit: contain;
+    }
 `;
 
-export const ImgWrapper4 = styled.div`
-    flex: 1;
+interface BristlesAndNylonWrapperProps {
+    $flex?:string;
+}
+
+export const BristlesAndNylonWrapper = styled.div<BristlesAndNylonWrapperProps>`
+    flex: ${props => props.$flex || "1"};
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    gap: 4px;
+    padding-right: 2.4rem;
+`;
+
+
+export const BristlesImgWrapper2 = styled.div`
+    display: flex;
     justify-content: center;
 
-     img {
-         width: 40%;
-     }
+    img {
+        max-width: 110px;
+    }
 `;
 
 export const ImgWrapper5 = styled.div`
@@ -202,8 +222,13 @@ export const ImgWrapper5 = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
     img {
         width: 50%;
+        max-width: 110px;
+        object-fit: contain;
     }
 `;
 
@@ -211,12 +236,16 @@ export const DiagramSection = styled.div`
     width: 100%;
     max-width: 420px;
     padding-top: 2.4rem;
+    padding-right: 3.2rem;
+
+    @media screen and (max-width: 1080px) {
+        padding-top: 1.2rem;
+    }
 `;
 
 export const BristlesWrapper = styled.div`
     display: flex;
     width: 100%;
-    gap: 4px;
 `;
 
 export const BristlesTextWrapper = styled.div`
@@ -226,9 +255,9 @@ export const BristlesTextWrapper = styled.div`
     p {
         font-family: "Gotham", sans-serif;
         font-weight: 500;
-        color: #666;
+        color: #777;
         font-style: italic;
-        font-size: 14px;
+        font-size: 12px;
 
         sup {
             font-size: 8px;
@@ -246,16 +275,19 @@ export const BristlesTextWrapper = styled.div`
 
 export const BristlesImagesContainer = styled.div`
     display: flex;
-    gap: 14px;
     flex: 1;
+    margin-right: -12px;
 `;
 
 export const BristlesImgWrapper = styled.div`
     flex: 1;
     min-width: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     img {
-        width: 100%;
+        width: 90%;
         height: auto;
         display: block;
     }
@@ -267,9 +299,9 @@ export const BristlesImgWrapper = styled.div`
 
 export const BristleLabel = styled.div`
     text-align: center;
-    margin-top: 8px;
+    margin-top: 4px;
     font-family: "Gotham", sans-serif;
-    font-size: 14px;
+    font-size: 12.5px;
     color: #666;
     font-style: italic;
 `;
@@ -277,24 +309,41 @@ export const BristleLabel = styled.div`
 export const FeatureCallouts = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    margin-top: 14px;
     gap: 20px;
 `;
 
-export const NylonCallout = styled.div`
+
+interface NylonCalloutProps {
+    $padding?:string;
+    $fontSize?:string;
+    $marginRight?: string;
+    $marginTop?: string;
+    $width?: string;
+}
+
+export const NylonCallout = styled.div<NylonCalloutProps>`
     border: 1px solid ${colors.primary};
     border-radius: 30px;
-    padding: 20px;
+    padding: ${props => props.$padding || "20px 12px"};
     flex: 1;
+    width: ${props => props.$width || "90%"};
+    ${props => props.$marginRight && `margin-right: ${props.$marginRight}`};
+    ${props => props.$marginTop && `margin-top: ${props.$marginTop}`};
     
     p {
         font-family: "Gotham", sans-serif;
-        font-size: 16px;
+        font-size: ${props => props.$fontSize || "14px"};
         color: ${colors.primary};
         margin: 0;
         text-align: center;
         font-weight: 300;
+        line-height: 1.3;
+    }
+
+    @media screen and (max-width: 1080px) {
+        width: 97%;
     }
 `;
 
@@ -304,12 +353,17 @@ export const AntibacterialCallout = styled.div`
     align-items: center;
 `;
 
-export const AntibacterialBadge = styled.div`
+
+interface AntibacterialBadgeProps {
+    $width?: string;
+    $fontSize?: string;
+}
+export const AntibacterialBadge = styled.div<AntibacterialBadgeProps>`
     background: ${colors.primary};
     color: white;
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width:${props => props.$width || '100px'};
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,10 +372,15 @@ export const AntibacterialBadge = styled.div`
     font-weight: 500;
     text-align: center;
     line-height: 1.2;
+    aspect-ratio: 1;
     
+    span:first-of-type {
+        margin-top: 8px;
+    }
     span {
-        font-size: 13px;
+        font-size: ${props => props.$fontSize || "12px"};
         display: block;
+        letter-spacing: 0.4px;
 
         sup {
             font-weight: 300;
@@ -336,7 +395,6 @@ interface ListContainerProps {
 }
 
 export const ListContainer = styled.div<ListContainerProps>`
-    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -345,33 +403,26 @@ export const ListContainer = styled.div<ListContainerProps>`
         font-family: 'Gotham', sans-serif;
         font-size:clamp(0.8rem, 0.9vw, 1.4rem);
         color: ${colors.black};
-        padding-bottom: 1.2rem;
+        padding-bottom: ${props => props.$paddingBottom || "1.2rem"};
         list-style: none;
-        line-height: 1.2;
+        line-height: 1.3;
 
         li {
             position: relative;
-            padding-left: 1.2rem;
+            padding-left: 0.8rem;
         }
 
         li::before {
             content: "•";
             position: absolute;
             left: 0;
-            font-size: 18px; 
             color: ${colors.black};
             vertical-align: middle;
-            line-height: 1.2; 
+            line-height: 1.3; 
         }
 
         span {
             font-weight: 500;
-        }
-    }
-
-    @media screen and (max-width: 1080px) {
-        ul {
-            padding-bottom: ${(props) => props.$paddingBottom}
         }
     }
     

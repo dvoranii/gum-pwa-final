@@ -149,7 +149,7 @@ export const ImgWrapper1 = styled.div`
     justify-content: center;
 
     img {
-        width: 93%;
+        width: 90%;
         object-fit: contain;
     }
 
@@ -231,7 +231,7 @@ export const ImgWrapper5 = styled.div`
 export const DiagramSection = styled.div`
     width: 100%;
     max-width: 420px;
-    padding-top: 2.4rem;
+    padding-top: 2rem;
     padding-right: 3.2rem;
 
     @media screen and (max-width: 1080px) {

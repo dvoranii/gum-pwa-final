@@ -50,6 +50,11 @@ export const InfoGridRow = styled.div`
     display: contents;
     line-height: 0.5;
 
+    
+    @media screen and (max-width: 1080px) {
+        line-height: 0.6;        
+    }
+
 `;
 
 export const InfoGridRow2 = styled.div`
@@ -425,6 +430,8 @@ export const ListContainer = styled.div<ListContainerProps>`
     
     sup {
         font-size: 8px;
+    }
+
     }
 `;
 

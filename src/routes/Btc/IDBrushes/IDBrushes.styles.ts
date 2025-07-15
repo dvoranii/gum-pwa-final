@@ -48,7 +48,7 @@ export const Column = styled.div<ColumnProps>`
 
 export const InfoGridRow = styled.div`
     display: contents;
-    line-height: 0.6;
+    line-height: 0.5;
 
 `;
 
@@ -149,7 +149,7 @@ export const ImgWrapper1 = styled.div`
     justify-content: center;
 
     img {
-        width: 100%;
+        width: 93%;
         object-fit: contain;
     }
 
@@ -184,7 +184,7 @@ export const BristlesAndAntiBacterialWrapper = styled.div`
     display: flex;
 
     img {
-        width: 68%;
+        width: 67%;
         padding: 4px;
         object-fit: contain;
     }
@@ -402,7 +402,7 @@ export const ListContainer = styled.div<ListContainerProps>`
         color: ${colors.black};
         padding-bottom: ${props => props.$paddingBottom || "1.2rem"};
         list-style: none;
-        line-height: 1.3;
+        line-height: 1.2;
 
         li {
             position: relative;

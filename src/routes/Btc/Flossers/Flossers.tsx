@@ -53,11 +53,13 @@ export default function BtcFlossers(){
                         </S.ListContainer>
                         </S.TitleListWrapper>
                         <S.TitleListWrapper>
-                        <h4><span>Comfort</span> <span>Care</span> <span>Flossers</span> <span>Mint</span> with Vitamin E & Fluoride</h4>
+                        <h4><span>Advanced</span> <span>Care</span> <span>Flossers</span> <span>Mint</span></h4>
                         <S.ListContainer>
                             <ul>
-                                <li>Durable floss coated with Vitamin E & Fluoride is designed to resist shredding or breaking<sup>5</sup></li>
-                                <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>                  
+                                <li>Durable floss coated with Vitamin E & Fluoride.</li>
+                                <li>Designed to resist shredding or breaking<sup>12</sup>.</li>
+                                <li>Lightweight flexible grip uses 20% less plastic<sup>13</sup>.</li>                  
+                                <li>20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers.</li>                  
                             </ul>  
                         </S.ListContainer>
                         </S.TitleListWrapper>

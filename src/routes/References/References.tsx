@@ -18,7 +18,7 @@ export default function References(){
         <InnerNav navItems={referencesNavItems}/>
         <S.ReferencesContainer>
             {isHomePage ? (
-                <>
+                <S.RefContainer>
                     <p><b>1. Sanz, Mariano, et al.</b> "Periodontitis and Cardiovascular Diseases: Consensus Report." <em>Journal of Clinical Periodontology</em>, vol. 47, no. 3, 2020, pp. 268–88, doi:10.1111/jcpe.13189.</p>
                     
                     <p><b>2. Monsarrat, Paul, et al.</b> "Clinical Research Activity in Periodontal Medicine: A Systematic Mapping of Trial Registers." <em>Journal of Clinical Periodontology</em>, vol. 43, no. 5, May 2016, pp. 390–400, doi:10.1111/jcpe.12534.</p>
@@ -66,7 +66,7 @@ export default function References(){
                     <p>22. DOF-0018</p>
                     
                     <p>23. DOF-0065</p>
-                </>
+                </S.RefContainer>
             ) : (
                 <Outlet />
             )}

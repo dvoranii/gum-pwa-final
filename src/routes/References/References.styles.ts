@@ -18,3 +18,8 @@ export const ReferencesContainer = styled.div`
         }
     }
 `;
+
+export const RefContainer = styled.div`
+  height: 100%;
+  padding-top: 1.2rem;
+`;

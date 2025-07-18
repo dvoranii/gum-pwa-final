@@ -14,12 +14,12 @@ export default function Proxabrush1614() {
           lines: [
             "Triangular-shaped bristles",
             "remove 25% more plaque",
-            "than conventional round bristles⁸."
+            <>than conventional round bristles<sup>8</sup>.</>
           ]
         },
         { text: "Bendable neck." },
         { text: "Flexible rubberized handle." },
-        { text: "Antibacterial bristles⁹." }
+        { text: <>Antibacterial bristles<sup>9</sup>.</> }
       ]}
     />
   );

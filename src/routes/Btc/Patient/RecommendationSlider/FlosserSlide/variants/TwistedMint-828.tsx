@@ -17,7 +17,7 @@ export default function TwistedMintFlosser() {
             "Lightweight flexible grip",
             <>uses 20% less plastic<sup>13</sup>.</>
         ]},
-        {text: <>20% LESS PLASTIC <sup>13</sup> mint flavour on all flossers</>}
+        {text: <>20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers.</>}
       ]}
     />
   );

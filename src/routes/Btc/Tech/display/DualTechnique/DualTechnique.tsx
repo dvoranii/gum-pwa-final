@@ -16,7 +16,7 @@ export default function DualTechnique(){
                 </S.MainTitle>
                 <S.Description>
                     <li>Dual ends specifically designed to reach front and back teeth.</li>
-                    <li>Twisted mint floss on the angled side removes 2x more plaque<sup>2</sup> and covers 30% more surface area<sup>1</sup></li>
+                    <li>Twisted mint floss on the angled side removes 2x more plaque<sup>10</sup> and covers 30% more surface area<sup>11</sup>.</li>
                 </S.Description>
                     <S.ImgWrapper>
                         <img src={MintFlavour}/>

@@ -51,7 +51,7 @@ export const Description = styled.ul`
   padding-right: 80px;
 
   sup {
-    font-size: 10px;
+    font-size: 12px;
   }
 
 

@@ -187,7 +187,7 @@ export default function BtcFloss() {
                     <S.ColumnTitle>Fine Dental Floss</S.ColumnTitle> 
                         <S.ListContainer $flexGrow="0">
                             <ul>
-                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline</li>                  
+                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline<sup>13</sup>.</li>                  
                             </ul>  
 
                         <S.InfoGrid $marginTop="0" $paddingTop="0.4rem">

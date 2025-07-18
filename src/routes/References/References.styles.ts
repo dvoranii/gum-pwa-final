@@ -17,10 +17,4 @@ export const ReferencesContainer = styled.div`
             font-size: 24px;
         }
     }
-
-    @media screen and (min-width: 2300px) {
-      p {
-        font-size: clamp(18px, 1.8vw, 2.4rem);
-      }  
-    }
 `;

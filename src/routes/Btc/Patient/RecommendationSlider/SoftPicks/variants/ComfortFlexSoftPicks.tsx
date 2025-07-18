@@ -13,10 +13,10 @@ export default function ComfortFlexSoftPicks() {
       bottomImage={BottomImage}
       bottomImageMargin='1.4rem'
       bullets={[
-        { text: "Convenient, comfortable, interdental cleaning." },
         { 
           text: "Soft flexible tapered bristles designed to fit better in interproximal spaces."
-        }
+        },
+        { text: "Convenient, comfortable, interdental cleaning." }
       ]}
     />
   );

@@ -22,7 +22,7 @@ export default function ProWeaveFloss() {
         },
         { lines: [
             "Interlacing process produces strong, smooth",
-            "floss engineered not to shred, break or sag²."
+            <>floss engineered not to shred, break or sag<sup>13</sup>.</>
           ] 
         }
       ]}

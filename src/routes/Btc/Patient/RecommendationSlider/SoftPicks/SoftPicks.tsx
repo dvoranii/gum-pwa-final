@@ -1,9 +1,5 @@
 import * as S from "./SoftPicks.styles";
-
-type BulletPoint = {
-  text?: string;
-  lines?: string[];
-};
+import { BulletPoint } from "../../../../../types/BulletPoint";
 
 type ResponsiveValue = {
   default: string;

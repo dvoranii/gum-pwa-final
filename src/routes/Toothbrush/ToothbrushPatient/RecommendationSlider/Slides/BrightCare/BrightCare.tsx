@@ -1,6 +1,5 @@
 import * as S from "../ToothbrushSlide.styles";
 import ToothbrushImage from '../../../../../../assets/toothbrush/4594-BrightCare.webp';
-// import ContentImage from '../../../../../../assets/toothbrush/patient/recommendations/DeepClean/591-CompleteCare-BottomImg.webp';
 
 export default function BrightCareSlide() {
   return (
@@ -20,13 +19,13 @@ export default function BrightCareSlide() {
 
           <S.BulletList $letterSpace="-0.8px" $paddingRight="2.8rem;" $lineHeight="1.2">
             <li>
-              <span>Brightline® Grip Bristles show<br/> a 28% improvement in tooth whiteness after use<sup>6</sup>.</span>
+              <span>Brightline® Grip Bristles show<br/> a 28% improvement in tooth whiteness after use<sup>21</sup>.</span>
             </li>
             <li>
               <span>Raised Super Tip® bristles at the tip provide access to posterior regions and clean hard-to-reach surfacs.</span>
             </li>
             <li>
-              <span>Dome Trim® bristles are clinically designed to clean below<br/> the gumline<sup>1,2</sup>.</span>
+              <span>Dome Trim® bristles are clinically designed to clean below<br/> the gumline<sup>18,19</sup>.</span>
             </li>
           </S.BulletList>
         </S.TextAndImgWrapper>

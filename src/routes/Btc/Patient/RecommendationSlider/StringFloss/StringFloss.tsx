@@ -1,10 +1,5 @@
-// StringFlossSlide/StringFlossSlide.tsx
 import * as S from "./StringFloss.styles";
-
-type BulletPoint = {
-  text?: string;
-  lines?: string[];
-};
+import { BulletPoint } from "../../../../../types/BulletPoint";
 
 type StringFlossSlideProps = {
   title: string;

@@ -1,9 +1,5 @@
 import * as S from "./FlosserSlide.styles";
-
-type BulletPoint = {
-  text?: string;
-  lines?: string[];
-};
+import { BulletPoint } from "../../../../../types/BulletPoint";
 
 type FlosserSlideProps = {
   title: string;

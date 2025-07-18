@@ -14,6 +14,7 @@ export default function ProxaTriangular() {
         </S.MainTitle>
         <S.Description>
         <li>With a longer curved handle for improved maneuverability.</li>
+        <li>Clinically proven to remove 22% more plaque than brushing alone<sup>23</sup>.</li>
         </S.Description>
         
         <S.DiagramSection>

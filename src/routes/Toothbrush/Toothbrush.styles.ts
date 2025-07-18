@@ -84,6 +84,10 @@ export const RecommendedWrapper = styled.div`
     font-size: clamp(28px, 1.6vw, 3.2rem);
     margin-top: 1.2rem;
     margin-left: 1.2rem;
+
+    sup {
+      font-size: 12px;
+    }
   }
 `;
 

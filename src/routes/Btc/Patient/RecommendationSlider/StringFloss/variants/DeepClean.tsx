@@ -17,7 +17,7 @@ export default function DeepCleanFloss() {
       bulletMargin='8px'
       bullets={[
         { text: "Thin and easy to insert between tight contacts." },
-        { text: "Floss expands to remove 2X more plaque." },
+        { text: <>Floss expands to remove 2X more plaque<sup>10</sup>.</> },
         { text: "Multiple filaments and texturized fibers." }
       ]}
     />

@@ -97,6 +97,10 @@ export const BulletList = styled.ul<BulletListProps>`
       width: 100%;
       color: #666;
     }
+
+    sup {
+      font-size: 12px;
+    }
   }
 `;
 

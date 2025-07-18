@@ -16,8 +16,8 @@ export default function DualDefenceFloss() {
       bulletMargin='8px'
       bullets={[
         { text: "Textured, twisted floss with fresh minty flavor." },
-        { text: "Removes 2x more plaque¹." },
-        { text: "Covers 30% more surface area²." }
+        { text: <>Removes 2x more plaque<sup>10</sup>.</> },
+        { text: <>Covers 30% more surface area<sup>11</sup>.</> }
       ]}
     />
   );

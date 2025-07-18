@@ -15,7 +15,7 @@ export default function DualDefence(){
                 </S.MainTitle>
                 <S.Description>
                     <li>Twisted mint floss.</li>
-                    <li>Removes 2x more plaque<sup>1</sup>.</li>
+                    <li>Removes 2x more plaque<sup>10</sup>.</li>
                 </S.Description>
                 <S.ImgTextWrapper>
                     <S.ImgWrapper>
@@ -23,7 +23,7 @@ export default function DualDefence(){
                     </S.ImgWrapper>
                     <S.TextWrapper>
                         <h2>30% more</h2>
-                        <p>Covers 30% more surface area<sup>2</sup></p>
+                        <p>Covers 30% more surface area<sup>11</sup></p>
                     </S.TextWrapper>
                 </S.ImgTextWrapper>
             </S.ColumnLeft>

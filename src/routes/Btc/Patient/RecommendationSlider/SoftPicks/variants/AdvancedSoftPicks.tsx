@@ -12,11 +12,12 @@ export default function AdvancedSoftPicks() {
       gap='2.4rem'
       bullets={[
         { 
-          lines: ["With a longer curved", 
-            "handle for improved",
-            "maneuverability and better",
-            "clean in hard-to-reach areas."
-          ]
+          lines: ["Longer curved handle", 
+            "for improved maneuverability"
+          ]   
+        },
+        {
+          lines:[<>Clinically proven to remove 22% more plaque than brushing alone<sup>23</sup></>]
         }
       ]}
     />

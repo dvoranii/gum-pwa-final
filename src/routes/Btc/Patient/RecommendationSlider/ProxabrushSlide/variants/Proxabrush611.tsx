@@ -24,7 +24,7 @@ export default function Proxabrush611() {
           lines: [
             "Triangular-shaped bristles",
             "remove 25% more plaque",
-            "than conventional round bristles¹"
+            "than conventional round bristles⁸"
           ] 
         }
       ]}

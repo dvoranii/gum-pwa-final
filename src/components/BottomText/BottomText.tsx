@@ -1,7 +1,8 @@
+import { JSX } from "react";
 import * as S from "./BottomText.styled";
 
 interface BottomTextProps {
-    lines: string[];
+    lines: (string | JSX.Element)[];
 }
 
 export default function BottomText({lines}: BottomTextProps){

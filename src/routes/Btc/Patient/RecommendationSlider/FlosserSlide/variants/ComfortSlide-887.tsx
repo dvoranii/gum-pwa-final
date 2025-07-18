@@ -22,9 +22,10 @@ export default function ComfortSlideFlosser() {
         {
           lines: [
             "Lightweight flexible grip",
-            "uses 20% less plastic³."
+            <>uses 20% less plastic<sup>13</sup>.</>
           ]
         },
+        {text: <>20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers</>}
       ]}
     />
   );

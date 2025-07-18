@@ -29,6 +29,10 @@ export const Description = styled.ul`
   padding-top: 0.8rem;
   padding-right: 60px;
 
+  sup {
+    font-size: 12px;
+  }
+
 `;
 
 export const ColLeftImgWrapper = styled.div`

@@ -96,6 +96,10 @@ export const BulletList = styled.ul`
       width: 100%;
       color: #666;
     }
+
+    sup {
+      font-size: 12px;
+    }
   }
 `;
 

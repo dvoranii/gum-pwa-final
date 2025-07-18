@@ -11,8 +11,9 @@ export default function EcoCleanFlosser() {
       sideImage={FlosserImage}
       bottomImage={BottomImage}
       bullets={[
-        { text: "Textured floss effectively removes 2x more plaque¹." },
-        { text: "Designed to resist shredding or breaking²." }
+        { text: <>Textured floss effectively removes 2x more plaque<sup>10</sup>.</> },
+        { text: <>Designed to resist shredding or breaking<sup>12</sup>.</> },
+        { text: <>20% LESS PLASTIC<sup>13</sup>13 mint flavour on all flossers</> }
       ]}
     />
   );

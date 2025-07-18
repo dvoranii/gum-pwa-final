@@ -1,10 +1,6 @@
 // ProxabrushSlide.tsx
 import * as S from "./ProxabrushSlide.styles";
-
-type BulletPoint = {
-  text?: string | React.ReactNode; 
-  lines?: string[]; 
-};
+import { BulletPoint } from "../../../../../types/BulletPoint";
 
 type ProxabrushSlideProps = {
   title: string;

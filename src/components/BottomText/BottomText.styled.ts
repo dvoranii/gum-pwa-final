@@ -11,4 +11,9 @@ export const BottomTextP = styled.p<{ $isFirst: boolean }>`
     letter-spacing: -1.4px;
     margin-top: ${props => props.$isFirst ? '0.8rem' : '0'};
 
+    sup {
+        font-size: 14px;
+        margin-left: 1px;
+    }
+
 `;

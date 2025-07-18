@@ -20,13 +20,16 @@ export default function SensitiveCleanSlide() {
 
           <S.BulletList $letterSpace="-0.8px" $paddingRight="1.6rem;" $lineHeight="1.3">
             <li>
-              <span>6x better clean with ultra-soft bristles</span>
+              <span>6x better clean with ultra-soft bristles<sup>17</sup>.</span>
             </li>
             <li>
               <span>Specially designed for sensitivity.</span>
             </li>
             <li>
               <span>Extremely tapered bristles are very fine in diameter.</span>
+            </li>
+            <li>
+              <span>Now with Antibacterial Bristles<sup>16</sup>.</span>
             </li>
           </S.BulletList>
 

@@ -82,12 +82,19 @@ export const BulletList = styled.ul`
       width: 100%;
       color: #666;
     }
+
+    sup {
+      font-size: 12px;
+    }
   }
 `;
 
+interface ComparisonImageProps {
+  $width?:string;
+}
 
-export const ComparisonImage = styled.img`
-  max-width: 100%;
+export const ComparisonImage = styled.img<ComparisonImageProps>`
+  max-width: ${props => props.$width || "100%" };
   align-self: center;
   margin-bottom: 2rem;
   margin-left: -24px;

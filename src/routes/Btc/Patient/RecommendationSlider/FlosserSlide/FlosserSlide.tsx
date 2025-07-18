@@ -9,6 +9,7 @@ type FlosserSlideProps = {
   sideImage: string;
   sideImageHeight?: string;
   bottomImage?: string; 
+  bottomImageWidth?: string;
   bullets: BulletPoint[];
 };
 
@@ -21,6 +22,7 @@ export default function FlosserSlide({
   sideImageHeight,
   bottomImage,
   bullets,
+  bottomImageWidth
 }: FlosserSlideProps) {
   return (
     <S.Container>
@@ -52,6 +54,7 @@ export default function FlosserSlide({
 
         {bottomImage && (
           <S.ComparisonImage 
+            $width={bottomImageWidth}
             src={bottomImage} 
             alt={`${title} comparison`} 
           />

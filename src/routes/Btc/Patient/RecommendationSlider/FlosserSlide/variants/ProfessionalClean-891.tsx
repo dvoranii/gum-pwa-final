@@ -10,10 +10,11 @@ export default function ProfessionalCleanFlosser() {
       subtitleSize='2.5rem'
       sideImage={FlosserImage}
       bottomImage={BottomImage}
+      bottomImageWidth='90%'
       bullets={[
          {lines: [
-            <>Textured floss effectively",
-            "removes 2x more plaque<sup>10</sup>.</>
+            <>Textured floss effectively,
+            removes 2x more plaque<sup>10</sup>.</>
         ]},
          {lines: [
             "Designed to resist shredding",

@@ -27,9 +27,8 @@ export default function BtcFlossers(){
                             <h4><span>Eco</span> <span>Clean®</span> <span>Flossers</span> <span>Mint</span></h4>
                             <S.ListContainer>
                                 <ul>
-                                    <li>Textured floss effectively removes 2x more plaque<sup>2</sup> and is designed to resist shredding or breaking<sup>5</sup></li>
-                                    <li>Lightweight handle is crafted from 70% plant-based materials</li>
-                                    
+                                    <li>Textured floss effectively removes 2x more plaque<sup>10</sup> and is designed to resist shredding or breaking<sup>12</sup>.</li>
+                                    <li>Lightweight handle is crafted from 70% plant-based materials.</li>                     
                                 </ul>  
                             </S.ListContainer>
                         </S.TitleListWrapper>
@@ -37,8 +36,8 @@ export default function BtcFlossers(){
                         <h4><span>Twisted</span> <span>Mint™</span> <span>Flossers</span></h4>
                          <S.ListContainer>
                             <ul>
-                                <li>Twisted mint floss removes 2x more plaque<sup>2</sup> and covers 30% more surface area<sup>3</sup></li>
-                                <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>
+                                <li>Twisted mint floss removes 2x more plaque<sup>10</sup> and covers 30% more surface area<sup>11</sup>.</li>
+                                <li>Lightweight flexible grip uses 20% less plastic<sup>13</sup>.</li>
                                 
                             </ul>  
                         </S.ListContainer>
@@ -47,8 +46,8 @@ export default function BtcFlossers(){
                         <h4><span>Comfort</span> <span>Slide</span> <span>Flossers</span> <span>Mint</span></h4>
                         <S.ListContainer>
                             <ul>
-                                <li>Silky, non-stick mint floss easily slides between the tightest contacts for gentle and effective flossing</li>
-                                <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>
+                                <li>Silky, non-stick mint floss easily slides between the tightest contacts for gentle and effective flossing.</li>
+                                <li>Lightweight flexible grip uses 20% less plastic<sup>13</sup>.</li>
                             </ul>  
                         </S.ListContainer>
                         </S.TitleListWrapper>
@@ -67,8 +66,8 @@ export default function BtcFlossers(){
                         <h4><span>Professional</span> <span>Clean®</span> <span>Flossers</span> <span>Mint</span></h4>
                         <S.ListContainer>
                             <ul>
-                                <li>Textured floss effectively removes 2x more plaque<sup>2</sup> and is designed to resist shredding or breaking<sup>5</sup></li>
-                                <li>Lightweight flexible grip uses 20% less plastic<sup>4</sup></li>                  
+                                <li>Textured floss effectively removes 2x more plaque<sup>10</sup> and is designed to resist shredding or breaking<sup>12</sup>.</li>
+                                <li>Lightweight flexible grip uses 20% less plastic<sup>13</sup>.</li>                  
                             </ul>  
                         </S.ListContainer>
                         </S.TitleListWrapper>

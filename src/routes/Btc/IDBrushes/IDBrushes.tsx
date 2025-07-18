@@ -78,7 +78,7 @@ export default function BtcIDBrushes() {
                                     <S.AntibacterialCallout>
                                         <S.AntibacterialBadge>
                                             <span>Antibacterial</span>
-                                            <span>Bristles<sup>2</sup></span>
+                                            <span>Bristles<sup>9</sup></span>
                                         </S.AntibacterialBadge>
                                     </S.AntibacterialCallout>
                                 </S.FeatureCallouts>
@@ -121,7 +121,7 @@ export default function BtcIDBrushes() {
                                     <S.AntibacterialCallout>
                                         <S.AntibacterialBadge>
                                             <span>Antibacterial</span>
-                                            <span>Bristles<sup>2</sup></span>
+                                            <span>Bristles<sup>9</sup></span>
                                         </S.AntibacterialBadge>
                                     </S.AntibacterialCallout>
                                     </S.BristlesAndAntiBacterialWrapper>
@@ -176,7 +176,7 @@ export default function BtcIDBrushes() {
                                      <S.AntibacterialCallout>
                                         <S.AntibacterialBadge>
                                             <span>Antibacterial</span>
-                                            <span>Bristles<sup>2</sup></span>
+                                            <span>Bristles<sup>9</sup></span>
                                         </S.AntibacterialBadge>
                                     </S.AntibacterialCallout>
                                 </S.BristleAndAntibacterialWrapper>
@@ -240,7 +240,7 @@ export default function BtcIDBrushes() {
                              <S.AntibacterialCallout>
                                 <S.AntibacterialBadge $width="110px" $fontSize="14px">
                                     <span>Antibacterial</span>
-                                    <span>Bristles<sup>2</sup></span>
+                                    <span>Bristles<sup>9</sup></span>
                                 </S.AntibacterialBadge>
                             </S.AntibacterialCallout>
                         </S.ImgWrapper5>

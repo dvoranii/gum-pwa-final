@@ -161,7 +161,7 @@ export default function OralSystemicLink() {
                         <S.SlideTitle $fontSize="clamp(2.4rem, 3.8vw, 2.8rem)" $paddingRight="0.7rem">
                           Periodontitis is the sixth-most common global health condition.
                         </S.SlideTitle>
-                        <S.SlideCitation $paddingLeft="1.2rem">*Journal of Clinical Periodontology</S.SlideCitation>
+                        <S.SlideCitation $paddingLeft="1.2rem">*Journal of Clinical Periodontology<sup>1</sup></S.SlideCitation>
                       </S.SlideTextContent>
                     </S.SlideContent>
                   </S.CarouselSlide>
@@ -175,7 +175,7 @@ export default function OralSystemicLink() {
                           <S.SlideTitle $fontSize="clamp(2.2rem, 3.4vw, 2.6rem)" $paddingLeft="0.8rem">
                             Research shows no fewer&nbsp;than&nbsp;57&nbsp;conditions linked to periodontal disease.
                           </S.SlideTitle>
-                          <S.SlideCitation $paddingTop="1.2rem" $paddingLeft="0.8rem">*Journal of Clinical Periodontology</S.SlideCitation>
+                          <S.SlideCitation $paddingTop="1.2rem" $paddingLeft="0.8rem">*Journal of Clinical Periodontology<sup>2</sup></S.SlideCitation>
                         </S.SlideTextContent>
                       </S.SlideContent>
                     </S.CarouselSlide>
@@ -199,7 +199,7 @@ export default function OralSystemicLink() {
                           inflammatory response and&nbsp;systemic&nbsp;health&nbsp;issues has been studied in depth
                           for over a half a century.
                         </S.SlideTitle>
-                        <S.SlideCitation $paddingLeft="0.4rem" $paddingTop="1.2rem">*Journal of Clinical Periodontology</S.SlideCitation>
+                        <S.SlideCitation $paddingLeft="0.4rem" $paddingTop="1.2rem">*International Journal of Dentistry<sup>3</sup></S.SlideCitation>
                       </S.SlideTextContent>
                     </S.SlideContent>
                   </S.CarouselSlide>
@@ -220,7 +220,7 @@ export default function OralSystemicLink() {
                             CVD is the leading cause of mortality worldwide.
                           </S.ResultParagraph>
                           </S.ResultDescriptionInner>
-                          <S.SlideCitation $paddingLeft="0">*World Heart Federation</S.SlideCitation>
+                          <S.SlideCitation $paddingLeft="0">*World Heart Federation<sup>1</sup></S.SlideCitation>
                     </ResultWrapper>
                   )}
 
@@ -247,7 +247,7 @@ export default function OralSystemicLink() {
                             The relative risk for dementia is 22% higher in patients with severe&nbsp;periodontal inflammation.
                           </S.ResultParagraph>
                         </S.ResultDescriptionInner>
-                        <S.SlideCitation $paddingLeft="0">*Journal of Alzheimer's Disease</S.SlideCitation>
+                        <S.SlideCitation $paddingLeft="0">*Journal of Alzheimer's Disease<sup>4</sup></S.SlideCitation>
                       </ResultWrapper>
                   )}
 
@@ -263,7 +263,7 @@ export default function OralSystemicLink() {
                             Diabetic<br />Complications
                           </S.ResultTitle>    
                           <S.ResultParagraph $paddingTop="0">
-                            Diabetes affects one<br/> in 10 adults. Periodontitis increases the risk for diabetic complications.
+                            Diabetes affects one<br/> in 10 adults<sup>5</sup>. Periodontitis increases the risk for diabetic complications<sup>6</sup>.
                           </S.ResultParagraph>
                         </S.ResultDescriptionInner>
                         

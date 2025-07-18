@@ -12,6 +12,7 @@ export const Content = styled.div`
 `;
 
 export const RecommendBG = styled.div<RecommendBGProps>`
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 2.4rem;
@@ -24,7 +25,23 @@ export const RecommendBG = styled.div<RecommendBGProps>`
   height: 60vh;
   box-sizing: border-box;
   align-items: ${props => props.$isFullWidthImage ? 'center' : 'normal'};
+`;
 
+export const RecommendText = styled.cite`
+ font-family: 'Gotham', sans-serif;
+  font-weight: 300;
+  font-size: 1.285rem;
+  color: ${colors.primary}; 
+  margin: 0;
+  position: absolute;
+  bottom: 3.6rem; 
+  left: 9.4%; 
+  line-height: 1.2;
+  font-style: normal;
+
+  sup {
+    font-size: 12px;
+  }
 `;
 
 export const FullWidthImage = styled.img`

@@ -13,7 +13,7 @@ import BottomText from "../../components/BottomText/BottomText";
 
 import BG1 from "../../assets/recommend/bg-1.webp";
 import BG2 from "../../assets/recommend/bg-2.webp";
-import BG3 from "../../assets/recommend/bg-3.webp";
+import BG3 from "../../assets/recommend/bg-3-text-removed.webp";
 
 import BGCircle1 from "../../assets/recommend/bg-1-circle-1.webp";
 import BG2Circle1 from "../../assets/recommend/bg-2-circle-1.webp";
@@ -153,7 +153,9 @@ export default function Recommend() {
                     </S.ThreeCirclesWrapper>
                 </S.RecommendBG>
                 )}
-                <S.RecommendBG $bgImage={BG3}/>
+                <S.RecommendBG $bgImage={BG3}>
+                   <S.RecommendText>By Dental Hygienists<sup>7</sup></S.RecommendText>
+                </S.RecommendBG>
             </Flickity>
         </S.CarouselWrapper>
 

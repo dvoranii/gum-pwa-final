@@ -105,6 +105,7 @@ export const SlideContent = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  max-width: 100%;
 `;
 
 interface SlideNumberProps {
@@ -214,6 +215,10 @@ export const SlideCitation = styled.cite<CitationProps>`
   font-style:normal;
   padding-top: ${(props) => props.$paddingTop ? props.$paddingTop : "0.8rem"};
   padding-left: ${(props) => props.$paddingLeft ? props.$paddingLeft : "0"};
+
+  sup {
+    font-size: 10px;
+  }
 `;
 
 export const SlideImage = styled.img`
@@ -442,6 +447,10 @@ export const ResultParagraph = styled.p<ResultParagraphProps>`
 
   & + & {
     padding-top: 0.4rem;
+  }
+
+  sup {
+    font-size: 12px;
   }
 
   

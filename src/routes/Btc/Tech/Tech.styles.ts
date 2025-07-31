@@ -14,6 +14,7 @@ export const HeaderLeft = styled.div`
   display: flex;
   flex-direction: column;
   width: 20vh;
+  user-select: none;
 `;
 
 export const SideIcon = styled.div`
@@ -23,14 +24,13 @@ export const SideIcon = styled.div`
   padding-bottom: 100%;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  
+
   img {
     position: absolute;
     height: auto;
-    max-width: 100%; 
+    max-width: 100%;
   }
 `;
-
 
 export const TechContainer = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ export const TechContainer = styled.div`
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   margin-top: 1.8rem;
   overflow: hidden;
-
+  user-select: none;
 `;
 
 export const MainContent = styled.div`

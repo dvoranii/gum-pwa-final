@@ -1,26 +1,33 @@
-import Flickity from 'react-flickity-component';
-import 'flickity/dist/flickity.min.css';
-import * as S from './RecommendationSlider.styles';
+import Flickity from "react-flickity-component";
+import "flickity/dist/flickity.min.css";
+import * as S from "./RecommendationSlider.styles";
 
-import { RecommendationSet } from '../../../../utils/patientRecommendations';
+import { RecommendationSet } from "../../../../utils/patientRecommendations";
 
-import { 
+import {
   Proxabrush1314,
   Proxabrush1414,
   Proxabrush1614,
   Proxabrush611,
-  Sulcusbrush642
-} from './ProxabrushSlide';
+  Sulcusbrush642,
+} from "./ProxabrushSlide";
 
-import { AdvancedSoftPicks, ComfortFlexSoftPicks } from './SoftPicks';
+import { AdvancedSoftPicks, ComfortFlexSoftPicks } from "./SoftPicks";
 
-import { EcoCleanFlosser, ComfortSlideFlosser, TwistedMintFlosser, ProfessionalCleanFlosser } from './FlosserSlide';
-import { ProWeaveAndEEZThru, EasyThreadFloss, ComfortSlideFloss, DualDefenceFloss, ProWeaveFloss, DeepCleanFloss } from './StringFloss';
-
-import _1414_Proxabrush_Tight from "../../../../assets/btc/patient/recommendations/1414-Proxabrush-Tight.webp";
-import _1514_Proxabrush_Moderate from "../../../../assets/btc/patient/recommendations/1514-Proxabrush-Moderate.webp";
-import _1614_Proxabrush_Wide from "../../../../assets/btc/patient/recommendations/1614-Proxabrush-Wide.webp";
-import _1618_Proxabrush_ExtraWide from "../../../../assets/btc/patient/recommendations/1618-Proxabrush-ExtraWide.webp";
+import {
+  EcoCleanFlosser,
+  ComfortSlideFlosser,
+  TwistedMintFlosser,
+  ProfessionalCleanFlosser,
+} from "./FlosserSlide";
+import {
+  ProWeaveAndEEZThru,
+  EasyThreadFloss,
+  ComfortSlideFloss,
+  DualDefenceFloss,
+  ProWeaveFloss,
+  DeepCleanFloss,
+} from "./StringFloss";
 
 const flickityOptions = {
   initialIndex: 0,
@@ -29,48 +36,64 @@ const flickityOptions = {
   prevNextButtons: true,
   pageDots: true,
   contain: true,
-  cellAlign: 'center'
+  cellAlign: "center",
 };
 
 type RecommendationSlideProps = {
-    priorityText: string;
-    productName: string;
-    productCode: string;
-}
+  priorityText: string;
+  productName: string;
+  productCode: string;
+};
 
-const RecommendationSlide = ({ 
-  priorityText, 
-  productName, 
-  productCode
+const RecommendationSlide = ({
+  priorityText,
+  productName,
+  productCode,
 }: RecommendationSlideProps) => {
-  switch(productCode) {
-
+  switch (productCode) {
     // Proxabrush
-    case '1314': return <Proxabrush1314 />;
-    case '1414': return <Proxabrush1414 />;
-    case '1614': return <Proxabrush1614 />;
-    case '611': return <Proxabrush611 />;
-    case '642': return <Sulcusbrush642 />;
+    case "1314":
+      return <Proxabrush1314 />;
+    case "1414":
+      return <Proxabrush1414 />;
+    case "1614":
+      return <Proxabrush1614 />;
+    case "611":
+      return <Proxabrush611 />;
+    case "642":
+      return <Sulcusbrush642 />;
 
     // Soft Picks
-    case '650': return <AdvancedSoftPicks />;
-    case '670': return <ComfortFlexSoftPicks />;
+    case "650":
+      return <AdvancedSoftPicks />;
+    case "670":
+      return <ComfortFlexSoftPicks />;
 
     // Flossers
-    case '831': return <EcoCleanFlosser />;
-    case '887': return <ComfortSlideFlosser />;
-    case '828': return <TwistedMintFlosser />;
-    case '891': return <ProfessionalCleanFlosser />;
+    case "831":
+      return <EcoCleanFlosser />;
+    case "887":
+      return <ComfortSlideFlosser />;
+    case "828":
+      return <TwistedMintFlosser />;
+    case "891":
+      return <ProfessionalCleanFlosser />;
 
     // String Floss
-    case '1815 + 840': return <ProWeaveAndEEZThru />;
-    case '3210': return <EasyThreadFloss />;
-    case '2010': return <ComfortSlideFloss />;
-    case '2008': return <DualDefenceFloss />;
-    case '1815': return <ProWeaveFloss />;
-    case '2030': return <DeepCleanFloss />;
-    
-    default: 
+    case "1815 + 840":
+      return <ProWeaveAndEEZThru />;
+    case "3210":
+      return <EasyThreadFloss />;
+    case "2010":
+      return <ComfortSlideFloss />;
+    case "2008":
+      return <DualDefenceFloss />;
+    case "1815":
+      return <ProWeaveFloss />;
+    case "2030":
+      return <DeepCleanFloss />;
+
+    default:
       return (
         <S.Slide>
           <S.FallbackText>
@@ -81,36 +104,40 @@ const RecommendationSlide = ({
   }
 };
 
-export const RecommendationSlider = ({ recommendations }: { recommendations: RecommendationSet }) => {
-    return (
+export const RecommendationSlider = ({
+  recommendations,
+}: {
+  recommendations: RecommendationSet;
+}) => {
+  return (
     <S.CarouselWrapper>
-    <Flickity
-        className={'carousel'}
-        elementType={'div'}
+      <Flickity
+        className={"carousel"}
+        elementType={"div"}
         options={flickityOptions}
         disableImagesLoaded={false}
         static={false}
-    >
+      >
         <RecommendationSlide
-            priorityText="Priority 1"
-            productName={recommendations.priority1.product}
-            productCode={recommendations.priority1.code}
+          priorityText="Priority 1"
+          productName={recommendations.priority1.product}
+          productCode={recommendations.priority1.code}
         />
 
         <RecommendationSlide
-            priorityText="Priority 2"
-            productName={recommendations.priority2.product}
-            productCode={recommendations.priority2.code}
+          priorityText="Priority 2"
+          productName={recommendations.priority2.product}
+          productCode={recommendations.priority2.code}
         />
 
         {recommendations.priority3.product && (
-            <RecommendationSlide
-                priorityText="Priority 3"
-                productName={recommendations.priority3.product}
-                productCode={recommendations.priority3.code}
-            />
-        )} 
-    </Flickity>
+          <RecommendationSlide
+            priorityText="Priority 3"
+            productName={recommendations.priority3.product}
+            productCode={recommendations.priority3.code}
+          />
+        )}
+      </Flickity>
     </S.CarouselWrapper>
-  )
+  );
 };

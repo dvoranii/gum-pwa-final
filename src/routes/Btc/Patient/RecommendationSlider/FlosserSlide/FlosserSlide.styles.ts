@@ -20,7 +20,7 @@ export const ImgAndTextWrapper = styled.div`
 `;
 
 export const MainImage = styled.img<{ $height?: string }>`
-  height: ${props => props.$height || "90%"};
+  height: ${(props) => props.$height || "90%"};
   width: auto;
   object-fit: contain;
   margin-bottom: 1.2rem;
@@ -31,9 +31,9 @@ interface TitleProps {
 }
 
 export const Title = styled.h2<TitleProps>`
-  font-family: 'Gotham', sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 600;
-  font-size: ${props => props.$fontSize || "clamp(24px, 6vw, 3.2rem)"};
+  font-size: ${(props) => props.$fontSize || "clamp(24px, 6vw, 3.2rem)"};
   color: ${colors.primary};
   letter-spacing: -2px;
   text-align: left;
@@ -41,18 +41,18 @@ export const Title = styled.h2<TitleProps>`
   line-height: 1;
 
   @media screen and (max-width: 1080px) {
-     font-size: clamp(24px, 6vw, 2.8rem);
+    font-size: clamp(24px, 6vw, 2.8rem);
   }
 `;
 
 interface SubtitleProps {
-    $fontSize?: string;
+  $fontSize?: string;
 }
 
 export const Subtitle = styled.h3<SubtitleProps>`
-  font-family: 'Gotham', sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 400;
-  font-size: ${props => props.$fontSize || "clamp(18px, 4.3vw, 3.2rem)"};
+  font-size: ${(props) => props.$fontSize || "clamp(18px, 4.3vw, 3.2rem)"};
   color: ${colors.primary};
   margin-bottom: 0.4rem;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ export const Subtitle = styled.h3<SubtitleProps>`
   margin-top: -8px;
 
   @media screen and (max-width: 1080px) {
-     font-size: clamp(24px, 6vw, 2.2rem);
+    font-size: clamp(24px, 6vw, 2.2rem);
   }
 `;
 
@@ -70,11 +70,11 @@ export const BulletList = styled.ul`
   text-align: left;
 
   li {
-    font-family: 'Gotham', sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: clamp(16px, 2vw, 1.8rem);
     color: ${colors.primary};
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.2;
     letter-spacing: -0.5px;
 
     span {
@@ -90,11 +90,11 @@ export const BulletList = styled.ul`
 `;
 
 interface ComparisonImageProps {
-  $width?:string;
+  $width?: string;
 }
 
 export const ComparisonImage = styled.img<ComparisonImageProps>`
-  max-width: ${props => props.$width || "100%" };
+  max-width: ${(props) => props.$width || "100%"};
   align-self: center;
   margin-bottom: 2rem;
   margin-left: -24px;

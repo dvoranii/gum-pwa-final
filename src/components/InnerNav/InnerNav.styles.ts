@@ -3,22 +3,22 @@ import { styled } from "styled-components";
 import { colors } from "../../constants/colors";
 
 export const NavTabsOuter = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 32px;
+  user-select: none;
 `;
 
 export const GumLogoWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-    
-    & > img {
-        height: 32px;
-        width:auto;
-    }
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
 
+  & > img {
+    height: 32px;
+    width: auto;
+  }
 `;
 
 export const NavTabs = styled.nav`
@@ -43,7 +43,7 @@ export const TabLink = styled(NavLink)`
   color: #ffffff;
   font-weight: 400;
   position: relative;
-  font-family: 'Gotham', sans-serif;
+  font-family: "Gotham", sans-serif;
   font-style: normal;
   font-size: clamp(0.85rem, 0.7vw, 1.85rem);
   letter-spacing: 1px;
@@ -52,5 +52,4 @@ export const TabLink = styled(NavLink)`
   &.active {
     background-color: #018384;
   }
-
 `;

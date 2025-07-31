@@ -32,11 +32,11 @@ const Slide7 = () => (
       description={[
         <>
           Cushioned Quad-Grip® handle facilitates the recommended
-          <br /> 45° brushing technique
+          <br /> 45° brushing technique.
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically
-          <br /> designed to clean below the gumline<sup>18, 19</sup>
+          <br /> designed to clean below the gumline<sup>18,&nbsp;19</sup>.
         </>,
       ]}
       imprintColors={[
@@ -80,11 +80,11 @@ const Slide7 = () => (
       description={[
         <>
           Cushioned Quad-Grip® handle facilitates the recommended
-          <br /> 45° brushing technique
+          <br /> 45° brushing technique.
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically
-          <br /> designed to clean below the gumline<sup>18, 19</sup>
+          <br /> designed to clean below the gumline<sup>18,&nbsp;19</sup>.
         </>,
       ]}
       imprintColors={[["#f1592a"], ["#8dc63e"], ["#00aeee"], ["#9f5fa7"]]}

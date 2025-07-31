@@ -24,13 +24,13 @@ const Slide2 = () => (
       colGap="0.8rem"
       diagramWidth="93%"
       description={[
-        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time",
+        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
         <>
           Dome Trim® bristles are clinically designed to clean below the gumline
-          <sup>18, 19</sup>
+          <sup>18, 19</sup>.
         </>,
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",
-        "Non-replaceable LED battery",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        "Non-replaceable LED battery.",
       ]}
       imprintColors={[["#bdd62e"], ["#f0548f"], ["#c7a1cb"], ["#24a1db"]]}
       specs={[
@@ -59,9 +59,9 @@ const Slide2 = () => (
       useBulletPoints={true}
       listPaddingLeft="1.8rem"
       description={[
-        "Center bristles help emphasize a smaller amount of toothpaste for kids",
-        "Ergonomic handle with thumb pad for stable, comfortable grip",
-        "Suction cup base holds the toothbrush upright which helps to keep bristles clean",
+        "Center bristles help emphasize a smaller amount of toothpaste for kids.",
+        "Ergonomic handle with thumb pad for stable, comfortable grip.",
+        "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
       ]}
       imprintColors={[["#3b7dc2"], ["#84d2da"], ["#ef55a0"], ["#f6ee08"]]}
       showImprintText={false}

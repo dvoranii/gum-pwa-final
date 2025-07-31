@@ -32,11 +32,11 @@ const Slide8 = () => (
       description={[
         <>
           Raised Super Tip<sup>®</sup> bristles at the tip provide access to
-          posterior regions and clean hard-to-reach surfaces
+          posterior regions and clean hard-to-reach surfaces.
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically designed to clean below
-          the gumline<sup>18, 19</sup>
+          the gumline<sup>18,&nbsp;19</sup>.
         </>,
       ]}
       imprintColors={[["#784097"], ["#f26a2b"], ["#008ed0"], ["#00af86"]]}
@@ -76,15 +76,15 @@ const Slide8 = () => (
         <>
           Special BrightLine<sup>®</sup> Grip bristles help remove stains for{" "}
           <strong>28% whiter teeth</strong>
-          <sup>3</sup>
+          <sup>3</sup>.
         </>,
         <>
           Raised Super Tip<sup>®</sup> bristles at the tip provide access to
-          posterior regions and clean hard-to-reach surfaces
+          posterior regions and clean hard-to-reach surfaces.
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically designed to clean below
-          the gumline<sup>18, 19</sup>
+          the gumline<sup>18,&nbsp;19</sup>.
         </>,
       ]}
       imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}

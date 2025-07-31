@@ -43,18 +43,18 @@ export default function BtcIDBrushes() {
                       <ul>
                         <li>
                           Trianglular-shaped bristles remove 25% more plaque
-                          than conventional round bristles<sup>8</sup>
+                          than conventional round bristles<sup>8</sup>.
                         </li>
                         <li>
-                          Cleans posterior teeth easily with bendable neck
+                          Cleans posterior teeth easily with bendable neck.
                         </li>
                         <li>
                           Better comfort, control and grip with flexible
-                          rubberized handle
+                          rubberized handle.
                         </li>
                         <li>
                           Stays clean between uses with antibacterial bristles
-                          <sup>9</sup>
+                          <sup>9</sup>.
                         </li>
                       </ul>
                     </S.ListContainer>
@@ -66,7 +66,7 @@ export default function BtcIDBrushes() {
                     <S.BristlesTextWrapper>
                       <p>
                         Triangular-shaped bristles remove up to 25% more plaque
-                        than conventional round bristles<sup>8</sup>
+                        than conventional round bristles<sup>8</sup>.
                       </p>
                     </S.BristlesTextWrapper>
                     <S.BristlesImagesContainer>
@@ -133,18 +133,18 @@ export default function BtcIDBrushes() {
                     <ul>
                       <li>
                         Trianglular-shaped bristles remove 25% more plaque than
-                        conventional round bristles<sup>8</sup>
+                        conventional round bristles<sup>8</sup>.
                       </li>
                       <li>
                         Angled neck helps patients reach hard-to-clean
-                        interdental surfaces
+                        interdental surfaces.
                       </li>
                       <li>
                         Small cylindrical shape (3012) fits in spaces as small
                         as 0.9mm, tapered shape (3014) fits in spaces as small
-                        as 1.2mm
+                        as 1.2mm.
                       </li>
-                      <li>Comes with carrying case</li>
+                      <li>Comes with carrying case.</li>
                     </ul>
                   </S.ListContainer>
                 </S.TextWrapper>
@@ -207,15 +207,15 @@ export default function BtcIDBrushes() {
                       <ul>
                         <li>
                           Handle allows patients to use different sized tips to
-                          clean unique interproximal spaces
+                          clean unique interproximal spaces.
                         </li>
                         <li>
                           Ergonomic handle for easy maneuverability and better
-                          control
+                          control.
                         </li>
                         <li>
                           Triangular-shaped bristles remove 25% more plaque than
-                          conventional round bristles<sup>8</sup>
+                          conventional round bristles<sup>8</sup>.
                         </li>
                       </ul>
                     </S.ListContainer>
@@ -298,17 +298,17 @@ export default function BtcIDBrushes() {
                   <ul>
                     <li>
                       Single tuft brush removes plaque along the gumline to help
-                      maintain healthy gums
+                      maintain healthy gums.
                     </li>
                     <li>
                       Soft antibacterial bristles provide effective and gentle
-                      cleaning<sup>9</sup>
+                      cleaning<sup>9</sup>.
                     </li>
                     <li>
                       Two angles allow for easy access to all areas of the
-                      mouth, including the lingual (A) and buccal (B) gumlines
+                      mouth, including the lingual (A) and buccal (B) gumlines.
                     </li>
-                    <li>Easy to use Snap&gt;Ons Dual-Ended handle</li>
+                    <li>Easy to use Snap&gt;Ons Dual-Ended handle.</li>
                   </ul>
                 </S.ListContainer>
                 <S.ImgWrapper>

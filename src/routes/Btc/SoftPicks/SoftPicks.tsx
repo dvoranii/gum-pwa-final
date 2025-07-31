@@ -19,7 +19,7 @@ export default function BtcSoftPicks() {
             </p>
             <p>
               Clinically proven to remove 22% more plaque than brushing alone
-              <sup>23</sup>
+              <sup>23</sup>.
             </p>
           </S.TextContainer>
           <S.TextContainer>

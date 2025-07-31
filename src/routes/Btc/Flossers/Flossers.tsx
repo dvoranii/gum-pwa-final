@@ -170,12 +170,12 @@ export default function BtcFlossers() {
                 <S.ListContainer>
                   <ul>
                     <li>
-                      Specialy designed rubber pick massages gums while gently
-                      removing debris
+                      Specially designed rubber pick massages gums while gently
+                      removing debris.
                     </li>
                     <li>
                       Strong floss designed to slide easily between teeth and
-                      resist shredding or breaking
+                      resist shredding or breaking.
                     </li>
                   </ul>
                 </S.ListContainer>
@@ -190,12 +190,12 @@ export default function BtcFlossers() {
                   <ul>
                     <li>
                       Dual ends specifically designed to reach front and back
-                      teeth
+                      teeth.
                     </li>
                     <li>
                       Twisted mint floss on the angled side removes 2x more
                       plaque<sup>10</sup> and covers 30% more surface area
-                      <sup>11</sup>
+                      <sup>11</sup>.
                     </li>
                   </ul>
                 </S.ListContainer>

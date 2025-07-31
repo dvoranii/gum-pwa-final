@@ -42,10 +42,10 @@ export default function BtcFloss() {
                 <ul>
                   <li>
                     Non-stick floss glides effortlessly between even the
-                    tightest contacts and below the gumline
+                    tightest contacts and below the gumline.
                   </li>
                   <li>Monofilament constructions is exceptionally strong</li>
-                  <li>Satin-like finish is soft and gentle on gums</li>
+                  <li>Satin-like finish is soft and gentle on gums.</li>
                 </ul>
 
                 <S.InfoGrid>
@@ -79,13 +79,13 @@ export default function BtcFloss() {
               <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
               <S.ListContainer>
                 <ul>
-                  <li>Textured, twisted floss with fresh minty flavour</li>
+                  <li>Textured, twisted floss with fresh minty flavour.</li>
                   <li>
                     Removes <span>2x more plaque</span>
-                    <sup>10</sup>
+                    <sup>10</sup>.
                   </li>
                   <li>
-                    Covers <span>30% more</span> surface area<sup>11</sup>
+                    Covers <span>30% more</span> surface area<sup>11</sup>.
                   </li>
                 </ul>
 
@@ -123,15 +123,15 @@ export default function BtcFloss() {
               <S.ColumnTitle>Deep Clean Expanding Dental Floss</S.ColumnTitle>
               <S.ListContainer>
                 <ul>
-                  <li>Thin and easy to insert, even between tight contacts</li>
+                  <li>Thin and easy to insert, even between tight contacts.</li>
                   <li>
                     Floss expands during use to remove{" "}
                     <span>2X more plaque</span>
-                    <sup>10</sup>
+                    <sup>10</sup>.
                   </li>
                   <li>
                     Multiple filaments and texturized fibers for exceptional
-                    cleaning
+                    cleaning.
                   </li>
                 </ul>
 
@@ -169,15 +169,15 @@ export default function BtcFloss() {
                 <ul>
                   <li>
                     Removes <span>2x more plaque</span>
-                    <sup>10</sup>
+                    <sup>10</sup>.
                   </li>
                   <li>
                     Unique woven design effectively removes biofilm between
-                    teeth and below the gumline
+                    teeth and below the gumline.
                   </li>
                   <li>
                     The unique interlacing process produces a strong, smooth
-                    floss engineered not to shred, break or sag<sup>13</sup>
+                    floss engineered not to shred, break or sag<sup>13</sup>.
                   </li>
                 </ul>
 
@@ -265,21 +265,21 @@ export default function BtcFloss() {
                 <ul>
                   <li>
                     Stiff threader sections provide easy access to hard-to-clean
-                    spaces without irritating the gums
+                    spaces without irritating the gums.
                   </li>
                   <li>
                     Double-ended threader sections to maximize cleaning with
-                    each strand
+                    each strand.
                   </li>
                   <li>
-                    Features "puffy" floss designed for enhanced plaque removal
+                    Features "puffy" floss designed for enhanced plaque removal.
                   </li>
                   <li>
-                    Innovative, hygienic packaging reduces tangles and waste
+                    Innovative, hygienic packaging reduces tangles and waste.
                   </li>
                   <li>
                     Office dispenser is rewindable to ensure just the right
-                    amount of floss is dispensed
+                    amount of floss is dispensed.
                   </li>
                 </ul>
 
@@ -327,7 +327,7 @@ export default function BtcFloss() {
                     Versatile nylon loop helps patients thread floss through
                     spaces where most other products cannot reach: under
                     bridges, between connected crowns, around orthodontic
-                    appliances, lingual wires and implants
+                    appliances, lingual wires and implants.
                   </li>
                 </ul>
               </S.ListContainer>

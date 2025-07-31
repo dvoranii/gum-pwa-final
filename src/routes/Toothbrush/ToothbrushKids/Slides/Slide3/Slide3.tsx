@@ -13,7 +13,7 @@ const Slide3 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       diagramWidth="86%"
       minHeight="246px"
@@ -24,22 +24,23 @@ const Slide3 = () => (
       showImprintText={false}
       title={
         <>
-        Crayola<TitleLight>™</TitleLight> PIP-SQUEAKS<TitleLight>™</TitleLight>
+          Crayola<TitleLight>™</TitleLight> PIP-SQUEAKS
+          <TitleLight>™</TitleLight>
         </>
       }
       description={[
-        "Soft bristles are gentle on young teeth and gums",
-        "Narrow, tapered brush head makes maneuvering in small mouths easier",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",
+        "Soft bristles are gentle on young teeth and gums.",
+        "Narrow, tapered brush head makes maneuvering in small mouths easier.",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
       ]}
       imprintColors={[["#fcb041"], ["#c91690"], ["#00aeee"], ["#22b785"]]}
       specs={[
         [
-        { label: "Item", value: "232" },
-        { label: "Texture", value: "Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "19" }
-        ]
+          { label: "Item", value: "232" },
+          { label: "Texture", value: "Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "19" },
+        ],
       ]}
     />
     <ProductSlide
@@ -48,7 +49,7 @@ const Slide3 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       diagramWidth="86%"
       brushImgWidth="90%"
@@ -59,23 +60,31 @@ const Slide3 = () => (
       textWrapperPaddingRight="3.4rem"
       title={
         <>
-         Crayola<TitleLight>™</TitleLight> MARKER<TitleLight>™</TitleLight>
+          Crayola<TitleLight>™</TitleLight> MARKER<TitleLight>™</TitleLight>
         </>
       }
       description={[
-        "Raised tip bristles clean hard-to-reach back teeth",
-        "Slim handle design provides an ergonomic hold and easier grip for small hands",
-        "Suction cup base holds the toothbrush upright which helps to keep bristles clean",  
-     ]}
-      imprintColors={[["#00ace6"], ["#8261aa"], ["#ed1b3b"], ["#f88f1f"],  ["#f6ee31"],  ["#aad04d"]]}
+        "Raised tip bristles clean hard-to-reach back teeth.",
+        "Slim handle design provides an ergonomic hold and easier grip for small hands.",
+        "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
+      ]}
+      imprintColors={[
+        ["#00ace6"],
+        ["#8261aa"],
+        ["#ed1b3b"],
+        ["#f88f1f"],
+        ["#f6ee31"],
+        ["#aad04d"],
+      ]}
       showImprintText={false}
       specs={[
         [
-        { label: "Item", value: "227" },
-        { label: "Texture", value: "Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "25" }]
-        ]}
+          { label: "Item", value: "227" },
+          { label: "Texture", value: "Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "25" },
+        ],
+      ]}
     />
   </>
 );

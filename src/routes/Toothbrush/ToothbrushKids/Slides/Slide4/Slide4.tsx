@@ -29,13 +29,13 @@ const Slide4 = () => (
         </>
       }
       description={[
-        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time",
+        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
         <>
           Dome Trim® bristles are clinically designed to clean below the gumline
-          <sup>18, 19</sup>
+          <sup>18, 19</sup>.
         </>,
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",
-        "Non-replaceable LED battery",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        "Non-replaceable LED battery.",
       ]}
       imprintColors={[["#8dc63e"], ["#f14f68"], ["#00aeee"], ["#fcb041"]]}
       specs={[
@@ -70,10 +70,10 @@ const Slide4 = () => (
       description={[
         <>
           Ultra-soft Deep Clean bristles allow for better reach in between teeth
-          for better cleaning<sup>22</sup>
+          for better cleaning<sup>22</sup>.
         </>,
-        "Thumb grip and triangular-shaped handle offer control and encourage brushing at a 45° angle",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",
+        "Thumb grip and triangular-shaped handle offer control and encourage brushing at a 45° angle.",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
       ]}
       imprintColors={[["#0075ba"], ["#f15921"], ["#80c241"], ["#9163aa"]]}
       showImprintText={false}

@@ -13,7 +13,7 @@ const Slide1 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       textWrapperMarginTop="-24px"
       textWrapperPaddingRight="3.8rem"
@@ -22,19 +22,19 @@ const Slide1 = () => (
       useBulletPoints={true}
       showImprintText={false}
       description={[
-        "Extra-small head designed for baby's mouth",
-        "Ultra-soft feathered bristles are very gentle for baby gums around erupting primary teeth",
-        "Effective access to pits and fissures where first cavities may start",
-        "The longer handle and steady grip facilitates parent's hold of the toothbrush",
+        "Extra-small head designed for baby's mouth.",
+        "Ultra-soft feathered bristles are very gentle for baby gums around erupting primary teeth.",
+        "Effective access to pits and fissures where first cavities may start.",
+        "The longer handle and steady grip facilitates parent's hold of the toothbrush.",
       ]}
       imprintColors={[["#f37c8e"], ["#ffd703"], ["#42bfa4"], ["#1b97d4"]]}
       specs={[
         [
-        { label: "Item", value: "213" },
-        { label: "Texture", value: "Ultra Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "11" }
-        ]
+          { label: "Item", value: "213" },
+          { label: "Texture", value: "Ultra Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "11" },
+        ],
       ]}
     />
     <ProductSlide
@@ -44,26 +44,27 @@ const Slide1 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       textWrapperMarginTop="-24px"
       useBulletPoints={true}
       minHeight="190px"
       description={[
-        "Soft bristles gently remove plaque",
-        "Center bristles help emphasize a smaller amount of toothpaste for kids",
-        "Ergonomic handle with thumb pad for stable, comfortable grip",
-        "Suction cup base holds the toothbrush upright which helps to keep bristles clean",  
-     ]}
+        "Soft bristles gently remove plaque.",
+        "Center bristles help emphasize a smaller amount of toothpaste for kids.",
+        "Ergonomic handle with thumb pad for stable, comfortable grip.",
+        "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
+      ]}
       imprintColors={[["#8d75b4"], ["#eb5d8d"], ["#8fca6b"], ["#36c1cd"]]}
       showImprintText={false}
       specs={[
         [
-        { label: "Item", value: "901" },
-        { label: "Texture", value: "Ultra Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "19" }]
-        ]}
+          { label: "Item", value: "901" },
+          { label: "Texture", value: "Ultra Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "19" },
+        ],
+      ]}
     />
   </>
 );

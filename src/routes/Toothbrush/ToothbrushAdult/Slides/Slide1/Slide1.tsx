@@ -27,11 +27,11 @@ const Slide1 = () => (
       description={[
         <>
           Extremely Tapered Bristles clean 2.7 mm below the sulcus and up to 1.4
-          cm along the gingival margin and between the teeth.<sup>14</sup>
+          cm along the gingival margin and between the teeth<sup>14</sup>.
         </>,
         <>
           <DescriptionBold>10x better plaque removal</DescriptionBold> below the
-          gumline for healthier gums.<sup>15</sup>
+          gumline for healthier gums<sup>15</sup>.
         </>,
       ]}
       showAntibacterialBadge={true}

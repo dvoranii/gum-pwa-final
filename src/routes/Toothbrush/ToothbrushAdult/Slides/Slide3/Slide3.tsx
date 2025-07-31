@@ -25,8 +25,8 @@ const Slide3 = () => (
       description={[
         "Raised bristles at the tip provide greater access to posterior regions and clean hard-to-reach surfaces.",
         <>
-          Dome Trim® bristles are clinically designed to clean below the
-          gumline.<sup>18, 19</sup>
+          Dome Trim® bristles are clinically designed to clean below the gumline
+          <sup>18, 19</sup>.
         </>,
       ]}
       imprintColors={[["#fec60a"], ["#f1592a"], ["#8dc63e"], ["#00a2e4"]]}
@@ -61,8 +61,8 @@ const Slide3 = () => (
       }
       description={[
         <>
-          Dome Trim® bristles clinically designed to clean below the gumline.
-          <sup>18, 19</sup>
+          Dome Trim® bristles clinically designed to clean below the gumline
+          <sup>18, 19</sup>.
         </>,
       ]}
       imprintColors={[["#ae2181"], ["#2f3192"], ["#f79633"], ["#f15157"]]}

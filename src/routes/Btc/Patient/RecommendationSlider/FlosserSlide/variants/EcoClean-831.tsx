@@ -25,13 +25,6 @@ export default function EcoCleanFlosser() {
             </>
           ),
         },
-        {
-          text: (
-            <>
-              20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers
-            </>
-          ),
-        },
       ]}
     />
   );

@@ -29,6 +29,7 @@ export const ChoicesContainerOuter = styled.div`
   padding-top: 1.2rem;
   flex-direction: column;
   justify-content: center;
+  user-select: none;
 
   h1 {
     font-family: "Gotham", sans-serif;
@@ -41,7 +42,6 @@ export const ChoicesContainerOuter = styled.div`
   }
 
   @media screen and (max-width: 1080px) {
-
     h1 {
       font-size: 2.4vw;
     }
@@ -65,11 +65,10 @@ export const ResultsContainer = styled.div<ResultsContainerProps>`
   margin-bottom: -24px;
 
   opacity: ${({ $show }) => ($show ? 1 : 0)};
-  transform: translateX(${({ $show }) => ($show ? '0' : '20px')});
+  transform: translateX(${({ $show }) => ($show ? "0" : "20px")});
   transition: all 0.25s ease-out;
-  pointer-events: ${({ $show }) => ($show ? 'all' : 'none')};
-  visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
-
+  pointer-events: ${({ $show }) => ($show ? "all" : "none")};
+  visibility: ${({ $show }) => ($show ? "visible" : "hidden")};
 `;
 
 export const Row = styled.div`
@@ -86,18 +85,19 @@ export const Row2 = styled.div`
   display: flex;
   gap: 0.5rem;
   padding-top: 0.4rem;
- 
 `;
 
 export const ImgWrapper = styled.div`
+  user-select: none;
   img {
     width: 100%;
   }
 `;
 
 export const ImgWrapper2 = styled.div`
-display: flex;
- justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  user-select: none;
   img {
     width: 65%;
     height: auto;
@@ -106,7 +106,7 @@ display: flex;
 
 export const ImgWrapper3 = styled.div`
   display: flex;
- justify-content: flex-start;
+  justify-content: flex-start;
   img {
     width: 65%;
     height: auto;
@@ -121,8 +121,9 @@ export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   transition: all 150ms ease;
-  opacity: ${(props) => props.$show ? "1" : "0"};
-  visibility: ${(props) => props.$show ? "visible" : "hidden"};
+  opacity: ${(props) => (props.$show ? "1" : "0")};
+  visibility: ${(props) => (props.$show ? "visible" : "hidden")};
+  user-select: none;
 
   p {
     font-family: "Gotham", sans-serif;
@@ -133,5 +134,4 @@ export const GumInterproximalSolution = styled.div<GumInterproximalSolutionProps
     color: #ffffff;
     letter-spacing: 2.5px;
   }
-
 `;

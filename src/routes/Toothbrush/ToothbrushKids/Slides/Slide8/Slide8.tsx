@@ -12,7 +12,7 @@ const Slide8 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       useBulletPoints={true}
       showImprintText={true}
@@ -26,14 +26,18 @@ const Slide8 = () => (
       textWrapperPaddingRight="3rem"
       title={
         <>
-        SUPER TIP<sup>®</sup>
+          SUPER TIP<sup>®</sup>
         </>
       }
       description={[
-        <>Raised Super Tip<sup>®</sup> bristles at the tip provide access to posterior regions and clean hard-to-reach surfaces</>,
         <>
-        Dome Trim<sup>®</sup> bristles are clinically designed to clean below the gumline<sup>1,2</sup>
-        </>
+          Raised Super Tip<sup>®</sup> bristles at the tip provide access to
+          posterior regions and clean hard-to-reach surfaces.
+        </>,
+        <>
+          Dome Trim<sup>®</sup> bristles are clinically designed to clean below
+          the gumline<sup>18,&nbsp;19</sup>.
+        </>,
       ]}
       imprintColors={[["#784097"], ["#f26a2b"], ["#008ed0"], ["#00af86"]]}
       specs={[
@@ -41,8 +45,8 @@ const Slide8 = () => (
           { label: "Item", value: "468" },
           { label: "Texture", value: "Soft" },
           { label: "Size", value: "Subcompact" },
-          { label: "Tufts", value: "24" }
-        ]
+          { label: "Tufts", value: "24" },
+        ],
       ]}
     />
     <ProductSlide
@@ -51,7 +55,7 @@ const Slide8 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       useBulletPoints={true}
       showImprintText={true}
@@ -65,15 +69,23 @@ const Slide8 = () => (
       textWrapperPaddingRight="3rem"
       title={
         <>
-        G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
+          G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
         </>
       }
       description={[
-        <>Special BrightLine<sup>®</sup> Grip bristles help remove stains for <strong>28% whiter teeth</strong><sup>3</sup></>,
-        <>Raised Super Tip<sup>®</sup> bristles at the tip provide access to posterior regions and clean hard-to-reach surfaces</>,
         <>
-        Dome Trim<sup>®</sup> bristles are clinically designed to clean below the gumline<sup>1,2</sup>
-        </>
+          Special BrightLine<sup>®</sup> Grip bristles help remove stains for{" "}
+          <strong>28% whiter teeth</strong>
+          <sup>3</sup>.
+        </>,
+        <>
+          Raised Super Tip<sup>®</sup> bristles at the tip provide access to
+          posterior regions and clean hard-to-reach surfaces.
+        </>,
+        <>
+          Dome Trim<sup>®</sup> bristles are clinically designed to clean below
+          the gumline<sup>18,&nbsp;19</sup>.
+        </>,
       ]}
       imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}
       specs={[
@@ -81,8 +93,8 @@ const Slide8 = () => (
           { label: "Item", value: "4594" },
           { label: "Texture", value: "Soft" },
           { label: "Size", value: "Subcompact" },
-          { label: "Tufts", value: "23" }
-        ]
+          { label: "Tufts", value: "23" },
+        ],
       ]}
     />
   </>

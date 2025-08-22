@@ -13,7 +13,7 @@ const Slide4 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       diagramMarginBottom="0.2rem"
       diagramWidth="85%"
@@ -25,25 +25,26 @@ const Slide4 = () => (
       showImprintText={false}
       title={
         <>
-        Crayola<TitleLight>™</TitleLight> TIMER LIGHT
+          Crayola<TitleLight>™</TitleLight> TIMER LIGHT
         </>
       }
       description={[
-        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time",
+        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
         <>
-         Dome Trim® bristles are clinically designed to clean below the gumline<sup>1,2</sup>
+          Dome Trim® bristles are clinically designed to clean below the gumline
+          <sup>18, 19</sup>.
         </>,
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",
-        "Non-replaceable LED battery",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        "Non-replaceable LED battery.",
       ]}
       imprintColors={[["#8dc63e"], ["#f14f68"], ["#00aeee"], ["#fcb041"]]}
       specs={[
         [
-        { label: "Item", value: "202" },
-        { label: "Texture", value: "Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "29" }
-        ]
+          { label: "Item", value: "202" },
+          { label: "Texture", value: "Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "29" },
+        ],
       ]}
     />
     <ProductSlide
@@ -52,7 +53,7 @@ const Slide4 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       diagramWidth="85%"
       brushImgWidth="88%"
@@ -63,25 +64,27 @@ const Slide4 = () => (
       useBulletPoints={true}
       title={
         <>
-         Crayola<TitleLight>™</TitleLight> DEEP CLEAN
+          Crayola<TitleLight>™</TitleLight> DEEP CLEAN
         </>
       }
       description={[
         <>
-            Ultra-soft Deep Clean bristles allow for better reach in between teeth for better cleaning<sup>3</sup>
+          Ultra-soft Deep Clean bristles allow for better reach in between teeth
+          for better cleaning<sup>22</sup>.
         </>,
-        "Thumb grip and triangular-shaped handle offer control and encourage brushing at a 45° angle",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean",  
-     ]}
+        "Thumb grip and triangular-shaped handle offer control and encourage brushing at a 45° angle.",
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+      ]}
       imprintColors={[["#0075ba"], ["#f15921"], ["#80c241"], ["#9163aa"]]}
       showImprintText={false}
       specs={[
         [
-        { label: "Item", value: "234" },
-        { label: "Texture", value: "Ultra Soft" },
-        { label: "Size", value: "Compact" },
-        { label: "Tufts", value: "25" }]
-        ]}
+          { label: "Item", value: "234" },
+          { label: "Texture", value: "Ultra Soft" },
+          { label: "Size", value: "Compact" },
+          { label: "Tufts", value: "25" },
+        ],
+      ]}
     />
   </>
 );

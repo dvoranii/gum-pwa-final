@@ -1,16 +1,16 @@
-import FlosserSlide from '../FlosserSlide';
-import FlosserImage from '../../../../../../assets/btc/patient/recommendations/Flossers/891-FlosserImg.webp';
-import BottomImage from '../../../../../../assets/btc/patient/recommendations/Flossers/BottomImg.webp';
+import FlosserSlide from "../FlosserSlide";
+import FlosserImage from "../../../../../../assets/btc/patient/recommendations/Flossers/891-FlosserImg.webp";
+import BottomImage from "../../../../../../assets/btc/patient/recommendations/Flossers/BottomImg.webp";
 
 export default function ProfessionalCleanFlosser() {
   return (
     <FlosserSlide
       title="Professional Clean®"
       subtitle="FLOSSER MINT"
-      subtitleSize='2.5rem'
+      subtitleSize="2.5rem"
       sideImage={FlosserImage}
       bottomImage={BottomImage}
-      bottomImageWidth='90%'
+      bottomImageWidth="90%"
       bullets={[
          {lines: [
             <>Textured floss effectively,

@@ -14,7 +14,7 @@ const Slide6 = () => (
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
-        marginTop: "0"
+        marginTop: "0",
       }}
       useBulletPoints={true}
       showImprintText={false}
@@ -27,13 +27,18 @@ const Slide6 = () => (
       colGap="0.8rem"
       colMargLeft="39px"
       textWrapperH2MarginBottom="0.4rem"
-      title={<>SpongeBob™ <TitleLight>Toothbrush</TitleLight></>}
+      title={
+        <>
+          SpongeBob™ <TitleLight>Toothbrush</TitleLight>
+        </>
+      }
       description={[
         <>
-        Tongue cleaner helps remove<br/> bacteria from the tongue.
+          Tongue cleaner helps remove
+          <br /> bacteria from the tongue.
         </>,
         "Center bristles help emphasize a smaller amount of toothpaste.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean"
+        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
       ]}
       imprintColors={[["#ffff00"], ["#ff1493"]]}
       specs={[
@@ -41,8 +46,8 @@ const Slide6 = () => (
           { label: "Item", value: "4060" },
           { label: "Texture", value: "Ultra soft" },
           { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "29" }
-        ]
+          { label: "Tufts", value: "29" },
+        ],
       ]}
     />
 

@@ -14,17 +14,14 @@ export default function ProfessionalCleanFlosser() {
       bullets={[
          {lines: [
             <>Textured floss effectively,
-            removes 2x more plaque<sup>10</sup>.</>
+            removes 2x more plaque.<sup>10</sup></>
         ]},
          {lines: [
             "Designed to resist shredding",
-            <>or breaking<sup>12</sup>.</>
+            <>or breaking.<sup>12</sup></>
         ]},
         {
-          text: <>Lightweight flexible grip uses 20% less plastic<sup>13</sup>.</>
-        },
-        {
-          text: <>20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers.</>
+          text: <>Lightweight flexible grip uses 20% less plastic.<sup>13</sup></>
         }
       ]}
     />

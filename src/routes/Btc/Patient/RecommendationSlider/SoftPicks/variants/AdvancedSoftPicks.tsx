@@ -17,7 +17,7 @@ export default function AdvancedSoftPicks() {
           ]   
         },
         {
-          lines:[<>Clinically proven to remove 22% more plaque than brushing alone<sup>23</sup>.</>]
+          lines:[<>Clinically proven to remove 22% more plaque than brushing alone.<sup>23</sup></>]
         }
       ]}
     />

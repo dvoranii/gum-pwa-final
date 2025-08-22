@@ -20,7 +20,7 @@ export default function ToothAndTongueSlide() {
 
           <S.BulletList $letterSpace="-0.8px" $paddingRight="2.4rem;" $lineHeight="1.2">
             <li>
-              <span>40% more bristles<sup>22</sup>.</span>
+              <span>40% more bristles.<sup>22</sup></span>
             </li>
             <li>
               <span>Cleans between teeth without irritating gums.</span>

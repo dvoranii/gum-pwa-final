@@ -11,13 +11,12 @@ export default function TwistedMintFlosser() {
       sideImage={FlosserImage}
       bottomImage={BottomImage}
       bullets={[
-        { text: <>Removes 2x more plaque<sup>10</sup>.</> },
-        { text: <>Covers 30% more surface<sup>11</sup>.</> },
+        { text: <>Removes 2x more plaque.<sup>10</sup></> },
+        { text: <>Covers 30% more surface.<sup>11</sup></> },
         {lines: [
             "Lightweight flexible grip",
-            <>uses 20% less plastic<sup>13</sup>.</>
-        ]},
-        {text: <>20% LESS PLASTIC<sup>13</sup> mint flavour on all flossers.</>}
+            <>uses 20% less plastic.<sup>13</sup></>
+        ]}
       ]}
     />
   );

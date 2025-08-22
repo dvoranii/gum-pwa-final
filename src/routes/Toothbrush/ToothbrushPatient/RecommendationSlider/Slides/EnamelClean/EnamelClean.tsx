@@ -23,10 +23,10 @@ export default function EnamelCleanSlide() {
               <span>Micro-feathering splits each bristle into several fine tips.</span>
             </li>
             <li>
-              <span>70% more enamel clean compared end rounded bristle<sup>17</sup>.</span>
+              <span>70% more enamel clean compared end rounded bristle.<sup>17</sup></span>
             </li>
             <li>
-              <span>Dome Trim® bristles are clinically designed to clean below the gumline<sup>18,19</sup>.</span>
+              <span>Dome Trim® bristles are clinically designed to clean below the gumline.<sup>18,19</sup></span>
             </li>
           </S.BulletList>
 

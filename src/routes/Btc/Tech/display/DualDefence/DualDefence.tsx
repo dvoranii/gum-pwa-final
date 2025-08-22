@@ -15,7 +15,7 @@ export default function DualDefence(){
                 </S.MainTitle>
                 <S.Description>
                     <li>Twisted mint floss.</li>
-                    <li>Removes 2x more plaque<sup>10</sup>.</li>
+                    <li>Removes 2x more plaque.<sup>10</sup></li>
                 </S.Description>
                 <S.ImgTextWrapper>
                     <S.ImgWrapper>

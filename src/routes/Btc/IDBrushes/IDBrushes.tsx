@@ -43,7 +43,7 @@ export default function BtcIDBrushes() {
                       <ul>
                         <li>
                           Trianglular-shaped bristles remove 25% more plaque
-                          than conventional round bristles<sup>8</sup>.
+                          than conventional round bristles.<sup>8</sup>
                         </li>
                         <li>
                           Cleans posterior teeth easily with bendable neck.
@@ -53,8 +53,8 @@ export default function BtcIDBrushes() {
                           rubberized handle.
                         </li>
                         <li>
-                          Stays clean between uses with antibacterial bristles
-                          <sup>9</sup>.
+                          Stays clean between uses with antibacterial bristles.
+                          <sup>9</sup>
                         </li>
                       </ul>
                     </S.ListContainer>
@@ -66,7 +66,7 @@ export default function BtcIDBrushes() {
                     <S.BristlesTextWrapper>
                       <p>
                         Triangular-shaped bristles remove up to 25% more plaque
-                        than conventional round bristles<sup>8</sup>.
+                        than conventional round bristles<sup>8</sup>
                       </p>
                     </S.BristlesTextWrapper>
                     <S.BristlesImagesContainer>
@@ -133,7 +133,7 @@ export default function BtcIDBrushes() {
                     <ul>
                       <li>
                         Trianglular-shaped bristles remove 25% more plaque than
-                        conventional round bristles<sup>8</sup>.
+                        conventional round bristles.<sup>8</sup>
                       </li>
                       <li>
                         Angled neck helps patients reach hard-to-clean
@@ -215,7 +215,7 @@ export default function BtcIDBrushes() {
                         </li>
                         <li>
                           Triangular-shaped bristles remove 25% more plaque than
-                          conventional round bristles<sup>8</sup>.
+                          conventional round bristles.<sup>8</sup>
                         </li>
                       </ul>
                     </S.ListContainer>
@@ -302,7 +302,7 @@ export default function BtcIDBrushes() {
                     </li>
                     <li>
                       Soft antibacterial bristles provide effective and gentle
-                      cleaning<sup>9</sup>.
+                      cleaning.<sup>9</sup>
                     </li>
                     <li>
                       Two angles allow for easy access to all areas of the

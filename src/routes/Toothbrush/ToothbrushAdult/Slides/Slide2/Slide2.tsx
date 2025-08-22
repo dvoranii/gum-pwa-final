@@ -29,7 +29,7 @@ const Slide2 = () => (
         <>
           Micro-feathering splits each bristle into several fine tips for{" "}
           <DescriptionBold>70% more enamel clean</DescriptionBold> compared to
-          an end rounded bristle<sup>17</sup>.
+          an end rounded bristle.<sup>17</sup>
         </>,
       ]}
       imprintColors={[["#cb0a3d"], ["#c369c2"], ["#38b5e6"], ["#34c0ae"]]}

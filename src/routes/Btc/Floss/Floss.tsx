@@ -81,11 +81,11 @@ export default function BtcFloss() {
                 <ul>
                   <li>Textured, twisted floss with fresh minty flavour.</li>
                   <li>
-                    Removes <span>2x more plaque</span>
-                    <sup>10</sup>.
+                    Removes <span>2x more plaque</span>.
+                    <sup>10</sup>
                   </li>
                   <li>
-                    Covers <span>30% more</span> surface area<sup>11</sup>.
+                    Covers <span>30% more</span> surface area.<sup>11</sup>
                   </li>
                 </ul>
 
@@ -126,8 +126,8 @@ export default function BtcFloss() {
                   <li>Thin and easy to insert, even between tight contacts.</li>
                   <li>
                     Floss expands during use to remove{" "}
-                    <span>2X more plaque</span>
-                    <sup>10</sup>.
+                    <span>2X more plaque</span>.
+                    <sup>10</sup>
                   </li>
                   <li>
                     Multiple filaments and texturized fibers for exceptional
@@ -168,8 +168,8 @@ export default function BtcFloss() {
               <S.ListContainer>
                 <ul>
                   <li>
-                    Removes <span>2x more plaque</span>
-                    <sup>10</sup>.
+                    Removes <span>2x more plaque</span>.
+                    <sup>10</sup>
                   </li>
                   <li>
                     Unique woven design effectively removes biofilm between
@@ -177,7 +177,7 @@ export default function BtcFloss() {
                   </li>
                   <li>
                     The unique interlacing process produces a strong, smooth
-                    floss engineered not to shred, break or sag<sup>13</sup>.
+                    floss engineered not to shred, break or sag.<sup>13</sup>
                   </li>
                 </ul>
 
@@ -228,7 +228,7 @@ export default function BtcFloss() {
                     <S.ColumnTitle>Fine Dental Floss</S.ColumnTitle> 
                         <S.ListContainer $flexGrow="0">
                             <ul>
-                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline<sup>13</sup></li>                  
+                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline.<sup>13</sup></li>                  
                             </ul>  
 
                 <S.InfoGrid $marginTop="0" $paddingTop="0.4rem">

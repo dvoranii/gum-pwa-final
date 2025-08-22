@@ -36,7 +36,7 @@ const Slide8 = () => (
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically designed to clean below
-          the gumline<sup>18,&nbsp;19</sup>.
+          the gumline.<sup>18,&nbsp;19</sup>
         </>,
       ]}
       imprintColors={[["#784097"], ["#f26a2b"], ["#008ed0"], ["#00af86"]]}
@@ -84,7 +84,7 @@ const Slide8 = () => (
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically designed to clean below
-          the gumline<sup>18,&nbsp;19</sup>.
+          the gumline.<sup>18,&nbsp;19</sup>
         </>,
       ]}
       imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}

@@ -7,7 +7,9 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    registerSW();
+    if (import.meta.env.PROD) {
+      registerSW();
+    }
   }, []);
 
   const location = useLocation();

@@ -42,13 +42,12 @@ export default defineConfig({
         "fonts/Gotham-XLightIta.otf",
       ],
       workbox: {
-        // This is crucial for offline functionality
         globPatterns: [
           "**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}",
           "**/*.{otf,ttf,woff,woff2}",
         ],
         navigateFallback: "/index.html",
-        navigateFallbackAllowlist: [/^(?!\/__).*/],
+        navigateFallbackAllowlist: [/^((?!\.\w+$).)*$/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
@@ -64,11 +63,24 @@ export default defineConfig({
               cacheName: "google-fonts-webfonts",
               expiration: {
                 maxEntries: 30,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+            },
+          },
+          {
+            urlPattern: /\.(?:html)$/,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "html-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24,
               },
             },
           },
         ],
+        skipWaiting: true,
+        clientsClaim: true,
       },
       devOptions: {
         enabled: false,

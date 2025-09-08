@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
@@ -8,45 +8,68 @@ export default defineConfig({
       babel: {
         plugins: [
           [
-            'babel-plugin-styled-components',
+            "babel-plugin-styled-components",
             {
               displayName: true,
-            }
-          ]
-        ]
-      }
+            },
+          ],
+        ],
+      },
     }),
     VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico','icon/*.png'],
-      manifest: {
-        "name": "GUM",
-        "short_name": "GUM",
-        "description": "GUM e-Detailing Tool",
-        "start_url": "/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#000000",
-        "icons": [
+      registerType: "autoUpdate",
+      includeAssets: [
+        "favicon.ico",
+        "icon-512.png",
+        "icon-196.png",
+        "manifest.json",
+        "fonts/Gotham-BlackIta.otf",
+        "fonts/Gotham-Bold.otf",
+        "fonts/Gotham-BoldIta.otf",
+        "fonts/Gotham-Book.otf",
+        "fonts/Gotham-BookIta.otf",
+        "fonts/Gotham-Light.otf",
+        "fonts/Gotham-LightIta.otf",
+        "fonts/Gotham-Medium.otf",
+        "fonts/Gotham-MediumIta.otf",
+        "fonts/Gotham-Thin.otf",
+        "fonts/Gotham-ThinIta.otf",
+        "fonts/Gotham-Ultra.otf",
+        "fonts/Gotham-UltraIta.otf",
+        "fonts/Gotham-XLight.otf",
+        "fonts/Gotham-XLightIta.otf",
+      ],
+      workbox: {
+        // This is crucial for offline functionality
+        globPatterns: [
+          "**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}",
+          "**/*.{otf,ttf,woff,woff2}",
+        ],
+        runtimeCaching: [
           {
-            "src": "/icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "google-fonts-stylesheets",
+            },
           },
           {
-            "src": "/icon-196.png",
-            "sizes": "196x196",
-            "type": "image/png"
-          }
-        ]
-      },
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,otf}'],
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-webfonts",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+            },
+          },
+        ],
       },
       devOptions: {
         enabled: false,
-        type: 'module'
+        type: "module",
       },
-    })
-  ]
+    }),
+  ],
 });

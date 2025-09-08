@@ -42,13 +42,90 @@ export default defineConfig({
         "fonts/Gotham-XLightIta.otf",
       ],
       workbox: {
+        // CRITICAL: Increase cache size limit for fonts and assets
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10MB
+
+        // CRITICAL: More specific glob patterns
         globPatterns: [
-          "**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}",
-          "**/*.{otf,ttf,woff,woff2}",
+          "**/*.{js,css,html,ico,webmanifest,json}",
+          "**/*.{png,svg,webp,jpg,jpeg,gif}",
+          "**/*.{otf,ttf,woff,woff2,eot}",
+          "assets/**/*", // Explicitly include assets folder
         ],
+
+        // CRITICAL: Navigation fallback for offline SPA
         navigateFallback: "/index.html",
-        navigateFallbackAllowlist: [/^((?!\.\w+$).)*$/],
+        navigateFallbackAllowlist: [/^((?!\.(?:json|xml|txt|ico)$).)*$/], // Better regex
+
+        // CRITICAL: Force immediate activation
+        skipWaiting: true,
+        clientsClaim: true,
+
+        // CRITICAL: Clean up old caches
+        cleanupOutdatedCaches: true,
+
         runtimeCaching: [
+          // CRITICAL: HTML pages - Network First with fast timeout
+          {
+            urlPattern: /\.(?:html|htm)$/,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "html-cache",
+              networkTimeoutSeconds: 3, // Fallback to cache quickly
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+              },
+            },
+          },
+          // CRITICAL: CSS files
+          {
+            urlPattern: /\.(?:css)$/,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "css-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 60, // 60 days
+              },
+            },
+          },
+          // CRITICAL: JavaScript files
+          {
+            urlPattern: /\.(?:js)$/,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "js-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 60, // 60 days
+              },
+            },
+          },
+          // CRITICAL: Images
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|webp|gif|ico)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+              },
+            },
+          },
+          // CRITICAL: Fonts
+          {
+            urlPattern: /\.(?:otf|ttf|woff|woff2|eot)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "fonts-cache",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
             handler: "StaleWhileRevalidate",
@@ -67,20 +144,7 @@ export default defineConfig({
               },
             },
           },
-          {
-            urlPattern: /\.(?:html)$/,
-            handler: "NetworkFirst",
-            options: {
-              cacheName: "html-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24,
-              },
-            },
-          },
         ],
-        skipWaiting: true,
-        clientsClaim: true,
       },
       devOptions: {
         enabled: false,

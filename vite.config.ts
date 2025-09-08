@@ -144,6 +144,17 @@ export default defineConfig({
               },
             },
           },
+          {
+            urlPattern: "/important-page",
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "important-pages",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+              },
+            },
+          },
         ],
       },
       devOptions: {

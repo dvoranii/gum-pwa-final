@@ -89,8 +89,12 @@ export const Row2 = styled.div`
 
 export const ImgWrapper = styled.div`
   user-select: none;
+  width: 33.33%;
+
   img {
     width: 100%;
+    height: auto;
+    max-width: 139px;
   }
 `;
 
@@ -98,18 +102,22 @@ export const ImgWrapper2 = styled.div`
   display: flex;
   justify-content: flex-end;
   user-select: none;
+  width: 50%;
   img {
     width: 65%;
     height: auto;
+    max-width: 139px;
   }
 `;
 
 export const ImgWrapper3 = styled.div`
   display: flex;
   justify-content: flex-start;
+  width: 50%;
   img {
     width: 65%;
     height: auto;
+    max-width: 139px;
   }
 `;
 

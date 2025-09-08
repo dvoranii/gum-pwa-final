@@ -18,6 +18,8 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: "autoUpdate",
+      scope: "/",
+      base: "/",
       includeAssets: [
         "favicon.ico",
         "icon-512.png",
@@ -45,6 +47,8 @@ export default defineConfig({
           "**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}",
           "**/*.{otf,ttf,woff,woff2}",
         ],
+        navigateFallback: "/index.html",
+        navigateFallbackAllowlist: [/^(?!\/__).*/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\//,

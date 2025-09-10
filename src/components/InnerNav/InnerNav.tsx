@@ -1,7 +1,28 @@
 import * as S from "./InnerNav.styles";
 import GumLogo from "../../assets/gum-logo.svg";
 import { useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
+const REMOUNT_EVENT = "remount-component";
+
+// Custom hook to trigger the remount
+export const useRemount = () => {
+  const [remountKey, setRemountKey] = useState(0);
+
+  useEffect(() => {
+    const handleRemount = () => {
+      setRemountKey((prevKey) => prevKey + 1);
+    };
+
+    window.addEventListener(REMOUNT_EVENT, handleRemount);
+
+    return () => {
+      window.removeEventListener(REMOUNT_EVENT, handleRemount);
+    };
+  }, []);
+
+  return remountKey;
+};
 interface NavItem {
   path: string;
   label: string;
@@ -15,6 +36,14 @@ interface InnerNavProps {
 
 export default function InnerNav({ navItems }: InnerNavProps) {
   const location = useLocation();
+
+  const handleLinkClick = (e: React.MouseEvent, path: string) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.dispatchEvent(new CustomEvent(REMOUNT_EVENT));
+    }
+  };
+
   return (
     <S.NavTabsOuter>
       <S.GumLogoWrapper>
@@ -43,6 +72,7 @@ export default function InnerNav({ navItems }: InnerNavProps) {
               }
               end={item.end}
               className={isActive ? "active" : ""}
+              onClick={(e) => handleLinkClick(e, item.path)}
             >
               {item.label}
             </S.TabLink>

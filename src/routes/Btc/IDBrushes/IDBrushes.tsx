@@ -130,7 +130,7 @@ export default function BtcIDBrushes() {
         <BaseCarouselSlide>
           <S.SlideWrapperInner>
             <S.SlideRow1>
-              <S.Row1WrapperInner2 $paddingBottom="0.4rem">
+              <S.Row1WrapperInner2 $paddingBottom="0">
                 <S.TextWrapper>
                   <h2>Proxabrush® Angle Cleaners</h2>
                   <S.ListContainer $paddingBottom="0">

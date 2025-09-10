@@ -29,6 +29,10 @@ export const SlideRow1 = styled.div`
 export const SlideRow2 = styled.div`
   padding-top: 0.8rem;
   position: relative;
+
+  @media screen and (max-width: 1080px) {
+    padding-top: 0.4rem;
+  }
 `;
 
 interface ColumnProps {
@@ -85,6 +89,10 @@ export const Row1WrapperInner2 = styled.div<Row1WrapperInner2Props>`
     font-family: "Gotham", sans-serif;
     font-weight: 500;
     color: ${colors.black};
+  }
+
+  @media screen and (max-width: 1080px) {
+    /* padding-bottom: 0; */
   }
 `;
 
@@ -504,6 +512,7 @@ export const InfoGrid = styled.div<InfoGridProps>`
 
   @media screen and (max-width: 1080px) {
     gap: 0.25rem;
+    padding-top: 0.4rem;
   }
 `;
 

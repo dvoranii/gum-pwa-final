@@ -23,7 +23,6 @@ const flickityOptions = {
   prevNextButtons: true,
   pageDots: true,
   contain: true,
-  cellAlign: "center",
 };
 
 export default function Accessories() {
@@ -68,7 +67,7 @@ export default function Accessories() {
                       <img src={Slide1Row1Img} />
                     </S.ImgWrapper>
                   </S.RowWrapperInner>
-                  <S.MetaDataWrapper $width={"45%"}>
+                  <S.MetaDataWrapper $gridTemplate="1fr 1fr">
                     <p>723 Orthodontic Wax w/Vitamin E</p>
                     <p>24/box</p>
                   </S.MetaDataWrapper>
@@ -100,7 +99,7 @@ export default function Accessories() {
                       <img src={Slide1Row2Img} />
                     </S.ImgWrapper>
                   </S.RowWrapperInner>
-                  <S.MetaDataWrapper $width={"30%"}>
+                  <S.MetaDataWrapper $gridTemplate="1fr 1fr">
                     <p>152 Travel Caps</p>
                     <p>12/box</p>
                   </S.MetaDataWrapper>
@@ -137,11 +136,11 @@ export default function Accessories() {
                       <img src={Slide2Row1Img} />
                     </S.ImgWrapper>
                   </S.RowWrapperInner>
-                  <S.MetaDataWrapper $width={"386px"}>
+                  <S.MetaDataWrapper $gridTemplate="1fr 1fr">
                     <p>600 Handle</p>
                     <p>12/bag</p>
                   </S.MetaDataWrapper>
-                  <S.MetaDataWrapper $width={"546px"}>
+                  <S.MetaDataWrapper $gridTemplate="1fr 1fr">
                     <p>601 Refills</p>
                     <p>12 Packs with 3 Refills each</p>
                   </S.MetaDataWrapper>
@@ -177,7 +176,7 @@ export default function Accessories() {
                       <img src={Slide2Row2Img} />
                     </S.ImgWrapper>
                   </S.RowWrapperInner>
-                  <S.MetaDataWrapper $width={"45%"}>
+                  <S.MetaDataWrapper $gridTemplate="1fr 1fr">
                     <p>760 2-in-1 Tongue Cleaner</p>
                     <p>12/box</p>
                   </S.MetaDataWrapper>

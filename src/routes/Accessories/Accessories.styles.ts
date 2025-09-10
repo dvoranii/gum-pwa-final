@@ -1,4 +1,3 @@
-
 import { styled } from "styled-components";
 import { colors } from "../../constants/colors";
 
@@ -45,24 +44,33 @@ export const RowWrapperInner = styled.div<RowWrapperInnerProps>`
   border-bottom: 1px solid ${colors.black};
   padding-bottom: 2.4rem;
   gap: ${(props) => props.$gap};
+
+  @media screen and (max-width: 1080px) {
+    padding-bottom: 1.2rem;
+  }
 `;
 
 interface MetaDataWrapperProps {
-  $width?: string;
-
+  $gridTemplate?: string;
 }
 
 export const MetaDataWrapper = styled.div<MetaDataWrapperProps>`
-  width: ${(props) => props.$width};
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: ${(props) => props.$gridTemplate || "1fr 1fr"};
+  gap: 1rem;
+  align-items: center;
+  padding-top: 0.2rem;
 
   p {
     font-family: "Gotham", sans-serif;
     font-weight: 300;
-    font-size:clamp(16px, 1.2vw, 1.4rem);
+    font-size: clamp(14px, 1.2vw, 1.4rem);
     color: ${colors.black};
-    margin-top: 0.4rem;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1080px) {
+    gap: 0.5rem;
   }
 `;
 
@@ -73,11 +81,11 @@ interface ImgWrapperProps {
 
 export const ImgWrapper = styled.div<ImgWrapperProps>`
   display: flex;
-  flex: ${(props) => props.$flex ? props.$flex: "1"};
+  flex: ${(props) => (props.$flex ? props.$flex : "1")};
   align-items: flex-end;
 
   img {
-    width: ${(props) => props.$width ? props.$width : "90%"};
+    width: ${(props) => (props.$width ? props.$width : "90%")};
   }
 `;
 
@@ -90,17 +98,15 @@ export const Slide = styled.div`
   align-items: center;
   justify-content: space-around;
   gap: 1.4rem;
-
 `;
 
 export const ListContainer = styled.div`
-    ul {
-        font-family: 'Gotham', sans-serif;
-        font-size:clamp(16px, 1.4vw, 2.2rem);
-        color: ${colors.black};
-        padding: 0.4rem 0;
-        line-height: 1;
-        margin-inline-start: 24px;
-
-   }
+  ul {
+    font-family: "Gotham", sans-serif;
+    font-size: clamp(16px, 1.4vw, 2.2rem);
+    color: ${colors.black};
+    padding: 0.4rem 0;
+    line-height: 1;
+    margin-inline-start: 24px;
+  }
 `;

@@ -25,7 +25,6 @@ export default defineConfig({
         "icon-512.png",
         "icon-196.png",
         "manifest.json",
-        // Your font files are handled here
         "fonts/Gotham-BlackIta.otf",
         "fonts/Gotham-Bold.otf",
         "fonts/Gotham-BoldIta.otf",

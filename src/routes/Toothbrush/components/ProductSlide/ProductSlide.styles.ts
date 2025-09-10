@@ -72,6 +72,7 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
 
   @media screen and (max-width: 1080px) {
     min-height: 490px;
+    padding: 0;
   }
 `;
 
@@ -91,6 +92,10 @@ export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
   img {
     width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "95%")};
     object-fit: contain;
+  }
+
+  @media screen and (max-width: 1080px) {
+    margin-bottom: 0.4rem;
   }
 `;
 

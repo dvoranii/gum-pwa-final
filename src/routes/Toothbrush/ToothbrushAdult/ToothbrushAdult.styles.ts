@@ -10,4 +10,9 @@ export const AdultWrapperOuter = styled.div`
 export const CarouselSlide = styled(BaseCarouselSlide)`
   padding: 1rem 0rem 1rem 2rem;
   justify-content: flex-start;
+
+  @media screen and (max-width: 1080px) {
+    padding: 0;
+    gap: 1.2rem;
+  }
 `;

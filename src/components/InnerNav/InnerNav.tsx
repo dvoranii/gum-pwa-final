@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 
 const REMOUNT_EVENT = "remount-component";
 
-// Custom hook to trigger the remount
 export const useRemount = () => {
   const [remountKey, setRemountKey] = useState(0);
 

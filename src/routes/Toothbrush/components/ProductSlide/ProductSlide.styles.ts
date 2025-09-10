@@ -94,10 +94,6 @@ export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
     width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "95%")};
     object-fit: contain;
   }
-
-  @media screen and (max-width: 1080px) {
-    margin-bottom: 0.4rem;
-  }
 `;
 
 interface TextWrapperProps {

@@ -10,19 +10,31 @@ export default function ProfessionalCleanFlosser() {
       subtitleSize="2.5rem"
       sideImage={FlosserImage}
       bottomImage={BottomImage}
+      minHeight="167px"
       bottomImageWidth="90%"
       bullets={[
-         {lines: [
-            <>Textured floss effectively,
-            removes 2x more plaque.<sup>10</sup></>
-        ]},
-         {lines: [
-            "Designed to resist shredding",
-            <>or breaking.<sup>12</sup></>
-        ]},
         {
-          text: <>Lightweight flexible grip uses 20% less plastic.<sup>13</sup></>
-        }
+          lines: [
+            <>
+              Textured floss effectively, removes 2x more plaque.<sup>10</sup>
+            </>,
+          ],
+        },
+        {
+          lines: [
+            "Designed to resist shredding",
+            <>
+              or breaking.<sup>12</sup>
+            </>,
+          ],
+        },
+        {
+          text: (
+            <>
+              Lightweight flexible grip uses 20% less plastic.<sup>13</sup>
+            </>
+          ),
+        },
       ]}
     />
   );

@@ -85,16 +85,16 @@ export const Row2 = styled.div`
   display: flex;
   gap: 0.5rem;
   padding-top: 0.4rem;
+  min-width: 423px;
 `;
 
 export const ImgWrapper = styled.div`
   user-select: none;
-  width: 33.33%;
+  min-width: 139px;
 
   img {
     width: 100%;
     height: auto;
-    max-width: 139px;
   }
 `;
 
@@ -103,10 +103,10 @@ export const ImgWrapper2 = styled.div`
   justify-content: flex-end;
   user-select: none;
   width: 50%;
+  flex-shrink: 0;
   img {
     width: 65%;
     height: auto;
-    max-width: 139px;
   }
 `;
 
@@ -114,10 +114,12 @@ export const ImgWrapper3 = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 50%;
+
+  flex-shrink: 0;
   img {
     width: 65%;
     height: auto;
-    max-width: 139px;
+    /* min-width: 139px; */
   }
 `;
 

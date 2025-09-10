@@ -17,6 +17,7 @@ type SoftPicksSlideProps = {
   bottomImageWidth?: string;
   bullets: BulletPoint[];
   gap?: string;
+  advanced?: boolean;
 };
 
 export default function SoftPicksSlide({
@@ -30,10 +31,11 @@ export default function SoftPicksSlide({
   bottomImageWidth,
   bullets,
   gap,
+  advanced,
 }: SoftPicksSlideProps) {
   return (
     <S.Container $gap={gap}>
-      <S.ImgWrapper>
+      <S.ImgWrapper $advanced={advanced}>
         <S.MainImage
           src={sideImage}
           alt={`${title} ${subtitle}`}

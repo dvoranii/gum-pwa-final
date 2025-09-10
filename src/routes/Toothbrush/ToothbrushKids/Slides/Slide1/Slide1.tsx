@@ -17,7 +17,7 @@ const Slide1 = () => (
       }}
       textWrapperMarginTop="-24px"
       textWrapperPaddingRight="3.8rem"
-      minHeight="190px"
+      textWrapperMinHeight="190px"
       colGap="0.8rem"
       useBulletPoints={true}
       showImprintText={false}
@@ -48,7 +48,7 @@ const Slide1 = () => (
       }}
       textWrapperMarginTop="-24px"
       useBulletPoints={true}
-      minHeight="190px"
+      textWrapperMinHeight="190px"
       description={[
         "Soft bristles gently remove plaque.",
         "Center bristles help emphasize a smaller amount of toothpaste for kids.",

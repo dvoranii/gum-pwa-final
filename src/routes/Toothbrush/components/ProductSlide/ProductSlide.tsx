@@ -21,7 +21,7 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   paddingRight,
   diagramWidth,
   maxHeight,
-  minHeight,
+  textWrapperMinHeight,
   diagramMarginBottom,
   brushImgWidth,
   colGap,
@@ -29,6 +29,8 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   colMargLeft,
   imgMinWidth,
   shopifyIconProps,
+  diagramMinWidth,
+  diagramMinHeight,
 }) => {
   const hasMultipleSpecRows = specs.length > 1;
 
@@ -56,6 +58,8 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
           <S.DiagramsWrapper
             $diagramWidth={diagramWidth}
             $diagramMarginBottom={diagramMarginBottom}
+            $diagramMinHeight={diagramMinHeight}
+            $diagramMinWidth={diagramMinWidth}
           >
             <img
               src={diagramImage}
@@ -71,7 +75,7 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
             $marginBottom={textWrapperH2MarginBottom}
             $textWrapperPaddingRight={textWrapperPaddingRight}
             $maxHeight={maxHeight}
-            $minHeight={minHeight}
+            $textWrapperMinHeight={textWrapperMinHeight}
             $listPaddingLeft={listPaddingLeft}
           >
             <h2>{title}</h2>

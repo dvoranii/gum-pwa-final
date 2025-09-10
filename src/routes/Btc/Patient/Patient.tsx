@@ -102,20 +102,6 @@ export default function BtcPatient() {
       if (!hasPreviousRowSelection) return;
     }
 
-    // switch(rowIndex) {
-    //   case 0:
-    //     playSound(EmbrasureSound);
-    //     break;
-    //   case 1:
-    //     playSound(MotivatedSound);
-    //     break;
-    //   case 2:
-    //     playSound(ApplianceSound);
-    //     break;
-    //   default:
-    //     break;
-    // }
-
     setActiveImages((prev) => {
       const newState = { ...prev };
       const currentRowKey = `row${rowIndex + 1}`;
@@ -177,6 +163,7 @@ export default function BtcPatient() {
 
             {/* Row 2 */}
             <S.Row2>
+              {" "}
               <S.ImgWrapper2 onPointerDown={() => toggleImage("motivated", 1)}>
                 <img
                   src={

@@ -10,14 +10,20 @@ export default function AdvancedSoftPicks() {
       sideImage={SideImage}
       bottomImage={BottomImage}
       bottomImageWidth="60%"
+      advanced={true}
       gap="2.4rem"
       bullets={[
         {
           lines: ["Longer curved handle", "for improved maneuverability."],
         },
         {
-          lines:[<>Clinically proven to remove 22% more plaque than brushing alone.<sup>23</sup></>]
-        }
+          lines: [
+            <>
+              Clinically proven to remove 22% more plaque than brushing alone.
+              <sup>23</sup>
+            </>,
+          ],
+        },
       ]}
     />
   );

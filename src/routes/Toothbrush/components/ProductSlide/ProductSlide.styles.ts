@@ -78,12 +78,18 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
 interface DiagramsWrapperProps {
   $diagramWidth?: string;
   $diagramMarginBottom?: string;
+  $diagramMinWidth?: boolean;
+  $diagramMinHeight?: boolean;
 }
+
 export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
+  ${(props) => props.$diagramMinWidth && `min-width: 354px;`}
+  ${(props) => props.$diagramMinHeight && `min-height: 110px;`}
+
+  margin-bottom: ${(props) =>
+    props.$diagramMarginBottom ? props.$diagramMarginBottom : "1.2rem"};
   img {
-    margin-bottom: ${(props) =>
-      props.$diagramMarginBottom ? props.$diagramMarginBottom : "1.2rem"};
-    width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "100%")};
+    width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "95%")};
     object-fit: contain;
   }
 `;
@@ -93,13 +99,14 @@ interface TextWrapperProps {
   $marginBottom?: string;
   $textWrapperPaddingRight?: string;
   $maxHeight?: string;
-  $minHeight?: string;
+  $textWrapperMinHeight?: string;
   $listPaddingLeft?: string;
 }
 export const TextWrapper = styled.div<TextWrapperProps>`
   flex-grow: 0.5;
   max-height: ${(props) => (props.$maxHeight ? props.$maxHeight : "168px")};
-  min-height: ${(props) => (props.$minHeight ? props.$minHeight : "168px")};
+  min-height: ${(props) =>
+    props.$textWrapperMinHeight ? props.$textWrapperMinHeight : "168px"};
   ${(props) => props.$marginTop && `margin-top: ${props.$marginTop};`}
   h2 {
     font-family: "Gotham", sans-serif;
@@ -209,6 +216,7 @@ export const ImprintAndBadgeWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  min-height: 100px;
 `;
 
 export const ImprintLeftColumn = styled.div`

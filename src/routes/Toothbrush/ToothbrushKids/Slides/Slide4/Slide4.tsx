@@ -20,7 +20,7 @@ const Slide4 = () => (
       brushImgWidth="90%"
       textWrapperPaddingRight="1.8rem"
       colGap="1rem"
-      minHeight="230px"
+      textWrapperMinHeight="230px"
       useBulletPoints={true}
       showImprintText={false}
       title={
@@ -31,7 +31,8 @@ const Slide4 = () => (
       description={[
         "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
         <>
-          Dome Trim® bristles are clinically designed to clean below the gumline.
+          Dome Trim® bristles are clinically designed to clean below the
+          gumline.
           <sup>18, 19</sup>
         </>,
         "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
@@ -59,7 +60,7 @@ const Slide4 = () => (
       brushImgWidth="88%"
       diagramMarginBottom="0.2rem"
       colGap="1rem"
-      minHeight="230px"
+      textWrapperMinHeight="230px"
       textWrapperPaddingRight="2.8rem"
       useBulletPoints={true}
       title={

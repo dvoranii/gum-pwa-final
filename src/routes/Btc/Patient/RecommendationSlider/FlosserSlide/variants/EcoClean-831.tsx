@@ -10,9 +10,22 @@ export default function EcoCleanFlosser() {
       subtitleSize="2.5rem"
       sideImage={FlosserImage}
       bottomImage={BottomImage}
+      minHeight="213px"
       bullets={[
-        { text: <>Textured floss effectively removes 2x more plaque.<sup>10</sup></> },
-        { text: <>Designed to resist shredding or breaking.<sup>12</sup></> }
+        {
+          text: (
+            <>
+              Textured floss effectively removes 2x more plaque.<sup>10</sup>
+            </>
+          ),
+        },
+        {
+          text: (
+            <>
+              Designed to resist shredding or breaking.<sup>12</sup>
+            </>
+          ),
+        },
       ]}
     />
   );

@@ -13,6 +13,8 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_DeepClean}
       diagramImage={Diagrams_DeepClean}
+      diagramMinWidth
+      diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -48,6 +50,8 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
+      diagramMinWidth
+      diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

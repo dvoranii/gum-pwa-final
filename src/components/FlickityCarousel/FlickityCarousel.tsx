@@ -1,18 +1,10 @@
-import Flickity from 'react-flickity-component';
-import 'flickity/dist/flickity.min.css';
-import * as S from './FlickityCarousel.styles';
+import Flickity from "react-flickity-component";
+import "flickity/dist/flickity.min.css";
+import * as S from "./FlickityCarousel.styles";
 
 interface FlickityCarouselProps {
   children: React.ReactNode;
-  options?: {
-    initialIndex?: number;
-    wrapAround?: boolean;
-    autoPlay?: boolean | number;
-    prevNextButtons?: boolean;
-    pageDots?: boolean;
-    contain?: boolean;
-    cellAlign?: string;
-  };
+  options?: FlickityOptions;
   className?: string;
   $customStyles?: {
     viewportHeight?: string;
@@ -23,29 +15,34 @@ interface FlickityCarouselProps {
   };
 }
 
-const defaultOptions = {
+const defaultOptions: FlickityOptions = {
   initialIndex: 0,
   wrapAround: true,
   autoPlay: false,
   prevNextButtons: true,
   pageDots: true,
   contain: true,
-  cellAlign: 'center'
+  cellAlign: "center",
+  on: {},
 };
 
-export default function FlickityCarousel({ 
-  children, 
-  options = {}, 
-  className = '',
-  $customStyles = {}
+export default function FlickityCarousel({
+  children,
+  options = {},
+  className = "",
+  $customStyles = {},
 }: FlickityCarouselProps) {
-  const mergedOptions = { ...defaultOptions, ...options };
+  const mergedOptions: FlickityOptions = {
+    ...defaultOptions,
+    ...options,
+    on: { ...defaultOptions.on, ...options.on },
+  };
 
   return (
     <S.CarouselWrapper $customStyles={$customStyles}>
       <Flickity
         className={`carousel ${className}`}
-        elementType={'div'}
+        elementType={"div"}
         options={mergedOptions}
         disableImagesLoaded={true}
         static={false}

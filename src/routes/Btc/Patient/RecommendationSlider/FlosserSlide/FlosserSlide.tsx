@@ -3,14 +3,15 @@ import { BulletPoint } from "../../../../../types/BulletPoint";
 
 type FlosserSlideProps = {
   title: string;
-  titleSize?: string; 
+  titleSize?: string;
   subtitle: string;
   subtitleSize?: string;
   sideImage: string;
   sideImageHeight?: string;
-  bottomImage?: string; 
+  bottomImage?: string;
   bottomImageWidth?: string;
   bullets: BulletPoint[];
+  minHeight?: string;
 };
 
 export default function FlosserSlide({
@@ -22,12 +23,13 @@ export default function FlosserSlide({
   sideImageHeight,
   bottomImage,
   bullets,
-  bottomImageWidth
+  bottomImageWidth,
+  minHeight,
 }: FlosserSlideProps) {
   return (
     <S.Container>
       <S.ImgWrapper>
-        <S.MainImage 
+        <S.MainImage
           src={sideImage}
           alt={`${title} ${subtitle}`}
           $height={sideImageHeight}
@@ -35,16 +37,14 @@ export default function FlosserSlide({
       </S.ImgWrapper>
 
       <S.ImgAndTextWrapper>
-      <S.Title $fontSize={titleSize}>{title}</S.Title>
-      <S.Subtitle $fontSize={subtitleSize}>{subtitle}</S.Subtitle>
+        <S.Title $fontSize={titleSize}>{title}</S.Title>
+        <S.Subtitle $fontSize={subtitleSize}>{subtitle}</S.Subtitle>
 
         <S.BulletList>
           {bullets.map((bullet, index) => (
             <li key={index}>
               {bullet.lines ? (
-                bullet.lines.map((line, i) => (
-                  <span key={i}>{line}</span>
-                ))
+                bullet.lines.map((line, i) => <span key={i}>{line}</span>)
               ) : (
                 <span>{bullet.text}</span>
               )}
@@ -53,11 +53,13 @@ export default function FlosserSlide({
         </S.BulletList>
 
         {bottomImage && (
-          <S.ComparisonImage 
-            $width={bottomImageWidth}
-            src={bottomImage} 
-            alt={`${title} comparison`} 
-          />
+          <S.ComparisonImageWrapper $minHeight={minHeight}>
+            <S.ComparisonImage
+              $width={bottomImageWidth}
+              src={bottomImage}
+              alt={`${title} comparison`}
+            />
+          </S.ComparisonImageWrapper>
         )}
       </S.ImgAndTextWrapper>
     </S.Container>

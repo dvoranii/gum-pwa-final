@@ -1,5 +1,5 @@
-import StringFlossSlide from '../StringFloss';
-import ProductImage from '../../../../../../assets/btc/patient/recommendations/StringFloss/2030-Floss.webp';
+import StringFlossSlide from "../StringFloss";
+import ProductImage from "../../../../../../assets/btc/patient/recommendations/StringFloss/2030-Floss.webp";
 
 export default function DeepCleanFloss() {
   return (
@@ -8,17 +8,24 @@ export default function DeepCleanFloss() {
       titleSize="clamp(24px, 6vw, 2.8rem)"
       subtitle="DENTAL FLOSS"
       topImage={ProductImage}
+      minHeight="317px"
       topImageWidth="90%"
-      containerMarginTop='-12px'
+      containerMarginTop="-12px"
       topImageMarginBottom="1.2rem"
       contentPadding="0 0 0 3rem"
-      contentMarginTop='-12px'
+      contentMarginTop="-12px"
       bulletItemsFontSize="clamp(16px, 1.8vw, 1.8rem)"
-      bulletMargin='8px'
+      bulletMargin="8px"
       bullets={[
         { text: "Thin and easy to insert between tight contacts." },
-        { text: <>Floss expands to remove 2X more plaque.<sup>10</sup></> },
-        { text: "Multiple filaments and texturized fibers." }
+        {
+          text: (
+            <>
+              Floss expands to remove 2X more plaque.<sup>10</sup>
+            </>
+          ),
+        },
+        { text: "Multiple filaments and texturized fibers." },
       ]}
     />
   );

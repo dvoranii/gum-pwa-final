@@ -25,7 +25,7 @@ export const SizingTableRow = styled.div`
   display: flex;
   width: 100%;
   height: 15px;
-  
+
   &:last-child {
     border-bottom: none;
   }
@@ -86,7 +86,7 @@ export const SizingColorCircle = styled.div<{ $backgroundColor: string }>`
   height: 12px;
   border-radius: 50%;
   margin: 2px auto;
-  background-color: ${props => props.$backgroundColor};
+  background-color: ${(props) => props.$backgroundColor};
 `;
 
 export const SizingTitle = styled.div`
@@ -118,12 +118,13 @@ export const SizingImageCell = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+  min-height: 77px;
+
   img {
     max-width: 65%;
     height: auto;
   }
-  
+
   &:first-child {
     flex: 1.5;
   }

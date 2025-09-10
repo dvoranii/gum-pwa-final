@@ -11,10 +11,10 @@ export const ProductImage = styled.img`
   width: auto;
   height: auto;
   max-width: 90%;
-  max-height: 80vh; 
+  max-height: 80vh;
   object-fit: contain;
   margin: 0 auto;
-  
+
   @media (max-width: 1080px) {
     max-width: 95%;
     max-height: 70vh;
@@ -24,8 +24,8 @@ export const ProductImage = styled.img`
 export const CarouselWrapper = styled.div`
   width: 100%;
   height: auto;
-  position: relative; 
-  height: 570px;
+  position: relative;
+  height: 100%;
 
   .carousel {
     width: 100%;
@@ -35,11 +35,11 @@ export const CarouselWrapper = styled.div`
       position: absolute;
       bottom: 32px;
       right: 24px;
-      left: auto; 
+      left: auto;
       width: auto;
       text-align: right;
       z-index: 10;
-      transform: none !important; 
+      transform: none !important;
       margin: 0;
       padding: 0;
 
@@ -50,9 +50,9 @@ export const CarouselWrapper = styled.div`
         background: ${colors.dotBG2} !important;
         opacity: 1 !important;
         border-radius: 50%;
-        
+
         &.is-selected {
-          background: ${colors.dotBGActive2} !important; 
+          background: ${colors.dotBGActive2} !important;
         }
       }
     }

@@ -37,6 +37,13 @@ const flickityOptions = {
   pageDots: true,
   contain: true,
   cellAlign: "center",
+  on: {
+    ready: function (this: Flickity) {
+      setTimeout(() => {
+        this.resize();
+      }, 100);
+    },
+  },
 };
 
 type RecommendationSlideProps = {

@@ -35,7 +35,6 @@ export const Description = styled.ul`
   letter-spacing: -1px;
   padding-top: 1.2rem;
   padding-right: 4px;
-
 `;
 
 export const DiagramSection = styled.div`
@@ -43,7 +42,6 @@ export const DiagramSection = styled.div`
   align-items: center;
   gap: 30px;
   margin-bottom: 1.2rem;
-
 `;
 
 export const AngleDemo = styled.div`
@@ -74,12 +72,12 @@ export const DiagramLabel = styled.span`
   color: #666666;
   text-align: center;
   margin-bottom: 5px;
-
 `;
 
 export const CrossSectionDiagram = styled.div`
   display: flex;
   margin-bottom: 10px;
+  min-height: 173px;
 
   img {
     width: 100%;
@@ -99,12 +97,11 @@ export const CrossSectionIcon = styled.div`
     width: 100%;
     height: 100%;
   }
-
 `;
 
 export const BenefitsList = styled.ul`
-    line-height: 1.35;
-    padding-inline-start: 20px;
+  line-height: 1.35;
+  padding-inline-start: 20px;
 `;
 
 export const BenefitItem = styled.li`
@@ -128,5 +125,4 @@ export const HandImage = styled.div`
     max-width: 100%;
     aspect-ratio: 211 / 475;
   }
-
 `;

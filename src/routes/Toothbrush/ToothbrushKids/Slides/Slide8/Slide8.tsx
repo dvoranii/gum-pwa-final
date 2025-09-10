@@ -16,7 +16,7 @@ const Slide8 = () => (
       }}
       useBulletPoints={true}
       showImprintText={true}
-      minHeight="168px"
+      textWrapperMinHeight="168px"
       diagramWidth="80%"
       diagramMarginBottom="1.2rem"
       paddingRight="2rem"
@@ -59,7 +59,7 @@ const Slide8 = () => (
       }}
       useBulletPoints={true}
       showImprintText={true}
-      minHeight="168px"
+      textWrapperMinHeight="168px"
       diagramWidth="80%"
       diagramMarginBottom="1.2rem"
       paddingRight="2rem"

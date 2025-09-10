@@ -113,7 +113,9 @@ export const TextWrapperOuter = styled.div`
 export const TextAndImgWrapper = styled.div`
   flex: 2.5;
 `;
-export const ImgInnerWrapper = styled.div`
+
+export const OriginalHandleImgWrapper = styled.div`
+  min-height: 79px;
   img {
     width: 90%;
     margin-top: 0.4rem;
@@ -138,6 +140,7 @@ export const ImgWrapper = styled.div`
 
 export const ImgWrapper1 = styled.div`
   width: 64%;
+  min-width: 478px;
   display: flex;
   justify-content: center;
 
@@ -172,14 +175,17 @@ export const SizingDiagramContainer = styled.div`
   align-items: center;
 `;
 
-export const BristlesAndAntiBacterialWrapper = styled.div`
-  display: flex;
-
+export const AngleCleanerImgWrapper = styled.div`
+  min-height: 121px;
   img {
-    width: 67%;
-    padding: 4px;
+    width: 100%;
+    padding: 8px;
     object-fit: contain;
   }
+`;
+
+export const BristlesAndAntiBacterialWrapper = styled.div`
+  display: flex;
 `;
 
 interface BristlesAndNylonWrapperProps {
@@ -205,18 +211,21 @@ export const BristlesImgWrapper2 = styled.div`
 `;
 
 export const ImgWrapper5 = styled.div`
-  flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 8px;
+  padding-bottom: 8px;
+  min-height: 121px;
   img {
     width: 50%;
+    min-width: 110px;
     max-width: 110px;
     object-fit: contain;
   }
+`;
+
+export const ImgAndBadgeWrapper = styled.div`
+  flex: 1;
 `;
 
 export const DiagramSection = styled.div`
@@ -266,21 +275,27 @@ export const BristlesImagesContainer = styled.div`
   margin-right: -12px;
 `;
 
-export const BristlesImgWrapper = styled.div`
+export const BristlesImgAndLabelWrapper = styled.div`
   flex: 1;
   min-width: 128px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  img {
-    width: 90%;
-    height: auto;
-    display: block;
-  }
 
   @media screen and (max-width: 1080px) {
     min-width: 112px;
+  }
+`;
+
+export const BristlesImgWrapper = styled.div`
+  display: flex;
+  min-height: 128px;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 4px;
   }
 `;
 

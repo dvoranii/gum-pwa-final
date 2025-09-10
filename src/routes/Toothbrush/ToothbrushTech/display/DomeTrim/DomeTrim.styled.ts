@@ -1,15 +1,15 @@
 import { styled } from "styled-components";
 
 export const ContentWrapper = styled.div`
-    display: flex;
-    height: 100%;
-    align-items: center;
-    gap: 0.8rem;
-`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.8rem;
+`;
 
 export const ColumnLeft = styled.div`
-    max-width: 60%;
-    padding: 0px 0 30px 80px;
+  max-width: 60%;
+  padding: 0px 0 30px 80px;
 `;
 
 export const MainTitle = styled.h1`
@@ -35,45 +35,45 @@ export const Description = styled.ul`
   sup {
     font-size: 14px;
   }
-
 `;
 
 export const ColLeftImgWrapper = styled.div`
-    img {
-        width: 90%;
-        margin-left: -19px;
-    }
+  min-height: 172px;
+  img {
+    width: 90%;
+    margin-left: -19px;
+  }
 `;
 
 export const ColLeftList = styled.ul`
-    font-family: 'Gotham', sans-serif;
-    margin-top: 1.2rem;
-    line-height: 1.25;
+  font-family: "Gotham", sans-serif;
+  margin-top: 1.2rem;
+  line-height: 1.25;
 
-    li {
-        font-size: clamp(14px, 1.2vw, 2.4rem);
-        color: #00a16b;
-        font-weight: 600;
-        padding-right: 4px;
-    }
+  li {
+    font-size: clamp(14px, 1.2vw, 2.4rem);
+    color: #00a16b;
+    font-weight: 600;
+    padding-right: 4px;
+  }
 `;
 
 export const ColumnRight = styled.div`
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
-export const BristlesDiagramWrapper= styled.div`
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+export const BristlesDiagramWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
-    img {
-        width: 100%;
-        height: auto;
-        padding: 2.4rem 0;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2.4rem 0;
+  }
 `;

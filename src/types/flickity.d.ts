@@ -1,7 +1,7 @@
 interface FlickityOptions {
   initialIndex?: number;
   wrapAround?: boolean;
-  autoPlay?: boolean;
+  autoPlay?: boolean | number;
   prevNextButtons?: boolean;
   pageDots?: boolean;
   contain?: boolean;
@@ -10,10 +10,4 @@ interface FlickityOptions {
   on?: {
     ready?: (this: Flickity) => void;
   };
-}
-
-declare class Flickity {
-  constructor(element: string | HTMLElement, options?: FlickityOptions);
-  resize: () => void;
-  on(event: string, listener: (this: Flickity) => void): void;
 }

@@ -1,9 +1,9 @@
 import { ShopifyIconProps } from "../../../../components/ShopifyIcon/ShopifyIcon.styled";
 
 export type SpecItem = {
-    label?: string;
-    value: string | number;
-}
+  label?: string;
+  value: string | number;
+};
 
 type ColorPair = [string, string?];
 
@@ -23,15 +23,17 @@ export type ProductSlideProps = {
   useBulletPoints?: boolean;
   padding?: string;
   paddingRight?: string;
-  textWrapperPaddingRight?:string;
+  textWrapperPaddingRight?: string;
   diagramWidth?: string;
   maxHeight?: string;
-  minHeight?: string;
+  textWrapperMinHeight?: string;
   diagramMarginBottom?: string;
   brushImgWidth?: string;
   colGap?: string;
   listPaddingLeft?: string;
-  colMargLeft?:string;
-  imgMinWidth?:string;
-  shopifyIconProps?: ShopifyIconProps
+  colMargLeft?: string;
+  imgMinWidth?: string;
+  shopifyIconProps?: ShopifyIconProps;
+  diagramMinWidth?: boolean;
+  diagramMinHeight?: boolean;
 };

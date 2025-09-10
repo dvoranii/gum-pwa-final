@@ -18,7 +18,7 @@ const Slide6 = () => (
       }}
       useBulletPoints={true}
       showImprintText={false}
-      minHeight="250px"
+      textWrapperMinHeight="250px"
       diagramWidth="90%"
       diagramMarginBottom="0.8rem"
       paddingRight="0"

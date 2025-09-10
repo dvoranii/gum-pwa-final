@@ -16,7 +16,7 @@ const Slide3 = () => (
         marginTop: "0",
       }}
       diagramWidth="86%"
-      minHeight="246px"
+      textWrapperMinHeight="246px"
       colGap="0.8rem"
       textWrapperPaddingRight="2rem"
       diagramMarginBottom="0"
@@ -54,7 +54,7 @@ const Slide3 = () => (
       diagramWidth="86%"
       brushImgWidth="90%"
       colGap="0.8rem"
-      minHeight="246px"
+      textWrapperMinHeight="246px"
       diagramMarginBottom="0"
       useBulletPoints={true}
       textWrapperPaddingRight="3.4rem"

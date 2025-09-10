@@ -10,6 +10,8 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
+      diagramMinWidth
+      diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -25,7 +27,8 @@ const Slide3 = () => (
       description={[
         "Raised bristles at the tip provide greater access to posterior regions and clean hard-to-reach surfaces.",
         <>
-          Dome Trim® bristles are clinically designed to clean below the gumline.
+          Dome Trim® bristles are clinically designed to clean below the
+          gumline.
           <sup>18, 19</sup>
         </>,
       ]}
@@ -48,6 +51,8 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
+      diagramMinWidth
+      diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { colors } from '../../constants/colors';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const Content = styled.div`
   height: 93%;
@@ -18,9 +18,7 @@ export const FlossBG = styled.div`
   width: 100%;
   box-shadow: 0px 0px 12px rgba(54, 54, 54, 0.12);
   height: 82vh;
-    
 `;
-
 
 export const ContentLeft = styled.div`
   width: 100%;
@@ -29,10 +27,8 @@ export const ContentLeft = styled.div`
   padding: 0 0 40px 3.4rem;
   height: 100%;
   z-index: 99;
-  flex:1;
-
+  flex: 1;
 `;
-
 
 export const ContentRight = styled.div`
   height: 100%;
@@ -44,13 +40,12 @@ export const ContentRight = styled.div`
   flex: 1;
 `;
 
-
 export const FlossersImg = styled.img`
-  width: 105%; 
+  width: 105%;
   margin-left: -28px;
-  height: auto; 
+  height: auto;
   object-fit: contain;
-  max-height: 100%; 
+  max-height: 100%;
 
   @media screen and (max-width: 1080px) {
     width: 100%;
@@ -94,8 +89,12 @@ export const RecommendedWrapper = styled.div`
   }
 `;
 
-export const Recommended = styled.img`
+export const CrestWrapper = styled.div`
   width: 41.8%;
+  min-width: 204px;
+`;
+export const Recommended = styled.img`
+  width: 100%;
   height: auto;
 `;
 
@@ -107,10 +106,9 @@ export const LinksWrapper = styled.div`
   width: 65%;
 `;
 
-
 export const StyledLink = styled(Link)`
   display: flex;
-  justify-content:  flex-start;
+  justify-content: flex-start;
   text-decoration: none;
 `;
 
@@ -119,12 +117,17 @@ export const LinkContent = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-width: 159px;
+`;
+
+export const ImgWrapper = styled.div`
+  min-height: 169px;
+  min-width: 177px;
 `;
 
 export const LinkImg = styled.img`
   width: 95%;
   height: auto;
-
 `;
 
 export const LinkText = styled.span`

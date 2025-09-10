@@ -16,6 +16,7 @@ export const Container = styled.div<ContainerProps>`
 
 interface TopImageWrapperProps {
   $marginBottom?: string;
+  $minHeight?: string;
 }
 
 export const TopImageWrapper = styled.div<TopImageWrapperProps>`
@@ -23,6 +24,7 @@ export const TopImageWrapper = styled.div<TopImageWrapperProps>`
   display: flex;
   justify-content: center;
   margin-bottom: ${(props) => props.$marginBottom || "2rem"};
+  min-height: ${(props) => props.$minHeight};
 `;
 
 interface ContentWrapperProps {

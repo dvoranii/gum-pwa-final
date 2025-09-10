@@ -41,7 +41,7 @@ export const TextContainer = styled.div`
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
     font-size: clamp(1.2rem, 1.2vw, 1.8rem);
-    line-height: 1;
+    line-height: 1.15;
 
     sup {
       font-size: 12px;
@@ -90,6 +90,7 @@ export const ImgWrapper1 = styled.div`
   padding-top: 2.4rem;
   display: flex;
   justify-content: center;
+  min-height: 197px;
 
   img {
     width: 100%;

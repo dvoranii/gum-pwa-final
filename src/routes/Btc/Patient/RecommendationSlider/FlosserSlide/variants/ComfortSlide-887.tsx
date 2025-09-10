@@ -11,6 +11,7 @@ export default function ComfortSlideFlosser() {
       subtitleSize="2.5rem"
       sideImage={FlosserImage}
       bottomImage={BottomImage}
+      minHeight="213px"
       bullets={[
         {
           lines: [
@@ -22,9 +23,11 @@ export default function ComfortSlideFlosser() {
         {
           lines: [
             "Lightweight flexible grip",
-            <>uses 20% less plastic.<sup>13</sup></>
-          ]
-        }
+            <>
+              uses 20% less plastic.<sup>13</sup>
+            </>,
+          ],
+        },
       ]}
     />
   );

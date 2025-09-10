@@ -11,10 +11,15 @@ export const Container = styled.div<ContainerProps>`
   gap: ${(props) => (props.$gap ? props.$gap : "0")};
 `;
 
-export const ImgWrapper = styled.div`
+interface ImgWrapperProps {
+  $advanced?: boolean;
+}
+
+export const ImgWrapper = styled.div<ImgWrapperProps>`
   height: 78vh;
   display: flex;
   align-items: flex-end;
+  min-width: ${(props) => (props.$advanced ? "125px" : "207px")};
 `;
 
 export const ImgAndTextWrapper = styled.div`

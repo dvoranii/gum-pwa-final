@@ -33,14 +33,14 @@ export const TextAndImgWrapper = styled.div`
   flex-direction: column;
   flex: 1;
   height: 100%;
-  overflow: hidden;
 `;
 
 export const ToothbrushImageWrapper = styled.div`
   flex: 0 0 auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  /* min-width: 75px; */
 `;
 
 interface ToothbrushImageProps {
@@ -49,7 +49,6 @@ interface ToothbrushImageProps {
 export const ToothbrushImage = styled.img<ToothbrushImageProps>`
   width: auto;
   height: ${(props) => props.$height || "58vh"};
-  max-height: 500px;
   object-fit: contain;
 `;
 

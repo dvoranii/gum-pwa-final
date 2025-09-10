@@ -16,11 +16,12 @@ type StringFlossSlideProps = {
   isCombination?: boolean;
   secondTitle?: string;
   secondSubtitle?: string;
-  combinationTitleSize?: string; 
+  combinationTitleSize?: string;
   combinationSubtitleSize?: string;
   contentPadding?: string;
   contentMarginTop?: string;
-  containerMarginTop?:string;
+  containerMarginTop?: string;
+  minHeight?: string;
 };
 
 export default function StringFlossSlide({
@@ -42,12 +43,16 @@ export default function StringFlossSlide({
   contentPadding,
   contentMarginTop,
   bulletItemsFontSize,
-  containerMarginTop
+  containerMarginTop,
+  minHeight,
 }: StringFlossSlideProps) {
   return (
     <S.Container $marginTop={containerMarginTop}>
-      <S.TopImageWrapper $marginBottom={topImageMarginBottom}>
-        <S.MainImage 
+      <S.TopImageWrapper
+        $marginBottom={topImageMarginBottom}
+        $minHeight={minHeight}
+      >
+        <S.MainImage
           src={topImage}
           alt={`${title} ${subtitle}`}
           $width={topImageWidth}
@@ -59,14 +64,18 @@ export default function StringFlossSlide({
           <S.CombinationTitleWrapper>
             <S.TitlesWrapper>
               <S.Title $fontSize={combinationTitleSize}>{title}</S.Title>
-              <S.Subtitle $fontSize={combinationSubtitleSize}>{subtitle}</S.Subtitle>
+              <S.Subtitle $fontSize={combinationSubtitleSize}>
+                {subtitle}
+              </S.Subtitle>
             </S.TitlesWrapper>
-            
+
             <S.PlusSign>+</S.PlusSign>
 
             <S.TitlesWrapper>
               <S.Title $fontSize={combinationTitleSize}>{secondTitle}</S.Title>
-              <S.Subtitle $fontSize={combinationSubtitleSize}>{secondSubtitle}</S.Subtitle>
+              <S.Subtitle $fontSize={combinationSubtitleSize}>
+                {secondSubtitle}
+              </S.Subtitle>
             </S.TitlesWrapper>
           </S.CombinationTitleWrapper>
         ) : (
@@ -76,13 +85,15 @@ export default function StringFlossSlide({
           </S.TitlesWrapper>
         )}
 
-        <S.BulletList $marginInlineStart={bulletMargin} $fontSize={bulletItemsFontSize} $listItemMarginBottom={listMarginBottom}>
+        <S.BulletList
+          $marginInlineStart={bulletMargin}
+          $fontSize={bulletItemsFontSize}
+          $listItemMarginBottom={listMarginBottom}
+        >
           {bullets.map((bullet, index) => (
             <li key={index}>
               {bullet.lines ? (
-                bullet.lines.map((line, i) => (
-                  <span key={i}>{line}</span>
-                ))
+                bullet.lines.map((line, i) => <span key={i}>{line}</span>)
               ) : (
                 <span>{bullet.text}</span>
               )}

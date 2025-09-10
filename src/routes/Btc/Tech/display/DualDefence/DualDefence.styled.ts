@@ -13,6 +13,7 @@ export const TopRow = styled.div`
 `;
 
 export const BottomRow = styled.div`
+  min-height: 79px;
   img {
     width: 100%;
   }
@@ -75,6 +76,7 @@ export const ColRightDiagramWrapper = styled.div`
 
 export const ImgTextWrapper = styled.div`
   display: flex;
+  min-width: 485px;
 `;
 
 export const TextWrapper = styled.div`
@@ -95,6 +97,7 @@ export const TextWrapper = styled.div`
 `;
 export const ImgWrapper = styled.div`
   flex: 1;
+  min-height: 200px;
 
   img {
     width: 100%;

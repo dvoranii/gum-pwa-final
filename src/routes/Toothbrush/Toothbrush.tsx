@@ -1,6 +1,6 @@
 import * as S from "./Toothbrush.styles";
 import InnerNav from "../../components/InnerNav/InnerNav";
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from "react-router-dom";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import Col1Row2 from "../../assets/toothbrush/crest.webp";
@@ -10,7 +10,6 @@ import Brushes from "../../assets/toothbrush/toothbrush-new.webp";
 
 import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
 
-
 const toothbrushNavItems = [
   { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
   { path: "/toothbrush/tech", label: "Tech" },
@@ -18,41 +17,58 @@ const toothbrushNavItems = [
   { path: "/toothbrush/adult", label: "Adult" },
   { path: "/toothbrush/kids", label: "Kids" },
   { path: "/toothbrush/specialty", label: "Specialty" },
-  { path: "/recommend", label: "Recommend" }
+  { path: "/recommend", label: "Recommend" },
 ];
 
 export default function Toothbrush() {
   const location = useLocation();
   const isHomePage = location.pathname === "/toothbrush";
-  const isPatientRoute = location.pathname === '/toothbrush/patient';
+  const isPatientRoute = location.pathname === "/toothbrush/patient";
 
   const backgroundImage = isPatientRoute ? `${PatientBG}` : undefined;
 
   return (
-    <ModuleContainer $isHomePage={isHomePage} $backgroundImage={backgroundImage}>
+    <ModuleContainer
+      $isHomePage={isHomePage}
+      $backgroundImage={backgroundImage}
+    >
       <InnerNav navItems={toothbrushNavItems} />
       <S.Content>
-      {isHomePage ? (
-           <S.BrushBG>
+        {isHomePage ? (
+          <S.BrushBG>
             <S.ContentLeft>
               <S.IntroTitleWrapper>
-                <S.IntroTitle>Gum <br/>Toothbrush<br/> Solutions</S.IntroTitle>
+                <S.IntroTitle>
+                  Gum <br />
+                  Toothbrush
+                  <br /> Solutions
+                </S.IntroTitle>
               </S.IntroTitleWrapper>
               <S.RecommendedWrapper>
-                <S.Recommended src={Col1Row2}/>
-                <h3>Recommended<br/> By Canadian<br/> Dental&nbsp;Hygienists<sup>7</sup></h3>
+                <S.CrestWrapper>
+                  <S.Recommended src={Col1Row2} />
+                </S.CrestWrapper>
+                <h3>
+                  Recommended
+                  <br /> By Canadian
+                  <br /> Dental&nbsp;Hygienists<sup>7</sup>
+                </h3>
               </S.RecommendedWrapper>
-              
+
               <S.LinksWrapper>
-                 <S.StyledLink to="/toothbrush/tech">
+                <S.StyledLink to="/toothbrush/tech">
                   <S.LinkContent>
-                    <S.LinkImg src={Technology2} />
+                    <S.ImgWrapper>
+                      <S.LinkImg src={Technology2} />
+                    </S.ImgWrapper>
                     <S.LinkText>Technology</S.LinkText>
                   </S.LinkContent>
-                </S.StyledLink> 
+                </S.StyledLink>
                 <S.StyledLink to="/toothbrush/patient">
                   <S.LinkContent>
-                    <S.LinkImg src={PatientNeeds2} />
+                    <S.ImgWrapper>
+                      <S.LinkImg src={PatientNeeds2} />
+                    </S.ImgWrapper>
                     <S.LinkText>Patient Needs</S.LinkText>
                   </S.LinkContent>
                 </S.StyledLink>
@@ -62,11 +78,10 @@ export default function Toothbrush() {
               <S.BrushesImg src={Brushes} />
             </S.ContentRight>
           </S.BrushBG>
-          ) : (
-            <Outlet />
-          )}
+        ) : (
+          <Outlet />
+        )}
       </S.Content>
-      
     </ModuleContainer>
   );
 }

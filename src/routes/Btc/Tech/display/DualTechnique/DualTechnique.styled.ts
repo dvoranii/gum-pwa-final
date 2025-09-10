@@ -62,12 +62,12 @@ export const ColRightDiagramWrapper = styled.div`
     width: 100%;
     height: auto;
     margin-left: -64px;
-    margin-top: 48px;
   }
 `;
 
 export const ImgWrapper = styled.div`
   width: 35%;
+  min-height: 159px;
 
   img {
     width: 100%;

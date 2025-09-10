@@ -79,6 +79,7 @@ export const DiagramLabel = styled.span`
 export const CrossSectionDiagram = styled.div`
   display: flex;
   margin-bottom: 10px;
+  min-height: 176px;
 
   img {
     width: 90%;

@@ -10,13 +10,30 @@ export default function TwistedMintFlosser() {
       subtitleSize="2.5rem"
       sideImage={FlosserImage}
       bottomImage={BottomImage}
+      minHeight="185px"
       bullets={[
-        { text: <>Removes 2x more plaque.<sup>10</sup></> },
-        { text: <>Covers 30% more surface.<sup>11</sup></> },
-        {lines: [
+        {
+          text: (
+            <>
+              Removes 2x more plaque.<sup>10</sup>
+            </>
+          ),
+        },
+        {
+          text: (
+            <>
+              Covers 30% more surface.<sup>11</sup>
+            </>
+          ),
+        },
+        {
+          lines: [
             "Lightweight flexible grip",
-            <>uses 20% less plastic.<sup>13</sup></>
-        ]}
+            <>
+              uses 20% less plastic.<sup>13</sup>
+            </>,
+          ],
+        },
       ]}
     />
   );

@@ -25,6 +25,7 @@ export default defineConfig({
         "icon-512.png",
         "icon-196.png",
         "manifest.json",
+        // Your font files are handled here
         "fonts/Gotham-BlackIta.otf",
         "fonts/Gotham-Bold.otf",
         "fonts/Gotham-BoldIta.otf",
@@ -42,74 +43,34 @@ export default defineConfig({
         "fonts/Gotham-XLightIta.otf",
       ],
       workbox: {
-        // CRITICAL: Increase cache size limit for fonts and assets
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10MB
+        // This is the correct way to handle specific SPA routes.
+        // The `precache` array is automatically populated with the build artifacts.
+        // We use runtime caching with `NetworkFirst` to ensure these
+        // pages are cached on first visit.
+        // The `MapsFallback` ensures that for any URL not in the cache,
+        // the app's `index.html` is served, which then loads the React SPA.
 
-        // CRITICAL: More specific glob patterns
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
         globPatterns: [
           "**/*.{js,css,html,ico,webmanifest,json}",
-          "**/*.{png,svg,webp,jpg,jpeg,gif}",
-          "**/*.{otf,ttf,woff,woff2,eot}",
-          "assets/**/*", // Explicitly include assets folder
+          "assets/**/*",
         ],
-
-        // CRITICAL: Navigation fallback for offline SPA
         navigateFallback: "/index.html",
-        navigateFallbackAllowlist: [/^((?!\.(?:json|xml|txt|ico)$).)*$/], // Better regex
-
-        // CRITICAL: Force immediate activation
+        navigateFallbackDenylist: [/^((?!-page-|-service-worker).)*$/],
+        cleanupOutdatedCaches: true,
         skipWaiting: true,
         clientsClaim: true,
 
-        // CRITICAL: Clean up old caches
-        cleanupOutdatedCaches: true,
-
         runtimeCaching: [
-          // CRITICAL: HTML pages - Network First with fast timeout
+          // This rule handles all your SPA routes that are not static assets.
+          // It will cache them using a `NetworkFirst` strategy.
           {
-            urlPattern: /\.(?:html|htm)$/,
+            urlPattern: ({ request }) => request.mode === "navigate",
             handler: "NetworkFirst",
             options: {
-              cacheName: "html-cache",
-              networkTimeoutSeconds: 3, // Fallback to cache quickly
-              expiration: {
-                maxEntries: 20,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
-              },
-            },
-          },
-          // CRITICAL: CSS files
-          {
-            urlPattern: /\.(?:css)$/,
-            handler: "StaleWhileRevalidate",
-            options: {
-              cacheName: "css-cache",
+              cacheName: "app-pages-cache",
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 60, // 60 days
-              },
-            },
-          },
-          // CRITICAL: JavaScript files
-          {
-            urlPattern: /\.(?:js)$/,
-            handler: "StaleWhileRevalidate",
-            options: {
-              cacheName: "js-cache",
-              expiration: {
-                maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 60, // 60 days
-              },
-            },
-          },
-          // CRITICAL: Images
-          {
-            urlPattern: /\.(?:png|jpg|jpeg|svg|webp|gif|ico)$/,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "images-cache",
-              expiration: {
-                maxEntries: 100,
                 maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
               },
             },
@@ -123,6 +84,18 @@ export default defineConfig({
               expiration: {
                 maxEntries: 30,
                 maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+            },
+          },
+          // CRITICAL: Images
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|webp|gif|ico)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
               },
             },
           },
@@ -144,22 +117,10 @@ export default defineConfig({
               },
             },
           },
-          {
-            urlPattern: "/important-page",
-            handler: "NetworkFirst",
-            options: {
-              cacheName: "important-pages",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 30,
-              },
-            },
-          },
         ],
       },
       devOptions: {
         enabled: false,
-        type: "module",
       },
     }),
   ],

@@ -33,7 +33,7 @@ export default function BtcFloss() {
         <BaseCarouselSlide>
           <S.SlideWrapper>
             <S.SlideColumn1>
-              <S.ImgWrapper $width={"85%"}>
+              <S.ImgWrapper $width={"85%"} $minHeight="226px">
                 <img src={Slide1Floss1} />
               </S.ImgWrapper>
               <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle>
@@ -73,7 +73,7 @@ export default function BtcFloss() {
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>
-              <S.ImgWrapper $width={"85%"}>
+              <S.ImgWrapper $width={"85%"} $minHeight="226px">
                 <img src={Slide1Floss2} />
               </S.ImgWrapper>
               <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
@@ -81,8 +81,7 @@ export default function BtcFloss() {
                 <ul>
                   <li>Textured, twisted floss with fresh minty flavour.</li>
                   <li>
-                    Removes <span>2x more plaque</span>.
-                    <sup>10</sup>
+                    Removes <span>2x more plaque</span>.<sup>10</sup>
                   </li>
                   <li>
                     Covers <span>30% more</span> surface area.<sup>11</sup>
@@ -117,7 +116,7 @@ export default function BtcFloss() {
         <BaseCarouselSlide>
           <S.SlideWrapper>
             <S.SlideColumn1>
-              <S.ImgWrapper $width={"85%"}>
+              <S.ImgWrapper $width={"85%"} $minHeight="238px">
                 <img src={Slide2Floss1} />
               </S.ImgWrapper>
               <S.ColumnTitle>Deep Clean Expanding Dental Floss</S.ColumnTitle>
@@ -126,8 +125,7 @@ export default function BtcFloss() {
                   <li>Thin and easy to insert, even between tight contacts.</li>
                   <li>
                     Floss expands during use to remove{" "}
-                    <span>2X more plaque</span>.
-                    <sup>10</sup>
+                    <span>2X more plaque</span>.<sup>10</sup>
                   </li>
                   <li>
                     Multiple filaments and texturized fibers for exceptional
@@ -160,7 +158,7 @@ export default function BtcFloss() {
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>
-              <S.ImgWrapper $width={"100%"}>
+              <S.ImgWrapper $width={"100%"} $minHeight="231px">
                 <img src={Slide2Floss2} />
               </S.ImgWrapper>
               <S.ColumnTitle>Pro-Weave® Dental Floss</S.ColumnTitle>
@@ -168,8 +166,7 @@ export default function BtcFloss() {
               <S.ListContainer>
                 <ul>
                   <li>
-                    Removes <span>2x more plaque</span>.
-                    <sup>10</sup>
+                    Removes <span>2x more plaque</span>.<sup>10</sup>
                   </li>
                   <li>
                     Unique woven design effectively removes biofilm between
@@ -219,17 +216,21 @@ export default function BtcFloss() {
         </BaseCarouselSlide>
 
         {/* Slide 3 */}
-          <BaseCarouselSlide>
-            <S.SlideWrapper>
-                <S.SlideColumn1>
-                    <S.ImgWrapper $width={"85%"}>
-                        <img src={Slide3Floss1}/>
-                    </S.ImgWrapper>
-                    <S.ColumnTitle>Fine Dental Floss</S.ColumnTitle> 
-                        <S.ListContainer $flexGrow="0">
-                            <ul>
-                                <li>Thin shred-resistant floss for cleaning between<br/> tightly spaced teeth and below the gumline.<sup>13</sup></li>                  
-                            </ul>  
+        <BaseCarouselSlide>
+          <S.SlideWrapper>
+            <S.SlideColumn1>
+              <S.ImgWrapper $width={"85%"} $minHeight="238px">
+                <img src={Slide3Floss1} />
+              </S.ImgWrapper>
+              <S.ColumnTitle>Fine Dental Floss</S.ColumnTitle>
+              <S.ListContainer $flexGrow="0">
+                <ul>
+                  <li>
+                    Thin shred-resistant floss for cleaning between
+                    <br /> tightly spaced teeth and below the gumline.
+                    <sup>13</sup>
+                  </li>
+                </ul>
 
                 <S.InfoGrid $marginTop="0" $paddingTop="0.4rem">
                   <S.InfoGridRow>
@@ -246,7 +247,7 @@ export default function BtcFloss() {
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>
-              <S.ImgWrapper $width={"80%"}>
+              <S.ImgWrapper $width={"80%"} $minHeight="292px">
                 <img src={Slide3Floss2} />
               </S.ImgWrapper>
               <S.ColumnTitle>
@@ -306,7 +307,11 @@ export default function BtcFloss() {
         <BaseCarouselSlide>
           <S.SlideWrapper $width="80%">
             <S.SlideColumn1>
-              <S.ImgWrapper $width={"50%"} $marginLeft="-36px;">
+              <S.ImgWrapper
+                $width={"50%"}
+                $marginLeft="-36px;"
+                $minHeight="320px"
+              >
                 <img src={Slide4Floss} />
               </S.ImgWrapper>
               <S.ColumnTitle>
@@ -347,7 +352,6 @@ export default function BtcFloss() {
           </S.SlideWrapper>
         </BaseCarouselSlide>
       </FlickityCarousel>
-      {/* <ShopifyIcon /> */}
     </S.FlossWrapperOuter>
   );
 }

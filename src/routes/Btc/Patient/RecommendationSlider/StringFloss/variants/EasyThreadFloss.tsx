@@ -1,5 +1,5 @@
-import StringFlossSlide from '../StringFloss';
-import ProductImage from '../../../../../../assets/btc/patient/recommendations/StringFloss/3210-Floss.webp';
+import StringFlossSlide from "../StringFloss";
+import ProductImage from "../../../../../../assets/btc/patient/recommendations/StringFloss/3210-Floss.webp";
 
 export default function EasyThreadFloss() {
   return (
@@ -7,17 +7,25 @@ export default function EasyThreadFloss() {
       title="EasyThread®"
       subtitle="FLOSS"
       topImage={ProductImage}
+      minHeight="295px"
       topImageMarginBottom="0"
-      contentPadding='0 0 0 4.2rem'
-      bulletItemsFontSize='clamp(16px, 1.9vw, 1.8rem)'
-      contentMarginTop='-20px'
+      contentPadding="0 0 0 4.2rem"
+      bulletItemsFontSize="clamp(16px, 1.9vw, 1.8rem)"
+      contentMarginTop="-20px"
       bullets={[
-        { lines: ["Stiff threader sections provide easy",
-                  "access to hard-to-clean spaces",
-                  "without irritating the gums."
-        ]},
-        { lines: ["Double-ended threader sections to", 
-                  "maximize cleaning with each strand."] }
+        {
+          lines: [
+            "Stiff threader sections provide easy",
+            "access to hard-to-clean spaces",
+            "without irritating the gums.",
+          ],
+        },
+        {
+          lines: [
+            "Double-ended threader sections to",
+            "maximize cleaning with each strand.",
+          ],
+        },
       ]}
     />
   );

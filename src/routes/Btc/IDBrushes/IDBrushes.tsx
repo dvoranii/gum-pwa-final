@@ -70,26 +70,30 @@ export default function BtcIDBrushes() {
                       </p>
                     </S.BristlesTextWrapper>
                     <S.BristlesImagesContainer>
-                      <S.BristlesImgWrapper>
-                        <img
-                          src={TriangularBristlesImg}
-                          alt="Triangular Bristles"
-                        />
+                      <S.BristlesImgAndLabelWrapper>
+                        <S.BristlesImgWrapper>
+                          <img
+                            src={TriangularBristlesImg}
+                            alt="Triangular Bristles"
+                          />
+                        </S.BristlesImgWrapper>
                         <S.BristleLabel>
                           Triangular
                           <br /> Bristles
                         </S.BristleLabel>
-                      </S.BristlesImgWrapper>
-                      <S.BristlesImgWrapper>
-                        <img
-                          src={ConventionalBristlesImg}
-                          alt="Conventional Round Bristles"
-                        />
+                      </S.BristlesImgAndLabelWrapper>
+                      <S.BristlesImgAndLabelWrapper>
+                        <S.BristlesImgWrapper>
+                          <img
+                            src={ConventionalBristlesImg}
+                            alt="Conventional Round Bristles"
+                          />
+                        </S.BristlesImgWrapper>
                         <S.BristleLabel>
                           Conventional
                           <br /> Round Bristles
                         </S.BristleLabel>
-                      </S.BristlesImgWrapper>
+                      </S.BristlesImgAndLabelWrapper>
                     </S.BristlesImagesContainer>
                   </S.BristlesWrapper>
 
@@ -158,7 +162,9 @@ export default function BtcIDBrushes() {
                     <p>Nylon coated wire helps prevent galvanic shock</p>
                   </S.NylonCallout>
                   <S.BristlesAndAntiBacterialWrapper>
-                    <img src={AngleCleaners} />
+                    <S.AngleCleanerImgWrapper>
+                      <img src={AngleCleaners} />
+                    </S.AngleCleanerImgWrapper>
                     <S.AntibacterialCallout>
                       <S.AntibacterialBadge>
                         <span>Antibacterial</span>
@@ -220,16 +226,17 @@ export default function BtcIDBrushes() {
                       </ul>
                     </S.ListContainer>
                   </S.TextWrapper2>
-                  <S.ImgInnerWrapper>
-                    <S.NylonCallout
-                      $padding="12px 18px"
-                      $fontSize="14px"
-                      $width="60%"
-                    >
-                      <p>Nylon coated wire helps prevent galvanic shock</p>
-                    </S.NylonCallout>
+
+                  <S.NylonCallout
+                    $padding="12px 18px"
+                    $fontSize="14px"
+                    $width="60%"
+                  >
+                    <p>Nylon coated wire helps prevent galvanic shock</p>
+                  </S.NylonCallout>
+                  <S.OriginalHandleImgWrapper>
                     <img src={Slide2Row2Graphic1} />
-                  </S.ImgInnerWrapper>
+                  </S.OriginalHandleImgWrapper>
                 </S.TextAndImgWrapper>
                 <S.BristleAndAntibacterialWrapper>
                   <S.BristlesImgWrapper2>
@@ -315,8 +322,10 @@ export default function BtcIDBrushes() {
                   <img src={Slide3Graphic1} />
                 </S.ImgWrapper>
               </S.Slide3ImgAndTextWrapper>
-              <S.ImgWrapper5>
-                <img src={Slide3Graphic2} />
+              <S.ImgAndBadgeWrapper>
+                <S.ImgWrapper5>
+                  <img src={Slide3Graphic2} />
+                </S.ImgWrapper5>
                 <S.AntibacterialCallout>
                   <S.AntibacterialBadge $width="110px" $fontSize="14px">
                     <span>Antibacterial</span>
@@ -325,7 +334,7 @@ export default function BtcIDBrushes() {
                     </span>
                   </S.AntibacterialBadge>
                 </S.AntibacterialCallout>
-              </S.ImgWrapper5>
+              </S.ImgAndBadgeWrapper>
             </S.Slide3WrapperInner>
             <S.InfoGrid2>
               <S.InfoGridRow>
@@ -347,7 +356,6 @@ export default function BtcIDBrushes() {
           </S.Slide3WrapperOuter>
         </BaseCarouselSlide>
       </FlickityCarousel>
-      {/* <ShopifyIcon />                                                     */}
     </S.IDBrushesContainer>
   );
 }

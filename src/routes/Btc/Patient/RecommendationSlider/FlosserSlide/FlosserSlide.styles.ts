@@ -7,7 +7,10 @@ export const Container = styled.div`
   gap: 1.8rem;
 `;
 
-export const ImgWrapper = styled.div`
+interface ImgWrapperProps {
+  $minWidth?: string;
+}
+export const ImgWrapper = styled.div<ImgWrapperProps>`
   height: 78vh;
   display: flex;
   align-items: flex-end;
@@ -89,6 +92,17 @@ export const BulletList = styled.ul`
   }
 `;
 
+interface ComparisonImageWrapperProps {
+  $minHeight?: string;
+}
+
+export const ComparisonImageWrapper = styled.div<ComparisonImageWrapperProps>`
+  min-height: ${(props) => props.$minHeight};
+  margin-bottom: 2rem;
+  margin-left: -24px;
+  margin-top: 0.5rem;
+`;
+
 interface ComparisonImageProps {
   $width?: string;
 }
@@ -96,7 +110,4 @@ interface ComparisonImageProps {
 export const ComparisonImage = styled.img<ComparisonImageProps>`
   max-width: ${(props) => props.$width || "100%"};
   align-self: center;
-  margin-bottom: 2rem;
-  margin-left: -24px;
-  margin-top: 0.5rem;
 `;

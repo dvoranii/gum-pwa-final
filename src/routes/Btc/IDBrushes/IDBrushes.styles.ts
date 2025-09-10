@@ -296,7 +296,7 @@ export const BristlesImgAndLabelWrapper = styled.div`
 
 export const BristlesImgWrapper = styled.div`
   display: flex;
-  min-height: 128px;
+  min-height: 112px;
   justify-content: center;
 
   img {
@@ -304,6 +304,7 @@ export const BristlesImgWrapper = styled.div`
     height: auto;
     display: block;
     padding: 4px;
+    aspect-ratio: 1;
   }
 `;
 

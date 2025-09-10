@@ -84,6 +84,7 @@ interface DiagramsWrapperProps {
 }
 
 export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
+  display: flex;
   ${(props) => props.$diagramMinWidth && `min-width: 354px;`}
   ${(props) => props.$diagramMinHeight && `min-height: 110px;`}
 
@@ -320,10 +321,6 @@ export const BrushSpecsWrapper = styled.div<BrushSpecsWrapperProps>`
   box-sizing: border-box;
   gap: 0.6rem;
   font-size: 0.8rem;
-
-  @media screen and (max-width: 1080px) {
-    width: 100%;
-  }
 `;
 
 export const BrushSpecsGrid = styled.div`

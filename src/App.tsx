@@ -4,15 +4,23 @@ import AppRoutes from "./routes/AppRoutes";
 import { useLocation } from "react-router-dom";
 import { registerSW } from "./sw-register";
 import { useEffect } from "react";
+import { usePWAStatus } from "./hooks/usePWAStatus";
 
 function App() {
+  const location = useLocation();
+  const isOfflineReady = usePWAStatus();
+
   useEffect(() => {
     if (import.meta.env.PROD) {
       registerSW();
     }
   }, []);
 
-  const location = useLocation();
+  useEffect(() => {
+    if (isOfflineReady) {
+      alert("App is ready for offline use! 🎉");
+    }
+  }, [isOfflineReady]);
 
   const shouldUseWhiteBg = () => {
     switch (location.pathname) {

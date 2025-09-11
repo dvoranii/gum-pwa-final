@@ -1,27 +1,8 @@
 import * as S from "./InnerNav.styles";
 import GumLogo from "../../assets/gum-logo.svg";
 import { useLocation } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { REMOUNT_EVENT } from "../../hooks/useRemount";
 
-const REMOUNT_EVENT = "remount-component";
-
-export const useRemount = () => {
-  const [remountKey, setRemountKey] = useState(0);
-
-  useEffect(() => {
-    const handleRemount = () => {
-      setRemountKey((prevKey) => prevKey + 1);
-    };
-
-    window.addEventListener(REMOUNT_EVENT, handleRemount);
-
-    return () => {
-      window.removeEventListener(REMOUNT_EVENT, handleRemount);
-    };
-  }, []);
-
-  return remountKey;
-};
 interface NavItem {
   path: string;
   label: string;

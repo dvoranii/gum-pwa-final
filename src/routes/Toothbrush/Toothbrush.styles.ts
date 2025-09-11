@@ -121,10 +121,7 @@ export const LinkContent = styled.div`
   min-width: 159px;
 `;
 
-export const ImgWrapper = styled.div`
-  min-height: 169px;
-  min-width: 177px;
-`;
+export const ImgWrapper = styled.div``;
 
 export const LinkImg = styled.img`
   width: 95%;

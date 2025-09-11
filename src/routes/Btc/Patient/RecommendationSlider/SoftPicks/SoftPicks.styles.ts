@@ -7,7 +7,7 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   display: flex;
   width: 100%;
-  padding: 0 1.2rem;
+  /* padding: 0 1.2rem; */
   gap: ${(props) => (props.$gap ? props.$gap : "0")};
 `;
 
@@ -20,6 +20,7 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
   display: flex;
   align-items: flex-end;
   min-width: ${(props) => (props.$advanced ? "125px" : "207px")};
+  padding-left: 1.2rem;
 `;
 
 export const ImgAndTextWrapper = styled.div`

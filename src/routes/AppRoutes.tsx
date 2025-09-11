@@ -24,7 +24,7 @@ import Accessories from "./Accessories/Accessories";
 import Recommend from "./Recommend/Recommend";
 import References from "./References/References";
 
-import { useRemount } from "../components/InnerNav/InnerNav";
+import { useRemount } from "../hooks/useRemount";
 
 export default function AppRoutes() {
   const remountKey = useRemount();

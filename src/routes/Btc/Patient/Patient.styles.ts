@@ -85,12 +85,12 @@ export const Row2 = styled.div`
   display: flex;
   gap: 0.5rem;
   padding-top: 0.4rem;
-  min-width: 423px;
+  /* min-width: 423px; */
 `;
 
 export const ImgWrapper = styled.div`
   user-select: none;
-  min-width: 139px;
+  /* min-width: 139px; */
 
   img {
     width: 100%;
@@ -119,7 +119,6 @@ export const ImgWrapper3 = styled.div`
   img {
     width: 65%;
     height: auto;
-    /* min-width: 139px; */
   }
 `;
 

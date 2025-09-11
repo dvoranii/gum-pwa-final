@@ -6,7 +6,7 @@ export default function TaperedBristles() {
   return (
     <S.ContentWrapper>
       <S.ColumnLeft>
-        <S.MainTitle>GUM Extremely Tapered Bristles® (ETB)</S.MainTitle>
+        <S.MainTitle>GUM Extremely Tapered Bristles (ETB)</S.MainTitle>
         <S.Description>
           <li>
             Precision tapering enables the Extremely Tapered Bristles (EtB) to

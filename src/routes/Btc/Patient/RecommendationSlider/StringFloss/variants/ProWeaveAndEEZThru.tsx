@@ -19,7 +19,7 @@ export default function ProWeaveAndEEZThru() {
       bullets={[
         {
           lines: [
-            "Woven design removes biofilm between ",
+            "Woven design removes plaque between ",
             "teeth and below the gumline.",
           ],
         },

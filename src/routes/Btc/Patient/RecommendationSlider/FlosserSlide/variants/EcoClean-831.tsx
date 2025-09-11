@@ -22,7 +22,7 @@ export default function EcoCleanFlosser() {
         {
           text: (
             <>
-              Designed to resist shredding or breaking.<sup>12</sup>
+              Designed to resist shredding or breaking.<sup>13</sup>
             </>
           ),
         },

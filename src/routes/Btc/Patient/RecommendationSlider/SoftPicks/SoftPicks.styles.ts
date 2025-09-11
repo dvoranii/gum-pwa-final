@@ -21,12 +21,14 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
   align-items: flex-end;
   min-width: ${(props) => (props.$advanced ? "125px" : "207px")};
   padding-left: 1.2rem;
+  z-index: 1;
 `;
 
 export const ImgAndTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: -12px;
+  z-index: 99;
 `;
 
 export const MainImage = styled.img<{ $height?: string }>`

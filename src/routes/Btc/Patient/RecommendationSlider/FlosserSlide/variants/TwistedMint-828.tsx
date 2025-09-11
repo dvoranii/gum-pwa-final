@@ -30,7 +30,7 @@ export default function TwistedMintFlosser() {
           lines: [
             "Lightweight flexible grip",
             <>
-              uses 20% less plastic.<sup>13</sup>
+              uses 20% less plastic.<sup>12</sup>
             </>,
           ],
         },

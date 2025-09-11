@@ -5,7 +5,7 @@ import BottomImage from "../../../../../../assets/btc/patient/recommendations/Fl
 export default function ComfortSlideFlosser() {
   return (
     <FlosserSlide
-      title="Comfort Slide®"
+      title="Comfort Slide"
       titleSize="3rem"
       subtitle="FLOSSER MINT"
       subtitleSize="2.5rem"
@@ -24,7 +24,7 @@ export default function ComfortSlideFlosser() {
           lines: [
             "Lightweight flexible grip",
             <>
-              uses 20% less plastic.<sup>13</sup>
+              uses 20% less plastic.<sup>12</sup>
             </>,
           ],
         },

@@ -31,7 +31,7 @@ export default function BtcFlossers() {
                     <li>
                       Textured floss effectively removes 2x more plaque
                       <sup>10</sup> and is designed to resist shredding or
-                      breaking.<sup>12</sup>
+                      breaking.<sup>13</sup>
                     </li>
                     <li>
                       Lightweight handle is crafted from 70% plant-based
@@ -52,7 +52,7 @@ export default function BtcFlossers() {
                     </li>
                     <li>
                       Lightweight flexible grip uses 20% less plastic.
-                      <sup>13</sup>
+                      <sup>12</sup>
                     </li>
                   </ul>
                 </S.ListContainer>
@@ -70,7 +70,7 @@ export default function BtcFlossers() {
                     </li>
                     <li>
                       Lightweight flexible grip uses 20% less plastic.
-                      <sup>13</sup>
+                      <sup>12</sup>
                     </li>
                   </ul>
                 </S.ListContainer>
@@ -84,16 +84,16 @@ export default function BtcFlossers() {
                   <ul>
                     <li>Durable floss coated with Vitamin E & Fluoride.</li>
                     <li>
-                      Designed to resist shredding or breaking.<sup>12</sup>
+                      Designed to resist shredding or breaking.<sup>13</sup>
                     </li>
                     <li>
                       Lightweight flexible grip uses 20% less plastic.
-                      <sup>13</sup>
+                      <sup>12</sup>
                     </li>
-                    <li>
-                      20% LESS PLASTIC<sup>13</sup> mint flavour on all
+                    {/* <li>
+                      20% LESS PLASTIC<sup>12</sup> mint flavour on all
                       flossers.
-                    </li>
+                    </li> */}
                   </ul>
                 </S.ListContainer>
               </S.TitleListWrapper>
@@ -105,13 +105,13 @@ export default function BtcFlossers() {
                 <S.ListContainer>
                   <ul>
                     <li>
-                      Textured floss effectively removes 2x more plaque
+                      Textured floss effectively removes 2x more plaque.
                       <sup>10</sup> and is designed to resist shredding or
-                      breaking.<sup>12</sup>
+                      breaking.<sup>13</sup>
                     </li>
                     <li>
                       Lightweight flexible grip uses 20% less plastic.
-                      <sup>13</sup>
+                      <sup>12</sup>
                     </li>
                   </ul>
                 </S.ListContainer>
@@ -175,7 +175,7 @@ export default function BtcFlossers() {
                     </li>
                     <li>
                       Strong floss designed to slide easily between teeth and
-                      resist shredding or breaking.
+                      resist shredding or breaking.<sup>13</sup>
                     </li>
                   </ul>
                 </S.ListContainer>
@@ -188,14 +188,11 @@ export default function BtcFlossers() {
                 </h4>
                 <S.ListContainer>
                   <ul>
-                    <li>
-                      Dual ends specifically designed to reach front and back
-                      teeth.
-                    </li>
+                    <li>Dual ends designed to reach front and back teeth.</li>
                     <li>
                       Twisted mint floss on the angled side removes 2x more
-                      plaque<sup>2</sup> and covers 30% more surface area.
-                      <sup>3</sup>
+                      plaque<sup>10</sup> and covers 30% more surface area.
+                      <sup>11</sup>
                     </li>
                   </ul>
                 </S.ListContainer>

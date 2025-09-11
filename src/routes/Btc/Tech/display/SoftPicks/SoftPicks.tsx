@@ -9,13 +9,16 @@ export default function ProxaTriangular() {
     <S.ContentWrapper>
       <S.HeaderRight>
         <S.MainTitle>
-          GUM Soft Picks®
+          GUM Soft-Picks®
           <br />
           Advanced
         </S.MainTitle>
         <S.Description>
-        <li>With a longer curved handle for improved maneuverability.</li>
-        <li>Clinically proven to remove 22% more plaque than brushing alone.<sup>23</sup></li>
+          <li>With a longer curved handle for improved maneuverability.</li>
+          <li>
+            Clinically proven to remove 22% more plaque than brushing alone.
+            <sup>23</sup>
+          </li>
         </S.Description>
 
         <S.DiagramSection>

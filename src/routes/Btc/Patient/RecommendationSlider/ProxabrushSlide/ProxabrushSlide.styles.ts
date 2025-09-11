@@ -17,8 +17,11 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
   display: flex;
   align-items: flex-end;
   min-width: ${(props) => props.$minWidth};
+  z-index: 1;
 `;
-export const ImgAndTextWrapper = styled.div``;
+export const ImgAndTextWrapper = styled.div`
+  z-index: 99;
+`;
 
 export const MainImage = styled.img<{ $height?: string }>`
   height: ${(props) => props.$height || "85%"};

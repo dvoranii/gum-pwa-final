@@ -33,6 +33,14 @@ export const TextAndImgWrapper = styled.div`
   flex-direction: column;
   flex: 1;
   height: 100%;
+
+  small {
+    font-family: "Gotham";
+    color: #555;
+    margin-left: 20px;
+    margin-top: 64px;
+    font-style: italic;
+  }
 `;
 
 export const ToothbrushImageWrapper = styled.div`

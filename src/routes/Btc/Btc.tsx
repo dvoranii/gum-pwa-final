@@ -17,7 +17,7 @@ const btcNavItems = [
   { path: "/btc/floss", label: "Floss" },
   { path: "/btc/flossers", label: "Flossers" },
   { path: "/btc/id-brushes", label: "ID\u00A0Brushes" },
-  { path: "/btc/soft-picks", label: "Soft\u00A0Picks" },
+  { path: "/btc/soft-picks", label: "Soft\u2013Picks" },
   { path: "/recommend", label: "Recommend" },
 ];
 

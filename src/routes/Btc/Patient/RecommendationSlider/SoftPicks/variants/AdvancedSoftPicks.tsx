@@ -14,7 +14,10 @@ export default function AdvancedSoftPicks() {
       gap="2.4rem"
       bullets={[
         {
-          lines: ["Longer curved handle", "for improved maneuverability."],
+          lines: [
+            "Longer curved handle",
+            "for improved maneuverability and better clean in hard-to-reach areas.",
+          ],
         },
         {
           lines: [

@@ -5,7 +5,7 @@ import BottomImage from "../../../../../../assets/btc/patient/recommendations/Fl
 export default function ProfessionalCleanFlosser() {
   return (
     <FlosserSlide
-      title="Professional Clean®"
+      title="Professional Clean"
       subtitle="FLOSSER MINT"
       subtitleSize="2.5rem"
       sideImage={FlosserImage}
@@ -24,14 +24,14 @@ export default function ProfessionalCleanFlosser() {
           lines: [
             "Designed to resist shredding",
             <>
-              or breaking.<sup>12</sup>
+              or breaking.<sup>13</sup>
             </>,
           ],
         },
         {
           text: (
             <>
-              Lightweight flexible grip uses 20% less plastic.<sup>13</sup>
+              Lightweight flexible grip uses 20% less plastic.<sup>12</sup>
             </>
           ),
         },

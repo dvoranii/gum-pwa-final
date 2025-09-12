@@ -35,7 +35,7 @@ export default function ToothAndTongueSlide() {
             </li>
             <li>
               <span>
-                Tongue cleaner with ridged scrapers improves cleaning and helps
+                Improves cleaning and helps
                 reduce
                 <br /> bad breath.
               </span>

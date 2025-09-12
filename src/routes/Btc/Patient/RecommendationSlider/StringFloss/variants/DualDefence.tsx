@@ -4,7 +4,7 @@ import ProductImage from "../../../../../../assets/btc/patient/recommendations/S
 export default function DualDefenceFloss() {
   return (
     <StringFlossSlide
-      title="Dual Defense"
+      title="Dual-Defense®"
       subtitle="TWISTED STRING FLOSS"
       topImage={ProductImage}
       minHeight="287px"

@@ -128,6 +128,16 @@ export const Title = styled.h2<TitleProps>`
   line-height: 0.8;
   padding-top: 0.7rem;
   letter-spacing: ${(props) => props.$letterSpacing || "-1px"};
+
+  sup {
+    font-size: 12px;
+    vertical-align: 24px;
+  }
+
+  span {
+    font-size: 32px;
+    vertical-align: 6px;
+  }
 `;
 
 export const Subtitle = styled.h3`

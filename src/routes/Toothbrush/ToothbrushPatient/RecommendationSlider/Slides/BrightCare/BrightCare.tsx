@@ -3,7 +3,7 @@ import ToothbrushImage from "../../../../../../assets/toothbrush/4594-BrightCare
 
 export default function BrightCareSlide() {
   return (
-    <S.Container $padding="2.4rem 0 0 2.4rem">
+    <S.Container $padding="2.4rem 0 0 1.8rem">
       <S.SlideContent $gap="1rem">
         <S.ToothbrushImageWrapper>
           <S.ToothbrushImage
@@ -13,10 +13,10 @@ export default function BrightCareSlide() {
         </S.ToothbrushImageWrapper>
         <S.TextAndImgWrapper>
           <S.TitlesWrapper>
-            <S.Title $fontSize="clamp(24px, 6vw, 3.2rem)" $letterSpacing="-2px">
-              G-U-M Bright Care™
+            <S.Title $fontSize="clamp(24px, 6vw, 3rem)" $letterSpacing="-2px">
+              G<span>•</span>U<span>•</span>M Bright Care<sup>TM</sup>
             </S.Title>
-            <S.Subtitle>TOOTHBRUSH®</S.Subtitle>
+            <S.Subtitle>TOOTHBRUSH</S.Subtitle>
           </S.TitlesWrapper>
 
           <S.BulletList
@@ -34,13 +34,13 @@ export default function BrightCareSlide() {
             <li>
               <span>
                 Raised Super Tip® bristles at the tip provide access to
-                posterior regions and clean hard-to-reach surfacs.
+                posterior regions and clean hard-to-reach surfaces.
               </span>
             </li>
             <li>
               <span>
                 Dome Trim® bristles are clinically designed to clean below
-                <br /> the gumline.<sup>18,19</sup>
+                <br /> the gumline.<sup>18, 19</sup>
               </span>
             </li>
           </S.BulletList>

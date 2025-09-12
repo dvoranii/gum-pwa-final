@@ -321,9 +321,9 @@ export default function OralSystemicLink() {
                         </S.ResultTitle>
                         <S.ResultParagraph $paddingTop="0">
                           Diabetes affects one
-                          <br /> in 10 adults<sup>5</sup>. Periodontitis
-                          increases the risk for diabetic complications
-                          <sup>6</sup>.
+                          <br /> in 10 adults.<sup>5</sup> Periodontitis
+                          increases the risk for diabetic complications.
+                          <sup>6</sup>
                         </S.ResultParagraph>
                       </S.ResultDescriptionInner>
 

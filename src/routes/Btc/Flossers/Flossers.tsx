@@ -99,7 +99,7 @@ export default function BtcFlossers() {
               </S.TitleListWrapper>
               <S.TitleListWrapper>
                 <h4>
-                  <span>Professional</span> <span>Clean®</span>{" "}
+                  <span>Professional</span> <span>Clean</span>{" "}
                   <span>Flossers</span> <span>Mint</span>
                 </h4>
                 <S.ListContainer>

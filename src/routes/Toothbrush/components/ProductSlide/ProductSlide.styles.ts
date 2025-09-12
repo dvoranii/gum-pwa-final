@@ -116,6 +116,11 @@ export const TextWrapper = styled.div<TextWrapperProps>`
     margin-bottom: ${(props) =>
       props.$marginBottom ? props.$marginBottom : "0.4rem"};
     font-size: 1.25rem;
+
+    sup {
+      font-size: 16px;
+      vertical-align: top;
+    }
   }
 
   p {
@@ -153,6 +158,8 @@ export const TextWrapper = styled.div<TextWrapperProps>`
 
     li {
       margin-bottom: 0.2rem;
+
+
     }
   }
 

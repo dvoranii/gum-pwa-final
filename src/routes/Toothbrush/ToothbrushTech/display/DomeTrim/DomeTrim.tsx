@@ -11,7 +11,7 @@ export default function TaperedBristles(){
                     GUM Dome Trim® Bristle Design
                 </S.MainTitle>
                 <S.Description>
-                    <li>Designed to clean below the gumline where periodontal disease starts.<sup>18,19</sup> The dome shape bristling structure helps promote the recommended 45° angle when using the modified Bass technique.</li>
+                    <li>Designed to clean below the gumline where periodontal disease starts.<sup>18, 19</sup> The dome shape bristling structure helps promote the recommended 45° angle when using the modified Bass technique.</li>
                 </S.Description>
                 <S.ColLeftImgWrapper>
                     <img src={TaperedBristlesDiagram}/>

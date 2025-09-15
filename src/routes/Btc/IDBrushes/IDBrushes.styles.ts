@@ -60,7 +60,7 @@ export const Row1WrapperInner = styled.div``;
 
 export const Row1WrapperOuter = styled.div`
   display: flex;
-  gap: 1.4rem;
+  /* gap: 1.4rem; */
   padding-bottom: 0.6rem;
   border-bottom: 1px solid ${colors.black};
 `;
@@ -135,7 +135,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ImgWrapper1 = styled.div`
-  width: 64%;
+  width: 65%;
   min-width: 478px;
   display: flex;
   justify-content: center;
@@ -143,10 +143,6 @@ export const ImgWrapper1 = styled.div`
   img {
     width: 90%;
     object-fit: contain;
-  }
-
-  @media screen and (max-width: 1080px) {
-    width: 70%;
   }
 `;
 
@@ -253,12 +249,6 @@ export const BristlesTextWrapper = styled.div`
       font-style: normal;
     }
   }
-
-  @media screen and (max-width: 1080px) {
-    p {
-      font-size: 12px;
-    }
-  }
 `;
 
 export const BristlesImagesContainer = styled.div`
@@ -335,10 +325,6 @@ export const NylonCallout = styled.div<NylonCalloutProps>`
     text-align: center;
     font-weight: 300;
     line-height: 1.3;
-  }
-
-  @media screen and (max-width: 1080px) {
-    width: 97%;
   }
 `;
 

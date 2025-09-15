@@ -157,7 +157,7 @@ export default function BtcIDBrushes() {
                     $padding="10px"
                     $fontSize="13px"
                     $marginRight="36px"
-                    $width="90%"
+                    $width="95%"
                   >
                     <p>Nylon coated wire helps prevent galvanic shock</p>
                   </S.NylonCallout>
@@ -230,7 +230,7 @@ export default function BtcIDBrushes() {
                   <S.NylonCallout
                     $padding="12px 18px"
                     $fontSize="14px"
-                    $width="60%"
+                    $width="70%"
                   >
                     <p>Nylon coated wire helps prevent galvanic shock</p>
                   </S.NylonCallout>

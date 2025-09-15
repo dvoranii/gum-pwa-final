@@ -27,12 +27,8 @@ export const SlideRow1 = styled.div`
 `;
 
 export const SlideRow2 = styled.div`
-  padding-top: 0.8rem;
+  padding-top: 0.4rem;
   position: relative;
-
-  @media screen and (max-width: 1080px) {
-    padding-top: 0.4rem;
-  }
 `;
 
 interface ColumnProps {
@@ -50,11 +46,7 @@ export const Column = styled.div<ColumnProps>`
 
 export const InfoGridRow = styled.div`
   display: contents;
-  line-height: 0.5;
-
-  @media screen and (max-width: 1080px) {
-    line-height: 0.6;
-  }
+  line-height: 0.6;
 `;
 
 export const InfoGridRow2 = styled.div`
@@ -89,10 +81,6 @@ export const Row1WrapperInner2 = styled.div<Row1WrapperInner2Props>`
     font-family: "Gotham", sans-serif;
     font-weight: 500;
     color: ${colors.black};
-  }
-
-  @media screen and (max-width: 1080px) {
-    /* padding-bottom: 0; */
   }
 `;
 
@@ -442,11 +430,10 @@ export const ListContainer = styled.div<ListContainerProps>`
 
 export const SlideWrapperInner = styled.div`
   max-width: 80vw;
-  height: 100%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: -25px;
 
   h2 {
     font-family: "Gotham", sans-serif;
@@ -502,19 +489,14 @@ export const InfoGrid = styled.div<InfoGridProps>`
   display: grid;
   grid-template-columns: ${(props) =>
     props.$gridColumns ? props.$gridColumns : "4fr 1fr 1fr"};
-  gap: 0.55rem;
+  gap: 0.25rem;
   width: 85%;
   margin-top: auto;
   column-gap: 1rem;
   font-family: "Gotham", sans-serif;
-  padding-top: 0.8rem;
-  font-size: clamp(12px, 1vw, 1.4rem);
+  padding-top: 0.25rem;
+  font-size: clamp(11px, 1vw, 1.4rem);
   color: #666666;
-
-  @media screen and (max-width: 1080px) {
-    gap: 0.25rem;
-    padding-top: 0.4rem;
-  }
 `;
 
 export const InfoGrid2 = styled.div`

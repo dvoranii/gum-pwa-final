@@ -24,7 +24,7 @@ export default function BtcIDBrushes() {
         $customStyles={{
           viewportHeight: "85vh",
           dotPosition: {
-            bottom: "-28px",
+            bottom: "-18px",
             right: "44px",
           },
         }}

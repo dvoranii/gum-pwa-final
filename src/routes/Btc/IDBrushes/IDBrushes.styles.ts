@@ -141,7 +141,7 @@ export const ImgWrapper1 = styled.div`
   justify-content: center;
 
   img {
-    width: 90%;
+    width: 85%;
     object-fit: contain;
   }
 `;
@@ -222,9 +222,8 @@ export const ImgAndBadgeWrapper = styled.div`
 
 export const DiagramSection = styled.div`
   width: 100%;
-  max-width: 420px;
   padding-top: 1.2rem;
-  padding-right: 3.2rem;
+  padding-right: 2.4rem;
 `;
 
 export const BristlesWrapper = styled.div`

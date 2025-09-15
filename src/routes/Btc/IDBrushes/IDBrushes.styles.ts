@@ -430,7 +430,7 @@ export const ListContainer = styled.div<ListContainerProps>`
 
 export const SlideWrapperInner = styled.div`
   max-width: 80vw;
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -494,8 +494,8 @@ export const InfoGrid = styled.div<InfoGridProps>`
   margin-top: auto;
   column-gap: 1rem;
   font-family: "Gotham", sans-serif;
-  padding-top: 0.25rem;
-  font-size: clamp(11px, 1vw, 1.4rem);
+  padding-top: 0.5rem;
+  font-size: clamp(12px, 1vw, 1.4rem);
   color: #666666;
 `;
 

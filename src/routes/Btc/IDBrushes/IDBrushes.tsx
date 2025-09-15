@@ -22,7 +22,7 @@ export default function BtcIDBrushes() {
     <S.IDBrushesContainer>
       <FlickityCarousel
         $customStyles={{
-          viewportHeight: "82vh",
+          viewportHeight: "85vh",
           dotPosition: {
             bottom: "-28px",
             right: "44px",
@@ -157,7 +157,7 @@ export default function BtcIDBrushes() {
                     $padding="10px"
                     $fontSize="13px"
                     $marginRight="36px"
-                    $width="84%"
+                    $width="90%"
                   >
                     <p>Nylon coated wire helps prevent galvanic shock</p>
                   </S.NylonCallout>

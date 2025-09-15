@@ -27,7 +27,7 @@ export const SlideRow1 = styled.div`
 `;
 
 export const SlideRow2 = styled.div`
-  padding-top: 0.4rem;
+  /* padding-top: 0rem; */
   position: relative;
 `;
 
@@ -174,7 +174,7 @@ export const SizingDiagramContainer = styled.div`
 export const AngleCleanerImgWrapper = styled.div`
   min-height: 121px;
   img {
-    width: 100%;
+    width: 98%;
     padding: 8px;
     object-fit: contain;
   }
@@ -192,7 +192,7 @@ export const BristlesAndNylonWrapper = styled.div<BristlesAndNylonWrapperProps>`
   flex: ${(props) => props.$flex || "1"};
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 4px;
   padding-right: 2.4rem;
 `;
@@ -227,12 +227,8 @@ export const ImgAndBadgeWrapper = styled.div`
 export const DiagramSection = styled.div`
   width: 100%;
   max-width: 420px;
-  padding-top: 2rem;
+  padding-top: 1.2rem;
   padding-right: 3.2rem;
-
-  @media screen and (max-width: 1080px) {
-    padding-top: 1.2rem;
-  }
 `;
 
 export const BristlesWrapper = styled.div`
@@ -326,9 +322,10 @@ export const NylonCallout = styled.div<NylonCalloutProps>`
   border-radius: 30px;
   padding: ${(props) => props.$padding || "20px 12px"};
   flex: 1;
-  width: ${(props) => props.$width || "90%"};
+  width: ${(props) => props.$width || "97%"};
   ${(props) => props.$marginRight && `margin-right: ${props.$marginRight}`};
   ${(props) => props.$marginTop && `margin-top: ${props.$marginTop}`};
+  margin-right: 0;
 
   p {
     font-family: "Gotham", sans-serif;
@@ -342,7 +339,6 @@ export const NylonCallout = styled.div<NylonCalloutProps>`
 
   @media screen and (max-width: 1080px) {
     width: 97%;
-    margin-right: 0;
   }
 `;
 
@@ -400,7 +396,7 @@ export const ListContainer = styled.div<ListContainerProps>`
     font-family: "Gotham", sans-serif;
     font-size: clamp(0.8rem, 0.9vw, 1.4rem);
     color: ${colors.black};
-    padding-bottom: ${(props) => props.$paddingBottom || "1.2rem"};
+    padding-bottom: ${(props) => props.$paddingBottom || "0.8rem"};
     list-style: none;
     line-height: 1.2;
 

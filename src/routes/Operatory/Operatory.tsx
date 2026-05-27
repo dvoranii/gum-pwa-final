@@ -4,7 +4,6 @@ import { Outlet, useLocation } from "react-router-dom";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import MonsterzImg from "../../assets/operatory/monsterz-image.webp";
-import MonsterzLogo from "../../assets/operatory/monsterz-logo-text.webp";
 import Fruits from "../../assets/operatory/fruits.webp";
 
 const operatoryNavItems = [
@@ -26,9 +25,6 @@ export default function Operatory() {
             <S.OperatoryWrapperInner>
               <S.ColLeft>
                 <S.Row1>
-                  <S.ImgWrapper1>
-                    <img src={MonsterzLogo} />
-                  </S.ImgWrapper1>
                   <small>Ideal for kids and adults alike</small>
                   <S.ListContainer>
                     <ul>

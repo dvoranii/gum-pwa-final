@@ -1,7 +1,7 @@
 import TechniqueKidsBrush from "../../../../../assets/toothbrush/Kids/Slide7/Brush-TechniqueKids.webp";
-import TechniqueClassicBrush from "../../../../../assets/toothbrush/Kids/Slide7/Brush-TechniqueClassic.webp";
+import BrightCareBrush from "../../../../../assets/toothbrush/Kids/Slide8/Brush-GUMBrightCare.webp";
 import TechniqueKidsDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueKids.webp";
-import TechniqueClassicDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueClassic.webp";
+import BrightCareDiagram from "../../../../../assets/toothbrush/Kids/Slide8/circle-diagram-GUMBrightCare.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
 
 const Slide7 = () => (
@@ -55,8 +55,8 @@ const Slide7 = () => (
       ]}
     />
     <ProductSlide
-      brushImage={TechniqueClassicBrush}
-      diagramImage={TechniqueClassicDiagram}
+      brushImage={BrightCareBrush}
+      diagramImage={BrightCareDiagram}
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -74,32 +74,30 @@ const Slide7 = () => (
       textWrapperPaddingRight="3rem"
       title={
         <>
-          TECHNIQUE<sup>®</sup> CLASSIC
+          G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
         </>
       }
       description={[
         <>
-          Cushioned Quad-Grip® handle facilitates the recommended
-          <br /> 45° brushing technique.
+          Special BrightLine<sup>TM</sup> Grip bristles help remove stains for{" "}
+          <strong>28% whiter teeth</strong>.<sup>3</sup>
         </>,
         <>
-          Dome Trim<sup>®</sup> bristles are clinically
-          <br /> designed to clean below the gumline.<sup>18,&nbsp;19</sup>
+          Raised Super Tip<sup>®</sup> bristles at the tip provide access to
+          posterior regions and clean hard-to-reach surfaces.
+        </>,
+        <>
+          Dome Trim<sup>®</sup> bristles are clinically designed to clean below
+          the gumline.<sup>18,&nbsp;19</sup>
         </>,
       ]}
-      imprintColors={[["#f1592a"], ["#8dc63e"], ["#00aeee"], ["#9f5fa7"]]}
+      imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}
       specs={[
         [
-          { label: "Item", value: "491" },
+          { label: "Item", value: "4594" },
           { label: "Texture", value: "Soft" },
-          { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "30" },
-        ],
-        [
-          { value: "495" },
-          { value: "Ultra soft" },
-          { value: "Compact" },
-          { value: "30" },
+          { label: "Size", value: "Subcompact" },
+          { label: "Tufts", value: "23" },
         ],
       ]}
     />

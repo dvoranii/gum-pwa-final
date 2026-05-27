@@ -10,7 +10,7 @@ import {
   KidsSlide5,
   KidsSlide6,
   KidsSlide7,
-  KidsSlide8,
+  // KidsSlide8,
 } from "../components/ProductSlide";
 
 export default function ToothbrushKids() {
@@ -54,9 +54,6 @@ export default function ToothbrushKids() {
         </S.CarouselSlide>
         <S.CarouselSlide>
           <KidsSlide7 />
-        </S.CarouselSlide>
-        <S.CarouselSlide>
-          <KidsSlide8 />
         </S.CarouselSlide>
       </FlickityCarousel>
     </S.KidsWrapperOuter>

@@ -1,48 +1,24 @@
-import Brush1_CrayolaPipSqueaks from "../../../../../assets/toothbrush/Kids/Slide3/Brush-Crayola-Pipsqueaks.webp";
+// Slide3.tsx
+import * as S from "./Slide3.styles";
+
+// ─── MARKER ASSETS (LEFT COLUMN) ───
 import Brush1_CrayolaMarker from "../../../../../assets/toothbrush/Kids/Slide3/Brush-Crayola-Markers.webp";
-import Slide3Col1TopImg from "../../../../../assets/toothbrush/Kids/Slide3/Slide3Col1-topImg.webp";
 import Slide3Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide3/Slide3Col2-topImg.webp";
+
+// ─── TWISTABLES ASSETS (RIGHT COLUMN - MIGRATED FROM OLD SLIDE 5) ───
+import Slide5Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide5Col2Img.webp";
+import Slide5Col2BottomImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide5Col2Fruits.webp";
+
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
-import { TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
+import {
+  TitleLight,
+  Container,
+} from "../../../components/ProductSlide/ProductSlide.styles";
+import ShopifyIcon from "../../../../../components/ShopifyIcon/ShopifyIcon";
 
 const Slide3 = () => (
-  <>
-    <ProductSlide
-      brushImage={Brush1_CrayolaPipSqueaks}
-      diagramImage={Slide3Col1TopImg}
-      shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
-        width: "30px",
-        marginTop: "0",
-      }}
-      diagramWidth="86%"
-      textWrapperMinHeight="246px"
-      colGap="0.8rem"
-      textWrapperPaddingRight="2rem"
-      diagramMarginBottom="0"
-      useBulletPoints={true}
-      showImprintText={false}
-      title={
-        <>
-          Crayola<TitleLight>™</TitleLight> PIP-SQUEAKS
-          <TitleLight>™</TitleLight>
-        </>
-      }
-      description={[
-        "Soft bristles are gentle on young teeth and gums.",
-        "Narrow, tapered brush head makes maneuvering in small mouths easier.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
-      ]}
-      imprintColors={[["#fcb041"], ["#c91690"], ["#00aeee"], ["#22b785"]]}
-      specs={[
-        [
-          { label: "Item", value: "232" },
-          { label: "Texture", value: "Soft" },
-          { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "19" },
-        ],
-      ]}
-    />
+  <Container>
+    {/* ─── LEFT COLUMN: CRAYOLA MARKER (STANDARD PRODUCT SLIDE) ─── */}
     <ProductSlide
       brushImage={Brush1_CrayolaMarker}
       diagramImage={Slide3Col2TopImg}
@@ -86,7 +62,47 @@ const Slide3 = () => (
         ],
       ]}
     />
-  </>
+
+    {/* ─── RIGHT COLUMN: TWISTABLES FLOSSERS (CUSTOM RENDERING MIGRATED) ─── */}
+    <S.SecondColumnWrapper>
+      <S.TopImageWrapper>
+        <img src={Slide5Col2TopImg} alt="Crayola Twistables Flossers" />
+      </S.TopImageWrapper>
+
+      <S.ContentWrapper>
+        <S.TextContent>
+          <h2>
+            Crayola<TitleLight>™</TitleLight> TWISTABLES
+            <TitleLight>™</TitleLight> FLOSSERS
+          </h2>
+          <ul>
+            <li>Extra-strong, twisted fluoride coated floss.</li>
+            <li>Longer handle makes it easy for parents to help kids floss.</li>
+            <li>
+              3 Twisted fruit flavours to choose from, to vary the fun and keep
+              them flossing.
+            </li>
+          </ul>
+        </S.TextContent>
+        <S.BottomImageWrapper>
+          <img src={Slide5Col2BottomImg} alt="Fruit flavors" />
+        </S.BottomImageWrapper>
+      </S.ContentWrapper>
+
+      <S.SpecsSection>
+        <S.SpecsGrid>
+          <S.SpecItem>853 Crayola™ Twistables™ Flossers</S.SpecItem>
+          <S.SpecItem>48 packs of 3</S.SpecItem>
+        </S.SpecsGrid>
+      </S.SpecsSection>
+
+      <ShopifyIcon
+        href="https://www.shopify.com/ca"
+        width="30px"
+        marginTop="0"
+      />
+    </S.SecondColumnWrapper>
+  </Container>
 );
 
 export default Slide3;

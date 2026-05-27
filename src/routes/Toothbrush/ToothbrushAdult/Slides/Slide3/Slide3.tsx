@@ -41,7 +41,7 @@ const Slide3 = () => (
           { label: "Tufts", value: "30" },
         ],
         [
-          { value: "559" },
+          { value: "595" },
           { value: "Ultra Soft" },
           { value: "Compact" },
           { value: "30" },
@@ -51,8 +51,6 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
-      // diagramMinWidth
-      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

@@ -253,20 +253,7 @@ export default function ToothbrushAdult() {
                         <SpecValue>32</SpecValue>
                       </SpecItem>
                     </S.BrushSpecsGrid>
-                    <S.BrushSpecsGrid $paddingTop="0.5rem" $gap="0">
-                      <SpecItem>
-                        <SpecValue>125</SpecValue>
-                      </SpecItem>
-                      <SpecItem>
-                        <SpecValue>Soft</SpecValue>
-                      </SpecItem>
-                      <SpecItem>
-                        <SpecValue>V-Trim</SpecValue>
-                      </SpecItem>
-                      <SpecItem>
-                        <SpecValue>32</SpecValue>
-                      </SpecItem>
-                    </S.BrushSpecsGrid>
+                    <br />
                   </BrushSpecsWrapper>
                   <ShopifyIcon
                     href="https://www.shopify.com/ca"
@@ -277,7 +264,6 @@ export default function ToothbrushAdult() {
               </S.TextAndImgWrapperOuter>
             </S.Column>
 
-            {/* Right Column - Denture Brush */}
             <S.Column>
               <BrushImgWrapper
                 $containerWidth="50%"

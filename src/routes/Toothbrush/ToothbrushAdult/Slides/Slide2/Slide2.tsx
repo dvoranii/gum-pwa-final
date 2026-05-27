@@ -13,8 +13,6 @@ const Slide2 = () => (
     <ProductSlide
       brushImage={Brush1_EnamelClean}
       diagramImage={Diagrams_EnamelClean}
-      // diagramMinWidth
-      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -56,7 +54,7 @@ const Slide2 = () => (
       imgMinWidth="54px"
       title={
         <>
-          SENSITIVE&nbsp;CARE&nbsp;<TitleLight>TECHNIQUE®</TitleLight>
+          ULTRA SENSITIVE CLEAN <TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[

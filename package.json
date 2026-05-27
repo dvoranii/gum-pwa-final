@@ -1,7 +1,9 @@
 {
   "name": "gum-pwa",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "GUM e-Detailing Progressive Web App - Bilingual dental product presentation tool for iPad",
+  "author": "Ildi Dvorani",
   "type": "module",
   "scripts": {
     "dev": "vite",

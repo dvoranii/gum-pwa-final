@@ -1,12 +1,16 @@
 import * as S from "./TaperedBristles.styles";
 import TaperedBristlesDiagram from "../../../../../assets/toothbrush/tech/ColLeftExtremeBristle.webp";
 import ExtremelyTaperedColRightImg from "../../../../../assets/toothbrush/tech/ExtremelyTaperedColRight.webp";
+import Trademark from "../../../../../components/Trademark/Trademark";
 
 export default function TaperedBristles() {
   return (
     <S.ContentWrapper>
       <S.ColumnLeft>
-        <S.MainTitle>GUM Extremely Tapered Bristles (ETB)</S.MainTitle>
+        <S.MainTitle>
+          GUM
+          <Trademark $size="36px" /> Extremely Tapered Bristles (ETB)
+        </S.MainTitle>
         <S.Description>
           <li>
             Precision tapering enables the Extremely Tapered Bristles (EtB) to

@@ -1,6 +1,6 @@
 import * as S from "../ToothbrushSlide.styles";
 import ToothbrushImage from "../../../../../../assets/toothbrush/Adult/Slide2/Brush-Enamel.webp";
-import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/DeepClean/4471-EnamelClean-BottomImg.webp";
+import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/4471-EnamelClean-BottomImg.webp";
 
 export default function EnamelCleanSlide() {
   return (
@@ -31,10 +31,15 @@ export default function EnamelCleanSlide() {
               </span>
             </li>
             <li>
-              <span>70% more enamel clean compared end rounded bristle.<sup>17</sup></span>
+              <span>
+                70% more enamel clean compared end rounded bristle.<sup>17</sup>
+              </span>
             </li>
             <li>
-              <span>Dome Trim® bristles are clinically designed to clean below the gumline.<sup>18, 19</sup></span>
+              <span>
+                Dome Trim® bristles are clinically designed to clean below the
+                gumline.<sup>18, 19</sup>
+              </span>
             </li>
           </S.BulletList>
 

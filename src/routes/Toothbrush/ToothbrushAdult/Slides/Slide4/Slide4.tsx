@@ -11,8 +11,8 @@ const Slide4 = () => (
     <ProductSlide
       brushImage={Brush1_ToothAndTongue}
       diagramImage={Diagrams_ToothAndTongue}
-      diagramMinWidth
-      diagramMinHeight
+      // diagramMinWidth
+      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

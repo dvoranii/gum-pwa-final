@@ -1,5 +1,5 @@
 import * as S from "../ToothbrushSlide.styles";
-import ToothbrushImage from "../../../../../../assets/toothbrush/4594-BrightCare.webp";
+import ToothbrushImage from "../../../../../../assets/toothbrush/patient/recommendations/4594-BrightCare.webp";
 
 export default function BrightCareSlide() {
   return (

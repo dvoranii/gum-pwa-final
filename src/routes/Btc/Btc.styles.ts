@@ -24,7 +24,7 @@ export const ContentLeft = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 0 40px 3.4rem;
+  padding: 0 0 40px 60px;
   height: 100%;
   z-index: 99;
   flex: 1;
@@ -42,7 +42,7 @@ export const ContentRight = styled.div`
 
 export const FlossersImg = styled.img`
   width: 105%;
-  margin-left: -28px;
+  margin-left: -38px;
   height: auto;
   object-fit: contain;
   max-height: 100%;
@@ -54,7 +54,6 @@ export const FlossersImg = styled.img`
 `;
 
 export const IntroTitleWrapper = styled.div`
-  padding-left: 20px;
   flex: 1;
   display: flex;
   align-items: flex-end;
@@ -64,7 +63,7 @@ export const IntroTitle = styled.h1`
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #00a16b;
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   line-height: 0.9;
   letter-spacing: -3px;
 `;
@@ -87,6 +86,13 @@ export const RecommendedWrapper = styled.div`
   sup {
     font-size: 12px;
   }
+`;
+
+export const BannerImg = styled.img`
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: -36px;
 `;
 
 export const CrestWrapper = styled.div`

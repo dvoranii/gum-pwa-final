@@ -48,7 +48,7 @@ export const ColumnTitle = styled.h4`
   text-transform: uppercase;
   letter-spacing: -0.5px;
   color: ${colors.primary};
-  padding-top: 0.4rem;
+  padding-top: 1.2rem;
 
   span {
     font-weight: 300;
@@ -118,7 +118,7 @@ export const ListContainer = styled.div<ListContainerProps>`
     font-size: ${(props) =>
       props.$listFontSize
         ? props.$listFontSize
-        : " clamp(14px, 0.8vw,1.2rem);"};
+        : " clamp(14px, 1.2vw,1.2rem);"};
     color: ${colors.black};
     padding-bottom: ${(props) =>
       props.$listPaddingBottom ? props.$listPaddingBottom : "0.4rem;"};
@@ -166,7 +166,7 @@ export const InfoGrid = styled.div<InfoGridProps>`
   width: ${(props) => (props.$width ? props.$width : "100%")};
   margin-top: ${(props) => (props.$marginTop ? props.$marginTop : "auto")};
   column-gap: 1rem;
-
+  letter-spacing: 0.4px;
   font-family: "Gotham", sans-serif;
   padding-top: 1.2rem;
   font-size: clamp(12px, 1vw, 1.4rem);
@@ -174,7 +174,7 @@ export const InfoGrid = styled.div<InfoGridProps>`
 
   @media screen and (max-width: 1600px) {
     padding-top: ${(props) =>
-      props.$paddingTop ? props.$paddingTop : "0.4rem"};
+      props.$paddingTop ? props.$paddingTop : "0.6rem"};
   }
 `;
 

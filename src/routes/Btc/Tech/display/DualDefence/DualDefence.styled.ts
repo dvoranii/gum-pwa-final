@@ -22,10 +22,6 @@ export const BottomRow = styled.div`
 export const ColumnLeft = styled.div`
   max-width: 64%;
   padding: 20px 0 0px 60px;
-
-  sup {
-    font-size: 12px;
-  }
 `;
 
 export const MainTitle = styled.h1`

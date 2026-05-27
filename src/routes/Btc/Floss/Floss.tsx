@@ -5,11 +5,11 @@ import { BaseCarouselSlide } from "../../../styles/shared-styles";
 
 import ShopifyIcon from "../../../components/ShopifyIcon/ShopifyIcon";
 
-import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1.webp";
+import Slide1Floss1 from "../../../assets/btc/floss/Slide1Floss1-2.png";
 import Slide1Floss2 from "../../../assets/btc/floss/Slide1Floss2.webp";
 
 import Slide2Floss1 from "../../../assets/btc/floss/Slide2Floss1.webp";
-import Slide2Floss2 from "../../../assets/btc/floss/Slide2Floss2.png";
+import Slide2Floss2 from "../../../assets/btc/floss/Slide2Floss2-updated.png";
 
 import Slide3Floss1 from "../../../assets/btc/floss/Slide3Floss.webp";
 import Slide3Floss2 from "../../../assets/btc/floss/Slide3Floss2.webp";
@@ -33,7 +33,7 @@ export default function BtcFloss() {
         <BaseCarouselSlide>
           <S.SlideWrapper>
             <S.SlideColumn1>
-              <S.ImgWrapper $width={"85%"} $minHeight="226px">
+              <S.ImgWrapper $width={"65%"} $minHeight="226px">
                 <img src={Slide1Floss1} />
               </S.ImgWrapper>
               <S.ColumnTitle>Comfort Slide Dental Floss</S.ColumnTitle>
@@ -73,7 +73,7 @@ export default function BtcFloss() {
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>
-              <S.ImgWrapper $width={"85%"} $minHeight="226px">
+              <S.ImgWrapper $width={"91%"} $minHeight="226px">
                 <img src={Slide1Floss2} />
               </S.ImgWrapper>
               <S.ColumnTitle>Dual-Defence® Twisted String Floss</S.ColumnTitle>
@@ -154,11 +154,10 @@ export default function BtcFloss() {
                 <br />
                 <br />
                 <br />
-                <br />
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>
-              <S.ImgWrapper $width={"100%"} $minHeight="231px">
+              <S.ImgWrapper $width={"82%"} $minHeight="231px">
                 <img src={Slide2Floss2} />
               </S.ImgWrapper>
               <S.ColumnTitle>Pro-Weave® Dental Floss</S.ColumnTitle>
@@ -180,27 +179,22 @@ export default function BtcFloss() {
 
                 <S.InfoGrid>
                   <S.InfoGridRow>
-                    <S.Column>2008 Dual-Defence Waxed Mint</S.Column>
+                    <S.Column>1115 Pro-Weave® Waxed</S.Column>
                     <S.Column>3.6mm</S.Column>
                     <S.Column>144/box</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
-                    <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
+                    <S.Column>1815 Pro-Weave® Waxed Mint</S.Column>
                     <S.Column>2x35m</S.Column>
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
-                    <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
+                    <S.Column>1140 Pro-Weave® Waxed</S.Column>
                     <S.Column>2x35m</S.Column>
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
-                    <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
-                    <S.Column>2x35m</S.Column>
-                    <S.Column>12/bag</S.Column>
-                  </S.InfoGridRow>
-                  <S.InfoGridRow>
-                    <S.Column>2008C Dual-Defence Waxed Mint</S.Column>
+                    <S.Column>180 Pro-Weave® Waxed Mint Refillable</S.Column>
                     <S.Column>2x35m</S.Column>
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>

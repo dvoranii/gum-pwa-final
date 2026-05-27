@@ -30,7 +30,7 @@ export const Description = styled.ul`
   padding-right: 60px;
 
   sup {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 

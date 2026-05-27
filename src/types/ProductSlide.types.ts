@@ -1,4 +1,4 @@
-import { ShopifyIconProps } from "../../../../components/ShopifyIcon/ShopifyIcon.styled";
+import { ShopifyIconProps } from "../components/ShopifyIcon/ShopifyIcon.styled";
 
 export type SpecItem = {
   label?: string;
@@ -8,6 +8,7 @@ export type SpecItem = {
 type ColorPair = [string, string?];
 
 export type ProductSlideProps = {
+  bannerImage?: string;
   brushImage: string;
   diagramImage: string;
   title?: string | React.ReactNode;
@@ -29,6 +30,7 @@ export type ProductSlideProps = {
   textWrapperMinHeight?: string;
   diagramMarginBottom?: string;
   brushImgWidth?: string;
+  brushImgHeight?: string;
   colGap?: string;
   listPaddingLeft?: string;
   colMargLeft?: string;

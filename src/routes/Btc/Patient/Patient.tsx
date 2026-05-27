@@ -134,7 +134,6 @@ export default function BtcPatient() {
   const showResultButton = hasRowSelection(0) && hasRowSelection(1);
 
   const handleShowResults = () => {
-    // playSound(GoToProductSound);
     setShowResults(true);
   };
 

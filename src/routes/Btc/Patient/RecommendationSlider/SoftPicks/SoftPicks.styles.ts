@@ -7,7 +7,6 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   display: flex;
   width: 100%;
-  /* padding: 0 1.2rem; */
   gap: ${(props) => (props.$gap ? props.$gap : "0")};
 `;
 

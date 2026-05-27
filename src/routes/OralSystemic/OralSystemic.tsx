@@ -106,7 +106,7 @@ export default function OralSystemicLink() {
 
             <S.OralSystemicImgWrapperOuter>
               <S.ImagesWrapperInner
-                showResults={
+                $showResults={
                   !showCarousel && (activeHeart || activeBrain || activeBlood)
                 }
               >

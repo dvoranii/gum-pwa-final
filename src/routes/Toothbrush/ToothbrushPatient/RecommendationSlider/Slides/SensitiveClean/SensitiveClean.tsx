@@ -1,6 +1,6 @@
 import * as S from "../ToothbrushSlide.styles";
 import ToothbrushImage from "../../../../../../assets/toothbrush/Adult/Slide1/Brush-SensitiveClean.webp";
-import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/DeepClean/528-SensitiveClean-BottomImg.webp";
+import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/528-SensitiveClean-BottomImg.webp";
 
 export default function SensitiveCleanSlide() {
   return (
@@ -26,7 +26,9 @@ export default function SensitiveCleanSlide() {
             $lineHeight="1.3"
           >
             <li>
-              <span>6x better clean with ultra-soft bristles.<sup>17</sup></span>
+              <span>
+                6x better clean with ultra-soft bristles.<sup>17</sup>
+              </span>
             </li>
             <li>
               <span>Specially designed for sensitivity.</span>
@@ -35,7 +37,9 @@ export default function SensitiveCleanSlide() {
               <span>Extremely tapered bristles are very fine in diameter.</span>
             </li>
             <li>
-              <span>Now with Antibacterial Bristles.<sup>16</sup></span>
+              <span>
+                Now with Antibacterial Bristles.<sup>16</sup>
+              </span>
             </li>
           </S.BulletList>
 

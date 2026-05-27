@@ -20,11 +20,6 @@ export const MainTitle = styled.h1`
   line-height: 1;
 `;
 
-export const Trademark = styled.sup`
-  position: absolute;
-  font-weight: 700;
-`;
-
 export const Description = styled.ul`
   font-family: "Gotham", sans-serif;
   font-size: clamp(16px, 2vw, 2.4rem);

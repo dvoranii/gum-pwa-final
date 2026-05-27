@@ -42,12 +42,10 @@ export default defineConfig({
         "fonts/Gotham-XLightIta.otf",
       ],
       workbox: {
-        // This is the correct way to handle specific SPA routes.
         // The `precache` array is automatically populated with the build artifacts.
-        // We use runtime caching with `NetworkFirst` to ensure these
+        // Use runtime caching with `NetworkFirst` to ensure these
         // pages are cached on first visit.
-        // The `MapsFallback` ensures that for any URL not in the cache,
-        // the app's `index.html` is served, which then loads the React SPA.
+        // `MapsFallback` ensures that for any URL not in the cache, the app's `index.html` is served, which then loads the React SPA.
 
         maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
         globPatterns: [
@@ -70,7 +68,7 @@ export default defineConfig({
               cacheName: "app-pages-cache",
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+                maxAgeSeconds: 60 * 60 * 24 * 30,
               },
             },
           },
@@ -82,7 +80,7 @@ export default defineConfig({
               cacheName: "fonts-cache",
               expiration: {
                 maxEntries: 30,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365,
               },
             },
           },
@@ -94,7 +92,7 @@ export default defineConfig({
               cacheName: "images-cache",
               expiration: {
                 maxEntries: 100,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+                maxAgeSeconds: 60 * 60 * 24 * 30,
               },
             },
           },

@@ -10,8 +10,8 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
-      diagramMinWidth
-      diagramMinHeight
+      // diagramMinWidth
+      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -51,8 +51,8 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
-      diagramMinWidth
-      diagramMinHeight
+      // diagramMinWidth
+      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./SoftPicks.styled";
+import Trademark from "../../../../../components/Trademark/Trademark";
 
 import BrushHand from "../../../../../assets/btc/tech/SoftPicks.webp";
 import DiagramCrossSection from "../../../../../assets/btc/tech/gums-teeth-diagram.webp";
@@ -9,7 +10,9 @@ export default function ProxaTriangular() {
     <S.ContentWrapper>
       <S.HeaderRight>
         <S.MainTitle>
-          GUM Soft-Picks®
+          GUM
+          <Trademark $size="36px" /> Soft-Picks
+          <Trademark $size="36px" />
           <br />
           Advanced
         </S.MainTitle>

@@ -3,12 +3,14 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from "react-router-dom";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/toothbrush/crest.webp";
-import PatientNeeds2 from "../../assets/toothbrush/PN.png";
+import PatientNeeds2 from "../../assets/toothbrush/PN-2.png";
 import Technology2 from "../../assets/toothbrush/Tech.png";
 import Brushes from "../../assets/toothbrush/toothbrush-new.webp";
 
 import PatientBG from "../../assets/toothbrush/patient/PatientBG.webp";
+import ToothbrushBanner from "../../assets/toothbrush/toothbrush-banner.png";
+
+import Trademark from "../../components/Trademark/Trademark";
 
 const toothbrushNavItems = [
   { path: "/toothbrush", label: "Brush\u00A0Home", end: true },
@@ -39,20 +41,17 @@ export default function Toothbrush() {
             <S.ContentLeft>
               <S.IntroTitleWrapper>
                 <S.IntroTitle>
-                  Gum <br />
+                  GUM
+                  <Trademark $size="42px" /> <br />
                   Toothbrush
                   <br /> Solutions
                 </S.IntroTitle>
               </S.IntroTitleWrapper>
               <S.RecommendedWrapper>
-                <S.CrestWrapper>
-                  <S.Recommended src={Col1Row2} />
-                </S.CrestWrapper>
-                <h3>
-                  Recommended
-                  <br /> By Canadian
-                  <br /> Dental&nbsp;Hygienists<sup>7</sup>
-                </h3>
+                <S.BannerImg
+                  src={ToothbrushBanner}
+                  alt="No. 1 Manual Toothbrush Brand"
+                />
               </S.RecommendedWrapper>
 
               <S.LinksWrapper>

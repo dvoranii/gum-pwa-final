@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./ProxaTriangular.styled";
+import Trademark from "../../../../../components/Trademark/Trademark";
 
 import BrushHand from "../../../../../assets/btc/tech/ProxabrushGraphic.webp";
 import DiagramCrossSection from "../../../../../assets/btc/tech/diagram-cross-section.webp";
@@ -8,9 +9,16 @@ export default function ProxaTriangular() {
   return (
     <S.ContentWrapper>
       <S.HeaderRight>
-        <S.MainTitle>GUM Proxabrush®</S.MainTitle>
+        <S.MainTitle>
+          GUM
+          <Trademark $size="36px" /> Proxabrush
+          <Trademark $size="36px" />
+        </S.MainTitle>
         <S.Description>
-        <li>Triangular bristles remove up to 25% more plaque than conventional round bristles.<sup>8</sup></li>
+          <li>
+            Triangular bristles remove up to 25% more plaque than conventional
+            round bristles.<sup>8</sup>
+          </li>
         </S.Description>
 
         <S.DiagramSection>

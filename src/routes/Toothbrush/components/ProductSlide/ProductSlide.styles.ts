@@ -79,14 +79,13 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
 interface DiagramsWrapperProps {
   $diagramWidth?: string;
   $diagramMarginBottom?: string;
-  $diagramMinWidth?: boolean;
-  $diagramMinHeight?: boolean;
+  // $diagramMinWidth?: boolean;
+  // $diagramMinHeight?: boolean;
 }
 
 export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
   display: flex;
-  ${(props) => props.$diagramMinWidth && `min-width: 354px;`}
-  ${(props) => props.$diagramMinHeight && `min-height: 110px;`}
+  flex-direction: column;
 
   margin-bottom: ${(props) =>
     props.$diagramMarginBottom ? props.$diagramMarginBottom : "1.2rem"};
@@ -94,6 +93,13 @@ export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
     width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "95%")};
     object-fit: contain;
   }
+`;
+
+export const BannerImg = styled.img`
+  width: 90% !important;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+  align-self: flex-start;
 `;
 
 interface TextWrapperProps {
@@ -158,8 +164,6 @@ export const TextWrapper = styled.div<TextWrapperProps>`
 
     li {
       margin-bottom: 0.2rem;
-
-
     }
   }
 

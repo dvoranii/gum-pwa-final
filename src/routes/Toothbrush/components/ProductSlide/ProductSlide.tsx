@@ -1,10 +1,14 @@
 import ShopifyIcon from "../../../../components/ShopifyIcon/ShopifyIcon";
 import * as S from "./ProductSlide.styles";
-import { ProductSlideProps, SpecItem } from "./ProductSlide.types";
+import {
+  ProductSlideProps,
+  SpecItem,
+} from "../../../../types/ProductSlide.types";
 
 export const ProductSlide: React.FC<ProductSlideProps> = ({
   brushImage,
   diagramImage,
+  bannerImage,
   title,
   description,
   highlightText,
@@ -24,13 +28,14 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   textWrapperMinHeight,
   diagramMarginBottom,
   brushImgWidth,
+  brushImgHeight,
   colGap,
   listPaddingLeft,
   colMargLeft,
   imgMinWidth,
   shopifyIconProps,
-  diagramMinWidth,
-  diagramMinHeight,
+  // diagramMinWidth,
+  // diagramMinHeight,
 }) => {
   const hasMultipleSpecRows = specs.length > 1;
 
@@ -42,6 +47,7 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
     >
       <S.BrushImgWrapper
         $brushImgWidth={brushImgWidth}
+        $brushImgHeight={brushImgHeight}
         $imgMinWidth={imgMinWidth}
       >
         <img
@@ -58,9 +64,12 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
           <S.DiagramsWrapper
             $diagramWidth={diagramWidth}
             $diagramMarginBottom={diagramMarginBottom}
-            $diagramMinHeight={diagramMinHeight}
-            $diagramMinWidth={diagramMinWidth}
+            // $diagramMinHeight={diagramMinHeight}
+            // $diagramMinWidth={diagramMinWidth}
           >
+            {bannerImage && (
+              <S.BannerImg src={bannerImage} alt="Brand recommendation badge" />
+            )}
             <img
               src={diagramImage}
               alt={

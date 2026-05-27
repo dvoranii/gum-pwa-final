@@ -3,12 +3,14 @@ import InnerNav from "../../components/InnerNav/InnerNav";
 import { Outlet, useLocation } from "react-router-dom";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
-import Col1Row2 from "../../assets/btc/crest.webp";
 import PatientNeeds2 from "../../assets/btc/PatientNeeds.png";
 import Technology2 from "../../assets/btc/Technology.png";
 import Flossers from "../../assets/btc/column2-flossers.webp";
 
 import PatientBG from "../../assets/btc/patient/PatientBG.webp";
+import InterdentalBanner from "../../assets/btc/interdental-banner.png";
+
+import Trademark from "../../components/Trademark/Trademark";
 
 const btcNavItems = [
   { path: "/btc", label: "BTC\u00A0Home", end: true },
@@ -40,20 +42,17 @@ export default function Toothbrush() {
             <S.ContentLeft>
               <S.IntroTitleWrapper>
                 <S.IntroTitle>
-                  Gum <br />
+                  GUM
+                  <Trademark $size="42px" /> <br />
                   Interproximal
                   <br /> Solutions
                 </S.IntroTitle>
               </S.IntroTitleWrapper>
               <S.RecommendedWrapper>
-                <S.CrestWrapper>
-                  <S.Recommended src={Col1Row2} />
-                </S.CrestWrapper>
-                <h3>
-                  Recommended
-                  <br /> By Canadian
-                  <br /> Dental&nbsp;Hygienists<sup>7</sup>
-                </h3>
+                <S.BannerImg
+                  src={InterdentalBanner}
+                  alt="No. 1 Interdental Brand"
+                />
               </S.RecommendedWrapper>
               <S.LinksWrapper>
                 <S.StyledLink to="/btc/tech">

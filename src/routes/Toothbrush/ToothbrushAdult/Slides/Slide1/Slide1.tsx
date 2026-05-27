@@ -1,20 +1,24 @@
 import Brush1_DeepClean from "../../../../../assets/toothbrush/Adult/Slide1/Brush-DeepClean.webp";
 import Brush1_SensitiveClean from "../../../../../assets/toothbrush/Adult/Slide1/Brush-SensitiveClean.webp";
-import Diagrams_DeepClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-deepclean.webp";
-import Diagrams_SensitiveClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-sensitiveclean.webp";
+import Diagrams_DeepClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-deepclean.png";
+import Diagrams_SensitiveClean from "../../../../../assets/toothbrush/Adult/Slide1/circle-diagrams-sensitiveclean.png";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
 import {
   DescriptionBold,
   TitleLight,
 } from "../../../components/ProductSlide/ProductSlide.styles";
+import ManualBrandBadge from "../../../../../assets/toothbrush/Adult/crest-and-banner.png";
 
 const Slide1 = () => (
   <>
     <ProductSlide
       brushImage={Brush1_DeepClean}
       diagramImage={Diagrams_DeepClean}
-      diagramMinWidth
-      diagramMinHeight
+      diagramWidth="72%"
+      bannerImage={ManualBrandBadge}
+      brushImgHeight="90%"
+      // diagramMinWidth
+      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -50,8 +54,11 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
-      diagramMinWidth
-      diagramMinHeight
+      diagramWidth="72%"
+      brushImgHeight="90%"
+      bannerImage={ManualBrandBadge}
+      // diagramMinWidth
+      // diagramMinHeight
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -69,7 +76,11 @@ const Slide1 = () => (
           <sup>17</sup> with ultra-soft bristles specially designed for
           sensitivity.
         </>,
-        "Extremely tapered bristles are very fine in diameter to be extra gentle on sensitive teeth and gums, while effectively cleaning below the gumline.",
+        <>
+          Extremely tapered bristles are very fine in diameter to be extra
+          gentle on sensitive teeth&nbsp;and gums, while effectively cleaning
+          below the gumline.
+        </>,
       ]}
       showAntibacterialBadge={true}
       imprintColors={[["#d692a9"], ["#54b6b3"], ["#5a9ac4"], ["#b3b3e0"]]}

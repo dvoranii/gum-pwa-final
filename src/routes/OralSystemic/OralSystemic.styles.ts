@@ -21,13 +21,13 @@ export const OralSystemicImgWrapperOuter = styled.div`
   }
 `;
 
-export const ImagesWrapperInner = styled.div<{ showResults?: boolean }>`
+export const ImagesWrapperInner = styled.div<{ $showResults?: boolean }>`
   position: relative;
   z-index: 99;
-  width: ${(props) => (props.showResults ? "61%" : "44%")};
+  width: ${(props) => (props.$showResults ? "61%" : "44%")};
 
   @media screen and (max-width: 1080px) {
-    width: ${(props) => (props.showResults ? "62%" : "50%")};
+    width: ${(props) => (props.$showResults ? "62%" : "50%")};
   }
 `;
 

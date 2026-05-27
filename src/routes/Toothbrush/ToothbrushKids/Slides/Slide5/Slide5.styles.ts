@@ -1,84 +1,36 @@
-import styled from "styled-components";
-import { colors } from "../../../../../constants/colors";
+import styled from 'styled-components';
 
 export const SecondColumnWrapper = styled.div`
   width: 50%;
   display: flex;
-  flex-direction: column;
-  height: 92%;
-  padding: 0 2rem 0 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
   position: relative;
 `;
 
-export const TopImageWrapper = styled.div`
-  img {
-    width: 75%;
-    height: auto;
-    margin-top: 2rem;
-
-    @media screen and (max-width: 1080px) {
-      margin-top: 0;
-    }
-  }
-`;
-
-export const ContentWrapper = styled.div`
+export const ImageWrapper = styled.div`
+  width: 110%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  height: fit-content;
-`;
-
-export const TextContent = styled.div`
-  margin-bottom: 0.2rem;
-  padding-right: 4.2rem;
-
-  h2 {
-    font-family: "Gotham", sans-serif;
-    color: ${colors.primary};
-    margin-bottom: 0.4rem;
-    font-size: 1.25rem;
-  }
-
-  ul {
-    padding-left: 1.2rem;
-    font-family: "Gotham", sans-serif;
-    color: ${colors.black};
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
-  }
-`;
-
-export const BottomImageWrapper = styled.div`
-  margin-bottom: 0.2rem;
-  img {
-    width: 27%;
-    height: auto;
-  }
-`;
-
-export const SpecsSection = styled.div`
-  border-top: 1px solid ${colors.black};
-  padding: 0.5rem 0;
-`;
-
-export const SpecsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
   align-items: center;
-`;
-
-export const SpecItem = styled.div`
-  font-family: "Gotham", sans-serif;
-  color: ${colors.black};
-  font-size: 0.8rem;
-
-  &:first-child {
-    text-align: left;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: -240px;
+    margin-bottom: -2rem;
   }
 
-  &:last-child {
-    text-align: center;
+  @media screen and (max-width:1080px) {
+    img {
+        margin-left: -170px;
+    }
   }
 `;

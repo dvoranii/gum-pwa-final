@@ -54,6 +54,7 @@ const navItems = [
     path: "/operatory",
     inactiveIcon: opr1,
     activeIcon: opr2,
+    disabled: true,
   },
   {
     name: "Accessories",
@@ -96,12 +97,21 @@ export default function SideBar() {
 
           return (
             <S.NavItem key={item.path}>
-              <S.NavButton to={item.path} className={isActive ? "active" : ""}>
-                <S.NavIcon
-                  src={isActive ? item.activeIcon : item.inactiveIcon}
-                  alt={item.name}
-                />
-              </S.NavButton>
+              {item.disabled ? (
+                <S.NavButtonDisabled>
+                  <S.NavIcon src={item.inactiveIcon} alt={item.name} />
+                </S.NavButtonDisabled>
+              ) : (
+                <S.NavButton
+                  to={item.path}
+                  className={isActive ? "active" : ""}
+                >
+                  <S.NavIcon
+                    src={isActive ? item.activeIcon : item.inactiveIcon}
+                    alt={item.name}
+                  />
+                </S.NavButton>
+              )}
             </S.NavItem>
           );
         })}

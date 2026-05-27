@@ -1,16 +1,14 @@
-import * as S from "./Slide6.styles";
-import SpongeBobBrush from "../../../../../assets/toothbrush/Kids/Slide6/Brush-SpongeBob.webp";
-import SpongeBobDiagram from "../../../../../assets/toothbrush/Kids/Slide6/Slide6Col1Circle.webp";
-import SpongeBobVariants from "../../../../../assets/toothbrush/Kids/Slide6/SpongeBobBrushVariants.webp";
+import TechniqueKidsBrush from "../../../../../assets/toothbrush/Kids/Slide7/Brush-TechniqueKids.webp";
+import BrightCareBrush from "../../../../../assets/toothbrush/Kids/Slide8/Brush-GUMBrightCare.webp";
+import TechniqueKidsDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueKids.webp";
+import BrightCareDiagram from "../../../../../assets/toothbrush/Kids/Slide8/circle-diagram-GUMBrightCare.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
-import { Container } from "../../../components/ProductSlide/ProductSlide.styles";
-import { TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
 const Slide6 = () => (
-  <Container>
+  <>
     <ProductSlide
-      brushImage={SpongeBobBrush}
-      diagramImage={SpongeBobDiagram}
+      brushImage={TechniqueKidsBrush}
+      diagramImage={TechniqueKidsDiagram}
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",
@@ -18,45 +16,92 @@ const Slide6 = () => (
       }}
       useBulletPoints={true}
       showImprintText={false}
-      textWrapperMinHeight="250px"
-      diagramWidth="90%"
-      diagramMarginBottom="0.8rem"
-      paddingRight="0"
-      textWrapperPaddingRight="4.5rem"
-      brushImgWidth="90%"
-      colGap="0.8rem"
-      colMargLeft="39px"
+      textWrapperMinHeight="168px"
+      diagramWidth="80%"
+      diagramMarginBottom="1.2rem"
+      paddingRight="2rem"
+      brushImgWidth="95%"
+      colGap="1.2rem"
       textWrapperH2MarginBottom="0.4rem"
+      textWrapperPaddingRight="3rem"
       title={
         <>
-          SpongeBob™ <TitleLight>Toothbrush</TitleLight>
+          TECHNIQUE<sup>®</sup> Kids
         </>
       }
       description={[
         <>
-          Tongue cleaner helps remove
-          <br /> bacteria from the tongue.
+          Cushioned Quad-Grip® handle facilitates the recommended
+          <br /> 45° brushing technique.
         </>,
-        "Center bristles help emphasize a smaller amount of toothpaste.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        <>
+          Dome Trim<sup>®</sup> bristles are clinically
+          <br /> designed to clean below the gumline.<sup>18,&nbsp;19</sup>
+        </>,
       ]}
-      imprintColors={[["#ffff00"], ["#ff1493"]]}
+      imprintColors={[
+        ["#01b6d8", "#fff300"],
+        ["#b04d9c", "#0363b0"],
+        ["#f7941d", "#fff301"],
+        ["#8dc63e", "#0164b2"],
+      ]}
       specs={[
         [
-          { label: "Item", value: "4060" },
-          { label: "Texture", value: "Ultra soft" },
+          { label: "Item", value: "221" },
+          { label: "Texture", value: "Soft" },
           { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "29" },
+          { label: "Tufts", value: "24" },
         ],
       ]}
     />
-
-    <S.SecondColumnWrapper>
-      <S.ImageWrapper>
-        <img src={SpongeBobVariants} alt="SpongeBob Toothbrush Variants" />
-      </S.ImageWrapper>
-    </S.SecondColumnWrapper>
-  </Container>
+    <ProductSlide
+      brushImage={BrightCareBrush}
+      diagramImage={BrightCareDiagram}
+      shopifyIconProps={{
+        href: "https://www.shopify.com/ca",
+        width: "30px",
+        marginTop: "0",
+      }}
+      useBulletPoints={true}
+      showImprintText={true}
+      textWrapperMinHeight="168px"
+      diagramWidth="80%"
+      diagramMarginBottom="1.2rem"
+      paddingRight="2rem"
+      brushImgWidth="95%"
+      colGap="1.2rem"
+      textWrapperH2MarginBottom="0.4rem"
+      textWrapperPaddingRight="3rem"
+      title={
+        <>
+          G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
+        </>
+      }
+      description={[
+        <>
+          Special BrightLine<sup>TM</sup> Grip bristles help remove stains for{" "}
+          <strong>28% whiter teeth</strong>.<sup>3</sup>
+        </>,
+        <>
+          Raised Super Tip<sup>®</sup> bristles at the tip provide access to
+          posterior regions and clean hard-to-reach surfaces.
+        </>,
+        <>
+          Dome Trim<sup>®</sup> bristles are clinically designed to clean below
+          the gumline.<sup>18,&nbsp;19</sup>
+        </>,
+      ]}
+      imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}
+      specs={[
+        [
+          { label: "Item", value: "4594" },
+          { label: "Texture", value: "Soft" },
+          { label: "Size", value: "Subcompact" },
+          { label: "Tufts", value: "23" },
+        ],
+      ]}
+    />
+  </>
 );
 
 export default Slide6;

@@ -1,7 +1,7 @@
 import Brush1_CrayolaDeepClean from "../../../../../assets/toothbrush/Kids/Slide4/Brush-Crayola-DeepClean.webp";
-import Brush1_CrayolaPower from "../../../../../assets/toothbrush/Kids/Slide5/Brush-Crayola-Power.webp";
+import Brush1_CrayolaTimerLight from "../../../../../assets/toothbrush/Kids/Slide4/Brush-Crayola-TimerLight.webp";
 import Slide4Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide4/Slide4Col2-topImg.webp";
-import Slide5Col1TopImg from "../../../../../assets/toothbrush/Kids/Slide5/circle-diagram-crayolaPower.webp";
+import Slide4Col1TopImg from "../../../../../assets/toothbrush/Kids/Slide4/Slide4Col1-topImg.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
 import { TitleLight } from "../../../components/ProductSlide/ProductSlide.styles";
 
@@ -48,8 +48,8 @@ const Slide4 = () => (
     />
 
     <ProductSlide
-      brushImage={Brush1_CrayolaPower}
-      diagramImage={Slide5Col1TopImg}
+      brushImage={Brush1_CrayolaTimerLight}
+      diagramImage={Slide4Col1TopImg}
       shopifyIconProps={{
         href: "https://www.shopify.com/ca",
         width: "30px",

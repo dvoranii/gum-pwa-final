@@ -1,11 +1,8 @@
-// Slide3.tsx
 import * as S from "./Slide3.styles";
 
-// ─── MARKER ASSETS (LEFT COLUMN) ───
 import Brush1_CrayolaMarker from "../../../../../assets/toothbrush/Kids/Slide3/Brush-Crayola-Markers.webp";
 import Slide3Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide3/Slide3Col2-topImg.webp";
 
-// ─── TWISTABLES ASSETS (RIGHT COLUMN - MIGRATED FROM OLD SLIDE 5) ───
 import Slide5Col2TopImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide5Col2Img.webp";
 import Slide5Col2BottomImg from "../../../../../assets/toothbrush/Kids/Slide5/Slide5Col2Fruits.webp";
 
@@ -18,7 +15,6 @@ import ShopifyIcon from "../../../../../components/ShopifyIcon/ShopifyIcon";
 
 const Slide3 = () => (
   <Container>
-    {/* ─── LEFT COLUMN: CRAYOLA MARKER (STANDARD PRODUCT SLIDE) ─── */}
     <ProductSlide
       brushImage={Brush1_CrayolaMarker}
       diagramImage={Slide3Col2TopImg}

@@ -10,10 +10,8 @@ const Slide3 = () => (
     <ProductSlide
       brushImage={Brush1_CompleteCare}
       diagramImage={Diagrams_CompleteCare}
-      // diagramMinWidth
-      // diagramMinHeight
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/591-complete-care-technique-r-soft-compact",
         width: "30px",
         marginTop: "0",
       }}
@@ -52,7 +50,7 @@ const Slide3 = () => (
       brushImage={Brush1_DomeTrim}
       diagramImage={Diagrams_DomeTrim}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/457-dome-trim-r-soft-compact",
         width: "30px",
         marginTop: "0",
       }}

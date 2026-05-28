@@ -90,10 +90,6 @@ export default function BtcFlossers() {
                       Lightweight flexible grip uses 20% less plastic.
                       <sup>12</sup>
                     </li>
-                    {/* <li>
-                      20% LESS PLASTIC<sup>12</sup> mint flavour on all
-                      flossers.
-                    </li> */}
                   </ul>
                 </S.ListContainer>
               </S.TitleListWrapper>
@@ -121,7 +117,7 @@ export default function BtcFlossers() {
               <S.ImgWrapper $minHeight="511px">
                 <img src={Slide1Graphic} />
                 <ShopifyIcon
-                  href="https://www.shopify.com/ca"
+                  href="https://www.professionalsunstargum.com/products/831-gum%C2%AE-eco-clean%E2%84%A2-flossers"
                   absolute
                   width="30px"
                   bottom="35px"
@@ -216,7 +212,7 @@ export default function BtcFlossers() {
                   <S.Column>48 packs of 3</S.Column>
                 </S.Row>
                 <ShopifyIcon
-                  href="https://www.shopify.com/ca"
+                  href="https://www.professionalsunstargum.com/products/821-dual-technique-flossers-mint-48-packets-of-2"
                   width="30px"
                   marginTop="4px"
                 />
@@ -225,7 +221,6 @@ export default function BtcFlossers() {
           </S.SlideWrapper>
         </BaseCarouselSlide>
       </FlickityCarousel>
-      {/* <ShopifyIcon/> */}
     </S.FlossersContainer>
   );
 }

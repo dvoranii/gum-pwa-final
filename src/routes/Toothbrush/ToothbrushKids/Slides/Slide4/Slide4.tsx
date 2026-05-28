@@ -11,7 +11,7 @@ const Slide4 = () => (
       brushImage={Brush1_CrayolaDeepClean}
       diagramImage={Slide4Col2TopImg}
       shopifyIconProps={{
-        href: "https://www.sunstargum.com/ca-en/products/toothbrushes/gum-crayola-deep-clean-toothbrush.html",
+        href: "https://www.professionalsunstargum.com/products/crayola-deep-clean?_pos=1&_sid=e157a2889&_ss=r",
         width: "30px",
         marginTop: "0",
       }}

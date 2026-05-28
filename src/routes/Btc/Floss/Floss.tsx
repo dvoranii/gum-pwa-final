@@ -65,7 +65,7 @@ export default function BtcFloss() {
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/2014-eez-thru-r-mint-3-7m"
                     width="30px"
                     marginTop="4px"
                   />
@@ -100,7 +100,7 @@ export default function BtcFloss() {
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/2008-dual-defence%C2%AE-twisted-string-floss-3-6m"
                     width="30px"
                     marginTop="4px"
                   />
@@ -145,7 +145,7 @@ export default function BtcFloss() {
                     <S.Column>144/box</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/2014-eez-thru-r-mint-3-7m"
                     width="30px"
                     marginTop="4px"
                   />
@@ -199,7 +199,7 @@ export default function BtcFloss() {
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/1115-butlerweave-r-waxed-3-7m"
                     width="30px"
                     marginTop="4px"
                   />
@@ -233,7 +233,7 @@ export default function BtcFloss() {
                     <S.Column2>12/bag</S.Column2>
                   </S.InfoGridRow>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/1940-fine-waxed-mint-dispenser-with-floss-165m"
                     width="30px"
                     marginTop="4px"
                   />
@@ -274,7 +274,7 @@ export default function BtcFloss() {
                   </li>
                 </ul>
 
-                <S.InfoGrid $gridCols="1.65fr 1fr" $paddingTop="0.4rem">
+                <S.InfoGrid $gridCols="1.55fr 1fr" $paddingTop="0.4rem">
                   <S.InfoGridRow>
                     <S.Column2>3200 EasyThread® Floss Patient Packs</S.Column2>
                     <S.Column2>1 pkg. / 100 env of 5</S.Column2>
@@ -288,7 +288,7 @@ export default function BtcFloss() {
                 </S.InfoGrid>
               </S.ListContainer>
               <ShopifyIcon
-                href="https://www.shopify.com/ca"
+                href="https://www.professionalsunstargum.com/products/3210-easythread-r-floss-office-dispensers"
                 width="30px"
                 marginTop="4px"
               />
@@ -338,7 +338,7 @@ export default function BtcFloss() {
                 </S.InfoGridRow>
               </S.InfoGrid>
               <ShopifyIcon
-                href="https://www.shopify.com/ca"
+                href="https://www.professionalsunstargum.com/products/840-eez-thru-r-floss-threaders-100-env-of-5"
                 width="30px"
                 marginTop="4px"
               />

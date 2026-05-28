@@ -84,7 +84,7 @@ export default function ToothbrushAdult() {
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/124-orthodontic-toothbrush"
                     width="30px"
                     marginTop="0"
                   />
@@ -92,7 +92,6 @@ export default function ToothbrushAdult() {
               </S.TextAndImgWrapperOuter>
             </S.Column>
 
-            {/* End-Tuft Brush */}
             <S.Column>
               <BrushImgWrapper $containerWidth="100%" $imgMinWidth="55px">
                 <img src={Slide1Brush2} alt="End-tuft brush" />
@@ -140,7 +139,7 @@ export default function ToothbrushAdult() {
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/308-end-tuft-toothbrush"
                     width="30px"
                     marginTop="0"
                   />
@@ -148,7 +147,6 @@ export default function ToothbrushAdult() {
               </S.TextAndImgWrapperOuter>
             </S.Column>
 
-            {/* Post-Operation Toothbrush */}
             <S.Column>
               <BrushImgWrapper $containerWidth="100%" $imgMinWidth="56px">
                 <img src={Slide1Brush3} alt="Post-operation toothbrush" />
@@ -197,7 +195,7 @@ export default function ToothbrushAdult() {
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/317-post-operation-toothbrush"
                     width="30px"
                     marginTop="0"
                   />
@@ -256,7 +254,7 @@ export default function ToothbrushAdult() {
                     <br />
                   </BrushSpecsWrapper>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/153-travel-toothbrush-soft-multi-level-trim"
                     width="30px"
                     marginTop="0"
                   />
@@ -317,7 +315,7 @@ export default function ToothbrushAdult() {
                     </S.BrushSpecsGrid>
                   </BrushSpecsWrapper>
                   <ShopifyIcon
-                    href="https://www.shopify.com/ca"
+                    href="https://www.professionalsunstargum.com/products/201-denture-brush"
                     width="30px"
                     marginTop="0"
                   />

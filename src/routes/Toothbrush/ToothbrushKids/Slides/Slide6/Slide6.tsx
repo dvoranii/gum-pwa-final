@@ -10,7 +10,7 @@ const Slide6 = () => (
       brushImage={TechniqueKidsBrush}
       diagramImage={TechniqueKidsDiagram}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/221-technique-r-kids",
         width: "30px",
         marginTop: "0",
       }}
@@ -58,7 +58,7 @@ const Slide6 = () => (
       brushImage={BrightCareBrush}
       diagramImage={BrightCareDiagram}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/4594-gum%C2%AE-bright-care%E2%84%A2-toothbrush?_pos=1&_psq=4594&_ss=e&_v=1.0",
         width: "30px",
         marginTop: "0",
       }}

@@ -194,7 +194,7 @@ export default function BtcIDBrushes() {
                   <S.Column>36/box</S.Column>
                 </S.InfoGridRow>
                 <ShopifyIcon
-                  href="https://www.shopify.com/ca"
+                  href="https://www.professionalsunstargum.com/products/3012-proxabrush-r-angle-cleaners-tight-cylindrical"
                   width="25px"
                   marginTop="4px"
                 />
@@ -285,7 +285,7 @@ export default function BtcIDBrushes() {
                   <S.Column>18 packs of 2</S.Column>
                 </S.InfoGridRow>
                 <ShopifyIcon
-                  href="https://www.shopify.com/ca"
+                  href="https://www.professionalsunstargum.com/products/605-proxabrush-r-original-handle"
                   width="25px"
                   marginTop="4px"
                 />
@@ -343,7 +343,7 @@ export default function BtcIDBrushes() {
                 <S.Column>12/box</S.Column>
               </S.InfoGridRow>
               <ShopifyIcon
-                href="https://www.shopify.com/ca"
+                href="https://www.professionalsunstargum.com/products/642-sulcus-brush"
                 width="25px"
                 marginTop="8px"
               />

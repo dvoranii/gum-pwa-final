@@ -17,10 +17,8 @@ const Slide1 = () => (
       diagramWidth="72%"
       bannerImage={ManualBrandBadge}
       brushImgHeight="90%"
-      // diagramMinWidth
-      // diagramMinHeight
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/525-deep-clean-technique-r",
         width: "30px",
         marginTop: "0",
       }}
@@ -57,10 +55,8 @@ const Slide1 = () => (
       diagramWidth="72%"
       brushImgHeight="90%"
       bannerImage={ManualBrandBadge}
-      // diagramMinWidth
-      // diagramMinHeight
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/528-sensitive-clean-technique-r",
         width: "30px",
         marginTop: "0",
       }}

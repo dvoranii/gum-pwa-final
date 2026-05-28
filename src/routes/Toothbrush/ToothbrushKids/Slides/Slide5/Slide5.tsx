@@ -12,7 +12,7 @@ const Slide5 = () => (
       brushImage={SpongeBobBrush}
       diagramImage={SpongeBobDiagram}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/4060-gum%C2%AE-spongebob-tb?_pos=1&_psq=4060+gum+spongebob+kids+toothbrush&_ss=e&_v=1.0",
         width: "30px",
         marginTop: "0",
       }}

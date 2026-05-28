@@ -71,5 +71,4 @@ export const NavButtonDisabled = styled.div`
   width: 100%;
   height: 100%;
   cursor: not-allowed;
-  opacity: 0.8;
 `;

@@ -50,11 +50,6 @@ export default function BtcFloss() {
 
                 <S.InfoGrid>
                   <S.InfoGridRow>
-                    <S.Column>2010 Comfort Slide</S.Column>
-                    <S.Column>3.6m</S.Column>
-                    <S.Column>144/box</S.Column>
-                  </S.InfoGridRow>
-                  <S.InfoGridRow>
                     <S.Column>2014 Comfort Slide Mint</S.Column>
                     <S.Column>3.6m</S.Column>
                     <S.Column>144/box</S.Column>
@@ -70,6 +65,7 @@ export default function BtcFloss() {
                     marginTop="4px"
                   />
                 </S.InfoGrid>
+                <br />
               </S.ListContainer>
             </S.SlideColumn1>
             <S.SlideColumn2>

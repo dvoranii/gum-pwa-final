@@ -75,12 +75,7 @@ const Slide3 = () => (
           { label: "Size", value: "Compact" },
           { label: "Tufts", value: "30" },
         ],
-        [
-          { value: "459" },
-          { value: "Ultra Soft" },
-          { value: "Compact" },
-          { value: "30" },
-        ],
+        [{ label: "‎ ", value: "‎ " }],
       ]}
     />
   </>

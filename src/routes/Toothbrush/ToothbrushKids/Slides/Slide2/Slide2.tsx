@@ -11,7 +11,7 @@ const Slide2 = () => (
       brushImage={Brush1_MonsterzJunior}
       diagramImage={Slide1Col2TopImg}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/902-monsterz-junior-ages-5",
         width: "30px",
         marginTop: "0",
       }}
@@ -43,7 +43,7 @@ const Slide2 = () => (
       brushImage={Brush1_CrayolaPipSqueaks}
       diagramImage={Slide3Col1TopImg}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/crayola-pip-squeaks",
         width: "30px",
         marginTop: "0",
       }}
@@ -75,43 +75,6 @@ const Slide2 = () => (
         ],
       ]}
     />
-    {/* <ProductSlide
-      brushImage={Brush1_TimerLight}
-      diagramImage={Slide1Col1TopImg}
-      shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
-        width: "30px",
-        marginTop: "0",
-      }}
-      textWrapperMarginTop="-24px"
-      textWrapperPaddingRight="2.2rem"
-      textWrapperMinHeight="190px"
-      brushImgWidth="90%"
-      listPaddingLeft="1.8rem"
-      useBulletPoints={true}
-      showImprintText={false}
-      colGap="0.8rem"
-      diagramWidth="93%"
-      description={[
-        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
-        <>
-          Dome Trim® bristles are clinically designed to clean below the
-          gumline.
-          <sup>18, 19</sup>
-        </>,
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
-        "Non-replaceable LED battery.",
-      ]}
-      imprintColors={[["#bdd62e"], ["#f0548f"], ["#c7a1cb"], ["#24a1db"]]}
-      specs={[
-        [
-          { label: "Item", value: "903" },
-          { label: "Texture", value: "Soft" },
-          { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "24" },
-        ],
-      ]}
-    /> */}
   </>
 );
 

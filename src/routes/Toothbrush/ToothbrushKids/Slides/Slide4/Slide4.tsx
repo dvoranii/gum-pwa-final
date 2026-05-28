@@ -11,7 +11,7 @@ const Slide4 = () => (
       brushImage={Brush1_CrayolaDeepClean}
       diagramImage={Slide4Col2TopImg}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.sunstargum.com/ca-en/products/toothbrushes/gum-crayola-deep-clean-toothbrush.html",
         width: "30px",
         marginTop: "0",
       }}
@@ -51,7 +51,7 @@ const Slide4 = () => (
       brushImage={Brush1_CrayolaTimerLight}
       diagramImage={Slide4Col1TopImg}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/crayola-timer-light",
         width: "30px",
         marginTop: "0",
       }}
@@ -67,22 +67,25 @@ const Slide4 = () => (
       textWrapperPaddingRight="1.2rem"
       title={
         <>
-          Crayola<TitleLight>™</TitleLight> POWER
+          Crayola<TitleLight>™</TitleLight> TIMER LIGHT
         </>
       }
       description={[
-        "Rotating action with soft bristles gently cleans teeth and massages gums.",
-        "Comes with a cap to keep brush head clean and is great for travel too!",
+        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
+        <>
+          Dome Trim® bristles are clinically designed to clean below the gumline
+          <sup>1, 2</sup>
+        </>,
         "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
-        "Non-replaceable battery.",
+        "Non-replaceable LED battery.",
       ]}
       imprintColors={[["#c2519e"], ["#f67f1e"], ["#00aeee"], ["#39b549"]]}
       specs={[
         [
-          { label: "Item #", value: "2272" },
+          { label: "Item #", value: "202" },
           { label: "Texture", value: "Soft" },
           { label: "Size", value: "Compact" },
-          { label: "Tufts", value: "23" },
+          { label: "Tufts", value: "29" },
         ],
       ]}
     />

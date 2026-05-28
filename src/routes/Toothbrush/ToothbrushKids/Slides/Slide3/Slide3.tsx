@@ -19,7 +19,7 @@ const Slide3 = () => (
       brushImage={Brush1_CrayolaMarker}
       diagramImage={Slide3Col2TopImg}
       shopifyIconProps={{
-        href: "https://www.shopify.com/ca",
+        href: "https://www.professionalsunstargum.com/products/crayola-marker",
         width: "30px",
         marginTop: "0",
       }}
@@ -59,7 +59,6 @@ const Slide3 = () => (
       ]}
     />
 
-    {/* ─── RIGHT COLUMN: TWISTABLES FLOSSERS (CUSTOM RENDERING MIGRATED) ─── */}
     <S.SecondColumnWrapper>
       <S.TopImageWrapper>
         <img src={Slide5Col2TopImg} alt="Crayola Twistables Flossers" />
@@ -93,7 +92,7 @@ const Slide3 = () => (
       </S.SpecsSection>
 
       <ShopifyIcon
-        href="https://www.shopify.com/ca"
+        href="https://www.professionalsunstargum.com/products/crayola-twistables-flossers"
         width="30px"
         marginTop="0"
       />

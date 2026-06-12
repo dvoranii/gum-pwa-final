@@ -94,10 +94,10 @@ const Slide6 = () => (
       imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}
       specs={[
         [
-          { label: "Item", value: "4594" },
+          { label: "Item", value: "4591" },
           { label: "Texture", value: "Soft" },
           { label: "Size", value: "Subcompact" },
-          { label: "Tufts", value: "23" },
+          { label: "Tufts", value: "30" },
         ],
       ]}
     />

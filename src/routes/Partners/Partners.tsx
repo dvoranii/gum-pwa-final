@@ -85,7 +85,7 @@ export default function Partners() {
                         <h4>Patient</h4>
                         <p>
                           Creating experiences that can transform patients'
-                          relationship with hygiene.
+                          relationship with oral hygiene.
                         </p>
                       </S.ColTextWrapper>
                     </S.ImgTextWrapper>

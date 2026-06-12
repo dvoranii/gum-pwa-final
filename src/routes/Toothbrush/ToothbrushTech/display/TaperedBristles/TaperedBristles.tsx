@@ -14,7 +14,7 @@ export default function TaperedBristles() {
         <S.Description>
           <li>
             Precision tapering enables the Extremely Tapered Bristles (EtB) to
-            penetrate more deeply to clean up to 2.7 mm into the sulcus and
+            penetrate more deeply to clean up to 3.1 mm into the sulcus and
             clean up to 1.4 cm along the gingival margin and between the teeth.
             <sup>14</sup>
           </li>

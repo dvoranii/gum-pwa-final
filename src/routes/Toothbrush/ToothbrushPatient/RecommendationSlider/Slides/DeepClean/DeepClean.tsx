@@ -1,6 +1,6 @@
 import * as S from "../ToothbrushSlide.styles";
 import ToothbrushImage from "../../../../../../assets/toothbrush/Adult/Slide1/Brush-DeepClean.webp";
-import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/525-DeepClean-BottomImg.webp";
+import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/525-DeepClean-BottomImg-updated.png";
 
 export default function DeepCleanSlide() {
   return (
@@ -34,9 +34,9 @@ export default function DeepCleanSlide() {
             </li>
           </S.BulletList>
 
-          <S.ContentImageWrapper $width="90%">
+          <S.ContentImageWrapper $width="100%" $marginTop="0.4rem">
             <S.ContentImage
-              $width="80%"
+              $width="85%"
               src={ContentImage}
               alt="Deep Clean Technique features and benefits"
             />

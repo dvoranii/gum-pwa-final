@@ -4,7 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import ModuleContainer from "../../components/ModuleContainer/ModuleContainer";
 
 import Slide1Row1Img from "../../assets/accessories/Slide1Row1Img.webp";
-import Slide1Row2Img from "../../assets/accessories/Slide1Row2Img.webp";
+// import Slide1Row2Img from "../../assets/accessories/Slide1Row2Img.webp";
 import Slide2Row1Img from "../../assets/accessories/Slide2Row1Img.webp";
 import Slide2Row2Img from "../../assets/accessories/Slide2Row2Img.webp";
 
@@ -77,7 +77,7 @@ export default function Accessories() {
                     marginTop="6px"
                   />
                 </S.Row>
-                <S.Row>
+                {/* <S.Row>
                   <S.RowWrapperInner $gap={"1.2rem"}>
                     <S.TextWrapper>
                       <h2>Travel Caps</h2>
@@ -108,7 +108,7 @@ export default function Accessories() {
                     width="30px"
                     marginTop="6px"
                   />
-                </S.Row>
+                </S.Row> */}
               </S.Slide>
               <S.Slide>
                 <S.Row>

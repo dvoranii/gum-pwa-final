@@ -34,8 +34,6 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   colMargLeft,
   imgMinWidth,
   shopifyIconProps,
-  // diagramMinWidth,
-  // diagramMinHeight,
 }) => {
   const hasMultipleSpecRows = specs.length > 1;
 
@@ -64,8 +62,6 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
           <S.DiagramsWrapper
             $diagramWidth={diagramWidth}
             $diagramMarginBottom={diagramMarginBottom}
-            // $diagramMinHeight={diagramMinHeight}
-            // $diagramMinWidth={diagramMinWidth}
           >
             {bannerImage && (
               <S.BannerImg src={bannerImage} alt="Brand recommendation badge" />

@@ -1,6 +1,6 @@
 import * as S from "../ToothbrushSlide.styles";
 import ToothbrushImage from "../../../../../../assets/toothbrush/Adult/Slide1/Brush-SensitiveClean.webp";
-import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/528-SensitiveClean-BottomImg.webp";
+import ContentImage from "../../../../../../assets/toothbrush/patient/recommendations/528-SensitiveClean-BottomImg-updated.png";
 
 export default function SensitiveCleanSlide() {
   return (
@@ -45,7 +45,7 @@ export default function SensitiveCleanSlide() {
 
           <S.ContentImageWrapper $marginTop="0.8rem">
             <S.ContentImage
-              $width="90%"
+              $width="98%"
               src={ContentImage}
               alt="Sensitive Clean Technique features and benefits"
             />

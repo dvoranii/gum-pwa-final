@@ -131,14 +131,14 @@ export default function BtcFloss() {
 
                 <S.InfoGrid>
                   <S.InfoGridRow>
-                    <S.Column>2010 Comfort Slide</S.Column>
-                    <S.Column>3.6m</S.Column>
-                    <S.Column>144/box</S.Column>
+                    <S.Column>2030T Deep Clean Expanding Floss Waxed</S.Column>
+                    <S.Column>2x40m</S.Column>
+                    <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
-                    <S.Column>2014 Comfort Slide Mint</S.Column>
+                    <S.Column>2030 Deep Clean Expanding Floss Waxed</S.Column>
                     <S.Column>3.6m</S.Column>
-                    <S.Column>144/box</S.Column>
+                    <S.Column>114/box</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon
                     href="https://www.professionalsunstargum.com/products/2014-eez-thru-r-mint-3-7m"
@@ -181,17 +181,17 @@ export default function BtcFloss() {
                   </S.InfoGridRow>
                   <S.InfoGridRow>
                     <S.Column>1815 Pro-Weave® Waxed Mint</S.Column>
-                    <S.Column>2x35m</S.Column>
-                    <S.Column>12/bag</S.Column>
+                    <S.Column>3.6m</S.Column>
+                    <S.Column>144/box</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
                     <S.Column>1140 Pro-Weave® Waxed</S.Column>
-                    <S.Column>2x35m</S.Column>
+                    <S.Column>165m</S.Column>
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <S.InfoGridRow>
-                    <S.Column>180 Pro-Weave® Waxed Mint Refillable</S.Column>
-                    <S.Column>2x35m</S.Column>
+                    <S.Column>1840 Pro-Weave® Waxed Mint Refillable</S.Column>
+                    <S.Column>165m</S.Column>
                     <S.Column>12/bag</S.Column>
                   </S.InfoGridRow>
                   <ShopifyIcon

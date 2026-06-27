@@ -23,22 +23,39 @@ const Slide3 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      diagramWidth="86%"
-      brushImgWidth="90%"
-      colGap="0.8rem"
-      textWrapperMinHeight="246px"
+      diagramWidth="75%"
+      brushImgHeight="78%"
+      brushMarginTop="12px"
+      brushImgWidth="auto"
+      brushWrapperWidth="65%"
+      textAndImgWrapperHeight="87.5%"
       diagramMarginBottom="0"
       useBulletPoints={true}
-      textWrapperPaddingRight="3.4rem"
       title={
         <>
           Crayola<TitleLight>™</TitleLight> MARKER<TitleLight>™</TitleLight>
         </>
       }
       description={[
-        "Raised tip bristles clean hard-to-reach back teeth.",
-        "Slim handle design provides an ergonomic hold and easier grip for small hands.",
-        "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
+        <>
+          Raised tip bristles clean hard-to-reach
+          <br />
+          back teeth.
+        </>,
+        <>
+          Slim handle design provides an
+          <br />
+          ergonomic hold and easier grip for
+          <br />
+          small hands.
+        </>,
+        <>
+          Suction cup base holds the
+          <br />
+          toothbrush upright which helps to
+          <br />
+          keep bristles clean.
+        </>,
       ]}
       imprintColors={[
         ["#00ace6"],
@@ -72,10 +89,13 @@ const Slide3 = () => (
           </h2>
           <ul>
             <li>Extra-strong, twisted fluoride coated floss.</li>
-            <li>Longer handle makes it easy for parents to help kids floss.</li>
             <li>
-              3 Twisted fruit flavours to choose from, to vary the fun and keep
-              them flossing.
+              Longer handle makes it easy for parents to
+              <br /> help kids floss.
+            </li>
+            <li>
+              3 Twisted fruit flavours to choose from, to
+              <br /> vary the fun and keep them flossing.
             </li>
           </ul>
         </S.TextContent>

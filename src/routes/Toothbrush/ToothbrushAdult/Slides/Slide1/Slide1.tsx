@@ -14,15 +14,18 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_DeepClean}
       diagramImage={Diagrams_DeepClean}
-      diagramWidth="72%"
+      diagramWidth="64%"
       bannerImage={ManualBrandBadge}
-      brushImgHeight="90%"
+      brushImgHeight="85%"
+      brushImgWidth="auto"
+      textAndImgWrapperHeight="88%"
+      colGap="0.4rem"
+      textWrapperH2PaddingTop="0.8rem"
       shopifyIconProps={{
         href: "https://www.professionalsunstargum.com/products/525-deep-clean-technique-r",
         width: "30px",
         marginTop: "0",
       }}
-      imgMinWidth="54px"
       title={
         <>
           DEEP CLEAN <TitleLight>TECNHIQUE®</TitleLight>
@@ -30,11 +33,13 @@ const Slide1 = () => (
       }
       description={[
         <>
-          Extremely Tapered Bristles clean 2.7 mm below the sulcus and up to 1.4
-          cm along the gingival margin and between the teeth.<sup>14</sup>
+          Extremely Tapered Bristles clean 2.7 mm
+          <br /> below the sulcus and up to 1.4 cm along the gingival margin and
+          between the teeth.<sup>14</sup>
         </>,
         <>
           <DescriptionBold>10x better plaque removal</DescriptionBold> below the
+          <br />
           gumline for healthier gums.<sup>15</sup>
         </>,
       ]}
@@ -52,15 +57,18 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_SensitiveClean}
       diagramImage={Diagrams_SensitiveClean}
-      diagramWidth="72%"
-      brushImgHeight="90%"
+      diagramWidth="64%"
+      brushImgHeight="85%"
+      brushImgWidth="auto"
+      textAndImgWrapperHeight="88%"
+      textWrapperH2PaddingTop="0.8rem"
+      colGap="0.4rem"
       bannerImage={ManualBrandBadge}
       shopifyIconProps={{
         href: "https://www.professionalsunstargum.com/products/528-sensitive-clean-technique-r",
         width: "30px",
         marginTop: "0",
       }}
-      imgMinWidth="54px"
       title={
         <>
           SENSITIVE&nbsp;CLEAN&nbsp;<TitleLight>TECNHIQUE®</TitleLight>

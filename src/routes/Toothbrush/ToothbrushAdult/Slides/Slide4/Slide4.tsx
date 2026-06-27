@@ -16,7 +16,8 @@ const Slide4 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      imgMinWidth="57px"
+      brushImgHeight="80%"
+      colGap="0.8rem"
       title={
         <>
           TOOTH&nbsp;&&nbsp;TONGUE&nbsp;<TitleLight>Toothbrush</TitleLight>
@@ -25,10 +26,16 @@ const Slide4 = () => (
       description={[
         <>
           Designed with <DescriptionBold>40% more bristles</DescriptionBold>
-          <sup>22</sup> to gently and effectively clean between teeth without
+          <sup>22</sup> to gently
+          <br /> and effectively clean between teeth without
+          <br />
           irritating gums.
         </>,
-        "Tongue cleaner with ridged scrapers improves cleaning and helps reduce bad breath.",
+        <>
+          Tongue cleaner with ridged scrapers
+          <br /> improves cleaning and helps reduce bad
+          <br /> breath.
+        </>,
       ]}
       imprintColors={[
         ["#02adee", "#007bc5"],

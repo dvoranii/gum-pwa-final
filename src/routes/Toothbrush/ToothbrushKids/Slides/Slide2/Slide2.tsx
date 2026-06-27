@@ -10,23 +10,37 @@ const Slide2 = () => (
     <ProductSlide
       brushImage={Brush1_MonsterzJunior}
       diagramImage={Slide1Col2TopImg}
+      diagramMarginBottom="0.4rem"
       shopifyIconProps={{
         href: "https://www.professionalsunstargum.com/products/902-monsterz-junior-ages-5",
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperMarginTop="-24px"
-      textWrapperPaddingRight="2.9rem"
-      textWrapperMinHeight="190px"
-      brushImgWidth="90%"
-      colGap="0.8rem"
-      diagramWidth="93%"
+      brushImgHeight="72%"
+      textAndImgWrapperHeight="82%"
+      brushImgWidth="auto"
+      diagramWidth="75%"
+      brushWrapperWidth="65%"
+      brushMarginTop="28px"
       useBulletPoints={true}
       listPaddingLeft="1.8rem"
       description={[
-        "Center bristles help emphasize a smaller amount of toothpaste for kids.",
-        "Ergonomic handle with thumb pad for stable, comfortable grip.",
-        "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
+        <>
+          Center bristles help emphasize a<br />
+          smaller amount of toothpaste for kids.
+        </>,
+        <>
+          Ergonomic handle with thumb pad for
+          <br />
+          stable, comfortable grip.
+        </>,
+        <>
+          Suction cup base holds
+          <br />
+          the toothbrush upright which helps to
+          <br />
+          keep bristles clean.
+        </>,
       ]}
       imprintColors={[["#3b7dc2"], ["#84d2da"], ["#ef55a0"], ["#f6ee08"]]}
       showImprintText={false}
@@ -47,10 +61,11 @@ const Slide2 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      diagramWidth="86%"
-      textWrapperMinHeight="246px"
-      colGap="0.8rem"
-      textWrapperPaddingRight="2rem"
+      diagramWidth="80%"
+      textAndImgWrapperHeight="82%"
+      brushImgHeight="72%"
+      brushImgWidth="auto"
+      brushMarginTop="28px"
       diagramMarginBottom="0"
       useBulletPoints={true}
       showImprintText={false}
@@ -61,9 +76,15 @@ const Slide2 = () => (
         </>
       }
       description={[
-        "Soft bristles are gentle on young teeth and gums.",
+        <>
+          Soft bristles are gentle on young teeth
+          <br /> and gums.
+        </>,
         "Narrow, tapered brush head makes maneuvering in small mouths easier.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        <>
+          Suction cup base holds the toothbrush
+          <br /> upright which helps keep bristles clean.
+        </>,
       ]}
       imprintColors={[["#fcb041"], ["#c91690"], ["#00aeee"], ["#22b785"]]}
       specs={[

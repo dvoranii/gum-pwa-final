@@ -15,12 +15,10 @@ const Slide4 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      diagramWidth="85%"
-      brushImgWidth="88%"
-      diagramMarginBottom="0.2rem"
-      colGap="1rem"
-      textWrapperMinHeight="230px"
-      textWrapperPaddingRight="2.8rem"
+      diagramWidth="80%"
+      brushImgHeight="70%"
+      brushMarginTop="12px"
+      brushImgWidth="auto"
       useBulletPoints={true}
       title={
         <>
@@ -29,11 +27,19 @@ const Slide4 = () => (
       }
       description={[
         <>
-          Ultra-soft Deep Clean bristles allow for better reach in between teeth
-          for better cleaning.<sup>22</sup>
+          Ultra-soft Deep Clean bristles allow for
+          <br /> better reach in between teeth for
+          <br /> better cleaning.<sup>22</sup>
         </>,
-        "Thumb grip and triangular-shaped handle offer control and encourage brushing at a 45° angle.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        <>
+          Thumb grip and triangular-shaped
+          <br /> handle offer control and encourage
+          <br /> brushing at a 45° angle.
+        </>,
+        <>
+          Suction cup base holds the toothbrush
+          <br /> upright which helps keep bristles clean.
+        </>,
       ]}
       imprintColors={[["#0075ba"], ["#f15921"], ["#80c241"], ["#9163aa"]]}
       showImprintText={false}
@@ -57,27 +63,33 @@ const Slide4 = () => (
       }}
       useBulletPoints={true}
       showImprintText={false}
-      textWrapperMinHeight="226px"
       diagramWidth="90%"
-      diagramMarginBottom="0.2rem"
       paddingRight="1.4rem"
-      brushImgWidth="95%"
-      colGap="0.8rem"
+      brushImgHeight="70%"
+      brushMarginTop="12px"
+      brushImgWidth="auto"
       textWrapperH2MarginBottom="0.4rem"
-      textWrapperPaddingRight="1.2rem"
       title={
         <>
           Crayola<TitleLight>™</TitleLight> TIMER LIGHT
         </>
       }
       description={[
-        "Flashing, one-minute timer light helps kids know when to switch arches and encourages longer brushing time.",
         <>
-          Dome Trim® bristles are clinically designed to clean below the gumline
+          Flashing, one-minute timer light helps kids know when to switch arches
+          and
+          <br /> encourages longer brushing time.
+        </>,
+        <>
+          Dome Trim® bristles are clinically designed
+          <br /> to clean below the gumline
           <sup>1, 2</sup>
         </>,
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
-        "Non-replaceable LED battery.",
+        <>
+          Suction cup base holds the toothbrush
+          <br /> upright which helps keep bristles clean.
+        </>,
+        <>Non-replaceable LED battery.</>,
       ]}
       imprintColors={[["#c2519e"], ["#f67f1e"], ["#00aeee"], ["#39b549"]]}
       specs={[

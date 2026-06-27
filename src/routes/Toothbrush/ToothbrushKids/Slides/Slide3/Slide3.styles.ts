@@ -7,7 +7,7 @@ export const SecondColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 92%;
+  height: 98%;
   padding: 0 2rem 0 1rem;
   position: relative;
 `;
@@ -15,10 +15,10 @@ export const SecondColumnWrapper = styled.div`
 export const TopImageWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 12px;
   img {
-    width: 75%;
+    width: 72%;
     height: auto;
-    margin-top: 2rem;
   }
 `;
 
@@ -29,9 +29,6 @@ export const ContentWrapper = styled.div`
 `;
 
 export const TextContent = styled.div`
-  margin-bottom: 0.2rem;
-  padding-right: 4.2rem;
-
   h2 {
     font-family: "Gotham", sans-serif;
     color: ${colors.primary};

@@ -15,18 +15,25 @@ const Slide3 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperPaddingRight="1rem"
-      imgMinWidth="54px"
+      colGap="0.6rem"
+      brushImgHeight="80%"
+      textWrapperH2PaddingTop="1rem"
+      textAndImgWrapperHeight="77%"
       title={
         <>
           COMPLETE&nbsp;CARE&nbsp;<TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[
-        "Raised bristles at the tip provide greater access to posterior regions and clean hard-to-reach surfaces.",
         <>
-          Dome Trim® bristles are clinically designed to clean below the
-          gumline.
+          Raised bristles at the tip provide greater
+          <br /> access to posterior regions and clean hard-
+          <br />
+          to-reach surfaces.
+        </>,
+        <>
+          Dome Trim® bristles are clinically designed
+          <br /> to clean below the gumline.
           <sup>18, 19</sup>
         </>,
       ]}
@@ -54,7 +61,10 @@ const Slide3 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      imgMinWidth="54px"
+      brushImgHeight="80%"
+      textWrapperH2PaddingTop="1rem"
+      textAndImgWrapperHeight="77%"
+      colGap="0.6rem"
       title={
         <>
           <TitleLight>DOME</TitleLight> TRIM®
@@ -62,7 +72,8 @@ const Slide3 = () => (
       }
       description={[
         <>
-          Dome Trim® bristles clinically designed to clean below the gumline.
+          Dome Trim® bristles clinically designed to
+          <br /> clean below the gumline.
           <sup>18, 19</sup>
         </>,
       ]}

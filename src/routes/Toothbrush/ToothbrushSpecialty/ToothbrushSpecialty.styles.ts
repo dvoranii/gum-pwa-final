@@ -20,20 +20,19 @@ export const SlideContainer = styled.div<SlideContainerProps>`
   width: ${(props) => props.$width || "90%"};
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(${props => props.$columns || 3}, 1fr);
-  column-gap:${(props) => props.$colGap ? props.$colGap : "1.2rem"};
+  place-content: center;
+  grid-template-columns: repeat(${(props) => props.$columns || 3}, 1fr);
+  column-gap: ${(props) => (props.$colGap ? props.$colGap : "1.2rem")};
   margin-left: 14px;
 `;
-export const BrushAndTextWrapper = styled.div`
-  
-`;
+export const BrushAndTextWrapper = styled.div``;
 
 export const Column = styled.div`
-  flex: 1 1 33.333%;
   min-width: 0;
   display: flex;
   gap: 0.4rem;
   height: 100%;
+  align-items: center;
 `;
 
 interface TextAndImgWrapperOuterProps {
@@ -41,9 +40,10 @@ interface TextAndImgWrapperOuterProps {
 }
 
 export const TextAndImgWrapperOuter = styled.div<TextAndImgWrapperOuterProps>`
-  height: ${(props) => props.$height || "92%"};
+  height: ${(props) => props.$height || "100%"};
   display: flex;
   align-items: flex-end;
+  flex: 1;
 `;
 
 interface TextAndImgWrapperProps {
@@ -54,37 +54,35 @@ interface TextAndImgWrapperProps {
 export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: ${props => props.$padding || "0 2rem 0 0"};
+  justify-content: flex-start; /* ← was center */
   height: ${(props) => props.$height || "77%"};
   position: relative;
   flex: 1;
 
   @media screen and (max-width: 1080px) {
-    padding:0;
+    padding: 0;
   }
 `;
 
 interface DiagramsWrapperProps {
-  $marginBottom?:string;
+  $marginBottom?: string;
   $width?: string;
 }
 
 export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
   img {
-    margin-bottom: ${(props) => props.$marginBottom || "1.6rem"};
+    margin-bottom: ${(props) => props.$marginBottom || "1.2rem"};
     width: ${(props) => props.$width || "55%"};
   }
 `;
 
 interface TextWrapperProps {
-  $paddingRight?: string;
-  $listWidth?:string;
   $listFontSize?: string;
 }
 
 export const TextWrapper = styled.div<TextWrapperProps>`
   flex-grow: 1;
+  min-height: 0;
 
   h2 {
     font-family: "Gotham", sans-serif;
@@ -99,10 +97,8 @@ export const TextWrapper = styled.div<TextWrapperProps>`
     color: ${colors.black};
     font-weight: 400;
     margin-bottom: 0.5rem;
-    font-size: ${props => props.$listFontSize || "1rem"};
+    font-size: ${(props) => props.$listFontSize || "1rem"};
     line-height: 1.15;
-    padding-right: ${(props) => props.$paddingRight ? props.$paddingRight : "0"};
-    ${props => props.$listWidth && `width: ${props.$listWidth};`}
 
     li {
       margin-bottom: 0.2rem;
@@ -121,5 +117,5 @@ export const BrushSpecsGrid = styled.div<BrushSpecsGridProps>`
   gap: ${(props) => props.$gap || "0.5rem"};
   place-items: start;
   width: 100%;
-  ${props => props.$paddingTop && `padding-top: ${props.$paddingTop};`}
+  ${(props) => props.$paddingTop && `padding-top: ${props.$paddingTop};`}
 `;

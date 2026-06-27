@@ -1,47 +1,55 @@
 import { styled } from "styled-components";
 import { colors } from "../../../../constants/colors";
 
-type ColumnProps = {
-  $isSingleColumn?: boolean;
-  $colGap?: string;
-  $colMarginLeft?: string;
-};
-
 export const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
 `;
 
+type ColumnProps = {
+  $isSingleColumn?: boolean;
+  $colGap?: string;
+  $colMarginLeft?: string;
+  $colZIndex?: number;
+  $flexBasis?: string;
+};
+
 export const Column = styled.div<ColumnProps>`
-  flex: 1 1 50%;
+  flex: 0 0 ${(props) => props.$flexBasis || "50%"};
   min-width: 0;
   width: 50%;
+  ${(props) =>
+    props.$colZIndex !== undefined && `z-index: ${props.$colZIndex};`}
   max-width: ${(props) => (props.$isSingleColumn ? "50%" : "100%")};
   display: flex;
-  gap: ${(props) => (props.$colGap ? props.$colGap : "1.8rem")};
+  gap: ${(props) => (props.$colGap ? props.$colGap : "0")};
   height: 100%;
+  align-items: center;
   ${(props) => props.$colMarginLeft && `margin-left: ${props.$colMarginLeft};`}
 `;
 
-interface BrushImgProps {
+type BrushImgProps = {
   $containerWidth?: string;
   $brushImgWidth?: string;
   $brushImgHeight?: string;
-  $imgMinWidth?: string;
-}
+  $wrapperWidth?: string;
+  $marginTop?: string;
+};
 
 export const BrushImgWrapper = styled.div<BrushImgProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${(props) => props.$containerWidth || "50%"};
+  width: ${(props) => props.$wrapperWidth || "80%"};
+  height: 100%;
 
   img {
-    height: ${(props) => props.$brushImgHeight || "85%"};
-    width: auto;
+    width: ${(props) => props.$brushImgWidth || "auto"};
+    height: ${(props) => props.$brushImgHeight || "auto"};
+    ${(props) => props.$marginTop && `margin-top: ${props.$marginTop};`}
     max-width: 100%;
-    ${(props) => props.$imgMinWidth && `min-width: ${props.$imgMinWidth};`};
+    max-height: 100%;
     object-fit: contain;
   }
 `;
@@ -54,21 +62,16 @@ export const TextAndImgWrapperOuter = styled.div`
 
 type TextAndImgWrapperProps = {
   $hasMultipleSpecRows?: boolean;
-  $padding?: string;
-  $paddingRight?: string;
+  $height?: string;
 };
-
-const defaultTextAndImgPadding = "0 2rem 0 0";
 
 export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: ${(props) => props.$padding || defaultTextAndImgPadding};
-  height: 70%;
+  height: ${(props) => props.$height || "80%"};
   position: relative;
   flex: 1;
-  ${(props) => props.$paddingRight && `padding-right: ${props.$paddingRight};`}
 
   @media screen and (max-width: 1080px) {
     min-height: 490px;
@@ -76,51 +79,43 @@ export const TextAndImgWrapper = styled.div<TextAndImgWrapperProps>`
   }
 `;
 
-interface DiagramsWrapperProps {
+type DiagramsWrapperProps = {
   $diagramWidth?: string;
-  $diagramMarginBottom?: string;
-  // $diagramMinWidth?: boolean;
-  // $diagramMinHeight?: boolean;
-}
+};
 
 export const DiagramsWrapper = styled.div<DiagramsWrapperProps>`
   display: flex;
   flex-direction: column;
 
-  margin-bottom: ${(props) =>
-    props.$diagramMarginBottom ? props.$diagramMarginBottom : "1.2rem"};
   img {
-    width: ${(props) => (props.$diagramWidth ? props.$diagramWidth : "95%")};
     object-fit: contain;
   }
 `;
 
+export const DiagramImg = styled.img<DiagramsWrapperProps>`
+  width: ${(props) => props.$diagramWidth ?? "95%"};
+`;
+
 export const BannerImg = styled.img`
-  width: 90% !important;
+  width: 85%;
   margin-bottom: 0.5rem;
-  object-fit: contain;
   align-self: flex-start;
 `;
 
-interface TextWrapperProps {
-  $marginTop?: string;
+type TextWrapperProps = {
   $marginBottom?: string;
-  $textWrapperPaddingRight?: string;
-  $maxHeight?: string;
-  $textWrapperMinHeight?: string;
-  $listPaddingLeft?: string;
-}
+  $paddingTop?: string;
+};
+
 export const TextWrapper = styled.div<TextWrapperProps>`
-  flex-grow: 0.5;
-  max-height: ${(props) => (props.$maxHeight ? props.$maxHeight : "168px")};
-  min-height: ${(props) =>
-    props.$textWrapperMinHeight ? props.$textWrapperMinHeight : "168px"};
-  ${(props) => props.$marginTop && `margin-top: ${props.$marginTop};`}
+  flex-grow: 1;
+  min-height: 0;
+
   h2 {
     font-family: "Gotham", sans-serif;
     color: ${colors.primary};
-    margin-bottom: ${(props) =>
-      props.$marginBottom ? props.$marginBottom : "0.4rem"};
+    margin-bottom: ${(props) => props.$marginBottom ?? "0.4rem"};
+    padding-top: ${(props) => props.$paddingTop ?? "0.6rem"};
     font-size: 1.25rem;
 
     sup {
@@ -136,9 +131,6 @@ export const TextWrapper = styled.div<TextWrapperProps>`
     margin-bottom: 0.5rem;
     font-size: 1rem;
     line-height: 1.25;
-    ${(props) =>
-      props.$textWrapperPaddingRight &&
-      `padding-right: ${props.$textWrapperPaddingRight};`}
 
     & + p {
       margin-bottom: 0;
@@ -150,17 +142,13 @@ export const TextWrapper = styled.div<TextWrapperProps>`
   }
 
   ul {
-    padding-left: ${(props) =>
-      props.$listPaddingLeft ? props.$listPaddingLeft : "1.2rem"};
+    padding-left: 1.2rem;
     font-family: "Gotham", sans-serif;
     color: ${colors.black};
     font-weight: 400;
     margin-bottom: 0.5rem;
     font-size: 1rem;
     line-height: 1.25;
-    ${(props) =>
-      props.$textWrapperPaddingRight &&
-      `padding-right: ${props.$textWrapperPaddingRight};`}
 
     li {
       margin-bottom: 0.2rem;
@@ -174,8 +162,6 @@ export const TextWrapper = styled.div<TextWrapperProps>`
   }
 
   @media screen and (max-width: 1080px) {
-    max-height: 220px;
-    min-height: 220px;
     ul {
       font-size: 0.9rem;
     }
@@ -317,9 +303,9 @@ export const BadgePlaceholder = styled.div`
   visibility: hidden;
 `;
 
-interface BrushSpecsWrapperProps {
+type BrushSpecsWrapperProps = {
   $width?: string;
-}
+};
 
 export const BrushSpecsWrapper = styled.div<BrushSpecsWrapperProps>`
   border-top: 1px solid ${colors.black};
@@ -328,6 +314,7 @@ export const BrushSpecsWrapper = styled.div<BrushSpecsWrapperProps>`
   box-sizing: border-box;
   gap: 0.6rem;
   font-size: 0.8rem;
+  margin-top: auto;
 `;
 
 export const BrushSpecsGrid = styled.div`
@@ -371,7 +358,6 @@ export const SpecValue = styled.span`
 
 export const ShopifyIconWrapper = styled.div``;
 
-// External styles
 export const DescriptionBold = styled.span`
   font-weight: 600;
 `;

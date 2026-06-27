@@ -38,12 +38,12 @@ export default function ToothbrushAdult() {
         <S.CarouselSlide>
           <S.SlideContainer>
             <S.Column>
-              <BrushImgWrapper $containerWidth="100%" $imgMinWidth="56px">
+              <BrushImgWrapper $wrapperWidth="25%" $brushImgHeight="70%">
                 <img src={Slide1Brush1} alt="Orthodontic toothbrush" />
               </BrushImgWrapper>
-              <S.TextAndImgWrapperOuter>
-                <S.TextAndImgWrapper>
-                  <S.DiagramsWrapper>
+              <S.TextAndImgWrapperOuter $height="70%">
+                <S.TextAndImgWrapper $height="90%">
+                  <S.DiagramsWrapper $width="50%">
                     <img
                       src={Slide1Col1TopImg}
                       alt="Orthodontic brush head diagram"
@@ -57,9 +57,16 @@ export default function ToothbrushAdult() {
                     </h2>
                     <ul>
                       <li>
-                        This "V" trim brush facilitates cleaning around
-                        orthodontic appliances such as brackets, arch wires,
-                        buttons and ligatures. Also available as a travel brush.
+                        This "V" trim brush
+                        <br />
+                        facilitates cleaning
+                        <br />
+                        around orthodontic appliances such as,
+                        <br />
+                        brackets, arch wires
+                        <br />
+                        buttons and ligatures.
+                        <br /> Also available as a<br /> travel brush.
                       </li>
                     </ul>
                   </S.TextWrapper>
@@ -93,18 +100,18 @@ export default function ToothbrushAdult() {
             </S.Column>
 
             <S.Column>
-              <BrushImgWrapper $containerWidth="100%" $imgMinWidth="55px">
+              <BrushImgWrapper $wrapperWidth="25%" $brushImgHeight="70%">
                 <img src={Slide1Brush2} alt="End-tuft brush" />
               </BrushImgWrapper>
-              <S.TextAndImgWrapperOuter>
-                <S.TextAndImgWrapper>
-                  <S.DiagramsWrapper>
+              <S.TextAndImgWrapperOuter $height="70%">
+                <S.TextAndImgWrapper $height="90%">
+                  <S.DiagramsWrapper $width="50%">
                     <img
                       src={Slide1Col2TopImg}
                       alt="End-tuft brush head diagram"
                     />
                   </S.DiagramsWrapper>
-                  <S.TextWrapper $paddingRight="1.2rem">
+                  <S.TextWrapper>
                     <h2>
                       END-TUFT
                       <br />
@@ -112,9 +119,13 @@ export default function ToothbrushAdult() {
                     </h2>
                     <ul>
                       <li>
-                        Small brush head addresses special maintenance concerns,
-                        including orthodontic bands, furcations, implants,
-                        distal of last molar, and other hard-to-reach areas.
+                        Small brush head addresses special maintenance
+                        <br /> concerns, including
+                        <br /> orthodontic bands, furcations, implants,
+                        <br /> distal of last molar,
+                        <br /> and other hard-to-
+                        <br />
+                        reach areas.
                       </li>
                     </ul>
                   </S.TextWrapper>
@@ -148,12 +159,12 @@ export default function ToothbrushAdult() {
             </S.Column>
 
             <S.Column>
-              <BrushImgWrapper $containerWidth="100%" $imgMinWidth="56px">
+              <BrushImgWrapper $wrapperWidth="25%" $brushImgHeight="70%">
                 <img src={Slide1Brush3} alt="Post-operation toothbrush" />
               </BrushImgWrapper>
-              <S.TextAndImgWrapperOuter>
-                <S.TextAndImgWrapper>
-                  <S.DiagramsWrapper>
+              <S.TextAndImgWrapperOuter $height="70%">
+                <S.TextAndImgWrapper $height="90%">
+                  <S.DiagramsWrapper $width="50%">
                     <img
                       src={Slide1Col3TopImg}
                       alt="Post-operation brush head diagram"
@@ -167,11 +178,17 @@ export default function ToothbrushAdult() {
                     </h2>
                     <ul>
                       <li>
-                        Ultra-soft .004 inch bristles are ideal for post
-                        surgical cleaning, gum disease, mouth irritations,
-                        extractions, implants and grafts.
+                        Ultra-soft .004 inch
+                        <br /> bristles are ideal for
+                        <br /> post surgical cleaning,
+                        <br /> gum disease, mouth
+                        <br /> irritations, extractions,
+                        <br /> implants and grafts.
                       </li>
-                      <li>Extremely soft and gentle on gums.</li>
+                      <li>
+                        Extremely soft and
+                        <br /> gentle on gums.
+                      </li>
                     </ul>
                   </S.TextWrapper>
                   <BrushSpecsWrapper $width="100%">
@@ -208,28 +225,35 @@ export default function ToothbrushAdult() {
         <S.CarouselSlide>
           <S.SlideContainer $columns={2} $width="80%" $colGap="0">
             <S.Column>
-              <BrushImgWrapper $containerWidth="50%" $brushImgHeight="83%">
+              <BrushImgWrapper $wrapperWidth="25%" $brushImgHeight="70%">
                 <img src={TravelBrushImage} alt="Travel toothbrush" />
               </BrushImgWrapper>
-              <S.TextAndImgWrapperOuter $height="90%">
-                <S.TextAndImgWrapper $height="85%" $padding="0">
+              <S.TextAndImgWrapperOuter $height="65%">
+                <S.TextAndImgWrapper $height="100%">
                   <S.DiagramsWrapper $marginBottom="0.4rem" $width="75%">
                     <img src={TravelBrushDiagram} alt="Travel brush diagram" />
                   </S.DiagramsWrapper>
-                  <S.TextWrapper $paddingRight="4.7rem" $listFontSize="1.1rem">
+                  <S.TextWrapper $listFontSize="1.1rem">
                     <h2>
                       TRAVEL <TitleLight>Toothbrush</TitleLight>
                     </h2>
                     <ul>
                       <li>
-                        Dual-function handle is also a ventilated snap-lock cap
-                        when not in use.
+                        Dual-function handle is
+                        <br /> also a ventilated snap-
+                        <br />
+                        lock cap when not in use.
                       </li>
                       <li>
-                        Multi-level trim designs for enhanced subgingival and
-                        interproximal accesses.
+                        Multi-level trim designs
+                        <br /> for enhanced subgingival
+                        <br /> and interproximal
+                        <br /> accesses.
                       </li>
-                      <li>Also available in an orthodontic "V" trim.</li>
+                      <li>
+                        Also available in an
+                        <br /> orthodontic "V" trim.
+                      </li>
                     </ul>
                   </S.TextWrapper>
                   <BrushSpecsWrapper $width="65%">
@@ -263,34 +287,34 @@ export default function ToothbrushAdult() {
             </S.Column>
 
             <S.Column>
-              <BrushImgWrapper
-                $containerWidth="50%"
-                $brushImgHeight="83%"
-                $imgMinWidth="101px"
-              >
+              <BrushImgWrapper $wrapperWidth="25%" $brushImgHeight="70%">
                 <img src={DentureBrushImage} alt="Denture brush" />
               </BrushImgWrapper>
-              <S.TextAndImgWrapperOuter $height="86.5%">
-                <S.TextAndImgWrapper $height="80%" $padding="0">
+              <S.TextAndImgWrapperOuter $height="65%">
+                <S.TextAndImgWrapper $height="95%">
                   <S.DiagramsWrapper $marginBottom="0.4rem" $width="43%">
                     <img
                       src={DentureBrushDiagram}
                       alt="Denture brush diagram"
                     />
                   </S.DiagramsWrapper>
-                  <S.TextWrapper $paddingRight="6.2rem" $listFontSize="1.1rem">
+                  <S.TextWrapper $listFontSize="1.1rem">
                     <h2>
                       DENTURE <TitleLight>Brush</TitleLight>
                     </h2>
                     <ul>
                       <li>
-                        Flat trim, firm nylon design effectively cleans denture
-                        surfaces. Tapered brush cleans smaller hard-to-reach
-                        areas.
+                        Flat trim, firm nylon
+                        <br /> design effectively
+                        <br /> cleans denture
+                        <br /> surfaces. Tapered
+                        <br /> brush cleans smaller
+                        <br /> hard-to-reach areas.
                       </li>
                       <li>
-                        Lever grip reduces effort for patients with limited
-                        dexterity.
+                        Lever grip reduces
+                        <br /> effort for patients
+                        <br /> with limited dexterity.
                       </li>
                     </ul>
                   </S.TextWrapper>

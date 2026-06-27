@@ -7,6 +7,7 @@ export const BaseCarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 !important;
 `;
 
 export const BaseDotStyles = styled.div`

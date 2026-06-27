@@ -16,17 +16,17 @@ const Slide5 = () => (
         width: "30px",
         marginTop: "0",
       }}
+      colZIndex={99}
       useBulletPoints={true}
       showImprintText={false}
-      textWrapperMinHeight="250px"
-      diagramWidth="90%"
-      diagramMarginBottom="0.8rem"
-      paddingRight="0"
-      textWrapperPaddingRight="4.5rem"
-      brushImgWidth="90%"
-      colGap="0.8rem"
-      colMargLeft="39px"
+      textAndImgWrapperHeight="90%"
+      diagramWidth="85%"
+      brushImgHeight="75%"
+      brushWrapperWidth="70%"
+      brushMarginTop="20px"
+      brushImgWidth="auto"
       textWrapperH2MarginBottom="0.4rem"
+      textWrapperH2PaddingTop="0"
       title={
         <>
           SpongeBob™ <TitleLight>Toothbrush</TitleLight>
@@ -35,10 +35,18 @@ const Slide5 = () => (
       description={[
         <>
           Tongue cleaner helps remove
-          <br /> bacteria from the tongue.
+          <br />
+          bacteria from the tongue.
         </>,
-        "Center bristles help emphasize a smaller amount of toothpaste.",
-        "Suction cup base holds the toothbrush upright which helps keep bristles clean.",
+        <>
+          Center bristles help emphasize a<br />
+          smaller amount of toothpaste.
+        </>,
+        <>
+          Suction cup base holds the
+          <br /> toothbrush upright which helps keep
+          <br /> bristles clean.
+        </>,
       ]}
       imprintColors={[["#ffff00"], ["#ff1493"]]}
       specs={[

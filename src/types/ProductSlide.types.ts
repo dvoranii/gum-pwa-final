@@ -19,15 +19,12 @@ export type ProductSlideProps = {
   specs: SpecItem[][];
   isSingleColumn?: boolean;
   showImprintText?: boolean;
-  textWrapperMarginTop?: string;
   textWrapperH2MarginBottom?: string;
+  textWrapperH2PaddingTop?: string;
   useBulletPoints?: boolean;
-  padding?: string;
   paddingRight?: string;
-  textWrapperPaddingRight?: string;
   diagramWidth?: string;
   maxHeight?: string;
-  textWrapperMinHeight?: string;
   diagramMarginBottom?: string;
   brushImgWidth?: string;
   brushImgHeight?: string;
@@ -38,4 +35,8 @@ export type ProductSlideProps = {
   shopifyIconProps?: ShopifyIconProps;
   diagramMinWidth?: boolean;
   diagramMinHeight?: boolean;
+  colZIndex?: number;
+  textAndImgWrapperHeight?: string;
+  brushWrapperWidth?: string;
+  brushMarginTop?: string;
 };

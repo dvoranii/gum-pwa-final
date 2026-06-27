@@ -18,8 +18,11 @@ const Slide2 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperPaddingRight="0.5rem"
-      imgMinWidth="54px"
+      brushImgHeight="83%"
+      brushImgWidth="auto"
+      colGap="0.6rem"
+      textWrapperH2PaddingTop="0.8rem"
+      textAndImgWrapperHeight="75%"
       title={
         <>
           ENAMEL CLEAN <TitleLight>TECHNIQUE®</TitleLight>
@@ -27,7 +30,8 @@ const Slide2 = () => (
       }
       description={[
         <>
-          Micro-feathering splits each bristle into several fine tips for{" "}
+          Micro-feathering splits each bristle into
+          <br /> several fine tips for{" "}
           <DescriptionBold>70% more enamel clean</DescriptionBold> compared to
           an end rounded bristle.<sup>17</sup>
         </>,
@@ -50,15 +54,23 @@ const Slide2 = () => (
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperPaddingRight="0.8rem"
-      imgMinWidth="54px"
+      brushImgHeight="83%"
+      brushImgWidth="auto"
+      colGap="0.6rem"
+      textWrapperH2PaddingTop="0.8rem"
+      textAndImgWrapperHeight="75%"
       title={
         <>
           ULTRA SENSITIVE CLEAN <TitleLight>TECHNIQUE®</TitleLight>
         </>
       }
       description={[
-        "The unique Quad-Grip® handle and Dome Trim® bristles, combined with ultra-delicate bristles, offer a gentle yet effective solution for plaque removal and gum care.",
+        <>
+          The unique Quad-Grip® handle and Dome
+          <br /> Trim® bristles, combined with ultra-delicate
+          <br /> bristles, offer a gentle yet effective solution
+          <br /> for plaque removal and gum care.
+        </>,
       ]}
       imprintColors={[["#86ca94"], ["#2ac2f0"], ["#f8acbd"], ["#cda9ce"]]}
       specs={[

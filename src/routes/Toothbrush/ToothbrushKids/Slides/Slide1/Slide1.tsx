@@ -9,23 +9,43 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_Monsterz}
       diagramImage={Slide1Col1TopImg}
-      diagramWidth="80%"
+      diagramWidth="73%"
+      diagramMarginBottom="0.2rem"
       shopifyIconProps={{
         href: "https://www.professionalsunstargum.com/products/213-monsterz-baby-ages-0",
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperMarginTop="-24px"
-      textWrapperPaddingRight="3.8rem"
-      textWrapperMinHeight="190px"
-      colGap="0.8rem"
+      textAndImgWrapperHeight="85%"
+      brushImgHeight="78%"
+      brushImgWidth="auto"
+      brushWrapperWidth="60%"
       useBulletPoints={true}
       showImprintText={false}
       description={[
-        "Extra-small head designed for baby's mouth.",
-        "Ultra-soft feathered bristles are very gentle for baby gums around erupting primary teeth.",
-        "Effective access to pits and fissures where first cavities may start.",
-        "The longer handle and steady grip facilitates parent's hold of the toothbrush.",
+        <>
+          Extra-small head designed for
+          <br /> baby's mouth.
+        </>,
+
+        <>
+          Ultra-soft feathered bristles are very
+          <br />| gentle for baby gums around
+          <br />
+          erupting primary teeth.
+        </>,
+        <>
+          Effective access to pits and fissures
+          <br />
+          where first cavities may start.
+        </>,
+        <>
+          The longer handle and steady grip
+          <br />
+          facilitates parent's hold of the
+          <br />
+          toothbrush
+        </>,
       ]}
       imprintColors={[["#f37c8e"], ["#ffd703"], ["#42bfa4"], ["#1b97d4"]]}
       specs={[
@@ -40,19 +60,26 @@ const Slide1 = () => (
     <ProductSlide
       brushImage={Brush1_MonsterzKids}
       diagramImage={Slide1Col2TopImg}
-      diagramWidth="80%"
+      diagramWidth="75%"
+      diagramMarginBottom="0.2rem"
       shopifyIconProps={{
         href: "https://www.professionalsunstargum.com/products/901-monsterz-kids-ages-2",
         width: "30px",
         marginTop: "0",
       }}
-      textWrapperMarginTop="-24px"
+      brushImgHeight="73%"
+      brushMarginTop="20px"
+      textAndImgWrapperHeight="85%"
+      brushImgWidth="auto"
       useBulletPoints={true}
-      textWrapperMinHeight="190px"
+      paddingRight="0"
       description={[
         "Soft bristles gently remove plaque.",
         "Center bristles help emphasize a smaller amount of toothpaste for kids.",
-        "Ergonomic handle with thumb pad for stable, comfortable grip.",
+        <>
+          Ergonomic handle with thumb pad for
+          <br /> stable, comfortable grip.
+        </>,
         "Suction cup base holds the toothbrush upright which helps to keep bristles clean.",
       ]}
       imprintColors={[["#8d75b4"], ["#eb5d8d"], ["#8fca6b"], ["#36c1cd"]]}

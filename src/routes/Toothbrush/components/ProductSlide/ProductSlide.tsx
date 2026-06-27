@@ -17,23 +17,19 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
   specs = [],
   isSingleColumn = false,
   showImprintText = true,
-  textWrapperMarginTop,
   textWrapperH2MarginBottom,
-  textWrapperPaddingRight,
+  textWrapperH2PaddingTop,
   useBulletPoints,
-  padding,
-  paddingRight,
+  textAndImgWrapperHeight,
   diagramWidth,
-  maxHeight,
-  textWrapperMinHeight,
-  diagramMarginBottom,
   brushImgWidth,
   brushImgHeight,
   colGap,
-  listPaddingLeft,
   colMargLeft,
-  imgMinWidth,
   shopifyIconProps,
+  colZIndex,
+  brushWrapperWidth,
+  brushMarginTop,
 }) => {
   const hasMultipleSpecRows = specs.length > 1;
 
@@ -42,11 +38,13 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
       $isSingleColumn={isSingleColumn}
       $colGap={colGap}
       $colMarginLeft={colMargLeft}
+      $colZIndex={colZIndex}
     >
       <S.BrushImgWrapper
         $brushImgWidth={brushImgWidth}
         $brushImgHeight={brushImgHeight}
-        $imgMinWidth={imgMinWidth}
+        $wrapperWidth={brushWrapperWidth}
+        $marginTop={brushMarginTop}
       >
         <img
           src={brushImage}
@@ -56,18 +54,15 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
       <S.TextAndImgWrapperOuter>
         <S.TextAndImgWrapper
           $hasMultipleSpecRows={hasMultipleSpecRows}
-          $padding={padding}
-          $paddingRight={paddingRight}
+          $height={textAndImgWrapperHeight}
         >
-          <S.DiagramsWrapper
-            $diagramWidth={diagramWidth}
-            $diagramMarginBottom={diagramMarginBottom}
-          >
+          <S.DiagramsWrapper>
             {bannerImage && (
               <S.BannerImg src={bannerImage} alt="Brand recommendation badge" />
             )}
-            <img
+            <S.DiagramImg
               src={diagramImage}
+              $diagramWidth={diagramWidth}
               alt={
                 typeof title === "string"
                   ? `${title} diagram`
@@ -76,14 +71,10 @@ export const ProductSlide: React.FC<ProductSlideProps> = ({
             />
           </S.DiagramsWrapper>
           <S.TextWrapper
-            $marginTop={textWrapperMarginTop}
             $marginBottom={textWrapperH2MarginBottom}
-            $textWrapperPaddingRight={textWrapperPaddingRight}
-            $maxHeight={maxHeight}
-            $textWrapperMinHeight={textWrapperMinHeight}
-            $listPaddingLeft={listPaddingLeft}
+            $paddingTop={textWrapperH2PaddingTop}
           >
-            <h2>{title}</h2>
+            {title && <h2>{title}</h2>}
             {useBulletPoints ? (
               <ul>
                 {description.map((content, index) => (

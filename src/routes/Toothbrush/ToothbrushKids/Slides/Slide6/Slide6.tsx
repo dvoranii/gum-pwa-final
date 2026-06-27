@@ -1,5 +1,5 @@
 import TechniqueKidsBrush from "../../../../../assets/toothbrush/Kids/Slide7/Brush-TechniqueKids.webp";
-import BrightCareBrush from "../../../../../assets/toothbrush/Kids/Slide8/Brush-GUMBrightCare.webp";
+import BrightCareBrush from "../../../../../assets/toothbrush/Kids/Slide8/Brush-GUMBrightCare.png";
 import TechniqueKidsDiagram from "../../../../../assets/toothbrush/Kids/Slide7/circle-diagram-TechniqueKids.webp";
 import BrightCareDiagram from "../../../../../assets/toothbrush/Kids/Slide8/circle-diagram-GUMBrightCare.webp";
 import { ProductSlide } from "../../../components/ProductSlide/ProductSlide";
@@ -16,14 +16,12 @@ const Slide6 = () => (
       }}
       useBulletPoints={true}
       showImprintText={false}
-      textWrapperMinHeight="168px"
-      diagramWidth="80%"
-      diagramMarginBottom="1.2rem"
+      diagramWidth="78%"
       paddingRight="2rem"
-      brushImgWidth="95%"
-      colGap="1.2rem"
+      brushImgHeight="75%"
+      brushImgWidth="auto"
       textWrapperH2MarginBottom="0.4rem"
-      textWrapperPaddingRight="3rem"
+      textAndImgWrapperHeight="75%"
       title={
         <>
           TECHNIQUE<sup>®</sup> Kids
@@ -31,12 +29,14 @@ const Slide6 = () => (
       }
       description={[
         <>
-          Cushioned Quad-Grip® handle facilitates the recommended
+          Cushioned Quad-Grip® handle
+          <br /> facilitates the recommended
           <br /> 45° brushing technique.
         </>,
         <>
           Dome Trim<sup>®</sup> bristles are clinically
-          <br /> designed to clean below the gumline.<sup>18,&nbsp;19</sup>
+          <br /> designed to clean below the
+          <br /> gumline.<sup>18,&nbsp;19</sup>
         </>,
       ]}
       imprintColors={[
@@ -64,14 +64,12 @@ const Slide6 = () => (
       }}
       useBulletPoints={true}
       showImprintText={true}
-      textWrapperMinHeight="168px"
       diagramWidth="80%"
-      diagramMarginBottom="1.2rem"
+      brushImgHeight="75%"
+      brushImgWidth="auto"
       paddingRight="2rem"
-      brushImgWidth="95%"
-      colGap="1.2rem"
       textWrapperH2MarginBottom="0.4rem"
-      textWrapperPaddingRight="3rem"
+      textAndImgWrapperHeight="75%"
       title={
         <>
           G•U•M&nbsp;BRIGHT&nbsp;CARE<sup>™</sup>&nbsp;Toothbrush
@@ -79,16 +77,21 @@ const Slide6 = () => (
       }
       description={[
         <>
-          Special BrightLine<sup>TM</sup> Grip bristles help remove stains for{" "}
-          <strong>28% whiter teeth</strong>.<sup>3</sup>
+          Special BrightLine<sup>TM</sup> Grip bristles help
+          <br /> remove stains for <strong>28% whiter teeth</strong>.
+          <sup>3</sup>
         </>,
         <>
-          Raised Super Tip<sup>®</sup> bristles at the tip provide access to
-          posterior regions and clean hard-to-reach surfaces.
+          Raised Super Tip<sup>®</sup> bristles at the tip
+          <br />
+          provide access to posterior regions
+          <br />
+          and clean hard-to-reach surfaces.
         </>,
         <>
-          Dome Trim<sup>®</sup> bristles are clinically designed to clean below
-          the gumline.<sup>18,&nbsp;19</sup>
+          Dome Trim<sup>®</sup> bristles are clinically
+          <br /> designed to clean below the
+          <br /> gumline.<sup>18,&nbsp;19</sup>
         </>,
       ]}
       imprintColors={[["#a1227f"], ["#395fab"], ["#e71d26"], ["#43ae48"]]}
@@ -96,7 +99,7 @@ const Slide6 = () => (
         [
           { label: "Item", value: "4591" },
           { label: "Texture", value: "Soft" },
-          { label: "Size", value: "Subcompact" },
+          { label: "Size", value: "Compact" },
           { label: "Tufts", value: "30" },
         ],
       ]}
